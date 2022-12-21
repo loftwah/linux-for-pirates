@@ -8,73 +8,74 @@ By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loft
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-    - [Data science](#data-science)
-    - [Database](#database)
-    - [DevOps](#devops)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [Docker](#docker)
-  - [Git](#git)
-  - [GitHub](#github)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-  - [SSL Certificates](#ssl-certificates)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-- [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+      - [Data science](#data-science)
+      - [Database](#database)
+      - [DevOps](#devops)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Docker](#docker)
+    - [Git](#git)
+    - [GitHub](#github)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+    - [SSL Certificates](#ssl-certificates)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -518,7 +519,7 @@ Request headers: cURL allow ye to specify custom request headers to be sent with
 
 Request data: cURL allow ye to specify data to be sent with yer request, such as form data or a JSON payload. Ye can use the -d option to specify the data ye be sending.
 
-> *Note*: If ye be sending JSON data, ye should use the `--data-raw` option instead of the `-d` option. The `-d` option will escape the JSON payload, which will cause the request to fail.
+> **Note**: If ye be sending JSON data, ye should use the `--data-raw` option instead of the `-d` option. The `-d` option will escape the JSON payload, which will cause the request to fail.
 
 Response headers: cURL allow ye to view the response headers that be returned with yer request. Ye can use the `-i` option to view the response headers.
 
@@ -526,7 +527,7 @@ Response body: cURL allow ye to view the response body that be returned with yer
 
 I hope this helps you understand how cURL works and how a pirate might use it to make HTTP requests. Arrr!
 
-> *Note*: if ye ever get stuck use `curl cht.sh/:help` to get help
+> **Note**: if ye ever get stuck use `curl cht.sh/:help` to get help
 
 ### Vim
 
@@ -978,25 +979,25 @@ We are going to get a little bit hands on here. We are going to create a new pro
 
 Just kidding. Although that is a great way to start, we should do a little bit more than that.
 
-1   **Setting Sail:** It be time to set sail! In the terminal, try using the `ls` command to list the files and directories in the current directory, and the `cd` command to navigate to different directories. Can ye find yer way to the ship's hold?
+1. **Setting Sail:** It be time to set sail! In the terminal, try using the `ls` command to list the files and directories in the current directory, and the `cd` command to navigate to different directories. Can ye find yer way to the ship's hold?
 
-2   **Finding Yer Way Home:** After a long voyage, it be nice to have a place to call home. In the terminal, try using the `echo` command to print out yer home directory, and the `cd` command to navigate to it. Can ye find a way to create a new directory and move a file into it?
+2. **Finding Yer Way Home:** After a long voyage, it be nice to have a place to call home. In the terminal, try using the `echo` command to print out yer home directory, and the `cd` command to navigate to it. Can ye find a way to create a new directory and move a file into it?
 
-3   **Managing Yer Crew:** A good captain be able to manage their crew and keep track of who be on board. In the terminal, try using the `whoami` command to see what user ye be logged in as, and the `groups` command to see what groups ye be a member of. Can ye find out who else be on board the ship?
+3. **Managing Yer Crew:** A good captain be able to manage their crew and keep track of who be on board. In the terminal, try using the `whoami` command to see what user ye be logged in as, and the `groups` command to see what groups ye be a member of. Can ye find out who else be on board the ship?
 
-4   **Navigating the Seas:** No voyage be complete without a good map! In the terminal, try using the `man` command to read the documentation for different commands and learn how to use them. Can ye find out how to use the `grep` command to search for a specific word in a file?
+4. **Navigating the Seas:** No voyage be complete without a good map! In the terminal, try using the `man` command to read the documentation for different commands and learn how to use them. Can ye find out how to use the `grep` command to search for a specific word in a file?
 
-5   **Arranging Yer Crew:** A captain be nothing without a well-organized crew. In the terminal, try using the `sort` command to sort a list of names, and the `uniq` command to remove duplicates. Can ye find a way to count the number of unique names in the list?
+5. **Arranging Yer Crew:** A captain be nothing without a well-organized crew. In the terminal, try using the `sort` command to sort a list of names, and the `uniq` command to remove duplicates. Can ye find a way to count the number of unique names in the list?
 
-6   **Setting Up Anchor:** When it be time to rest, ye need to know how to set anchor. In the terminal, try using the `touch` command to create a new file, and the `rm` command to delete a file. Can ye find a way to rename a file?
+6. **Setting Up Anchor:** When it be time to rest, ye need to know how to set anchor. In the terminal, try using the `touch` command to create a new file, and the `rm` command to delete a file. Can ye find a way to rename a file?
 
-7   **Sending Messages in a Bottle:** When ye be out at sea, ye need to find ways to communicate with the rest of the world. In the terminal, try using the `mail` command to send a message to yerself or another user on the ship. Can ye find out how to attach a file to the message?
+7. **Sending Messages in a Bottle:** When ye be out at sea, ye need to find ways to communicate with the rest of the world. In the terminal, try using the `mail` command to send a message to yerself or another user on the ship. Can ye find out how to attach a file to the message?
 
-8   **Finding Yer Way Around the Ship:** The first thing ye need to do is get yer bearings and learn how to navigate around the ship. In the terminal, try using the `pwd` command to see what directory ye be in, and the `ls` command to see what files and directories be in that directory. Can ye find yer way to the main deck?
+8. **Finding Yer Way Around the Ship:** The first thing ye need to do is get yer bearings and learn how to navigate around the ship. In the terminal, try using the `pwd` command to see what directory ye be in, and the `ls` command to see what files and directories be in that directory. Can ye find yer way to the main deck?
 
-9   **Raising the Anchor:** When it be time to set sail again, ye need to know how to raise anchor. In the terminal, try using the `chmod` command to change the permissions on a file or directory, and the `chown` command to change the owner of a file or directory. Can ye find a way to change the group ownership of a file or directory?
+9. **Raising the Anchor:** When it be time to set sail again, ye need to know how to raise anchor. In the terminal, try using the `chmod` command to change the permissions on a file or directory, and the `chown` command to change the owner of a file or directory. Can ye find a way to change the group ownership of a file or directory?
 
-10   **Sending Signals:** When ye need to get someone's attention, ye need to know how to send a signal. In the terminal, try using the `kill` command to send a signal to a running process, and the `ps` command to list the processes running on the ship. Can ye find a way to stop a process from running?
+10. **Sending Signals:** When ye need to get someone's attention, ye need to know how to send a signal. In the terminal, try using the `kill` command to send a signal to a running process, and the `ps` command to list the processes running on the ship. Can ye find a way to stop a process from running?
 
 ## Chapter Four: Navigating the seas of the internet
 
