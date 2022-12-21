@@ -1,3 +1,44 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+  - [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
+    - [Cloud computing](#cloud-computing)
+    - [DevOps](#devops)
+    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+    - [Network Engineering](#network-engineering)
+  - [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Networking](#networking)
+    - [cURL](#curl)
+    - [Vim](#vim)
+    - [The Internet](#the-internet)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [IP Addresses](#ip-addresses)
+    - [JSON](#json)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [SSH](#ssh)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Linux for Pirates!
 
 ![Linux for Pirates!](linux-for-pirates.jpg)
