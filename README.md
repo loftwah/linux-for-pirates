@@ -8,48 +8,50 @@ By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loft
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-- [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
-  - [Backend](#backend)
-  - [Cloud computing](#cloud-computing)
-  - [Cybersecurity](#cybersecurity)
-  - [Data science](#data-science)
-  - [Database](#database)
-  - [DevOps](#devops)
-  - [DevRel](#devrel)
-  - [Frontend](#frontend)
-  - [Network Engineering](#network-engineering)
-  - [Product](#product)
-  - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-  - [Support](#support)
-  - [Testing](#testing)
-- [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Networking](#networking)
-  - [cURL](#curl)
-  - [Vim](#vim)
-  - [The Internet](#the-internet)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [IP Addresses](#ip-addresses)
-  - [JSON](#json)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [SSH](#ssh)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-- [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+  - [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
+    - [Backend](#backend)
+    - [Cloud computing](#cloud-computing)
+    - [Cybersecurity](#cybersecurity)
+    - [Data science](#data-science)
+    - [Database](#database)
+    - [DevOps](#devops)
+    - [DevRel](#devrel)
+    - [Frontend](#frontend)
+    - [Network Engineering](#network-engineering)
+    - [Product](#product)
+    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+    - [Support](#support)
+    - [Testing](#testing)
+  - [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Networking](#networking)
+    - [cURL](#curl)
+    - [Vim](#vim)
+    - [The Internet](#the-internet)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [IP Addresses](#ip-addresses)
+    - [JSON](#json)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -496,6 +498,26 @@ System utilities: Pirates can use system utilities such as top, ps, and free to 
 Network monitoring: Pirates can use tools such as netstat and tcpdump to monitor the network traffic on their system. These tools can provide information about the packets that are being transmitted and received, as well as the status of network connections.
 
 Monitoring can be a useful tool for pirates to keep their systems running smoothly and securely. It allows them to identify problems, optimize performance, and detect security breaches, all of which are important for maintaining a healthy and efficient network.
+
+### OSI model
+
+The OSI model be a framework fer understanding and designing how data be transmitted over yer network. It be made up of seven layers, each representing a different aspect of networking:
+
+Physical layer: This layer be responsible fer the physical connections and devices that be used fer transmitting data over yer network. Examples include cables, switches, and routers.
+
+Data link layer: This layer be responsible fer establishing and maintaining a connection between devices on yer network. It be responsible fer tasks such as error detection and correction, and fer providing flow control to prevent data overload.
+
+Network layer: This layer be responsible fer routing data between devices on yer network. It be using addresses to determine the best path fer data to travel, and be responsible fer tasks such as packet switching and traffic control.
+
+Transport layer: This layer be responsible fer ensuring that data be delivered reliably and efficiently between devices on yer network. It be responsible fer tasks such as segmentation, reassembly, and flow control.
+
+Session layer: This layer be responsible fer establishing, maintaining, and terminating connections between devices on yer network. It be responsible fer tasks such as establishing a session, coordinating communication, and recovering from errors.
+
+Presentation layer: This layer be responsible fer translating data between devices on yer network. It be responsible fer tasks such as encoding, decoding, and compression.
+
+Application layer: This layer be responsible fer providing services to applications that be using yer network. It be responsible fer tasks such as messaging, file transfer, and network management.
+
+The OSI model be a useful tool fer understanding and designing the communication systems on yer network. It provides a framework fer understanding the different layers of networking, and fer identifying the tasks and responsibilities that be associated with each layer.
 
 ### SSH
 
