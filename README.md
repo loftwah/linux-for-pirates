@@ -312,6 +312,28 @@ For example, they might create a subnet for pirates who are located in the same 
 
 In a real-world context, subnets are often used to improve the efficiency of networks by reducing the amount of traffic that needs to be routed between different parts of the network. They can also be used to improve security by isolating different parts of the network from each other.
 
+#### Subnet mask
+
+A subnet mask is a string of numbers that is used to identify which part of an IP address belongs to the network and which part belongs to the host. It is used in conjunction with an IP address to determine which devices are part of the same subnet.
+
+Imagine that a group of pirates are using subnets to divide their network into smaller, more manageable parts. Each pirate has an IP address that is assigned to their device, and the subnet mask is used to identify which part of the IP address belongs to the network and which part belongs to the host.
+
+For example, if the subnet mask is "255.255.255.0", it means that the first three octets (groups of 8 bits) of the IP address represent the network portion, while the last octet represents the host portion. Using this information, the pirates can determine which devices are part of the same subnet and can communicate with each other directly, without having to go through a router.
+
+In a real-world context, subnet masks are used to divide networks into smaller, more manageable parts and to improve the efficiency of communication between devices on a network. They are an important part of the IP addressing system, and they are used in many different types of networks, including pirate networks.
+
+### How to calculate a subnet mask
+
+Determine the size of your network and the number of subnets you want to create. Consider factors such as the number of pirates and devices that will be connected to the network, the geographical location of the pirates, and the types of resources that will be shared on the network.
+
+Select a subnet mask that is appropriate for your network. A subnet mask is a string of numbers that is used to identify which part of an IP address belongs to the network and which part belongs to the host. The subnet mask will depend on the size of your network and the number of subnets you want to create.
+
+Calculate the subnet address for each subnet. To do this, you will need to use the subnet mask and the IP address of each device on the network. The subnet address is the portion of the IP address that belongs to the network, as identified by the subnet mask.
+
+Assign an IP address to each device on the network. The IP address should be unique for each device, and it should include the subnet address for the subnet that the device is part of.
+
+For example, let's say that you have a network with 100 pirates, and you want to create 10 subnets with 10 pirates each. You might select a subnet mask of "255.255.255.0", which would allow you to create up to 256 subnets. To calculate the subnet address for each subnet, you would use the subnet mask and the IP address of each device. For example, if the IP address of a device is "192.168.1.1", and the subnet mask is "255.255.255.0", the subnet address would be "192.168.1.0".
+
 ### TCP/IP
 
 TCP/IP be a suite of networking protocols that be used to connect devices on the internet. It be the foundation of the internet, and it be what allow devices to communicate with each other and exchange data over the network.
@@ -339,3 +361,8 @@ To use YAML, you need to understand its syntax, which is based on indentation an
 YAML is a popular choice for configuration files because it is easy to read and write, and it is flexible enough to support a wide variety of data structures. It is also often used in devops tools, such as Ansible and Docker, to define infrastructure as code.
 
 To use YAML effectively as a pirate, you should familiarize yourself with its syntax and conventions, and understand how it is used in the tools and technologies you are working with. Arrr!
+
+## Chapter Three: Your first day as a pirate
+
+## Chapter Four: Navigating the seas of the internet
+
