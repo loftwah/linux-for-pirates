@@ -8,66 +8,74 @@ By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loft
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-    - [Data science](#data-science)
-    - [Database](#database)
-    - [DevOps](#devops)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [Docker](#docker)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-  - [SSL Certificates](#ssl-certificates)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-- [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+      - [Data science](#data-science)
+      - [Database](#database)
+      - [DevOps](#devops)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Docker](#docker)
+    - [Git](#git)
+    - [GitHub](#github)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+    - [SSL Certificates](#ssl-certificates)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -467,6 +475,10 @@ Bash supports a wide variety of commands, including built-in commands like `ls` 
 
 I hope this helps you understand what Bash is and how a pirate might use it to interact with their operating system. Arrr!
 
+#### .bashrc
+
+Ahoy matey! In the world of Linux, the `.bashrc` file is a configuration file that contains commands that are executed when a user logs in to their system. Just like how a pirate might use a treasure map to find their way to their treasure, the `.bashrc` file can be used to customize a user's environment and make it easier for them to perform common tasks.
+
 ### Cron
 
 [Crontab.guru](https://crontab.guru)
@@ -507,7 +519,7 @@ Request headers: cURL allow ye to specify custom request headers to be sent with
 
 Request data: cURL allow ye to specify data to be sent with yer request, such as form data or a JSON payload. Ye can use the -d option to specify the data ye be sending.
 
-> Note: If ye be sending JSON data, ye should use the `--data-raw` option instead of the `-d` option. The `-d` option will escape the JSON payload, which will cause the request to fail.
+> *Note*: If ye be sending JSON data, ye should use the `--data-raw` option instead of the `-d` option. The `-d` option will escape the JSON payload, which will cause the request to fail.
 
 Response headers: cURL allow ye to view the response headers that be returned with yer request. Ye can use the `-i` option to view the response headers.
 
@@ -515,7 +527,7 @@ Response body: cURL allow ye to view the response body that be returned with yer
 
 I hope this helps you understand how cURL works and how a pirate might use it to make HTTP requests. Arrr!
 
-> Note: if ye ever get stuck use `curl cht.sh/:help` to get help
+> *Note*: if ye ever get stuck use `curl cht.sh/:help` to get help
 
 ### Vim
 
@@ -530,6 +542,10 @@ Editing: In insert mode, ye can enter text and make changes to yer document. To 
 Saving and quitting: To save yer changes and quit Vim, ye can use the :wq command in command mode. To save yer changes and continue editing, ye can use the :w command. To quit without saving, ye can use the `:q!` command.
 
 Customization: Vim be highly customizable, and ye can configure it to suit yer needs and preferences. Ye can customize Vim by editing the .vimrc configuration file or by using Lua to create custom plugins.
+
+#### .vimrc
+
+Ahoy matey! In the world of Linux, the `.vimrc` file is a configuration file that contains commands that are executed when a user starts Vim. Just like how a pirate might use a treasure map to find their way to their treasure, the `.vimrc` file can be used to customize a user's Vim environment and make it easier for them to perform common tasks.
 
 ### VS Code
 
@@ -582,6 +598,56 @@ To work with Docker, ye might be usin' the Docker Engine to build, run, and mana
 In terms of practical use, ye might be usin' Docker to set up a development environment for your application, or to package and deploy your application to production. Ye can also use Docker to run databases or other services that your application relies on.
 
 So there ye have it, a brief overview of Docker and how ye might be workin' with it. I hope this be helpin' ye to understand this powerful tool for managing and running applications. Shiver me timbers!
+
+### Git
+
+Git be a free and open-source version control system that be used by developers to track changes to their code and collaborate with other developers on software projects. It be a way to keep a record of the history of a project, so ye can go back and see what be changed and when.
+
+Git be a distributed version control system, which means that each copy of the code be a complete repository of the project, with all its history. This be different from a centralized version control system, where ye have a single "master" copy of the code that everyone else be working off of.
+
+To use Git, ye first need to install it on yer computer. Then, ye can create a new repository for a project by running the git init command in a terminal window. Ye can then add files to the repository and commit those changes to the repository's history, using the git add and git commit commands.
+
+Git be a powerful tool that be widely used by developers around the world, and it be particularly useful for working on large, complex software projects with multiple contributors. I hope this helps ye understand what Git be and how it can be used!
+
+### GitHub
+
+GitHub be a web-based platform that be used by developers to host and share their code repositories, as well as collaborate with other developers on software projects. It be built on top of Git, the version control system that I described in me previous message.
+
+GitHub be a great place for developers to store their code and track changes to it over time. It be also a great place to share code with other developers and collaborate on projects together. Ye can use GitHub to create new repositories for yer own projects, or ye can contribute to other people's projects by forking their repositories and submitting pull requests.
+
+GitHub be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what GitHub be and how it can be used by developers! 
+
+### Homebrew
+
+Homebrew is a free and open-source package management system for macOS and Linux that simplifies the installation of software on those operating systems. It allows users to install and manage software packages written in a variety of programming languages, such as Python, Ruby, and Go, as well as libraries and other dependencies needed to run those programs.
+
+Linuxbrew is a fork of Homebrew that is designed to run on Linux systems. It provides the same functionality as Homebrew, but is specifically tailored for use on Linux systems. It is written in Ruby and can be used to install and manage software packages on a wide range of Linux distributions, including Debian, Ubuntu, CentOS, and Fedora.
+
+To install Homebrew on macOS, you can open a terminal window and run the following command:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+To install Linuxbrew on a Linux system, you can run the following command in a terminal window:
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+```
+
+Both Homebrew and Linuxbrew use a command-line interface to install and manage packages. Once installed, you can use the brew command to search for and install packages, as well as manage and update the packages you have installed.
+
+For example, to search for a package called "treasuremap," you can run the following command:
+
+```bash
+brew search treasuremap
+```
+
+To install a package called "treasuremap," you can run the following command:
+
+```bash
+brew install treasuremap
+```
 
 ### HTML
 
@@ -877,7 +943,61 @@ YAML is a popular choice for configuration files because it is easy to read and 
 
 To use YAML effectively as a pirate, you should familiarize yourself with its syntax and conventions, and understand how it is used in the tools and technologies you are working with. Arrr!
 
+### Zsh
+
+Arrr matey! Zsh, also known as the "Z shell," is a Unix shell and command-line interpreter that you can use on your Linux system. It's similar to other shells like the Bourne shell (sh) or the Bourne Again shell (bash), but it offers additional features and functionality that can make it easier and more efficient to use.
+
+To get started with zsh on your Linux system, you'll need to install it first. You can do this using your system's package manager, such as "apt" on Debian-based systems or "yum" on Red Hat-based systems. For example, you might run a command like this:
+
+```bash
+sudo apt install zsh
+```
+
+Once zsh is installed, you can start using it by launching a terminal window and entering `zsh` at the command prompt. This will launch the zsh shell, and you can start entering commands just like you would with any other shell.
+
+You can also set zsh as your default shell, so that it will be launched automatically whenever you open a terminal window. To do this, you'll need to use the `chsh` command and specify the path to the zsh executable. For example:
+
+```bash
+chsh -s /usr/bin/zsh
+```
+
+I hope this helps get you started with zsh on your Linux system, matey! Let me know if you have any other questions.
+
+#### Oh My Zsh
+
+Oh My Zsh is a popular open-source project that helps users configure and customize the Z shell (zsh). It provides a variety of themes, plugins, and features that can make it easier to use zsh and add additional functionality to your terminal.
+
+To use Oh My Zsh, you'll need to install it on your system. You can do this by following the instructions on the Oh My Zsh [GitHub page](https://github.com/ohmyzsh/ohmyzsh).
+
+Once you have Oh My Zsh installed, you can start using it by launching a terminal window and entering "zsh" at the command prompt. This will launch the zsh shell with Oh My Zsh configured, and you'll see a variety of additional features and options available to you.
+
+You can customize Oh My Zsh by modifying the configuration file located at "~/.zshrc" and selecting different themes or plugins to use. There are many themes and plugins available, so you can choose the ones that best suit your needs and preferences.
+
 ## Chapter Three: Your first day as a pirate
+
+We are going to get a little bit hands on here. We are going to create a new project and we are going to create a new file. We are going to call this file `index.html`. We are going to open this file in our text editor. We are going to add some HTML to this file. We are going to save this file. We are going to open this file in our browser. We are going to see the result of our work. We are going to be very happy. We are going to celebrate. We are going to go to the pub. We are going to have a drink. We are going to have a good time. We are going to be pirates.
+
+Just kidding. Although that is a great way to start, we should do a little bit more than that.
+
+1   **Setting Sail:** It be time to set sail! In the terminal, try using the `ls` command to list the files and directories in the current directory, and the `cd` command to navigate to different directories. Can ye find yer way to the ship's hold?
+
+2   **Finding Yer Way Home:** After a long voyage, it be nice to have a place to call home. In the terminal, try using the `echo` command to print out yer home directory, and the `cd` command to navigate to it. Can ye find a way to create a new directory and move a file into it?
+
+3   **Managing Yer Crew:** A good captain be able to manage their crew and keep track of who be on board. In the terminal, try using the `whoami` command to see what user ye be logged in as, and the `groups` command to see what groups ye be a member of. Can ye find out who else be on board the ship?
+
+4   **Navigating the Seas:** No voyage be complete without a good map! In the terminal, try using the `man` command to read the documentation for different commands and learn how to use them. Can ye find out how to use the `grep` command to search for a specific word in a file?
+
+5   **Arranging Yer Crew:** A captain be nothing without a well-organized crew. In the terminal, try using the `sort` command to sort a list of names, and the `uniq` command to remove duplicates. Can ye find a way to count the number of unique names in the list?
+
+6   **Setting Up Anchor:** When it be time to rest, ye need to know how to set anchor. In the terminal, try using the `touch` command to create a new file, and the `rm` command to delete a file. Can ye find a way to rename a file?
+
+7   **Sending Messages in a Bottle:** When ye be out at sea, ye need to find ways to communicate with the rest of the world. In the terminal, try using the `mail` command to send a message to yerself or another user on the ship. Can ye find out how to attach a file to the message?
+
+8   **Finding Yer Way Around the Ship:** The first thing ye need to do is get yer bearings and learn how to navigate around the ship. In the terminal, try using the `pwd` command to see what directory ye be in, and the `ls` command to see what files and directories be in that directory. Can ye find yer way to the main deck?
+
+9   **Raising the Anchor:** When it be time to set sail again, ye need to know how to raise anchor. In the terminal, try using the `chmod` command to change the permissions on a file or directory, and the `chown` command to change the owner of a file or directory. Can ye find a way to change the group ownership of a file or directory?
+
+10   **Sending Signals:** When ye need to get someone's attention, ye need to know how to send a signal. In the terminal, try using the `kill` command to send a signal to a running process, and the `ps` command to list the processes running on the ship. Can ye find a way to stop a process from running?
 
 ## Chapter Four: Navigating the seas of the internet
 
