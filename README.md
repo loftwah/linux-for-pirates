@@ -242,16 +242,6 @@ In simpler terms, ye can think of the internet as a vast ocean of data and infor
 
 So hoist the mainsail and set course for the internet! With the internet at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
 
-### TCP/IP
-
-TCP/IP be a suite of networking protocols that be used to connect devices on the internet. It be the foundation of the internet, and it be what allow devices to communicate with each other and exchange data over the network.
-
-TCP (Transmission Control Protocol) be a protocol that be used to establish and maintain connections between devices on the network. It be responsible for dividing data into smaller packets and sending them over the network, and it be also responsible for ensuring that the packets be delivered to the destination reliably.
-
-IP (Internet Protocol) be a protocol that be used to route packets of data between devices on the network. It be responsible for assigning unique addresses to devices on the network and routing packets to the correct destination based on these addresses.
-
-Together, TCP and IP be the backbone of the internet, and they be what allow devices to communicate and exchange data with each other. So hoist the mainsail and set course for TCP/IP mastery! With a solid understanding of these protocols, ye'll be well on yer way to becoming a skilled network administrator. Arrrr!
-
 ### HTTP
 
 HTTP, or Hypertext Transfer Protocol, is a protocol for transmitting data on the internet. It is the foundation of the World Wide Web, and is used to transfer data from a server to a client, or vice versa.
@@ -259,6 +249,26 @@ HTTP, or Hypertext Transfer Protocol, is a protocol for transmitting data on the
 In a pirate theme, you could think of HTTP as the system that allows pirates to send and receive messages and information as they sail the seas of the internet. Just like a pirate ship uses a flag to communicate with other ships, a website uses HTTP to communicate with a client's web browser. When you enter a website's address into your browser, your browser sends an HTTP request to the server hosting the website. The server then responds with an HTTP response, which includes the content of the website.
 
 HTTP is just one of many protocols that make the internet work, but it is an important one because it allows us to access and interact with websites and other online resources. Arrr!
+
+### HTTPS
+
+HTTPS (Hypertext Transfer Protocol Secure) can be thought of as a way to secure communication between two parties. HTTPS is a protocol that is used to transmit data over the internet, and it is designed to provide an additional layer of security on top of the regular HTTP protocol.
+
+Imagine that two pirates are trying to send messages to each other over the internet, but they are worried that their messages might be intercepted by other pirates or other parties. To secure their communication, they could use HTTPS. When they use HTTPS, their messages are encrypted, which means that they are transformed into a code that can only be deciphered by the intended recipient. This makes it much harder for anyone else to intercept and read the messages, as they would need to have the key to decrypt the code.
+
+In addition to encryption, HTTPS also provides authentication, which means that it can verify the identity of the sender and the recipient. This helps to prevent man-in-the-middle attacks, where a third party tries to intercept and manipulate the communication between two parties.
+
+Overall, HTTPS is a useful tool for pirates (or anyone else) who want to keep their communication private and secure. It can help protect against interception and tampering, and it can also provide reassurance that the messages are actually coming from the intended sender.
+
+### IP Addresses
+
+An IP address (Internet Protocol address) can be thought of as a unique identifier that is assigned to each device that is connected to the internet. It is a numerical label that is used to identify a specific device, and it is similar to a physical address or a phone number.
+
+Imagine that a group of pirates are all connected to the same network, and they want to communicate with each other over the internet. In order to send messages to a specific pirate, they need to know the pirate's IP address. Just like how a physical address tells you where a house is located, an IP address tells you where a device is located on the internet.
+
+IP addresses are usually assigned by internet service providers (ISPs) or network administrators, and they can be either static (meaning they never change) or dynamic (meaning they are assigned temporarily and can change over time).
+
+In a pirate theme, you might imagine that each pirate has a unique IP address that they use to communicate with other pirates over the internet. They might also use IP addresses to access websites and other online resources, just like how people use IP addresses in the real world.
 
 ### JSON
 
@@ -291,6 +301,32 @@ In software engineering, streaming refers to the process of continuously transmi
 Streaming is commonly used for media, such as music and video, but it can also be used for other types of data, such as financial data or social media updates. It allows users to access and process large amounts of data in real-time, rather than having to wait for it to be transferred and stored locally.
 
 Streaming can be implemented using a variety of technologies and protocols, such as HTTP streaming, WebSockets, and WebRTC. It is an important part of modern software engineering, and is a valuable tool for pirates as they navigate the choppy waters of the internet. Arrr!
+
+### Subnet
+
+A subnet (short for "subnetwork") can be thought of as a smaller network that is contained within a larger network. It is a way to divide a larger network into smaller, more manageable parts.
+
+Imagine that a group of pirates have set up a network to communicate with each other over the internet. The network might be very large, with many different pirates and devices connected to it. To make it easier to manage and organize the network, the pirates might decide to create subnets.
+
+For example, they might create a subnet for pirates who are located in the same geographical area, or they might create a subnet for pirates who are working on the same project. This would allow them to easily communicate with each other and share resources, while also keeping their communication separate from other parts of the network.
+
+In a real-world context, subnets are often used to improve the efficiency of networks by reducing the amount of traffic that needs to be routed between different parts of the network. They can also be used to improve security by isolating different parts of the network from each other.
+
+### TCP/IP
+
+TCP/IP be a suite of networking protocols that be used to connect devices on the internet. It be the foundation of the internet, and it be what allow devices to communicate with each other and exchange data over the network.
+
+TCP (Transmission Control Protocol) be a protocol that be used to establish and maintain connections between devices on the network. It be responsible for dividing data into smaller packets and sending them over the network, and it be also responsible for ensuring that the packets be delivered to the destination reliably.
+
+IP (Internet Protocol) be a protocol that be used to route packets of data between devices on the network. It be responsible for assigning unique addresses to devices on the network and routing packets to the correct destination based on these addresses.
+
+Together, TCP and IP be the backbone of the internet, and they be what allow devices to communicate and exchange data with each other. So hoist the mainsail and set course for TCP/IP mastery! With a solid understanding of these protocols, ye'll be well on yer way to becoming a skilled network administrator. Arrrr!
+
+### UDP
+
+UDP stands for User Datagram Protocol. It is a communication protocol that is used to transmit data over networks, such as the internet. It is a connectionless protocol, which means that it does not establish a dedicated connection between the sender and receiver before transmitting data. This makes UDP faster and more efficient than protocols that require a connection to be established, but it also means that data transmitted using UDP is less reliable, as there is no guarantee that the data will be received by the intended recipient.
+
+In a pirate theme, you might imagine UDP as a way for pirates to send messages to each other without having to go through the trouble of setting up a formal communication channel. They could simply send a message using UDP and hope that it gets to the intended recipient, much like a pirate sending a message in a bottle and hoping it reaches its destination.
 
 ### YAML (Yet Another Markup Language)
 
