@@ -8,41 +8,49 @@ By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loft
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-- [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
-  - [Backend](#backend)
-  - [Cloud computing](#cloud-computing)
-  - [DevOps](#devops)
-  - [Frontend](#frontend)
-  - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-  - [Network Engineering](#network-engineering)
-- [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Networking](#networking)
-  - [cURL](#curl)
-  - [Vim](#vim)
-  - [The Internet](#the-internet)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [IP Addresses](#ip-addresses)
-  - [JSON](#json)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [SSH](#ssh)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-- [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+  - [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
+    - [Backend](#backend)
+    - [Cloud computing](#cloud-computing)
+    - [Cybersecurity](#cybersecurity)
+    - [Data science](#data-science)
+    - [Database](#database)
+    - [DevOps](#devops)
+    - [DevRel](#devrel)
+    - [Frontend](#frontend)
+    - [Network Engineering](#network-engineering)
+    - [Product](#product)
+    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+    - [Support](#support)
+    - [Testing](#testing)
+  - [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Networking](#networking)
+    - [cURL](#curl)
+    - [Vim](#vim)
+    - [The Internet](#the-internet)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [IP Addresses](#ip-addresses)
+    - [JSON](#json)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [SSH](#ssh)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -156,7 +164,7 @@ Managing infrastructure: Backend developers might be responsible for maintaining
 
 Collaborating with frontend developers: Backend developers often work closely with frontend developers to ensure that the backend systems and infrastructure support the needs of the user-facing part of the site or application.
 
-In a pirate theme, you might imagine that backend developers are responsible for creating and maintaining the systems that power your network. They might work on tasks such as developing and maintaining server-side software, designing and implementing APIs, and managing infrastructure, all of which are important for keeping your network running smoothly and efficiently.
+You might imagine that backend developers are responsible for creating and maintaining the systems that power your network. They might work on tasks such as developing and maintaining server-side software, designing and implementing APIs, and managing infrastructure, all of which are important for keeping your network running smoothly and efficiently.
 
 ### Cloud computing
 
@@ -174,6 +182,48 @@ Look for internships or entry-level positions: If ye be just startin' out in yer
 
 I hope this advice be helpful, matey! If ye have any other questions, don't hesitate to ask someone in the community, but please be respectful and patient. Arrr!
 
+### Cybersecurity
+
+A cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. Cybersecurity analysts often work on tasks such as:
+
+Analyzing and monitoring network security: Cybersecurity analysts might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+
+Responding to security incidents: Cybersecurity analysts might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+
+Implementing security controls: Cybersecurity analysts might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+
+Collaborating with other teams: Cybersecurity analysts might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+### Data science
+
+A data scientist is responsible for analyzing and interpreting the data that is used on your network. Data scientists often work on tasks such as:
+
+Analyzing and interpreting data: Data scientists might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
+
+Developing models and algorithms: Data scientists might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
+
+Communicating findings and insights: Data scientists might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
+
+Collaborating with other teams: Data scientists might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
+
+You might imagine that a data scientist is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
+
+### Database
+
+A DBA (Database Administrator) is responsible for managing and maintaining the databases that are used on your network. DBAs often work on tasks such as:
+
+Designing and implementing databases: DBAs might design and implement databases to store and organize data in an efficient and secure manner.
+
+Maintaining and optimizing databases: DBAs might be responsible for maintaining and optimizing the performance of databases, including tasks such as backups, recovery, and performance tuning.
+
+Ensuring data integrity: DBAs might work to ensure the integrity and accuracy of the data in the databases, and to prevent data loss or corruption.
+
+Collaborating with other teams: DBAs might work closely with other teams such as development, QA, and IT to ensure that the databases meet the needs and requirements of the organization.
+
+You might imagine that a DBA is responsible for managing and maintaining the databases that are used on your network. They play a crucial role in ensuring that the databases are efficient, secure, and accurate, and in supporting the needs and requirements of the organization.
+
 ### DevOps
 
 Ahoy mateys! If ye be lookin' to set sail on the DevOps sea, here be some steps ye can take to get started:
@@ -190,6 +240,20 @@ Monitor and measure performance: To continuously improve yer processes, ye need 
 
 So, hoist the mainsail and set course for DevOps success! With these steps, ye'll be well on yer way to implementing DevOps in yer organization and improving the efficiency and effectiveness of yer software development and delivery processes.
 
+### DevRel
+
+Developer relations can be thought of as the way in which a company or organization engages with and supports developers who use its products or services. Developer relations professionals often work on tasks such as:
+
+Building and maintaining relationships with developers: Developer relations professionals might work to build and maintain relationships with developers who use their company's products or services. This might include activities such as hosting events, providing technical support, and communicating with developers through online channels.
+
+Gathering and analyzing developer feedback: Developer relations professionals might gather feedback from developers about the company's products or services, and use this feedback to inform product development and strategy.
+
+Promoting the company's products or services to developers: Developer relations professionals might work to promote the company's products or services to developers, through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
+
+Collaborating with other teams: Developer relations professionals might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
+
+You might imagine that developer relations is a way for a company or organization to engage with and support developers who use its products or services. Developer relations professionals play a crucial role in building and maintaining relationships with developers, gathering and analyzing feedback, promoting the company's products or services, and collaborating with other teams to ensure that the needs and expectations
+
 ### Frontend
 
 Frontend developers are responsible for designing and building the user interface of your network. Frontend developers typically work on the "frontend" of a website or application, which refers to the user-facing part of the site or application that users interact with.
@@ -202,21 +266,7 @@ Ensuring user experience: Frontend developers might work to ensure that the user
 
 Collaborating with backend developers: Frontend developers often work closely with backend developers to ensure that the user interface is supported by the backend systems and infrastructure.
 
-In a pirate theme, you might imagine that frontend developers are responsible for designing and building the user interface of your network. They might work on tasks such as creating wireframes, prototypes, and visual designs, and implementing them using HTML, CSS, and JavaScript. Frontend developers are an important part of the development team, as they help to create the user experience that users have when interacting with your network.
-
-### Software Development Engineer (SDE)
-
-Ahoy mateys! If ye be lookin' to set sail on the software development sea, here be some steps ye can take to get started:
-
-Learn the fundamentals: The first step to becoming a software development engineer be to learn the fundamentals of computer science and programming. This might include topics like algorithms, data structures, and programming languages like Java or Python.
-
-Build up yer skills: Once ye have a solid foundation in the basics, ye can start building up yer skills in specific areas of software development. This could include web development, mobile app development, or machine learning, depending on yer interests and goals.
-
-Get some experience: In addition to learning and building up yer skills, it be important to get some hands-on experience in software development. This could involve working on personal projects, participating in hackathons, or interning at a software development company.
-
-Network with other developers: As ye be building up yer skills and experience, it be important to network with other software development professionals. This can help ye learn from others, find job opportunities, and stay up-to-date on the latest trends and technologies in the field.
-
-Keep learning and improving: The field of software development be constantly evolving, so it be important to stay up-to-date on the latest trends and technologies. This might involve taking online courses, attending meetups or conferences, or simply staying active on forums and social media groups related to software development.
+You might imagine that frontend developers are responsible for designing and building the user interface of your network. They might work on tasks such as creating wireframes, prototypes, and visual designs, and implementing them using HTML, CSS, and JavaScript. Frontend developers are an important part of the development team, as they help to create the user experience that users have when interacting with your network.
 
 ### Network Engineering
 
@@ -233,6 +283,62 @@ Network with other engineers: As ye be building up yer skills and experience, it
 Keep learning and improving: The field of networking be constantly evolving, so it be important to stay up-to-date on the latest trends and technologies. This might involve taking online courses, attending meetups or conferences, or simply staying active on forums and social media groups related to networking.
 
 So hoist the mainsail and set the course for networking success! With these steps, ye'll be well on yer way to becoming a skilled and in-demand network engineer. Arrrr!
+
+### Product
+
+A product engineer is responsible for designing, developing, and maintaining the products that are used on your network. Product engineers often work on tasks such as:
+
+Defining and implementing product features: Product engineers might work with stakeholders to understand the needs and requirements of users, and then design and implement features that meet those needs.
+
+Building and maintaining product infrastructure: Product engineers might be responsible for designing and building the systems and infrastructure that support the product, including servers, databases, and APIs.
+
+Collaborating with other teams: Product engineers often work closely with other teams such as design, development, and QA to ensure that the product is delivered on time and meets the desired quality standards.
+
+Analyzing and improving product performance: Product engineers might analyze data and user feedback to identify areas for improvement, and then work to optimize the product's performance and usability.
+
+You might imagine that a product engineer is responsible for designing and developing the products that are used on your network. They play a crucial role in ensuring that the products meet the needs of users and are delivered on time and to the desired quality standards.
+
+### Software Development Engineer (SDE)
+
+Ahoy mateys! If ye be lookin' to set sail on the software development sea, here be some steps ye can take to get started:
+
+Learn the fundamentals: The first step to becoming a software development engineer be to learn the fundamentals of computer science and programming. This might include topics like algorithms, data structures, and programming languages like Java or Python.
+
+Build up yer skills: Once ye have a solid foundation in the basics, ye can start building up yer skills in specific areas of software development. This could include web development, mobile app development, or machine learning, depending on yer interests and goals.
+
+Get some experience: In addition to learning and building up yer skills, it be important to get some hands-on experience in software development. This could involve working on personal projects, participating in hackathons, or interning at a software development company.
+
+Network with other developers: As ye be building up yer skills and experience, it be important to network with other software development professionals. This can help ye learn from others, find job opportunities, and stay up-to-date on the latest trends and technologies in the field.
+
+Keep learning and improving: The field of software development be constantly evolving, so it be important to stay up-to-date on the latest trends and technologies. This might involve taking online courses, attending meetups or conferences, or simply staying active on forums and social media groups related to software development.
+
+### Support
+
+Application support people are responsible for maintaining and troubleshooting the applications that are used on your network. Application support professionals often work on tasks such as:
+
+Responding to user issues and requests: This might include troubleshooting problems with applications, answering user questions, and providing technical support.
+
+Monitoring and maintaining applications: Application support professionals might monitor the performance and availability of applications, and perform tasks such as installing updates and patches.
+
+Collaborating with developers: Application support professionals often work closely with developers to understand the technical details of applications, and to identify and fix problems that arise.
+
+Documenting and communicating issues and solutions: Application support professionals might document issues and solutions in order to track and resolve problems more effectively. They might also communicate with users and other stakeholders about issues and resolutions.
+
+You might imagine that application support people are responsible for maintaining and troubleshooting the applications that are used on your network. They play a crucial role in ensuring that applications are running smoothly and efficiently, and they work closely with developers and users to identify and resolve problems.
+
+### Testing
+
+A software tester is responsible for ensuring the quality and reliability of the software that is used on your network. Software testers often work on tasks such as:
+
+Developing and executing test plans: Software testers might create detailed test plans that outline the steps and conditions needed to test the software. They might then execute these test plans to ensure that the software is working as intended.
+
+Identifying and documenting defects: Software testers might identify and document defects in the software, and then work with developers to resolve them.
+
+Collaborating with other teams: Software testers might work closely with other teams such as development, QA, and product management to understand the requirements and goals of the software, and to ensure that the software meets those requirements.
+
+Maintaining and improving testing processes: Software testers might work to improve and optimize the testing process, in order to ensure that the software is tested thoroughly and efficiently.
+
+You might imagine that a software tester is responsible for ensuring the quality and reliability of the software that is used on your network. They play a crucial role in identifying and resolving defects, and in ensuring that the software meets the needs and goals of users.
 
 ## Chapter Three - The Fundamentals
 
@@ -344,7 +450,7 @@ Network diagnosis: ICMP can be used to request information from other devices on
 
 Network discovery: ICMP can be used to send "ping" messages, which are used to determine if a device is reachable on the network. This can be useful for detecting network outages or for verifying network connectivity.
 
-In a pirate theme, you might imagine that ICMP is a useful tool for pirates to keep track of their network and diagnose problems. It allows them to communicate with other devices on the network and request information that can help them understand how the network is functioning.
+You might imagine that ICMP is a useful tool for pirates to keep track of their network and diagnose problems. It allows them to communicate with other devices on the network and request information that can help them understand how the network is functioning.
 
 ### IP Addresses
 
@@ -354,7 +460,7 @@ Imagine that a group of pirates are all connected to the same network, and they 
 
 IP addresses are usually assigned by internet service providers (ISPs) or network administrators, and they can be either static (meaning they never change) or dynamic (meaning they are assigned temporarily and can change over time).
 
-In a pirate theme, you might imagine that each pirate has a unique IP address that they use to communicate with other pirates over the internet. They might also use IP addresses to access websites and other online resources, just like how people use IP addresses in the real world.
+You might imagine that each pirate has a unique IP address that they use to communicate with other pirates over the internet. They might also use IP addresses to access websites and other online resources, just like how people use IP addresses in the real world.
 
 ### JSON
 
@@ -376,7 +482,7 @@ On a Linux system, logging is typically managed by a program called syslog. Sysl
 
 There are several different types of log messages that can be recorded on a Linux system, including system logs, application logs, and security logs. System logs contain information about the operating system and system-level events, such as system startup and shutdown, kernel messages, and system errors. Application logs contain information about specific applications and their activities, such as user actions and error messages. Security logs contain information about security-related events, such as failed login attempts and system access.
 
-In a pirate theme, logging can be a useful tool for pirates to monitor their network and keep track of what is happening on their systems. It can help them identify problems, track changes, and detect security breaches, all of which are important for keeping their network running smoothly and securely.
+Logging can be a useful tool for pirates to monitor their network and keep track of what is happening on their systems. It can help them identify problems, track changes, and detect security breaches, all of which are important for keeping their network running smoothly and securely.
 
 ### Monitoring
 
@@ -390,7 +496,7 @@ System utilities: Pirates can use system utilities such as top, ps, and free to 
 
 Network monitoring: Pirates can use tools such as netstat and tcpdump to monitor the network traffic on their system. These tools can provide information about the packets that are being transmitted and received, as well as the status of network connections.
 
-In a pirate theme, monitoring can be a useful tool for pirates to keep their systems running smoothly and securely. It allows them to identify problems, optimize performance, and detect security breaches, all of which are important for maintaining a healthy and efficient network.
+Monitoring can be a useful tool for pirates to keep their systems running smoothly and securely. It allows them to identify problems, optimize performance, and detect security breaches, all of which are important for maintaining a healthy and efficient network.
 
 ### SSH
 
@@ -430,7 +536,7 @@ Imagine that a group of pirates are using subnets to divide their network into s
 
 For example, if the subnet mask is "255.255.255.0", it means that the first three octets (groups of 8 bits) of the IP address represent the network portion, while the last octet represents the host portion. Using this information, the pirates can determine which devices are part of the same subnet and can communicate with each other directly, without having to go through a router.
 
-In a real-world context, subnet masks are used to divide networks into smaller, more manageable parts and to improve the efficiency of communication between devices on a network. They are an important part of the IP addressing system, and they are used in many different types of networks, including pirate networks.
+In the real-world, subnet masks are used to divide networks into smaller, more manageable parts and to improve the efficiency of communication between devices on a network. They are an important part of the IP addressing system, and they are used in many different types of networks, including pirate networks.
 
 ### How to calculate a subnet mask
 
@@ -458,7 +564,7 @@ Together, TCP and IP be the backbone of the internet, and they be what allow dev
 
 UDP stands for User Datagram Protocol. It is a communication protocol that is used to transmit data over networks, such as the internet. It is a connectionless protocol, which means that it does not establish a dedicated connection between the sender and receiver before transmitting data. This makes UDP faster and more efficient than protocols that require a connection to be established, but it also means that data transmitted using UDP is less reliable, as there is no guarantee that the data will be received by the intended recipient.
 
-In a pirate theme, you might imagine UDP as a way for pirates to send messages to each other without having to go through the trouble of setting up a formal communication channel. They could simply send a message using UDP and hope that it gets to the intended recipient, much like a pirate sending a message in a bottle and hoping it reaches its destination.
+You might imagine UDP as a way for pirates to send messages to each other without having to go through the trouble of setting up a formal communication channel. They could simply send a message using UDP and hope that it gets to the intended recipient, much like a pirate sending a message in a bottle and hoping it reaches its destination.
 
 ### YAML (Yet Another Markup Language)
 
