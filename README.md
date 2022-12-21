@@ -306,6 +306,20 @@ There are several different types of log messages that can be recorded on a Linu
 
 In a pirate theme, logging can be a useful tool for pirates to monitor their network and keep track of what is happening on their systems. It can help them identify problems, track changes, and detect security breaches, all of which are important for keeping their network running smoothly and securely.
 
+### Monitoring
+
+Monitoring on a Linux system can be thought of as a way for pirates to keep track of the performance and status of their systems. Monitoring is the process of collecting and analyzing data about a system's resources and activities, and it is a useful tool for identifying problems, optimizing performance, and detecting security breaches.
+
+There are many different tools and techniques that can be used to monitor a Linux system, including:
+
+System logs: Pirates can use system logs to keep track of events and activities that occur on their system. System logs contain information about the operating system, applications, and network devices, and they can be used to identify problems, track changes, and detect security breaches.
+
+System utilities: Pirates can use system utilities such as top, ps, and free to monitor the performance of their system in real-time. These utilities can provide information about the CPU, memory, and disk usage of their system, as well as the processes that are running.
+
+Network monitoring: Pirates can use tools such as netstat and tcpdump to monitor the network traffic on their system. These tools can provide information about the packets that are being transmitted and received, as well as the status of network connections.
+
+In a pirate theme, monitoring can be a useful tool for pirates to keep their systems running smoothly and securely. It allows them to identify problems, optimize performance, and detect security breaches, all of which are important for maintaining a healthy and efficient network.
+
 ### SSH
 
 Secure Shell (SSH) is a secret code that allows pirates to remotely control their ships and protect their communications from prying eyes.
