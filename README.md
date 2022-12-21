@@ -8,66 +8,67 @@ By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loft
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-- [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
-  - [Backend](#backend)
-  - [Cloud computing](#cloud-computing)
-  - [Cybersecurity](#cybersecurity)
-  - [Data science](#data-science)
-  - [Database](#database)
-  - [DevOps](#devops)
-  - [DevRel](#devrel)
-  - [Frontend](#frontend)
-  - [Network Engineering](#network-engineering)
-  - [Product](#product)
-  - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-  - [Support](#support)
-  - [Testing](#testing)
-- [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [Docker](#docker)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-  - [SSL Certificates](#ssl-certificates)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-- [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+      - [Data science](#data-science)
+      - [Database](#database)
+      - [DevOps](#devops)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Docker](#docker)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+    - [SSL Certificates](#ssl-certificates)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -153,7 +154,7 @@ Install additional software: Ubuntu comes with a large repository o' free and op
 
 Overall, the best way to get started with Ubuntu be to explore and try out different features and applications. As ye become more comfortable with the operating system, ye can start learnin' more advanced topics and customizin' yer system to yer likin'.
 
-## Chapter Two - Where to go from here?
+### Where to go from here?
 
 Aye, matey! If ye be interested in pursuin' a career in the field o' Linux, there be several steps ye can take to get started:
 
@@ -167,7 +168,7 @@ Network and build relationships: Networkin' and building relationships with othe
 
 Look for entry-level positions: If ye be just startin' out in yer Linux career, it might be helpful to look for entry-level positions that can provide ye with the opportunity to gain hands-on experience and build up yer skills. These might include internships, junior-level system administrator positions, or entry-level software development roles. As ye gain experience, ye can then look for more advanced positions that align with yer career goals.
 
-### Backend
+#### Backend
 
 Backend developers are responsible for creating and maintaining the systems and infrastructure that power your network. Backend developers typically work on the "backend" of a website or application, which refers to the servers, databases, and other systems that support the frontend (the user-facing part of the site or application).
 
@@ -183,7 +184,7 @@ Collaborating with frontend developers: Backend developers often work closely wi
 
 You might imagine that backend developers are responsible for creating and maintaining the systems that power your network. They might work on tasks such as developing and maintaining server-side software, designing and implementing APIs, and managing infrastructure, all of which are important for keeping your network running smoothly and efficiently.
 
-### Cloud computing
+#### Cloud computing
 
 Ahoy there, me matey! If ye be a student interested in gettin' started with cloud computing, here be a few steps ye can take to gain a solid foundation in this field:
 
@@ -199,7 +200,7 @@ Look for internships or entry-level positions: If ye be just startin' out in yer
 
 I hope this advice be helpful, matey! If ye have any other questions, don't hesitate to ask someone in the community, but please be respectful and patient. Arrr!
 
-### Cybersecurity
+#### Cybersecurity
 
 A cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. Cybersecurity analysts often work on tasks such as:
 
@@ -213,7 +214,7 @@ Collaborating with other teams: Cybersecurity analysts might work closely with o
 
 You might imagine that a cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
 
-### Data science
+#### Data science
 
 A data scientist is responsible for analyzing and interpreting the data that is used on your network. Data scientists often work on tasks such as:
 
@@ -227,7 +228,7 @@ Collaborating with other teams: Data scientists might work closely with other te
 
 You might imagine that a data scientist is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
 
-### Database
+#### Database
 
 A DBA (Database Administrator) is responsible for managing and maintaining the databases that are used on your network. DBAs often work on tasks such as:
 
@@ -241,7 +242,7 @@ Collaborating with other teams: DBAs might work closely with other teams such as
 
 You might imagine that a DBA is responsible for managing and maintaining the databases that are used on your network. They play a crucial role in ensuring that the databases are efficient, secure, and accurate, and in supporting the needs and requirements of the organization.
 
-### DevOps
+#### DevOps
 
 Ahoy mateys! If ye be lookin' to set sail on the DevOps sea, here be some steps ye can take to get started:
 
@@ -257,7 +258,7 @@ Monitor and measure performance: To continuously improve yer processes, ye need 
 
 So, hoist the mainsail and set course for DevOps success! With these steps, ye'll be well on yer way to implementing DevOps in yer organization and improving the efficiency and effectiveness of yer software development and delivery processes.
 
-### DevRel
+#### DevRel
 
 Developer relations can be thought of as the way in which a company or organization engages with and supports developers who use its products or services. Developer relations professionals often work on tasks such as:
 
@@ -271,7 +272,7 @@ Collaborating with other teams: Developer relations professionals might work clo
 
 You might imagine that developer relations is a way for a company or organization to engage with and support developers who use its products or services. Developer relations professionals play a crucial role in building and maintaining relationships with developers, gathering and analyzing feedback, promoting the company's products or services, and collaborating with other teams to ensure that the needs and expectations
 
-### Frontend
+#### Frontend
 
 Frontend developers are responsible for designing and building the user interface of your network. Frontend developers typically work on the "frontend" of a website or application, which refers to the user-facing part of the site or application that users interact with.
 
@@ -285,7 +286,7 @@ Collaborating with backend developers: Frontend developers often work closely wi
 
 You might imagine that frontend developers are responsible for designing and building the user interface of your network. They might work on tasks such as creating wireframes, prototypes, and visual designs, and implementing them using HTML, CSS, and JavaScript. Frontend developers are an important part of the development team, as they help to create the user experience that users have when interacting with your network.
 
-### Network Engineering
+#### Network Engineering
 
 Ahoy mateys! If ye be lookin' to set sail on the networking sea, here be some steps ye can take to get started:
 
@@ -301,7 +302,7 @@ Keep learning and improving: The field of networking be constantly evolving, so 
 
 So hoist the mainsail and set the course for networking success! With these steps, ye'll be well on yer way to becoming a skilled and in-demand network engineer. Arrrr!
 
-### Product
+#### Product
 
 A product engineer is responsible for designing, developing, and maintaining the products that are used on your network. Product engineers often work on tasks such as:
 
@@ -315,7 +316,7 @@ Analyzing and improving product performance: Product engineers might analyze dat
 
 You might imagine that a product engineer is responsible for designing and developing the products that are used on your network. They play a crucial role in ensuring that the products meet the needs of users and are delivered on time and to the desired quality standards.
 
-### Software Development Engineer (SDE)
+#### Software Development Engineer (SDE)
 
 Ahoy mateys! If ye be lookin' to set sail on the software development sea, here be some steps ye can take to get started:
 
@@ -329,7 +330,7 @@ Network with other developers: As ye be building up yer skills and experience, i
 
 Keep learning and improving: The field of software development be constantly evolving, so it be important to stay up-to-date on the latest trends and technologies. This might involve taking online courses, attending meetups or conferences, or simply staying active on forums and social media groups related to software development.
 
-### Support
+#### Support
 
 Application support people are responsible for maintaining and troubleshooting the applications that are used on your network. Application support professionals often work on tasks such as:
 
@@ -343,7 +344,7 @@ Documenting and communicating issues and solutions: Application support professi
 
 You might imagine that application support people are responsible for maintaining and troubleshooting the applications that are used on your network. They play a crucial role in ensuring that applications are running smoothly and efficiently, and they work closely with developers and users to identify and resolve problems.
 
-### Testing
+#### Testing
 
 A software tester is responsible for ensuring the quality and reliability of the software that is used on your network. Software testers often work on tasks such as:
 
@@ -357,7 +358,7 @@ Maintaining and improving testing processes: Software testers might work to impr
 
 You might imagine that a software tester is responsible for ensuring the quality and reliability of the software that is used on your network. They play a crucial role in identifying and resolving defects, and in ensuring that the software meets the needs and goals of users.
 
-## Chapter Three - The Fundamentals
+## Chapter Two - The Fundamentals
 
 Ahoy mateys! If ye be lookin' to set sail on the Linux sea, here be some things ye'll need to know:
 
