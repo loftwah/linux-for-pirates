@@ -8,39 +8,42 @@ By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loft
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-- [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
-  - [Cloud computing](#cloud-computing)
-  - [DevOps](#devops)
-  - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-  - [Network Engineering](#network-engineering)
-- [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Networking](#networking)
-  - [cURL](#curl)
-  - [Vim](#vim)
-  - [The Internet](#the-internet)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [IP Addresses](#ip-addresses)
-  - [JSON](#json)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [SSH](#ssh)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-- [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+  - [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
+    - [Backend](#backend)
+    - [Cloud computing](#cloud-computing)
+    - [DevOps](#devops)
+    - [Frontend](#frontend)
+    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+    - [Network Engineering](#network-engineering)
+  - [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Networking](#networking)
+    - [cURL](#curl)
+    - [Vim](#vim)
+    - [The Internet](#the-internet)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [IP Addresses](#ip-addresses)
+    - [JSON](#json)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [SSH](#ssh)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -140,6 +143,22 @@ Network and build relationships: Networkin' and building relationships with othe
 
 Look for entry-level positions: If ye be just startin' out in yer Linux career, it might be helpful to look for entry-level positions that can provide ye with the opportunity to gain hands-on experience and build up yer skills. These might include internships, junior-level system administrator positions, or entry-level software development roles. As ye gain experience, ye can then look for more advanced positions that align with yer career goals.
 
+### Backend
+
+Backend developers are responsible for creating and maintaining the systems and infrastructure that power your network. Backend developers typically work on the "backend" of a website or application, which refers to the servers, databases, and other systems that support the frontend (the user-facing part of the site or application).
+
+Backend developers often work on tasks such as:
+
+Developing and maintaining server-side software: This might include creating and managing databases, implementing server-side logic and business logic, and integrating with third-party systems.
+
+Designing and implementing APIs: Backend developers might create APIs (Application Programming Interfaces) that allow different systems and applications to communicate with each other.
+
+Managing infrastructure: Backend developers might be responsible for maintaining and scaling the servers, databases, and other infrastructure that support a website or application.
+
+Collaborating with frontend developers: Backend developers often work closely with frontend developers to ensure that the backend systems and infrastructure support the needs of the user-facing part of the site or application.
+
+In a pirate theme, you might imagine that backend developers are responsible for creating and maintaining the systems that power your network. They might work on tasks such as developing and maintaining server-side software, designing and implementing APIs, and managing infrastructure, all of which are important for keeping your network running smoothly and efficiently.
+
 ### Cloud computing
 
 Ahoy there, me matey! If ye be a student interested in gettin' started with cloud computing, here be a few steps ye can take to gain a solid foundation in this field:
@@ -171,6 +190,20 @@ Collaborate with yer team: DevOps be about collaboration, so it be essential to 
 Monitor and measure performance: To continuously improve yer processes, ye need to be able to monitor and measure their performance. Use tools like monitoring and log analysis platforms to track the performance of yer processes and identify areas for improvement.
 
 So, hoist the mainsail and set course for DevOps success! With these steps, ye'll be well on yer way to implementing DevOps in yer organization and improving the efficiency and effectiveness of yer software development and delivery processes.
+
+### Frontend
+
+Frontend developers are responsible for designing and building the user interface of your network. Frontend developers typically work on the "frontend" of a website or application, which refers to the user-facing part of the site or application that users interact with.
+
+Frontend developers often work on tasks such as:
+
+Designing and building user interfaces: This might include creating wireframes, prototypes, and visual designs for websites and applications, and implementing them using HTML, CSS, and JavaScript.
+
+Ensuring user experience: Frontend developers might work to ensure that the user interface of a site or application is intuitive, responsive, and accessible for users.
+
+Collaborating with backend developers: Frontend developers often work closely with backend developers to ensure that the user interface is supported by the backend systems and infrastructure.
+
+In a pirate theme, you might imagine that frontend developers are responsible for designing and building the user interface of your network. They might work on tasks such as creating wireframes, prototypes, and visual designs, and implementing them using HTML, CSS, and JavaScript. Frontend developers are an important part of the development team, as they help to create the user experience that users have when interacting with your network.
 
 ### Software Development Engineer (SDE)
 
