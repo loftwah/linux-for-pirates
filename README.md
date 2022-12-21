@@ -1,3 +1,9 @@
+# Linux for Pirates!
+
+![Linux for Pirates!](linux-for-pirates.jpg)
+
+By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -38,12 +44,6 @@
   - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Linux for Pirates!
-
-![Linux for Pirates!](linux-for-pirates.jpg)
-
-By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
 
 ## In memory of Aaron Swartz
 
