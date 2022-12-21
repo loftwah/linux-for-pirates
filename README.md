@@ -8,55 +8,73 @@ By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loft
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-- [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
-  - [Backend](#backend)
-  - [Cloud computing](#cloud-computing)
-  - [Cybersecurity](#cybersecurity)
-  - [Data science](#data-science)
-  - [Database](#database)
-  - [DevOps](#devops)
-  - [DevRel](#devrel)
-  - [Frontend](#frontend)
-  - [Network Engineering](#network-engineering)
-  - [Product](#product)
-  - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-  - [Support](#support)
-  - [Testing](#testing)
-- [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Networking](#networking)
-  - [cURL](#curl)
-  - [Vim](#vim)
-  - [The Internet](#the-internet)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [IP Addresses](#ip-addresses)
-  - [JSON](#json)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-- [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+  - [Chapter Two - Where to go from here?](#chapter-two---where-to-go-from-here)
+    - [Backend](#backend)
+    - [Cloud computing](#cloud-computing)
+    - [Cybersecurity](#cybersecurity)
+    - [Data science](#data-science)
+    - [Database](#database)
+    - [DevOps](#devops)
+    - [DevRel](#devrel)
+    - [Frontend](#frontend)
+    - [Network Engineering](#network-engineering)
+    - [Product](#product)
+    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+    - [Support](#support)
+    - [Testing](#testing)
+  - [Chapter Three - The Fundamentals](#chapter-three---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Docker](#docker)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+    - [SSL Certificates](#ssl-certificates)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## In memory of Aaron Swartz
 
-Aaron Swartz was a computer programmer, entrepreneur, and internet activist who made significant contributions to the development of the internet and the open access movement.
+[Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz) was a computer programmer, entrepreneur, and internet activist who made significant contributions to the development of the internet and the open access movement.
 
 Aaron was born in 1986, and became interested in computers and the internet at a young age. He was a brilliant and talented programmer, and was known for his ability to quickly grasp and master new technologies. He co-authored the RSS 1.0 specification at the age of 14, and went on to work on a variety of other projects, including the development of the Creative Commons license, the building of the first consumer web feed platform, and the creation of the social news site Reddit.
 
@@ -372,6 +390,54 @@ Customize yer system: Linux be highly customizable, and ye can tweak yer system 
 
 `rm`: This command be used to delete files and directories. Ye can use it to remove unwanted files from yer system.
 
+### Linux filesystem
+
+Ahoy matey! Welcome to the world of Linux filesystems, where we navigate through the vast ocean of data like pirates searching for buried treasure.
+
+In the Linux filesystem, everything is organized into a single tree structure, starting at the root directory represented by a forward slash (/). This root directory contains all the other directories and files on the system, and can be thought of as the base of the tree.
+
+Within the root directory, there are several subdirectories that serve important functions. For example, the "home" directory (/home) is where each user on the system has their own personal space to store their files and documents. The "etc" directory (/etc) contains configuration files for the system, while the "bin" directory (/bin) stores executable programs that are used by the system and its users.
+
+Just like on a pirate ship, each member of the crew has their own designated areas to store their belongings. Similarly, in the Linux filesystem, each user has their own home directory where they can store their files and personalize their environment.
+
+But be warned, matey! Just like how a pirate's treasure is guarded by treacherous traps and obstacles, the Linux filesystem also has its own set of permissions and ownership rules. Only certain users are allowed access to certain files and directories, and it's up to the system administrator (the captain of the ship) to set these permissions and make sure everything is running smoothly.
+
+So set sail and explore the seas of data, but always remember to respect the rules of the Linux filesystem and the hierarchies of ownership and access. Arrr!
+
+#### Filesystem examples
+
+Aye aye, matey! Here are some examples of common tasks that a pirate (or a Linux user) might encounter when using the Linux filesystem:
+
+Navigating the filesystem: Just like how a pirate navigates the open seas, a Linux user can navigate the filesystem using the `cd` command to change directories and the `ls` command to list the contents of a directory. For example, to navigate to the root directory, a pirate might type `cd /`, and to see a list of the files and directories within the current directory, they might type `ls`.
+
+Creating and deleting files and directories: A pirate might need to create a new file or directory to store their loot or maps. To do this, they can use the `touch` command to create a new file or the `mkdir` command to create a new directory. For example, to create a new file called `treasure_map.txt` within the current directory, a pirate might type `touch treasure_map.txt`. To delete a file or directory, they can use the `rm` command. For example, to delete the file `treasure_map.txt`, a pirate might type `rm treasure_map.txt`.
+
+Copying and moving files and directories: A pirate might need to copy or move a file or directory from one location to another, just like how they might need to move their treasure chest from one part of the ship to another. To copy a file or directory, a pirate can use the `cp` command, and to move a file or directory, they can use the `mv` command. For example, to copy the file `treasure_map.txt` from the current directory to the home directory, a pirate might type `cp treasure_map.txt /home`. To move the file `treasure_map.txt` from the current directory to the home directory, a pirate might type `mv treasure_map.txt /home`.
+
+Viewing and editing files: A pirate might need to view the contents of a file or edit it to update their treasure map. To view the contents of a file, a pirate can use the `cat` command, and to edit a file, they can use a text editor like `nano` or `vi`. For example, to view the contents of the file `treasure_map.txt`, a pirate might type `cat treasure_map.txt`, and to edit the file `treasure_map.txt` using the `nano` text editor, they might type `nano treasure_map.txt`.
+
+I hope these examples give you a better understanding of how the Linux filesystem works and how a pirate might use it to complete common tasks. Arrr!
+
+#### Permissions
+
+Ahoy matey! In the world of Linux, file permissions are like the rules and regulations that govern access to a pirate's treasure. Just like how a pirate might only allow certain members of their crew to access their treasure, in Linux, file permissions control who is allowed to read, write, and execute specific files and directories.
+
+Each file and directory in the Linux filesystem has an owner and a group associated with it. The owner is the user who created the file or directory, and the group is a collection of users that the owner can assign permissions to. File permissions can be set for the owner, the group, and everyone else (referred to as "others").
+
+There are three types of permissions that can be set for each file or directory: read (r), write (w), and execute (x). The read permission allows a user to view the contents of a file or list the contents of a directory. The write permission allows a user to modify or delete a file or add or remove files from a directory. The execute permission allows a user to execute a file as a program or to enter a directory and access its contents.
+
+File permissions can be displayed using the `ls -l` command, which shows a list of files and directories along with their permissions. For example, the output might look something like this:
+
+```bash
+drwxr-xr-x 2 pirate pirate 4096 Jan 1 00:00 treasure_chest
+```
+
+The first character (d) indicates that this is a directory. The next three characters (rwx) represent the permissions for the owner, the next three (r-x) represent the permissions for the group, and the final three (r-x) represent the permissions for others.
+
+To change the permissions of a file or directory, a pirate can use the `chmod` command. For example, to give the owner and the group read and write permissions for the file `treasure_map.txt`, but only read permission for others, a pirate might type `chmod 640 treasure_map.txt`.
+
+I hope this helps you understand how file permissions work in Linux and how a pirate might use them to control access to their treasures. Arrr!
+
 ### Networking
 
 `ip`: This command be used to configure network interfaces on yer system. Ye can use it to view information about yer network interfaces, set their IP addresses, and more.
@@ -383,6 +449,50 @@ Customize yer system: Linux be highly customizable, and ye can tweak yer system 
 `netstat`: This command be used to display information about yer system's network connections and routing tables. Ye can use it to view information about active connections and network routes.
 
 `route`: This command be used to view and modify the routing table on yer system. Ye can use it to add, delete, or modify routes on yer system.
+
+### Bash
+
+Ahoy matey! Bash, or the Bourne-Again Shell, is a command-line interpreter for Linux and other Unix-like operating systems. Just like how a pirate might use a compass to navigate through the open seas, Bash helps users navigate and interact with their operating system by allowing them to enter commands and execute programs.
+
+Bash is a powerful tool that allows users to perform a wide variety of tasks, including running programs, creating and editing files and directories, and managing system processes. It also provides features like command history, tab completion, and shell scripting, which allow users to automate tasks and customize their environment.
+
+To use Bash, a pirate would open a terminal window and type commands at the prompt. The prompt is a symbol that indicates that Bash is ready to accept commands, and it usually looks something like this:
+
+```bash
+pirate@cove:~$
+```
+
+The prompt includes the username (pirate), the hostname (cove), and the current working directory (indicated by the tilde character).
+
+Bash supports a wide variety of commands, including built-in commands like `ls` (list the contents of a directory) and `cd` (change the current working directory), as well as external programs like `grep` (search for patterns in text) and `awk` (process text).
+
+I hope this helps you understand what Bash is and how a pirate might use it to interact with their operating system. Arrr!
+
+### Cron
+
+[Crontab.guru](https://crontab.guru)
+
+Ahoy matey! In the world of Linux, cron is a powerful tool that allows pirates (and users) to schedule tasks to be automatically executed at a specific time or interval. This can be useful for tasks that need to be run regularly, such as backing up important documents or cleaning up temporary files.
+
+Cron uses a configuration file called the `crontab` to specify the tasks that it should execute. Each line in the crontab file represents a single task, and consists of six fields separated by spaces:
+
+Minute (0-59)
+Hour (0-23)
+Day of the month (1-31)
+Month of the year (1-12)
+Day of the week (0-6, with 0 representing Sunday)
+Command to execute
+For example, to schedule a task to be executed every day at midnight, a pirate might add the following line to their crontab file:
+
+```bash
+0 0 * * * /path/to/task
+```
+
+To edit the crontab file, a pirate can use the `crontab -e` command. This will open the file in a text editor, where they can add, modify, or delete tasks as needed.
+
+It's important to note that cron tasks are executed with the permissions of the user who owns the crontab file, so it's important to make sure that the tasks have the necessary permissions to run correctly.
+
+I hope this helps you understand how cron works and how a pirate might use it to automate tasks on their Linux system. Arrr!
 
 ### cURL
 
@@ -398,6 +508,16 @@ Request headers: cURL allow ye to specify custom request headers to be sent with
 
 Request data: cURL allow ye to specify data to be sent with yer request, such as form data or a JSON payload. Ye can use the -d option to specify the data ye be sending.
 
+> Note: If ye be sending JSON data, ye should use the `--data-raw` option instead of the `-d` option. The `-d` option will escape the JSON payload, which will cause the request to fail.
+
+Response headers: cURL allow ye to view the response headers that be returned with yer request. Ye can use the `-i` option to view the response headers.
+
+Response body: cURL allow ye to view the response body that be returned with yer request. Ye can use the `-o` option to save the response body to a file, or ye can use the `-O` option to save the response body to a file with the same name as the file on the server.
+
+I hope this helps you understand how cURL works and how a pirate might use it to make HTTP requests. Arrr!
+
+> Note: if ye ever get stuck use `curl cht.sh/:help` to get help
+
 ### Vim
 
 Vim be a text editor that be widely used by developers and systems administrators for editing files in the command line. It be a powerful tool that be highly customizable, and it be known for its steep learning curve. Here be some things ye should know to use Vim effectively:
@@ -412,6 +532,18 @@ Saving and quitting: To save yer changes and quit Vim, ye can use the :wq comman
 
 Customization: Vim be highly customizable, and ye can configure it to suit yer needs and preferences. Ye can customize Vim by editing the .vimrc configuration file or by using Lua to create custom plugins.
 
+### VS Code
+
+Arr matey, ye be askin' about Visual Studio Code, a popular and powerful code editor that be makin' it easier for ye to write, debug, and collaborate on code.
+
+VS Code be packin' a lot of useful features for developers, such as syntax highlighting, code completion, and built-in support for version control systems like Git. Ye can also extend VS Code with plugins and extensions to add even more functionality, such as debugging tools, linting, and code formatting.
+
+To work with VS Code, ye simply need to open up the editor and start writin' or editin' your code. Ye can also use the integrated terminal to run command-line tools, such as compilers or test runners.
+
+VS Code be available on a variety of platforms, including Windows, Mac, and Linux, so ye can use it on the operating system of your choosin'.
+
+So there ye have it, a brief overview of Visual Studio Code and how ye might be usin' it as a developer. I hope this be helpin' ye to understand this powerful code editor and all that it be capable of. Ahoy!
+
 ### The Internet
 
 The internet be a global network of interconnected computer networks that be used to share information and resources. It be a vast network that be made up of millions of computers, servers, and other devices that be connected together using a variety of technologies and protocols. The internet be used by people all over the world to communicate, access information, and perform a wide range of tasks.
@@ -419,6 +551,96 @@ The internet be a global network of interconnected computer networks that be use
 In simpler terms, ye can think of the internet as a vast ocean of data and information that be accessible from anywhere in the world. Just like a ship be able to sail the oceans and explore new lands, ye can use the internet to explore a vast world of information and resources.
 
 So hoist the mainsail and set course for the internet! With the internet at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
+
+### Continuous Delivery
+
+Continuous delivery is a software development practice where code changes are automatically built, tested, and deployed to production. It allows for faster and more frequent updates to a software application, as code changes can be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it takes for new features or bug fixes to reach users.
+
+In a pirate theme, you could think of continuous delivery as a way to quickly and efficiently get your ship (the software application) ready for battle. Instead of spending a lot of time preparing and repairing the ship before each voyage (deployment), continuous delivery allows you to make small, incremental changes to the ship as needed, so that it is always ready to set sail. This way, you can respond more quickly to new threats (bug fixes and feature requests) and be better prepared for whatever the seas (your users) might throw your way.
+
+### Continuous Integration
+
+Continuous integration (CI) is a software development practice where developers regularly integrate their code changes into a shared repository, typically several times a day. Each integration is then automatically built and tested to ensure that the code changes do not introduce any new bugs or regressions.
+
+In a pirate theme, you could think of continuous integration as a way to keep your ship (the software application) in good repair. Instead of waiting until the end of a long voyage to fix any problems with the ship, continuous integration allows you to make small repairs and improvements as you go. By regularly integrating and testing code changes, you can catch and fix problems early, before they become bigger issues that could sink the ship. This helps to ensure that your ship is always ready to set sail, and that you can respond more quickly to new threats (bug fixes and feature requests) as they arise.
+
+### DNS (Domain Name System)
+
+In the context of the internet, the Domain Name System (DNS) is a decentralized system that maps human-readable domain names (such as "example.com") to the numerical IP addresses that computers use to communicate with each other. DNS helps to make it easier for people to access websites and other online resources, as it allows us to use easy-to-remember names instead of having to remember complex numerical addresses.
+
+In a pirate theme, you could think of DNS as a way to navigate the vast and often-treacherous seas of the internet. Just as a map helps a pirate to find their way from one island to another, DNS helps to guide internet users to the websites and online resources they are looking for. Instead of having to remember the exact location of each island (website), a pirate can simply consult their map (DNS) to find the right route.
+
+DNS also helps to ensure that internet users can reach their destination even if the underlying landscape (IP addresses) changes. Just as a pirate might need to adjust their course if the winds or currents shift, DNS can automatically route internet users to the correct location even if the underlying IP addresses change. This helps to make the internet more reliable and accessible, even in the midst of constantly-changing conditions.
+
+### Docker
+
+Arr matey, ye be askin' about Docker, the popular containerization software that be makin' it easier to ship, run, and manage applications.
+
+Docker be usin' containers to package up an application with all of the parts it be needin' to run, such as libraries and dependencies, and ship it as one package. This be makin' it easier to run the application on any other machine, regardless of the specific environment or configuration.
+
+To work with Docker, ye might be usin' the Docker Engine to build, run, and manage containers. Ye can build your own containers or use ones that other scallywags have built and shared. Ye can also use Docker Compose to define and run multi-container applications, makin' it easier to scale and manage them.
+
+In terms of practical use, ye might be usin' Docker to set up a development environment for your application, or to package and deploy your application to production. Ye can also use Docker to run databases or other services that your application relies on.
+
+So there ye have it, a brief overview of Docker and how ye might be workin' with it. I hope this be helpin' ye to understand this powerful tool for managing and running applications. Shiver me timbers!
+
+### HTML
+
+Ahoy matey! HTML, or Hypertext Markup Language, is a standardized system for marking up text files to indicate how they should be displayed in a web browser. Just like how a pirate might use a map to navigate through the open seas, HTML helps web browsers interpret and display the content of a web page.
+
+HTML uses a set of predefined tags to structure and format the content of a web page. These tags are enclosed in angle brackets and are used to mark the beginning and end of an element. For example, the "p" tag is used to define a paragraph, and the "h1" tag is used to define a level 1 heading.
+
+Here's an example of some basic HTML code:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pirate's Cove</title>
+</head>
+<body>
+  <h1>Welcome to Pirate's Cove</h1>
+  <p>Ahoy matey! Welcome to the finest pirate's hideout on the internet.</p>
+</body>
+</html>
+```
+
+This code defines a simple web page with a level 1 heading and a paragraph of text. The "html" tag indicates the start and end of the HTML document, the "head" tag contains information about the document, and the "body" tag contains the visible content of the page.
+
+HTML is just one part of the puzzle when it comes to building a website. Other technologies, such as CSS (Cascading Style Sheets) and JavaScript, are often used in conjunction with HTML to create more dynamic and interactive web pages.
+
+I hope this helps you understand what HTML is and how a pirate might use it to build their own website. Arrr!
+
+#### CSS
+
+Ahoy matey! CSS, or Cascading Style Sheets, is a stylesheet language used for describing the look and formatting of a document written in HTML. Just like how a pirate might use a map to navigate through the open seas, CSS helps web browsers interpret and display the content of a web page in a specific way.
+
+CSS uses a set of rules, called "styles", to define the appearance of the elements on a web page. These styles can be applied to specific elements on the page, or to groups of elements using selectors.
+
+Here's an example of some basic CSS code:
+
+```css
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #ff0000;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+```
+
+This code defines the styles for the `body`, `h1`, and `p` elements on a web page. The `body` style sets the background color to `black`, the text color to `white`, and the font family to `sans-serif`. The `h1` style sets the text color to `red`, and the `p` style sets the font size to `16` pixels and the line height to `1.5`.
+
+CSS can be used to style a wide variety of elements on a web page, including text, images, and layout. It can also be used to create responsive designs that adapt to different screen sizes and devices.
+
+I hope this helps you understand what CSS is and how a pirate might use it to style their website. Arrr!
 
 ### HTTP
 
@@ -452,6 +674,14 @@ Network discovery: ICMP can be used to send "ping" messages, which are used to d
 
 You might imagine that ICMP is a useful tool for pirates to keep track of their network and diagnose problems. It allows them to communicate with other devices on the network and request information that can help them understand how the network is functioning.
 
+### Infrastructure as Code
+
+Infrastructure as code (IaC) is a way to define and manage your infrastructure and its dependencies using code, rather than manually configuring resources through a graphical user interface. This allows you to version control your infrastructure, automate the provisioning and management of resources, and apply testing and deployment practices similar to those used in software development.
+
+In a pirate theme, you could think of infrastructure as code as a way to manage and maintain your fleet of ships and their various systems and equipment. Instead of manually configuring and repairing each ship's sails, masts, and engines, you could use code to define how these components should be set up and configured. This would allow you to automate the process of building and repairing your ships, as well as make it easier to scale your fleet as needed.
+
+By using infrastructure as code, you can also more easily track and manage changes to your ships' systems and equipment over time, as well as roll back any changes that might cause problems. This can help you to keep your fleet seaworthy and ready to set sail at a moment's notice, no matter where you are in the world.
+
 ### IP Addresses
 
 An IP address (Internet Protocol address) can be thought of as a unique identifier that is assigned to each device that is connected to the internet. It is a numerical label that is used to identify a specific device, and it is similar to a physical address or a phone number.
@@ -461,6 +691,36 @@ Imagine that a group of pirates are all connected to the same network, and they 
 IP addresses are usually assigned by internet service providers (ISPs) or network administrators, and they can be either static (meaning they never change) or dynamic (meaning they are assigned temporarily and can change over time).
 
 You might imagine that each pirate has a unique IP address that they use to communicate with other pirates over the internet. They might also use IP addresses to access websites and other online resources, just like how people use IP addresses in the real world.
+
+#### What is an IP made up of?
+
+Ahoy matey! An IP address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. Just like how a pirate might use a map to navigate through the open seas, an IP address helps devices on a network find and communicate with each other.
+
+An IP address consists of four numbers separated by periods, and each number can range from 0 to 255. For example, an IP address might look like this: 192.168.1.1
+
+These four numbers represent different parts of the IP address, known as octets. Each octet is a group of 8 bits, and together, the four octets make up a 32-bit number.
+
+The first octet is used to identify the network that the device is a part of. The remaining three octets are used to identify the specific device within that network.
+
+There are two main versions of IP addresses in use today: IPv4 and IPv6. IPv4 is the most widely used version and uses 32-bit numbers, as described above. IPv6, on the other hand, uses 128-bit numbers and allows for a much larger number of unique IP addresses.
+
+To understand an IP address, it's important to know the difference between a public and a private IP address. A public IP address is a unique address that is assigned to a device by an Internet Service Provider (ISP) and is used to identify the device on the Internet. A private IP address, on the other hand, is used to identify devices within a private network, such as a home or office network. Private IP addresses are not unique and are usually assigned by the router on the network.
+
+I hope this helps you understand how IP addresses work and how a pirate might use them to navigate the vast ocean of the Internet. Arrr!
+
+### JavaScript
+
+Ahoy matey! Are ye interested in learning about JavaScript, the programming language used to make websites and web applications more interactive and dynamic?
+
+JavaScript is a popular, cross-platform programming language that is primarily used to create dynamic and interactive elements on websites. It is one of the three core technologies of the World Wide Web, along with HTML (HyperText Markup Language) and CSS (Cascading Style Sheets). JavaScript is often used in combination with these other technologies to build complex web applications and sites.
+
+JavaScript code is usually written in text editors and then run in web browsers, such as Google Chrome, Mozilla Firefox, or Microsoft Edge. The code can be written directly in an HTML file, or it can be linked to an external JavaScript file that is then referenced in the HTML file.
+
+One of the key features of JavaScript is its ability to manipulate the Document Object Model (DOM), which is the structure of a website's HTML and CSS. This allows JavaScript to modify the appearance and content of a website in real-time, as well as respond to user input and interactivity.
+
+JavaScript is also an object-oriented programming language, meaning that it is based on the concept of "objects" that have properties and methods. These objects can be used to represent real-world concepts, such as a person or a car, and can be manipulated and controlled using the JavaScript language.
+
+I hope that helps ye get a better understanding of JavaScript, matey! If ye have any more questions, don't hesitate to ask.
 
 ### JSON
 
@@ -473,6 +733,14 @@ JSON is a popular choice for storing and exchanging data because it is easy for 
 To use JSON, you need to understand its syntax, which is based on key-value pairs and lists of values. A key-value pair consists of a unique key and a value, separated by a colon. A list of values is an ordered collection of values, separated by commas and enclosed in square brackets.
 
 JSON is a powerful and flexible tool that is widely used in modern web development, and is an important part of a pirate's arsenal. Arrr!
+
+### Kubernetes
+
+Kubernetes (also known as "K8s") is an open-source system for automating the deployment, scaling, and management of containerized applications. It helps to provide a consistent and reliable environment for running applications, regardless of where they are deployed.
+
+In a pirate theme, you could think of Kubernetes as a way to manage and maintain your fleet of ships (the containerized applications). Instead of having to manually deploy and manage each ship individually, Kubernetes allows you to automate the process and scale your fleet as needed. This can help you to be more efficient and responsive, as you can deploy new ships or make changes to existing ones more quickly and easily.
+
+Kubernetes also helps to ensure that your ships are running smoothly and reliably, by providing features like automatic self-healing, rolling updates, and resource management. This can help to keep your fleet seaworthy and ready to set sail at a moment's notice, no matter where you are in the world.
 
 ### Logging
 
@@ -502,19 +770,19 @@ Monitoring can be a useful tool for pirates to keep their systems running smooth
 
 The OSI model be a framework fer understanding and designing how data be transmitted over yer network. It be made up of seven layers, each representing a different aspect of networking:
 
-Physical layer: This layer be responsible fer the physical connections and devices that be used fer transmitting data over yer network. Examples include cables, switches, and routers.
+`Physical layer`: This layer be responsible fer the physical connections and devices that be used fer transmitting data over yer network. Examples include cables, switches, and routers.
 
-Data link layer: This layer be responsible fer establishing and maintaining a connection between devices on yer network. It be responsible fer tasks such as error detection and correction, and fer providing flow control to prevent data overload.
+`Data link layer`: This layer be responsible fer establishing and maintaining a connection between devices on yer network. It be responsible fer tasks such as error detection and correction, and fer providing flow control to prevent data overload.
 
-Network layer: This layer be responsible fer routing data between devices on yer network. It be using addresses to determine the best path fer data to travel, and be responsible fer tasks such as packet switching and traffic control.
+`Network layer`: This layer be responsible fer routing data between devices on yer network. It be using addresses to determine the best path fer data to travel, and be responsible fer tasks such as packet switching and traffic control.
 
-Transport layer: This layer be responsible fer ensuring that data be delivered reliably and efficiently between devices on yer network. It be responsible fer tasks such as segmentation, reassembly, and flow control.
+`Transport layer`: This layer be responsible fer ensuring that data be delivered reliably and efficiently between devices on yer network. It be responsible fer tasks such as segmentation, reassembly, and flow control.
 
-Session layer: This layer be responsible fer establishing, maintaining, and terminating connections between devices on yer network. It be responsible fer tasks such as establishing a session, coordinating communication, and recovering from errors.
+`Session layer`: This layer be responsible fer establishing, maintaining, and terminating connections between devices on yer network. It be responsible fer tasks such as establishing a session, coordinating communication, and recovering from errors.
 
-Presentation layer: This layer be responsible fer translating data between devices on yer network. It be responsible fer tasks such as encoding, decoding, and compression.
+`Presentation layer`: This layer be responsible fer translating data between devices on yer network. It be responsible fer tasks such as encoding, decoding, and compression.
 
-Application layer: This layer be responsible fer providing services to applications that be using yer network. It be responsible fer tasks such as messaging, file transfer, and network management.
+`Application layer`: This layer be responsible fer providing services to applications that be using yer network. It be responsible fer tasks such as messaging, file transfer, and network management.
 
 The OSI model be a useful tool fer understanding and designing the communication systems on yer network. It provides a framework fer understanding the different layers of networking, and fer identifying the tasks and responsibilities that be associated with each layer.
 
@@ -527,6 +795,18 @@ SSH is a network protocol that allows you to securely connect to a remote comput
 To use SSH, you need an SSH client, which is a program that connects to an SSH server. When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
 
 SSH is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
+
+### SSL Certificates
+
+SSL (Secure Sockets Layer) certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+In the context of nginx, ye might be usin' an SSL certificate to secure the connection between nginx and the clients that be connectin' to it, such as web browsers. To do this, ye will need to obtain an SSL certificate and configure nginx to use it.
+
+There be a few different types of SSL certificates, each with its own level of validation and security. Some be more expensive and time-consuming to obtain, but offer a higher level of trust and security.
+
+I hope this be helpin' ye to understand how SSL certificates be workin' and how ye might be usin' them with nginx. Ahoy!
 
 ### Streaming
 
