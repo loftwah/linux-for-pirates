@@ -260,6 +260,20 @@ In addition to encryption, HTTPS also provides authentication, which means that 
 
 Overall, HTTPS is a useful tool for pirates (or anyone else) who want to keep their communication private and secure. It can help protect against interception and tampering, and it can also provide reassurance that the messages are actually coming from the intended sender.
 
+### ICMP (Internet Control Message Protocol)
+
+ICMP (Internet Control Message Protocol) can be thought of as a communication protocol that is used to transmit messages between devices on a network. It is often used to send error messages or to request information from other devices.
+
+On a Linux system, ICMP is used for a variety of purposes, including:
+
+Error reporting: ICMP can be used to send error messages when there is a problem with a network connection or when a packet of data cannot be delivered.
+
+Network diagnosis: ICMP can be used to request information from other devices on the network, such as the round-trip time of a packet or the maximum transmission unit (MTU) of a link. This can be useful for diagnosing network problems and optimizing network performance.
+
+Network discovery: ICMP can be used to send "ping" messages, which are used to determine if a device is reachable on the network. This can be useful for detecting network outages or for verifying network connectivity.
+
+In a pirate theme, you might imagine that ICMP is a useful tool for pirates to keep track of their network and diagnose problems. It allows them to communicate with other devices on the network and request information that can help them understand how the network is functioning.
+
 ### IP Addresses
 
 An IP address (Internet Protocol address) can be thought of as a unique identifier that is assigned to each device that is connected to the internet. It is a numerical label that is used to identify a specific device, and it is similar to a physical address or a phone number.
