@@ -8,77 +8,79 @@ By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loft
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-    - [Data science](#data-science)
-    - [Database](#database)
-    - [DevOps](#devops)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [Docker](#docker)
-  - [Git](#git)
-  - [GitHub](#github)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-  - [SSL Certificates](#ssl-certificates)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh!](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-- [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+      - [Data science](#data-science)
+      - [Database](#database)
+      - [DevOps](#devops)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Docker](#docker)
+    - [Git](#git)
+    - [GitHub](#github)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+    - [SSL Certificates](#ssl-certificates)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1020,7 +1022,7 @@ I hope these examples give ye an idea of some common problems ye might face when
 
 Ye be now ready to begin yer journey as a Linux pirate! Ye can start by reading the rest of this book, or ye can try some of the challenges below.
 
-#### Question 1: Arrrrrgh!
+#### Question 1: Arrrrrgh
 
 **Question:**
 
@@ -1124,6 +1126,100 @@ sudo nano /etc/rsync.conf
 ```
 
 To set up a script that runs daily and creates a full system backup of the merchant vessel's servers, you can use the crontab command. First, open the crontab editor for the root user by running the following command:
+
+```bash
+sudo crontab -e
+```
+
+Then, add the following line to the end of the file:
+
+```bash
+0 0 * * * tar -czf /path/to/backup.tar.gz --exclude=/tmp --exclude=/var/log /
+```
+
+This will run the tar command every day at midnight, creating a compressed archive of the entire file system (`/`) and excluding the `/tmp` and `/var/log` directories.
+
+To set up a remote server on your pirate ship to store the backups, you can use a variety of tools and techniques. One option is to install and configure a server application like openssh-server. On your pirate ship, run the following command to install openssh-server:
+
+```bash
+sudo apt-get install openssh-server -y
+```
+
+Then, configure the server by editing the `/etc/ssh/sshd_config` file:
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+Make any necessary changes to the configuration file (e.g. changing the default port number, enabling key-based authentication), then restart the server by running the following command:
+
+```bash
+sudo systemctl restart ssh
+```
+
+To modify the daily backup script to transfer the backups to the remote server using rsync over SSH, you can use the rsync command. First, create a new directory on the remote server to store the backups:
+
+```bash
+mkdir /path/to/backup
+```
+
+Then, run the following command to transfer the backups to the remote server:
+
+```bash
+rsync -avz -e ssh /path/to/backup.tar.gz <remote server IP address>:/path/to/backup
+```
+
+#### Question 3: The Flying Dutchman
+
+**Question:**
+
+You are the captain of a pirate ship and have just captured a merchant vessel. The merchant vessel's captain has agreed to hand over all of their valuable cargo in exchange for safe passage back to port. However, before the transfer can take place, you need to ensure that the merchant vessel's computers and servers are secure.
+
+As the resident Linux expert on your pirate ship, you have been tasked with setting up a secure web server for the merchant vessel's website.
+
+Using only the command line, complete the following tasks:
+
+1. Install and configure the Apache web server on the merchant vessel's servers. The web server should use the default port number and serve the website from the `/var/www/html` directory.
+2. Set up a script that runs every hour and checks for updates to the system's package manager. If any updates are available, the script should install them.
+3. Set up a cron job that runs every day at midnight and creates a full system backup of the merchant vessel's servers. The script should exclude certain directories (e.g. `/tmp`, `/var/log`) and compress the backup using `gzip`.
+4. Set up a remote server on your pirate ship to store the backups. The remote server should use SSH for secure communication.
+5. Modify the daily backup script to transfer the backups to the remote server using rsync over SSH.
+
+**Answer:**
+
+To install and configure the Apache web server on the merchant vessel's servers, you can use the apt-get command. First, update the package manager's list of available packages by running the following command:
+
+```bash
+sudo apt-get update
+```
+
+Then, install Apache by running the following command:
+
+```bash
+sudo apt-get install apache2 -y
+```
+
+Once Apache is installed, you can configure it by editing the `/etc/apache2/apache2.conf` file. You can use a text editor like `nano` to do this:
+
+```bash
+sudo nano /etc/apache2/apache2.conf
+```
+
+To set up a script that runs every hour and checks for updates to the system's package manager, you can use the crontab command. First, open the crontab editor for the root user by running the following command:
+
+```bash
+sudo crontab -e
+```
+
+Then, add the following line to the end of the file:
+
+```bash
+0 * * * * apt-get update && apt-get upgrade -y
+```
+
+This will run the `apt-get update` and `apt-get upgrade -y` commands every hour. The `apt-get update` command checks for updates to the package manager, and the `apt-get upgrade -y` command installs any available updates.
+
+To set up a cron job that runs every day at midnight and creates a full system backup of the merchant vessel's servers, you can use the crontab command. First, open the crontab editor for the root user by running the following command:
 
 ```bash
 sudo crontab -e
