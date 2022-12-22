@@ -6,76 +6,79 @@ By [Dean Lofts](linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loft
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-    - [Data science](#data-science)
-    - [Database](#database)
-    - [DevOps](#devops)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [Docker](#docker)
-  - [Git](#git)
-  - [GitHub](#github)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-  - [SSL Certificates](#ssl-certificates)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-- [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
+- [Linux for Pirates!](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+      - [Data science](#data-science)
+      - [Database](#database)
+      - [DevOps](#devops)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Docker](#docker)
+    - [Git](#git)
+    - [GitHub](#github)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+    - [SSL Certificates](#ssl-certificates)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+  - [Chapter Four: Navigating the seas of the internet](#chapter-four-navigating-the-seas-of-the-internet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -615,7 +618,7 @@ GitHub be a web-based platform that be used by developers to host and share thei
 
 GitHub be a great place for developers to store their code and track changes to it over time. It be also a great place to share code with other developers and collaborate on projects together. Ye can use GitHub to create new repositories for yer own projects, or ye can contribute to other people's projects by forking their repositories and submitting pull requests.
 
-GitHub be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what GitHub be and how it can be used by developers! 
+GitHub be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what GitHub be and how it can be used by developers!
 
 ### Homebrew
 
@@ -660,13 +663,13 @@ Here's an example of some basic HTML code:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Pirate's Cove</title>
-</head>
-<body>
-  <h1>Welcome to Pirate's Cove</h1>
-  <p>Ahoy matey! Welcome to the finest pirate's hideout on the internet.</p>
-</body>
+  <head>
+    <title>Pirate's Cove</title>
+  </head>
+  <body>
+    <h1>Welcome to Pirate's Cove</h1>
+    <p>Ahoy matey! Welcome to the finest pirate's hideout on the internet.</p>
+  </body>
 </html>
 ```
 
@@ -1013,5 +1016,72 @@ Here are a few examples of common problems you might face when working with Linu
 
 I hope these examples give ye an idea of some common problems ye might face when working with Linux, and how ye might go about solving them.
 
-## Chapter Four: Navigating the seas of the internet
+### Initiation
 
+**Question:**
+
+You are the captain of a pirate ship and have just captured a merchant vessel. The merchant vessel's captain has agreed to hand over all of their valuable cargo in exchange for safe passage back to port. However, before the transfer can take place, you need to ensure that the merchant vessel's computers and servers are secure.
+
+As the resident Linux expert on your pirate ship, you have been tasked with setting up a secure firewall on the merchant vessel's servers.
+
+Using only the command line, complete the following tasks:
+
+1. Create a new firewall rule that allows incoming traffic on port `80` (HTTP) and port `443` (HTTPS) from the IP address of your pirate ship, and blocks all other incoming traffic.
+
+2. Set up a new user account for the merchant vessel's captain with the username `captain` and the password `treasure`. The captain should have sudo privileges.
+
+3. Set up a cron job that runs every hour and checks for updates to the system's package manager. If updates are available, the cron job should automatically install them.
+
+**Answer:**
+
+To create a new firewall rule that allows incoming traffic on port `80` and port `443` from the IP address of your pirate ship and blocks all other incoming traffic, you can use the `ufw` utility. First, run the following command to enable the firewall:
+
+```bash
+sudo ufw enable
+```
+
+Then, run the following command to allow incoming traffic on port `80` and port `443` from your pirate ship's IP address:
+
+```bash
+sudo ufw allow from <pirate ship IP address> to any port 80,443
+```
+
+Finally, run the following command to block all other incoming traffic:
+
+```bash
+sudo ufw default deny incoming
+```
+
+To set up a new user account for the merchant vessel's captain with the username `captain` and the password `treasure`, and grant them sudo privileges, you can use the useradd and usermod commands. First, run the following command to create the new user account:
+
+```bash
+sudo useradd -m -s /bin/bash captain
+```
+
+This will create a new user account with the username `captain` and a home directory at `/home/captain`. Next, run the following command to set the password for the `captain` user:
+
+```bash
+sudo passwd captain
+```
+
+Enter `treasure` as the password when prompted. Finally, run the following command to grant the `captain` user sudo privileges:
+
+```bash
+sudo usermod -aG sudo captain
+```
+
+To set up a cron job that runs every hour and checks for updates to the system's package manager, you can use the crontab command. First, open the crontab editor for the root user by running the following command:
+
+```bash
+sudo crontab -e
+```
+
+Then, add the following line to the end of the file:
+
+```bash
+0 * * * * apt-get update && apt-get upgrade -y
+```
+
+This will run the `apt-get update` and `apt-get upgrade -y` commands every hour. The `apt-get update` command checks for updates to the package manager, and the `apt-get upgrade -y` command installs any available updates.
+
+## Chapter Four: Navigating the seas of the internet
