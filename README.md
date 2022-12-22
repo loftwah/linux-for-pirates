@@ -1,4 +1,4 @@
-# Linux for Pirates!
+# Linux for Pirates
 
 ![Linux for Pirates!](linux-for-pirates.jpg)
 
@@ -8,79 +8,90 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-    - [Data science](#data-science)
-    - [Database](#database)
-    - [DevOps](#devops)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [Docker](#docker)
-  - [Git](#git)
-  - [GitHub](#github)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-  - [SSL Certificates](#ssl-certificates)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-  - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-    - [Question 5: Dark and Stormy](#question-5-dark-and-stormy)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+      - [Data science](#data-science)
+      - [Database](#database)
+      - [DevOps](#devops)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Docker](#docker)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+      - [Question 5: Dark and Stormy](#question-5-dark-and-stormy)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -452,6 +463,8 @@ I hope this helps you understand how file permissions work in Linux and how a pi
 
 ### Networking
 
+[PacketLife](https://packetlife.net/)
+
 `ip`: This command be used to configure network interfaces on yer system. Ye can use it to view information about yer network interfaces, set their IP addresses, and more.
 
 `ping`: This command be used to test the connectivity between two devices on a network. Ye can use it to check if yer system be able to reach another device on the network.
@@ -483,6 +496,21 @@ I hope this helps you understand what Bash is and how a pirate might use it to i
 #### .bashrc
 
 Ahoy matey! In the world of Linux, the `.bashrc` file is a configuration file that contains commands that are executed when a user logs in to their system. Just like how a pirate might use a treasure map to find their way to their treasure, the `.bashrc` file can be used to customize a user's environment and make it easier for them to perform common tasks.
+
+An example `.bashrc` file might look something like this:
+
+```bash
+# Set the prompt to include the current time
+PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[35m\] \t\[\e[m\]\$ "
+
+# Set the default editor to Vim
+export EDITOR=vim
+
+# Set an alias for the ls command
+alias ls='ls --color=auto'
+```
+
+The first line sets the prompt to include the current time. The second line sets the default editor to Vim. The third line sets an alias for the `ls` command, which is a shortcut that can be used to run the command. For example, a pirate could type `ls` instead of `ls --color=auto`.
 
 ### Cron
 
@@ -534,6 +562,18 @@ I hope this helps you understand how cURL works and how a pirate might use it to
 
 > **Note** if ye ever get stuck use `curl cht.sh/:help` to get help
 
+A typical cURL `GET` request would look like this:
+
+```bash
+curl -X GET -H "Content-Type: application/json" -d '{"name": "Pirate"}' https://example.com
+```
+
+A typical cURL `POST` request would look like this:
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Pirate"}' https://example.com
+```
+
 ### Vim
 
 Vim be a text editor that be widely used by developers and systems administrators for editing files in the command line. It be a powerful tool that be highly customizable, and it be known for its steep learning curve. Here be some things ye should know to use Vim effectively:
@@ -552,7 +592,54 @@ Customization: Vim be highly customizable, and ye can configure it to suit yer n
 
 Ahoy matey! In the world of Linux, the `.vimrc` file is a configuration file that contains commands that are executed when a user starts Vim. Just like how a pirate might use a treasure map to find their way to their treasure, the `.vimrc` file can be used to customize a user's Vim environment and make it easier for them to perform common tasks.
 
+An example `.vimrc` file might look like this:
+
+```vim
+" Set the color scheme to material
+colorscheme material
+
+" Enable syntax highlighting
+syntax on
+
+" Enable line numbers
+set number
+
+" Enable relative line numbers
+set relativenumber
+
+" Enable auto-indenting
+set autoindent
+
+" Enable smart indenting
+set smartindent
+
+" Enable line wrapping
+set wrap
+
+" Enable spell checking
+set spell
+
+" Enable spell checking for comments
+set spelllang=en_us
+```
+
+#### NeoVim
+
+[NeoVim Website](https://neovim.io) | [Awesome NeoVim](https://github.com/rockerBOO/awesome-neovim)
+
+Arr matey, ye be askin' about NeoVim, a fork of Vim that be makin' it easier for ye to write, debug, and collaborate on code.
+
+NeoVim be a fork of Vim that be designed to be more extensible and customizable than Vim. It be also designed to be more performant and reliable than Vim, and it be compatible with Vim plugins and scripts.
+
+To work with NeoVim, ye simply need to open up the editor and start writin' or editin' your code. Ye can also use the integrated terminal to run command-line tools, such as compilers or test runners.
+
+NeoVim be available on a variety of platforms, including Windows, Mac, and Linux, so ye can use it on the operating system of your choosin'.
+
+So there ye have it, a brief overview of NeoVim and how ye might be usin' it as a developer. I hope this be helpin' ye to understand this powerful code editor and all that it be capable of. Ah
+
 ### VS Code
+
+[VS Code Website](https://code.visualstudio.com) | [Awesome VS Code](https://github.com/viatsko/awesome-vscode)
 
 Arr matey, ye be askin' about Visual Studio Code, a popular and powerful code editor that be makin' it easier for ye to write, debug, and collaborate on code.
 
@@ -572,6 +659,28 @@ In simpler terms, ye can think of the internet as a vast ocean of data and infor
 
 So hoist the mainsail and set course for the internet! With the internet at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
 
+#### Web Browser
+
+A web browser be a software application that be used to access and view web resources. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+In a pirate theme, ye can think of a web browser as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, a web browser be able to explore a vast world of information and resources.
+
+The first web browser, WorldWideWeb, be created by Tim Berners-Lee in 1990. It be a simple text-based browser that be used to view web pages. Since then, web browsers have evolved into powerful tools that be used by billions of people every day.
+
+Today, there be a wide variety of web browsers available, including Google Chrome, Mozilla Firefox, Microsoft Edge, and Apple Safari. Each browser be different, and they be optimized for different platforms and use cases. For example, Google Chrome be optimized for speed and performance, while Mozilla Firefox be optimized for customization and extensibility.
+
+So hoist the mainsail and set course for the internet! With a web browser at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
+
+#### World Wide Web
+
+The World Wide Web (WWW) be a system of interlinked hypertext documents that be accessed via the internet. It be a vast collection of resources that be accessible from anywhere in the world, and it be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+In a pirate theme, ye can think of the World Wide Web as a vast ocean of information and resources that be accessible from anywhere in the world. Just like a ship be able to sail the oceans and explore new lands, ye can use the World Wide Web to explore a vast world of information and resources.
+
+The creators of the World Wide Web, Tim Berners-Lee and Robert Cailliau, be inspired by the concept of a hypertext system that be accessible from anywhere in the world. They be envisionin' a system that be accessible from anywhere in the world, and they be inspired by the concept of a hypertext system that be accessible from anywhere in the world.
+
+So hoist the mainsail and set course for the World Wide Web! With the World Wide Web at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
+
 ### Continuous Delivery
 
 Continuous delivery is a software development practice where code changes are automatically built, tested, and deployed to production. It allows for faster and more frequent updates to a software application, as code changes can be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it takes for new features or bug fixes to reach users.
@@ -583,6 +692,12 @@ In a pirate theme, you could think of continuous delivery as a way to quickly an
 Continuous integration (CI) is a software development practice where developers regularly integrate their code changes into a shared repository, typically several times a day. Each integration is then automatically built and tested to ensure that the code changes do not introduce any new bugs or regressions.
 
 In a pirate theme, you could think of continuous integration as a way to keep your ship (the software application) in good repair. Instead of waiting until the end of a long voyage to fix any problems with the ship, continuous integration allows you to make small repairs and improvements as you go. By regularly integrating and testing code changes, you can catch and fix problems early, before they become bigger issues that could sink the ship. This helps to ensure that your ship is always ready to set sail, and that you can respond more quickly to new threats (bug fixes and feature requests) as they arise.
+
+### eBPF
+
+eBPF (extended Berkeley Packet Filter) is a technology that allows for the dynamic insertion of BPF programs into the Linux kernel at various hook points. It allows for the creation of powerful, flexible, and efficient tracing and monitoring tools, as well as the ability to write custom kernel modules without having to write any C code.
+
+In a pirate theme, you could think of eBPF as a way to add new features to your ship (the Linux kernel). Instead of having to modify the ship's hull (the Linux kernel) to add new features, eBPF allows you to add new features by inserting new code into the ship's hull (the Linux kernel). This allows you to add new features without having to modify the ship's hull, which can be a time-consuming and error-prone process.
 
 ### DNS (Domain Name System)
 
@@ -614,13 +729,29 @@ To use Git, ye first need to install it on yer computer. Then, ye can create a n
 
 Git be a powerful tool that be widely used by developers around the world, and it be particularly useful for working on large, complex software projects with multiple contributors. I hope this helps ye understand what Git be and how it can be used!
 
-### GitHub
+#### GitHub
 
 GitHub be a web-based platform that be used by developers to host and share their code repositories, as well as collaborate with other developers on software projects. It be built on top of Git, the version control system that I described in me previous message.
 
 GitHub be a great place for developers to store their code and track changes to it over time. It be also a great place to share code with other developers and collaborate on projects together. Ye can use GitHub to create new repositories for yer own projects, or ye can contribute to other people's projects by forking their repositories and submitting pull requests.
 
 GitHub be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what GitHub be and how it can be used by developers!
+
+#### GitLab
+
+GitLab be a web-based platform that be used by developers to host and share their code repositories, as well as collaborate with other developers on software projects. It be built on top of Git, the version control system that I described in me previous message.
+
+GitLab be a great place for developers to store their code and track changes to it over time. It be also a great place to share code with other developers and collaborate on projects together. Ye can use GitLab to create new repositories for yer own projects, or ye can contribute to other people's projects by forking their repositories and submitting merge requests.
+
+GitLab be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what GitLab be and how it can be used by developers!
+
+#### Gitea
+
+Gitea be a web-based platform that be used by developers to host and share their code repositories, as well as collaborate with other developers on software projects. It be built on top of Git, the version control system that I described in me previous message.
+
+Gitea be a great place for developers to store their code and track changes to it over time. It be also a great place to share code with other developers and collaborate on projects together. Ye can use Gitea to create new repositories for yer own projects, or ye can contribute to other people's projects by forking their repositories and submitting pull requests.
+
+Gitea be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what Gitea be and how it can be used by developers!
 
 ### Homebrew
 
@@ -744,6 +875,16 @@ Network discovery: ICMP can be used to send "ping" messages, which are used to d
 
 You might imagine that ICMP is a useful tool for pirates to keep track of their network and diagnose problems. It allows them to communicate with other devices on the network and request information that can help them understand how the network is functioning.
 
+An example of troubleshooting a network problem using ICMP might look like this:
+
+1. A pirate sends a ping message to a device on the network.
+2. The device responds with an ICMP echo reply message.
+3. The pirate receives the echo reply message and uses it to determine the round-trip time of the packet.
+4. The pirate uses the round-trip time to diagnose the problem and determine the cause of the network outage.
+5. The pirate fixes the problem and the network is restored.
+6. The pirate sends another ping message to the device to verify that the network is working again.
+7. The device responds with an ICMP echo reply message.
+
 ### Infrastructure as Code
 
 Infrastructure as code (IaC) is a way to define and manage your infrastructure and its dependencies using code, rather than manually configuring resources through a graphical user interface. This allows you to version control your infrastructure, automate the provisioning and management of resources, and apply testing and deployment practices similar to those used in software development.
@@ -812,6 +953,16 @@ In a pirate theme, you could think of Kubernetes as a way to manage and maintain
 
 Kubernetes also helps to ensure that your ships are running smoothly and reliably, by providing features like automatic self-healing, rolling updates, and resource management. This can help to keep your fleet seaworthy and ready to set sail at a moment's notice, no matter where you are in the world.
 
+### Latency
+
+Latency is the time it takes for a signal to travel from one point to another. In a pirate theme, you could think of latency as the time it takes for a message to travel from one pirate to another.
+
+Latency is an important concept in computer networking, and it is often used to describe the time it takes for a packet of data to travel from one device to another. Latency is measured in milliseconds (ms), and it is usually measured using a tool called a ping.
+
+Latency is an important metric to consider when designing a network, as it can affect the performance of applications and services. For example, if a user is experiencing high latency, they may experience slow loading times or poor video quality when streaming a video.
+
+Latency can also be affected by the distance between two devices, as well as the type of network connection that is being used. For example, a wireless connection will typically have higher latency than a wired connection.
+
 ### Logging
 
 Logging on a Linux system can be thought of as a way for pirates to keep track of what is happening on their network. Logging is the process of recording events and activities that occur on a computer system, and it is a useful tool for diagnosing problems, tracking changes, and detecting security breaches.
@@ -866,6 +1017,22 @@ To use SSH, you need an SSH client, which is a program that connects to an SSH s
 
 SSH is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
 
+#### SSH Keys
+
+SSH keys are a type of secret code that can be used to authenticate a user when connecting to an SSH server. SSH keys are a more secure alternative to passwords, as they are much harder to guess or brute force.
+
+When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. If you provide a private key, the SSH server will use the corresponding public key to authenticate you. If the public key matches the private key, you will be granted access to the server.
+
+SSH keys are widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. They are a more secure alternative to passwords, and are an essential tool in the pirate's toolkit. Arrr!
+
+#### SSH Port Forwarding
+
+SSH port forwarding is a feature that allows you to forward traffic from a local port to a remote port on an SSH server. This can be useful for accessing services that are only available on a remote server, such as a web server or database.
+
+When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
+
+SSH port forwarding is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
+
 ### SSL Certificates
 
 SSL (Secure Sockets Layer) certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
@@ -877,6 +1044,14 @@ In the context of nginx, ye might be usin' an SSL certificate to secure the conn
 There be a few different types of SSL certificates, each with its own level of validation and security. Some be more expensive and time-consuming to obtain, but offer a higher level of trust and security.
 
 I hope this be helpin' ye to understand how SSL certificates be workin' and how ye might be usin' them with nginx. Ahoy!
+
+#### Let's Encrypt
+
+Let's Encrypt be a free, automated, and open certificate authority (CA) that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+Certbot be a free, open-source tool that be usin' Let's Encrypt to obtain and install SSL certificates. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+The EFF (Electronic Frontier Foundation) be a non-profit organization that be workin' to protect and advance digital rights. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
 ### Streaming
 
@@ -908,7 +1083,7 @@ For example, if the subnet mask is "255.255.255.0", it means that the first thre
 
 In the real-world, subnet masks are used to divide networks into smaller, more manageable parts and to improve the efficiency of communication between devices on a network. They are an important part of the IP addressing system, and they are used in many different types of networks, including pirate networks.
 
-### How to calculate a subnet mask
+#### How to calculate a subnet mask
 
 Determine the size of your network and the number of subnets you want to create. Consider factors such as the number of pirates and devices that will be connected to the network, the geographical location of the pirates, and the types of resources that will be shared on the network.
 
@@ -955,7 +1130,7 @@ Arrr matey! Zsh, also known as the "Z shell," is a Unix shell and command-line i
 To get started with zsh on your Linux system, you'll need to install it first. You can do this using your system's package manager, such as "apt" on Debian-based systems or "yum" on Red Hat-based systems. For example, you might run a command like this:
 
 ```bash
-sudo apt install zsh
+sudo apt install zsh -y
 ```
 
 Once zsh is installed, you can start using it by launching a terminal window and entering `zsh` at the command prompt. This will launch the zsh shell, and you can start entering commands just like you would with any other shell.
@@ -972,7 +1147,16 @@ I hope this helps get you started with zsh on your Linux system, matey! Let me k
 
 Oh My Zsh is a popular open-source project that helps users configure and customize the Z shell (zsh). It provides a variety of themes, plugins, and features that can make it easier to use zsh and add additional functionality to your terminal.
 
-To use Oh My Zsh, you'll need to install it on your system. You can do this by following the instructions on the Oh My Zsh [GitHub page](https://github.com/ohmyzsh/ohmyzsh).
+To use Oh My Zsh, you'll need to install it on your system. You can do this by following the instructions:
+
+- Open a terminal window and enter the following command:
+
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+- Follow the prompts to install Oh My Zsh.
+- Once the installation is complete, you can start using Oh My Zsh by launching a terminal window and entering `zsh` at the command prompt.
 
 Once you have Oh My Zsh installed, you can start using it by launching a terminal window and entering "zsh" at the command prompt. This will launch the zsh shell with Oh My Zsh configured, and you'll see a variety of additional features and options available to you.
 
