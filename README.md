@@ -8,91 +8,93 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-    - [Data science](#data-science)
-    - [Database](#database)
-    - [DevOps](#devops)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [Docker](#docker)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+      - [Data science](#data-science)
+      - [Database](#database)
+      - [DevOps](#devops)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Docker](#docker)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -142,17 +144,31 @@ It has a wide range o' software available: Linux has a huge repository o' free a
 
 All in all, Linux be a versatile and powerful operating system that be suitable for a wide range o' uses. Whether ye be a greenhorn or an experienced swashbuckler, Linux has something to offer for all.
 
+### Ubuntu
+
+For this book, we be usin' Ubuntu, a popular Linux distribution that be based on Debian. Ubuntu be a popular choice among pirates, as it be easy to use and comes with a wide range o' pre-installed applications.
+
+Ubuntu be a free and open-source operating system that be based on Debian. It be developed and maintained by Canonical Ltd., a company founded by South African entrepreneur Mark Shuttleworth.
+
+Ubuntu be named after the Southern African philosophy of ubuntu, which be translated as "humanity to others". The philosophy be based on the belief that all humans are equal and that we are all connected to each other.
+
+Ubuntu be released in October 2004, and it be the first Linux distribution to use GNOME as its default desktop environment. It be also the first Linux distribution to use Upstart as its default init system.
+
+Ubuntu be released in three editions: Ubuntu Desktop, Ubuntu Server, and Ubuntu Core. Ubuntu Desktop be a desktop operating system that be suitable for use on desktop computers, laptops, and other devices. Ubuntu Server be a server operating system that be suitable for use on servers and other devices that be runnin' headless. Ubuntu Core be a lightweight version o' Ubuntu that be designed for use on embedded devices.
+
 ### Setting up Ubuntu
 
-Soooo, matey! Here be a guide on how ye can get started with Ubuntu Linux:
+Ubuntu be available for download from the official website. There be two versions o' Ubuntu available for download: Ubuntu Desktop and Ubuntu Server. The desktop version be suitable for use on desktop computers, laptops, and other devices, while the server version be suitable for use on servers and other devices that be runnin' headless.
 
-[Download](https://ubuntu.com/download/desktop) the Ubuntu installation image from the official website.
+Ubuntu be available for download in two formats: a live image and an installation image. The live image be a bootable image that be suitable for tryin' out Ubuntu without installin' it. The installation image be a bootable image that be suitable for installin' Ubuntu on a computer.
 
-Use a tool like [Etcher](https://www.balena.io/etcher/) to create a bootable USB or DVD using the downloaded image.
+To download Ubuntu, visit the [official website](https://ubuntu.com/download/desktop) and click on the "Download" button. Select the version o' Ubuntu that ye be wantin' to download, and then select the format o' the image. Click on the "Download" button to download the image.
 
-Set yer computer to boot from the bootable USB or DVD by changin' the boot order in the BIOS settings.
+Once the image be downloaded, use a tool like [Etcher](https://www.balena.io/etcher/) to create a bootable USB or DVD using the downloaded image. Set yer computer to boot from the bootable USB or DVD by changin' the boot order in the BIOS settings.
 
-Follow the on-screen instructions to install Ubuntu. Make sure to allocate enough space for the installation and create a user account.
+Some other tools that be suitable for creatin' bootable USBs and DVDs include [Rufus](https://rufus.ie/), [UNetbootin](https://unetbootin.github.io/), and [YUMI](https://www.pendrivelinux.com/yumi-multiboot-usb-creator/). Ventoy is also a good tool for creatin' bootable USBs and DVDs. It be easy to use and it be also able to boot ISO files. Ventoy be available for download from the [official website](https://www.ventoy.net/en/index.html).
+
+Once the computer be bootin' from the bootable USB or DVD, follow the on-screen instructions to install Ubuntu. Make sure to allocate enough space for the installation and create a user account.
 
 Once the installation be complete, boot into yer newly installed Ubuntu system.
 
