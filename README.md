@@ -8,93 +8,96 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-    - [Data science](#data-science)
-    - [Database](#database)
-    - [DevOps](#devops)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [Docker](#docker)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+      - [Data science](#data-science)
+      - [Database](#database)
+      - [DevOps](#devops)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Docker](#docker)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -127,6 +130,12 @@ Linus's goal with Linux was to create an operating system that would be free and
 Linux quickly gained popularity among pirates, and a large community of developers and users began to form around the project. Over time, Linux has evolved into a powerful and widely used operating system, with versions available for a wide variety of devices, including servers, desktop computers, laptops, smartphones, and smart TVs.
 
 Today, Linux is an important part of the open source software movement, and is used by pirates around the world for a variety of purposes, including running servers, developing software, and as a platform for scientific and technical computing. It is known for its stability, security, and flexibility, and is an essential tool in the arsenal of any self-respecting pirate. Arrr!
+
+### What is the Linux kernel?
+
+The Linux kernel is the core component of the Linux operating system. It is a piece of software that acts as an interface between the hardware and the rest of the operating system, and is responsible for managing the resources of the computer and allocating them to the various applications and processes that are running.
+
+The Linux kernel was originally developed by Linus Torvalds in 1991, and was released as open source software under the GNU General Public License. It is written in the C programming language, and is available for a wide variety of computer architectures, including x86, ARM, and PowerPC.
 
 ## Chapter One - Getting Started
 
@@ -196,19 +205,32 @@ So hoist the mainsail and set sail for the world o' Linux with Ubuntu!
 
 Captain! Here be a guide on what ye can do after installing Ubuntu:
 
-Explore the interface: Take some time to familiarise yerself with the Ubuntu interface, includin' the desktop, menu, and pre-installed applications.
+**Explore the interface:** Take some time to familiarise yerself with the Ubuntu interface, includin' the desktop, menu, and pre-installed applications.
 
-Customise the desktop: Ye can change the desktop background, install new themes, and install new applications to customise yer Ubuntu experience.
+**Customise the desktop:** Ye can change the desktop background, install new themes, and install new applications to customise yer Ubuntu experience.
 
-Connect to the internet: If ye have an internet connection, ye can connect to the internet using the Network Manager applet in the top panel.
+**Connect to the internet:** If ye have an internet connection, ye can connect to the internet using the Network Manager applet in the top panel.
 
-Update the system: It be a good idea to update yer system to the latest version by runnin' the "Software Updater" application. This will ensure that ye have the latest security updates and bug fixes.
+**Update the system:** It be a good idea to update yer system to the latest version by runnin' the "Software Updater" application. This will ensure that ye have the latest security updates and bug fixes.
 
-Learn the command line: The command line be a powerful way to interact with yer Linux system, and it can be useful to learn some basic commands. Ye can access the command line by openin' a terminal window.
+**Learn the command line:** The command line be a powerful way to interact with yer Linux system, and it can be useful to learn some basic commands. Ye can access the command line by openin' a terminal window.
 
-Install additional software: Ubuntu comes with a large repository o' free and open-source software, but ye can also install additional software from the internet. Ye can use the "Ubuntu Software" application to search for and install new software.
+**Install additional software:** Ubuntu comes with a large repository o' free and open-source software, but ye can also install additional software from the internet. Ye can use the "Ubuntu Software" application to search for and install new software.
 
 Overall, the best way to get started with Ubuntu be to explore and try out different features and applications. As ye become more comfortable with the operating system, ye can start learnin' more advanced topics and customizin' yer system to yer likin'.
+
+##### Checklist
+
+- [ ] Familiarise yerself with the Ubuntu interface.
+- [ ] Customise the desktop.
+- [ ] Connect to the internet.
+- [ ] Update the system.
+- [ ] Learn the command line.
+- [ ] Install additional software.
+- [ ] Explore and try out different features and applications.
+- [ ] Learn more advanced topics and customise yer system.
+- [ ] Explore the official documentation.
+- [ ] Take online courses or tutorials.
 
 ### Where to go from here?
 
@@ -223,6 +245,10 @@ Get certified: Many employers look for candidates who have formal certification 
 Network and build relationships: Networkin' and building relationships with others in the Linux community can be a valuable way to learn about job openings and get yer foot in the door at companies that be hirin'. Attend local meetups, participate in online forums and discussion groups, and consider joinin' a Linux user group or professional association.
 
 Look for entry-level positions: If ye be just startin' out in yer Linux career, it might be helpful to look for entry-level positions that can provide ye with the opportunity to gain hands-on experience and build up yer skills. These might include internships, junior-level system administrator positions, or entry-level software development roles. As ye gain experience, ye can then look for more advanced positions that align with yer career goals.
+
+- [freeCodeCamp](https://www.freecodecamp.org/) be a non-profit organisation that be dedicated to helpin' people learn to code for free. It be run by a community o' volunteers, and it be supported by donations from the community.
+
+- [The Odin Project](https://www.theodinproject.com/) be a free online curriculum that be designed to teach web development. It be run by a community o' volunteers, and it be supported by donations from the community.
 
 #### Backend
 
