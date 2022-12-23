@@ -8,105 +8,120 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-    - [Data Science](#data-science)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [Platform Engineering](#platform-engineering)
-      - [Site Reliability Engineering](#site-reliability-engineering)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-  - [Docker](#docker)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+      - [Data Science](#data-science)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [Platform Engineering](#platform-engineering)
+        - [Site Reliability Engineering](#site-reliability-engineering)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+      - [Web Server](#web-server)
+        - [Nginx](#nginx)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -175,6 +190,12 @@ The Linux kernel was originally developed by Linus Torvalds in 1991, and was rel
 ![Linus Torvalds](images/linustorvalds.jpg)
 
 Linus Torvalds is the creator of the Linux operating system. He is a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
+
+### Richard Stallman
+
+![Richard Stallman](images/richardstallman.jpg)
+
+Richard Stallman is the creator of the GNU operating system. He is a computer science student at the Massachusetts Institute of Technology (MIT), and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
 ## Chapter One - Getting Started
 
@@ -833,6 +854,32 @@ The creators of the World Wide Web, Tim Berners-Lee and Robert Cailliau, be insp
 
 So hoist the mainsail and set course for the World Wide Web! With the World Wide Web at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
 
+#### Web Server
+
+A web server be a computer that be used to host web resources, such as web pages, images, and videos. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+In a pirate theme, ye can think of a web server as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, a web server be able to explore a vast world of information and resources.
+
+The first web server, WorldWideWeb, be created by Tim Berners-Lee in 1990. It be a simple text-based browser that be used to view web pages. Since then, web servers have evolved into powerful tools that be used by billions of people every day.
+
+Some examples of popular web servers include Apache, Nginx, and Microsoft IIS. Each web server be different, and they be optimized for different platforms and use cases. For example, Apache be optimized for speed and performance, while Nginx be optimized for customization and extensibility.
+
+##### Nginx
+
+[Nginx Website](https://www.nginx.com) | [Awesome Nginx](https://github.com/agile6v/awesome-nginx) | [NGINXConfig](https://www.digitalocean.com/community/tools/nginx)
+
+Nginx be a popular web server that be used to host web resources, such as web pages, images, and videos. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+In a pirate theme, ye can think of Nginx as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, Nginx be able to explore a vast world of information and resources.
+
+A reverse proxy server be a server that be used to forward client requests to one or more backend servers. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+##### Sir Tim Berners-Lee
+
+![Sir Tim Berners-Lee](images/timbernerslee.jpg)
+
+Sir Tim Berners-Lee be a British computer scientist and engineer who be best known as the inventor of the World Wide Web. He be a pioneer in the field of computer science, and he be the founder of the World Wide Web Consortium (W3C), which be a standards organization that be responsible for the development of web standards.
+
 ### Continuous Delivery
 
 Continuous delivery is a software development practice where code changes are automatically built, tested, and deployed to production. It allows for faster and more frequent updates to a software application, as code changes can be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it takes for new features or bug fixes to reach users.
@@ -859,6 +906,10 @@ In a pirate theme, you could think of DNS as a way to navigate the vast and ofte
 
 DNS also helps to ensure that internet users can reach their destination even if the underlying landscape (IP addresses) changes. Just as a pirate might need to adjust their course if the winds or currents shift, DNS can automatically route internet users to the correct location even if the underlying IP addresses change. This helps to make the internet more reliable and accessible, even in the midst of constantly-changing conditions.
 
+#### Types of DNS Records
+
+There are several different types of DNS records that can be used to map domain names to IP addresses. The most common types of DNS records are A records, which map a domain name to a single IP address, and CNAME records, which map a domain name to another domain name. Other types of DNS records include MX records, which map a domain name to an email server, and TXT records, which can be used to store arbitrary text data.
+
 ### Docker
 
 Arr matey, ye be askin' about Docker, the popular containerization software that be makin' it easier to ship, run, and manage applications.
@@ -870,6 +921,42 @@ To work with Docker, ye might be usin' the Docker Engine to build, run, and mana
 In terms of practical use, ye might be usin' Docker to set up a development environment for your application, or to package and deploy your application to production. Ye can also use Docker to run databases or other services that your application relies on.
 
 So there ye have it, a brief overview of Docker and how ye might be workin' with it. I hope this be helpin' ye to understand this powerful tool for managing and running applications. Shiver me timbers!
+
+#### Install Docker
+
+To install Docker, ye can follow the instructions on the Docker website. Ye can also use the Docker Toolbox to install Docker on Windows and Mac.
+
+##### Docker Engine
+
+Docker Engine be a client-server application that be used to build, run, and manage Docker containers. The Docker Engine be made up of two parts: the Docker daemon and the Docker client.
+
+The Docker daemon be a background service that be runnin' on yer computer. It be responsible for building, runnin', and distributing yer Docker containers. The Docker client be the command line tool that ye use to interact with the Docker daemon.
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+```
+
+Once Docker be installed, ye can verify that it be workin' by runnin' the docker version command in a terminal window.
+
+#### Docker Compose
+
+Docker Compose be a tool for defining and runnin' multi-container Docker applications. With Compose, ye can use a YAML file to configure your application's services. Then, with a single command, ye can create and start all the services from yer configuration.
+
+##### Install Docker Compose
+
+To install Docker Compose, ye can follow the instructions on the Docker Compose website. Ye can also use the Docker Toolbox to install Docker Compose on Windows and Mac.
+
+```bash
+COMPOSE_VERSION=`git ls-remote https://github.com/docker/compose | grep refs/tags | grep -oE "[0-9]+\.[0-9][0-9]+\.[0-9]+$" | sort --version-sort | tail -n 1`
+sudo sh -c "curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose"
+sudo chmod +x /usr/local/bin/docker-compose
+sudo sh -c "curl -L https://raw.githubusercontent.com/docker/compose/${COMPOSE_VERSION}/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose"
+```
+
+#### Docker Swarm
+
+Docker Swarm be a native clustering tool for Docker. It be used to deploy and manage a cluster of Docker Engines.
 
 ### Git
 
@@ -1044,6 +1131,81 @@ Infrastructure as code (IaC) is a way to define and manage your infrastructure a
 In a pirate theme, you could think of infrastructure as code as a way to manage and maintain your fleet of ships and their various systems and equipment. Instead of manually configuring and repairing each ship's sails, masts, and engines, you could use code to define how these components should be set up and configured. This would allow you to automate the process of building and repairing your ships, as well as make it easier to scale your fleet as needed.
 
 By using infrastructure as code, you can also more easily track and manage changes to your ships' systems and equipment over time, as well as roll back any changes that might cause problems. This can help you to keep your fleet seaworthy and ready to set sail at a moment's notice, no matter where you are in the world.
+
+#### Ansible
+
+Ansible is a configuration management tool that can be used to automate the provisioning and management of infrastructure. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
+
+In a pirate theme, you could think of Ansible as a tool that can be used to automate the provisioning and management of a fleet of ships. It can be used to automate the configuration of a ship's sails, masts, and engines, as well as the deployment of new cannons and other equipment.
+
+Ansible can be used to automate the provisioning and management of infrastructure, including:
+
+Servers: Ansible can be used to automate the configuration of servers, including installing software, configuring services, and managing users and groups.
+
+Networks: Ansible can be used to automate the configuration of networks, including configuring switches, routers, and firewalls.
+
+Cloud: Ansible can be used to automate the configuration of cloud infrastructure, including configuring virtual machines, load balancers, and storage.
+
+Containers: Ansible can be used to automate the configuration of containers, including configuring Docker containers and Kubernetes clusters.
+
+You might imagine that Ansible is a useful tool for pirates to automate the provisioning and management of their fleet of ships. It can be used to automate the configuration of a ship's sails, masts, and engines, as well as the deployment of new cannons and other equipment.
+
+##### Install Ansible
+
+Ansible can be installed on a Linux system using the package manager for your distribution. For example, on Ubuntu, you can install Ansible using the following command:
+
+```bash
+sudo apt-get install ansible -y
+```
+
+#### Terraform
+
+Terraform is a tool that can be used to automate the provisioning and management of infrastructure. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
+
+In a pirate theme, you could think of Terraform as a tool that can be used to automate the provisioning and management of a fleet of ships. It can be used to automate the configuration of a ship's sails, masts, and engines, as well as the deployment of new cannons and other equipment.
+
+Terraform can be used to automate the provisioning and management of infrastructure, including:
+
+Servers: Terraform can be used to automate the configuration of servers, including installing software, configuring services, and managing users and groups.
+
+Networks: Terraform can be used to automate the configuration of networks, including configuring switches, routers, and firewalls.
+
+Cloud: Terraform can be used to automate the configuration of cloud infrastructure, including configuring virtual machines, load balancers, and storage.
+
+Containers: Terraform can be used to automate the configuration of containers, including configuring Docker containers and Kubernetes clusters.
+
+You might imagine that Terraform is a useful tool for pirates to automate the provisioning and management of their fleet of ships. It can be used to automate the configuration of a ship's sails, masts, and engines, as well as the deployment of new cannons and other equipment.
+
+##### Install Terraform
+
+Terraform can be installed on a Linux system using the package manager for your distribution. For example, on Ubuntu, you can install Terraform using the following command:
+
+```bash
+sudo apt-get install terraform -y
+```
+
+Another option for more advanced users is to use `tfenv` to install Terraform. `tfenv` is a tool that can be used to install and manage multiple versions of Terraform on a single system. It can be installed using the following command:
+
+- Check out tfenv into any path (here is `${HOME}/.tfenv`)
+
+```bash
+git clone --depth=1 https://github.com/tfutils/tfenv.git ~/.tfenv
+```
+
+- Add `~/.tfenv/bin` to your `$PATH` any way you like
+
+```bash
+echo 'export PATH="$HOME/.tfenv/bin:$PATH"' >> ~/.bashrc
+```
+
+On Ubuntu/Debian touching `/usr/local/bin` might require sudo access, but you can create `${HOME}/bin` or `${HOME}/.local/bin` and on next login it will get added to the session `$PATH` or by running `. ${HOME}/.profile` it will get added to the current shell session's `$PATH`.
+
+```bash
+mkdir -p ~/.local/bin/
+. ~/.profile
+ln -s ~/.tfenv/bin/* ~/.local/bin
+which tfenv
+```
 
 ### IP Addresses
 
