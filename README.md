@@ -231,13 +231,11 @@ Once the installation be complete, boot into yer newly installed Ubuntu system.
 
 #### What to do next?
 
+**Captain!** Here be a guide on what ye can do *after* installing Ubuntu:
+
 - Familiarise yerself with the Ubuntu interface and try out the pre-installed applications.
 
 - To learn more about Linux and Ubuntu, ye can refer to the official [documentation](https://help.ubuntu.com/) or take online courses or tutorials. There be also many forums and communities where ye can ask for help and guidance.
-
-So hoist the mainsail and set sail for the world o' Linux with Ubuntu!
-
-**Captain!** Here be a guide on what ye can do *after* installing Ubuntu:
 
 **Explore the interface:** Take some time to familiarise yerself with the Ubuntu interface, includin' the desktop, menu, and pre-installed applications.
 
@@ -252,6 +250,8 @@ So hoist the mainsail and set sail for the world o' Linux with Ubuntu!
 **Install additional software:** Ubuntu comes with a large repository o' free and open-source software, but ye can also install additional software from the internet. Ye can use the "Ubuntu Software" application to search for and install new software.
 
 Overall, the best way to get started with Ubuntu be to explore and try out different features and applications. As ye become more comfortable with the operating system, ye can start learnin' more advanced topics and customizin' yer system to yer likin'.
+
+So hoist the mainsail and set sail for the world o' Linux with Ubuntu!
 
 ##### Checklist
 
