@@ -28,6 +28,8 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
       - [Cybersecurity](#cybersecurity)
       - [Data Science](#data-science)
       - [Database](#database)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
       - [DevOps](#devops)
       - [DevRel](#devrel)
       - [Frontend](#frontend)
@@ -357,6 +359,14 @@ Ensuring data integrity: DBAs might work to ensure the integrity and accuracy of
 Collaborating with other teams: DBAs might work closely with other teams such as development, QA, and IT to ensure that the databases meet the needs and requirements of the organization.
 
 You might imagine that a DBA is responsible for managing and maintaining the databases that are used on your network. They play a crucial role in ensuring that the databases are efficient, secure, and accurate, and in supporting the needs and requirements of the organization.
+
+##### noSQL
+
+A noSQL database is a type of database that is designed to store and organize data in a way that is different from traditional relational databases. noSQL databases are often used to store large amounts of data, and they are often more flexible and scalable than relational databases.
+
+##### SQL
+
+A SQL database is a type of database that is designed to store and organize data in a way that is similar to a spreadsheet. SQL databases are often used to store structured data, and they are often more efficient and reliable than noSQL databases.
 
 #### DevOps
 
