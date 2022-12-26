@@ -8,127 +8,139 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (Don't feel obligated to read this)](#about-the-author-dont-feel-obligated-to-read-this)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-    - [Data Science](#data-science)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-      - [Platform Engineering](#platform-engineering)
-      - [Site Reliability Engineering](#site-reliability-engineering)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Quality Assurance](#quality-assurance)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-    - [Web Server](#web-server)
-      - [Nginx](#nginx)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (Don't feel obligated to read this)](#about-the-author-dont-feel-obligated-to-read-this)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Penetration Testing](#penetration-testing)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Security Management](#security-management)
+        - [Security Operations](#security-operations)
+        - [Security Research](#security-research)
+        - [Hackerone](#hackerone)
+      - [Data Science](#data-science)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+        - [Platform Engineering](#platform-engineering)
+        - [Site Reliability Engineering](#site-reliability-engineering)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Quality Assurance](#quality-assurance)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+      - [Web Server](#web-server)
+        - [Nginx](#nginx)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+    - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -353,47 +365,191 @@ Aye, matey! If ye be interested in pursuin' a career in the field o' Linux, ther
 
 Backend developers are responsible for creating and maintaining the systems and infrastructure that power your network. Backend developers typically work on the "backend" of a website or application, which refers to the servers, databases, and other systems that support the frontend (the user-facing part of the site or application).
 
-Backend developers often work on tasks such as:
+- Backend developers often work on tasks such as:
 
-Developing and maintaining server-side software: This might include creating and managing databases, implementing server-side logic and business logic, and integrating with third-party systems.
+**Developing and maintaining server-side software:** This might include creating and managing databases, implementing server-side logic and business logic, and integrating with third-party systems.
 
-Designing and implementing APIs: Backend developers might create APIs (Application Programming Interfaces) that allow different systems and applications to communicate with each other.
+**Designing and implementing APIs:** Backend developers might create APIs (Application Programming Interfaces) that allow different systems and applications to communicate with each other.
 
-Managing infrastructure: Backend developers might be responsible for maintaining and scaling the servers, databases, and other infrastructure that support a website or application.
+**Managing infrastructure:** Backend developers might be responsible for maintaining and scaling the servers, databases, and other infrastructure that support a website or application.
 
-Collaborating with frontend developers: Backend developers often work closely with frontend developers to ensure that the backend systems and infrastructure support the needs of the user-facing part of the site or application.
+**Collaborating with frontend developers:** Backend developers often work closely with frontend developers to ensure that the backend systems and infrastructure support the needs of the user-facing part of the site or application.
 
 You might imagine that backend developers are responsible for creating and maintaining the systems that power your network. They might work on tasks such as developing and maintaining server-side software, designing and implementing APIs, and managing infrastructure, all of which are important for keeping your network running smoothly and efficiently.
 
+> **Note:** Backend developers are sometimes referred to as "back-end developers" or "back end developers."
+
 #### Cloud Computing
 
-Ahoy there, me matey! If ye be a student interested in gettin' started with cloud computing, here be a few steps ye can take to gain a solid foundation in this field:
+**Learn the basics of cloud computing:** Start by learnin' the fundamental concepts and technologies of cloud computing, such as virtualization, infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). Ye can find a wealth of resources online, including tutorials, articles, and online courses.
 
-Learn the basics of cloud computing: Start by learnin' the fundamental concepts and technologies of cloud computing, such as virtualization, infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). Ye can find a wealth of resources online, including tutorials, articles, and online courses.
+**Gain hands-on experience:** The best way to learn cloud computing be to get hands-on experience workin' with it. Many cloud providers offer free tiers or discounted pricing for students, so ye can sign up for an account and start experimentin' with different cloud services. Ye can also use tools such as Docker to create and deploy cloud-based applications on yer own computer.
 
-Gain hands-on experience: The best way to learn cloud computing be to get hands-on experience workin' with it. Many cloud providers offer free tiers or discounted pricing for students, so ye can sign up for an account and start experimentin' with different cloud services. Ye can also use tools such as Docker to create and deploy cloud-based applications on yer own computer.
+**Pursue additional education:** If ye want to further yer education in cloud computing, there be many online courses and certification programs that can help ye gain more in-depth knowledge and skills. For example, Amazon Web Services (AWS) offers a variety of trainin' and certification programs for students, as do other major cloud providers such as Microsoft Azure and Google Cloud Platform.
 
-Pursue additional education: If ye want to further yer education in cloud computing, there be many online courses and certification programs that can help ye gain more in-depth knowledge and skills. For example, Amazon Web Services (AWS) offers a variety of trainin' and certification programs for students, as do other major cloud providers such as Microsoft Azure and Google Cloud Platform.
+**Network and build relationships:** Networkin' and buildin' relationships with others in the cloud computing industry can be a valuable way to learn about job openings and get yer foot in the door at companies that be hirin'. Attend local meetups, participate in online forums and discussion groups, and consider joinin' a professional association or user group.
 
-Network and build relationships: Networkin' and buildin' relationships with others in the cloud computing industry can be a valuable way to learn about job openings and get yer foot in the door at companies that be hirin'. Attend local meetups, participate in online forums and discussion groups, and consider joinin' a professional association or user group.
-
-Look for internships or entry-level positions: If ye be just startin' out in yer career, it can be helpful to look for internships or entry-level positions that can provide ye with hands-on experience and help ye build up yer skills. These might include internships at cloud-based companies, or junior-level positions as a cloud developer or system administrator. As ye gain experience, ye can then look for more advanced positions that align with yer career goals.
-
-I hope this advice be helpful, matey! If ye have any other questions, don't hesitate to ask someone in the community, but please be respectful and patient. Arrr!
+**Look for internships or entry-level positions:** If ye be just startin' out in yer career, it can be helpful to look for internships or entry-level positions that can provide ye with hands-on experience and help ye build up yer skills. These might include internships at cloud-based companies, or junior-level positions as a cloud developer or system administrator. As ye gain experience, ye can then look for more advanced positions that align with yer career goals.
 
 #### Cybersecurity
 
 A cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. Cybersecurity analysts often work on tasks such as:
 
-Analyzing and monitoring network security: Cybersecurity analysts might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+**Analyzing and monitoring network security:** Cybersecurity analysts might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
 
-Responding to security incidents: Cybersecurity analysts might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+**Responding to security incidents:** Cybersecurity analysts might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
 
-Implementing security controls: Cybersecurity analysts might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+**Implementing security controls:** Cybersecurity analysts might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
 
-Collaborating with other teams: Cybersecurity analysts might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+**Collaborating with other teams:** Cybersecurity analysts might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
 
 You might imagine that a cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Penetration Testing
+
+A penetration tester is responsible for identifying and exploiting vulnerabilities in your network. Penetration testers often work on tasks such as:
+
+**Identifying vulnerabilities:** Penetration testers might identify vulnerabilities in your network, such as weak passwords, unpatched software, and misconfigured systems.
+
+**Exploiting vulnerabilities:** Penetration testers might exploit vulnerabilities in your network to gain unauthorized access to sensitive data or systems.
+
+**Reporting vulnerabilities:** Penetration testers might report their findings to stakeholders, including recommendations for how to mitigate risks and prevent similar vulnerabilities from occurring in the future.
+
+**Collaborating with other teams:** Penetration testers might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a penetration tester is responsible for identifying and exploiting vulnerabilities in your network. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Blue Team
+
+A blue team is responsible for protecting your network from cyber threats and vulnerabilities. Blue team members often work on tasks such as:
+
+**Analyzing and monitoring network security:** Blue team members might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+
+**Responding to security incidents:** Blue team members might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+
+**Implementing security controls:** Blue team members might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+
+**Collaborating with other teams:** Blue team members might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a blue team is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Purple Team
+
+A purple team is responsible for identifying and exploiting vulnerabilities in your network. Purple team members often work on tasks such as:
+
+**Identifying vulnerabilities:** Purple team members might identify vulnerabilities in your network, such as weak passwords, unpatched software, and misconfigured systems.
+
+**Exploiting vulnerabilities:** Purple team members might exploit vulnerabilities in your network to gain unauthorized access to sensitive data or systems.
+
+**Reporting vulnerabilities:** Purple team members might report their findings to stakeholders, including recommendations for how to mitigate risks and prevent similar vulnerabilities from occurring in the future.
+
+**Collaborating with other teams:** Purple team members might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a purple team is responsible for identifying and exploiting vulnerabilities in your network. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Red Team
+
+A red team is responsible for identifying and exploiting vulnerabilities in your network. Red team members often work on tasks such as:
+
+**Identifying vulnerabilities:** Red team members might identify vulnerabilities in your network, such as weak passwords, unpatched software, and misconfigured systems.
+
+**Exploiting vulnerabilities:** Red team members might exploit vulnerabilities in your network to gain unauthorized access to sensitive data or systems.
+
+**Reporting vulnerabilities:** Red team members might report their findings to stakeholders, including recommendations for how to mitigate risks and prevent similar vulnerabilities from occurring in the future.
+
+**Collaborating with other teams:** Red team members might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a red team is responsible for identifying and exploiting vulnerabilities in your network. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Security Architecture
+
+A security architect is responsible for protecting your network from cyber threats and vulnerabilities. Security architects often work on tasks such as:
+
+**Analyzing and monitoring network security:** Security architects might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+
+**Responding to security incidents:** Security architects might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+
+**Implementing security controls:** Security architects might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+
+**Collaborating with other teams:** Security architects might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a security architect is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Security Compliance
+
+A security compliance analyst is responsible for ensuring that your network is secure and compliant with relevant laws and regulations. Security compliance analysts often work on tasks such as:
+
+**Analyzing and monitoring network security:** Security compliance analysts might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+
+**Responding to security incidents:** Security compliance analysts might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+
+**Implementing security controls:** Security compliance analysts might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+
+**Collaborating with other teams:** Security compliance analysts might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a security compliance analyst is responsible for ensuring that your network is secure and compliant with relevant laws and regulations. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Security Engineering
+
+A security engineer is responsible for protecting your network from cyber threats and vulnerabilities. Security engineers often work on tasks such as:
+
+**Analyzing and monitoring network security:** Security engineers might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+
+**Responding to security incidents:** Security engineers might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+
+**Implementing security controls:** Security engineers might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+
+**Collaborating with other teams:** Security engineers might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a security engineer is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Security Management
+
+A security manager is responsible for protecting your network from cyber threats and vulnerabilities. Security managers often work on tasks such as:
+
+**Analyzing and monitoring network security:** Security managers might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+
+**Responding to security incidents:** Security managers might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+
+**Implementing security controls:** Security managers might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+
+**Collaborating with other teams:** Security managers might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a security manager is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Security Operations
+
+A security operations analyst is responsible for protecting your network from cyber threats and vulnerabilities. Security operations analysts often work on tasks such as:
+
+**Analyzing and monitoring network security:** Security operations analysts might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+
+**Responding to security incidents:** Security operations analysts might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+
+**Implementing security controls:** Security operations analysts might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+
+**Collaborating with other teams:** Security operations analysts might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a security operations analyst is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Security Research
+
+A security researcher is responsible for protecting your network from cyber threats and vulnerabilities. Security researchers often work on tasks such as:
+
+**Analyzing and monitoring network security:** Security researchers might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+
+**Responding to security incidents:** Security researchers might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+
+**Implementing security controls:** Security researchers might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+
+**Collaborating with other teams:** Security researchers might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+
+You might imagine that a security researcher is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+
+##### Hackerone
+
+[HackerOne](https://www.hackerone.com/)
+
+HackerOne is a platform that connects organizations with hackers to find and fix security vulnerabilities. HackerOne is a platform that connects organizations with hackers to find and fix security vulnerabilities.
 
 #### Data Science
 
