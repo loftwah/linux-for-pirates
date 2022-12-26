@@ -8,164 +8,175 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (Don't feel obligated to read this)](#about-the-author-dont-feel-obligated-to-read-this)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Penetration Testing](#penetration-testing)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [What is the difference?](#what-is-the-difference)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Security Management](#security-management)
-      - [Security Operations](#security-operations)
-      - [Security Research](#security-research)
-      - [Hackerone](#hackerone)
-      - [Bugcrowd](#bugcrowd)
-    - [Data Science](#data-science)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-      - [Platform Engineering](#platform-engineering)
-      - [Site Reliability Engineering](#site-reliability-engineering)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Quality Assurance](#quality-assurance)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-    - [Web Server](#web-server)
-      - [Nginx](#nginx)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-  - [Amazon Web Services](#amazon-web-services)
-  - [Cloudflare](#cloudflare)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [DigitalOcean](#digitalocean)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-    - [DNS over TLS (DoT)](#dns-over-tls-dot)
-    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-    - [DNSCrypt](#dnscrypt)
-    - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-    - [AWS Route 53](#aws-route-53)
-    - [Google Cloud DNS](#google-cloud-dns)
-    - [DigitalOcean DNS](#digitalocean-dns)
-    - [Azure DNS](#azure-dns)
-    - [Cloudflare DNS](#cloudflare-dns)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-    - [HTTP error codes](#http-error-codes)
-    - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (Don't feel obligated to read this)](#about-the-author-dont-feel-obligated-to-read-this)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Penetration Testing](#penetration-testing)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [What is the difference?](#what-is-the-difference)
+        - [Phishing](#phishing)
+        - [Social Engineering](#social-engineering)
+        - [Kevin Mitnick](#kevin-mitnick)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Security Management](#security-management)
+        - [Security Operations](#security-operations)
+        - [Security Research](#security-research)
+        - [Hackerone](#hackerone)
+        - [Bugcrowd](#bugcrowd)
+      - [Data Science](#data-science)
+        - [Artificial Intelligence](#artificial-intelligence)
+        - [Machine Learning](#machine-learning)
+        - [Data Visualization](#data-visualization)
+        - [Data Analyst](#data-analyst)
+        - [Data Engineer](#data-engineer)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+        - [Platform Engineering](#platform-engineering)
+        - [Site Reliability Engineering](#site-reliability-engineering)
+      - [Developer Advocate](#developer-advocate)
+      - [DevRel (Developer Relations)](#devrel-developer-relations)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Quality Assurance](#quality-assurance)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+      - [Bash scripting](#bash-scripting)
+      - [Bash history](#bash-history)
+      - [Bash one-liners](#bash-one-liners)
+    - [Processes](#processes)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+      - [Web Server](#web-server)
+        - [Nginx](#nginx)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Azure DNS](#azure-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -606,15 +617,85 @@ Bugcrowd is a platform that connects organizations with hackers to find and fix 
 
 A data scientist is responsible for analyzing and interpreting the data that is used on your network. Data scientists often work on tasks such as:
 
-Analyzing and interpreting data: Data scientists might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
+**Analyzing and interpreting data:** Data scientists might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
 
-Developing models and algorithms: Data scientists might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
+**Developing models and algorithms:** Data scientists might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
 
-Communicating findings and insights: Data scientists might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
+**Communicating findings and insights:** Data scientists might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
 
-Collaborating with other teams: Data scientists might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
+**Collaborating with other teams:** Data scientists might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
 
 You might imagine that a data scientist is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
+
+##### Artificial Intelligence
+
+An artificial intelligence (AI) engineer is responsible for analyzing and interpreting the data that is used on your network. AI engineers often work on tasks such as:
+
+**Analyzing and interpreting data:** AI engineers might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
+
+**Developing models and algorithms:** AI engineers might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
+
+**Communicating findings and insights:** AI engineers might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
+
+**Collaborating with other teams:** AI engineers might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
+
+You might imagine that an AI engineer is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
+
+##### Machine Learning
+
+A machine learning engineer is responsible for analyzing and interpreting the data that is used on your network. Machine learning engineers often work on tasks such as:
+
+**Analyzing and interpreting data:** Machine learning engineers might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
+
+**Developing models and algorithms:** Machine learning engineers might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
+
+**Communicating findings and insights:** Machine learning engineers might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
+
+**Collaborating with other teams:** Machine learning engineers might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
+
+You might imagine that a machine learning engineer is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
+
+##### Data Visualization
+
+A data visualization engineer is responsible for analyzing and interpreting the data that is used on your network. Data visualization engineers often work on tasks such as:
+
+**Analyzing and interpreting data:** Data visualization engineers might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
+
+**Developing models and algorithms:** Data visualization engineers might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
+
+**Communicating findings and insights:** Data visualization engineers might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
+
+**Collaborating with other teams:** Data visualization engineers might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
+
+You might imagine that a data visualization engineer is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
+
+##### Data Analyst
+
+A data analyst is responsible for analyzing and interpreting the data that is used on your network. Data analysts often work on tasks such as:
+
+**Analyzing and interpreting data:** Data analysts might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
+
+**Developing models and algorithms:** Data analysts might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
+
+**Communicating findings and insights:** Data analysts might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
+
+**Collaborating with other teams:** Data analysts might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
+
+You might imagine that a data analyst is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
+
+##### Data Engineer
+
+A data engineer is responsible for analyzing and interpreting the data that is used on your network. Data engineers often work on tasks such as:
+
+**Analyzing and interpreting data:** Data engineers might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
+
+**Developing models and algorithms:** Data engineers might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
+
+**Communicating findings and insights:** Data engineers might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
+
+**Collaborating with other teams:** Data engineers might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
+
+You might imagine that a data engineer is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
 
 #### Database
 
@@ -738,7 +819,21 @@ Collaborating with other teams: Site reliability engineers might work closely wi
 
 You might imagine that site reliability engineering is the practice of building and maintaining the infrastructure that is used to support the operation of your network. They play a crucial role in ensuring that the infrastructure is efficient, reliable, and secure, and in supporting the needs and requirements of the organization.
 
-#### DevRel
+#### Developer Advocate
+
+Developer advocates are responsible for promoting the products and services of their company or organization to developers. Developer advocates often work on tasks such as:
+
+Promoting the company's products or services to developers: Developer advocates might work to promote the company's products or services to developers, through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
+
+Gathering and analyzing developer feedback: Developer advocates might gather feedback from developers about the company's products or services, and use this feedback to inform product development and strategy.
+
+Building and maintaining relationships with developers: Developer advocates might work to build and maintain relationships with developers who use their company's products or services. This might include activities such as hosting events, providing technical support, and communicating with developers through online channels.
+
+Collaborating with other teams: Developer advocates might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
+
+You might imagine that developer advocates are responsible for promoting the products and services of their company or organization to developers. They play a crucial role in ensuring that the company's products and services are meeting the needs and expectations of developers, and in supporting the needs and requirements of the organization.
+
+#### DevRel (Developer Relations)
 
 Developer relations can be thought of as the way in which a company or organization engages with and supports developers who use its products or services. Developer relations professionals often work on tasks such as:
 
@@ -984,6 +1079,55 @@ alias ls='ls --color=auto'
 ```
 
 The first line sets the prompt to include the current time. The second line sets the default editor to Vim. The third line sets an alias for the `ls` command, which is a shortcut that can be used to run the command. For example, a pirate could type `ls` instead of `ls --color=auto`.
+
+#### Bash scripting
+
+Ahoy matey! In the world of Linux, Bash scripting is a powerful tool that allows pirates (and users) to automate tasks and customize their environment. Just like how a pirate might use a treasure map to find their way to their treasure, Bash scripts can be used to automate common tasks and make it easier for users to perform repetitive operations.
+
+A Bash script is a plain text file that contains a series of commands that are executed in order. For example, a pirate might create a script that backs up their important documents to a USB drive. The script might look something like this:
+
+```bash
+#!/bin/bash
+
+# Backup important documents to a USB drive
+cp -r /home/pirate/Documents /media/usb
+```
+
+The first line of the script is called the shebang, and it tells the system which program should be used to execute the script. In this case, the shebang tells the system to use the Bash interpreter to execute the script.
+
+The second line is a comment, which is a line that is ignored by the system. Comments are useful for providing information about the script, such as what it does and how it should be used.
+
+The third line is the actual command that is executed by the script. In this case, the command copies the `Documents` directory from the user's home directory to the USB drive.
+
+I hope this helps you understand what Bash scripting is and how a pirate might use it to automate tasks and customize their environment. Arrr!
+
+#### Bash history
+
+Ahoy matey! In the world of Linux, the Bash history is a list of commands that have been executed in the current session. Just like how a pirate might use a treasure map to find their way to their treasure, the Bash history can be used to view a list of commands that have been executed in the current session.
+
+The Bash history is a list of commands that have been executed in the current session. For example, a pirate might use the `ls` command to view a list of files in the current directory. If the pirate then uses the `cd` command to change the current directory, the `ls` command will be added to the Bash history.
+
+The Bash history can be viewed by using the `history` command. The `history` command will display a list of commands that have been executed in the current session, along with the line number of each command. The line number can be used to re-execute a command.
+
+I hope this helps you understand what the Bash history is and how a pirate might use it to view a list of commands that have been executed in the current session. Arrr!
+
+#### Bash one-liners
+
+Ahoy matey! In the world of Linux, a Bash one-liner is a command that can be used to perform a single task. Just like how a pirate might use a treasure map to find their way to their treasure, Bash one-liners can be used to perform a single task.
+
+A Bash one-liner is a command that can be used to perform a single task. For example, a pirate might use the `ls` command to view a list of files in the current directory. If the pirate then uses the `grep` command to search for a specific file, the `ls | grep` command will be a Bash one-liner.
+
+Bash one-liners can be used to perform a wide variety of tasks, including searching for files, counting lines, and sorting text. The `man` command can be used to view the manual page for a command, which will provide information about how the command can be used.
+
+I hope this helps you understand what a Bash one-liner is and how a pirate might use it to perform a single task. Arrr!
+
+### Processes
+
+Ahoy matey! In the world of Linux, a process is a program that is currently running on the system. Just like how a pirate might use a treasure map to find their way to their treasure, processes can be used to perform tasks and interact with the operating system.
+
+A process can be thought of as an instance of a program. For example, a pirate might run a program called `treasure_hunt` to search for their treasure. If the pirate runs the program again, a new process will be created to run the program. The pirate can use the `ps` command to view a list of all the processes that are currently running on the system.
+
+A process can be thought of as a program that is currently running on the system. For example, a pirate might run a program called `treasure_hunt` to search for their treasure. If the pirate runs the program again, a new process will be created to run the program. The pirate can use the `ps` command to view a list of all the processes that are currently running on the system.
 
 ### Cron
 
