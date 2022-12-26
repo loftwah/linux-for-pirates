@@ -8,155 +8,165 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (Don't feel obligated to read this)](#about-the-author-dont-feel-obligated-to-read-this)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Penetration Testing](#penetration-testing)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [What is the difference?](#what-is-the-difference)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Security Management](#security-management)
-      - [Security Operations](#security-operations)
-      - [Security Research](#security-research)
-      - [Hackerone](#hackerone)
-      - [Bugcrowd](#bugcrowd)
-    - [Data Science](#data-science)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-      - [Platform Engineering](#platform-engineering)
-      - [Site Reliability Engineering](#site-reliability-engineering)
-    - [DevRel](#devrel)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Quality Assurance](#quality-assurance)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-    - [Web Server](#web-server)
-      - [Nginx](#nginx)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-  - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-  - [DNS over TLS (DoT)](#dns-over-tls-dot)
-  - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-  - [DNSCrypt](#dnscrypt)
-  - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-  - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (Don't feel obligated to read this)](#about-the-author-dont-feel-obligated-to-read-this)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Penetration Testing](#penetration-testing)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [What is the difference?](#what-is-the-difference)
+        - [Phishing](#phishing)
+        - [Social Engineering](#social-engineering)
+        - [Kevin Mitnick](#kevin-mitnick)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Security Management](#security-management)
+        - [Security Operations](#security-operations)
+        - [Security Research](#security-research)
+        - [Hackerone](#hackerone)
+        - [Bugcrowd](#bugcrowd)
+      - [Data Science](#data-science)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+        - [Platform Engineering](#platform-engineering)
+        - [Site Reliability Engineering](#site-reliability-engineering)
+      - [DevRel](#devrel)
+      - [Frontend](#frontend)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Quality Assurance](#quality-assurance)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+    - [Networking](#networking)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+    - [Cron](#cron)
+    - [cURL](#curl)
+    - [Vim](#vim)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+      - [Web Server](#web-server)
+        - [Nginx](#nginx)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Azure DNS](#azure-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1187,6 +1197,18 @@ A reverse proxy server be a server that be used to forward client requests to on
 
 Sir Tim Berners-Lee be a British computer scientist and engineer who be best known as the inventor of the World Wide Web. He be a pioneer in the field of computer science, and he be the founder of the World Wide Web Consortium (W3C), which be a standards organization that be responsible for the development of web standards.
 
+### Amazon Web Services
+
+[Amazon Web Services](https://aws.amazon.com/)
+
+Amazon Web Services (AWS) be a cloud computing platform that be used to host web resources, such as web pages, images, and videos. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+### Cloudflare
+
+[Cloudflare](https://www.cloudflare.com/)
+
+Cloudflare is a content delivery network (CDN) and DNS service that can be used to improve the performance and security of a website. It does this by caching content on its global network of servers, which can help to reduce the load on the origin server. It also provides a number of security features, such as DDoS protection, bot management, and TLS encryption.
+
 ### Continuous Delivery
 
 Continuous delivery is a software development practice where code changes are automatically built, tested, and deployed to production. It allows for faster and more frequent updates to a software application, as code changes can be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it takes for new features or bug fixes to reach users.
@@ -1199,7 +1221,15 @@ Continuous integration (CI) is a software development practice where developers 
 
 In a pirate theme, you could think of continuous integration as a way to keep your ship (the software application) in good repair. Instead of waiting until the end of a long voyage to fix any problems with the ship, continuous integration allows you to make small repairs and improvements as you go. By regularly integrating and testing code changes, you can catch and fix problems early, before they become bigger issues that could sink the ship. This helps to ensure that your ship is always ready to set sail, and that you can respond more quickly to new threats (bug fixes and feature requests) as they arise.
 
+### DigitalOcean
+
+[DigitalOcean](https://www.digitalocean.com/)
+
+DigitalOcean is a cloud computing platform that is used to host web resources, such as web pages, images, and videos. It is a powerful tool that is used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
 ### eBPF
+
+[Awesome eBFP](https://github.com/zoidbergwill/awesome-ebpf)
 
 eBPF (extended Berkeley Packet Filter) is a technology that allows for the dynamic insertion of BPF programs into the Linux kernel at various hook points. It allows for the creation of powerful, flexible, and efficient tracing and monitoring tools, as well as the ability to write custom kernel modules without having to write any C code.
 
@@ -1252,29 +1282,59 @@ DNS servers are the computers that store the DNS records for a given domain. Whe
 
 DNSSEC (Domain Name System Security Extensions) is a set of extensions to the DNS protocol that help to ensure that DNS queries and responses are secure and authentic. It does this by adding digital signatures to DNS records, which can be used to verify that the DNS records have not been tampered with. It also adds a mechanism for verifying that the DNS server that is responding to a query is the correct DNS server for the requested domain.
 
-### DNS over HTTPS (DoH)
+#### DNS over HTTPS (DoH)
 
 DNS over HTTPS (DoH) is a protocol that allows DNS queries to be sent over HTTPS instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses are secure and private.
 
-### DNS over TLS (DoT)
+#### DNS over TLS (DoT)
 
 DNS over TLS (DoT) is a protocol that allows DNS queries to be sent over TLS instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses are secure and private.
 
-### DNS over QUIC (DoQ)
+#### DNS over QUIC (DoQ)
 
 DNS over QUIC (DoQ) is a protocol that allows DNS queries to be sent over QUIC instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses are secure and private.
 
-### DNSCrypt
+#### DNSCrypt
 
 DNSCrypt is a protocol that allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses are secure and private. It does this by encrypting DNS queries and responses using the NaCl (Networking and Cryptography library) encryption library.
 
-### DNS Amplification Attacks
+#### DNS Amplification Attacks
 
 DNS amplification attacks are a type of denial-of-service (DoS) attack that can be used to flood a target server with large amounts of traffic. They work by sending a large number of DNS queries to a DNS server, which will then respond to each query with a large amount of data. This can be used to flood a target server with large amounts of traffic, which can cause the server to become overloaded and crash.
 
 #### Hosts file
 
 The hosts file is a file that can be used to map domain names to IP addresses. It is typically located at `/etc/hosts` on Linux systems, but the exact location may vary depending on the operating system. The hosts file can be used to override the DNS records for a given domain, which can be useful for testing purposes.
+
+#### AWS Route 53
+
+[AWS Route 53](https://aws.amazon.com/route53/)
+
+AWS Route 53 is a DNS service that can be used to route traffic to AWS resources such as EC2 instances and S3 buckets. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
+
+#### Google Cloud DNS
+
+[Google Cloud DNS](https://cloud.google.com/dns)
+
+Google Cloud DNS is a DNS service that can be used to route traffic to Google Cloud resources such as Compute Engine instances and Cloud Storage buckets. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
+
+#### DigitalOcean DNS
+
+[DigitalOcean DNS](https://www.digitalocean.com/products/dns/)
+
+DigitalOcean DNS is a DNS service that can be used to route traffic to DigitalOcean resources such as Droplets and Spaces. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
+
+#### Azure DNS
+
+[Azure DNS](https://azure.microsoft.com/en-us/services/dns/)
+
+Azure DNS is a DNS service that can be used to route traffic to Azure resources such as Virtual Machines and Storage Accounts. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
+
+#### Cloudflare DNS
+
+[Cloudflare DNS](https://www.cloudflare.com/dns/)
+
+Cloudflare DNS is a DNS service that can be used to route traffic to Cloudflare resources such as Workers and Pages. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
 
 ### Docker
 
@@ -1456,7 +1516,32 @@ In a pirate theme, you could think of HTTP as the system that allows pirates to 
 
 HTTP is just one of many protocols that make the internet work, but it is an important one because it allows us to access and interact with websites and other online resources. Arrr!
 
-### HTTPS
+#### HTTP error codes
+
+HTTP error codes are a set of standardized codes that are used to indicate the status of an HTTP request. They are returned by the server in the HTTP response, and can be used to determine whether a request was successful or not.
+
+Here are some of the most common HTTP error codes:
+
+- 200 OK - The request was successful
+- 301 Moved Permanently - The requested resource has been moved permanently
+- 302 Found - The requested resource has been moved temporarily
+- 400 Bad Request - The request was invalid
+- 401 Unauthorized - The request requires authentication
+- 403 Forbidden - The server refused to fulfill the request
+- 404 Not Found - The requested resource could not be found
+- 500 Internal Server Error - An error occurred on the server
+- 503 Service Unavailable - The server is currently unavailable
+
+For a bit of a laugh, here is an image you'll see as a 404 error page on some of my applications: (not to be taken seriously)
+
+![404](images/404.png)
+
+Here are some more obscure HTTP error codes:
+
+- 418 I'm a teapot - The server refuses to brew coffee because it is a teapot
+- 451 Unavailable For Legal Reasons - The requested resource is unavailable due to legal reasons
+
+#### HTTPS
 
 HTTPS (Hypertext Transfer Protocol Secure) can be thought of as a way to secure communication between two parties. HTTPS is a protocol that is used to transmit data over the internet, and it is designed to provide an additional layer of security on top of the regular HTTP protocol.
 
