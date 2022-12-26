@@ -43,6 +43,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
         - [Security Operations](#security-operations)
         - [Security Research](#security-research)
         - [Hackerone](#hackerone)
+        - [Bugcrowd](#bugcrowd)
       - [Data Science](#data-science)
       - [Database](#database)
         - [Graph](#graph)
@@ -567,6 +568,12 @@ You might imagine that a security researcher is responsible for protecting your 
 [HackerOne](https://www.hackerone.com/)
 
 HackerOne is a platform that connects organizations with hackers to find and fix security vulnerabilities.
+
+##### Bugcrowd
+
+[Bugcrowd](https://www.bugcrowd.com/)
+
+Bugcrowd is a platform that connects organizations with hackers to find and fix security vulnerabilities.
 
 #### Data Science
 
