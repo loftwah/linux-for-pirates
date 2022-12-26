@@ -8,174 +8,194 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (Don't feel obligated to read this)](#about-the-author-dont-feel-obligated-to-read-this)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Penetration Testing](#penetration-testing)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [What is the difference?](#what-is-the-difference)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Security Management](#security-management)
-      - [Security Operations](#security-operations)
-      - [Security Research](#security-research)
-      - [Hackerone](#hackerone)
-      - [Bugcrowd](#bugcrowd)
-    - [Data Science](#data-science)
-      - [Artificial Intelligence](#artificial-intelligence)
-      - [Machine Learning](#machine-learning)
-      - [Data Visualization](#data-visualization)
-      - [Data Analyst](#data-analyst)
-      - [Data Engineer](#data-engineer)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-      - [Platform Engineering](#platform-engineering)
-      - [Site Reliability Engineering](#site-reliability-engineering)
-    - [Developer Advocate](#developer-advocate)
-    - [DevRel (Developer Relations)](#devrel-developer-relations)
-    - [Frontend](#frontend)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Quality Assurance](#quality-assurance)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-  - [Networking](#networking)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-    - [Bash scripting](#bash-scripting)
-    - [Bash history](#bash-history)
-    - [Bash one-liners](#bash-one-liners)
-  - [Processes](#processes)
-  - [Cron](#cron)
-  - [cURL](#curl)
-  - [Vim](#vim)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-    - [Web Server](#web-server)
-      - [Nginx](#nginx)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-  - [Amazon Web Services](#amazon-web-services)
-  - [Cloudflare](#cloudflare)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Continuous Integration](#continuous-integration)
-  - [DigitalOcean](#digitalocean)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-    - [DNS over TLS (DoT)](#dns-over-tls-dot)
-    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-    - [DNSCrypt](#dnscrypt)
-    - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-    - [AWS Route 53](#aws-route-53)
-    - [Google Cloud DNS](#google-cloud-dns)
-    - [DigitalOcean DNS](#digitalocean-dns)
-    - [Azure DNS](#azure-dns)
-    - [Cloudflare DNS](#cloudflare-dns)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-    - [HTTP error codes](#http-error-codes)
-    - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (Don't feel obligated to read this)](#about-the-author-dont-feel-obligated-to-read-this)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Penetration Testing](#penetration-testing)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [What is the difference?](#what-is-the-difference)
+        - [Phishing](#phishing)
+        - [Social Engineering](#social-engineering)
+        - [Kevin Mitnick](#kevin-mitnick)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Security Management](#security-management)
+        - [Security Operations](#security-operations)
+        - [Security Research](#security-research)
+        - [Hackerone](#hackerone)
+        - [Bugcrowd](#bugcrowd)
+      - [Data Science](#data-science)
+        - [Artificial Intelligence](#artificial-intelligence)
+        - [Machine Learning](#machine-learning)
+        - [Data Visualization](#data-visualization)
+        - [Data Analyst](#data-analyst)
+        - [Data Engineer](#data-engineer)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+        - [Platform Engineering](#platform-engineering)
+        - [Site Reliability Engineering](#site-reliability-engineering)
+      - [Developer Advocate](#developer-advocate)
+      - [DevRel (Developer Relations)](#devrel-developer-relations)
+      - [Frontend](#frontend)
+      - [Management](#management)
+        - [Product Management](#product-management)
+        - [Project Management](#project-management)
+        - [Chief Technology Officer (CTO)](#chief-technology-officer-cto)
+        - [Chief Information Officer (CIO)](#chief-information-officer-cio)
+      - [Chief Operating Officer (COO)](#chief-operating-officer-coo)
+      - [Chief Executive Officer (CEO)](#chief-executive-officer-ceo)
+      - [Chief Financial Officer (CFO)](#chief-financial-officer-cfo)
+      - [Chief Marketing Officer (CMO)](#chief-marketing-officer-cmo)
+      - [Chief Human Resources Officer (CHRO)](#chief-human-resources-officer-chro)
+      - [Chief Security Officer (CSO)](#chief-security-officer-cso)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Quality Assurance](#quality-assurance)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+        - [chmod](#chmod)
+    - [Networking](#networking)
+      - [ip](#ip)
+      - [Netcat](#netcat)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+      - [Bash scripting](#bash-scripting)
+      - [Bash history](#bash-history)
+      - [Bash one-liners](#bash-one-liners)
+    - [Cron](#cron)
+    - [Devices](#devices)
+    - [Processes](#processes)
+    - [cURL](#curl)
+    - [Vim (Vi IMproved)](#vim-vi-improved)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+        - [Buying a Domain Name](#buying-a-domain-name)
+        - [Namecheap](#namecheap)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+      - [Web Server](#web-server)
+        - [Apache](#apache)
+        - [Nginx](#nginx)
+        - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Azure DNS](#azure-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -700,13 +720,13 @@ You might imagine that a data engineer is responsible for analyzing and interpre
 
 A DBA (Database Administrator) is responsible for managing and maintaining the databases that are used on your network. DBAs often work on tasks such as:
 
-Designing and implementing databases: DBAs might design and implement databases to store and organize data in an efficient and secure manner.
+**Designing and implementing databases:** DBAs might design and implement databases to store and organize data in an efficient and secure manner.
 
-Maintaining and optimizing databases: DBAs might be responsible for maintaining and optimizing the performance of databases, including tasks such as backups, recovery, and performance tuning.
+**Maintaining and optimizing databases:** DBAs might be responsible for maintaining and optimizing the performance of databases, including tasks such as backups, recovery, and performance tuning.
 
-Ensuring data integrity: DBAs might work to ensure the integrity and accuracy of the data in the databases, and to prevent data loss or corruption.
+**Ensuring data integrity:** DBAs might work to ensure the integrity and accuracy of the data in the databases, and to prevent data loss or corruption.
 
-Collaborating with other teams: DBAs might work closely with other teams such as development, QA, and IT to ensure that the databases meet the needs and requirements of the organization.
+**Collaborating with other teams:** DBAs might work closely with other teams such as development, QA, and IT to ensure that the databases meet the needs and requirements of the organization.
 
 You might imagine that a DBA is responsible for managing and maintaining the databases that are used on your network. They play a crucial role in ensuring that the databases are efficient, secure, and accurate, and in supporting the needs and requirements of the organization.
 
@@ -714,31 +734,31 @@ You might imagine that a DBA is responsible for managing and maintaining the dat
 
 A graph database is a type of database that is designed to store and organize data in a way that is similar to a graph. Graph databases are often used to store and analyze data that is connected in some way, such as social networks or supply chains.
 
-Some examples of graph databases are Neo4j, ArangoDB, and OrientDB.
+Some examples of graph databases are [Neo4j](https://neo4j.com/), [ArangoDB](https://www.arangodb.com/) , and [OrientDB](https://orientdb.org/).
 
 ##### noSQL
 
 A noSQL database is a type of database that is designed to store and organize data in a way that is different from traditional relational databases. noSQL databases are often used to store large amounts of data, and they are often more flexible and scalable than relational databases.
 
-Some examples of noSQL databases are MongoDB, CouchDB, and Cassandra.
+Some examples of noSQL databases are [MongoDB](https://www.mongodb.com/), [CouchDB](https://couchdb.apache.org/), and [Cassandra](https://cassandra.apache.org/).
 
 ##### SQL
 
 A SQL database is a type of database that is designed to store and organize data in a way that is similar to a spreadsheet. SQL databases are often used to store structured data, and they are often more efficient and reliable than noSQL databases.
 
-Some examples of SQL databases are MySQL, PostgreSQL, and Microsoft SQL Server.
+Some examples of SQL databases are [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), and [SQLite](https://www.sqlite.org/index.html).
 
 #### Design
 
 A UX designer is responsible for designing the user experience of your network. UX designers often work on tasks such as:
 
-Researching and analyzing user needs: UX designers might research and analyze user needs, such as the tasks that users need to perform and the problems that they need to solve.
+**Researching and analyzing user needs:** UX designers might research and analyze user needs, such as the tasks that users need to perform and the problems that they need to solve.
 
-Designing user interfaces: UX designers might design user interfaces that are easy to use and that meet the needs of users.
+**Designing user interfaces:** UX designers might design user interfaces that are easy to use and that meet the needs of users.
 
-Developing prototypes: UX designers might develop prototypes to test and validate their designs.
+**Developing prototypes:** UX designers might develop prototypes to test and validate their designs.
 
-Collaborating with other teams: UX designers might work closely with other teams such as development, QA, and marketing to ensure that the user experience of your network is effective and meets the needs of users.
+**Collaborating with other teams:** UX designers might work closely with other teams such as development, QA, and marketing to ensure that the user experience of your network is effective and meets the needs of users.
 
 You might imagine that a UX designer is responsible for designing the user experience of your network. They play a crucial role in ensuring that the user experience is effective and meets the needs of users.
 
@@ -762,15 +782,15 @@ Fluent Design is a design system that was developed by Microsoft to create a con
 
 Ahoy mateys! If ye be lookin' to set sail on the DevOps sea, here be some steps ye can take to get started:
 
-Understand the principles of DevOps: DevOps be founded on a set of principles that focus on collaboration, automation, and continuous improvement. It be important to understand these principles in order to effectively implement DevOps in yer organization.
+**Understand the principles of DevOps:** DevOps be founded on a set of principles that focus on collaboration, automation, and continuous improvement. It be important to understand these principles in order to effectively implement DevOps in yer organization.
 
-Choose the right tools: There be a wide range of tools available for implementing DevOps, including version control systems, continuous integration and delivery platforms, and monitoring and log analysis tools. Choose the tools that best meet the needs of yer organization.
+**Choose the right tools:** There be a wide range of tools available for implementing DevOps, including version control systems, continuous integration and delivery platforms, and monitoring and log analysis tools. Choose the tools that best meet the needs of yer organization.
 
-Automate processes: Automation be a key principle of DevOps, and it can help to streamline the software development and delivery process. Identify the processes in yer organization that can be automated and implement automation tools to support these processes.
+**Automate processes:** Automation be a key principle of DevOps, and it can help to streamline the software development and delivery process. Identify the processes in yer organization that can be automated and implement automation tools to support these processes.
 
-Collaborate with yer team: DevOps be about collaboration, so it be essential to ensure that yer team be workin' together effectively. Use tools like agile project management, version control systems, and continuous integration platforms to facilitate collaboration and communication within yer team.
+**Collaborate with yer team:** DevOps be about collaboration, so it be essential to ensure that yer team be workin' together effectively. Use tools like agile project management, version control systems, and continuous integration platforms to facilitate collaboration and communication within yer team.
 
-Monitor and measure performance: To continuously improve yer processes, ye need to be able to monitor and measure their performance. Use tools like monitoring and log analysis platforms to track the performance of yer processes and identify areas for improvement.
+**Monitor and measure performance:** To continuously improve yer processes, ye need to be able to monitor and measure their performance. Use tools like monitoring and log analysis platforms to track the performance of yer processes and identify areas for improvement.
 
 So, hoist the mainsail and set course for DevOps success! With these steps, ye'll be well on yer way to implementing DevOps in yer organization and improving the efficiency and effectiveness of yer software development and delivery processes.
 
@@ -778,9 +798,9 @@ So, hoist the mainsail and set course for DevOps success! With these steps, ye'l
 
 DevSecOps is the practice of integrating security into the software development and delivery process. DevSecOps professionals often work on tasks such as:
 
-Integrating security into the software development and delivery process: DevSecOps professionals might work to integrate security into the software development and delivery process, such as by integrating security tools into the development environment.
+**Integrating security into the software development and delivery process:** DevSecOps professionals might work to integrate security into the software development and delivery process, such as by integrating security tools into the development environment.
 
-Collaborating with other teams: DevSecOps professionals might work closely with other teams such as development, QA, and IT to ensure that security is integrated into the software development and delivery process.
+**Collaborating with other teams:** DevSecOps professionals might work closely with other teams such as development, QA, and IT to ensure that security is integrated into the software development and delivery process.
 
 You might imagine that DevSecOps is the practice of integrating security into the software development and delivery process. They play a crucial role in ensuring that security is integrated into the software development and delivery process, and in supporting the needs and requirements of the organization.
 
@@ -788,9 +808,9 @@ You might imagine that DevSecOps is the practice of integrating security into th
 
 GitOps is the practice of using Git as the source of truth for your infrastructure. GitOps professionals often work on tasks such as:
 
-Using Git as the source of truth for your infrastructure: GitOps professionals might work to use Git as the source of truth for your infrastructure, such as by using Git to manage your infrastructure as code.
+**Using Git as the source of truth for your infrastructure:** GitOps professionals might work to use Git as the source of truth for your infrastructure, such as by using Git to manage your infrastructure as code.
 
-Collaborating with other teams: GitOps professionals might work closely with other teams such as development, QA, and IT to ensure that Git is used as the source of truth for your infrastructure.
+**Collaborating with other teams:** GitOps professionals might work closely with other teams such as development, QA, and IT to ensure that Git is used as the source of truth for your infrastructure.
 
 You might imagine that GitOps is the practice of using Git as the source of truth for your infrastructure. They play a crucial role in ensuring that Git is used as the source of truth for your infrastructure, and in supporting the needs and requirements of the organization.
 
@@ -798,11 +818,11 @@ You might imagine that GitOps is the practice of using Git as the source of trut
 
 Platform engineering is the practice of building and maintaining the infrastructure that is used to support software development and delivery. Platform engineers often work on tasks such as:
 
-Building and maintaining the infrastructure: Platform engineers might build and maintain the infrastructure that is used to support software development and delivery, such as version control systems, continuous integration and delivery platforms, and monitoring and log analysis tools.
+**Building and maintaining the infrastructure:** Platform engineers might build and maintain the infrastructure that is used to support software development and delivery, such as version control systems, continuous integration and delivery platforms, and monitoring and log analysis tools.
 
-Automating processes: Platform engineers might automate processes such as software builds and deployments to improve the efficiency and reliability of the software development and delivery process.
+**Automating processes:** Platform engineers might automate processes such as software builds and deployments to improve the efficiency and reliability of the software development and delivery process.
 
-Collaborating with other teams: Platform engineers might work closely with other teams such as development, QA, and IT to ensure that the infrastructure meets the needs and requirements of the organization.
+**Collaborating with other teams:** Platform engineers might work closely with other teams such as development, QA, and IT to ensure that the infrastructure meets the needs and requirements of the organization.
 
 You might imagine that platform engineering is the practice of building and maintaining the infrastructure that is used to support software development and delivery. They play a crucial role in ensuring that the infrastructure is efficient, reliable, and secure, and in supporting the needs and requirements of the organization.
 
@@ -810,11 +830,11 @@ You might imagine that platform engineering is the practice of building and main
 
 Site reliability engineering is the practice of building and maintaining the infrastructure that is used to support the operation of your network. Site reliability engineers often work on tasks such as:
 
-Building and maintaining the infrastructure: Site reliability engineers might build and maintain the infrastructure that is used to support the operation of your network, such as monitoring and log analysis tools, and incident management platforms.
+**Building and maintaining the infrastructure:** Site reliability engineers might build and maintain the infrastructure that is used to support the operation of your network, such as monitoring and log analysis tools, and incident management platforms.
 
-Automating processes: Site reliability engineers might automate processes such as incident management and troubleshooting to improve the efficiency and reliability of the operation of your network.
+**Automating processes:** Site reliability engineers might automate processes such as incident management and troubleshooting to improve the efficiency and reliability of the operation of your network.
 
-Collaborating with other teams: Site reliability engineers might work closely with other teams such as development, QA, and IT to ensure that the infrastructure meets the needs and requirements of the organization.
+**Collaborating with other teams:** Site reliability engineers might work closely with other teams such as development, QA, and IT to ensure that the infrastructure meets the needs and requirements of the organization.
 
 You might imagine that site reliability engineering is the practice of building and maintaining the infrastructure that is used to support the operation of your network. They play a crucial role in ensuring that the infrastructure is efficient, reliable, and secure, and in supporting the needs and requirements of the organization.
 
@@ -822,13 +842,13 @@ You might imagine that site reliability engineering is the practice of building 
 
 Developer advocates are responsible for promoting the products and services of their company or organization to developers. Developer advocates often work on tasks such as:
 
-Promoting the company's products or services to developers: Developer advocates might work to promote the company's products or services to developers, through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
+**Promoting the company's products or services to developers:** Developer advocates might work to promote the company's products or services to developers, through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
 
-Gathering and analyzing developer feedback: Developer advocates might gather feedback from developers about the company's products or services, and use this feedback to inform product development and strategy.
+**Gathering and analyzing developer feedback:** Developer advocates might gather feedback from developers about the company's products or services, and use this feedback to inform product development and strategy.
 
-Building and maintaining relationships with developers: Developer advocates might work to build and maintain relationships with developers who use their company's products or services. This might include activities such as hosting events, providing technical support, and communicating with developers through online channels.
+**Building and maintaining relationships with developers:** Developer advocates might work to build and maintain relationships with developers who use their company's products or services. This might include activities such as hosting events, providing technical support, and communicating with developers through online channels.
 
-Collaborating with other teams: Developer advocates might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
+**Collaborating with other teams:** Developer advocates might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
 
 You might imagine that developer advocates are responsible for promoting the products and services of their company or organization to developers. They play a crucial role in ensuring that the company's products and services are meeting the needs and expectations of developers, and in supporting the needs and requirements of the organization.
 
@@ -836,13 +856,13 @@ You might imagine that developer advocates are responsible for promoting the pro
 
 Developer relations can be thought of as the way in which a company or organization engages with and supports developers who use its products or services. Developer relations professionals often work on tasks such as:
 
-Building and maintaining relationships with developers: Developer relations professionals might work to build and maintain relationships with developers who use their company's products or services. This might include activities such as hosting events, providing technical support, and communicating with developers through online channels.
+**Building and maintaining relationships with developers:** Developer relations professionals might work to build and maintain relationships with developers who use their company's products or services. This might include activities such as hosting events, providing technical support, and communicating with developers through online channels.
 
-Gathering and analyzing developer feedback: Developer relations professionals might gather feedback from developers about the company's products or services, and use this feedback to inform product development and strategy.
+**Gathering and analyzing developer feedback:** Developer relations professionals might gather feedback from developers about the company's products or services, and use this feedback to inform product development and strategy.
 
-Promoting the company's products or services to developers: Developer relations professionals might work to promote the company's products or services to developers, through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
+**Promoting the company's products or services to developers:** Developer relations professionals might work to promote the company's products or services to developers, through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
 
-Collaborating with other teams: Developer relations professionals might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
+**Collaborating with other teams:** Developer relations professionals might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
 
 You might imagine that developer relations is a way for a company or organization to engage with and support developers who use its products or services. Developer relations professionals play a crucial role in building and maintaining relationships with developers, gathering and analyzing feedback, promoting the company's products or services, and collaborating with other teams to ensure that the needs and expectations
 
@@ -852,13 +872,145 @@ Frontend developers are responsible for designing and building the user interfac
 
 Frontend developers often work on tasks such as:
 
-Designing and building user interfaces: This might include creating wireframes, prototypes, and visual designs for websites and applications, and implementing them using HTML, CSS, and JavaScript.
+**Designing and building user interfaces:** This might include creating wireframes, prototypes, and visual designs for websites and applications, and implementing them using HTML, CSS, and JavaScript.
 
-Ensuring user experience: Frontend developers might work to ensure that the user interface of a site or application is intuitive, responsive, and accessible for users.
+**Ensuring user experience:** Frontend developers might work to ensure that the user interface of a site or application is intuitive, responsive, and accessible for users.
 
-Collaborating with backend developers: Frontend developers often work closely with backend developers to ensure that the user interface is supported by the backend systems and infrastructure.
+**Collaborating with backend developers:** Frontend developers often work closely with backend developers to ensure that the user interface is supported by the backend systems and infrastructure.
 
 You might imagine that frontend developers are responsible for designing and building the user interface of your network. They might work on tasks such as creating wireframes, prototypes, and visual designs, and implementing them using HTML, CSS, and JavaScript. Frontend developers are an important part of the development team, as they help to create the user experience that users have when interacting with your network.
+
+#### Management
+
+Not that we'll be starting here but it is important to know that management is a very important part of any organization. Management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. Management often works on tasks such as:
+
+**Setting the overall direction of the organization:** Management might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** Management might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** Management might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+##### Product Management
+
+Product management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. Product managers often work on tasks such as:
+
+**Setting the overall direction of the organization:** Product managers might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** Product managers might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** Product managers might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that product management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+##### Project Management
+
+Project management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. Project managers often work on tasks such as:
+
+**Setting the overall direction of the organization:** Project managers might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** Project managers might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** Project managers might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that project management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+##### Chief Technology Officer (CTO)
+
+The chief technology officer (CTO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CTOs often work on tasks such as:
+
+**Setting the overall direction of the organization:** CTOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** CTOs might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** CTOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that CTOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+##### Chief Information Officer (CIO)
+
+The chief information officer (CIO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CIOs often work on tasks such as:
+
+**Setting the overall direction of the organization:** CIOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** CIOs might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** CIOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that CIOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+#### Chief Operating Officer (COO)
+
+The chief operating officer (COO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. COOs often work on tasks such as:
+
+**Setting the overall direction of the organization:** COOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** COOs might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** COOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that COOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+#### Chief Executive Officer (CEO)
+
+The chief executive officer (CEO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CEOs often work on tasks such as:
+
+**Setting the overall direction of the organization:** CEOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** CEOs might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** CEOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that CEOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+#### Chief Financial Officer (CFO)
+
+The chief financial officer (CFO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CFOs often work on tasks such as:
+
+**Setting the overall direction of the organization:** CFOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** CFOs might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** CFOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that CFOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+#### Chief Marketing Officer (CMO)
+
+The chief marketing officer (CMO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CMOs often work on tasks such as:
+
+**Setting the overall direction of the organization:** CMOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** CMOs might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** CMOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that CMOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+#### Chief Human Resources Officer (CHRO)
+
+The chief human resources officer (CHRO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CHROs often work on tasks such as:
+
+**Setting the overall direction of the organization:** CHROs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** CHROs might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** CHROs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that CHROs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+
+#### Chief Security Officer (CSO)
+
+The chief security officer (CSO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CSOs often work on tasks such as:
+
+**Setting the overall direction of the organization:** CSOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+
+**Managing the organization's resources:** CSOs might work to manage the organization's resources, such as people, money, and time.
+
+**Managing the organization's projects:** CSOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+
+You might imagine that CSOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
 
 #### Network Engineering
 
@@ -866,15 +1018,15 @@ You might imagine that frontend developers are responsible for designing and bui
 
 Ahoy mateys! If ye be lookin' to set sail on the networking sea, here be some steps ye can take to get started:
 
-Learn the fundamentals: The first step to becoming a network engineer be to learn the fundamentals of networking. This might include topics like networking protocols, topologies, and network design.
+**Learn the fundamentals:** The first step to becoming a network engineer be to learn the fundamentals of networking. This might include topics like networking protocols, topologies, and network design.
 
-Build up yer skills: Once ye have a solid foundation in the basics, ye can start building up yer skills in specific areas of networking. This could include wireless networking, security, or cloud computing, depending on yer interests and goals.
+**Build up yer skills:** Once ye have a solid foundation in the basics, ye can start building up yer skills in specific areas of networking. This could include wireless networking, security, or cloud computing, depending on yer interests and goals.
 
-Get some experience: In addition to learning and building up yer skills, it be important to get some hands-on experience in networking. This could involve working on personal projects, interning at a networking company, or even just setting up and troubleshooting yer own home network.
+**Get some experience:** In addition to learning and building up yer skills, it be important to get some hands-on experience in networking. This could involve working on personal projects, interning at a networking company, or even just setting up and troubleshooting yer own home network.
 
-Network with other engineers: As ye be building up yer skills and experience, it be important to network with other networking professionals. This can help ye learn from others, find job opportunities, and stay up-to-date on the latest trends and technologies in the field.
+**Network with other engineers:** As ye be building up yer skills and experience, it be important to network with other networking professionals. This can help ye learn from others, find job opportunities, and stay up-to-date on the latest trends and technologies in the field.
 
-Keep learning and improving: The field of networking be constantly evolving, so it be important to stay up-to-date on the latest trends and technologies. This might involve taking online courses, attending meetups or conferences, or simply staying active on forums and social media groups related to networking.
+**Keep learning and improving:** The field of networking be constantly evolving, so it be important to stay up-to-date on the latest trends and technologies. This might involve taking online courses, attending meetups or conferences, or simply staying active on forums and social media groups related to networking.
 
 So hoist the mainsail and set the course for networking success! With these steps, ye'll be well on yer way to becoming a skilled and in-demand network engineer. Arrrr!
 
@@ -882,13 +1034,13 @@ So hoist the mainsail and set the course for networking success! With these step
 
 A product engineer is responsible for designing, developing, and maintaining the products that are used on your network. Product engineers often work on tasks such as:
 
-Defining and implementing product features: Product engineers might work with stakeholders to understand the needs and requirements of users, and then design and implement features that meet those needs.
+**Defining and implementing product features:** Product engineers might work with stakeholders to understand the needs and requirements of users, and then design and implement features that meet those needs.
 
-Building and maintaining product infrastructure: Product engineers might be responsible for designing and building the systems and infrastructure that support the product, including servers, databases, and APIs.
+**Building and maintaining product infrastructure:** Product engineers might be responsible for designing and building the systems and infrastructure that support the product, including servers, databases, and APIs.
 
-Collaborating with other teams: Product engineers often work closely with other teams such as design, development, and QA to ensure that the product is delivered on time and meets the desired quality standards.
+**Collaborating with other teams:** Product engineers often work closely with other teams such as design, development, and QA to ensure that the product is delivered on time and meets the desired quality standards.
 
-Analyzing and improving product performance: Product engineers might analyze data and user feedback to identify areas for improvement, and then work to optimize the product's performance and usability.
+**Analyzing and improving product performance:** Product engineers might analyze data and user feedback to identify areas for improvement, and then work to optimize the product's performance and usability.
 
 You might imagine that a product engineer is responsible for designing and developing the products that are used on your network. They play a crucial role in ensuring that the products meet the needs of users and are delivered on time and to the desired quality standards.
 
@@ -896,13 +1048,13 @@ You might imagine that a product engineer is responsible for designing and devel
 
 Quality assurance engineers are responsible for testing and validating the products that are used on your network. Quality assurance engineers often work on tasks such as:
 
-Writing and executing test plans: Quality assurance engineers might write test plans to ensure that the product meets the desired quality standards, and then execute those plans to validate the product.
+**Writing and executing test plans:** Quality assurance engineers might write test plans to ensure that the product meets the desired quality standards, and then execute those plans to validate the product.
 
-Identifying and reporting bugs: Quality assurance engineers might identify bugs and other issues in the product, and then report them to the development team.
+**Identifying and reporting bugs:** Quality assurance engineers might identify bugs and other issues in the product, and then report them to the development team.
 
-Collaborating with other teams: Quality assurance engineers often work closely with other teams such as development, product, and design to ensure that the product is delivered on time and meets the desired quality standards.
+**Collaborating with other teams:** Quality assurance engineers often work closely with other teams such as development, product, and design to ensure that the product is delivered on time and meets the desired quality standards.
 
-Analyzing and improving product performance: Quality assurance engineers might analyze data and user feedback to identify areas for improvement, and then work to optimize the product's performance and usability.
+**Analyzing and improving product performance:** Quality assurance engineers might analyze data and user feedback to identify areas for improvement, and then work to optimize the product's performance and usability.
 
 You might imagine that a quality assurance engineer is responsible for testing and validating the products that are used on your network. They play a crucial role in ensuring that the products meet the desired quality standards and are delivered on time.
 
@@ -910,13 +1062,13 @@ You might imagine that a quality assurance engineer is responsible for testing a
 
 Ahoy mateys! If ye be lookin' to set sail on the software development sea, here be some steps ye can take to get started:
 
-Learn the fundamentals: The first step to becoming a software development engineer be to learn the fundamentals of computer science and programming. This might include topics like algorithms, data structures, and programming languages like Java or Python.
+**Learn the fundamentals:** The first step to becoming a software development engineer be to learn the fundamentals of computer science and programming. This might include topics like algorithms, data structures, and programming languages like Java or Python.
 
-Build up yer skills: Once ye have a solid foundation in the basics, ye can start building up yer skills in specific areas of software development. This could include web development, mobile app development, or machine learning, depending on yer interests and goals.
+**Build up yer skills:** Once ye have a solid foundation in the basics, ye can start building up yer skills in specific areas of software development. This could include web development, mobile app development, or machine learning, depending on yer interests and goals.
 
-Get some experience: In addition to learning and building up yer skills, it be important to get some hands-on experience in software development. This could involve working on personal projects, participating in hackathons, or interning at a software development company.
+**Get some experience:** In addition to learning and building up yer skills, it be important to get some hands-on experience in software development. This could involve working on personal projects, participating in hackathons, or interning at a software development company.
 
-Network with other developers: As ye be building up yer skills and experience, it be important to network with other software development professionals. This can help ye learn from others, find job opportunities, and stay up-to-date on the latest trends and technologies in the field.
+**Network with other developers:** As ye be building up yer skills and experience, it be important to network with other software development professionals. This can help ye learn from others, find job opportunities, and stay up-to-date on the latest trends and technologies in the field.
 
 Keep learning and improving: The field of software development be constantly evolving, so it be important to stay up-to-date on the latest trends and technologies. This might involve taking online courses, attending meetups or conferences, or simply staying active on forums and social media groups related to software development.
 
@@ -924,13 +1076,13 @@ Keep learning and improving: The field of software development be constantly evo
 
 Application support people are responsible for maintaining and troubleshooting the applications that are used on your network. Application support professionals often work on tasks such as:
 
-Responding to user issues and requests: This might include troubleshooting problems with applications, answering user questions, and providing technical support.
+**Responding to user issues and requests:** This might include troubleshooting problems with applications, answering user questions, and providing technical support.
 
-Monitoring and maintaining applications: Application support professionals might monitor the performance and availability of applications, and perform tasks such as installing updates and patches.
+**Monitoring and maintaining applications:** Application support professionals might monitor the performance and availability of applications, and perform tasks such as installing updates and patches.
 
-Collaborating with developers: Application support professionals often work closely with developers to understand the technical details of applications, and to identify and fix problems that arise.
+**Collaborating with developers:** Application support professionals often work closely with developers to understand the technical details of applications, and to identify and fix problems that arise.
 
-Documenting and communicating issues and solutions: Application support professionals might document issues and solutions in order to track and resolve problems more effectively. They might also communicate with users and other stakeholders about issues and resolutions.
+**Documenting and communicating issues and solutions:** Application support professionals might document issues and solutions in order to track and resolve problems more effectively. They might also communicate with users and other stakeholders about issues and resolutions.
 
 You might imagine that application support people are responsible for maintaining and troubleshooting the applications that are used on your network. They play a crucial role in ensuring that applications are running smoothly and efficiently, and they work closely with developers and users to identify and resolve problems.
 
@@ -938,13 +1090,13 @@ You might imagine that application support people are responsible for maintainin
 
 A software tester is responsible for ensuring the quality and reliability of the software that is used on your network. Software testers often work on tasks such as:
 
-Developing and executing test plans: Software testers might create detailed test plans that outline the steps and conditions needed to test the software. They might then execute these test plans to ensure that the software is working as intended.
+**Developing and executing test plans:** Software testers might create detailed test plans that outline the steps and conditions needed to test the software. They might then execute these test plans to ensure that the software is working as intended.
 
-Identifying and documenting defects: Software testers might identify and document defects in the software, and then work with developers to resolve them.
+**Identifying and documenting defects:** Software testers might identify and document defects in the software, and then work with developers to resolve them.
 
-Collaborating with other teams: Software testers might work closely with other teams such as development, QA, and product management to understand the requirements and goals of the software, and to ensure that the software meets those requirements.
+**Collaborating with other teams:** Software testers might work closely with other teams such as development, QA, and product management to understand the requirements and goals of the software, and to ensure that the software meets those requirements.
 
-Maintaining and improving testing processes: Software testers might work to improve and optimize the testing process, in order to ensure that the software is tested thoroughly and efficiently.
+**Maintaining and improving testing processes:** Software testers might work to improve and optimize the testing process, in order to ensure that the software is tested thoroughly and efficiently.
 
 You might imagine that a software tester is responsible for ensuring the quality and reliability of the software that is used on your network. They play a crucial role in identifying and resolving defects, and in ensuring that the software meets the needs and goals of users.
 
@@ -952,17 +1104,19 @@ You might imagine that a software tester is responsible for ensuring the quality
 
 Ahoy mateys! If ye be lookin' to set sail on the Linux sea, here be some things ye'll need to know:
 
-Learn the command line: The command line be the primary way to interact with a Linux system, so it be important to learn the basic commands and how to navigate the file system.
+**Learn the command line:** The command line be the primary way to interact with a Linux system, so it be important to learn the basic commands and how to navigate the file system.
 
-Understand file permissions: In Linux, each file and directory be owned by a specific user and group, and have permissions that control who can read, write, or execute them. It be important to understand how to set and manage these permissions.
+**Understand file permissions:** In Linux, each file and directory be owned by a specific user and group, and have permissions that control who can read, write, or execute them. It be important to understand how to set and manage these permissions.
 
-Install and manage software: In Linux, software be installed and managed using package managers like apt or yum. Ye'll need to learn how to use these tools to install and update software on yer system.
+**Install and manage software:** In Linux, software be installed and managed using package managers like apt or yum. Ye'll need to learn how to use these tools to install and update software on yer system.
 
-Work with users and groups: In Linux, users and groups be used to control access to resources on the system. Ye'll need to learn how to create and manage users and groups, and how to set up user accounts and permissions.
+**Work with users and groups:** In Linux, users and groups be used to control access to resources on the system. Ye'll need to learn how to create and manage users and groups, and how to set up user accounts and permissions.
 
-Customize yer system: Linux be highly customizable, and ye can tweak yer system to suit yer needs and preferences. Ye'll need to learn how to customize yer system's settings, install and configure desktop environments, and more.
+**Customize yer system:** Linux be highly customizable, and ye can tweak yer system to suit yer needs and preferences. Ye'll need to learn how to customize yer system's settings, install and configure desktop environments, and more.
 
 ### Handybilly
+
+A handybilly is a notebook that a pirate should carry with them at all times. It be used to keep track of important information, such as passwords, notes, and other useful tidbits. Ye can use yer handybilly to keep track of the information that ye learn in this book.
 
 `ls`: This command be used to list the files and directories in a directory. Ye can use it to see what be in yer current directory or specify a different directory to list.
 
@@ -1014,7 +1168,7 @@ Ahoy matey! In the world of Linux, file permissions are like the rules and regul
 
 Each file and directory in the Linux filesystem has an owner and a group associated with it. The owner is the user who created the file or directory, and the group is a collection of users that the owner can assign permissions to. File permissions can be set for the owner, the group, and everyone else (referred to as "others").
 
-There are three types of permissions that can be set for each file or directory: read (r), write (w), and execute (x). The read permission allows a user to view the contents of a file or list the contents of a directory. The write permission allows a user to modify or delete a file or add or remove files from a directory. The execute permission allows a user to execute a file as a program or to enter a directory and access its contents.
+There are three types of permissions that can be set for each file or directory: read (`r`), write (`w`), and execute (`x`). The read permission allows a user to view the contents of a file or list the contents of a directory. The write permission allows a user to modify or delete a file or add or remove files from a directory. The execute permission allows a user to execute a file as a program or to enter a directory and access its contents.
 
 File permissions can be displayed using the `ls -l` command, which shows a list of files and directories along with their permissions. For example, the output might look something like this:
 
@@ -1022,15 +1176,38 @@ File permissions can be displayed using the `ls -l` command, which shows a list 
 drwxr-xr-x 2 pirate pirate 4096 Jan 1 00:00 treasure_chest
 ```
 
-The first character (d) indicates that this is a directory. The next three characters (rwx) represent the permissions for the owner, the next three (r-x) represent the permissions for the group, and the final three (r-x) represent the permissions for others.
+The first character (d) indicates that this is a directory. The next three characters (`rwx`) represent the permissions for the owner, the next three (r-x) represent the permissions for the group, and the final three (`r-x`) represent the permissions for others.
 
 To change the permissions of a file or directory, a pirate can use the `chmod` command. For example, to give the owner and the group read and write permissions for the file `treasure_map.txt`, but only read permission for others, a pirate might type `chmod 640 treasure_map.txt`.
 
 I hope this helps you understand how file permissions work in Linux and how a pirate might use them to control access to their treasures. Arrr!
 
+##### chmod
+
+Ahoy matey! The `chmod` command is used to change the permissions of a file or directory. Ye can use it to give or remove read, write, and execute permissions for the owner, the group, and others.
+
+```bash
+# Add execute for all (treasurehunter.sh)
+chmod a+x treasurehunter.sh
+# Set user to read/write/execute, group/global to read only (treasurehunter.sh), symbolic mode
+chmod u=rwx, go=r treasurehunter.sh
+# Remove write from user/group/global (treasurehunter.sh), symbolic mode
+chmod a-w treasurehunter.sh
+# Remove read/write/execute from user/group/global (treasurehunter.sh), symbolic mode
+chmod = treasurehunter.sh
+# Set user to read/write and group/global read (treasurehunter.sh), octal notation
+chmod 644 treasurehunter.sh
+# Set user to read/write/execute and group/global read/execute (treasurehunter.sh), octal notation
+chmod 755 treasurehunter.sh
+# Set user/group/global to read/write (treasurehunter.sh), octal notation
+chmod 666 treasurehunter.sh
+```
+
 ### Networking
 
 [PacketLife](https://packetlife.net/)
+
+`arp`: This command be used to display and manipulate the system's ARP cache. Ye can use it to view the ARP cache, add or delete entries, and more.
 
 `ip`: This command be used to configure network interfaces on yer system. Ye can use it to view information about yer network interfaces, set their IP addresses, and more.
 
@@ -1041,6 +1218,66 @@ I hope this helps you understand how file permissions work in Linux and how a pi
 `netstat`: This command be used to display information about yer system's network connections and routing tables. Ye can use it to view information about active connections and network routes.
 
 `route`: This command be used to view and modify the routing table on yer system. Ye can use it to add, delete, or modify routes on yer system.
+
+#### ip
+
+Ahoy matey! The `ip` command is used to configure network interfaces on yer system. Ye can use it to view information about yer network interfaces, set their IP addresses, and more.
+
+```bash
+# To display all interfaces with addresses:
+ip addr
+# To take down / up the wireless adapter:
+ip link set dev wlan0 {up|down}
+# To set a static IP and netmask:
+ip addr add 192.168.1.100/32 dev eth0
+# To remove a IP from an interface:
+ip addr del 192.168.1.100/32 dev eth0
+# To remove all IPs from an interface:
+ip address flush dev eth0
+# To display all routes:
+ip route
+# To display all routes for IPv6:
+ip -6 route
+# To add default route via gateway IP:
+ip route add default via 192.168.1.1
+# To add route via interface:
+ip route add 192.168.0.0/24 dev eth0
+# To get the route used for an destination
+ip route get to 8.8.8.8
+# To change your mac address :
+ip link set dev eth0 address aa:bb:cc:dd:ee:ff
+# To view neighbors (using ARP and NDP):
+ip neighbor show
+```
+
+#### Netcat
+
+Ahoy matey! Netcat, or `nc`, is a command-line utility for reading from and writing to network connections using TCP or UDP. Just like how a pirate might use a telescope to spy on their enemies, `nc` can be used to spy on network connections and send data to and receive data from network services.
+
+```bash
+# To open a TCP connection from <src-port> to <dest-port> of <dest-host>, with a timeout of <seconds>
+nc -p <src-port> -w <seconds> <dest-host> <dest-port>
+
+# To open a UDP connection to <dest-port> of <dest-host>:
+nc -u <dest-host> <dest-port>
+
+# To open a TCP connection to port 42 of <host> using <source-host> as the IP for the local end of the connection:
+nc -s <source-host> <dest-host> <port>
+
+# To create and listen on a UNIX-domain stream socket:
+nc -lU /var/tmp/dsocket
+
+# To connect to <dest-port> of <dest-host> via an HTTP proxy at <proxy-host>,
+# <proxy-port>. This example could also be used by ssh(1); see the ProxyCommand
+# directive in ssh_config(5) for more information.
+nc -x<proxy-host>:<proxy-port> -Xconnect <dest-host> <dest-port>
+
+# The same example again, this time enabling proxy authentication with username "ruser" if the proxy requires it:
+nc -x<proxy-host>:<proxy-port> -Xconnect -Pruser <host> <port>
+
+# To choose the source IP for the testing using the -s option
+nc -zv -s source_IP target_IP Port
+```
 
 ### Bash
 
@@ -1120,14 +1357,6 @@ Bash one-liners can be used to perform a wide variety of tasks, including search
 
 I hope this helps you understand what a Bash one-liner is and how a pirate might use it to perform a single task. Arrr!
 
-### Processes
-
-Ahoy matey! In the world of Linux, a process is a program that is currently running on the system. Just like how a pirate might use a treasure map to find their way to their treasure, processes can be used to perform tasks and interact with the operating system.
-
-A process can be thought of as an instance of a program. For example, a pirate might run a program called `treasure_hunt` to search for their treasure. If the pirate runs the program again, a new process will be created to run the program. The pirate can use the `ps` command to view a list of all the processes that are currently running on the system.
-
-A process can be thought of as a program that is currently running on the system. For example, a pirate might run a program called `treasure_hunt` to search for their treasure. If the pirate runs the program again, a new process will be created to run the program. The pirate can use the `ps` command to view a list of all the processes that are currently running on the system.
-
 ### Cron
 
 [Crontab.guru](https://crontab.guru)
@@ -1154,19 +1383,37 @@ It's important to note that cron tasks are executed with the permissions of the 
 
 I hope this helps you understand how cron works and how a pirate might use it to automate tasks on their Linux system. Arrr!
 
+### Devices
+
+Ahoy matey! In the world of Linux, a device is a piece of hardware that is connected to the system. Just like how a pirate might use a treasure map to find their way to their treasure, devices can be used to interact with the operating system.
+
+A device can be thought of as a piece of hardware that is connected to the system. For example, a pirate might use a USB drive to store their treasure map. The USB drive can be thought of as a device that is connected to the system.
+
+The `lsblk` command can be used to view a list of all the devices that are currently connected to the system. The `lsblk` command will display a list of devices, along with information about each device, such as the device name, size, and type.
+
+I hope this helps you understand what a device is and how a pirate might use it to interact with the operating system. Arrr!
+
+### Processes
+
+Ahoy matey! In the world of Linux, a process is a program that is currently running on the system. Just like how a pirate might use a treasure map to find their way to their treasure, processes can be used to perform tasks and interact with the operating system.
+
+A process can be thought of as an instance of a program. For example, a pirate might run a program called `treasure_hunt` to search for their treasure. If the pirate runs the program again, a new process will be created to run the program. The pirate can use the `ps` command to view a list of all the processes that are currently running on the system.
+
+A process can be thought of as a program that is currently running on the system. For example, a pirate might run a program called `treasure_hunt` to search for their treasure. If the pirate runs the program again, a new process will be created to run the program. The pirate can use the `ps` command to view a list of all the processes that are currently running on the system.
+
 ### cURL
 
 cURL be a command line tool for transferring data using various network protocols. It be a powerful tool that be widely used by systems administrators and developers for a variety of tasks, such as testing APIs, downloading files, and more. Here be some basics ye should know to use cURL:
 
-Syntax: The basic syntax for using cURL be `curl [options] [URL]`. Ye can specify various options to control how cURL be behavior, and then specify the URL of the resource ye be requesting.
+**Syntax:** The basic syntax for using cURL be `curl [options] [URL]`. Ye can specify various options to control how cURL be behavior, and then specify the URL of the resource ye be requesting.
 
-Protocols: cURL support a wide range of network protocols, including HTTP, HTTPS, FTP, FTPS, and more. Ye can specify the protocol ye be using by including it in the URL, or ye can use the -P option to specify the protocol.
+**Protocols:** cURL support a wide range of network protocols, including HTTP, HTTPS, FTP, SFTP, and more. Ye can specify the protocol ye be using by including it in the URL, or ye can use the -P option to specify the protocol.
 
-HTTP methods: cURL support all of the HTTP methods, including GET, POST, PUT, DELETE, and more. Ye can use the `-X` option to specify the method ye be using.
+**HTTP methods:** cURL support all of the HTTP methods, including `GET`, `POST`, `PUT`, `DELETE`, and more. Ye can use the `-X` option to specify the method ye be using.
 
 Request headers: cURL allow ye to specify custom request headers to be sent with yer request. Ye can use the `-H` option to specify a header, such as `-H "Content-Type: application/json"` to specify the content type of yer request.
 
-Request data: cURL allow ye to specify data to be sent with yer request, such as form data or a JSON payload. Ye can use the -d option to specify the data ye be sending.
+Request data: cURL allow ye to specify data to be sent with yer request, such as form data or a `JSON` payload. Ye can use the -d option to specify the data ye be sending.
 
 > **Note** If ye be sending JSON data, ye should use the `--data-raw` option instead of the `-d` option. The `-d` option will escape the JSON payload, which will cause the request to fail.
 
@@ -1190,7 +1437,7 @@ A typical cURL `POST` request would look like this:
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Pirate"}' https://example.com
 ```
 
-### Vim
+### Vim (Vi IMproved)
 
 Vim be a text editor that be widely used by developers and systems administrators for editing files in the command line. It be a powerful tool that be highly customizable, and it be known for its steep learning curve. Here be some things ye should know to use Vim effectively:
 
@@ -1213,28 +1460,20 @@ An example `.vimrc` file might look like this:
 ```vim
 " Set the color scheme to material
 colorscheme material
-
 " Enable syntax highlighting
 syntax on
-
 " Enable line numbers
 set number
-
 " Enable relative line numbers
 set relativenumber
-
 " Enable auto-indenting
 set autoindent
-
 " Enable smart indenting
 set smartindent
-
 " Enable line wrapping
 set wrap
-
 " Enable spell checking
 set spell
-
 " Enable spell checking for comments
 set spelllang=en_us
 ```
@@ -1285,6 +1524,22 @@ A domain name registrar be a company that be responsible for registering domain 
 
 In a pirate theme, ye can think of a domain name registrar as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, a domain name registrar be able to explore a vast world of information and resources.
 
+##### Buying a Domain Name
+
+To buy a domain name, ye can use a domain name registrar to register a domain name. Ye can then use the domain name to identify a website or other online resource.
+
+##### Namecheap
+
+[Namecheap Website](https://namecheap.com)
+
+Arr matey, ye be askin' about Namecheap, a domain name registrar that be makin' it easier for ye to buy a domain name.
+
+Namecheap be a domain name registrar that be makin' it easier for ye to buy a domain name. Ye can use Namecheap to register a domain name, and then use the domain name to identify a website or other online resource.
+
+Namecheap be available on a variety of platforms, including Windows, Mac, and Linux, so ye can use it on the operating system of your choosin'.
+
+So there ye have it, a brief overview of Namecheap and how ye might be usin' it to buy a domain name. I hope this be helpin' ye to understand this powerful domain name registrar and all that it be capable of. Ahoy!
+
 #### Internet Service Provider
 
 An internet service provider (ISP) be a company that be responsible for providing internet access to its customers. ISPs be responsible for connecting their customers to the internet, and they be also responsible for maintaining the infrastructure that be used to provide internet access.
@@ -1323,6 +1578,18 @@ The first web server, WorldWideWeb, be created by Tim Berners-Lee in 1990. It be
 
 Some examples of popular web servers include Apache, Nginx, and Microsoft IIS. Each web server be different, and they be optimized for different platforms and use cases. For example, Apache be optimized for speed and performance, while Nginx be optimized for customization and extensibility.
 
+##### Apache
+
+[Apache Website](https://www.apache.org) | [Apache Server Configs](https://github.com/h5bp/server-configs-apache)
+
+Apache be a popular web server that be used to host web resources, such as web pages, images, and videos. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+In a pirate theme, ye can think of Apache as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, Apache be able to explore a vast world of information and resources.
+
+`.htaaccess` be a file that be used to configure the behavior of the Apache web server. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+Apache modules be a set of functions that be used to extend the functionality of the Apache web server. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
 ##### Nginx
 
 [Nginx Website](https://www.nginx.com) | [Awesome Nginx](https://github.com/agile6v/awesome-nginx) | [NGINXConfig](https://www.digitalocean.com/community/tools/nginx)
@@ -1332,6 +1599,42 @@ Nginx be a popular web server that be used to host web resources, such as web pa
 In a pirate theme, ye can think of Nginx as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, Nginx be able to explore a vast world of information and resources.
 
 A reverse proxy server be a server that be used to forward client requests to one or more backend servers. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+##### Ad-hoc Web Servers
+
+Here are some one-liner examples of simple web servers written in various programming languages. Note that these examples are meant to serve as a starting point, and may not be suitable for production use without further modification.
+
+**Python:**
+
+`python3 -m http.server`
+
+This command will start a web server using Python's built-in `http.server` module. No additional dependencies are required.
+
+**Node.js:**
+
+`npx http-server`
+
+This command will start a web server using the `http-server` package, which can be installed by running `npm install -g http-server`.
+
+**Ruby:**
+
+`ruby -run -ehttpd . -p8000`
+
+This command will start a web server using Ruby's built-in `WEBrick` library. No additional dependencies are required.
+
+**PHP:**
+
+`php -S localhost:8000`
+
+This command will start a web server using PHP's built-in development server. No additional dependencies are required.
+
+**Go:**
+
+`go run $(go env GOPATH)/src/github.com/golang/example/outyet/main.go`
+
+This command will start a web server using the Go programming language. To install Go on Ubuntu run the following:
+
+`sudo apt-get install golang -y`
 
 ##### Sir Tim Berners-Lee
 
@@ -2037,7 +2340,7 @@ Arrr matey! Zsh, also known as the "Z shell," is a Unix shell and command-line i
 To get started with zsh on your Linux system, you'll need to install it first. You can do this using your system's package manager, such as "apt" on Debian-based systems or "yum" on Red Hat-based systems. For example, you might run a command like this:
 
 ```bash
-sudo apt install zsh -y
+sudo apt-get install zsh -y
 ```
 
 Once zsh is installed, you can start using it by launching a terminal window and entering `zsh` at the command prompt. This will launch the zsh shell, and you can start entering commands just like you would with any other shell.
@@ -2207,7 +2510,7 @@ sudo apt-get update
 Then, install rsync by running the following command:
 
 ```bash
-sudo apt-get install rsync
+sudo apt-get install rsync -y
 ```
 
 Once rsync is installed, you can configure it by editing the `/etc/rsync.conf` file. You can use a text editor like `nano` to do this:
@@ -2381,7 +2684,7 @@ sudo apt-get update
 Then, install `git` by running the following command:
 
 ```bash
-sudo apt-get install git
+sudo apt-get install git -y
 ```
 
 Once git is installed, you can configure it by running the following commands:
