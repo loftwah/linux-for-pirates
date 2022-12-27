@@ -445,7 +445,7 @@ Backend developers are responsible for creating and maintaining the systems and 
 
 You might imagine that backend developers are responsible for creating and maintaining the systems that power your network. They might work on tasks such as developing and maintaining server-side software, designing and implementing APIs, and managing infrastructure, all of which are important for keeping your network running smoothly and efficiently.
 
-> **Note:** Backend developers are sometimes referred to as "back-end developers" or "back end developers."
+> **Note** Backend developers are sometimes referred to as "back-end developers" or "back end developers."
 
 #### Cloud Computing
 
@@ -2880,10 +2880,10 @@ He kept deployin' the wrong island!
 
 ## Testemonials
 
-These are not real tersemonials, but they could be if you want them to be bad enough.
-
 **Linus Torvalds:** "As the creator of the Linux kernel, I can confidently say that pirating software is a big no-no. But if I were a pirate, I'd have to say that Dean Lofts' book "Linux for Pirates" would be my go-to guide for all things pirate- and Linux-related. Dean may not be as seasoned a pirate as Captain Jack Sparrow, but he sure knows his stuff when it comes to Linux. And let's be honest, a little bit of clever hacking never hurt anyone in a fight against the Royal Navy."
 
 **Richard Stallman:** "As a strong advocate for free software, I can't condone piracy in any form. However, if I had to choose a resource for learning about Linux and pirating, it would have to be Dean Lofts' book "Linux for Pirates". Dean may not be as ruthless a pirate as Captain Jack Sparrow, but he's certainly got a way with words and a wicked sense of humor. Plus, his book is chock full of useful information for pirates looking to make the most of their Linux systems."
 
 **Captain Jack Sparrow:** "Ahoy there, mateys! As a seasoned pirate, I can tell ye that there's no one I'd rather have by my side in a fight than Linus Torvalds and Richard Stallman. And when it comes to learning about Linux and pirating, Dean Lofts' book "Linux for Pirates" is a must-read. Dean may not have as much experience on the high seas as I do, but he sure knows his way around a Linux system. So hoist the sails and let's set a course for adventure, with Dean's book as our guide!"
+
+> **Note** These are not real tersemonials, but they could be if you want them to be bad enough.
