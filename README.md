@@ -3541,22 +3541,24 @@ In this chapter, we set sail with desktop environments and window managers in Ub
 
 "Ahoy, mateys! Ye be warned, the circadas be a-singin' their song o' prime numbers. Ye can hear them all through the night, marking their time with the beat of their wings. But beware, for those numbers be the key to unlockin' treasure beyond yer wildest dreams. So set sail and follow the siren call o' the circadas, and ye may just find yerself a rich pirate indeed."
 
-Are ye ready for a riddle that'll make ye scratch yer head and laugh yer head off? Here goes:
+Are ye ready for a riddle that'll make ye scratch yer head and laugh yer head off? 
 
-"I be a five-digit number, ye see,
-With a 6 in the middle, as plain as can be.
-But when ye multiply me, ye best be aware,
-For I be the product of length times width, I swear.
+**Here goes:**
 
-So if ye be wantin' to know my true form,
-Ye'll need to figure out my length and my width, I warn.
-But take heart, me hearty, for I'll give ye a clue,
-I be a multiple of 6, that much is true.
+  "I be a five-digit number, ye see,
+  With a 6 in the middle, as plain as can be.
+  But when ye multiply me, ye best be aware,
+  For I be the product of length times width, I swear.
 
-So put on yer thinkin' cap and give it a try,
-And maybe, just maybe, ye'll figure out why
-I be the answer to this little game,
-And the product of length times width, all the same."
+  So if ye be wantin' to know my true form,
+  Ye'll need to figure out my length and my width, I warn.
+  But take heart, me hearty, for I'll give ye a clue,
+  I be a multiple of 6, that much is true.
+
+  So put on yer thinkin' cap and give it a try,
+  And maybe, just maybe, ye'll figure out why
+  I be the answer to this little game,
+  And the product of length times width, all the same."
 
 I hope ye enjoy this little puzzle, matey! It was fun comin' up with it. Arrr!
 
