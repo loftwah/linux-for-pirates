@@ -3558,7 +3558,7 @@ And maybe, just maybe, ye'll figure out why
 I be the answer to this little game,
 And the product of length times width, all the same."
 
-I hope ye enjoy this little puzzle, matey! It was fun comin' up with it. Let me know if ye have any questions or need any help figuring it out. Arrr!
+I hope ye enjoy this little puzzle, matey! It was fun comin' up with it. Arrr!
 
 ## Jokes
 
