@@ -8,257 +8,260 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-    - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
-    - [What is the MIT License?](#what-is-the-mit-license)
-  - [What is free software?](#what-is-free-software)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [Differences between the teams](#differences-between-the-teams)
-      - [Penetration Testing](#penetration-testing)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Differences between Security roles](#differences-between-security-roles)
-      - [Bugcrowd](#bugcrowd)
-      - [Hackerone](#hackerone)
-    - [Data analysis and interpretation](#data-analysis-and-interpretation)
-      - [Data Science](#data-science)
-      - [Artificial Intelligence](#artificial-intelligence)
-      - [Machine Learning](#machine-learning)
-      - [Differences between the sciences](#differences-between-the-sciences)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
-      - [Developer Advocate](#developer-advocate)
-      - [DevRel (Developer Relations)](#devrel-developer-relations)
-    - [Finance](#finance)
-    - [Frontend](#frontend)
-    - [Management](#management)
-      - [Product Management](#product-management)
-      - [Project Management](#project-management)
-    - [Marketing](#marketing)
-    - [Network Engineering](#network-engineering)
-    - [Operations](#operations)
-      - [Customer Service](#customer-service)
-      - [Logistics](#logistics)
-      - [Supply Chain Management](#supply-chain-management)
-    - [Sales](#sales)
-    - [Software development and delivery](#software-development-and-delivery)
-      - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-      - [chmod](#chmod)
-      - [chown](#chown)
-  - [Networking](#networking)
-    - [ip](#ip)
-    - [Netcat](#netcat)
-    - [nmap](#nmap)
-    - [tcpdump](#tcpdump)
-    - [Wireshark](#wireshark)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-    - [Bash scripting](#bash-scripting)
-    - [Bash history](#bash-history)
-    - [Bash one-liners](#bash-one-liners)
-  - [chroot](#chroot)
-  - [Cron](#cron)
-  - [Devices](#devices)
-  - [Drivers](#drivers)
-  - [Processes](#processes)
-  - [cURL](#curl)
-  - [Vim (Vi IMproved)](#vim-vi-improved)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-      - [Buying a Domain Name](#buying-a-domain-name)
-      - [Namecheap](#namecheap)
-    - [IANA (Internet Assigned Numbers Authority)](#iana-internet-assigned-numbers-authority)
-    - [ICAAN (Internet Corporation for Assigned Names and Numbers)](#icaan-internet-corporation-for-assigned-names-and-numbers)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-      - [Document Object Model (DOM)](#document-object-model-dom)
-      - [Virtual DOM](#virtual-dom)
-      - [How do they work together?](#how-do-they-work-together)
-    - [World Wide Web](#world-wide-web)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-    - [Web Server](#web-server)
-      - [Apache](#apache)
-      - [Nginx](#nginx)
-      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
-  - [Amazon Web Services](#amazon-web-services)
-  - [Cloudflare](#cloudflare)
-  - [CI/CD](#cicd)
-    - [Continuous Delivery](#continuous-delivery)
-    - [Continuous Integration](#continuous-integration)
-    - [CI/CD Tools](#cicd-tools)
-      - [Argo CD](#argo-cd)
-      - [CircleCI](#circleci)
-      - [GitHub Actions](#github-actions)
-      - [GitLab CI/CD](#gitlab-cicd)
-      - [Jenkins](#jenkins)
-      - [Portainer](#portainer)
-      - [Travis CI](#travis-ci)
-  - [DigitalOcean](#digitalocean)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-    - [DNS over TLS (DoT)](#dns-over-tls-dot)
-    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-    - [DNSCrypt](#dnscrypt)
-    - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-    - [AWS Route 53](#aws-route-53)
-    - [Azure DNS](#azure-dns)
-    - [Google Cloud DNS](#google-cloud-dns)
-    - [DigitalOcean DNS](#digitalocean-dns)
-    - [Cloudflare DNS](#cloudflare-dns)
-    - [OpenDNS](#opendns)
-    - [Bind](#bind)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [Meta tags](#meta-tags)
-    - [Is HTML a programming language?](#is-html-a-programming-language)
-    - [CSS](#css)
-  - [HTTP](#http)
-    - [HTTP error codes](#http-error-codes)
-    - [HTTP methods](#http-methods)
-    - [HTTP headers](#http-headers)
-    - [HTTPS](#https)
-    - [API (Application Programming Interface)](#api-application-programming-interface)
-    - [REST (Representational State Transfer)](#rest-representational-state-transfer)
-  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-      - [Jeff Geerling](#jeff-geerling)
-      - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
-      - [Ansible Galaxy](#ansible-galaxy)
-      - [Ansible Tower](#ansible-tower)
-      - [Ansible Vault](#ansible-vault)
-      - [Ansible Molecule](#ansible-molecule)
-      - [Ansible Container](#ansible-container)
-      - [Ansible Network Automation](#ansible-network-automation)
-      - [Ansible Cloud Automation](#ansible-cloud-automation)
-      - [Ansible Container Orchestration](#ansible-container-orchestration)
-      - [Ansible Service Broker](#ansible-service-broker)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-      - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-    - [Logrotate](#logrotate)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-      - [How to generate SSH keys](#how-to-generate-ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL/TLS](#ssltls)
-    - [SSL Certificates](#ssl-certificates)
-      - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
-      - [Let's Encrypt](#lets-encrypt)
-      - [Certificate Authorities](#certificate-authorities)
-      - [CAA Records](#caa-records)
-      - [OCSP Stapling](#ocsp-stapling)
-      - [OCSP Must-Staple](#ocsp-must-staple)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-    - [Subnetting Cheatsheet](#subnetting-cheatsheet)
-      - [Subnet Mask](#subnet-mask-1)
-      - [CIDR Notation](#cidr-notation)
-      - [Subnetting a Network](#subnetting-a-network)
-      - [Subnetting Examples](#subnetting-examples)
-      - [Subnetting Practice](#subnetting-practice)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
-  - [Desktop Environments](#desktop-environments)
-    - [GNOME](#gnome)
-    - [KDE](#kde)
-    - [Xfce](#xfce)
-    - [LXDE](#lxde)
-  - [Window Managers](#window-managers)
-    - [Openbox](#openbox)
-    - [Fluxbox](#fluxbox)
-    - [i3](#i3)
-  - [Installing a Desktop Environment](#installing-a-desktop-environment)
-  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
-  - [Installing a Window Manager](#installing-a-window-manager)
-  - [Configuring a Window Manager](#configuring-a-window-manager)
-- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
-- [Testemonials](#testemonials)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+      - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
+      - [What is the MIT License?](#what-is-the-mit-license)
+    - [What is free software?](#what-is-free-software)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [Differences between the teams](#differences-between-the-teams)
+        - [Penetration Testing](#penetration-testing)
+        - [Phishing](#phishing)
+        - [Social Engineering](#social-engineering)
+        - [Kevin Mitnick](#kevin-mitnick)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Differences between Security roles](#differences-between-security-roles)
+        - [Bugcrowd](#bugcrowd)
+        - [Hackerone](#hackerone)
+      - [Data analysis and interpretation](#data-analysis-and-interpretation)
+        - [Data Science](#data-science)
+        - [Artificial Intelligence](#artificial-intelligence)
+        - [Machine Learning](#machine-learning)
+        - [Differences between the sciences](#differences-between-the-sciences)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
+        - [Developer Advocate](#developer-advocate)
+        - [DevRel (Developer Relations)](#devrel-developer-relations)
+      - [Finance](#finance)
+      - [Frontend](#frontend)
+      - [Management](#management)
+        - [Product Management](#product-management)
+        - [Project Management](#project-management)
+      - [Marketing](#marketing)
+      - [Network Engineering](#network-engineering)
+      - [Operations](#operations)
+        - [Customer Service](#customer-service)
+        - [Logistics](#logistics)
+        - [Supply Chain Management](#supply-chain-management)
+      - [Sales](#sales)
+      - [Software development and delivery](#software-development-and-delivery)
+        - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+        - [chmod](#chmod)
+        - [chown](#chown)
+    - [Networking](#networking)
+      - [ip](#ip)
+      - [Netcat](#netcat)
+      - [nmap](#nmap)
+      - [tcpdump](#tcpdump)
+      - [Wireshark](#wireshark)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+      - [Bash scripting](#bash-scripting)
+      - [Bash history](#bash-history)
+      - [Bash one-liners](#bash-one-liners)
+    - [chroot](#chroot)
+    - [Cron](#cron)
+    - [Devices](#devices)
+    - [Drivers](#drivers)
+    - [Processes](#processes)
+    - [cURL](#curl)
+    - [Vim (Vi IMproved)](#vim-vi-improved)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+        - [Buying a Domain Name](#buying-a-domain-name)
+        - [Namecheap](#namecheap)
+      - [IANA (Internet Assigned Numbers Authority)](#iana-internet-assigned-numbers-authority)
+      - [ICAAN (Internet Corporation for Assigned Names and Numbers)](#icaan-internet-corporation-for-assigned-names-and-numbers)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+        - [Document Object Model (DOM)](#document-object-model-dom)
+        - [Virtual DOM](#virtual-dom)
+        - [How do they work together?](#how-do-they-work-together)
+      - [World Wide Web](#world-wide-web)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+      - [Web Server](#web-server)
+        - [Apache](#apache)
+        - [Nginx](#nginx)
+        - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [CI/CD](#cicd)
+      - [Continuous Delivery](#continuous-delivery)
+      - [Continuous Integration](#continuous-integration)
+      - [CI/CD Tools](#cicd-tools)
+        - [Argo CD](#argo-cd)
+        - [CircleCI](#circleci)
+        - [GitHub Actions](#github-actions)
+        - [GitLab CI/CD](#gitlab-cicd)
+        - [Jenkins](#jenkins)
+        - [Portainer](#portainer)
+        - [Travis CI](#travis-ci)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Azure DNS](#azure-dns)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+      - [OpenDNS](#opendns)
+      - [Bind](#bind)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+      - [Getting Started with Git and GitHub](#getting-started-with-git-and-github)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [Meta tags](#meta-tags)
+      - [Is HTML a programming language?](#is-html-a-programming-language)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTP methods](#http-methods)
+      - [HTTP headers](#http-headers)
+      - [HTTPS](#https)
+      - [API (Application Programming Interface)](#api-application-programming-interface)
+      - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+    - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+        - [Jeff Geerling](#jeff-geerling)
+        - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
+        - [Ansible Galaxy](#ansible-galaxy)
+        - [Ansible Tower](#ansible-tower)
+        - [Ansible Vault](#ansible-vault)
+        - [Ansible Molecule](#ansible-molecule)
+        - [Ansible Container](#ansible-container)
+        - [Ansible Network Automation](#ansible-network-automation)
+        - [Ansible Cloud Automation](#ansible-cloud-automation)
+        - [Ansible Container Orchestration](#ansible-container-orchestration)
+        - [Ansible Service Broker](#ansible-service-broker)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+        - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+      - [Logrotate](#logrotate)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Confguration](#ssh-confguration)
+      - [SSH Keys](#ssh-keys)
+        - [How to generate SSH keys](#how-to-generate-ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL/TLS](#ssltls)
+      - [SSL Certificates](#ssl-certificates)
+        - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
+        - [Let's Encrypt](#lets-encrypt)
+        - [Certificate Authorities](#certificate-authorities)
+        - [CAA Records](#caa-records)
+        - [OCSP Stapling](#ocsp-stapling)
+        - [OCSP Must-Staple](#ocsp-must-staple)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+      - [Subnetting Cheatsheet](#subnetting-cheatsheet)
+        - [Subnet Mask](#subnet-mask-1)
+        - [CIDR Notation](#cidr-notation)
+        - [Subnetting a Network](#subnetting-a-network)
+        - [Subnetting Examples](#subnetting-examples)
+        - [Subnetting Practice](#subnetting-practice)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+    - [Desktop Environments](#desktop-environments)
+      - [GNOME](#gnome)
+      - [KDE](#kde)
+      - [Xfce](#xfce)
+      - [LXDE](#lxde)
+    - [Window Managers](#window-managers)
+      - [Openbox](#openbox)
+      - [Fluxbox](#fluxbox)
+      - [i3](#i3)
+    - [Installing a Desktop Environment](#installing-a-desktop-environment)
+    - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+    - [Installing a Window Manager](#installing-a-window-manager)
+    - [Configuring a Window Manager](#configuring-a-window-manager)
+  - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
+  - [Testemonials](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1331,6 +1334,34 @@ Bash one-liners can be used to perform a wide variety of tasks, including search
 
 I hope this helps you understand what a Bash one-liner is and how a pirate might use it to perform a single task. Arrr!
 
+- "I be needin' to list all the files in this folder, arrr!"
+
+`ls`
+
+- "I be needin' to see the contents of this file, arrr!"
+
+`cat [filename]`
+
+- "I be needin' to search for a specific string in all the files in this folder, arrr!"
+
+`grep "[search string]" *`
+
+- "I be needin' to see all the processes runnin' on this machine, arrr!"
+
+`ps aux`
+
+- "I be needin' to see the available disk space on this machine, arrr!"
+
+`df -h`
+
+- "I be needin' to see the network connections on this machine, arrr!"
+
+`netstat -tulpn`
+
+- "I be needin' to see the system logs, arrr!"
+
+`tail -f /var/log/syslog`
+
 ### chroot
 
 Ahoy matey! The `chroot` command is used to change the root directory for the current shell session. Ye can use it to run a command or shell with a different root directory.
@@ -1980,6 +2011,49 @@ Gitea be a great place for developers to store their code and track changes to i
 
 Gitea be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what Gitea be and how it can be used by developers!
 
+#### Getting Started with Git and GitHub
+
+Here be a few basic commands ye can use to get started with Git and GitHub:
+
+You will need to have `git` configured on yer local machine. If ye don't have it installed, ye can install it from [here](https://git-scm.com/downloads).
+
+To configure yer local machine, ye can use the following commands:
+
+```bash
+git config --global user.name "[name]"
+git config --global user.email "[email address]"
+```
+
+- "I be needin' to initialize a new Git repository on me local machine, arrr!"
+
+`git init`
+
+- "I be needin' to add me changes to the Git staging area, arrr!"
+
+`git add [file]`
+
+- "I be needin' to commit me changes to the Git repository, arrr!"
+
+`git commit -m "[commit message]"`
+
+- "I be needin' to see the commit history of me repository, arrr!"
+
+`git log`
+
+- "I be needin' to clone a repository from GitHub to me local machine, arrr!"
+
+`git clone [repository URL]`
+
+- "I be needin' to push me changes to the remote repository on GitHub, arrr!"
+
+`git push origin [branch]`
+
+- "I be needin' to pull the latest changes from the remote repository on GitHub, arrr!"
+
+`git pull origin [branch]`
+
+These be just a few of the basic commands ye can use to get started with Git and GitHub, matey. There be many more commands and features available, so don't be afraid to explore and learn more. Just watch out for those scurvy Git merge conflicts!
+
 ### Homebrew
 
 [Homebrew](https://brew.sh)
@@ -2590,6 +2664,141 @@ SSH is a network protocol that allows you to securely connect to a remote comput
 To use SSH, you need an SSH client, which is a program that connects to an SSH server. When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
 
 SSH is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
+
+#### SSH Confguration
+
+SSH can be configured using a configuration file called sshd_config, which is located in the /etc/ssh directory. This file contains a list of configuration options that can be used to customize the behavior of the SSH daemon.
+
+The most common configuration options include:
+
+`Port`: This option can be used to specify the port that the SSH daemon should listen on. By default, the SSH daemon listens on port 22, but this can be changed to any other port number.
+
+`PermitRootLogin`: This option can be used to specify whether or not root login is allowed. By default, root login is disabled, but this can be changed to yes or no.
+
+`PasswordAuthentication`: This option can be used to specify whether or not password authentication is allowed. By default, password authentication is enabled, but this can be changed to yes or no.
+
+`PubkeyAuthentication`: This option can be used to specify whether or not public key authentication is allowed. By default, public key authentication is enabled, but this can be changed to yes or no.
+
+`AuthorizedKeysFile`: This option can be used to specify the location of the authorized_keys file. By default, the authorized_keys file is located in the /root/.ssh directory, but this can be changed to any other location.
+
+`PermitEmptyPasswords`: This option can be used to specify whether or not empty passwords are allowed. By default, empty passwords are disabled, but this can be changed to yes or no.
+
+`PermitUserEnvironment`: This option can be used to specify whether or not users can set environment variables. By default, users are not allowed to set environment variables, but this can be changed to yes or no.
+
+`AllowTcpForwarding`: This option can be used to specify whether or not TCP forwarding is allowed. By default, TCP forwarding is enabled, but this can be changed to yes or no.
+
+`AllowAgentForwarding`: This option can be used to specify whether or not agent forwarding is allowed. By default, agent forwarding is enabled, but this can be changed to yes or no.
+
+`AllowStreamLocalForwarding`: This option can be used to specify whether or not stream local forwarding is allowed. By default, stream local forwarding is enabled, but this can be changed to yes or no.
+
+`AllowUsers`: This option can be used to specify a list of users that are allowed to connect to the SSH daemon. By default, all users are allowed to connect, but this can be changed to any list of users.
+
+`DenyUsers`: This option can be used to specify a list of users that are not allowed to connect to the SSH daemon. By default, no users are denied access, but this can be changed to any list of users.
+
+`AllowGroups`: This option can be used to specify a list of groups that are allowed to connect to the SSH daemon. By default, all groups are allowed to connect, but this can be changed to any list of groups.
+
+`DenyGroups`: This option can be used to specify a list of groups that are not allowed to connect to the SSH daemon. By default, no groups are denied access, but this can be changed to any list of groups.
+
+You can also configure you local SSH client using a configuration file called config, which is located in the ~/.ssh directory. This file contains a list of configuration options that can be used to customize the behavior of the SSH client.
+
+The most common configuration options include:
+
+`Host`: This option can be used to specify a hostname or IP address that the SSH client should connect to. By default, the SSH client will connect to the host specified on the command line, but this can be changed to any hostname or IP address.
+
+`Port`: This option can be used to specify the port that the SSH client should connect to. By default, the SSH client will connect to port 22, but this can be changed to any other port number.
+
+`User`: This option can be used to specify the username that the SSH client should use when connecting to the remote host. By default, the SSH client will use the username specified on the command line, but this can be changed to any username.
+
+`IdentityFile`: This option can be used to specify the location of the private key that the SSH client should use when connecting to the remote host. By default, the SSH client will use the private key specified on the command line, but this can be changed to any private key.
+
+`IdentitiesOnly`: This option can be used to specify whether or not the SSH client should only use the private keys specified in the IdentityFile option. By default, the SSH client will use any private keys that are available, but this can be changed to yes or no.
+
+`StrictHostKeyChecking`: This option can be used to specify whether or not the SSH client should check the host key when connecting to the remote host. By default, the SSH client will check the host key, but this can be changed to yes or no.
+
+`UserKnownHostsFile`: This option can be used to specify the location of the known_hosts file. By default, the known_hosts file is located in the ~/.ssh directory, but this can be changed to any other location.
+
+`LogLevel`: This option can be used to specify the level of logging that the SSH client should use. By default, the SSH client will use the level of logging specified on the command line, but this can be changed to any level of logging.
+
+`ForwardAgent`: This option can be used to specify whether or not the SSH client should forward the authentication agent when connecting to the remote host. By default, the SSH client will not forward the authentication agent, but this can be changed to yes or no.
+
+`ForwardX11`: This option can be used to specify whether or not the SSH client should forward X11 connections when connecting to the remote host. By default, the SSH client will not forward X11 connections, but this can be changed to yes or no.
+
+`ForwardX11Trusted`: This option can be used to specify whether or not the SSH client should forward trusted X11 connections when connecting to the remote host. By default, the SSH client will not forward trusted X11 connections, but this can be changed to yes or no.
+
+`ForwardX11Timeout`: This option can be used to specify the timeout for X11 forwarding. By default, the SSH client will use a timeout of 20 seconds, but this can be changed to any other value.
+
+`ForwardX11DisplayOffset`: This option can be used to specify the display offset for X11 forwarding. By default, the SSH client will use a display offset of 10, but this can be changed to any other value.
+
+`ForwardX11UseLocalhost`: This option can be used to specify whether or not the SSH client should use localhost for X11 forwarding. By default, the SSH client will use localhost, but this can be changed to yes or no.
+
+`XAuthLocation`: This option can be used to specify the location of the xauth command. By default, the SSH client will use the xauth command that is located in the /usr/bin directory, but this can be changed to any other location.
+
+`Compression`: This option can be used to specify whether or not the SSH client should use compression when connecting to the remote host. By default, the SSH client will not use compression, but this can be changed to yes or no.
+
+`CompressionLevel`: This option can be used to specify the compression level that the SSH client should use when connecting to the remote host. By default, the SSH client will use a compression level of 6, but this can be changed to any other value.
+
+`Protocol`: This option can be used to specify the SSH protocol that the SSH client should use when connecting to the remote host. By default, the SSH client will use the SSH protocol specified on the command line, but this can be changed to any other protocol.
+
+`Ciphers`: This option can be used to specify the list of ciphers that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of ciphers specified on the command line, but this can be changed to any other list of ciphers.
+
+`MACs`: This option can be used to specify the list of MACs that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of MACs specified on the command line, but this can be changed to any other list of MACs.
+
+`KexAlgorithms`: This option can be used to specify the list of key exchange algorithms that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of key exchange algorithms specified on the command line, but this can be changed to any other list of key exchange algorithms.
+
+`HostKeyAlgorithms`: This option can be used to specify the list of host key algorithms that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of host key algorithms specified on the command line, but this can be changed to any other list of host key algorithms.
+
+`PubkeyAcceptedKeyTypes`: This option can be used to specify the list of public key types that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of public key types specified on the command line, but this can be changed to any other list of public key types.
+
+`HostbasedAcceptedKeyTypes`: This option can be used to specify the list of host-based key types that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of host-based key types specified on the command line, but this can be changed to any other list of host-based key types.
+
+An example of the SSH client configuration file is shown below:
+
+```bash
+# SSH client configuration file
+# ~/.ssh/config
+# Specify the location of the private key to use when connecting to the remote host
+IdentityFile ~/.ssh/id_rsa
+# Specify whether or not the SSH client should only use the private keys specified in the IdentityFile option
+IdentitiesOnly yes
+# Specify whether or not the SSH client should check the host key when connecting to the remote host
+StrictHostKeyChecking yes
+# Specify the location of the known_hosts file
+UserKnownHostsFile ~/.ssh/known_hosts
+# Specify the level of logging that the SSH client should use
+LogLevel INFO
+# Specify whether or not the SSH client should forward the authentication agent when connecting to the remote host
+ForwardAgent no
+# Specify whether or not the SSH client should forward X11 connections when connecting to the remote host
+ForwardX11 no
+# Specify whether or not the SSH client should forward trusted X11 connections when connecting to the remote host
+ForwardX11Trusted no
+# Specify the timeout for X11 forwarding
+ForwardX11Timeout 20
+# Specify the display offset for X11 forwarding
+ForwardX11DisplayOffset 10
+# Specify whether or not the SSH client should use localhost for X11 forwarding
+ForwardX11UseLocalhost yes
+# Specify the location of the xauth command
+XAuthLocation /usr/bin/xauth
+# Specify whether or not the SSH client should use compression when connecting to the remote host
+Compression no
+# Specify the compression level that the SSH client should use when connecting to the remote host
+CompressionLevel 6
+# Specify the SSH protocol that the SSH client should use when connecting to the remote host
+Protocol 2
+# Specify the list of ciphers that the SSH client should use when connecting to the remote host
+Ciphers aes128-ctr,aes192-ctr,aes256-ctr
+# Specify the list of MACs that the SSH client should use when connecting to the remote host
+MACs hmac-sha2-256,hmac-sha2-512
+# Specify the list of key exchange algorithms that the SSH client should use when connecting to the remote host
+KexAlgorithms
+# Specify the list of host key algorithms that the SSH client should use when connecting to the remote host
+HostKeyAlgorithms
+# Specify the list of public key types that the SSH client should use when connecting to the remote host
+PubkeyAcceptedKeyTypes
+# Specify the list of host-based key types that the SSH client should use when connecting to the remote host
+HostbasedAcceptedKeyTypes
+```
 
 #### SSH Keys
 
