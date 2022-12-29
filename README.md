@@ -8,206 +8,231 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-    - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
-    - [What is the MIT License?](#what-is-the-mit-license)
-  - [What is free software?](#what-is-free-software)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [Differences between the teams](#differences-between-the-teams)
-      - [Penetration Testing](#penetration-testing)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Differences between Security roles](#differences-between-security-roles)
-      - [Bugcrowd](#bugcrowd)
-      - [Hackerone](#hackerone)
-    - [Data Science](#data-science)
-      - [Artificial Intelligence](#artificial-intelligence)
-      - [Machine Learning](#machine-learning)
-      - [Differences between the sciences](#differences-between-the-sciences)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-    - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
-      - [Developer Advocate](#developer-advocate)
-      - [DevRel (Developer Relations)](#devrel-developer-relations)
-    - [Frontend](#frontend)
-    - [Management](#management)
-      - [Product Management](#product-management)
-      - [Project Management](#project-management)
-    - [Marketing](#marketing)
-    - [Network Engineering](#network-engineering)
-    - [Operations](#operations)
-      - [Supply Chain Management](#supply-chain-management)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-      - [chmod](#chmod)
-  - [Networking](#networking)
-    - [ip](#ip)
-    - [Netcat](#netcat)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-    - [Bash scripting](#bash-scripting)
-    - [Bash history](#bash-history)
-    - [Bash one-liners](#bash-one-liners)
-  - [Cron](#cron)
-  - [Devices](#devices)
-  - [Processes](#processes)
-  - [cURL](#curl)
-  - [Vim (Vi IMproved)](#vim-vi-improved)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-      - [Buying a Domain Name](#buying-a-domain-name)
-      - [Namecheap](#namecheap)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-    - [Web Server](#web-server)
-      - [Apache](#apache)
-      - [Nginx](#nginx)
-      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
-  - [Amazon Web Services](#amazon-web-services)
-  - [Cloudflare](#cloudflare)
-  - [CI/CD](#cicd)
-    - [Continuous Delivery](#continuous-delivery)
-    - [Continuous Integration](#continuous-integration)
-    - [CI/CD Tools](#cicd-tools)
-      - [Argo CD](#argo-cd)
-      - [CircleCI](#circleci)
-      - [GitHub Actions](#github-actions)
-      - [GitLab CI/CD](#gitlab-cicd)
-      - [Jenkins](#jenkins)
-      - [Portainer](#portainer)
-      - [Travis CI](#travis-ci)
-  - [DigitalOcean](#digitalocean)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-    - [DNS over TLS (DoT)](#dns-over-tls-dot)
-    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-    - [DNSCrypt](#dnscrypt)
-    - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-    - [AWS Route 53](#aws-route-53)
-    - [Google Cloud DNS](#google-cloud-dns)
-    - [DigitalOcean DNS](#digitalocean-dns)
-    - [Azure DNS](#azure-dns)
-    - [Cloudflare DNS](#cloudflare-dns)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-    - [HTTP error codes](#http-error-codes)
-    - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
-  - [Desktop Environments](#desktop-environments)
-    - [GNOME](#gnome)
-    - [KDE](#kde)
-    - [Xfce](#xfce)
-    - [LXDE](#lxde)
-  - [Window Managers](#window-managers)
-    - [Openbox](#openbox)
-    - [Fluxbox](#fluxbox)
-    - [i3](#i3)
-  - [Installing a Desktop Environment](#installing-a-desktop-environment)
-  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
-  - [Installing a Window Manager](#installing-a-window-manager)
-  - [Configuring a Window Manager](#configuring-a-window-manager)
-- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
-- [Testemonials](#testemonials)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+      - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
+      - [What is the MIT License?](#what-is-the-mit-license)
+    - [What is free software?](#what-is-free-software)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [Differences between the teams](#differences-between-the-teams)
+        - [Penetration Testing](#penetration-testing)
+        - [Phishing](#phishing)
+        - [Social Engineering](#social-engineering)
+        - [Kevin Mitnick](#kevin-mitnick)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Differences between Security roles](#differences-between-security-roles)
+        - [Bugcrowd](#bugcrowd)
+        - [Hackerone](#hackerone)
+      - [Data Science](#data-science)
+        - [Artificial Intelligence](#artificial-intelligence)
+        - [Machine Learning](#machine-learning)
+        - [Differences between the sciences](#differences-between-the-sciences)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+      - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
+        - [Developer Advocate](#developer-advocate)
+        - [DevRel (Developer Relations)](#devrel-developer-relations)
+      - [Frontend](#frontend)
+      - [Management](#management)
+        - [Product Management](#product-management)
+        - [Project Management](#project-management)
+      - [Marketing](#marketing)
+      - [Network Engineering](#network-engineering)
+      - [Operations](#operations)
+        - [Supply Chain Management](#supply-chain-management)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+        - [chmod](#chmod)
+      - [chown](#chown)
+      - [chroot](#chroot)
+    - [Networking](#networking)
+      - [ip](#ip)
+      - [Netcat](#netcat)
+      - [nmap](#nmap)
+      - [tcpdump](#tcpdump)
+      - [Wireshark](#wireshark)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+      - [Bash scripting](#bash-scripting)
+      - [Bash history](#bash-history)
+      - [Bash one-liners](#bash-one-liners)
+    - [Cron](#cron)
+    - [Devices](#devices)
+    - [Drivers](#drivers)
+    - [Processes](#processes)
+    - [cURL](#curl)
+    - [Vim (Vi IMproved)](#vim-vi-improved)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+        - [Buying a Domain Name](#buying-a-domain-name)
+        - [Namecheap](#namecheap)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+      - [Web Server](#web-server)
+        - [Apache](#apache)
+        - [Nginx](#nginx)
+        - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [CI/CD](#cicd)
+      - [Continuous Delivery](#continuous-delivery)
+      - [Continuous Integration](#continuous-integration)
+      - [CI/CD Tools](#cicd-tools)
+        - [Argo CD](#argo-cd)
+        - [CircleCI](#circleci)
+        - [GitHub Actions](#github-actions)
+        - [GitLab CI/CD](#gitlab-cicd)
+        - [Jenkins](#jenkins)
+        - [Portainer](#portainer)
+        - [Travis CI](#travis-ci)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Azure DNS](#azure-dns)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+      - [OpenDNS](#opendns)
+      - [Bind](#bind)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [Is HTML a programming language?](#is-html-a-programming-language)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTPS](#https)
+      - [HTTP methods](#http-methods)
+      - [HTTP headers](#http-headers)
+      - [API (Application Programming Interface)](#api-application-programming-interface)
+      - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+    - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+        - [Jeff Geerling](#jeff-geerling)
+        - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
+        - [Ansible Galaxy](#ansible-galaxy)
+        - [Ansible Tower](#ansible-tower)
+        - [Ansible Vault](#ansible-vault)
+        - [Ansible Molecule](#ansible-molecule)
+        - [Ansible Container](#ansible-container)
+        - [Ansible Network Automation](#ansible-network-automation)
+        - [Ansible Cloud Automation](#ansible-cloud-automation)
+        - [Ansible Container Orchestration](#ansible-container-orchestration)
+        - [Ansible Service Broker](#ansible-service-broker)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+    - [Desktop Environments](#desktop-environments)
+      - [GNOME](#gnome)
+      - [KDE](#kde)
+      - [Xfce](#xfce)
+      - [LXDE](#lxde)
+    - [Window Managers](#window-managers)
+      - [Openbox](#openbox)
+      - [Fluxbox](#fluxbox)
+      - [i3](#i3)
+    - [Installing a Desktop Environment](#installing-a-desktop-environment)
+    - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+    - [Installing a Window Manager](#installing-a-window-manager)
+    - [Configuring a Window Manager](#configuring-a-window-manager)
+  - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
+  - [Testemonials](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -923,6 +948,36 @@ chmod 755 treasurehunter.sh
 chmod 666 treasurehunter.sh
 ```
 
+#### chown
+
+Ahoy matey! The `chown` command is used to change the owner and group of a file or directory. Ye can use it to change the owner and group of a file or directory to a specific user or group.
+
+```bash
+# Change owner to pirate (treasure_map.txt)
+chown pirate treasure_map.txt
+# Change owner to pirate and group to pirates (treasure_map.txt)
+chown pirate:pirates treasure_map.txt
+# Change owner to pirate recursively (treasure_chest)
+chown -R pirate treasure_chest
+# Change owner to pirate and group to pirates recursively (treasure_chest)
+chown -R pirate:pirates treasure_chest
+```
+
+#### chroot
+
+Ahoy matey! The `chroot` command is used to change the root directory for the current shell session. Ye can use it to run a command or shell with a different root directory.
+
+```bash
+# Change root directory to /tmp (bash)
+chroot /tmp bash
+# Change root directory to /tmp (sh)
+chroot /tmp sh
+# Change root directory to /tmp (zsh)
+chroot /tmp zsh
+# Change root directory to /tmp (fish)
+chroot /tmp fish
+```
+
 ### Networking
 
 [PacketLife](https://packetlife.net/)
@@ -976,28 +1031,158 @@ Ahoy matey! Netcat, or `nc`, is a command-line utility for reading from and writ
 
 ```bash
 # To open a TCP connection from <src-port> to <dest-port> of <dest-host>, with a timeout of <seconds>
-nc -p <src-port> -w <seconds> <dest-host> <dest-port>
-
+nc -p <src-port> -w <seconds> <dest-host> <dest-port>   # "Open a TCP connection from <src-port> to <dest-port> on <dest-host>, with a deadline of <seconds>"
 # To open a UDP connection to <dest-port> of <dest-host>:
-nc -u <dest-host> <dest-port>
-
+nc -u <dest-host> <dest-port>   # "Open a UDP connection to <dest-port> on <dest-host>"
 # To open a TCP connection to port 42 of <host> using <source-host> as the IP for the local end of the connection:
-nc -s <source-host> <dest-host> <port>
-
+nc -s <source-host> <dest-host> <port>   # "Open a TCP connection to port 42 on <dest-host> using <source-host> as the IP for the local end"
 # To create and listen on a UNIX-domain stream socket:
-nc -lU /var/tmp/dsocket
-
+nc -lU /var/tmp/dsocket   # "Create and listen on a UNIX-domain stream socket at /var/tmp/dsocket"
 # To connect to <dest-port> of <dest-host> via an HTTP proxy at <proxy-host>,
 # <proxy-port>. This example could also be used by ssh(1); see the ProxyCommand
 # directive in ssh_config(5) for more information.
-nc -x<proxy-host>:<proxy-port> -Xconnect <dest-host> <dest-port>
-
+nc -x<proxy-host>:<proxy-port> -Xconnect <dest-host> <dest-port>   # "Connect to <dest-port> on <dest-host> via an HTTP proxy at <proxy-host>:<proxy-port>"
 # The same example again, this time enabling proxy authentication with username "ruser" if the proxy requires it:
-nc -x<proxy-host>:<proxy-port> -Xconnect -Pruser <host> <port>
-
+nc -x<proxy-host>:<proxy-port> -Xconnect -Pruser <host> <port>   # "Connect to <dest-port> on <dest-host> via an HTTP proxy at <proxy-host>:<proxy-port>, enabling proxy authentication with username 'ruser' if necessary"
 # To choose the source IP for the testing using the -s option
-nc -zv -s source_IP target_IP Port
+nc -zv -s source_IP target_IP Port   # "Choose the source IP for the testing using the -s option to connect to <target_IP> on <Port>"
 ```
+
+#### nmap
+
+Ahoy matey! Nmap, or the Network Mapper, is a command-line utility for network exploration and security auditing. Just like how a pirate might use a telescope to spy on their enemies, `nmap` can be used to spy on network connections and send data to and receive data from network services.
+
+```bash
+# Single target scan:
+nmap [target]   # "Scour the horizon for signs of [target]"
+# Scan from a list of targets:
+nmap -iL [list.txt]   # "Scour the horizon for signs of all the scallywags on our hit list"
+# Scan port for all available A records
+# (useful when multiple A records are returned by the DNS server)
+nmap --script resolveall \
+    --script-args newtargets,resolveall.hosts=[target] -p [port]   # "Search for any sign of [target] on all available channels"
+# iPv6:
+nmap -6 [target]   # "Look for any trace of [target] on the open sea"
+# OS detection:
+nmap -O --osscan_guess [target]   # "Attempt to identify [target]'s flag"
+# Save output to text file:
+nmap -oN [output.txt] [target]   # "Record all findings on [target] in our log book"
+# Save output to xml file:
+nmap -oX [output.xml] [target]   # "Record all findings on [target] in our secret code"
+# Scan a specific port:
+nmap -p [port] [target]   # "Search [target]'s port for any hidden treasure"
+# Do an aggressive scan:
+nmap -A [target]   # "Launch a full-blown attack on [target]"
+# Speedup your scan:
+# -n => disable ReverseDNS
+# --min-rate=X => min X packets / sec
+nmap -T5 --min-parallelism=50 -n --min-rate=300 [target]   # "Hasten the search for [target] by any means necessary"
+# Traceroute:
+nmap -traceroute [target]   # "Trace [target]'s path through the treacherous waters"
+# Ping scan only: -sP
+# Don't ping:     -PN <- Useful if a host doesn't reply to a ping.
+# TCP SYN ping:   -PS
+# TCP ACK ping:   -PA
+# UDP ping:       -PU
+# ARP ping:       -PR
+# Example: Ping scan all machines on a class C network
+nmap -sP 192.168.0.0/24   # "Ping all scallywags in this area to see who's about"
+# Force TCP scan: -sT
+# Force UDP scan: -sU
+# Use some script:
+nmap --script default,safe   # "Employ our default and safe scripts to search for [target]"
+# Loads the script in the default category, the banner script,
+# and all .nse files in the directory /home/user/customscripts.
+nmap --script default,banner,/home/user/customscripts   # "Employ our default and banner scripts, as well as all custom scripts in /home/user/customscripts to search for [target]"
+# Loads all scripts whose name starts with http-,
+# such as http-auth and http-open-proxy.
+nmap --script 'http-*'   # "Employ all scripts starting with 'http-' to search for [target]"
+# Loads every script except for those in the intrusive category.
+nmap --script "not intrusive"   # "Employ all scripts except those in the intrusive category to search for [target]"
+# Loads those scripts that are in both the default and safe categories.
+nmap --script "default and safe"   # "Employ all scripts in the default and safe categories to search for [target]"
+# Loads scripts in the default, safe, or intrusive categories,
+# except for those whose names start with http-.
+nmap --script "(default or safe or intrusive) and not http-*"   # "Employ all scripts in the default, safe, or intrusive categories, except for those starting with 'http-', to search for [target]"
+# Scan for the heartbleed
+# -pT:443 => Scan only port 443 with TCP (T:)
+nmap -T5 --min-parallelism=50 -n --script "ssl-heartbleed" -pT:443 127.0.0.1   # "Scan for the heartbleed on port 443 using TCP to search for [target]"
+# Show all information (debug mode)
+nmap -d ...   # "Show all information in debug mode to search for [target]"
+# Discover DHCP information on an interface
+nmap --script broadcast-dhcp-discover -e eth0   # "Discover DHCP information on the interface to search for [target]"
+```
+
+#### tcpdump
+
+Ahoy matey! Tcpdump, or the packet sniffer, is a command-line utility for network traffic analysis. Just like how a pirate might use a telescope to spy on their enemies, `tcpdump` can be used to spy on network connections and send data to and receive data from network services.
+
+```bash
+# Capture all packets and save them to a file:
+tcpdump -w [capture.pcap]   # "Gather all packets and save them to a file for later review"
+# Capture only TCP packets:
+tcpdump 'tcp'   # "Gather only TCP packets"
+# Capture only packets to or from a specific host:
+tcpdump host [hostname]   # "Gather only packets bound for or coming from [hostname]"
+# Capture only packets to or from a specific network:
+tcpdump net [network]   # "Gather only packets bound for or coming from [network]"
+# Capture only packets to or from a specific port:
+tcpdump port [port]   # "Gather only packets bound for or coming from [port]"
+# Capture only packets with a specific payload:
+tcpdump 'payload'   # "Gather only packets with a specific payload"
+# Capture packets and display them in ASCII:
+tcpdump -A   # "Gather packets and display them in ASCII"
+# Capture packets and display them in hexadecimal:
+tcpdump -xx   # "Gather packets and display them in hexadecimal"
+# Capture packets and display the timestamp:
+tcpdump -tttt   # "Gather packets and display the timestamp"
+# Capture packets and display the link-level header:
+tcpdump -e   # "Gather packets and display the link-level header"
+# Capture packets and display the IP and/or TCP header:
+tcpdump -n   # "Gather packets and display the IP and/or TCP header"
+# Capture packets and display the protocol:
+tcpdump -nn   # "Gather packets and display the protocol"
+# Capture packets and display the packet summary line:
+tcpdump -S   # "Gather packets and display the packet summary line"
+# Capture packets and display the interface and packet length:
+tcpdump -i [interface]   # "Gather packets and display the interface and packet length"
+# Capture packets and display the packet length:
+tcpdump -s [length]   # "Gather packets and display the packet length"
+# Capture packets and apply a BPF filter:
+tcpdump '[filter]'   # "Gather packets and apply a BPF filter"
+# Capture packets and stop after [count] packets:
+tcpdump -c [count]   # "Gather packets and stop after [count] packets"
+# Capture packets and stop after [duration] seconds:
+tcpdump -G [duration]   # "Gather packets and stop after [duration] seconds"
+# Capture packets and print statistics:
+tcpdump -C [size]   # "Gather packets and print statistics"
+# Capture packets and rotate the capture file after [size] kilobytes:
+tcpdump -W [count] -C [size]   # "Gather packets and rotate the capture file after [size] kilobytes"
+# Capture packets and specify a file prefix:
+tcpdump -C [size] -Z [user]   # "Gather packets and specify a file prefix"
+# Capture packets and print packet info, excluding data:
+tcpdump -v   # "Gather packets and print packet info, excluding data"
+# Capture packets and print packet info, including data:
+tcpdump -vv   # "Gather packets and print packet info, including data"
+# Capture packets and print packet info, including data and hex dumps:
+tcpdump -vvv   # "Gather packets and print packet info, including data and hex dumps"
+# Capture packets and print the raw packets, including link-level headers:
+tcpdump -vvvv   # "Gather packets and print the raw packets, including link-level headers"
+# Capture packets and don't translate protocol addresses:
+tcpdump -nnnn   # "Gather packets and don't translate protocol addresses"
+# Capture packets and don't convert flags to human-readable form:
+tcpdump -cccc   # "Gather packets and don't convert flags to human-readable form"
+# Capture packets and print the relative timestamp, seconds since previous packet:
+tcpdump -ttttt   # "Gather packets and print the relative timestamp, seconds since previous packet"
+# Capture packets and print the absolute timestamp, including the date:
+tcpdump -tttttt   # "Gather packets and print the absolute timestamp, including the date"
+```
+
+#### Wireshark
+
+[Wireshark](https://www.wireshark.org/)
+
+Ahoy matey! Wireshark, or the network protocol analyzer, is a graphical utility for network traffic analysis. Just like how a pirate might use a telescope to spy on their enemies, Wireshark can be used to spy on network connections and send data to and receive data from network services.
 
 ### Bash
 
@@ -1113,6 +1298,16 @@ The `lsblk` command can be used to view a list of all the devices that are curre
 
 I hope this helps you understand what a device is and how a pirate might use it to interact with the operating system. Arrr!
 
+### Drivers
+
+Ahoy matey! In the world of Linux, a driver is a program that allows a device to interact with the operating system. Just like how a pirate might use a treasure map to find their way to their treasure, drivers can be used to interact with the operating system.
+
+A driver can be thought of as a program that allows a device to interact with the operating system. For example, a pirate might use a USB drive to store their treasure map. The USB drive can be thought of as a device that is connected to the system. The driver for the USB drive allows the device to interact with the operating system.
+
+The `lsmod` command can be used to view a list of all the drivers that are currently loaded on the system. The `lsmod` command will display a list of drivers, along with information about each driver, such as the driver name, size, and type.
+
+I hope this helps you understand what a driver is and how a pirate might use it to interact with the operating system. Arrr!
+
 ### Processes
 
 Ahoy matey! In the world of Linux, a process is a program that is currently running on the system. Just like how a pirate might use a treasure map to find their way to their treasure, processes can be used to perform tasks and interact with the operating system.
@@ -1120,6 +1315,16 @@ Ahoy matey! In the world of Linux, a process is a program that is currently runn
 A process can be thought of as an instance of a program. For example, a pirate might run a program called `treasure_hunt` to search for their treasure. If the pirate runs the program again, a new process will be created to run the program. The pirate can use the `ps` command to view a list of all the processes that are currently running on the system.
 
 A process can be thought of as a program that is currently running on the system. For example, a pirate might run a program called `treasure_hunt` to search for their treasure. If the pirate runs the program again, a new process will be created to run the program. The pirate can use the `ps` command to view a list of all the processes that are currently running on the system.
+
+An example of how to kill a process using the `kill` command:
+
+```bash
+kill 1234
+```
+
+To find the process ID of a process, a pirate can use the `ps` command. The `ps` command will display a list of processes, along with information about each process, such as the process ID, name, and status.
+
+I hope this helps you understand what a process is and how a pirate might use it to perform tasks and interact with the operating system. Arrr!
 
 ### cURL
 
@@ -1491,65 +1696,77 @@ These NS records specify the name servers for the domain "pirate.com".
 
 #### DNS servers
 
-DNS servers are the computers that store the DNS records for a given domain. When a user tries to access a website, their computer will first query a DNS server to find the IP address for the requested domain. The DNS server will then return the IP address to the user's computer, which can then use the IP address to connect to the requested website.
+Ahoy there! DNS servers be the computers that store the DNS records for a given domain. When a user tries to access a website, their computer will first query a DNS server to find the IP address for the requested domain. The DNS server will then return the IP address to the user's computer, which can then use the IP address to connect to the requested website.
 
 #### DNSSEC
 
-DNSSEC (Domain Name System Security Extensions) is a set of extensions to the DNS protocol that help to ensure that DNS queries and responses are secure and authentic. It does this by adding digital signatures to DNS records, which can be used to verify that the DNS records have not been tampered with. It also adds a mechanism for verifying that the DNS server that is responding to a query is the correct DNS server for the requested domain.
+DNSSEC (Domain Name System Security Extensions) be a set of extensions to the DNS protocol that help to ensure that DNS queries and responses be secure and authentic. It does this by adding digital signatures to DNS records, which can be used to verify that the DNS records have not been tampered with. It also adds a mechanism for verifying that the DNS server that is responding to a query be the correct DNS server for the requested domain.
 
 #### DNS over HTTPS (DoH)
 
-DNS over HTTPS (DoH) is a protocol that allows DNS queries to be sent over HTTPS instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses are secure and private.
+DNS over HTTPS (DoH) be a protocol that allows DNS queries to be sent over HTTPS instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses be secure and private.
 
 #### DNS over TLS (DoT)
 
-DNS over TLS (DoT) is a protocol that allows DNS queries to be sent over TLS instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses are secure and private.
+DNS over TLS (DoT) be a protocol that allows DNS queries to be sent over TLS instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses be secure and private.
 
 #### DNS over QUIC (DoQ)
 
-DNS over QUIC (DoQ) is a protocol that allows DNS queries to be sent over QUIC instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses are secure and private.
+DNS over QUIC (DoQ) be a protocol that allows DNS queries to be sent over QUIC instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses be secure and private.
 
 #### DNSCrypt
 
-DNSCrypt is a protocol that allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses are secure and private. It does this by encrypting DNS queries and responses using the NaCl (Networking and Cryptography library) encryption library.
+DNSCrypt be a protocol that allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses be secure and private. It does this by encrypting DNS queries and responses using the NaCl (Networking and Cryptography library) encryption library.
 
 #### DNS Amplification Attacks
 
-DNS amplification attacks are a type of denial-of-service (DoS) attack that can be used to flood a target server with large amounts of traffic. They work by sending a large number of DNS queries to a DNS server, which will then respond to each query with a large amount of data. This can be used to flood a target server with large amounts of traffic, which can cause the server to become overloaded and crash.
+DNS amplification attacks be a type of denial-of-service (DoS) attack that can be used to flood a target server with large amounts of traffic. They work by sending a large number of DNS queries to a DNS server, which will then respond to each query with a large amount of data. This can be used to flood a target server with large amounts of traffic, which can cause the server to become overloaded and crash.
 
 #### Hosts file
 
-The hosts file is a file that can be used to map domain names to IP addresses. It is typically located at `/etc/hosts` on Linux systems, but the exact location may vary depending on the operating system. The hosts file can be used to override the DNS records for a given domain, which can be useful for testing purposes.
+The hosts file be a file that can be used to map domain names to IP addresses. It be typically located at `/etc/hosts` on Linux systems, but the exact location may vary depending on the operating system. The hosts file can be used to override the DNS records for a given domain, which can be useful for testing purposes.
 
 #### AWS Route 53
 
 [AWS Route 53](https://aws.amazon.com/route53/)
 
-AWS Route 53 is a DNS service that can be used to route traffic to AWS resources such as EC2 instances and S3 buckets. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
-
-#### Google Cloud DNS
-
-[Google Cloud DNS](https://cloud.google.com/dns)
-
-Google Cloud DNS is a DNS service that can be used to route traffic to Google Cloud resources such as Compute Engine instances and Cloud Storage buckets. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
-
-#### DigitalOcean DNS
-
-[DigitalOcean DNS](https://www.digitalocean.com/products/dns/)
-
-DigitalOcean DNS is a DNS service that can be used to route traffic to DigitalOcean resources such as Droplets and Spaces. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
+AWS Route 53 be a DNS service that can be used to route traffic to AWS resources such as EC2 instances and S3 buckets. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
 
 #### Azure DNS
 
 [Azure DNS](https://azure.microsoft.com/en-us/services/dns/)
 
-Azure DNS is a DNS service that can be used to route traffic to Azure resources such as Virtual Machines and Storage Accounts. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
+Azure DNS be a DNS service that can be used to route traffic to Azure resources such as Virtual Machines and Storage Accounts. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
+
+#### Google Cloud DNS
+
+[Google Cloud DNS](https://cloud.google.com/dns)
+
+Google Cloud DNS be a DNS service that can be used to route traffic to Google Cloud resources such as Compute Engine instances and Cloud Storage buckets. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
+
+#### DigitalOcean DNS
+
+[DigitalOcean DNS](https://www.digitalocean.com/products/dns/)
+
+DigitalOcean DNS be a DNS service that can be used to route traffic to DigitalOcean resources such as Droplets and Spaces. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
 
 #### Cloudflare DNS
 
 [Cloudflare DNS](https://www.cloudflare.com/dns/)
 
-Cloudflare DNS is a DNS service that can be used to route traffic to Cloudflare resources such as Workers and Pages. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
+Cloudflare DNS be a DNS service that can be used to route traffic to Cloudflare resources such as websites and APIs. It also provides a number of additional features, such as DDoS protection, CDN, and caching.
+
+#### OpenDNS
+
+[OpenDNS](https://www.opendns.com/)
+
+OpenDNS be a DNS service that can be used to route traffic to websites and other internet resources. It also provides a number of additional features, such as content filtering, security, and analytics.
+
+#### Bind
+
+[Bind](https://www.isc.org/bind/)
+
+Bind be a DNS server software that can be used to host DNS records for a domain. It be commonly used on Linux and Unix systems, and can be configured to provide a variety of DNS services, including caching, authoritative, and recursive.
 
 ### Docker
 
@@ -1696,6 +1913,10 @@ HTML is just one part of the puzzle when it comes to building a website. Other t
 
 I hope this helps you understand what HTML is and how a pirate might use it to build their own website. Arrr!
 
+#### Is HTML a programming language?
+
+HTML is not a programming language, but it is a markup language. A markup language is a system for annotating a document in a way that is syntactically distinguishable from the text, and can assign meaning to the text. HTML is used to define the structure and content of a web page, and is often used in conjunction with CSS (Cascading Style Sheets) and JavaScript to create more dynamic and interactive web pages.
+
 #### CSS
 
 Ahoy matey! CSS, or Cascading Style Sheets, is a stylesheet language used for describing the look and formatting of a document written in HTML. Just like how a pirate might use a map to navigate through the open seas, CSS helps web browsers interpret and display the content of a web page in a specific way.
@@ -1770,6 +1991,72 @@ In addition to encryption, HTTPS also provides authentication, which means that 
 
 Overall, HTTPS is a useful tool for pirates (or anyone else) who want to keep their communication private and secure. It can help protect against interception and tampering, and it can also provide reassurance that the messages are actually coming from the intended sender.
 
+#### HTTP methods
+
+HTTP methods are a set of standardized methods that are used to indicate the action that should be performed for a given resource. They are used in the HTTP request, and can be used to determine what action should be performed on the server.
+
+Here are some of the most common HTTP methods:
+
+- **GET** - Retrieve a resource
+- **POST** - Create a resource
+- **PUT** - Update a resource
+- **DELETE** - Delete a resource
+
+HTTP methods can also be used to indicate the type of data that is being sent in the request. For example, the `Content-Type` header can be used to indicate that the request body contains JSON data.
+
+Here are some of the most common `Content-Type` values:
+
+- `application/json` - JSON data
+- `application/x-www-form-urlencoded` - Form data
+- `multipart/form-data` - Form data with file uploads
+
+#### HTTP headers
+
+HTTP headers are a set of standardized fields that are used to send additional information with an HTTP request or response. They are used to provide additional context about the request or response, and can be used to pass additional information between the client and the server.
+
+Here are some of the most common HTTP headers:
+
+- `Accept` - The types of data that the client can accept
+- `Accept-Encoding` - The types of data encoding that the client can accept
+- `Accept-Language` - The languages that the client can accept
+- `Authorization` - The credentials that the client can use to authenticate
+- `Cache-Control` - The caching behavior that the client can accept
+- `Content-Length` - The length of the request body
+- `Content-Type` - The type of data that is contained in the request body
+- `Cookie` - The cookies that the client can send to the server
+- `Host` - The host name of the server
+- `User-Agent` - The user agent that the client is using
+
+HTTP headers can also be used to pass additional information between the client and the server. For example, the `X-Forwarded-For` header can be used to pass the IP address of the client to the server.
+
+#### API (Application Programming Interface)
+
+An API (Application Programming Interface) can be thought of as a set of standardized methods that are used to interact with a web application. It is a way for a client to communicate with a server, and it can be used to retrieve data from the server or to send data to the server.
+
+In a pirate theme, you could think of an API as a way for a pirate to interact with a web application. Just like a pirate uses a telescope to look for treasure, a client uses an API to retrieve data from a server. Similarly, just like a pirate uses a telescope to look for treasure, a client uses an API to send data to a server.
+
+APIs are often used to retrieve data from a server, but they can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
+
+#### REST (Representational State Transfer)
+
+REST (Representational State Transfer) can be thought of as a set of standardized principles that are used to design web applications. It is a way to design web applications so that they can be easily accessed and used by clients.
+
+In a pirate theme, you could think of REST as a set of principles that are used to design web applications. Just like a pirate uses a telescope to look for treasure, a client uses an API to retrieve data from a server. Similarly, just like a pirate uses a telescope to look for treasure, a client uses an API to send data to a server.
+
+REST is often used to retrieve data from a server, but it can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
+
+### JSON (JavaScript Object Notation)
+
+JSON (JavaScript Object Notation) is a secret code that pirates use to store and share information about their treasure, their crew, and their adventures on the high seas.
+
+JSON is a lightweight, text-based data interchange format that is used to transmit data between a server and a client, or between different systems. It is based on the JavaScript programming language, but can be used with many other programming languages as well.
+
+JSON is a popular choice for storing and exchanging data because it is easy for humans to read and write, and it is easy for computers to parse and generate. It is often used to send data from a server to a web page, or to store data in a NoSQL database, such as MongoDB.
+
+To use JSON, you need to understand its syntax, which is based on key-value pairs and lists of values. A key-value pair consists of a unique key and a value, separated by a colon. A list of values is an ordered collection of values, separated by commas and enclosed in square brackets.
+
+JSON is a powerful and flexible tool that is widely used in modern web development, and is an important part of a pirate's arsenal. Arrr!
+
 ### ICMP (Internet Control Message Protocol)
 
 ICMP (Internet Control Message Protocol) can be thought of as a communication protocol that is used to transmit messages between devices on a network. It is often used to send error messages or to request information from other devices.
@@ -1810,13 +2097,13 @@ In a pirate theme, you could think of Ansible as a tool that can be used to auto
 
 Ansible can be used to automate the provisioning and management of infrastructure, including:
 
-Servers: Ansible can be used to automate the configuration of servers, including installing software, configuring services, and managing users and groups.
+**Servers:** Ansible can be used to automate the configuration of servers, including installing software, configuring services, and managing users and groups.
 
-Networks: Ansible can be used to automate the configuration of networks, including configuring switches, routers, and firewalls.
+**Networks:** Ansible can be used to automate the configuration of networks, including configuring switches, routers, and firewalls.
 
-Cloud: Ansible can be used to automate the configuration of cloud infrastructure, including configuring virtual machines, load balancers, and storage.
+**Cloud:** Ansible can be used to automate the configuration of cloud infrastructure, including configuring virtual machines, load balancers, and storage.
 
-Containers: Ansible can be used to automate the configuration of containers, including configuring Docker containers and Kubernetes clusters.
+**Containers:** Ansible can be used to automate the configuration of containers, including configuring Docker containers and Kubernetes clusters.
 
 You might imagine that Ansible is a useful tool for pirates to automate the provisioning and management of their fleet of ships. It can be used to automate the configuration of a ship's sails, masts, and engines, as well as the deployment of new cannons and other equipment.
 
@@ -1827,6 +2114,74 @@ Ansible can be installed on a Linux system using the package manager for your di
 ```bash
 sudo apt-get install ansible -y
 ```
+
+##### Jeff Geerling
+
+[@geerlingguy GitHub](https://github.com/geerlingguy) | [@geerlingguy Twitter](https://twitter.com/geerlingguy) | [geerlingguy.com](https://www.geerlingguy.com/) | [Jeff Geerling on YouTube](https://www.youtube.com/c/jeffgeerling)
+
+Jeff Geerling is a software developer and author who has written several books about Ansible, including Ansible for DevOps and Ansible for Kubernetes.
+
+You might imagine that Jeff Geerling is a useful person for pirates to know. He has written several books about Ansible, including Ansible for DevOps and Ansible for Kubernetes.
+
+##### Jeff Geerling's Ansible for DevOps
+
+Jeff Geerling's Ansible for DevOps is a book that can be used to learn how to use Ansible to automate the provisioning and management of infrastructure. It covers the basics of Ansible, including how to install and configure Ansible, how to write Ansible playbooks, and how to use Ansible to automate the configuration of servers, networks, and other infrastructure components.
+
+You might imagine that Jeff Geerling's Ansible for DevOps is a useful book for pirates to learn how to use Ansible to automate the provisioning and management of their fleet of ships. It covers the basics of Ansible, including how to install and configure Ansible, how to write Ansible playbooks, and how to use Ansible to automate the configuration of servers, networks, and other infrastructure components.
+
+##### Ansible Galaxy
+
+Ansible Galaxy is a repository of Ansible roles that can be used to automate the configuration of servers, networks, and other infrastructure components. It can be used to automate the configuration of a wide variety of software, including web servers, databases, and monitoring tools.
+
+You might imagine that Ansible Galaxy is a useful tool for pirates to automate the configuration of their fleet of ships. It can be used to automate the configuration of a wide variety of software, including web servers, databases, and monitoring tools.
+
+##### Ansible Tower
+
+Ansible Tower is a web-based user interface that can be used to manage Ansible playbooks and automate the provisioning and management of infrastructure. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
+
+You might imagine that Ansible Tower is a useful tool for pirates to manage their fleet of ships and automate the provisioning and management of their infrastructure. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
+
+##### Ansible Vault
+
+Ansible Vault is a tool that can be used to encrypt sensitive data that is stored in Ansible playbooks. This allows you to store sensitive data, such as passwords, in a secure way that can be used by Ansible playbooks without exposing the data to unauthorized users.
+
+You might imagine that Ansible Vault is a useful tool for pirates to encrypt sensitive data that is stored in Ansible playbooks. This allows them to store sensitive data, such as passwords, in a secure way that can be used by Ansible playbooks without exposing the data to unauthorized users.
+
+##### Ansible Molecule
+
+Ansible Molecule is a tool that can be used to test Ansible roles. It can be used to test the configuration of servers, networks, and other infrastructure components, and it can also be used to test the deployment of applications.
+
+You might imagine that Ansible Molecule is a useful tool for pirates to test Ansible roles. It can be used to test the configuration of servers, networks, and other infrastructure components, and it can also be used to test the deployment of applications.
+
+##### Ansible Container
+
+Ansible Container is a tool that can be used to build and deploy containerized applications. It can be used to automate the configuration of Docker containers and Kubernetes clusters, and it can also be used to automate the deployment of applications.
+
+You might imagine that Ansible Container is a useful tool for pirates to build and deploy containerized applications. It can be used to automate the configuration of Docker containers and Kubernetes clusters, and it can also be used to automate the deployment of applications.
+
+##### Ansible Network Automation
+
+Ansible Network Automation is a collection of Ansible roles that can be used to automate the configuration of networks, including configuring switches, routers, and firewalls. It can be used to automate the configuration of a wide variety of network devices, including Cisco, Juniper, and Arista.
+
+You might imagine that Ansible Network Automation is a useful tool for pirates to automate the configuration of their fleet of ships. It can be used to automate the configuration of a wide variety of network devices, including Cisco, Juniper, and Arista.
+
+##### Ansible Cloud Automation
+
+Ansible Cloud Automation is a collection of Ansible roles that can be used to automate the configuration of cloud infrastructure, including configuring virtual machines, load balancers, and storage. It can be used to automate the configuration of a wide variety of cloud providers, including Amazon Web Services, Microsoft Azure, and Google Cloud Platform.
+
+You might imagine that Ansible Cloud Automation is a useful tool for pirates to automate the configuration of their fleet of ships. It can be used to automate the configuration of a wide variety of cloud providers, including Amazon Web Services, Microsoft Azure, and Google Cloud Platform.
+
+##### Ansible Container Orchestration
+
+Ansible Container Orchestration is a collection of Ansible roles that can be used to automate the configuration of containers, including configuring Docker containers and Kubernetes clusters. It can be used to automate the configuration of a wide variety of container platforms, including Docker, Kubernetes, and OpenShift.
+
+You might imagine that Ansible Container Orchestration is a useful tool for pirates to automate the configuration of their fleet of ships. It can be used to automate the configuration of a wide variety of container platforms, including Docker, Kubernetes, and OpenShift.
+
+##### Ansible Service Broker
+
+Ansible Service Broker is a tool that can be used to automate the deployment of applications. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
+
+You might imagine that Ansible Service Broker is a useful tool for pirates to automate the deployment of applications. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
 
 #### Terraform
 
@@ -1916,18 +2271,6 @@ One of the key features of JavaScript is its ability to manipulate the Document 
 JavaScript is also an object-oriented programming language, meaning that it is based on the concept of "objects" that have properties and methods. These objects can be used to represent real-world concepts, such as a person or a car, and can be manipulated and controlled using the JavaScript language.
 
 I hope that helps ye get a better understanding of JavaScript, matey! If ye have any more questions, don't hesitate to ask.
-
-### JSON
-
-JSON (JavaScript Object Notation) is a secret code that pirates use to store and share information about their treasure, their crew, and their adventures on the high seas.
-
-JSON is a lightweight, text-based data interchange format that is used to transmit data between a server and a client, or between different systems. It is based on the JavaScript programming language, but can be used with many other programming languages as well.
-
-JSON is a popular choice for storing and exchanging data because it is easy for humans to read and write, and it is easy for computers to parse and generate. It is often used to send data from a server to a web page, or to store data in a NoSQL database, such as MongoDB.
-
-To use JSON, you need to understand its syntax, which is based on key-value pairs and lists of values. A key-value pair consists of a unique key and a value, separated by a colon. A list of values is an ordered collection of values, separated by commas and enclosed in square brackets.
-
-JSON is a powerful and flexible tool that is widely used in modern web development, and is an important part of a pirate's arsenal. Arrr!
 
 ### Kubernetes
 
