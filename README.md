@@ -8,220 +8,204 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Penetration Testing](#penetration-testing)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [What is the difference?](#what-is-the-difference)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Security Management](#security-management)
-      - [Security Operations](#security-operations)
-      - [Security Research](#security-research)
-      - [Hackerone](#hackerone)
-      - [Bugcrowd](#bugcrowd)
-    - [Data Science](#data-science)
-      - [Artificial Intelligence](#artificial-intelligence)
-      - [Machine Learning](#machine-learning)
-      - [Data Visualization](#data-visualization)
-      - [Data Analyst](#data-analyst)
-      - [Data Engineer](#data-engineer)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-      - [Platform Engineering](#platform-engineering)
-      - [Site Reliability Engineering](#site-reliability-engineering)
-    - [Developer Advocate](#developer-advocate)
-    - [DevRel (Developer Relations)](#devrel-developer-relations)
-    - [Frontend](#frontend)
-    - [Management](#management)
-      - [Product Management](#product-management)
-      - [Project Management](#project-management)
-      - [Chief Technology Officer (CTO)](#chief-technology-officer-cto)
-      - [Chief Information Officer (CIO)](#chief-information-officer-cio)
-      - [Chief Operating Officer (COO)](#chief-operating-officer-coo)
-      - [Chief Executive Officer (CEO)](#chief-executive-officer-ceo)
-      - [Chief Financial Officer (CFO)](#chief-financial-officer-cfo)
-      - [Chief Marketing Officer (CMO)](#chief-marketing-officer-cmo)
-      - [Chief Human Resources Officer (CHRO)](#chief-human-resources-officer-chro)
-      - [Chief Security Officer (CSO)](#chief-security-officer-cso)
-    - [Marketing](#marketing)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Quality Assurance](#quality-assurance)
-    - [Sales](#sales)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-      - [chmod](#chmod)
-  - [Networking](#networking)
-    - [ip](#ip)
-    - [Netcat](#netcat)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-    - [Bash scripting](#bash-scripting)
-    - [Bash history](#bash-history)
-    - [Bash one-liners](#bash-one-liners)
-  - [Cron](#cron)
-  - [Devices](#devices)
-  - [Processes](#processes)
-  - [cURL](#curl)
-  - [Vim (Vi IMproved)](#vim-vi-improved)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-      - [Buying a Domain Name](#buying-a-domain-name)
-      - [Namecheap](#namecheap)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-    - [Web Server](#web-server)
-      - [Apache](#apache)
-      - [Nginx](#nginx)
-      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
-  - [Amazon Web Services](#amazon-web-services)
-  - [Cloudflare](#cloudflare)
-  - [CI/CD](#cicd)
-    - [Continuous Delivery](#continuous-delivery)
-    - [Continuous Integration](#continuous-integration)
-    - [CI/CD Tools](#cicd-tools)
-      - [Argo CD](#argo-cd)
-      - [CircleCI](#circleci)
-      - [GitHub Actions](#github-actions)
-      - [GitLab CI/CD](#gitlab-cicd)
-      - [Jenkins](#jenkins)
-      - [Portainer](#portainer)
-      - [Travis CI](#travis-ci)
-  - [DigitalOcean](#digitalocean)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-    - [DNS over TLS (DoT)](#dns-over-tls-dot)
-    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-    - [DNSCrypt](#dnscrypt)
-    - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-    - [AWS Route 53](#aws-route-53)
-    - [Google Cloud DNS](#google-cloud-dns)
-    - [DigitalOcean DNS](#digitalocean-dns)
-    - [Azure DNS](#azure-dns)
-    - [Cloudflare DNS](#cloudflare-dns)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-    - [HTTP error codes](#http-error-codes)
-    - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
-  - [Desktop Environments](#desktop-environments)
-    - [GNOME](#gnome)
-    - [KDE](#kde)
-    - [Xfce](#xfce)
-    - [LXDE](#lxde)
-  - [Window Managers](#window-managers)
-    - [Openbox](#openbox)
-    - [Fluxbox](#fluxbox)
-    - [i3](#i3)
-  - [Installing a Desktop Environment](#installing-a-desktop-environment)
-  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
-  - [Installing a Window Manager](#installing-a-window-manager)
-  - [Configuring a Window Manager](#configuring-a-window-manager)
-- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
-- [Testemonials](#testemonials)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [Differences between the teams](#differences-between-the-teams)
+        - [Penetration Testing](#penetration-testing)
+        - [Phishing](#phishing)
+        - [Social Engineering](#social-engineering)
+        - [Kevin Mitnick](#kevin-mitnick)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Differences between Security roles](#differences-between-security-roles)
+        - [Bugcrowd](#bugcrowd)
+        - [Hackerone](#hackerone)
+      - [Data Science](#data-science)
+        - [Artificial Intelligence](#artificial-intelligence)
+        - [Machine Learning](#machine-learning)
+        - [Differences between the sciences](#differences-between-the-sciences)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+      - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
+        - [Developer Advocate](#developer-advocate)
+        - [DevRel (Developer Relations)](#devrel-developer-relations)
+      - [Frontend](#frontend)
+      - [Management](#management)
+        - [Product Management](#product-management)
+        - [Project Management](#project-management)
+      - [Marketing](#marketing)
+      - [Network Engineering](#network-engineering)
+      - [Operations](#operations)
+        - [Supply Chain Management](#supply-chain-management)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+        - [chmod](#chmod)
+    - [Networking](#networking)
+      - [ip](#ip)
+      - [Netcat](#netcat)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+      - [Bash scripting](#bash-scripting)
+      - [Bash history](#bash-history)
+      - [Bash one-liners](#bash-one-liners)
+    - [Cron](#cron)
+    - [Devices](#devices)
+    - [Processes](#processes)
+    - [cURL](#curl)
+    - [Vim (Vi IMproved)](#vim-vi-improved)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+        - [Buying a Domain Name](#buying-a-domain-name)
+        - [Namecheap](#namecheap)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+      - [Web Server](#web-server)
+        - [Apache](#apache)
+        - [Nginx](#nginx)
+        - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [CI/CD](#cicd)
+      - [Continuous Delivery](#continuous-delivery)
+      - [Continuous Integration](#continuous-integration)
+      - [CI/CD Tools](#cicd-tools)
+        - [Argo CD](#argo-cd)
+        - [CircleCI](#circleci)
+        - [GitHub Actions](#github-actions)
+        - [GitLab CI/CD](#gitlab-cicd)
+        - [Jenkins](#jenkins)
+        - [Portainer](#portainer)
+        - [Travis CI](#travis-ci)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Azure DNS](#azure-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+    - [Desktop Environments](#desktop-environments)
+      - [GNOME](#gnome)
+      - [KDE](#kde)
+      - [Xfce](#xfce)
+      - [LXDE](#lxde)
+    - [Window Managers](#window-managers)
+      - [Openbox](#openbox)
+      - [Fluxbox](#fluxbox)
+      - [i3](#i3)
+    - [Installing a Desktop Environment](#installing-a-desktop-environment)
+    - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+    - [Installing a Window Manager](#installing-a-window-manager)
+    - [Configuring a Window Manager](#configuring-a-window-manager)
+  - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
+  - [Testemonials](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -486,6 +470,24 @@ A cybersecurity analyst is responsible for protecting your network from cyber th
 
 You might imagine that a cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
 
+In the realm of network security, there are three types of teams that play important roles in ensuring the security and resilience of a system: blue, purple, and red teams.
+
+##### Blue Team
+
+A blue team is responsible for protecting a network from cyber threats and vulnerabilities. They work on tasks such as analyzing and monitoring network security, responding to security incidents, implementing security controls, and collaborating with other teams to ensure compliance with laws and regulations.
+
+##### Purple Team
+
+A purple team combines the roles of both a blue team and a red team. They are responsible for identifying and exploiting vulnerabilities in a network, and then reporting their findings to stakeholders with recommendations for risk mitigation. Purple team members also collaborate with other teams to ensure compliance with laws and regulations.
+
+##### Red Team
+
+A red team is responsible for identifying and exploiting vulnerabilities in a network. They report their findings to stakeholders with recommendations for risk mitigation. Red team members may also collaborate with other teams to ensure compliance with laws and regulations.
+
+##### Differences between the teams
+
+The main difference between these three teams is their focus and primary objectives. A blue team focuses on protecting a network from threats and vulnerabilities, a purple team focuses on identifying and exploiting vulnerabilities, and a red team focuses on simulating the tactics and techniques of a malicious actor to test the effectiveness of a network's security measures. All three teams play important roles in ensuring the security and resilience of a system.
+
 ##### Penetration Testing
 
 A penetration tester is responsible for identifying and exploiting vulnerabilities in your network. Penetration testers often work on tasks such as:
@@ -499,54 +501,6 @@ A penetration tester is responsible for identifying and exploiting vulnerabiliti
 **Collaborating with other teams:** Penetration testers might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
 
 You might imagine that a penetration tester is responsible for identifying and exploiting vulnerabilities in your network. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
-
-##### Blue Team
-
-A blue team is responsible for protecting your network from cyber threats and vulnerabilities. Blue team members often work on tasks such as:
-
-**Analyzing and monitoring network security:** Blue team members might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
-
-**Responding to security incidents:** Blue team members might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
-
-**Implementing security controls:** Blue team members might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
-
-**Collaborating with other teams:** Blue team members might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a blue team is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
-
-##### Purple Team
-
-A purple team is responsible for identifying and exploiting vulnerabilities in your network. Purple team members often work on tasks such as:
-
-**Identifying vulnerabilities:** Purple team members might identify vulnerabilities in your network, such as weak passwords, unpatched software, and misconfigured systems.
-
-**Exploiting vulnerabilities:** Purple team members might exploit vulnerabilities in your network to gain unauthorized access to sensitive data or systems.
-
-**Reporting vulnerabilities:** Purple team members might report their findings to stakeholders, including recommendations for how to mitigate risks and prevent similar vulnerabilities from occurring in the future.
-
-**Collaborating with other teams:** Purple team members might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a purple team is responsible for identifying and exploiting vulnerabilities in your network. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
-
-##### Red Team
-
-A red team is responsible for identifying and exploiting vulnerabilities in your network. Red team members often work on tasks such as:
-
-**Identifying vulnerabilities:** Red team members might identify vulnerabilities in your network, such as weak passwords, unpatched software, and misconfigured systems.
-
-**Exploiting vulnerabilities:** Red team members might exploit vulnerabilities in your network to gain unauthorized access to sensitive data or systems.
-
-**Reporting vulnerabilities:** Red team members might report their findings to stakeholders, including recommendations for how to mitigate risks and prevent similar vulnerabilities from occurring in the future.
-
-**Collaborating with other teams:** Red team members might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a red team is responsible for identifying and exploiting vulnerabilities in your network. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
-
-##### What is the difference?
-
-The difference between a blue team, a purple team, and a red team is that a blue team is responsible for protecting your network from cyber threats and vulnerabilities, a purple team is responsible for identifying and exploiting vulnerabilities in your network, and a red team is responsible for identifying and exploiting vulnerabilities in your network.
-
-In the theme of Pirates!, the blue team is the crew of the ship, the purple team is the pirates, and the red team is the navy. The crew of the ship is responsible for protecting the ship from pirates, the pirates are responsible for identifying and exploiting vulnerabilities in the ship, and the navy is responsible for identifying and exploiting vulnerabilities in the ship. The captain of the ship is responsible for ensuring that the ship is secure and that any security incidents are promptly identified and dealt with. The equivalent position to the captain of the ship is the chief information security officer (CISO).
 
 ##### Phishing
 
@@ -562,95 +516,23 @@ Kevin Mitnick is a cybersecurity expert who was once one of the most wanted hack
 
 The movie [Takedown](https://www.imdb.com/title/tt0159784/) is based on the life of Kevin Mitnick.
 
+In the realm of network security, there are three key roles that play important roles in ensuring the security and compliance of a system: security architecture, security compliance, and security engineering.
+
 ##### Security Architecture
 
-A security architect is responsible for protecting your network from cyber threats and vulnerabilities. Security architects often work on tasks such as:
-
-**Analyzing and monitoring network security:** Security architects might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
-
-**Responding to security incidents:** Security architects might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
-
-**Implementing security controls:** Security architects might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
-
-**Collaborating with other teams:** Security architects might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a security architect is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+A security architect is responsible for designing and maintaining the overall security of a network. They work on tasks such as analyzing and monitoring network security, responding to security incidents, implementing security controls, and collaborating with other teams to ensure compliance with laws and regulations.
 
 ##### Security Compliance
 
-A security compliance analyst is responsible for ensuring that your network is secure and compliant with relevant laws and regulations. Security compliance analysts often work on tasks such as:
-
-**Analyzing and monitoring network security:** Security compliance analysts might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
-
-**Responding to security incidents:** Security compliance analysts might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
-
-**Implementing security controls:** Security compliance analysts might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
-
-**Collaborating with other teams:** Security compliance analysts might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a security compliance analyst is responsible for ensuring that your network is secure and compliant with relevant laws and regulations. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+A security compliance analyst is responsible for ensuring that a network is compliant with relevant laws and regulations. They work on tasks such as analyzing and monitoring network security, responding to security incidents, implementing security controls, and collaborating with other teams to ensure compliance with laws and regulations.
 
 ##### Security Engineering
 
-A security engineer is responsible for protecting your network from cyber threats and vulnerabilities. Security engineers often work on tasks such as:
+A security engineer is responsible for implementing and maintaining the security controls of a network. They work on tasks such as analyzing and monitoring network security, responding to security incidents, implementing security controls, and collaborating with other teams to ensure compliance with laws and regulations.
 
-**Analyzing and monitoring network security:** Security engineers might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+##### Differences between Security roles
 
-**Responding to security incidents:** Security engineers might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
-
-**Implementing security controls:** Security engineers might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
-
-**Collaborating with other teams:** Security engineers might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a security engineer is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
-
-##### Security Management
-
-A security manager is responsible for protecting your network from cyber threats and vulnerabilities. Security managers often work on tasks such as:
-
-**Analyzing and monitoring network security:** Security managers might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
-
-**Responding to security incidents:** Security managers might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
-
-**Implementing security controls:** Security managers might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
-
-**Collaborating with other teams:** Security managers might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a security manager is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
-
-##### Security Operations
-
-A security operations analyst is responsible for protecting your network from cyber threats and vulnerabilities. Security operations analysts often work on tasks such as:
-
-**Analyzing and monitoring network security:** Security operations analysts might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
-
-**Responding to security incidents:** Security operations analysts might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
-
-**Implementing security controls:** Security operations analysts might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
-
-**Collaborating with other teams:** Security operations analysts might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a security operations analyst is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
-
-##### Security Research
-
-A security researcher is responsible for protecting your network from cyber threats and vulnerabilities. Security researchers often work on tasks such as:
-
-**Analyzing and monitoring network security:** Security researchers might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
-
-**Responding to security incidents:** Security researchers might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
-
-**Implementing security controls:** Security researchers might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
-
-**Collaborating with other teams:** Security researchers might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a security researcher is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
-
-##### Hackerone
-
-[HackerOne](https://www.hackerone.com/)
-
-HackerOne is a platform that connects organizations with hackers to find and fix security vulnerabilities.
+The main difference between these three roles is their focus and primary objectives. A security architect focuses on designing and maintaining the overall security of a network, a security compliance analyst focuses on ensuring compliance with laws and regulations, and a security engineer focuses on implementing and maintaining security controls. All three roles play important roles in ensuring the security and compliance of a system.
 
 ##### Bugcrowd
 
@@ -658,89 +540,29 @@ HackerOne is a platform that connects organizations with hackers to find and fix
 
 Bugcrowd is a platform that connects organizations with hackers to find and fix security vulnerabilities.
 
+##### Hackerone
+
+[HackerOne](https://www.hackerone.com/)
+
+HackerOne is a platform that connects organizations with hackers to find and fix security vulnerabilities.
+
+In the realm of data analysis and interpretation, there are three key roles that play important roles in understanding and utilizing data: data science, artificial intelligence, and machine learning.
+
 #### Data Science
 
-A data scientist is responsible for analyzing and interpreting the data that is used on your network. Data scientists often work on tasks such as:
-
-**Analyzing and interpreting data:** Data scientists might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
-
-**Developing models and algorithms:** Data scientists might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
-
-**Communicating findings and insights:** Data scientists might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
-
-**Collaborating with other teams:** Data scientists might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
-
-You might imagine that a data scientist is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
+A data scientist is responsible for analyzing and interpreting data to inform business decisions and solve problems. They work on tasks such as analyzing and interpreting data, developing models and algorithms, communicating findings and insights, and collaborating with other teams to ensure that the data they analyze is relevant and useful.
 
 ##### Artificial Intelligence
 
-An artificial intelligence (AI) engineer is responsible for analyzing and interpreting the data that is used on your network. AI engineers often work on tasks such as:
-
-**Analyzing and interpreting data:** AI engineers might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
-
-**Developing models and algorithms:** AI engineers might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
-
-**Communicating findings and insights:** AI engineers might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
-
-**Collaborating with other teams:** AI engineers might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
-
-You might imagine that an AI engineer is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
+An artificial intelligence (AI) engineer is responsible for designing and implementing AI systems to analyze and interpret data. They work on tasks such as analyzing and interpreting data, developing models and algorithms, communicating findings and insights, and collaborating with other teams to ensure that the data they analyze is relevant and useful.
 
 ##### Machine Learning
 
-A machine learning engineer is responsible for analyzing and interpreting the data that is used on your network. Machine learning engineers often work on tasks such as:
+A machine learning engineer is responsible for designing and implementing machine learning systems to analyze and interpret data. They work on tasks such as analyzing and interpreting data, developing models and algorithms, communicating findings and insights, and collaborating with other teams to ensure that the data they analyze is relevant and useful.
 
-**Analyzing and interpreting data:** Machine learning engineers might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
+##### Differences between the sciences
 
-**Developing models and algorithms:** Machine learning engineers might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
-
-**Communicating findings and insights:** Machine learning engineers might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
-
-**Collaborating with other teams:** Machine learning engineers might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
-
-You might imagine that a machine learning engineer is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
-
-##### Data Visualization
-
-A data visualization engineer is responsible for analyzing and interpreting the data that is used on your network. Data visualization engineers often work on tasks such as:
-
-**Analyzing and interpreting data:** Data visualization engineers might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
-
-**Developing models and algorithms:** Data visualization engineers might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
-
-**Communicating findings and insights:** Data visualization engineers might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
-
-**Collaborating with other teams:** Data visualization engineers might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
-
-You might imagine that a data visualization engineer is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
-
-##### Data Analyst
-
-A data analyst is responsible for analyzing and interpreting the data that is used on your network. Data analysts often work on tasks such as:
-
-**Analyzing and interpreting data:** Data analysts might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
-
-**Developing models and algorithms:** Data analysts might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
-
-**Communicating findings and insights:** Data analysts might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
-
-**Collaborating with other teams:** Data analysts might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
-
-You might imagine that a data analyst is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
-
-##### Data Engineer
-
-A data engineer is responsible for analyzing and interpreting the data that is used on your network. Data engineers often work on tasks such as:
-
-**Analyzing and interpreting data:** Data engineers might use tools such as statistical analysis, machine learning, and data visualization to analyze and interpret data. They might use this data to identify trends, patterns, and relationships that can be used to inform business decisions or solve problems.
-
-**Developing models and algorithms:** Data engineers might develop models and algorithms to predict outcomes or detect patterns in data. These models might be used to make recommendations, automate processes, or optimize performance.
-
-**Communicating findings and insights:** Data engineers might communicate their findings and insights to stakeholders through reports, presentations, and other forms of communication.
-
-**Collaborating with other teams:** Data engineers might work closely with other teams such as product management, engineering, and marketing to ensure that the data they analyze is relevant and useful for the organization.
-
-You might imagine that a data engineer is responsible for analyzing and interpreting the data that is used on your network. They play a crucial role in using data to inform business decisions and solve problems, and in developing models and algorithms to predict outcomes and detect patterns.
+The main difference between these three roles is their focus and primary objectives. A data scientist focuses on analyzing and interpreting data to inform business decisions and solve problems, an AI engineer focuses on designing and implementing AI systems to analyze and interpret data, and a machine learning engineer focuses on designing and implementing machine learning systems to analyze and interpret data. All three roles play important roles in understanding and utilizing data.
 
 #### Database
 
@@ -804,71 +626,33 @@ Fluent Design is a design system that was developed by Microsoft to create a con
 
 [Material Design](https://m3.material.io)
 
+Material Design is a design system that was developed by Google to create a consistent user experience across all of its products. Material Design is often used by UX designers to create user interfaces that are easy to use and that meet the needs of users.
+
 #### DevOps
 
-Ahoy mateys! If ye be lookin' to set sail on the DevOps sea, here be some steps ye can take to get started:
+In the realm of software development and delivery, there are four key roles that play important roles in improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, and platform engineering.
 
-**Understand the principles of DevOps:** DevOps be founded on a set of principles that focus on collaboration, automation, and continuous improvement. It be important to understand these principles in order to effectively implement DevOps in yer organization.
-
-**Choose the right tools:** There be a wide range of tools available for implementing DevOps, including version control systems, continuous integration and delivery platforms, and monitoring and log analysis tools. Choose the tools that best meet the needs of yer organization.
-
-**Automate processes:** Automation be a key principle of DevOps, and it can help to streamline the software development and delivery process. Identify the processes in yer organization that can be automated and implement automation tools to support these processes.
-
-**Collaborate with yer team:** DevOps be about collaboration, so it be essential to ensure that yer team be workin' together effectively. Use tools like agile project management, version control systems, and continuous integration platforms to facilitate collaboration and communication within yer team.
-
-**Monitor and measure performance:** To continuously improve yer processes, ye need to be able to monitor and measure their performance. Use tools like monitoring and log analysis platforms to track the performance of yer processes and identify areas for improvement.
-
-So, hoist the mainsail and set course for DevOps success! With these steps, ye'll be well on yer way to implementing DevOps in yer organization and improving the efficiency and effectiveness of yer software development and delivery processes.
+DevOps is the practice of integrating development and operations to improve the efficiency and effectiveness of software development and delivery. To get started with DevOps, it is important to understand the principles of DevOps, choose the right tools, automate processes, collaborate with your team, and monitor and measure performance.
 
 ##### DevSecOps
 
-DevSecOps is the practice of integrating security into the software development and delivery process. DevSecOps professionals often work on tasks such as:
-
-**Integrating security into the software development and delivery process:** DevSecOps professionals might work to integrate security into the software development and delivery process, such as by integrating security tools into the development environment.
-
-**Collaborating with other teams:** DevSecOps professionals might work closely with other teams such as development, QA, and IT to ensure that security is integrated into the software development and delivery process.
-
-You might imagine that DevSecOps is the practice of integrating security into the software development and delivery process. They play a crucial role in ensuring that security is integrated into the software development and delivery process, and in supporting the needs and requirements of the organization.
+DevSecOps is the practice of integrating security into the software development and delivery process. DevSecOps professionals work on tasks such as integrating security into the software development and delivery process and collaborating with other teams to ensure that security is integrated into the process.
 
 ##### GitOps
 
-GitOps is the practice of using Git as the source of truth for your infrastructure. GitOps professionals often work on tasks such as:
+GitOps is the practice of using Git as the source of truth for your infrastructure. GitOps professionals work on tasks such as using Git as the source of truth for your infrastructure and collaborating with other teams to ensure that Git is used as the source of truth.
 
-**Using Git as the source of truth for your infrastructure:** GitOps professionals might work to use Git as the source of truth for your infrastructure, such as by using Git to manage your infrastructure as code.
+#### Developer Advocacy and Developer Relations
 
-**Collaborating with other teams:** GitOps professionals might work closely with other teams such as development, QA, and IT to ensure that Git is used as the source of truth for your infrastructure.
+A developer advocate is responsible for promoting the products and services of their company or organization to developers. They may work to promote the company's products or services to developers through writing technical articles, creating demos and tutorials, and participating in developer communities. They may also gather and analyze developer feedback, build and maintain relationships with developers, and collaborate with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
 
-You might imagine that GitOps is the practice of using Git as the source of truth for your infrastructure. They play a crucial role in ensuring that Git is used as the source of truth for your infrastructure, and in supporting the needs and requirements of the organization.
+Developer relations is the way in which a company or organization engages with and supports developers who use its products or services. Developer relations professionals may build and maintain relationships with developers, gather and analyze developer feedback, promote the company's products or services to developers, and collaborate with other teams to ensure that the company's products and services are meeting the needs and expectations of developers. They play a crucial role in ensuring that the company's products and services are meeting the needs and expectations of developers and in supporting the needs and requirements of the organization.
 
-##### Platform Engineering
+##### Developer Advocate
 
-Platform engineering is the practice of building and maintaining the infrastructure that is used to support software development and delivery. Platform engineers often work on tasks such as:
+A developer advocate is a technical evangelist who promotes the products and services of their company or organization to developers. Developer advocates often work on tasks such as:
 
-**Building and maintaining the infrastructure:** Platform engineers might build and maintain the infrastructure that is used to support software development and delivery, such as version control systems, continuous integration and delivery platforms, and monitoring and log analysis tools.
-
-**Automating processes:** Platform engineers might automate processes such as software builds and deployments to improve the efficiency and reliability of the software development and delivery process.
-
-**Collaborating with other teams:** Platform engineers might work closely with other teams such as development, QA, and IT to ensure that the infrastructure meets the needs and requirements of the organization.
-
-You might imagine that platform engineering is the practice of building and maintaining the infrastructure that is used to support software development and delivery. They play a crucial role in ensuring that the infrastructure is efficient, reliable, and secure, and in supporting the needs and requirements of the organization.
-
-##### Site Reliability Engineering
-
-Site reliability engineering is the practice of building and maintaining the infrastructure that is used to support the operation of your network. Site reliability engineers often work on tasks such as:
-
-**Building and maintaining the infrastructure:** Site reliability engineers might build and maintain the infrastructure that is used to support the operation of your network, such as monitoring and log analysis tools, and incident management platforms.
-
-**Automating processes:** Site reliability engineers might automate processes such as incident management and troubleshooting to improve the efficiency and reliability of the operation of your network.
-
-**Collaborating with other teams:** Site reliability engineers might work closely with other teams such as development, QA, and IT to ensure that the infrastructure meets the needs and requirements of the organization.
-
-You might imagine that site reliability engineering is the practice of building and maintaining the infrastructure that is used to support the operation of your network. They play a crucial role in ensuring that the infrastructure is efficient, reliable, and secure, and in supporting the needs and requirements of the organization.
-
-#### Developer Advocate
-
-Developer advocates are responsible for promoting the products and services of their company or organization to developers. Developer advocates often work on tasks such as:
-
-**Promoting the company's products or services to developers:** Developer advocates might work to promote the company's products or services to developers, through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
+**Promoting the company's products or services to developers:** Developer advocates might work to promote the company's products or services to developers through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
 
 **Gathering and analyzing developer feedback:** Developer advocates might gather feedback from developers about the company's products or services, and use this feedback to inform product development and strategy.
 
@@ -876,11 +660,11 @@ Developer advocates are responsible for promoting the products and services of t
 
 **Collaborating with other teams:** Developer advocates might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
 
-You might imagine that developer advocates are responsible for promoting the products and services of their company or organization to developers. They play a crucial role in ensuring that the company's products and services are meeting the needs and expectations of developers, and in supporting the needs and requirements of the organization.
+You might imagine that a developer advocate is responsible for promoting the products and services of their company or organization to developers. They play a crucial role in ensuring that the company's products and services are meeting the needs and expectations of developers, and in supporting the needs and requirements of the organization.
 
-#### DevRel (Developer Relations)
+##### DevRel (Developer Relations)
 
-Developer relations can be thought of as the way in which a company or organization engages with and supports developers who use its products or services. Developer relations professionals often work on tasks such as:
+Developer relations is a way for a company or organization to engage with and support developers who use its products or services. Developer relations professionals often work on tasks such as:
 
 **Building and maintaining relationships with developers:** Developer relations professionals might work to build and maintain relationships with developers who use their company's products or services. This might include activities such as hosting events, providing technical support, and communicating with developers through online channels.
 
@@ -890,7 +674,7 @@ Developer relations can be thought of as the way in which a company or organizat
 
 **Collaborating with other teams:** Developer relations professionals might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
 
-You might imagine that developer relations is a way for a company or organization to engage with and support developers who use its products or services. Developer relations professionals play a crucial role in building and maintaining relationships with developers, gathering and analyzing feedback, promoting the company's products or services, and collaborating with other teams to ensure that the needs and expectations
+You might imagine that developer relations is a way for a company or organization to engage with and support developers who use its products or services. Developer relations professionals play a crucial role in building and maintaining relationships with developers, gathering and analyzing feedback, promoting the company's products or services, and collaborating with other teams to ensure that the needs and expectations of developers are met.
 
 #### Frontend
 
@@ -906,9 +690,11 @@ Frontend developers often work on tasks such as:
 
 You might imagine that frontend developers are responsible for designing and building the user interface of your network. They might work on tasks such as creating wireframes, prototypes, and visual designs, and implementing them using HTML, CSS, and JavaScript. Frontend developers are an important part of the development team, as they help to create the user experience that users have when interacting with your network.
 
+> **Note**: Frontend developers are often referred to as "front-end developers" or "front end developers".
+
 #### Management
 
-Not that we'll be starting here but it is important to know that management is a very important part of any organization. Management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. Management often works on tasks such as:
+Management is responsible for the overall direction of an organization, and for ensuring that the organization is meeting its goals and objectives. Management often works on tasks such as:
 
 **Setting the overall direction of the organization:** Management might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
 
@@ -920,237 +706,91 @@ You might imagine that management is responsible for the overall direction of th
 
 ##### Product Management
 
-Product management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. Product managers often work on tasks such as:
+Product management is responsible for the development and success of a company's products. Product managers often work on tasks such as:
 
-**Setting the overall direction of the organization:** Product managers might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+**Defining the product vision:** Product managers might work to define the overall vision for a product, and to ensure that the product aligns with the company's goals and objectives.
 
-**Managing the organization's resources:** Product managers might work to manage the organization's resources, such as people, money, and time.
+**Managing the product development process:** Product managers might work to manage the product development process, and to ensure that the product is delivered on time and within budget.
 
-**Managing the organization's projects:** Product managers might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+**Gathering and analyzing customer feedback:** Product managers might gather feedback from customers about the product, and use this feedback to inform product development and strategy.
 
-You might imagine that product management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+**Collaborating with other teams:** Product managers might work closely with other teams such as engineering, marketing, and sales to ensure that the product is meeting the needs and expectations of customers.
+
+You might imagine that product management is responsible for the development and success of a company's products. They play a crucial role in defining the product vision, managing the product development process, gathering and analyzing customer feedback, and collaborating with other teams to ensure that the product is meeting the needs and expectations of customers.
 
 ##### Project Management
 
-Project management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. Project managers often work on tasks such as:
+Project management is the practice of planning, organizing, and managing resources to bring about the successful completion of specific project goals and objectives. Project managers often work on tasks such as:
 
-**Setting the overall direction of the organization:** Project managers might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+**Defining project scope and goals:** Project managers might work to define the scope and goals of a project, and to ensure that the project aligns with the overall goals and objectives of the organization.
 
-**Managing the organization's resources:** Project managers might work to manage the organization's resources, such as people, money, and time.
+**Managing project resources:** Project managers might work to manage the resources needed for a project, such as people, money, and time.
 
-**Managing the organization's projects:** Project managers might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
+**Managing project risks:** Project managers might work to identify and mitigate risks that could impact the success of a project.
 
-You might imagine that project management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+**Communicating with stakeholders:** Project managers might work to communicate with stakeholders about the progress of a project, and to ensure that stakeholders are kept informed about the project's status.
 
-##### Chief Technology Officer (CTO)
-
-The chief technology officer (CTO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CTOs often work on tasks such as:
-
-**Setting the overall direction of the organization:** CTOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
-
-**Managing the organization's resources:** CTOs might work to manage the organization's resources, such as people, money, and time.
-
-**Managing the organization's projects:** CTOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
-
-You might imagine that CTOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
-
-##### Chief Information Officer (CIO)
-
-The chief information officer (CIO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CIOs often work on tasks such as:
-
-**Setting the overall direction of the organization:** CIOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
-
-**Managing the organization's resources:** CIOs might work to manage the organization's resources, such as people, money, and time.
-
-**Managing the organization's projects:** CIOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
-
-You might imagine that CIOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
-
-##### Chief Operating Officer (COO)
-
-The chief operating officer (COO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. COOs often work on tasks such as:
-
-**Setting the overall direction of the organization:** COOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
-
-**Managing the organization's resources:** COOs might work to manage the organization's resources, such as people, money, and time.
-
-**Managing the organization's projects:** COOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
-
-You might imagine that COOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
-
-##### Chief Executive Officer (CEO)
-
-The chief executive officer (CEO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CEOs often work on tasks such as:
-
-**Setting the overall direction of the organization:** CEOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
-
-**Managing the organization's resources:** CEOs might work to manage the organization's resources, such as people, money, and time.
-
-**Managing the organization's projects:** CEOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
-
-You might imagine that CEOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
-
-##### Chief Financial Officer (CFO)
-
-The chief financial officer (CFO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CFOs often work on tasks such as:
-
-**Setting the overall direction of the organization:** CFOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
-
-**Managing the organization's resources:** CFOs might work to manage the organization's resources, such as people, money, and time.
-
-**Managing the organization's projects:** CFOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
-
-You might imagine that CFOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
-
-##### Chief Marketing Officer (CMO)
-
-The chief marketing officer (CMO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CMOs often work on tasks such as:
-
-**Setting the overall direction of the organization:** CMOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
-
-**Managing the organization's resources:** CMOs might work to manage the organization's resources, such as people, money, and time.
-
-**Managing the organization's projects:** CMOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
-
-You might imagine that CMOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
-
-##### Chief Human Resources Officer (CHRO)
-
-The chief human resources officer (CHRO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CHROs often work on tasks such as:
-
-**Setting the overall direction of the organization:** CHROs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
-
-**Managing the organization's resources:** CHROs might work to manage the organization's resources, such as people, money, and time.
-
-**Managing the organization's projects:** CHROs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
-
-You might imagine that CHROs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
-
-##### Chief Security Officer (CSO)
-
-The chief security officer (CSO) is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. CSOs often work on tasks such as:
-
-**Setting the overall direction of the organization:** CSOs might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
-
-**Managing the organization's resources:** CSOs might work to manage the organization's resources, such as people, money, and time.
-
-**Managing the organization's projects:** CSOs might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
-
-You might imagine that CSOs are responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
+You might imagine that project management is the practice of planning, organizing, and managing resources to bring about the successful completion of specific project goals and objectives. Project managers play a crucial role in defining project scope
 
 #### Marketing
 
-[HubSpot Academy](https://academy.hubspot.com/) | [Google Digital Garage](https://learndigital.withgoogle.com/digitalgarage/course/digital-marketing) | [Google Analytics Academy](https://analytics.google.com/analytics/academy/)
+Marketing is the practice of promoting and selling products or services to customers. Marketing professionals often work on tasks such as:
 
-Ahoy mateys! If ye be lookin' to set sail on the marketing sea, here be some steps ye can take to get started:
+**Developing marketing strategies:** Marketing professionals might work to develop marketing strategies that will help to promote the company's products or services to customers. This might include identifying the target audience, setting marketing goals, and creating a plan to reach those goals.
 
-**Learn the fundamentals:** The first step to becoming a marketer be to learn the fundamentals of marketing. This might include topics like marketing strategy, marketing research, and marketing analytics.
+**Conducting market research:** Marketing professionals might conduct market research to gather information about customer needs, preferences, and behavior. This research can help to inform marketing strategies and tactics.
 
-**Build up yer skills:** Once ye have a solid foundation in the basics, ye can start building up yer skills in specific areas of marketing. This could include social media marketing, content marketing, or email marketing, depending on yer interests and goals.
+**Creating marketing materials:** Marketing professionals might work to create marketing materials such as brochures, advertisements, and social media posts to promote the company's products or services.
 
-**Get some experience:** In addition to learning and building up yer skills, it be important to get some hands-on experience in marketing. This could involve working on personal projects, interning at a marketing company, or even just creating and promoting yer own website.
+**Managing social media and online marketing:** Marketing professionals might work to manage the company's social media accounts and online presence, including creating and publishing content, engaging with customers, and analyzing the effectiveness of marketing efforts.
+
+**Analyzing and improving marketing performance:** Marketing professionals might analyze data and customer feedback to identify areas for improvement, and then work to optimize the marketing efforts of the company.
+
+You might imagine that marketing professionals are responsible for promoting and selling products or services to customers. They play a crucial role in ensuring that the company's products or services are meeting the needs and expectations of customers, and in supporting the needs and requirements of the organization.
 
 #### Network Engineering
 
-[Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer) | [PacketLife.net Cheat Sheets](https://packetlife.net/library/cheat-sheets/)
+Network engineering is the practice of designing, building, and maintaining computer networks. Network engineers often work on tasks such as:
 
-Ahoy mateys! If ye be lookin' to set sail on the networking sea, here be some steps ye can take to get started:
+**Designing and planning network infrastructure:** Network engineers might work to design and plan the infrastructure of a network, including selecting hardware and software, and determining the layout and configuration of the network.
 
-**Learn the fundamentals:** The first step to becoming a network engineer be to learn the fundamentals of networking. This might include topics like networking protocols, topologies, and network design.
+**Implementing and maintaining network infrastructure:** Network engineers might work to implement and maintain the infrastructure of a network, including installing and configuring hardware and software, and troubleshooting issues as they arise.
 
-**Build up yer skills:** Once ye have a solid foundation in the basics, ye can start building up yer skills in specific areas of networking. This could include wireless networking, security, or cloud computing, depending on yer interests and goals.
+**Managing network security:** Network engineers might work to ensure the security of a network, including implementing security measures such as firewalls and intrusion detection systems, and monitoring for potential threats.
 
-**Get some experience:** In addition to learning and building up yer skills, it be important to get some hands-on experience in networking. This could involve working on personal projects, interning at a networking company, or even just setting up and troubleshooting yer own home network.
+**Monitoring and optimizing network performance:** Network engineers might monitor the performance of a network, and work to optimize it for the needs of the organization. This might include analyzing data and identifying areas for improvement, and implementing changes to improve network efficiency and reliability.
 
-**Network with other engineers:** As ye be building up yer skills and experience, it be important to network with other networking professionals. This can help ye learn from others, find job opportunities, and stay up-to-date on the latest trends and technologies in the field.
+**Collaborating with other teams:** Network engineers often work closely with other teams such as development, IT, and security to ensure that the network is meeting the needs and requirements of the organization.
 
-**Keep learning and improving:** The field of networking be constantly evolving, so it be important to stay up-to-date on the latest trends and technologies. This might involve taking online courses, attending meetups or conferences, or simply staying active on forums and social media groups related to networking.
+You might imagine that network engineers are responsible for designing, building, and maintaining computer networks. They play a crucial role in designing and planning network infrastructure, implementing and maintaining network infrastructure, managing network security, monitoring and optimizing network performance, and collaborating with other teams to ensure that the network is meeting the needs and requirements of the organization.
 
-So hoist the mainsail and set the course for networking success! With these steps, ye'll be well on yer way to becoming a skilled and in-demand network engineer. Arrrr!
+#### Operations
 
-#### Product
+Operations professionals are responsible for the day-to-day management and execution of a company's business processes. Operations professionals often work on tasks such as:
 
-A product engineer is responsible for designing, developing, and maintaining the products that are used on your network. Product engineers often work on tasks such as:
+**Managing and optimizing business processes:** Operations professionals might work to manage and optimize the business processes of a company, such as supply chain management, logistics, and customer service.
 
-**Defining and implementing product features:** Product engineers might work with stakeholders to understand the needs and requirements of users, and then design and implement features that meet those needs.
+**Ensuring efficiency and effectiveness:** Operations professionals might work to ensure that the business processes of a company are efficient and effective, and identify and implement improvements where necessary.
 
-**Building and maintaining product infrastructure:** Product engineers might be responsible for designing and building the systems and infrastructure that support the product, including servers, databases, and APIs.
+**Collaborating with other teams:** Operations professionals might work closely with other teams such as finance, marketing, and sales to ensure that the company is meeting its goals and objectives.
 
-**Collaborating with other teams:** Product engineers often work closely with other teams such as design, development, and QA to ensure that the product is delivered on time and meets the desired quality standards.
+**Managing resources:** Operations professionals might work to manage the resources of a company, such as people, money, and time.
 
-**Analyzing and improving product performance:** Product engineers might analyze data and user feedback to identify areas for improvement, and then work to optimize the product's performance and usability.
+You might imagine that operations professionals are responsible for the day-to-day management and execution of a company's business processes. They play a crucial role in ensuring that the company is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
 
-You might imagine that a product engineer is responsible for designing and developing the products that are used on your network. They play a crucial role in ensuring that the products meet the needs of users and are delivered on time and to the desired quality standards.
+##### Supply Chain Management
 
-#### Quality Assurance
+Supply chain management professionals are responsible for the coordination and management of the flow of goods, information, and services from raw material suppliers to end customers. Supply chain management professionals often work on tasks such as:
 
-Quality assurance engineers are responsible for testing and validating the products that are used on your network. Quality assurance engineers often work on tasks such as:
+**Managing relationships with suppliers:** Supply chain management professionals might work to manage relationships with suppliers, negotiating contracts and ensuring that the company's needs are met in a timely and cost-effective manner.
 
-**Writing and executing test plans:** Quality assurance engineers might write test plans to ensure that the product meets the desired quality standards, and then execute those plans to validate the product.
+**Managing the flow of goods:** Supply chain management professionals might work to manage the flow of goods from raw material suppliers to end customers, ensuring that the right products are delivered to the right place at the right time.
 
-**Identifying and reporting bugs:** Quality assurance engineers might identify bugs and other issues in the product, and then report them to the development team.
+**Ensuring efficiency and effectiveness:** Supply chain management professionals might work to ensure that the supply chain is efficient and effective, and identify and implement improvements where necessary.
 
-**Collaborating with other teams:** Quality assurance engineers often work closely with other teams such as development, product, and design to ensure that the product is delivered on time and meets the desired quality standards.
+**Collaborating with other teams:** Supply chain management professionals might work closely with other teams such as finance, marketing, and sales to ensure that the company is meeting its goals and objectives.
 
-**Analyzing and improving product performance:** Quality assurance engineers might analyze data and user feedback to identify areas for improvement, and then work to optimize the product's performance and usability.
-
-You might imagine that a quality assurance engineer is responsible for testing and validating the products that are used on your network. They play a crucial role in ensuring that the products meet the desired quality standards and are delivered on time.
-
-#### Sales
-
-Sales engineers are responsible for selling the products that are used on your network. Sales engineers often work on tasks such as:
-
-**Identifying and qualifying leads:** Sales engineers might identify and qualify leads, and then work to convert those leads into customers.
-
-**Presenting and demonstrating products:** Sales engineers might present and demonstrate the products to potential customers, and then work to close the sale.
-
-**Collaborating with other teams:** Sales engineers often work closely with other teams such as marketing, product, and support to ensure that the product is delivered on time and meets the desired quality standards.
-
-**Analyzing and improving product performance:** Sales engineers might analyze data and user feedback to identify areas for improvement, and then work to optimize the product's performance and usability.
-
-You might imagine that a sales engineer is responsible for selling the products that are used on your network. They play a crucial role in ensuring that the products meet the desired quality standards and are delivered on time.
-
-#### Software Development Engineer (SDE)
-
-Ahoy mateys! If ye be lookin' to set sail on the software development sea, here be some steps ye can take to get started:
-
-**Learn the fundamentals:** The first step to becoming a software development engineer be to learn the fundamentals of computer science and programming. This might include topics like algorithms, data structures, and programming languages like Java or Python.
-
-**Build up yer skills:** Once ye have a solid foundation in the basics, ye can start building up yer skills in specific areas of software development. This could include web development, mobile app development, or machine learning, depending on yer interests and goals.
-
-**Get some experience:** In addition to learning and building up yer skills, it be important to get some hands-on experience in software development. This could involve working on personal projects, participating in hackathons, or interning at a software development company.
-
-**Network with other developers:** As ye be building up yer skills and experience, it be important to network with other software development professionals. This can help ye learn from others, find job opportunities, and stay up-to-date on the latest trends and technologies in the field.
-
-Keep learning and improving: The field of software development be constantly evolving, so it be important to stay up-to-date on the latest trends and technologies. This might involve taking online courses, attending meetups or conferences, or simply staying active on forums and social media groups related to software development.
-
-#### Support
-
-Application support people are responsible for maintaining and troubleshooting the applications that are used on your network. Application support professionals often work on tasks such as:
-
-**Responding to user issues and requests:** This might include troubleshooting problems with applications, answering user questions, and providing technical support.
-
-**Monitoring and maintaining applications:** Application support professionals might monitor the performance and availability of applications, and perform tasks such as installing updates and patches.
-
-**Collaborating with developers:** Application support professionals often work closely with developers to understand the technical details of applications, and to identify and fix problems that arise.
-
-**Documenting and communicating issues and solutions:** Application support professionals might document issues and solutions in order to track and resolve problems more effectively. They might also communicate with users and other stakeholders about issues and resolutions.
-
-You might imagine that application support people are responsible for maintaining and troubleshooting the applications that are used on your network. They play a crucial role in ensuring that applications are running smoothly and efficiently, and they work closely with developers and users to identify and resolve problems.
-
-#### Testing
-
-A software tester is responsible for ensuring the quality and reliability of the software that is used on your network. Software testers often work on tasks such as:
-
-**Developing and executing test plans:** Software testers might create detailed test plans that outline the steps and conditions needed to test the software. They might then execute these test plans to ensure that the software is working as intended.
-
-**Identifying and documenting defects:** Software testers might identify and document defects in the software, and then work with developers to resolve them.
-
-**Collaborating with other teams:** Software testers might work closely with other teams such as development, QA, and product management to understand the requirements and goals of the software, and to ensure that the software meets those requirements.
-
-**Maintaining and improving testing processes:** Software testers might work to improve and optimize the testing process, in order to ensure that the software is tested thoroughly and efficiently.
-
-You might imagine that a software tester is responsible for ensuring the quality and reliability of the software that is used on your network. They play a crucial role in identifying and resolving defects, and in ensuring that the software meets the needs and goals of users.
+You might imagine that supply chain management professionals are responsible for the coordination and management of the flow of goods, information, and services from raw material suppliers to end customers. They play a crucial role in ensuring that the supply chain is efficient and effective, and in supporting the needs and requirements of the organization
 
 ## Chapter Two - The Fundamentals
 
