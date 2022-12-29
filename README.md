@@ -8,240 +8,257 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-    - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
-    - [What is the MIT License?](#what-is-the-mit-license)
-  - [What is free software?](#what-is-free-software)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [Differences between the teams](#differences-between-the-teams)
-      - [Penetration Testing](#penetration-testing)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Differences between Security roles](#differences-between-security-roles)
-      - [Bugcrowd](#bugcrowd)
-      - [Hackerone](#hackerone)
-    - [Data analysis and interpretation](#data-analysis-and-interpretation)
-      - [Data Science](#data-science)
-      - [Artificial Intelligence](#artificial-intelligence)
-      - [Machine Learning](#machine-learning)
-      - [Differences between the sciences](#differences-between-the-sciences)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
-      - [Developer Advocate](#developer-advocate)
-      - [DevRel (Developer Relations)](#devrel-developer-relations)
-    - [Finance](#finance)
-    - [Frontend](#frontend)
-    - [Management](#management)
-      - [Product Management](#product-management)
-      - [Project Management](#project-management)
-    - [Marketing](#marketing)
-    - [Network Engineering](#network-engineering)
-    - [Operations](#operations)
-      - [Customer Service](#customer-service)
-      - [Logistics](#logistics)
-      - [Supply Chain Management](#supply-chain-management)
-    - [Sales](#sales)
-    - [Software development and delivery](#software-development-and-delivery)
-      - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-      - [chmod](#chmod)
-      - [chown](#chown)
-  - [Networking](#networking)
-    - [ip](#ip)
-    - [Netcat](#netcat)
-    - [nmap](#nmap)
-    - [tcpdump](#tcpdump)
-    - [Wireshark](#wireshark)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-    - [Bash scripting](#bash-scripting)
-    - [Bash history](#bash-history)
-    - [Bash one-liners](#bash-one-liners)
-  - [chroot](#chroot)
-  - [Cron](#cron)
-  - [Devices](#devices)
-  - [Drivers](#drivers)
-  - [Processes](#processes)
-  - [cURL](#curl)
-  - [Vim (Vi IMproved)](#vim-vi-improved)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-      - [Buying a Domain Name](#buying-a-domain-name)
-      - [Namecheap](#namecheap)
-    - [IANA (Internet Assigned Numbers Authority)](#iana-internet-assigned-numbers-authority)
-    - [ICAAN (Internet Corporation for Assigned Names and Numbers)](#icaan-internet-corporation-for-assigned-names-and-numbers)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-    - [Web Server](#web-server)
-      - [Apache](#apache)
-      - [Nginx](#nginx)
-      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
-  - [Amazon Web Services](#amazon-web-services)
-  - [Cloudflare](#cloudflare)
-  - [CI/CD](#cicd)
-    - [Continuous Delivery](#continuous-delivery)
-    - [Continuous Integration](#continuous-integration)
-    - [CI/CD Tools](#cicd-tools)
-      - [Argo CD](#argo-cd)
-      - [CircleCI](#circleci)
-      - [GitHub Actions](#github-actions)
-      - [GitLab CI/CD](#gitlab-cicd)
-      - [Jenkins](#jenkins)
-      - [Portainer](#portainer)
-      - [Travis CI](#travis-ci)
-  - [DigitalOcean](#digitalocean)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-    - [DNS over TLS (DoT)](#dns-over-tls-dot)
-    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-    - [DNSCrypt](#dnscrypt)
-    - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-    - [AWS Route 53](#aws-route-53)
-    - [Azure DNS](#azure-dns)
-    - [Google Cloud DNS](#google-cloud-dns)
-    - [DigitalOcean DNS](#digitalocean-dns)
-    - [Cloudflare DNS](#cloudflare-dns)
-    - [OpenDNS](#opendns)
-    - [Bind](#bind)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [Meta tags](#meta-tags)
-    - [Is HTML a programming language?](#is-html-a-programming-language)
-    - [CSS](#css)
-  - [HTTP](#http)
-    - [HTTP error codes](#http-error-codes)
-    - [HTTP methods](#http-methods)
-    - [HTTP headers](#http-headers)
-    - [HTTPS](#https)
-    - [API (Application Programming Interface)](#api-application-programming-interface)
-    - [REST (Representational State Transfer)](#rest-representational-state-transfer)
-  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-      - [Jeff Geerling](#jeff-geerling)
-      - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
-      - [Ansible Galaxy](#ansible-galaxy)
-      - [Ansible Tower](#ansible-tower)
-      - [Ansible Vault](#ansible-vault)
-      - [Ansible Molecule](#ansible-molecule)
-      - [Ansible Container](#ansible-container)
-      - [Ansible Network Automation](#ansible-network-automation)
-      - [Ansible Cloud Automation](#ansible-cloud-automation)
-      - [Ansible Container Orchestration](#ansible-container-orchestration)
-      - [Ansible Service Broker](#ansible-service-broker)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-      - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
-  - [Desktop Environments](#desktop-environments)
-    - [GNOME](#gnome)
-    - [KDE](#kde)
-    - [Xfce](#xfce)
-    - [LXDE](#lxde)
-  - [Window Managers](#window-managers)
-    - [Openbox](#openbox)
-    - [Fluxbox](#fluxbox)
-    - [i3](#i3)
-  - [Installing a Desktop Environment](#installing-a-desktop-environment)
-  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
-  - [Installing a Window Manager](#installing-a-window-manager)
-  - [Configuring a Window Manager](#configuring-a-window-manager)
-- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
-- [Testemonials](#testemonials)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+      - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
+      - [What is the MIT License?](#what-is-the-mit-license)
+    - [What is free software?](#what-is-free-software)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [Differences between the teams](#differences-between-the-teams)
+        - [Penetration Testing](#penetration-testing)
+        - [Phishing](#phishing)
+        - [Social Engineering](#social-engineering)
+        - [Kevin Mitnick](#kevin-mitnick)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Differences between Security roles](#differences-between-security-roles)
+        - [Bugcrowd](#bugcrowd)
+        - [Hackerone](#hackerone)
+      - [Data analysis and interpretation](#data-analysis-and-interpretation)
+        - [Data Science](#data-science)
+        - [Artificial Intelligence](#artificial-intelligence)
+        - [Machine Learning](#machine-learning)
+        - [Differences between the sciences](#differences-between-the-sciences)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
+        - [Developer Advocate](#developer-advocate)
+        - [DevRel (Developer Relations)](#devrel-developer-relations)
+      - [Finance](#finance)
+      - [Frontend](#frontend)
+      - [Management](#management)
+        - [Product Management](#product-management)
+        - [Project Management](#project-management)
+      - [Marketing](#marketing)
+      - [Network Engineering](#network-engineering)
+      - [Operations](#operations)
+        - [Customer Service](#customer-service)
+        - [Logistics](#logistics)
+        - [Supply Chain Management](#supply-chain-management)
+      - [Sales](#sales)
+      - [Software development and delivery](#software-development-and-delivery)
+        - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+        - [chmod](#chmod)
+        - [chown](#chown)
+    - [Networking](#networking)
+      - [ip](#ip)
+      - [Netcat](#netcat)
+      - [nmap](#nmap)
+      - [tcpdump](#tcpdump)
+      - [Wireshark](#wireshark)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+      - [Bash scripting](#bash-scripting)
+      - [Bash history](#bash-history)
+      - [Bash one-liners](#bash-one-liners)
+    - [chroot](#chroot)
+    - [Cron](#cron)
+    - [Devices](#devices)
+    - [Drivers](#drivers)
+    - [Processes](#processes)
+    - [cURL](#curl)
+    - [Vim (Vi IMproved)](#vim-vi-improved)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+        - [Buying a Domain Name](#buying-a-domain-name)
+        - [Namecheap](#namecheap)
+      - [IANA (Internet Assigned Numbers Authority)](#iana-internet-assigned-numbers-authority)
+      - [ICAAN (Internet Corporation for Assigned Names and Numbers)](#icaan-internet-corporation-for-assigned-names-and-numbers)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+        - [Document Object Model (DOM)](#document-object-model-dom)
+        - [Virtual DOM](#virtual-dom)
+      - [World Wide Web](#world-wide-web)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+      - [Web Server](#web-server)
+        - [Apache](#apache)
+        - [Nginx](#nginx)
+        - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [CI/CD](#cicd)
+      - [Continuous Delivery](#continuous-delivery)
+      - [Continuous Integration](#continuous-integration)
+      - [CI/CD Tools](#cicd-tools)
+        - [Argo CD](#argo-cd)
+        - [CircleCI](#circleci)
+        - [GitHub Actions](#github-actions)
+        - [GitLab CI/CD](#gitlab-cicd)
+        - [Jenkins](#jenkins)
+        - [Portainer](#portainer)
+        - [Travis CI](#travis-ci)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Azure DNS](#azure-dns)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+      - [OpenDNS](#opendns)
+      - [Bind](#bind)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [Meta tags](#meta-tags)
+      - [Is HTML a programming language?](#is-html-a-programming-language)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTP methods](#http-methods)
+      - [HTTP headers](#http-headers)
+      - [HTTPS](#https)
+      - [API (Application Programming Interface)](#api-application-programming-interface)
+      - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+    - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+        - [Jeff Geerling](#jeff-geerling)
+        - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
+        - [Ansible Galaxy](#ansible-galaxy)
+        - [Ansible Tower](#ansible-tower)
+        - [Ansible Vault](#ansible-vault)
+        - [Ansible Molecule](#ansible-molecule)
+        - [Ansible Container](#ansible-container)
+        - [Ansible Network Automation](#ansible-network-automation)
+        - [Ansible Cloud Automation](#ansible-cloud-automation)
+        - [Ansible Container Orchestration](#ansible-container-orchestration)
+        - [Ansible Service Broker](#ansible-service-broker)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+        - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+      - [Logrotate](#logrotate)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+        - [How to generate SSH keys](#how-to-generate-ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL/TLS](#ssltls)
+      - [SSL Certificates](#ssl-certificates)
+        - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
+        - [Let's Encrypt](#lets-encrypt)
+        - [Certificate Authorities](#certificate-authorities)
+        - [CAA Records](#caa-records)
+        - [OCSP Stapling](#ocsp-stapling)
+        - [OCSP Must-Staple](#ocsp-must-staple)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+      - [Subnetting Cheatsheet](#subnetting-cheatsheet)
+        - [Subnet Mask](#subnet-mask-1)
+        - [CIDR Notation](#cidr-notation)
+        - [Subnetting a Network](#subnetting-a-network)
+        - [Subnetting Examples](#subnetting-examples)
+        - [Subnetting Practice](#subnetting-practice)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+    - [Desktop Environments](#desktop-environments)
+      - [GNOME](#gnome)
+      - [KDE](#kde)
+      - [Xfce](#xfce)
+      - [LXDE](#lxde)
+    - [Window Managers](#window-managers)
+      - [Openbox](#openbox)
+      - [Fluxbox](#fluxbox)
+      - [i3](#i3)
+    - [Installing a Desktop Environment](#installing-a-desktop-environment)
+    - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+    - [Installing a Window Manager](#installing-a-window-manager)
+    - [Configuring a Window Manager](#configuring-a-window-manager)
+  - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
+  - [Testemonials](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1562,6 +1579,18 @@ Today, there be a wide variety of web browsers available, including Google Chrom
 
 So hoist the mainsail and set course for the internet! With a web browser at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
 
+##### Document Object Model (DOM)
+
+The Document Object Model (DOM) be a programming interface for HTML and XML documents. It be a powerful tool that be used by web developers to create interactive web pages and web applications.
+
+In a pirate theme, ye can think of the Document Object Model as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, the Document Object Model be able to explore a vast world of information and resources.
+
+##### Virtual DOM
+
+The Virtual DOM be a programming interface for HTML and XML documents. It be a powerful tool that be used by web developers to create interactive web pages and web applications.
+
+In a pirate theme, ye can think of the Virtual DOM as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, the Virtual DOM be able to explore a vast world of information and resources.
+
 #### World Wide Web
 
 The World Wide Web (WWW) be a system of interlinked hypertext documents that be accessed via the internet. It be a vast collection of resources that be accessible from anywhere in the world, and it be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
@@ -2496,17 +2525,25 @@ There are several different types of log messages that can be recorded on a Linu
 
 Logging can be a useful tool for pirates to monitor their network and keep track of what is happening on their systems. It can help them identify problems, track changes, and detect security breaches, all of which are important for keeping their network running smoothly and securely.
 
+#### Logrotate
+
+Logrotate is a utility that can be used to manage log files on a Linux system. It can be used to rotate, compress, and remove log files, as well as send log files to a remote server.
+
+Logrotate is typically configured using a configuration file called logrotate.conf, which is located in the /etc/logrotate.d directory. This file contains a list of log files that should be rotated, as well as the rotation schedule and other options.
+
+Logrotate can be used to rotate log files on a daily, weekly, monthly, or yearly basis. It can also be used to compress log files, which can help to save disk space. Logrotate can also be used to remove old log files, which can help to keep the system clean and organized.
+
 ### Monitoring
 
 Monitoring on a Linux system can be thought of as a way for pirates to keep track of the performance and status of their systems. Monitoring is the process of collecting and analyzing data about a system's resources and activities, and it is a useful tool for identifying problems, optimizing performance, and detecting security breaches.
 
 There are many different tools and techniques that can be used to monitor a Linux system, including:
 
-System logs: Pirates can use system logs to keep track of events and activities that occur on their system. System logs contain information about the operating system, applications, and network devices, and they can be used to identify problems, track changes, and detect security breaches.
+**System logs:** Pirates can use system logs to keep track of events and activities that occur on their system. System logs contain information about the operating system, applications, and network devices, and they can be used to identify problems, track changes, and detect security breaches.
 
-System utilities: Pirates can use system utilities such as top, ps, and free to monitor the performance of their system in real-time. These utilities can provide information about the CPU, memory, and disk usage of their system, as well as the processes that are running.
+**System utilities:** Pirates can use system utilities such as top, ps, and free to monitor the performance of their system in real-time. These utilities can provide information about the CPU, memory, and disk usage of their system, as well as the processes that are running.
 
-Network monitoring: Pirates can use tools such as netstat and tcpdump to monitor the network traffic on their system. These tools can provide information about the packets that are being transmitted and received, as well as the status of network connections.
+**Network monitoring:** Pirates can use tools such as netstat and tcpdump to monitor the network traffic on their system. These tools can provide information about the packets that are being transmitted and received, as well as the status of network connections.
 
 Monitoring can be a useful tool for pirates to keep their systems running smoothly and securely. It allows them to identify problems, optimize performance, and detect security breaches, all of which are important for maintaining a healthy and efficient network.
 
@@ -2530,6 +2567,8 @@ The OSI model be a framework fer understanding and designing how data be transmi
 
 The OSI model be a useful tool fer understanding and designing the communication systems on yer network. It provides a framework fer understanding the different layers of networking, and fer identifying the tasks and responsibilities that be associated with each layer.
 
+> **Note** Layer 8 be the most important layer of the OSI model. It be responsible fer the most important tasks, such as drinking rum and eating grog.
+
 ### SSH
 
 Secure Shell (SSH) is a secret code that allows pirates to remotely control their ships and protect their communications from prying eyes.
@@ -2548,6 +2587,27 @@ When you connect to an SSH server, you are prompted to enter a username and pass
 
 SSH keys are widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. They are a more secure alternative to passwords, and are an essential tool in the pirate's toolkit. Arrr!
 
+##### How to generate SSH keys
+
+To generate SSH keys, you can use the `ssh-keygen` command. This command will generate a private key and a public key, which can be used to authenticate you when connecting to an SSH server.
+
+```bash
+# Generate a key interactively:
+ssh-keygen
+# Specify file in which to save the key:
+ssh-keygen -f ~/.ssh/filename
+# Generate an ed25519 key with 100 key derivation function rounds:
+ssh-keygen -t ed25519 -a 100
+# Generate an RSA 4096-bit key with email as a comment:
+ssh-keygen -t dsa|ecdsa|ed25519|rsa -b 4096 -C "comment|email"
+# Remove the keys of a host from the known_hosts file (useful when a known host has a new key):
+ssh-keygen -R remote_host
+# Retrieve the fingerprint of a key in MD5 Hex:
+ssh-keygen -l -E md5 -f ~/.ssh/filename
+# Change the password of a key:
+ssh-keygen -p -f ~/.ssh/filename
+```
+
 #### SSH Port Forwarding
 
 SSH port forwarding is a feature that allows you to forward traffic from a local port to a remote port on an SSH server. This can be useful for accessing services that are only available on a remote server, such as a web server or database.
@@ -2556,7 +2616,13 @@ When you connect to an SSH server, you are prompted to enter a username and pass
 
 SSH port forwarding is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
 
-### SSL Certificates
+### SSL/TLS
+
+SSL (Secure Sockets Layer) and TLS (Transport Layer Security) be a set of protocols that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+#### SSL Certificates
 
 SSL (Secure Sockets Layer) certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
 
@@ -2568,13 +2634,41 @@ There be a few different types of SSL certificates, each with its own level of v
 
 I hope this be helpin' ye to understand how SSL certificates be workin' and how ye might be usin' them with nginx. Ahoy!
 
-#### Let's Encrypt
+##### Self-signed SSL Certificates
+
+Self-signed SSL certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+##### Let's Encrypt
 
 Let's Encrypt be a free, automated, and open certificate authority (CA) that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
 Certbot be a free, open-source tool that be usin' Let's Encrypt to obtain and install SSL certificates. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
 The EFF (Electronic Frontier Foundation) be a non-profit organization that be workin' to protect and advance digital rights. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+##### Certificate Authorities
+
+A certificate authority (CA) be a trusted third party that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+##### CAA Records
+
+A CAA (Certification Authority Authorization) record be a type of DNS record that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+##### OCSP Stapling
+
+OCSP (Online Certificate Status Protocol) stapling be a method of improving the performance of SSL/TLS connections by caching the results of OCSP requests. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+##### OCSP Must-Staple
+
+OCSP (Online Certificate Status Protocol) must-staple be a method of improving the performance of SSL/TLS connections by caching the results of OCSP requests. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
 
 ### Streaming
 
@@ -2617,6 +2711,75 @@ Calculate the subnet address for each subnet. To do this, you will need to use t
 Assign an IP address to each device on the network. The IP address should be unique for each device, and it should include the subnet address for the subnet that the device is part of.
 
 For example, let's say that you have a network with 100 pirates, and you want to create 10 subnets with 10 pirates each. You might select a subnet mask of "255.255.255.0", which would allow you to create up to 256 subnets. To calculate the subnet address for each subnet, you would use the subnet mask and the IP address of each device. For example, if the IP address of a device is "192.168.1.1", and the subnet mask is "255.255.255.0", the subnet address would be "192.168.1.0".
+
+#### Subnetting Cheatsheet
+
+Subnetting is the process of dividing a network into smaller subnetworks, called subnets. Subnetting allows an organization to break up its network into smaller, more manageable pieces, and assign specific subnets to different departments or locations.
+
+##### Subnet Mask
+
+A subnet mask is a 32-bit binary number that is used to divide the IP address into the network portion and the host portion. The subnet mask is used to determine which portion of the IP address belongs to the network and which portion belongs to the host.
+
+The subnet mask is usually written in the form of an IP address, such as `255.255.255.0`, but it is actually a binary number. To determine the subnet mask in binary, each octet (the numbers separated by periods) is converted to binary:
+
+```bash
+`255.255.255.0
+11111111.11111111.11111111.00000000`
+```
+
+The subnet mask is used in conjunction with the IP address to determine which portion of the IP address belongs to the network and which portion belongs to the host.
+
+##### CIDR Notation
+
+CIDR (Classless Inter-Domain Routing) notation is a standard syntax for representing IP addresses and their associated subnet masks. In CIDR notation, the subnet mask is represented by a slash followed by a number, called the prefix length.
+
+For example, the subnet mask `255.255.255.0` can be written in CIDR notation as `/24`, because the first 24 bits are set to 1 and the remaining 8 bits are set to 0.
+
+##### Subnetting a Network
+
+To subnet a network, the network administrator must first determine the number of subnets needed and the number of hosts per subnet. The network administrator can then use the following formula to determine the subnet mask:
+
+```bash
+`2^n - 2 = total number of hosts per subnet`
+```
+
+Where `n` is the number of bits borrowed from the host portion of the IP address to create the subnets.
+
+For example, if a network administrator needs to create 8 subnets, each with 30 hosts, the following steps can be taken:
+
+1. Determine the number of bits needed to create 8 subnets: `log2 8 = 3`
+2. Determine the number of bits needed to support 30 hosts per subnet: `log2 30 = 5`
+3. Add the number of bits needed for the subnets and the number of bits needed for the hosts: `3 + 5 = 8`
+4. Determine the subnet mask by setting the first `8` bits to 1 and the remaining bits to 0: `11111111.11111111.11111000.00000000`
+5. Convert the subnet mask to CIDR notation: `/23`
+
+##### Subnetting Examples
+
+Here are some more examples of how to subnet a network using the subnet mask and CIDR notation:
+
+- To create 16 subnets, each with 4 hosts:
+  - Subnet mask: `11111111.11111111.11111111.11110000`
+  - CIDR notation: `/28`
+- To create 32 subnets, each with 2 hosts:
+  - Subnet mask: `11111111.11111111.11111111.11111000`
+  - CIDR notation: `/29`
+- To create 64 subnets, each with 1 host:
+  - Subnet mask: `11111111.11111111.11111111.11111100`
+  - CIDR notation: `/30`
+
+##### Subnetting Practice
+
+Here are some practice problems to help you get familiar with subnetting:
+
+1. How many subnets and hosts per subnet can you create with the following subnet mask: `11111111.11111111.11100000.00000000`?
+2. How many subnets and hosts per subnet can you create with the following subnet mask: `11111111.11111111.11110000.00000000`?
+3. How many subnets and hosts per subnet can you create with the following subnet mask: `11111111.11111111.11111000.00000000`?
+
+**Answers:**
+
+1. With a subnet mask of `11111111.11111111.11100000.00000000`, you can create 4 subnets, each with 2048 hosts.
+2. With a subnet mask of `11111111.11111111.11110000.00000000`, you can create 8 subnets, each with 1024 hosts.
+3. With a subnet mask of `11111111.11111111.11111000.00000000`, you can create 16 subnets, each with 512 hosts.
 
 ### TCP/IP
 
