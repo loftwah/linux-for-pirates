@@ -8,206 +8,221 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Penetration Testing](#penetration-testing)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [What is the difference?](#what-is-the-difference)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Security Management](#security-management)
-      - [Security Operations](#security-operations)
-      - [Security Research](#security-research)
-      - [Hackerone](#hackerone)
-      - [Bugcrowd](#bugcrowd)
-    - [Data Science](#data-science)
-      - [Artificial Intelligence](#artificial-intelligence)
-      - [Machine Learning](#machine-learning)
-      - [Data Visualization](#data-visualization)
-      - [Data Analyst](#data-analyst)
-      - [Data Engineer](#data-engineer)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-      - [Platform Engineering](#platform-engineering)
-      - [Site Reliability Engineering](#site-reliability-engineering)
-    - [Developer Advocate](#developer-advocate)
-    - [DevRel (Developer Relations)](#devrel-developer-relations)
-    - [Frontend](#frontend)
-    - [Management](#management)
-      - [Product Management](#product-management)
-      - [Project Management](#project-management)
-      - [Chief Technology Officer (CTO)](#chief-technology-officer-cto)
-      - [Chief Information Officer (CIO)](#chief-information-officer-cio)
-      - [Chief Operating Officer (COO)](#chief-operating-officer-coo)
-      - [Chief Executive Officer (CEO)](#chief-executive-officer-ceo)
-      - [Chief Financial Officer (CFO)](#chief-financial-officer-cfo)
-      - [Chief Marketing Officer (CMO)](#chief-marketing-officer-cmo)
-      - [Chief Human Resources Officer (CHRO)](#chief-human-resources-officer-chro)
-      - [Chief Security Officer (CSO)](#chief-security-officer-cso)
-    - [Marketing](#marketing)
-    - [Network Engineering](#network-engineering)
-    - [Product](#product)
-    - [Quality Assurance](#quality-assurance)
-    - [Sales](#sales)
-    - [Software Development Engineer (SDE)](#software-development-engineer-sde)
-    - [Support](#support)
-    - [Testing](#testing)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-      - [chmod](#chmod)
-  - [Networking](#networking)
-    - [ip](#ip)
-    - [Netcat](#netcat)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-    - [Bash scripting](#bash-scripting)
-    - [Bash history](#bash-history)
-    - [Bash one-liners](#bash-one-liners)
-  - [Cron](#cron)
-  - [Devices](#devices)
-  - [Processes](#processes)
-  - [cURL](#curl)
-  - [Vim (Vi IMproved)](#vim-vi-improved)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-      - [Buying a Domain Name](#buying-a-domain-name)
-      - [Namecheap](#namecheap)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-    - [Web Server](#web-server)
-      - [Apache](#apache)
-      - [Nginx](#nginx)
-      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
-  - [Amazon Web Services](#amazon-web-services)
-  - [Cloudflare](#cloudflare)
-  - [CI/CD](#cicd)
-    - [Continuous Delivery](#continuous-delivery)
-    - [Continuous Integration](#continuous-integration)
-    - [CI/CD Tools](#cicd-tools)
-      - [Argo CD](#argo-cd)
-      - [CircleCI](#circleci)
-      - [GitHub Actions](#github-actions)
-      - [GitLab CI/CD](#gitlab-cicd)
-      - [Jenkins](#jenkins)
-      - [Portainer](#portainer)
-      - [Travis CI](#travis-ci)
-  - [DigitalOcean](#digitalocean)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-    - [DNS over TLS (DoT)](#dns-over-tls-dot)
-    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-    - [DNSCrypt](#dnscrypt)
-    - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-    - [AWS Route 53](#aws-route-53)
-    - [Google Cloud DNS](#google-cloud-dns)
-    - [DigitalOcean DNS](#digitalocean-dns)
-    - [Azure DNS](#azure-dns)
-    - [Cloudflare DNS](#cloudflare-dns)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [CSS](#css)
-  - [HTTP](#http)
-    - [HTTP error codes](#http-error-codes)
-    - [HTTPS](#https)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [JSON](#json)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
-- [Testemonials](#testemonials)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Penetration Testing](#penetration-testing)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [What is the difference?](#what-is-the-difference)
+        - [Phishing](#phishing)
+        - [Social Engineering](#social-engineering)
+        - [Kevin Mitnick](#kevin-mitnick)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Security Management](#security-management)
+        - [Security Operations](#security-operations)
+        - [Security Research](#security-research)
+        - [Hackerone](#hackerone)
+        - [Bugcrowd](#bugcrowd)
+      - [Data Science](#data-science)
+        - [Artificial Intelligence](#artificial-intelligence)
+        - [Machine Learning](#machine-learning)
+        - [Data Visualization](#data-visualization)
+        - [Data Analyst](#data-analyst)
+        - [Data Engineer](#data-engineer)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+        - [Platform Engineering](#platform-engineering)
+        - [Site Reliability Engineering](#site-reliability-engineering)
+      - [Developer Advocate](#developer-advocate)
+      - [DevRel (Developer Relations)](#devrel-developer-relations)
+      - [Frontend](#frontend)
+      - [Management](#management)
+        - [Product Management](#product-management)
+        - [Project Management](#project-management)
+        - [Chief Technology Officer (CTO)](#chief-technology-officer-cto)
+        - [Chief Information Officer (CIO)](#chief-information-officer-cio)
+        - [Chief Operating Officer (COO)](#chief-operating-officer-coo)
+        - [Chief Executive Officer (CEO)](#chief-executive-officer-ceo)
+        - [Chief Financial Officer (CFO)](#chief-financial-officer-cfo)
+        - [Chief Marketing Officer (CMO)](#chief-marketing-officer-cmo)
+        - [Chief Human Resources Officer (CHRO)](#chief-human-resources-officer-chro)
+        - [Chief Security Officer (CSO)](#chief-security-officer-cso)
+      - [Marketing](#marketing)
+      - [Network Engineering](#network-engineering)
+      - [Product](#product)
+      - [Quality Assurance](#quality-assurance)
+      - [Sales](#sales)
+      - [Software Development Engineer (SDE)](#software-development-engineer-sde)
+      - [Support](#support)
+      - [Testing](#testing)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+        - [chmod](#chmod)
+    - [Networking](#networking)
+      - [ip](#ip)
+      - [Netcat](#netcat)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+      - [Bash scripting](#bash-scripting)
+      - [Bash history](#bash-history)
+      - [Bash one-liners](#bash-one-liners)
+    - [Cron](#cron)
+    - [Devices](#devices)
+    - [Processes](#processes)
+    - [cURL](#curl)
+    - [Vim (Vi IMproved)](#vim-vi-improved)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+        - [Buying a Domain Name](#buying-a-domain-name)
+        - [Namecheap](#namecheap)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+      - [Web Server](#web-server)
+        - [Apache](#apache)
+        - [Nginx](#nginx)
+        - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [CI/CD](#cicd)
+      - [Continuous Delivery](#continuous-delivery)
+      - [Continuous Integration](#continuous-integration)
+      - [CI/CD Tools](#cicd-tools)
+        - [Argo CD](#argo-cd)
+        - [CircleCI](#circleci)
+        - [GitHub Actions](#github-actions)
+        - [GitLab CI/CD](#gitlab-cicd)
+        - [Jenkins](#jenkins)
+        - [Portainer](#portainer)
+        - [Travis CI](#travis-ci)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Azure DNS](#azure-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTPS](#https)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+    - [Desktop Environments](#desktop-environments)
+      - [GNOME](#gnome)
+      - [KDE](#kde)
+      - [Xfce](#xfce)
+      - [LXDE](#lxde)
+    - [Window Managers](#window-managers)
+      - [Openbox](#openbox)
+      - [Fluxbox](#fluxbox)
+      - [i3](#i3)
+    - [Installing a Desktop Environment](#installing-a-desktop-environment)
+    - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+    - [Installing a Window Manager](#installing-a-window-manager)
+    - [Configuring a Window Manager](#configuring-a-window-manager)
+  - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
+  - [Testemonials](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -2820,6 +2835,115 @@ git push -u origin master
 ```
 
 This will push the local master branch to the remote repository.
+
+## Chapter Four - Desktop Environments and Window Managers
+
+Avast ye, mateys! In this chapter, we'll be setting sail with desktop environments and window managers in Ubuntu. These be the tools that be responsible for how ye interact with yer operating system and its applications. Let's set the course and dive in!
+
+### Desktop Environments
+
+A desktop environment be a collection o' software that be responsible for the overall look and feel o' yer operating system. It includes things like the desktop background, the panel at the top o' the screen, and the menus and icons that be used to launch applications.
+
+Ubuntu comes with several desktop environments to choose from, including GNOME, KDE, Xfce, and LXDE. Each desktop environment be unique, with its own style and features. Let's take a closer look at each one:
+
+#### GNOME
+
+[Awesome GNOME](https://github.com/Kazhnuz/awesome-gnome)
+
+GNOME be the default desktop environment for Ubuntu. It be a user-friendly and modern desktop environment that be designed to be easy to use and customize. It be also designed to be highly accessible, with features like a high contrast theme and text-to-speech support.
+
+#### KDE
+
+[Awesome KDE](https://github.com/francoism90/awesome-kde)
+
+KDE be a desktop environment that be known for its high level o' customization and eye-catching visual effects. It be also highly configurable, with a wide range o' settings and options for tweaking the look and feel o' the desktop.
+
+#### Xfce
+
+[Xfce](https://www.xfce.org)
+
+Xfce be a lightweight and fast desktop environment that be designed to be easy on resources. It be a good choice for pirates who be runnin' older or low-powered computers, or for those who be lookin' for a more minimalistic desktop experience.
+
+#### LXDE
+
+[LXDE](https://lxde.org)
+
+LXDE be another lightweight and fast desktop environment, similar to Xfce. It be known for its low resource usage and simple, clean interface.
+
+### Window Managers
+
+A window manager be a software program that be responsible for the layout and appearance o' the windows on yer desktop. It be responsible for things like how windows be resized, moved, and minimized, as well as how the desktop be organized and navigated.
+
+Ubuntu comes with several window managers to choose from, including Openbox, Fluxbox, and i3. Let's take a closer look at each one:
+
+#### Openbox
+
+[Openbox](https://openbox.org)
+
+Openbox be a lightweight and highly configurable window manager that be designed to be fast and efficient. It be a good choice for pirates who be lookin' for a minimalistic and customizable desktop experience.
+
+#### Fluxbox
+
+[Fluxbox](http://fluxbox.org)
+
+Fluxbox be a fast and lightweight window manager that be similar to Openbox. It be known for its minimalistic interface and high level o' customization.
+
+#### i3
+
+[i3](https://i3wm.org)
+
+i3 be a tiling window manager that be designed to be fast and efficient. It be a good choice for pirates who be lookin' for a more organized and efficient desktop experience, as it allows ye to split yer screen into multiple "tiles" and easily switch between different applications.
+
+### Installing a Desktop Environment
+
+To install a desktop environment in Ubuntu, follow these steps:
+
+**1.** Open a terminal window.
+
+**2.** Update yer package repository with the command `sudo apt update`.
+
+**3.** Install the desired desktop environment with the command `sudo apt install [desktop environment] -y`, where `[desktop environment]` be the name o' the desired desktop environment. For example, to install GNOME, ye would use the command `sudo apt install gnome-desktop-environment`.
+
+**4.** Restart yer computer.
+
+**5.** During the boot process, ye will be presented with a login screen. Click the gear icon in the top right corner and select yer desired desktop environment from the dropdown menu.
+
+**6.** Log in with yer username and password.
+
+### Configuring a Desktop Environment
+
+Once ye have installed a desktop environment, ye can customize and configure it to suit yer needs. Here be a few things ye can do:
+
+**Change the desktop background:** Right-click on the desktop and select "Change Desktop Background" from the menu.
+
+**Add and remove icons from the desktop:** Right-click on the desktop and select "Add to Desktop" or "Remove from Desktop" from the menu.
+
+**Add and remove applications from the panel:** Right-click on the panel and select "Add to Panel" or "Remove from Panel" from the menu.
+
+**Customize the panel:** Right-click on the panel and select "Properties" from the menu to access the panel settings.
+
+### Installing a Window Manager
+
+To install a window manager in Ubuntu, follow these steps:
+
+**1.** Open a terminal window.
+
+**2.** Update yer package repository with the command `sudo apt update`.
+Install the desired window manager with the command `sudo apt install [window manager] -y`, where `[window manager]` be the name o' the desired window manager. For example, to install Openbox, ye would use the command `sudo apt install openbox -y`.
+
+**3.** Restart yer computer.
+
+**4.** During the boot process, ye will be presented with a login screen. Click the gear icon in the top right corner and select yer desired window manager from the dropdown menu.
+
+**5.** Log in with yer username and password.
+
+### Configuring a Window Manager
+
+**Customize the window behavior:** Most window managers allow ye to customize things like the way windows are resized, moved, and minimized. This can typically be done through a configuration file, which can be accessed through a terminal window or a text editor.
+
+**Customize the desktop layout:** Some window managers, like i3, allow ye to customize the way yer desktop is laid out, including the arrangement and size of windows. This can typically be done through a configuration file, which can be accessed through a terminal window or a text editor.
+
+In this chapter, we set sail with desktop environments and window managers in Ubuntu. We learned about the different options available, and how to install and configure them to suit yer needs. Whether ye be a greenhorn or an experienced swashbuckler, there be a desktop environment or window manager out there for ye. Set yer course and start explorin'!
 
 ## A stern warning: The dangers of the high seas
 
