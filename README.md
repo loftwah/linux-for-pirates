@@ -8,234 +8,237 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-    - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
-    - [What is the MIT License?](#what-is-the-mit-license)
-  - [What is free software?](#what-is-free-software)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [Differences between the teams](#differences-between-the-teams)
-      - [Penetration Testing](#penetration-testing)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Differences between Security roles](#differences-between-security-roles)
-      - [Bugcrowd](#bugcrowd)
-      - [Hackerone](#hackerone)
-    - [Data Science](#data-science)
-      - [Artificial Intelligence](#artificial-intelligence)
-      - [Machine Learning](#machine-learning)
-      - [Differences between the sciences](#differences-between-the-sciences)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-    - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
-      - [Developer Advocate](#developer-advocate)
-      - [DevRel (Developer Relations)](#devrel-developer-relations)
-    - [Finance](#finance)
-    - [Frontend](#frontend)
-    - [Management](#management)
-      - [Product Management](#product-management)
-      - [Project Management](#project-management)
-    - [Marketing](#marketing)
-    - [Network Engineering](#network-engineering)
-    - [Operations](#operations)
-      - [Customer Service](#customer-service)
-      - [Supply Chain Management](#supply-chain-management)
-      - [Logistics](#logistics)
-    - [Sales](#sales)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-      - [chmod](#chmod)
-    - [chown](#chown)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+      - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
+      - [What is the MIT License?](#what-is-the-mit-license)
+    - [What is free software?](#what-is-free-software)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Blue Team](#blue-team)
+        - [Purple Team](#purple-team)
+        - [Red Team](#red-team)
+        - [Differences between the teams](#differences-between-the-teams)
+        - [Penetration Testing](#penetration-testing)
+        - [Phishing](#phishing)
+        - [Social Engineering](#social-engineering)
+        - [Kevin Mitnick](#kevin-mitnick)
+        - [Security Architecture](#security-architecture)
+        - [Security Compliance](#security-compliance)
+        - [Security Engineering](#security-engineering)
+        - [Differences between Security roles](#differences-between-security-roles)
+        - [Bugcrowd](#bugcrowd)
+        - [Hackerone](#hackerone)
+      - [Data analysis and interpretation](#data-analysis-and-interpretation)
+        - [Data Science](#data-science)
+        - [Artificial Intelligence](#artificial-intelligence)
+        - [Machine Learning](#machine-learning)
+        - [Differences between the sciences](#differences-between-the-sciences)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
+        - [Developer Advocate](#developer-advocate)
+        - [DevRel (Developer Relations)](#devrel-developer-relations)
+      - [Finance](#finance)
+      - [Frontend](#frontend)
+      - [Management](#management)
+        - [Product Management](#product-management)
+        - [Project Management](#project-management)
+      - [Marketing](#marketing)
+      - [Network Engineering](#network-engineering)
+      - [Operations](#operations)
+        - [Customer Service](#customer-service)
+        - [Logistics](#logistics)
+        - [Supply Chain Management](#supply-chain-management)
+      - [Sales](#sales)
+      - [Software development and delivery](#software-development-and-delivery)
+        - [DevOps](#devops)
+        - [DevSecOps](#devsecops)
+        - [GitOps](#gitops)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+        - [chmod](#chmod)
+        - [chown](#chown)
+    - [Networking](#networking)
+      - [ip](#ip)
+      - [Netcat](#netcat)
+      - [nmap](#nmap)
+      - [tcpdump](#tcpdump)
+      - [Wireshark](#wireshark)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+      - [Bash scripting](#bash-scripting)
+      - [Bash history](#bash-history)
+      - [Bash one-liners](#bash-one-liners)
     - [chroot](#chroot)
-  - [Networking](#networking)
-    - [ip](#ip)
-    - [Netcat](#netcat)
-    - [nmap](#nmap)
-    - [tcpdump](#tcpdump)
-    - [Wireshark](#wireshark)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-    - [Bash scripting](#bash-scripting)
-    - [Bash history](#bash-history)
-    - [Bash one-liners](#bash-one-liners)
-  - [Cron](#cron)
-  - [Devices](#devices)
-  - [Drivers](#drivers)
-  - [Processes](#processes)
-  - [cURL](#curl)
-  - [Vim (Vi IMproved)](#vim-vi-improved)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-      - [Buying a Domain Name](#buying-a-domain-name)
-      - [Namecheap](#namecheap)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-    - [World Wide Web](#world-wide-web)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-    - [Web Server](#web-server)
-      - [Apache](#apache)
-      - [Nginx](#nginx)
-      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
-  - [Amazon Web Services](#amazon-web-services)
-  - [Cloudflare](#cloudflare)
-  - [CI/CD](#cicd)
-    - [Continuous Delivery](#continuous-delivery)
-    - [Continuous Integration](#continuous-integration)
-    - [CI/CD Tools](#cicd-tools)
-      - [Argo CD](#argo-cd)
-      - [CircleCI](#circleci)
-      - [GitHub Actions](#github-actions)
-      - [GitLab CI/CD](#gitlab-cicd)
-      - [Jenkins](#jenkins)
-      - [Portainer](#portainer)
-      - [Travis CI](#travis-ci)
-  - [DigitalOcean](#digitalocean)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-    - [DNS over TLS (DoT)](#dns-over-tls-dot)
-    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-    - [DNSCrypt](#dnscrypt)
-    - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-    - [AWS Route 53](#aws-route-53)
-    - [Azure DNS](#azure-dns)
-    - [Google Cloud DNS](#google-cloud-dns)
-    - [DigitalOcean DNS](#digitalocean-dns)
-    - [Cloudflare DNS](#cloudflare-dns)
-    - [OpenDNS](#opendns)
-    - [Bind](#bind)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [Is HTML a programming language?](#is-html-a-programming-language)
-    - [CSS](#css)
-  - [HTTP](#http)
-    - [HTTP error codes](#http-error-codes)
-    - [HTTP methods](#http-methods)
-    - [HTTP headers](#http-headers)
-    - [HTTPS](#https)
-    - [API (Application Programming Interface)](#api-application-programming-interface)
-    - [REST (Representational State Transfer)](#rest-representational-state-transfer)
-  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-      - [Jeff Geerling](#jeff-geerling)
-      - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
-      - [Ansible Galaxy](#ansible-galaxy)
-      - [Ansible Tower](#ansible-tower)
-      - [Ansible Vault](#ansible-vault)
-      - [Ansible Molecule](#ansible-molecule)
-      - [Ansible Container](#ansible-container)
-      - [Ansible Network Automation](#ansible-network-automation)
-      - [Ansible Cloud Automation](#ansible-cloud-automation)
-      - [Ansible Container Orchestration](#ansible-container-orchestration)
-      - [Ansible Service Broker](#ansible-service-broker)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Keys](#ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL Certificates](#ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
-  - [Desktop Environments](#desktop-environments)
-    - [GNOME](#gnome)
-    - [KDE](#kde)
-    - [Xfce](#xfce)
-    - [LXDE](#lxde)
-  - [Window Managers](#window-managers)
-    - [Openbox](#openbox)
-    - [Fluxbox](#fluxbox)
-    - [i3](#i3)
-  - [Installing a Desktop Environment](#installing-a-desktop-environment)
-  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
-  - [Installing a Window Manager](#installing-a-window-manager)
-  - [Configuring a Window Manager](#configuring-a-window-manager)
-- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
-- [Testemonials](#testemonials)
+    - [Cron](#cron)
+    - [Devices](#devices)
+    - [Drivers](#drivers)
+    - [Processes](#processes)
+    - [cURL](#curl)
+    - [Vim (Vi IMproved)](#vim-vi-improved)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+        - [Buying a Domain Name](#buying-a-domain-name)
+        - [Namecheap](#namecheap)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+      - [World Wide Web](#world-wide-web)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+      - [Web Server](#web-server)
+        - [Apache](#apache)
+        - [Nginx](#nginx)
+        - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [CI/CD](#cicd)
+      - [Continuous Delivery](#continuous-delivery)
+      - [Continuous Integration](#continuous-integration)
+      - [CI/CD Tools](#cicd-tools)
+        - [Argo CD](#argo-cd)
+        - [CircleCI](#circleci)
+        - [GitHub Actions](#github-actions)
+        - [GitLab CI/CD](#gitlab-cicd)
+        - [Jenkins](#jenkins)
+        - [Portainer](#portainer)
+        - [Travis CI](#travis-ci)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Azure DNS](#azure-dns)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+      - [OpenDNS](#opendns)
+      - [Bind](#bind)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [Is HTML a programming language?](#is-html-a-programming-language)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTP methods](#http-methods)
+      - [HTTP headers](#http-headers)
+      - [HTTPS](#https)
+      - [API (Application Programming Interface)](#api-application-programming-interface)
+      - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+    - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+        - [Jeff Geerling](#jeff-geerling)
+        - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
+        - [Ansible Galaxy](#ansible-galaxy)
+        - [Ansible Tower](#ansible-tower)
+        - [Ansible Vault](#ansible-vault)
+        - [Ansible Molecule](#ansible-molecule)
+        - [Ansible Container](#ansible-container)
+        - [Ansible Network Automation](#ansible-network-automation)
+        - [Ansible Cloud Automation](#ansible-cloud-automation)
+        - [Ansible Container Orchestration](#ansible-container-orchestration)
+        - [Ansible Service Broker](#ansible-service-broker)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Keys](#ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL Certificates](#ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+    - [Desktop Environments](#desktop-environments)
+      - [GNOME](#gnome)
+      - [KDE](#kde)
+      - [Xfce](#xfce)
+      - [LXDE](#lxde)
+    - [Window Managers](#window-managers)
+      - [Openbox](#openbox)
+      - [Fluxbox](#fluxbox)
+      - [i3](#i3)
+    - [Installing a Desktop Environment](#installing-a-desktop-environment)
+    - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+    - [Installing a Window Manager](#installing-a-window-manager)
+    - [Configuring a Window Manager](#configuring-a-window-manager)
+  - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
+  - [Testemonials](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -514,6 +517,8 @@ You might imagine that backend developers are responsible for creating and maint
 
 #### Cybersecurity
 
+[Awesome Security](https://github.com/sbilly/awesome-security)
+
 A cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. Cybersecurity analysts often work on tasks such as:
 
 **Analyzing and monitoring network security:** Cybersecurity analysts might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
@@ -602,9 +607,11 @@ Bugcrowd is a platform that connects organizations with hackers to find and fix 
 
 HackerOne is a platform that connects organizations with hackers to find and fix security vulnerabilities.
 
+#### Data analysis and interpretation
+
 In the realm of data analysis and interpretation, there are three key roles that play important roles in understanding and utilizing data: data science, artificial intelligence, and machine learning.
 
-#### Data Science
+##### Data Science
 
 A data scientist is responsible for analyzing and interpreting data to inform business decisions and solve problems. They work on tasks such as analyzing and interpreting data, developing models and algorithms, communicating findings and insights, and collaborating with other teams to ensure that the data they analyze is relevant and useful.
 
@@ -683,20 +690,6 @@ Fluent Design is a design system that was developed by Microsoft to create a con
 [Material Design](https://m3.material.io)
 
 Material Design is a design system that was developed by Google to create a consistent user experience across all of its products. Material Design is often used by UX designers to create user interfaces that are easy to use and that meet the needs of users.
-
-#### DevOps
-
-In the realm of software development and delivery, there are four key roles that play important roles in improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, and platform engineering.
-
-DevOps is the practice of integrating development and operations to improve the efficiency and effectiveness of software development and delivery. To get started with DevOps, it is important to understand the principles of DevOps, choose the right tools, automate processes, collaborate with your team, and monitor and measure performance.
-
-##### DevSecOps
-
-DevSecOps is the practice of integrating security into the software development and delivery process. DevSecOps professionals work on tasks such as integrating security into the software development and delivery process and collaborating with other teams to ensure that security is integrated into the process.
-
-##### GitOps
-
-GitOps is the practice of using Git as the source of truth for your infrastructure. GitOps professionals work on tasks such as using Git as the source of truth for your infrastructure and collaborating with other teams to ensure that Git is used as the source of truth.
 
 #### Developer Advocacy and Developer Relations
 
@@ -860,20 +853,6 @@ Customer service professionals are responsible for providing support to customer
 
 You might imagine that customer service professionals are responsible for providing support to customers before, during, and after a purchase. They play a crucial role in ensuring that the customer service processes are efficient and effective, and in supporting the needs and requirements of the organization.
 
-##### Supply Chain Management
-
-Supply chain management professionals are responsible for the coordination and management of the flow of goods, information, and services from raw material suppliers to end customers. Supply chain management professionals often work on tasks such as:
-
-**Managing relationships with suppliers:** Supply chain management professionals might work to manage relationships with suppliers, negotiating contracts and ensuring that the company's needs are met in a timely and cost-effective manner.
-
-**Managing the flow of goods:** Supply chain management professionals might work to manage the flow of goods from raw material suppliers to end customers, ensuring that the right products are delivered to the right place at the right time.
-
-**Ensuring efficiency and effectiveness:** Supply chain management professionals might work to ensure that the supply chain is efficient and effective, and identify and implement improvements where necessary.
-
-**Collaborating with other teams:** Supply chain management professionals might work closely with other teams such as finance, marketing, and sales to ensure that the company is meeting its goals and objectives.
-
-You might imagine that supply chain management professionals are responsible for the coordination and management of the flow of goods, information, and services from raw material suppliers to end customers. They play a crucial role in ensuring that the supply chain is efficient and effective, and in supporting the needs and requirements of the organization.
-
 ##### Logistics
 
 Logistics professionals are responsible for the planning, implementation, and management of the efficient, effective, and timely flow and storage of goods, services, and related information from the point of origin to the point of consumption. Logistics professionals often work on tasks such as:
@@ -888,6 +867,20 @@ Logistics professionals are responsible for the planning, implementation, and ma
 
 You might imagine that logistics professionals are responsible for the planning, implementation, and management of the efficient, effective, and timely flow and storage of goods, services, and related information from the point of origin to the point of consumption. They play a crucial role in ensuring that the logistics processes are efficient and effective, and in supporting the needs and requirements of the organization.
 
+##### Supply Chain Management
+
+Supply chain management professionals are responsible for the coordination and management of the flow of goods, information, and services from raw material suppliers to end customers. Supply chain management professionals often work on tasks such as:
+
+**Managing relationships with suppliers:** Supply chain management professionals might work to manage relationships with suppliers, negotiating contracts and ensuring that the company's needs are met in a timely and cost-effective manner.
+
+**Managing the flow of goods:** Supply chain management professionals might work to manage the flow of goods from raw material suppliers to end customers, ensuring that the right products are delivered to the right place at the right time.
+
+**Ensuring efficiency and effectiveness:** Supply chain management professionals might work to ensure that the supply chain is efficient and effective, and identify and implement improvements where necessary.
+
+**Collaborating with other teams:** Supply chain management professionals might work closely with other teams such as finance, marketing, and sales to ensure that the company is meeting its goals and objectives.
+
+You might imagine that supply chain management professionals are responsible for the coordination and management of the flow of goods, information, and services from raw material suppliers to end customers. They play a crucial role in ensuring that the supply chain is efficient and effective, and in supporting the needs and requirements of the organization.
+
 #### Sales
 
 Sales professionals are responsible for the promotion and sale of a company's products and services. Sales professionals often work on tasks such as:
@@ -899,6 +892,22 @@ Sales professionals are responsible for the promotion and sale of a company's pr
 **Collaborating with other teams:** Sales professionals might work closely with other teams such as finance, marketing, and operations to ensure that the company is meeting its goals and objectives.
 
 You might imagine that sales professionals are responsible for the promotion and sale of a company's products and services. They play a crucial role in ensuring that the sales processes are efficient and effective, and in supporting the needs and requirements of the organization.
+
+#### Software development and delivery
+
+In the realm of software development and delivery, there are four key roles that play important roles in improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, and platform engineering.
+
+##### DevOps
+
+DevOps is the practice of integrating development and operations to improve the efficiency and effectiveness of software development and delivery. To get started with DevOps, it is important to understand the principles of DevOps, choose the right tools, automate processes, collaborate with your team, and monitor and measure performance.
+
+##### DevSecOps
+
+DevSecOps is the practice of integrating security into the software development and delivery process. DevSecOps professionals work on tasks such as integrating security into the software development and delivery process and collaborating with other teams to ensure that security is integrated into the process.
+
+##### GitOps
+
+GitOps is the practice of using Git as the source of truth for your infrastructure. GitOps professionals work on tasks such as using Git as the source of truth for your infrastructure and collaborating with other teams to ensure that Git is used as the source of truth.
 
 ## Chapter Two - The Fundamentals
 
@@ -952,13 +961,13 @@ So set sail and explore the seas of data, but always remember to respect the rul
 
 Aye aye, matey! Here are some examples of common tasks that a pirate (or a Linux user) might encounter when using the Linux filesystem:
 
-Navigating the filesystem: Just like how a pirate navigates the open seas, a Linux user can navigate the filesystem using the `cd` command to change directories and the `ls` command to list the contents of a directory. For example, to navigate to the root directory, a pirate might type `cd /`, and to see a list of the files and directories within the current directory, they might type `ls`.
+**Navigating the filesystem:** Just like how a pirate navigates the open seas, a Linux user can navigate the filesystem using the `cd` command to change directories and the `ls` command to list the contents of a directory. For example, to navigate to the root directory, a pirate might type `cd /`, and to see a list of the files and directories within the current directory, they might type `ls`.
 
-Creating and deleting files and directories: A pirate might need to create a new file or directory to store their loot or maps. To do this, they can use the `touch` command to create a new file or the `mkdir` command to create a new directory. For example, to create a new file called `treasure_map.txt` within the current directory, a pirate might type `touch treasure_map.txt`. To delete a file or directory, they can use the `rm` command. For example, to delete the file `treasure_map.txt`, a pirate might type `rm treasure_map.txt`.
+**Creating and deleting files and directories:** A pirate might need to create a new file or directory to store their loot or maps. To do this, they can use the `touch` command to create a new file or the `mkdir` command to create a new directory. For example, to create a new file called `treasure_map.txt` within the current directory, a pirate might type `touch treasure_map.txt`. To delete a file or directory, they can use the `rm` command. For example, to delete the file `treasure_map.txt`, a pirate might type `rm treasure_map.txt`.
 
-Copying and moving files and directories: A pirate might need to copy or move a file or directory from one location to another, just like how they might need to move their treasure chest from one part of the ship to another. To copy a file or directory, a pirate can use the `cp` command, and to move a file or directory, they can use the `mv` command. For example, to copy the file `treasure_map.txt` from the current directory to the home directory, a pirate might type `cp treasure_map.txt /home`. To move the file `treasure_map.txt` from the current directory to the home directory, a pirate might type `mv treasure_map.txt /home`.
+**Copying and moving files and directories:** A pirate might need to copy or move a file or directory from one location to another, just like how they might need to move their treasure chest from one part of the ship to another. To copy a file or directory, a pirate can use the `cp` command, and to move a file or directory, they can use the `mv` command. For example, to copy the file `treasure_map.txt` from the current directory to the home directory, a pirate might type `cp treasure_map.txt /home`. To move the file `treasure_map.txt` from the current directory to the home directory, a pirate might type `mv treasure_map.txt /home`.
 
-Viewing and editing files: A pirate might need to view the contents of a file or edit it to update their treasure map. To view the contents of a file, a pirate can use the `cat` command, and to edit a file, they can use a text editor like `nano` or `vi`. For example, to view the contents of the file `treasure_map.txt`, a pirate might type `cat treasure_map.txt`, and to edit the file `treasure_map.txt` using the `nano` text editor, they might type `nano treasure_map.txt`.
+**Viewing and editing files:** A pirate might need to view the contents of a file or edit it to update their treasure map. To view the contents of a file, a pirate can use the `cat` command, and to edit a file, they can use a text editor like `nano` or `vi`. For example, to view the contents of the file `treasure_map.txt`, a pirate might type `cat treasure_map.txt`, and to edit the file `treasure_map.txt` using the `nano` text editor, they might type `nano treasure_map.txt`.
 
 I hope these examples give you a better understanding of how the Linux filesystem works and how a pirate might use it to complete common tasks. Arrr!
 
@@ -1003,7 +1012,7 @@ chmod 755 treasurehunter.sh
 chmod 666 treasurehunter.sh
 ```
 
-#### chown
+##### chown
 
 Ahoy matey! The `chown` command is used to change the owner and group of a file or directory. Ye can use it to change the owner and group of a file or directory to a specific user or group.
 
@@ -1016,21 +1025,6 @@ chown pirate:pirates treasure_map.txt
 chown -R pirate treasure_chest
 # Change owner to pirate and group to pirates recursively (treasure_chest)
 chown -R pirate:pirates treasure_chest
-```
-
-#### chroot
-
-Ahoy matey! The `chroot` command is used to change the root directory for the current shell session. Ye can use it to run a command or shell with a different root directory.
-
-```bash
-# Change root directory to /tmp (bash)
-chroot /tmp bash
-# Change root directory to /tmp (sh)
-chroot /tmp sh
-# Change root directory to /tmp (zsh)
-chroot /tmp zsh
-# Change root directory to /tmp (fish)
-chroot /tmp fish
 ```
 
 ### Networking
@@ -1316,6 +1310,21 @@ A Bash one-liner is a command that can be used to perform a single task. For exa
 Bash one-liners can be used to perform a wide variety of tasks, including searching for files, counting lines, and sorting text. The `man` command can be used to view the manual page for a command, which will provide information about how the command can be used.
 
 I hope this helps you understand what a Bash one-liner is and how a pirate might use it to perform a single task. Arrr!
+
+### chroot
+
+Ahoy matey! The `chroot` command is used to change the root directory for the current shell session. Ye can use it to run a command or shell with a different root directory.
+
+```bash
+# Change root directory to /tmp (bash)
+chroot /tmp bash
+# Change root directory to /tmp (sh)
+chroot /tmp sh
+# Change root directory to /tmp (zsh)
+chroot /tmp zsh
+# Change root directory to /tmp (fish)
+chroot /tmp fish
+```
 
 ### Cron
 
@@ -1887,6 +1896,8 @@ Git be a powerful tool that be widely used by developers around the world, and i
 
 #### GitHub
 
+[GitHub](https://github.com)
+
 GitHub be a web-based platform that be used by developers to host and share their code repositories, as well as collaborate with other developers on software projects. It be built on top of Git, the version control system that I described in me previous message.
 
 GitHub be a great place for developers to store their code and track changes to it over time. It be also a great place to share code with other developers and collaborate on projects together. Ye can use GitHub to create new repositories for yer own projects, or ye can contribute to other people's projects by forking their repositories and submitting pull requests.
@@ -1894,6 +1905,8 @@ GitHub be a great place for developers to store their code and track changes to 
 GitHub be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what GitHub be and how it can be used by developers!
 
 #### GitLab
+
+[GitLab](https://gitlab.com)
 
 GitLab be a web-based platform that be used by developers to host and share their code repositories, as well as collaborate with other developers on software projects. It be built on top of Git, the version control system that I described in me previous message.
 
@@ -1903,6 +1916,8 @@ GitLab be a valuable resource for developers, as it be a place to find and share
 
 #### Gitea
 
+[Gitea](https://gitea.io)
+
 Gitea be a web-based platform that be used by developers to host and share their code repositories, as well as collaborate with other developers on software projects. It be built on top of Git, the version control system that I described in me previous message.
 
 Gitea be a great place for developers to store their code and track changes to it over time. It be also a great place to share code with other developers and collaborate on projects together. Ye can use Gitea to create new repositories for yer own projects, or ye can contribute to other people's projects by forking their repositories and submitting pull requests.
@@ -1910,6 +1925,8 @@ Gitea be a great place for developers to store their code and track changes to i
 Gitea be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what Gitea be and how it can be used by developers!
 
 ### Homebrew
+
+[Homebrew](https://brew.sh)
 
 Homebrew is a free and open-source package management system for macOS and Linux that simplifies the installation of software on those operating systems. It allows users to install and manage software packages written in a variety of programming languages, such as Python, Ruby, and Go, as well as libraries and other dependencies needed to run those programs.
 
