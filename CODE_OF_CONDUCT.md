@@ -1,3 +1,7 @@
+# Code of Conduct for Scurvy Sea Dogs
+
+The Linux for Pirates! project be committed to creating a positive and inclusive environment for all scurvy sea dogs, whether ye be a contributor, user, or member of the community. We be adoptin' the [Contributor Covenant](https://www.contributor-covenant.org/) as our code of conduct, which outlines the expectations for behavior and conduct in our community.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -5,10 +9,6 @@
 - [Code of Conduct for Scurvy Sea Dogs](#code-of-conduct-for-scurvy-sea-dogs)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Code of Conduct for Scurvy Sea Dogs
-
-The Linux for Pirates! project be committed to creating a positive and inclusive environment for all scurvy sea dogs, whether ye be a contributor, user, or member of the community. We be adoptin' the [Contributor Covenant](https://www.contributor-covenant.org/) as our code of conduct, which outlines the expectations for behavior and conduct in our community.
 
 All scurvy sea dogs be expected to adhere to the following code of conduct:
 
