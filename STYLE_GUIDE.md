@@ -6,12 +6,11 @@ Welcome to the style guide for the Linux for Pirates! project! This guide is int
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Style Guide for Scurvy Sea Dogs](#style-guide-for-scurvy-sea-dogs)
-  - [Language](#language)
-  - [Grammar and Punctuation](#grammar-and-punctuation)
-  - [Tone and Voice](#tone-and-voice)
-  - [Formatting](#formatting)
-  - [Images and Media](#images-and-media)
+- [Language](#language)
+- [Grammar and Punctuation](#grammar-and-punctuation)
+- [Tone and Voice](#tone-and-voice)
+- [Formatting](#formatting)
+- [Images and Media](#images-and-media)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
