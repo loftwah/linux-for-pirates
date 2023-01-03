@@ -6,19 +6,20 @@ Thank you for your interest in contributing to Linux for Pirates!! We are always
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Purpose and Goals](#purpose-and-goals)
-- [Types of Contributions](#types-of-contributions)
-- [To contribute to Linux for Pirates!, please follow these steps:](#to-contribute-to-linux-for-pirates-please-follow-these-steps)
-  - [Setting Up Your Development Environment](#setting-up-your-development-environment)
-- [Communication and Collaboration](#communication-and-collaboration)
-- [Resources for Contributors](#resources-for-contributors)
-- [Using Pirate Speak](#using-pirate-speak)
+- [Contributing to Linux for Pirates!](#contributing-to-linux-for-pirates)
+  - [Purpose and Goals](#purpose-and-goals)
+  - [Types of Contributions](#types-of-contributions)
+  - [To contribute to Linux for Pirates!, please follow these steps:](#to-contribute-to-linux-for-pirates-please-follow-these-steps)
+    - [Setting Up Your Development Environment](#setting-up-your-development-environment)
+  - [Communication and Collaboration](#communication-and-collaboration)
+  - [Resources for Contributors](#resources-for-contributors)
+  - [Using Pirate Speak](#using-pirate-speak)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Purpose and Goals
 
-The Linux for Pirates! guide aims to provide a comprehensive and user-friendly resource for learning about the Linux operating system and advancing as a professional in the field. Our mission is to make it easy for people of all backgrounds and experience levels to learn Linux and begin using it effectively in their professional lives.
+The Linux for Pirates! guide is designed to be a comprehensive and approachable resource for learning about Linux and advancing as a professional in the field. Our goal is to make it easy for individuals of all skill levels, including beginners and experienced users, to learn Linux and apply it in their professional lives. With a focus on Cloud Computing and DevOps, this book will provide you with the knowledge and skills you need to succeed in the Linux job market and secure a job as a Linux administrator.
 
 ## Types of Contributions
 
