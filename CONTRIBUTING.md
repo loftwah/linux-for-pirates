@@ -6,14 +6,13 @@ Thank you for your interest in contributing to Linux for Pirates!! We are always
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Contributing to Linux for Pirates!](#contributing-to-linux-for-pirates)
-  - [Purpose and Goals](#purpose-and-goals)
-  - [Types of Contributions](#types-of-contributions)
-  - [To contribute to Linux for Pirates!, please follow these steps:](#to-contribute-to-linux-for-pirates-please-follow-these-steps)
-    - [Setting Up Your Development Environment](#setting-up-your-development-environment)
-  - [Communication and Collaboration](#communication-and-collaboration)
-  - [Resources for Contributors](#resources-for-contributors)
-  - [Using Pirate Speak](#using-pirate-speak)
+- [Purpose and Goals](#purpose-and-goals)
+- [Types of Contributions](#types-of-contributions)
+- [To contribute to Linux for Pirates!, please follow these steps:](#to-contribute-to-linux-for-pirates-please-follow-these-steps)
+  - [Setting Up Your Development Environment](#setting-up-your-development-environment)
+- [Communication and Collaboration](#communication-and-collaboration)
+- [Resources for Contributors](#resources-for-contributors)
+- [Using Pirate Speak](#using-pirate-speak)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
