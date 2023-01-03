@@ -1,3 +1,7 @@
+# Contributing to Linux for Pirates!
+
+Thank you for your interest in contributing to Linux for Pirates!! We are always looking for talented writers and technical reviewers to help us create the best possible resource for learning about Linux.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -12,10 +16,6 @@
   - [Using Pirate Speak](#using-pirate-speak)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Contributing to Linux for Pirates!
-
-Thank you for your interest in contributing to Linux for Pirates!! We are always looking for talented writers and technical reviewers to help us create the best possible resource for learning about Linux.
 
 ## Purpose and Goals
 
