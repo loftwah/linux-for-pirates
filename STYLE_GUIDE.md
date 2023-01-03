@@ -1,3 +1,7 @@
+# Style Guide for Scurvy Sea Dogs
+
+Welcome to the style guide for the Linux for Pirates! project! This guide is intended to help scurvy sea dogs maintain a consistent and clear writing style in all content for the project.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -10,10 +14,6 @@
   - [Images and Media](#images-and-media)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Style Guide for Scurvy Sea Dogs
-
-Welcome to the style guide for the Linux for Pirates! project! This guide is intended to help scurvy sea dogs maintain a consistent and clear writing style in all content for the project.
 
 ## Language
 
