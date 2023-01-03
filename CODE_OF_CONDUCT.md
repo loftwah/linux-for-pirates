@@ -4,9 +4,8 @@ The Linux for Pirates! project be committed to creating a positive and inclusive
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
 
-- [Code of Conduct for Scurvy Sea Dogs](#code-of-conduct-for-scurvy-sea-dogs)
+
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
