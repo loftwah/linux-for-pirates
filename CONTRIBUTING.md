@@ -46,7 +46,7 @@ To contribute to the Linux for Pirates! guide, please follow these steps:
 
 > **Note** No pull requests will be accepted without an issue, except in specific cases that will be approved on an ad-hoc basis.
 
-- To open an issue, go to the [issue tracker](https://github.com/YOUR-USERNAME/linux-for-pirates/issues) and click the "New Issue" button. Provide a clear and concise description of your proposed contribution, and any relevant details or questions.
+- To open an issue, go to the [issue tracker](https://github.com/loftwah/linux-for-pirates/issues) and click the "New Issue" button. Provide a clear and concise description of your proposed contribution, and any relevant details or questions.
 
 - Fork the repository
 
