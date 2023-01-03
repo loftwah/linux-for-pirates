@@ -6,12 +6,13 @@ Thank you for your interest in contributing to the Linux for Pirates! guide! Our
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Purpose and Goals](#purpose-and-goals)
-- [Contributions](#contributions)
-  - [Process for Accepting Contributions](#process-for-accepting-contributions)
-- [Communication and Collaboration](#communication-and-collaboration)
-- [Resources for Contributors](#resources-for-contributors)
-- [Using Pirate Speak](#using-pirate-speak)
+- [Contributing to Linux for Pirates!](#contributing-to-linux-for-pirates)
+  - [Purpose and Goals](#purpose-and-goals)
+  - [Contributions](#contributions)
+    - [Process for Accepting Contributions](#process-for-accepting-contributions)
+  - [Communication and Collaboration](#communication-and-collaboration)
+  - [Resources for Contributors](#resources-for-contributors)
+  - [Using Pirate Speak](#using-pirate-speak)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -77,6 +78,42 @@ To create a new branch, enter the following command in the terminal:
 ```
 
 Replace `"NEW-BRANCH-NAME"` with a descriptive name for your branch.
+
+- Switch to the new branch
+
+    Now that you've created a new branch, you need to switch to it. Enter the following command in the terminal:
+
+    `git checkout NEW-BRANCH-NAME`
+
+- Make your changes
+
+    Open the files in the Linux for Pirates! repository in your text editor and make the changes you want to contribute.
+
+- Commit your changes
+
+    When you're finished making changes, you need to "commit" them to the repository. This is like saving your changes, but it also allows you to add a message explaining what you did.
+
+To commit your changes, enter the following command in the terminal:
+
+`git commit -am "YOUR COMMIT MESSAGE"`
+
+Replace `"YOUR COMMIT MESSAGE"` with a brief description of your changes.
+
+- Push your changes to GitHub
+
+    Now that you've committed your changes, you need to "push" them to your fork of the repository on GitHub. This will make your changes visible to the rest of the team.
+
+To push your changes, enter the following command in the terminal:
+
+`git push origin NEW-BRANCH-NAME`
+
+- Submit a pull request
+
+    Once you've pushed your changes to GitHub, you can submit a "pull request" to merge your changes into the main branch of the repository.
+
+    To submit a pull request, go to the main page of your fork of the repository on GitHub and click the "Compare and pull request" button. Provide a clear and concise description of your changes, and any relevant details or questions.
+
+    The team will review your pull request and provide feedback as needed. Once your pull request has been reviewed and accepted, it will be merged into the main branch of the repository.
 
 ## Communication and Collaboration
 
