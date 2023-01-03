@@ -6,19 +6,20 @@ Thank you for your interest in contributing to Linux for Pirates!! We are always
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Purpose and Goals](#purpose-and-goals)
-- [Types of Contributions](#types-of-contributions)
-- [To contribute to Linux for Pirates!, please follow these steps:](#to-contribute-to-linux-for-pirates-please-follow-these-steps)
-  - [Setting Up Your Development Environment](#setting-up-your-development-environment)
-- [Communication and Collaboration](#communication-and-collaboration)
-- [Resources for Contributors](#resources-for-contributors)
-- [Using Pirate Speak](#using-pirate-speak)
+- [Contributing to Linux for Pirates!](#contributing-to-linux-for-pirates)
+  - [Purpose and Goals](#purpose-and-goals)
+  - [Types of Contributions](#types-of-contributions)
+  - [To contribute to Linux for Pirates!, please follow these steps:](#to-contribute-to-linux-for-pirates-please-follow-these-steps)
+    - [Setting Up Your Development Environment](#setting-up-your-development-environment)
+  - [Communication and Collaboration](#communication-and-collaboration)
+  - [Resources for Contributors](#resources-for-contributors)
+  - [Using Pirate Speak](#using-pirate-speak)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Purpose and Goals
 
-The purpose of Linux for Pirates! is to provide a comprehensive and accessible guide to learning about the Linux operating system. Our goal is to make it easy for anyone, regardless of their background or experience, to learn about Linux and get started using it.
+The Linux for Pirates! guide aims to provide a comprehensive and user-friendly resource for learning about the Linux operating system and advancing as a professional in the field. Our mission is to make it easy for people of all backgrounds and experience levels to learn Linux and begin using it effectively in their professional lives.
 
 ## Types of Contributions
 
