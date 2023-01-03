@@ -6,12 +6,13 @@ Thank you for your interest in contributing to the Linux for Pirates! guide! Our
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Purpose and Goals](#purpose-and-goals)
-- [Contributions](#contributions)
-  - [Process for Accepting Contributions](#process-for-accepting-contributions)
-- [Communication and Collaboration](#communication-and-collaboration)
-- [Resources for Contributors](#resources-for-contributors)
-- [Using Pirate Speak](#using-pirate-speak)
+- [Contributing to Linux for Pirates!](#contributing-to-linux-for-pirates)
+  - [Purpose and Goals](#purpose-and-goals)
+  - [Contributions](#contributions)
+    - [Process for Accepting Contributions](#process-for-accepting-contributions)
+  - [Communication and Collaboration](#communication-and-collaboration)
+  - [Resources for Contributors](#resources-for-contributors)
+  - [Using Pirate Speak](#using-pirate-speak)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -130,7 +131,7 @@ Here are some guidelines for communication and collaboration:
 To help you get started contributing to Linux for Pirates!, here are some resources you may find useful:
 
 - Style Guide (TBA)
-- Code of Conduct (TBA)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
 
 Linux for Pirates! is committed to creating a positive and inclusive environment for contributors. We have adopted the Contributor Covenant as our code of conduct, which outlines the expectations for behavior and conduct in our community.
 
