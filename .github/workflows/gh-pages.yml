@@ -1,0 +1,25 @@
+name: mdBook
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup mdBook
+      run: |
+        apt-get update
+        apt-get install -y build-essential
+        cargo install mdbook
+    - name: Build book
+      run: mdbook build
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./book
