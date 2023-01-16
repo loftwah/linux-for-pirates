@@ -8,271 +8,247 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-    - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
-    - [What is the MIT License?](#what-is-the-mit-license)
-  - [What is free software?](#what-is-free-software)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Ubuntu](#ubuntu)
-    - [Arch Linux](#arch-linux)
-  - [Setting up Ubuntu](#setting-up-ubuntu)
-    - [What to do next?](#what-to-do-next)
-      - [Checklist](#checklist)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](#backend)
-    - [Cloud Computing](#cloud-computing)
-    - [Cybersecurity](#cybersecurity)
-      - [Blue Team](#blue-team)
-      - [Purple Team](#purple-team)
-      - [Red Team](#red-team)
-      - [Differences between the teams](#differences-between-the-teams)
-      - [Penetration Testing](#penetration-testing)
-      - [Phishing](#phishing)
-      - [Social Engineering](#social-engineering)
-      - [Kevin Mitnick](#kevin-mitnick)
-      - [Security Architecture](#security-architecture)
-      - [Security Compliance](#security-compliance)
-      - [Security Engineering](#security-engineering)
-      - [Differences between Security roles](#differences-between-security-roles)
-      - [Bugcrowd](#bugcrowd)
-      - [Hackerone](#hackerone)
-    - [Data analysis and interpretation](#data-analysis-and-interpretation)
-      - [Data Science](#data-science)
-      - [Artificial Intelligence](#artificial-intelligence)
-      - [Machine Learning](#machine-learning)
-      - [Differences between the sciences](#differences-between-the-sciences)
-    - [Database](#database)
-      - [Graph](#graph)
-      - [noSQL](#nosql)
-      - [SQL](#sql)
-    - [Design](#design)
-      - [Figma](#figma)
-      - [Fluent Design](#fluent-design)
-      - [Material Design](#material-design)
-    - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
-      - [Developer Advocate](#developer-advocate)
-      - [DevRel (Developer Relations)](#devrel-developer-relations)
-    - [Finance](#finance)
-    - [Frontend](#frontend)
-    - [Management](#management)
-      - [Product Management](#product-management)
-      - [Project Management](#project-management)
-    - [Marketing](#marketing)
-    - [Network Engineering](#network-engineering)
-    - [Operations](#operations)
-      - [Customer Service](#customer-service)
-      - [Logistics](#logistics)
-      - [Supply Chain Management](#supply-chain-management)
-    - [Sales](#sales)
-    - [Software development and delivery](#software-development-and-delivery)
-      - [DevOps](#devops)
-      - [DevSecOps](#devsecops)
-      - [GitOps](#gitops)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [Handybilly](#handybilly)
-  - [Linux filesystem](#linux-filesystem)
-    - [Filesystem examples](#filesystem-examples)
-    - [Permissions](#permissions)
-      - [chmod](#chmod)
-      - [chown](#chown)
-  - [Networking](#networking)
-    - [ip](#ip)
-    - [Netcat](#netcat)
-    - [nmap](#nmap)
-    - [tcpdump](#tcpdump)
-    - [Wireshark](#wireshark)
-  - [Bash](#bash)
-    - [.bashrc](#bashrc)
-    - [Bash scripting](#bash-scripting)
-    - [Bash history](#bash-history)
-    - [Bash one-liners](#bash-one-liners)
-  - [chroot](#chroot)
-  - [Cron](#cron)
-  - [Devices](#devices)
-  - [Drivers](#drivers)
-  - [Processes](#processes)
-  - [cURL](#curl)
-  - [Vim (Vi IMproved)](#vim-vi-improved)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
-  - [VS Code](#vs-code)
-  - [The Internet](#the-internet)
-    - [Domain name](#domain-name)
-      - [Domain Name Registrar](#domain-name-registrar)
-      - [Buying a Domain Name](#buying-a-domain-name)
-      - [Namecheap](#namecheap)
-    - [IANA (Internet Assigned Numbers Authority)](#iana-internet-assigned-numbers-authority)
-    - [ICAAN (Internet Corporation for Assigned Names and Numbers)](#icaan-internet-corporation-for-assigned-names-and-numbers)
-    - [Internet Service Provider](#internet-service-provider)
-    - [Web Browser](#web-browser)
-      - [Document Object Model (DOM)](#document-object-model-dom)
-      - [Virtual DOM](#virtual-dom)
-      - [How do they work together?](#how-do-they-work-together)
-    - [World Wide Web](#world-wide-web)
-      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
-    - [Web Server](#web-server)
-      - [Apache](#apache)
-      - [Nginx](#nginx)
-      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
-  - [Amazon Web Services](#amazon-web-services)
-  - [Cloudflare](#cloudflare)
-  - [CI/CD](#cicd)
-    - [Continuous Delivery](#continuous-delivery)
-    - [Continuous Integration](#continuous-integration)
-    - [CI/CD Tools](#cicd-tools)
-      - [Argo CD](#argo-cd)
-      - [CircleCI](#circleci)
-      - [GitHub Actions](#github-actions)
-      - [GitLab CI/CD](#gitlab-cicd)
-      - [Jenkins](#jenkins)
-      - [Portainer](#portainer)
-      - [Travis CI](#travis-ci)
-  - [DigitalOcean](#digitalocean)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](#dns-domain-name-system)
-    - [Types of DNS Records](#types-of-dns-records)
-    - [Examples of DNS Records](#examples-of-dns-records)
-    - [DNS servers](#dns-servers)
-    - [DNSSEC](#dnssec)
-    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
-    - [DNS over TLS (DoT)](#dns-over-tls-dot)
-    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
-    - [DNSCrypt](#dnscrypt)
-    - [DNS Amplification Attacks](#dns-amplification-attacks)
-    - [Hosts file](#hosts-file)
-    - [AWS Route 53](#aws-route-53)
-    - [Azure DNS](#azure-dns)
-    - [Google Cloud DNS](#google-cloud-dns)
-    - [DigitalOcean DNS](#digitalocean-dns)
-    - [Cloudflare DNS](#cloudflare-dns)
-    - [OpenDNS](#opendns)
-    - [Bind](#bind)
-  - [Docker](#docker)
-    - [Install Docker](#install-docker)
-      - [Docker Engine](#docker-engine)
-    - [Docker Compose](#docker-compose)
-      - [Install Docker Compose](#install-docker-compose)
-    - [Docker Swarm](#docker-swarm)
-  - [Git](#git)
-    - [GitHub](#github)
-      - [GitHub sounds a litttle overwhelming. What be the basics?](#github-sounds-a-litttle-overwhelming-what-be-the-basics)
-    - [GitLab](#gitlab)
-    - [Gitea](#gitea)
-    - [Getting Started with Git and GitHub](#getting-started-with-git-and-github)
-      - [What if I get stuck?](#what-if-i-get-stuck)
-      - [Get involved in open-source projects](#get-involved-in-open-source-projects)
-      - [Eddie Jaoude](#eddie-jaoude)
-      - [EddieHub and LinkFree](#eddiehub-and-linkfree)
-  - [Homebrew](#homebrew)
-  - [HTML](#html)
-    - [Meta tags](#meta-tags)
-    - [Is HTML a programming language?](#is-html-a-programming-language)
-    - [CSS](#css)
-  - [HTTP](#http)
-    - [HTTP error codes](#http-error-codes)
-    - [HTTP methods](#http-methods)
-    - [HTTP headers](#http-headers)
-    - [HTTPS](#https)
-    - [API (Application Programming Interface)](#api-application-programming-interface)
-      - [GraphQL (Graph Query Language)](#graphql-graph-query-language)
-      - [REST (Representational State Transfer)](#rest-representational-state-transfer)
-      - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
-  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Ansible](#ansible)
-      - [Install Ansible](#install-ansible)
-      - [Jeff Geerling](#jeff-geerling)
-      - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
-      - [Ansible Galaxy](#ansible-galaxy)
-      - [Ansible Tower](#ansible-tower)
-      - [Ansible Vault](#ansible-vault)
-      - [Ansible Molecule](#ansible-molecule)
-      - [Ansible Container](#ansible-container)
-      - [Ansible Network Automation](#ansible-network-automation)
-      - [Ansible Cloud Automation](#ansible-cloud-automation)
-      - [Ansible Container Orchestration](#ansible-container-orchestration)
-      - [Ansible Service Broker](#ansible-service-broker)
-    - [Terraform](#terraform)
-      - [Install Terraform](#install-terraform)
-      - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
-  - [IP Addresses](#ip-addresses)
-    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
-  - [JavaScript](#javascript)
-  - [Kubernetes](#kubernetes)
-  - [Latency](#latency)
-  - [Logging](#logging)
-    - [Logrotate](#logrotate)
-  - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
-  - [SSH](#ssh)
-    - [SSH Agent](#ssh-agent)
-    - [SSH Confguration](#ssh-confguration)
-    - [SSH Keys](#ssh-keys)
-      - [How to generate SSH keys](#how-to-generate-ssh-keys)
-    - [SSH Port Forwarding](#ssh-port-forwarding)
-  - [SSL/TLS](#ssltls)
-    - [SSL Certificates](#ssl-certificates)
-      - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
-    - [Let's Encrypt](#lets-encrypt)
-    - [Certificate Authorities](#certificate-authorities)
-    - [CAA Records](#caa-records)
-    - [OCSP Stapling](#ocsp-stapling)
-    - [OCSP Must-Staple](#ocsp-must-staple)
-  - [Streaming](#streaming)
-  - [Subnet](#subnet)
-    - [Subnet mask](#subnet-mask)
-    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
-    - [Subnetting Cheatsheet](#subnetting-cheatsheet)
-      - [Subnet Mask](#subnet-mask-1)
-      - [CIDR Notation](#cidr-notation)
-      - [Subnetting a Network](#subnetting-a-network)
-      - [Subnetting Examples](#subnetting-examples)
-      - [Subnetting Practice](#subnetting-practice)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
-  - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [Common problems](#common-problems)
-  - [Initiation](#initiation)
-    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
-    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
-    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
-    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-  - [Is it YAML or YML?](#is-it-yaml-or-yml)
-- [GitHub Actions in the wild](#github-actions-in-the-wild)
-- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
-  - [Desktop Environments](#desktop-environments)
-    - [GNOME](#gnome)
-    - [KDE](#kde)
-    - [Xfce](#xfce)
-    - [LXDE](#lxde)
-  - [Window Managers](#window-managers)
-    - [Openbox](#openbox)
-    - [Fluxbox](#fluxbox)
-    - [i3](#i3)
-  - [Installing a Desktop Environment](#installing-a-desktop-environment)
-  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
-  - [Installing a Window Manager](#installing-a-window-manager)
-  - [Configuring a Window Manager](#configuring-a-window-manager)
-- [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
-- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
-- [Captain's Log](#captains-log)
-- [Testemonials](#testemonials)
+- [Linux for Pirates](#linux-for-pirates)
+  - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+  - [What is Linux?](#what-is-linux)
+    - [What is GNU?](#what-is-gnu)
+    - [What is open source software?](#what-is-open-source-software)
+      - [What are open source licenses?](#what-are-open-source-licenses)
+      - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
+      - [What is the MIT License?](#what-is-the-mit-license)
+    - [What is free software?](#what-is-free-software)
+    - [What is the Linux kernel?](#what-is-the-linux-kernel)
+    - [Linus Torvalds](#linus-torvalds)
+    - [Richard Stallman](#richard-stallman)
+  - [Before we begin](#before-we-begin)
+  - [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+  - [Chapter One - Getting Started](#chapter-one---getting-started)
+    - [Ubuntu](#ubuntu)
+      - [Kubuntu](#kubuntu)
+      - [Arch Linux](#arch-linux)
+    - [Setting up Ubuntu](#setting-up-ubuntu)
+      - [What to do next?](#what-to-do-next)
+        - [Checklist](#checklist)
+    - [Where to go from here?](#where-to-go-from-here)
+      - [Backend](#backend)
+      - [Cloud Computing](#cloud-computing)
+      - [Cybersecurity](#cybersecurity)
+        - [Kevin Mitnick](#kevin-mitnick)
+      - [Data analysis and interpretation](#data-analysis-and-interpretation)
+      - [Database](#database)
+        - [Graph](#graph)
+        - [noSQL](#nosql)
+        - [SQL](#sql)
+      - [Design](#design)
+        - [Figma](#figma)
+        - [DaisyUI](#daisyui)
+        - [Fluent Design](#fluent-design)
+        - [Material Design](#material-design)
+      - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
+      - [Finance](#finance)
+      - [Frontend](#frontend)
+      - [Management](#management)
+      - [Marketing](#marketing)
+      - [Network Engineering](#network-engineering)
+      - [Operations](#operations)
+      - [Sales](#sales)
+      - [Software development and delivery](#software-development-and-delivery)
+  - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+    - [Handybilly](#handybilly)
+    - [Linux filesystem](#linux-filesystem)
+      - [Filesystem examples](#filesystem-examples)
+      - [Permissions](#permissions)
+        - [chmod](#chmod)
+        - [chown](#chown)
+    - [Networking](#networking)
+      - [ip](#ip)
+      - [Netcat](#netcat)
+      - [nmap](#nmap)
+      - [tcpdump](#tcpdump)
+      - [Wireshark](#wireshark)
+    - [Bash](#bash)
+      - [.bashrc](#bashrc)
+      - [Bash scripting](#bash-scripting)
+      - [Bash history](#bash-history)
+      - [Bash one-liners](#bash-one-liners)
+    - [chroot](#chroot)
+    - [Cron](#cron)
+    - [Devices](#devices)
+    - [Drivers](#drivers)
+    - [Processes](#processes)
+    - [cURL](#curl)
+    - [Vim (Vi IMproved)](#vim-vi-improved)
+      - [.vimrc](#vimrc)
+      - [NeoVim](#neovim)
+    - [VS Code](#vs-code)
+    - [The Internet](#the-internet)
+      - [Domain name](#domain-name)
+        - [Domain Name Registrar](#domain-name-registrar)
+        - [Buying a Domain Name](#buying-a-domain-name)
+        - [Namecheap](#namecheap)
+      - [IANA (Internet Assigned Numbers Authority)](#iana-internet-assigned-numbers-authority)
+      - [ICAAN (Internet Corporation for Assigned Names and Numbers)](#icaan-internet-corporation-for-assigned-names-and-numbers)
+      - [Internet Service Provider](#internet-service-provider)
+      - [Web Browser](#web-browser)
+        - [Document Object Model (DOM)](#document-object-model-dom)
+        - [Virtual DOM](#virtual-dom)
+        - [How do they work together?](#how-do-they-work-together)
+      - [World Wide Web](#world-wide-web)
+        - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+      - [Web Server](#web-server)
+        - [Apache](#apache)
+        - [Nginx](#nginx)
+        - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+    - [Amazon Web Services](#amazon-web-services)
+    - [Cloudflare](#cloudflare)
+    - [CI/CD](#cicd)
+      - [Continuous Delivery](#continuous-delivery)
+      - [Continuous Integration](#continuous-integration)
+      - [CI/CD Tools](#cicd-tools)
+        - [Argo CD](#argo-cd)
+        - [CircleCI](#circleci)
+        - [GitHub Actions](#github-actions)
+        - [GitLab CI/CD](#gitlab-cicd)
+        - [Jenkins](#jenkins)
+        - [Portainer](#portainer)
+        - [Travis CI](#travis-ci)
+    - [DigitalOcean](#digitalocean)
+    - [eBPF](#ebpf)
+    - [DNS (Domain Name System)](#dns-domain-name-system)
+      - [Types of DNS Records](#types-of-dns-records)
+      - [Examples of DNS Records](#examples-of-dns-records)
+      - [DNS servers](#dns-servers)
+      - [DNSSEC](#dnssec)
+      - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+      - [DNS over TLS (DoT)](#dns-over-tls-dot)
+      - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+      - [DNSCrypt](#dnscrypt)
+      - [DNS Amplification Attacks](#dns-amplification-attacks)
+      - [Hosts file](#hosts-file)
+      - [AWS Route 53](#aws-route-53)
+      - [Azure DNS](#azure-dns)
+      - [Google Cloud DNS](#google-cloud-dns)
+      - [DigitalOcean DNS](#digitalocean-dns)
+      - [Cloudflare DNS](#cloudflare-dns)
+      - [OpenDNS](#opendns)
+      - [Bind](#bind)
+    - [Docker](#docker)
+      - [Install Docker](#install-docker)
+        - [Docker Engine](#docker-engine)
+      - [Docker Compose](#docker-compose)
+        - [Install Docker Compose](#install-docker-compose)
+      - [Docker Swarm](#docker-swarm)
+    - [Git](#git)
+      - [GitHub](#github)
+        - [GitHub sounds a litttle overwhelming. What be the basics?](#github-sounds-a-litttle-overwhelming-what-be-the-basics)
+      - [GitLab](#gitlab)
+      - [Gitea](#gitea)
+      - [Getting Started with Git and GitHub](#getting-started-with-git-and-github)
+        - [What if I get stuck?](#what-if-i-get-stuck)
+        - [Get involved in open-source projects](#get-involved-in-open-source-projects)
+        - [Eddie Jaoude](#eddie-jaoude)
+        - [EddieHub and LinkFree](#eddiehub-and-linkfree)
+    - [Homebrew](#homebrew)
+    - [HTML](#html)
+      - [Meta tags](#meta-tags)
+      - [Is HTML a programming language?](#is-html-a-programming-language)
+      - [CSS](#css)
+    - [HTTP](#http)
+      - [HTTP error codes](#http-error-codes)
+      - [HTTP methods](#http-methods)
+      - [HTTP headers](#http-headers)
+      - [HTTPS](#https)
+      - [API (Application Programming Interface)](#api-application-programming-interface)
+        - [GraphQL (Graph Query Language)](#graphql-graph-query-language)
+        - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+        - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
+    - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+    - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+    - [Infrastructure as Code](#infrastructure-as-code)
+      - [Ansible](#ansible)
+        - [Install Ansible](#install-ansible)
+        - [Jeff Geerling](#jeff-geerling)
+        - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
+        - [Ansible Galaxy](#ansible-galaxy)
+        - [Ansible Tower](#ansible-tower)
+        - [Ansible Vault](#ansible-vault)
+        - [Ansible Molecule](#ansible-molecule)
+        - [Ansible Container](#ansible-container)
+        - [Ansible Network Automation](#ansible-network-automation)
+        - [Ansible Cloud Automation](#ansible-cloud-automation)
+        - [Ansible Container Orchestration](#ansible-container-orchestration)
+        - [Ansible Service Broker](#ansible-service-broker)
+      - [Terraform](#terraform)
+        - [Install Terraform](#install-terraform)
+        - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
+    - [IP Addresses](#ip-addresses)
+      - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+    - [JavaScript](#javascript)
+    - [Kubernetes](#kubernetes)
+    - [Latency](#latency)
+    - [Logging](#logging)
+      - [Logrotate](#logrotate)
+    - [Monitoring](#monitoring)
+    - [OSI model](#osi-model)
+    - [SSH](#ssh)
+      - [SSH Agent](#ssh-agent)
+      - [SSH Confguration](#ssh-confguration)
+      - [SSH Keys](#ssh-keys)
+        - [How to generate SSH keys](#how-to-generate-ssh-keys)
+      - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSL/TLS](#ssltls)
+      - [SSL Certificates](#ssl-certificates)
+        - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
+      - [Let's Encrypt](#lets-encrypt)
+      - [Certificate Authorities](#certificate-authorities)
+      - [CAA Records](#caa-records)
+      - [OCSP Stapling](#ocsp-stapling)
+      - [OCSP Must-Staple](#ocsp-must-staple)
+    - [Streaming](#streaming)
+    - [Subnet](#subnet)
+      - [Subnet mask](#subnet-mask)
+      - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+      - [Subnetting Cheatsheet](#subnetting-cheatsheet)
+        - [Subnet Mask](#subnet-mask-1)
+        - [CIDR Notation](#cidr-notation)
+        - [Subnetting a Network](#subnetting-a-network)
+        - [Subnetting Examples](#subnetting-examples)
+        - [Subnetting Practice](#subnetting-practice)
+    - [TCP/IP](#tcpip)
+    - [UDP](#udp)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+    - [Common problems](#common-problems)
+    - [Initiation](#initiation)
+      - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+      - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+      - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+      - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+    - [Is it YAML or YML?](#is-it-yaml-or-yml)
+  - [GitHub Actions in the wild](#github-actions-in-the-wild)
+  - [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+    - [Desktop Environments](#desktop-environments)
+      - [GNOME](#gnome)
+      - [KDE](#kde)
+      - [Xfce](#xfce)
+      - [LXDE](#lxde)
+    - [Window Managers](#window-managers)
+      - [Openbox](#openbox)
+      - [Fluxbox](#fluxbox)
+      - [i3](#i3)
+    - [Installing a Desktop Environment](#installing-a-desktop-environment)
+    - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+    - [Installing a Window Manager](#installing-a-window-manager)
+    - [Configuring a Window Manager](#configuring-a-window-manager)
+  - [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
+  - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+  - [Jokes](#jokes)
+    - [Check Yer Deployments](#check-yer-deployments)
+    - [Late to the Party](#late-to-the-party)
+  - [Captain's Log](#captains-log)
+  - [Testemonials](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -370,43 +346,43 @@ Richard Stallman is the creator of the GNU operating system. He is a computer sc
 
 ## Before we begin
 
-Captain Jack stood at the helm of his ship, staring out at the vast expanse of the ocean. He had been a pirate for as long as he could remember, and he loved nothing more than the thrill of the hunt and the rush of adrenaline that came with finding treasure.
+Captain Loftwah stood at the helm of his ship, staring out at the vast expanse of the ocean. He had been a pirate for as long as he could remember, and he loved nothing more than the thrill of the hunt and the rush of adrenaline that came with finding treasure.
 
-But Jack was no ordinary pirate. He was a master of technology, using his advanced gadgets and devices to outsmart his enemies and outmaneuver them on the high seas. "Any sufficiently advanced technology is equivalent to magic," he thought to himself, smiling at the thought of all the treasure he had acquired through his clever use of technology.
+But Loftwah was no ordinary pirate. He was a master of technology, using his advanced gadgets and devices to outsmart his enemies and outmaneuver them on the high seas. "Any sufficiently advanced technology is equivalent to magic," he thought to himself, smiling at the thought of all the treasure he had acquired through his clever use of technology.
 
-But even Jack knew that technology was not always the answer. He had learned the hard way that "social engineering bypasses all technologies, including firewalls." He had lost more than one treasure to clever pirates who used their charm and charisma to manipulate him and his crew.
+But even Loftwah knew that technology was not always the answer. He had learned the hard way that "social engineering bypasses all technologies, including firewalls." He had lost more than one treasure to clever pirates who used their charm and charisma to manipulate him and his crew.
 
-Jack was not one to accept defeat easily, though. "People said I should accept the world. Bullshit! I don't accept the world," he thought, determined to find a way to outsmart even the most clever of his rivals.
+Loftwah was not one to accept defeat easily, though. "People said I should accept the world. Bullshit! I don't accept the world," he thought, determined to find a way to outsmart even the most clever of his rivals.
 
-And so he set his sights on the greatest treasure of them all: the fabled Black Pearl, a ship that was said to be filled with unimaginable riches. Jack knew that he couldn't do it alone, though. He needed a crew of skilled pirates who were just as determined and clever as he was.
+And so he set his sights on the greatest treasure of them all: the fabled Black Pearl, a ship that was said to be filled with unimaginable riches. Loftwah knew that he couldn't do it alone, though. He needed a crew of skilled pirates who were just as determined and clever as he was.
 
-As he searched for the perfect crewmates, Jack couldn't help but think about the dangers of relying too much on technology. "The real danger is not that computers will begin to think like men, but that men will begin to think like computers," he thought, knowing that it was important to keep a balance between using technology and using one's own intelligence and creativity.
+As he searched for the perfect crewmates, Loftwah couldn't help but think about the dangers of relying too much on technology. "The real danger is not that computers will begin to think like men, but that men will begin to think like computers," he thought, knowing that it was important to keep a balance between using technology and using one's own intelligence and creativity.
 
-Finally, Jack found the perfect crew. They were a diverse group, each with their own unique skills and talents. Together, they set off on their quest for the Black Pearl, using all of their combined knowledge and expertise to outsmart their enemies and navigate the dangerous waters.
+Finally, Loftwah found the perfect crew. They were a diverse group, each with their own unique skills and talents. Together, they set off on their quest for the Black Pearl, using all of their combined knowledge and expertise to outsmart their enemies and navigate the dangerous waters.
 
-As they sailed closer and closer to their goal, Jack couldn't help but feel a sense of excitement and determination. "Patience, persistence and perspiration make an unbeatable combination for success," he thought, knowing that they would stop at nothing to claim the treasure that was rightfully theirs.
+As they sailed closer and closer to their goal, Loftwah couldn't help but feel a sense of excitement and determination. "Patience, persistence and perspiration make an unbeatable combination for success," he thought, knowing that they would stop at nothing to claim the treasure that was rightfully theirs.
 
-And in the end, their hard work paid off. They found the Black Pearl, and it was even more magnificent than they had imagined. "It doesn't matter what you know, what matters is when you know," Jack thought as he gazed at the treasure-filled ship, knowing that their knowledge and skills had been key to their success.
+And in the end, their hard work paid off. They found the Black Pearl, and it was even more magnificent than they had imagined. "It doesn't matter what you know, what matters is when you know," Loftwah thought as he gazed at the treasure-filled ship, knowing that their knowledge and skills had been key to their success.
 
-As they sailed back home, filled with treasure and stories to tell, Jack couldn't help but feel grateful for the diverse and skilled crew that he had assembled. He knew that it was their combined knowledge and creativity that had led them to victory, and he couldn't wait to see what other adventures they would have together in the future.
+As they sailed back home, filled with treasure and stories to tell, Loftwah couldn't help but feel grateful for the diverse and skilled crew that he had assembled. He knew that it was their combined knowledge and creativity that had led them to victory, and he couldn't wait to see what other adventures they would have together in the future.
 
 ## About the author (This isn't on the test)
 
 ![Dean Lofts](images/deanlofts.png)
 
-Once upon a time, in the golden age of piracy, there lived a fearless pirate by the name of Dean Lofts. Dean was a notorious buccaneer, known throughout the seven seas for their technical expertise and programming prowess.
+Once upon a time, in the golden age of piracy, there lived a fearless pirate by the name of Dean (Loftwah) Lofts. Loftwah was a notorious buccaneer, known throughout the seven seas for their technical expertise and programming prowess.
 
-Dean commanded a fearsome crew of pirates, who sailed the high seas in search of treasure and adventure. They were a motley crew, made up of scallywags, scoundrels, and ne'er-do-wells from every corner of the globe, including the wild and untamed shores of Australia.
+Loftwah commanded a fearsome crew of pirates, who sailed the high seas in search of treasure and adventure. They were a motley crew, made up of scallywags, scoundrels, and ne'er-do-wells from every corner of the globe, including the wild and untamed shores of Australia.
 
-Together, Dean and their crew roamed the Caribbean, plundering and pillaging their way from island to island. They braved fierce storms and battled fierce foes, always coming out on top thanks to Dean's quick wit and sharp sword, as well as their formidable knowledge of Bash, PHP, Python, Ruby, HTML, JavaScript, and other programming languages.
+Together, Loftwah and their crew roamed the Caribbean, plundering and pillaging their way from island to island. They braved fierce storms and battled fierce foes, always coming out on top thanks to Loftwah's quick wit and sharp sword, as well as their formidable knowledge of Bash, PHP, Python, Ruby, HTML, JavaScript, and other programming languages.
 
-One day, Dean and the crew set their sights on a rich Spanish galleon, loaded down with gold and jewels. They crept up on the ship under cover of darkness, and with a mighty roar, they boarded the vessel and took control.
+One day, Loftwah and the crew set their sights on a rich Spanish galleon, loaded down with gold and jewels. They crept up on the ship under cover of darkness, and with a mighty roar, they boarded the vessel and took control.
 
-The Spanish crew fought bravely, but they were no match for the fierce pirates led by Dean. In the end, Dean and their crew emerged victorious, the galleon was theirs for the taking.
+The Spanish crew fought bravely, but they were no match for the fierce pirates led by Loftwah. In the end, Loftwah and their crew emerged victorious, the galleon was theirs for the taking.
 
-As they sailed off into the sunset with their prize, Dean raised their fist to the sky and let out a mighty "YARGH!" It was a good day to be a pirate.
+As they sailed off into the sunset with their prize, Loftwah raised their fist to the sky and let out a mighty "YARGH!" It was a good day to be a pirate.
 
-So if you ever find yourself sailing the high seas and you see a pirate flag with a Loftwah-shaped skull and crossbones on it, beware! You're in for a wild ride with the fearless Dean and their trusty crew. Ahoy, matey!
+So if you ever find yourself sailing the high seas and you see a pirate flag with a Loftwah-shaped skull and crossbones on it, beware! You're in for a wild ride with the fearless Loftwah and their trusty crew. Ahoy, matey!
 
 ## Chapter One - Getting Started
 
@@ -443,6 +419,14 @@ Ubuntu be named after the Southern African philosophy of ubuntu, which be transl
 Ubuntu be released in October 2004, and it be the first Linux distribution to use GNOME as its default desktop environment. It be also the first Linux distribution to use Upstart as its default init system.
 
 Ubuntu be released in three editions: Ubuntu Desktop, Ubuntu Server, and Ubuntu Core. Ubuntu Desktop be a desktop operating system that be suitable for use on desktop computers, laptops, and other devices. Ubuntu Server be a server operating system that be suitable for use on servers and other devices that be runnin' headless. Ubuntu Core be a lightweight version o' Ubuntu that be designed for use on embedded devices.
+
+#### Kubuntu
+
+Kubuntu be a version o' Ubuntu that be based on KDE Plasma. It be developed and maintained by the KDE Community.
+
+Aye, matie! KDE be a free and open-source desktop environment fer Linux and Unix-like operatin' systems. 'Tis known fer its customizable interface and a wide range o' features, such as a file manager, text editor, and multimedia player.
+
+Kubuntu be a version o' the Ubuntu Linux operatin' system that uses the KDE desktop environment. 'Tis a community-supported version o' Ubuntu that be focused on providin' a polished and easy-to-use desktop experience with KDE.
 
 #### Arch Linux
 
@@ -557,397 +541,255 @@ You might imagine that backend developers are responsible for creating and maint
 
 [Awesome Security](https://github.com/sbilly/awesome-security)
 
-A cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. Cybersecurity analysts often work on tasks such as:
+Arrr, ye landlubbers might be wonderin' what a cybersecurity analyst does. Let me tell ya, they be the protectors of yer digital treasure, keepin' yer network free from any cyber scallywags and their sneaky tricks. They be analyzin' and keepin' a watchful eye on yer network security, respondin' to any security breaches or attacks, implementin' security measures like firewalls and antivirus software, and workin' with other scallywags such as developers and legal to make sure yer network is shipshape and compliant with all the rules and regulations.
 
-**Analyzing and monitoring network security:** Cybersecurity analysts might analyze and monitor the security of your network, looking for potential vulnerabilities and identifying ways to mitigate risks.
+When it comes to network security, there be three types of teams that be playin' important roles in keepin' the ship afloat: blue, purple, and red teams.
 
-**Responding to security incidents:** Cybersecurity analysts might be responsible for responding to security incidents, such as cyber attacks or data breaches. They might work to identify the cause of the incident and take steps to prevent similar incidents from occurring in the future.
+The blue team be like the ship's navigator, chartin' the course to keep the ship out of harm's way. They be protectin' the network from any cyber threats and vulnerabilities.
 
-**Implementing security controls:** Cybersecurity analysts might implement security controls such as firewall rules, intrusion prevention systems, and antivirus software to protect your network from cyber threats.
+The purple team be like the ship's surgeon, patchin' up any wounds and keepin' an eye out for any potential dangers. They be identifyin' and exploitin' vulnerabilities and reportin' their findings to the captain with recommendations on how to avoid them.
 
-**Collaborating with other teams:** Cybersecurity analysts might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
+The red team be like the ship's enemy, testin' the ship's defenses and tryin' to sink it. They be simulating the tactics and techniques of a real enemy to test the effectiveness of the ship's security measures and reportin' their findings to the captain with recommendations on how to improve the ship's defenses.
 
-You might imagine that a cybersecurity analyst is responsible for protecting your network from cyber threats and vulnerabilities. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
+All three teams be playin' important roles in keepin' the ship safe and sailin' smooth. So, hoist the anchor and set sail on the digital seas with a crew of cybersecurity scallywags by yer side!
 
-In the realm of network security, there are three types of teams that play important roles in ensuring the security and resilience of a system: blue, purple, and red teams.
+A penetration tester be the scallywag that be responsible for findin' and exploitin' vulnerabilities in yer network. They be like treasure hunters, searchin' for any weak spots in yer digital defenses and takin' advantage of them to gain unauthorized access to yer sensitive information or systems. They be reportin' their findings to the captain and givin' recommendations on how to prevent similar attacks from happenin' in the future. They also be workin' closely with other scallywags such as developers and legal to ensure yer network is shipshape and compliant with all the rules and regulations.
 
-##### Blue Team
+But watch out for those sneaky phishermen, tryin' to trick ye into givin' up yer treasure with fake emails and malicious links. And don't be fallin' for any social engineering tricks, where scallywags use their charm and deception to steal yer sensitive information.
 
-A blue team is responsible for protecting a network from cyber threats and vulnerabilities. They work on tasks such as analyzing and monitoring network security, responding to security incidents, implementing security controls, and collaborating with other teams to ensure compliance with laws and regulations.
+And remember the infamous Kevin Mitnick, a notorious hacker who was once one of the most wanted scallywags in the world. He be now a cybersecurity consultant and public speaker, and ye can even watch his story in the movie "Takedown".
 
-##### Purple Team
+In the realm of network security, there be three key roles that be playin' important roles in keepin' the ship afloat: security architecture, security compliance, and security engineering.
 
-A purple team combines the roles of both a blue team and a red team. They are responsible for identifying and exploiting vulnerabilities in a network, and then reporting their findings to stakeholders with recommendations for risk mitigation. Purple team members also collaborate with other teams to ensure compliance with laws and regulations.
+The security architect be like the ship's designer, creatin' and maintainin' the overall security of the network.
 
-##### Red Team
+The security compliance analyst be like the ship's lawyer, ensurin' the network is compliant with all the rules and regulations.
 
-A red team is responsible for identifying and exploiting vulnerabilities in a network. They report their findings to stakeholders with recommendations for risk mitigation. Red team members may also collaborate with other teams to ensure compliance with laws and regulations.
+The security engineer be like the ship's mechanic, implementin' and maintainin' the security controls of the network.
 
-##### Differences between the teams
-
-The main difference between these three teams is their focus and primary objectives. A blue team focuses on protecting a network from threats and vulnerabilities, a purple team focuses on identifying and exploiting vulnerabilities, and a red team focuses on simulating the tactics and techniques of a malicious actor to test the effectiveness of a network's security measures. All three teams play important roles in ensuring the security and resilience of a system.
-
-##### Penetration Testing
-
-A penetration tester is responsible for identifying and exploiting vulnerabilities in your network. Penetration testers often work on tasks such as:
-
-**Identifying vulnerabilities:** Penetration testers might identify vulnerabilities in your network, such as weak passwords, unpatched software, and misconfigured systems.
-
-**Exploiting vulnerabilities:** Penetration testers might exploit vulnerabilities in your network to gain unauthorized access to sensitive data or systems.
-
-**Reporting vulnerabilities:** Penetration testers might report their findings to stakeholders, including recommendations for how to mitigate risks and prevent similar vulnerabilities from occurring in the future.
-
-**Collaborating with other teams:** Penetration testers might work closely with other teams such as development, IT, and legal to ensure that your network is secure and compliant with relevant laws and regulations.
-
-You might imagine that a penetration tester is responsible for identifying and exploiting vulnerabilities in your network. They play a crucial role in ensuring that your network is secure and that any security incidents are promptly identified and dealt with.
-
-##### Phishing
-
-Phishing is a type of cyber attack in which an attacker sends an email to a user that appears to be from a legitimate source. The email might contain a link to a malicious website or a malicious attachment that, when opened, can infect the user's computer with malware. Phishing attacks are often used to steal sensitive information such as usernames and passwords.
-
-##### Social Engineering
-
-Social engineering is a type of cyber attack in which an attacker uses social skills to trick a user into revealing sensitive information. Social engineering attacks are often used to steal sensitive information such as usernames and passwords.
+All three roles be playin' important roles in keepin' the ship safe and sailin' smooth. So, hoist the anchor and set sail on the digital seas with a crew of cybersecurity scallywags by yer side!
 
 ##### Kevin Mitnick
 
 ![Kevin Mitnick](images/kevinmitnick.png)
 
-Kevin Mitnick is a cybersecurity expert who was once one of the most wanted hackers in the world. He was arrested in 1995 for hacking into the computer systems of several major corporations, including Motorola and Nokia. He served five years in prison and was released in 2000. He now works as a cybersecurity consultant and public speaker.
+Aye, Kevin Mitnick be a legendary figure in the world of cybersecurity. He was once known as one of the most notorious hackers, but after servin' time in prison, he turned his life around and now uses his skills and knowledge to help companies and organizations protect themselves from cyber threats. As a cybersecurity consultant and public speaker, he be sharin' his expertise and helpin' others to better understand the dangers of the digital world and how to defend against them.
+
+A pirate might look up to Kevin Mitnick because of his reputation as a skilled and successful hacker. Just like how a pirate is known to be a skilled and successful looter in the sea, Mitnick's reputation as a successful hacker could be seen as admirable by someone who values those traits. Additionally, Mitnick's story of being a notorious hacker, serving time in prison, and then turning his life around to become a respected cybersecurity expert could also be seen as an inspiration for someone looking to change their ways.
+
+**What exactly did Kevin Mitnick do?**
+
+Aye, aye captain! Let me give ye all the juicy details about the infamous Kevin Mitnick and his wild journey through the digital seas.
+
+It all began back in the early days of the internet, when Mitnick was just a young scallywag with a love for all things computer-related. He started off small, breakin' into the computer systems of local businesses and schools, but he quickly moved on to bigger and more valuable targets.
+
+Mitnick be known as a master of "social engineering" - the art of trickin' people into givin' up sensitive information. He be known to use this skills to obtain passwords and other valuable information from unsuspecting victims, and he be always one step ahead of the authorities.
+
+As his infamy grew, Mitnick be takin' on bigger and more powerful targets, causin' mischief and makin' off with valuable information from some of the biggest corporations in the world, including Motorola, Nokia, and even the US government. He be known as the "Black Hat Pirate" of the computer world, and the authorities be hot on his trail.
+
+But just like many a pirate before him, Mitnick's luck eventually ran out and he be caught by the FBI in 1995. He be sentenced to five years in prison and be released in 2000.
+
+But unlike many a pirate, Mitnick decided to change his ways and use his skills for good. After servin' his time, Mitnick rebranded himself as a "White Hat Pirate" and set sail on a new journey as a cybersecurity consultant and public speaker. He be now helping companies and organizations protect their digital treasure from the likes of himself and other cyber scallywags.
+
+He be sharing his tales of adventure and the lessons he learned during his time as a notorious hacker, and he be helpin' others to understand the dangers of the digital seas and how to navigate them safely. He be also working with law enforcement and organizations to help them understand the mind of a hacker and help to prevent cybercrime.
+
+Some may see him as a reformed scallywag, others as a cautionary tale, but one thing's for sure, Mitnick's story be one for the ages and a true testament to the fact that even the most notorious pirate can change their ways and become a valuable member of society. He's a true example that every one of us can learn from.
+
+So, if ye ever find yerself sailin' the digital seas and come across the name Kevin Mitnick, remember that he be a true pirate of the cyber world, and his story be one for the ages.
 
 The movie [Takedown](https://www.imdb.com/title/tt0159784/) is based on the life of Kevin Mitnick.
 
-In the realm of network security, there are three key roles that play important roles in ensuring the security and compliance of a system: security architecture, security compliance, and security engineering.
-
-##### Security Architecture
-
-A security architect is responsible for designing and maintaining the overall security of a network. They work on tasks such as analyzing and monitoring network security, responding to security incidents, implementing security controls, and collaborating with other teams to ensure compliance with laws and regulations.
-
-##### Security Compliance
-
-A security compliance analyst is responsible for ensuring that a network is compliant with relevant laws and regulations. They work on tasks such as analyzing and monitoring network security, responding to security incidents, implementing security controls, and collaborating with other teams to ensure compliance with laws and regulations.
-
-##### Security Engineering
-
-A security engineer is responsible for implementing and maintaining the security controls of a network. They work on tasks such as analyzing and monitoring network security, responding to security incidents, implementing security controls, and collaborating with other teams to ensure compliance with laws and regulations.
-
-##### Differences between Security roles
-
-The main difference between these three roles is their focus and primary objectives. A security architect focuses on designing and maintaining the overall security of a network, a security compliance analyst focuses on ensuring compliance with laws and regulations, and a security engineer focuses on implementing and maintaining security controls. All three roles play important roles in ensuring the security and compliance of a system.
-
-##### Bugcrowd
-
-[Bugcrowd](https://www.bugcrowd.com/)
-
-Bugcrowd is a platform that connects organizations with hackers to find and fix security vulnerabilities.
-
-##### Hackerone
-
-[HackerOne](https://www.hackerone.com/)
-
-HackerOne is a platform that connects organizations with hackers to find and fix security vulnerabilities.
-
 #### Data analysis and interpretation
 
-In the realm of data analysis and interpretation, there are three key roles that play important roles in understanding and utilizing data: data science, artificial intelligence, and machine learning.
+Ahoy, me hearties! In the realm of data analysis and interpretation, there be three key roles that be playin' important roles in understandin' and utilizin' data: data science, artificial intelligence, and machine learnin'.
 
-##### Data Science
+The data scientist be like the ship's cartographer, studyin' and interpretin' the data to chart a course for business decisions and solvin' problems.
 
-A data scientist is responsible for analyzing and interpreting data to inform business decisions and solve problems. They work on tasks such as analyzing and interpreting data, developing models and algorithms, communicating findings and insights, and collaborating with other teams to ensure that the data they analyze is relevant and useful.
+The artificial intelligence (AI) engineer be like the ship's navigator, designin' and implementin' AI systems to guide the ship through the treacherous data seas.
 
-##### Artificial Intelligence
+The machine learnin' engineer be like the ship's quartermaster, designin' and implementin' machine learnin' systems to help the ship make sense of the data and find valuable treasure.
 
-An artificial intelligence (AI) engineer is responsible for designing and implementing AI systems to analyze and interpret data. They work on tasks such as analyzing and interpreting data, developing models and algorithms, communicating findings and insights, and collaborating with other teams to ensure that the data they analyze is relevant and useful.
+All three roles be playin' important roles in helpin' the ship navigate the data seas and find valuable insights and information. They be workin' closely with other scallywags such as business and IT teams to ensure that the data they be analyzin' is relevant and useful.
 
-##### Machine Learning
-
-A machine learning engineer is responsible for designing and implementing machine learning systems to analyze and interpret data. They work on tasks such as analyzing and interpreting data, developing models and algorithms, communicating findings and insights, and collaborating with other teams to ensure that the data they analyze is relevant and useful.
-
-##### Differences between the sciences
-
-The main difference between these three roles is their focus and primary objectives. A data scientist focuses on analyzing and interpreting data to inform business decisions and solve problems, an AI engineer focuses on designing and implementing AI systems to analyze and interpret data, and a machine learning engineer focuses on designing and implementing machine learning systems to analyze and interpret data. All three roles play important roles in understanding and utilizing data.
+So, hoist the anchor and set sail on the data seas with a crew of data analysis scallywags by yer side!
 
 #### Database
 
-A DBA (Database Administrator) is responsible for managing and maintaining the databases that are used on your network. DBAs often work on tasks such as:
+Aye, a DBA (Database Administrator) be responsible for managing and maintaining the databases that be used on yer network. DBAs be often workin' on tasks such as:
 
-**Designing and implementing databases:** DBAs might design and implement databases to store and organize data in an efficient and secure manner.
+**Designin' and implementin' databases:** DBAs might design and implement databases to store and organize data in an efficient and secure manner, like a skilled shipwright buildin' a sturdy vessel to hold all yer valuable data.
 
-**Maintaining and optimizing databases:** DBAs might be responsible for maintaining and optimizing the performance of databases, including tasks such as backups, recovery, and performance tuning.
+**Maintainin' and optimizin' databases:** DBAs might be responsible for maintainin' and optimizin' the performance of databases, including tasks such as backups, recovery, and performance tuning, like a ship's captain keepin' the vessel in tip-top shape.
 
-**Ensuring data integrity:** DBAs might work to ensure the integrity and accuracy of the data in the databases, and to prevent data loss or corruption.
+**Ensurin' data integrity:** DBAs might work to ensure the integrity and accuracy of the data in the databases, and to prevent data loss or corruption, like a ship's navigator keepin' the course true.
 
-**Collaborating with other teams:** DBAs might work closely with other teams such as development, QA, and IT to ensure that the databases meet the needs and requirements of the organization.
+**Collaboratin' with other teams:** DBAs might work closely with other teams such as development, QA, and IT to ensure that the databases meet the needs and requirements of the organization, like a ship's crew workin' together to reach their destination.
 
-You might imagine that a DBA is responsible for managing and maintaining the databases that are used on your network. They play a crucial role in ensuring that the databases are efficient, secure, and accurate, and in supporting the needs and requirements of the organization.
+You might imagine that a DBA be responsible for managing and maintaining the databases that be used on yer network. They be playin' a crucial role in ensurin' that the databases be efficient, secure, and accurate, and in supportin' the needs and requirements of the organization.
 
 ##### Graph
 
-A graph database is a type of database that is designed to store and organize data in a way that is similar to a graph. Graph databases are often used to store and analyze data that is connected in some way, such as social networks or supply chains.
+A graph database be a type of database that be designed to store and organize data in a way that be similar to a graph, like a treasure map leadin' to valuable data. Graph databases be often used to store and analyze data that be connected in some way, such as social networks or supply chains.
 
-Some examples of graph databases are [Neo4j](https://neo4j.com/), [ArangoDB](https://www.arangodb.com/) , and [OrientDB](https://orientdb.org/).
+Some examples of graph databases be [Neo4j](https://neo4j.com/), [ArangoDB](https://www.arangodb.com/) , and [OrientDB](https://orientdb.org/).
 
 ##### noSQL
 
-A noSQL database is a type of database that is designed to store and organize data in a way that is different from traditional relational databases. noSQL databases are often used to store large amounts of data, and they are often more flexible and scalable than relational databases.
+A noSQL database be a type of database that be designed to store and organize data in a way that be different from traditional relational databases, like a treasure chest full of unstructured data. noSQL databases be often used to store large amounts of data, and they be often more flexible and scalable than relational databases.
 
-Some examples of noSQL databases are [MongoDB](https://www.mongodb.com/), [CouchDB](https://couchdb.apache.org/), and [Cassandra](https://cassandra.apache.org/).
+Some examples of noSQL databases be [MongoDB](https://www.mongodb.com/), [CouchDB](https://couchdb.apache.org/), and [Cassandra](https://cassandra.apache.org/).
 
 ##### SQL
 
-A SQL database is a type of database that is designed to store and organize data in a way that is similar to a spreadsheet. SQL databases are often used to store structured data, and they are often more efficient and reliable than noSQL databases.
+A SQL database be a type of database that be designed to store and organize data in a way that be similar to a spreadsheet, like a treasure logbook of structured data. SQL databases be often used to store structured data, and they be often more efficient and reliable than noSQL databases.
 
-Some examples of SQL databases are [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), and [SQLite](https://www.sqlite.org/index.html).
+Some examples of SQL databases be [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), and [SQLite](https://www.sqlite.org/index.html).
 
 #### Design
 
-A UX designer is responsible for designing the user experience of your network. UX designers often work on tasks such as:
+Ahoy mateys, A UX designer be responsible for designing the user experience of yer network, like a captain chartin' a course for a smooth journey. UX designers be often workin' on tasks such as:
 
-**Researching and analyzing user needs:** UX designers might research and analyze user needs, such as the tasks that users need to perform and the problems that they need to solve.
+**Researchin' and analyzin' user needs:** UX designers might research and analyze user needs, such as the tasks that users need to perform and the problems that they need to solve, like a treasure hunter gatherin' clues to find the treasure.
 
-**Designing user interfaces:** UX designers might design user interfaces that are easy to use and that meet the needs of users.
+**Designin' user interfaces:** UX designers might design user interfaces that be easy to use and that meet the needs of users, like a mapmaker creatin' a easy to read map for a treasure hunt.
 
-**Developing prototypes:** UX designers might develop prototypes to test and validate their designs.
+**Developin' prototypes:** UX designers might develop prototypes to test and validate their designs, like a treasure hunter testin' a map for accuracy before settin' sail.
 
-**Collaborating with other teams:** UX designers might work closely with other teams such as development, QA, and marketing to ensure that the user experience of your network is effective and meets the needs of users.
+**Collaboratin' with other teams:** UX designers might work closely with other teams such as development, QA, and marketing to ensure that the user experience of yer network be effective and meets the needs of users, like a ship's crew workin' together to reach their destination.
 
-You might imagine that a UX designer is responsible for designing the user experience of your network. They play a crucial role in ensuring that the user experience is effective and meets the needs of users.
+You might imagine that a UX designer be responsible for designing the user experience of yer network. They be playin' a crucial role in ensurin' that the user experience be effective and meets the needs of users.
 
 ##### Figma
 
 [Figma](https://www.figma.com/login)
 
-Figma is a web-based design tool that can be used to create and collaborate on designs. Figma is often used by UX designers to create prototypes and mockups of user interfaces.
+Aye, Figma be a web-based design tool that can be used to create and collaborate on designs, like a pirate sharin' treasure maps with their crew. Figma be often used by UX designers to create prototypes and mockups of user interfaces, like a pirate creatin' a map of a treasure island.
+
+##### DaisyUI
+
+[DaisyUI](https://daisyui.com/)
+
+DaisyUI be a CSS framework that can be used to create user interfaces that be consistent with Fluent Design, like a compass that always points true north. DaisyUI be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that be easy to read and leads to treasure.
 
 ##### Fluent Design
 
 [Fluent UI](https://developer.microsoft.com/en-us/fluentui)
 
-Fluent Design is a design system that was developed by Microsoft to create a consistent user experience across all of its products. Fluent Design is often used by UX designers to create user interfaces that are easy to use and that meet the needs of users.
+Fluent Design be a design system that be developed by Microsoft to create a consistent user experience across all of its products, like a treasure map that be the same for all the pirate crews. Fluent Design be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that leads to the treasure easily.
 
 ##### Material Design
 
 [Material Design](https://m3.material.io)
 
-Material Design is a design system that was developed by Google to create a consistent user experience across all of its products. Material Design is often used by UX designers to create user interfaces that are easy to use and that meet the needs of users.
+Material Design be a design system that be developed by Google to create a consistent user experience across all of its products, like a treasure map that be the same for all the pirate crews. Material Design be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that leads to the treasure easily.
 
 #### Developer Advocacy and Developer Relations
 
-A developer advocate is responsible for promoting the products and services of their company or organization to developers. They may work to promote the company's products or services to developers through writing technical articles, creating demos and tutorials, and participating in developer communities. They may also gather and analyze developer feedback, build and maintain relationships with developers, and collaborate with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
+Arrrr, listen up me hearties! A developer advocate be like a swashbucklin' tech evangelist, promisin' the wares of their company or organization to other developers. They be writin' technical articles, creatin' demos and tutorials, and minglin' with developer communities. They be gatherin' feedback from other developers about the company's products or services and usin' it to guide product development and strategy. They be buildin' and maintainin' relationships with developers, and workin' closely with other teams like product management, marketin', and engineering to make sure the company's products and services be meetin' the needs and expectations of developers.
 
-Developer relations is the way in which a company or organization engages with and supports developers who use its products or services. Developer relations professionals may build and maintain relationships with developers, gather and analyze developer feedback, promote the company's products or services to developers, and collaborate with other teams to ensure that the company's products and services are meeting the needs and expectations of developers. They play a crucial role in ensuring that the company's products and services are meeting the needs and expectations of developers and in supporting the needs and requirements of the organization.
-
-##### Developer Advocate
-
-A developer advocate is a technical evangelist who promotes the products and services of their company or organization to developers. Developer advocates often work on tasks such as:
-
-**Promoting the company's products or services to developers:** Developer advocates might work to promote the company's products or services to developers through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
-
-**Gathering and analyzing developer feedback:** Developer advocates might gather feedback from developers about the company's products or services, and use this feedback to inform product development and strategy.
-
-**Building and maintaining relationships with developers:** Developer advocates might work to build and maintain relationships with developers who use their company's products or services. This might include activities such as hosting events, providing technical support, and communicating with developers through online channels.
-
-**Collaborating with other teams:** Developer advocates might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
-
-You might imagine that a developer advocate is responsible for promoting the products and services of their company or organization to developers. They play a crucial role in ensuring that the company's products and services are meeting the needs and expectations of developers, and in supporting the needs and requirements of the organization.
-
-##### DevRel (Developer Relations)
-
-Developer relations is a way for a company or organization to engage with and support developers who use its products or services. Developer relations professionals often work on tasks such as:
-
-**Building and maintaining relationships with developers:** Developer relations professionals might work to build and maintain relationships with developers who use their company's products or services. This might include activities such as hosting events, providing technical support, and communicating with developers through online channels.
-
-**Gathering and analyzing developer feedback:** Developer relations professionals might gather feedback from developers about the company's products or services, and use this feedback to inform product development and strategy.
-
-**Promoting the company's products or services to developers:** Developer relations professionals might work to promote the company's products or services to developers, through activities such as writing technical articles, creating demos and tutorials, and participating in developer communities.
-
-**Collaborating with other teams:** Developer relations professionals might work closely with other teams such as product management, marketing, and engineering to ensure that the company's products and services are meeting the needs and expectations of developers.
-
-You might imagine that developer relations is a way for a company or organization to engage with and support developers who use its products or services. Developer relations professionals play a crucial role in building and maintaining relationships with developers, gathering and analyzing feedback, promoting the company's products or services, and collaborating with other teams to ensure that the needs and expectations of developers are met.
+DevRel, or developer relations, be like a company or organization's way of engagin' and supportin' developers who use their products or services. DevRel professionals be buildin' and maintainin' relationships with developers, gatherin' and analyzin' feedback, promotin' the company's products or services, and workin' with other teams to make sure everything be meetin' the needs and expectations of developers. They be playin' a crucial role in ensurin' the company's products and services be meetin' the needs and expectations of developers and supportin' the needs of the organization. So, grab a tankard of grog and raise a cheer for the DevRel and developer advocate teams!
 
 #### Finance
 
-Finance professionals are responsible for the financial health of a company. Finance professionals often work on tasks such as:
+Aye, aye! Finance professionals be the ones responsible for keeping the treasure chests of a company full and organized. They be workin' on tasks such as:
 
-**Managing financial records:** Finance professionals might work to manage financial records, including accounts payable and receivable, payroll, and taxes.
+Managing the company's booty: Finance professionals be keepin' track of all the company's riches, including payin' the bills, keepin' track of the payroll, and makin' sure the company pays its fair share of taxes.
 
-**Managing budgets and financial plans:** Finance professionals might work to manage budgets and financial plans, including preparing financial reports and projections, and analyzing data to identify areas for improvement.
+Budgetin' and plannin' for future loot: Finance professionals be makin' sure the company has a plan for future riches, including preparin' financial reports and projections, and analyzin' data to find new ways to earn more treasure.
 
-**Ensuring compliance with regulations:** Finance professionals might work to ensure that the company is in compliance with regulations, including tax regulations and financial reporting requirements.
+Stayin' compliant with the law: Finance professionals be makin' sure the company be followin' all the rules and regulations, including tax regulations and financial reportin' requirements.
 
-**Collaborating with other teams:** Finance professionals might work closely with other teams such as operations, marketing, and sales to ensure that the company is meeting its goals and objectives.
+Collaboratin' with other teams: Finance professionals be workin' closely with other teams such as operations, marketing, and sales to ensure the company be reachin' its goals and objectives.
 
-You might imagine that finance professionals are responsible for the financial health of a company. They play a crucial role in ensuring that the company is in compliance with regulations, and in supporting the needs and requirements of the organization.
+You might imagine that finance professionals be the ones responsible for the financial health of a company. They play a crucial role in keepin' the company in compliance with regulations, and in supportin' the needs and requirements of the organization.
 
 #### Frontend
 
-Frontend developers are responsible for designing and building the user interface of your network. Frontend developers typically work on the "frontend" of a website or application, which refers to the user-facing part of the site or application that users interact with.
+Ahoy, ye landlubbers! Ye be lookin' fer a frontend developer, are ye? These scallywags be the ones responsible fer designing and building the user interface of yer network. Ye see, the frontend be the part of the website or application that users interact with, and these developers be the ones that make sure it looks shipshape and easy to navigate.
 
-Frontend developers often work on tasks such as:
+These salty dogs be workin' on tasks such as:
 
-**Designing and building user interfaces:** This might include creating wireframes, prototypes, and visual designs for websites and applications, and implementing them using HTML, CSS, and JavaScript.
+**Designin' and buildin' user interfaces:** These swashbucklers be creatin' wireframes, prototypes, and visual designs for websites and applications, and implementin' them usin' HTML, CSS, and JavaScript.
 
-**Ensuring user experience:** Frontend developers might work to ensure that the user interface of a site or application is intuitive, responsive, and accessible for users.
+**Ensurin' user experience:** Frontend developers be makin' sure the user interface of a site or application be intuitive, responsive, and accessible fer users.
 
-**Collaborating with backend developers:** Frontend developers often work closely with backend developers to ensure that the user interface is supported by the backend systems and infrastructure.
+**Collaboratin' with backend developers:** Frontend developers often be workin' closely with backend developers to ensure that the user interface be supported by the backend systems and infrastructure.
 
-You might imagine that frontend developers are responsible for designing and building the user interface of your network. They might work on tasks such as creating wireframes, prototypes, and visual designs, and implementing them using HTML, CSS, and JavaScript. Frontend developers are an important part of the development team, as they help to create the user experience that users have when interacting with your network.
+So if ye be needin' someone to make yer website or application look as pretty as a mermaid's smile, ye best be callin' on a frontend developer. Avast!
 
 > **Note**: Frontend developers are often referred to as "front-end developers" or "front end developers".
 
 #### Management
 
-Management is responsible for the overall direction of an organization, and for ensuring that the organization is meeting its goals and objectives. Management often works on tasks such as:
+Arrrr me hearties! Ye best be listenin' up if ye wants to know 'bout the roles o' management! Ye see, management be responsibile fer the overall direction of an organization and makin' sure it's meetin' its goals and objectives. They be workin' on tasks like settin' the direction fer the organization, managin' its resources, and overseein' projects.
 
-**Setting the overall direction of the organization:** Management might work to set the overall direction of the organization, and to ensure that the organization is meeting its goals and objectives.
+Now, when it comes to Product Management, these scallywags be responsible fer the development and success o' a company's products. They be definin' the product vision, overseein' the development process, gatherin' feedback from customers, and workin' with other teams to ensure the product be meetin' the needs o' customers.
 
-**Managing the organization's resources:** Management might work to manage the organization's resources, such as people, money, and time.
+And as fer Project Management, that be the practice o' plannin', organizin', and managin' resources to bring about the successful completion o' specific project goals and objectives. Project Managers be definin' project scope and goals, overseein' resources, managin' risks, and communicatin' with stakeholders to keep 'em informed on the progress o' the project.
 
-**Managing the organization's projects:** Management might work to manage the organization's projects, and to ensure that the projects are meeting their goals and objectives.
-
-You might imagine that management is responsible for the overall direction of the organization, and for ensuring that the organization is meeting its goals and objectives. They play a crucial role in ensuring that the organization is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
-
-##### Product Management
-
-Product management is responsible for the development and success of a company's products. Product managers often work on tasks such as:
-
-**Defining the product vision:** Product managers might work to define the overall vision for a product, and to ensure that the product aligns with the company's goals and objectives.
-
-**Managing the product development process:** Product managers might work to manage the product development process, and to ensure that the product is delivered on time and within budget.
-
-**Gathering and analyzing customer feedback:** Product managers might gather feedback from customers about the product, and use this feedback to inform product development and strategy.
-
-**Collaborating with other teams:** Product managers might work closely with other teams such as engineering, marketing, and sales to ensure that the product is meeting the needs and expectations of customers.
-
-You might imagine that product management is responsible for the development and success of a company's products. They play a crucial role in defining the product vision, managing the product development process, gathering and analyzing customer feedback, and collaborating with other teams to ensure that the product is meeting the needs and expectations of customers.
-
-##### Project Management
-
-Project management is the practice of planning, organizing, and managing resources to bring about the successful completion of specific project goals and objectives. Project managers often work on tasks such as:
-
-**Defining project scope and goals:** Project managers might work to define the scope and goals of a project, and to ensure that the project aligns with the overall goals and objectives of the organization.
-
-**Managing project resources:** Project managers might work to manage the resources needed for a project, such as people, money, and time.
-
-**Managing project risks:** Project managers might work to identify and mitigate risks that could impact the success of a project.
-
-**Communicating with stakeholders:** Project managers might work to communicate with stakeholders about the progress of a project, and to ensure that stakeholders are kept informed about the project's status.
-
-You might imagine that project management is the practice of planning, organizing, and managing resources to bring about the successful completion of specific project goals and objectives. Project managers play a crucial role in defining project scope
+So ye best be payin' attention to these management roles if ye wants yer organization to be sailin' smoothly. And remember, always keep an eye out fer any mutiny on the horizon!
 
 #### Marketing
 
-Marketing is the practice of promoting and selling products or services to customers. Marketing professionals often work on tasks such as:
+Ahoy, ye landlubbers! Marketing be the practice of shillin' and sellin' yer wares to the customers. Marketing professionals be workin' on tasks such as:
 
-**Developing marketing strategies:** Marketing professionals might work to develop marketing strategies that will help to promote the company's products or services to customers. This might include identifying the target audience, setting marketing goals, and creating a plan to reach those goals.
+**Developin' marketing strategies:** Marketing professionals be developin' strategies to promote yer company's products or services to customers. This be includin' identifyin' the target audience, settin' marketing goals, and creatin' a plan to reach those goals.
 
-**Conducting market research:** Marketing professionals might conduct market research to gather information about customer needs, preferences, and behavior. This research can help to inform marketing strategies and tactics.
+**Conductin' market research:** Marketing professionals be conductin' research to gather information about customer needs, preferences, and behavior. This research be helpin' to inform marketing strategies and tactics.
 
-**Creating marketing materials:** Marketing professionals might work to create marketing materials such as brochures, advertisements, and social media posts to promote the company's products or services.
+**Creatin' marketing materials:** Marketing professionals be workin' on creatin' marketing materials such as brochures, advertisements, and social media posts to promote the company's products or services.
 
-**Managing social media and online marketing:** Marketing professionals might work to manage the company's social media accounts and online presence, including creating and publishing content, engaging with customers, and analyzing the effectiveness of marketing efforts.
+**Managin' social media and online marketing:** Marketing professionals be workin' on managin' the company's social media accounts and online presence, includin' creatin' and publishin' content, engagin' with customers, and analyzin' the effectiveness of marketing efforts.
 
-**Analyzing and improving marketing performance:** Marketing professionals might analyze data and customer feedback to identify areas for improvement, and then work to optimize the marketing efforts of the company.
+**Analyzin' and improvin' marketing performance:** Marketing professionals be analyzin' data and customer feedback to identify areas for improvement, and then workin' to optimize the marketing efforts of the company.
 
-You might imagine that marketing professionals are responsible for promoting and selling products or services to customers. They play a crucial role in ensuring that the company's products or services are meeting the needs and expectations of customers, and in supporting the needs and requirements of the organization.
+You might imagine that marketing professionals be responsible for shillin' and sellin' yer wares to the customers. They play a crucial role in ensurin' that the company's products or services be meetin'
 
 #### Network Engineering
 
-Network engineering is the practice of designing, building, and maintaining computer networks. Network engineers often work on tasks such as:
+Arrrr, network engineering be the practice of designing, building, and maintaining the digital high seas, if ye will. Network engineers, or "network swashbucklers" as we like to call 'em, often find themselves tackling tasks such as:
 
-**Designing and planning network infrastructure:** Network engineers might work to design and plan the infrastructure of a network, including selecting hardware and software, and determining the layout and configuration of the network.
+**Charting the course for network infrastructure:** Network engineers be responsible for charting the course for the network infrastructure, including selecting the best hardware and software, and determining the layout and configuration of the network.
 
-**Implementing and maintaining network infrastructure:** Network engineers might work to implement and maintain the infrastructure of a network, including installing and configuring hardware and software, and troubleshooting issues as they arise.
+**Manning the network infrastructure:** Network engineers be responsible for manning the network infrastructure, including installing and configuring hardware and software, and troubleshooting any issues that may arise.
 
-**Managing network security:** Network engineers might work to ensure the security of a network, including implementing security measures such as firewalls and intrusion detection systems, and monitoring for potential threats.
+**Protecting the network from scallywags:** Network engineers be responsible for ensuring the security of the network, including implementing security measures such as firewalls and intrusion detection systems, and monitoring for potential threats.
 
-**Monitoring and optimizing network performance:** Network engineers might monitor the performance of a network, and work to optimize it for the needs of the organization. This might include analyzing data and identifying areas for improvement, and implementing changes to improve network efficiency and reliability.
+**Monitoring and optimizing the network's performance:** Network engineers be responsible for monitoring the performance of the network, and working to optimize it for the needs of the organization. This might include analyzing data and identifying areas for improvement, and implementing changes to improve network efficiency and reliability.
 
 **Collaborating with other teams:** Network engineers often work closely with other teams such as development, IT, and security to ensure that the network is meeting the needs and requirements of the organization.
 
-You might imagine that network engineers are responsible for designing, building, and maintaining computer networks. They play a crucial role in designing and planning network infrastructure, implementing and maintaining network infrastructure, managing network security, monitoring and optimizing network performance, and collaborating with other teams to ensure that the network is meeting the needs and requirements of the organization.
+You might imagine that network engineers are responsible for designing, building, and maintaining the digital high seas. They play a crucial role in charting the course for network infrastructure, manning the network infrastructure, protecting the network from scallywags, monitoring and optimizing the network's performance
 
 #### Operations
 
-Operations professionals are responsible for the day-to-day management and execution of a company's business processes. Operations professionals often work on tasks such as:
-
-**Managing and optimizing business processes:** Operations professionals might work to manage and optimize the business processes of a company, such as supply chain management, logistics, and customer service.
-
-**Ensuring efficiency and effectiveness:** Operations professionals might work to ensure that the business processes of a company are efficient and effective, and identify and implement improvements where necessary.
-
-**Collaborating with other teams:** Operations professionals might work closely with other teams such as finance, marketing, and sales to ensure that the company is meeting its goals and objectives.
-
-**Managing resources:** Operations professionals might work to manage the resources of a company, such as people, money, and time.
-
-You might imagine that operations professionals are responsible for the day-to-day management and execution of a company's business processes. They play a crucial role in ensuring that the company is meeting its goals and objectives, and in supporting the needs and requirements of the organization.
-
-##### Customer Service
-
-Customer service professionals are responsible for providing support to customers before, during, and after a purchase. Customer service professionals often work on tasks such as:
-
-**Providing support to customers:** Customer service professionals might work to provide support to customers before, during, and after a purchase, including answering questions, troubleshooting issues, and resolving complaints.
-
-**Ensuring efficiency and effectiveness:** Customer service professionals might work to ensure that the customer service processes are efficient and effective, and identify and implement improvements where necessary.
-
-**Collaborating with other teams:** Customer service professionals might work closely with other teams such as finance, marketing, and sales to ensure that the company is meeting its goals and objectives.
-
-You might imagine that customer service professionals are responsible for providing support to customers before, during, and after a purchase. They play a crucial role in ensuring that the customer service processes are efficient and effective, and in supporting the needs and requirements of the organization.
-
-##### Logistics
-
-Logistics professionals are responsible for the planning, implementation, and management of the efficient, effective, and timely flow and storage of goods, services, and related information from the point of origin to the point of consumption. Logistics professionals often work on tasks such as:
-
-**Managing the flow of goods:** Logistics professionals might work to manage the flow of goods from raw material suppliers to end customers, ensuring that the right products are delivered to the right place at the right time.
-
-**Managing inventory:** Logistics professionals might work to manage inventory, ensuring that the company has the right amount of products on hand to meet customer demand.
-
-**Ensuring efficiency and effectiveness:** Logistics professionals might work to ensure that the logistics processes are efficient and effective, and identify and implement improvements where necessary.
-
-**Collaborating with other teams:** Logistics professionals might work closely with other teams such as finance, marketing, and sales to ensure that the company is meeting its goals and objectives.
-
-You might imagine that logistics professionals are responsible for the planning, implementation, and management of the efficient, effective, and timely flow and storage of goods, services, and related information from the point of origin to the point of consumption. They play a crucial role in ensuring that the logistics processes are efficient and effective, and in supporting the needs and requirements of the organization.
-
-##### Supply Chain Management
-
-Supply chain management professionals are responsible for the coordination and management of the flow of goods, information, and services from raw material suppliers to end customers. Supply chain management professionals often work on tasks such as:
-
-**Managing relationships with suppliers:** Supply chain management professionals might work to manage relationships with suppliers, negotiating contracts and ensuring that the company's needs are met in a timely and cost-effective manner.
-
-**Managing the flow of goods:** Supply chain management professionals might work to manage the flow of goods from raw material suppliers to end customers, ensuring that the right products are delivered to the right place at the right time.
-
-**Ensuring efficiency and effectiveness:** Supply chain management professionals might work to ensure that the supply chain is efficient and effective, and identify and implement improvements where necessary.
-
-**Collaborating with other teams:** Supply chain management professionals might work closely with other teams such as finance, marketing, and sales to ensure that the company is meeting its goals and objectives.
-
-You might imagine that supply chain management professionals are responsible for the coordination and management of the flow of goods, information, and services from raw material suppliers to end customers. They play a crucial role in ensuring that the supply chain is efficient and effective, and in supporting the needs and requirements of the organization.
+Ahoy Mateys! Ye be lookin' fer the scallywags in charge of keepin' the ship runnin' smoothly? Look no further, those be the operations professionals! They be the ones responsible for mangin' the day-to-day operations of the company, like a captain navigatin' the seas. Ye can find them optimizin' the business processes, like the supply chain and customer service, makin' sure everythin' runs like a well-oiled machine. They be workin' with other teams, like finance and marketing, to ensure the company be reachin' its treasure trove of goals. And ye best believe they be managing the resources of the company like a true pirate manages their loot. Without them, the ship would be sinkin' faster than a barrel of rum in a storm. So raise the anchor and set sail with the operations team!
 
 #### Sales
 
-Sales professionals are responsible for the promotion and sale of a company's products and services. Sales professionals often work on tasks such as:
+Aye, sales professionals be like the captain of the ship, steerin' the course towards treasure and riches! They be responsible for takin' the goods and services of the company and sellin' 'em to the scallywags out there in the market. They be workin' on tasks such as:
 
-**Promoting products and services:** Sales professionals might work to promote products and services, including identifying potential customers, developing relationships with customers, and negotiating contracts.
+**Promotin' the loot:** Sales professionals be settin' sail to find potential customers, buildin' relationships with 'em, and negotiatin' deals to make sure the treasure ends up in their hands.
 
-**Ensuring efficiency and effectiveness:** Sales professionals might work to ensure that the sales processes are efficient and effective, and identify and implement improvements where necessary.
+**Ensurin' efficiency and effectiveness:** Sales professionals be makin' sure the sales process be runnin' smoothly, and if not, they be fixin' it up like patchin' a leaky hull.
 
-**Collaborating with other teams:** Sales professionals might work closely with other teams such as finance, marketing, and operations to ensure that the company is meeting its goals and objectives.
+**Collaboratin' with other teams:** Sales professionals be workin' closely with other teams such as finance, marketing, and operations to make sure the ship be stayin' afloat and reachin' its destination.
 
-You might imagine that sales professionals are responsible for the promotion and sale of a company's products and services. They play a crucial role in ensuring that the sales processes are efficient and effective, and in supporting the needs and requirements of the organization.
+Yarr! Sales professionals be playin' a crucial role in makin' sure the treasure be flowin' in and the company be reachin' its goals and objectives.
 
 #### Software development and delivery
 
-In the realm of software development and delivery, there are four key roles that play important roles in improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, and platform engineering.
+Aye, aye Captain! Arrrr, there be four key roles in software development and delivery that be important for improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, and Platform Engineering, Site Reliability Engineering (SRE).
 
-##### DevOps
+DevOps be the practice of integrating development and operations to improve the efficiency and effectiveness of software development and delivery. To get started with DevOps, it be important to understand the principles of DevOps, choose the right tools, automate processes, collaborate with yer team, and monitor and measure performance.
 
-DevOps is the practice of integrating development and operations to improve the efficiency and effectiveness of software development and delivery. To get started with DevOps, it is important to understand the principles of DevOps, choose the right tools, automate processes, collaborate with your team, and monitor and measure performance.
+DevSecOps be the practice of integrating security into the software development and delivery process. DevSecOps professionals work on tasks such as integrating security into the software development and delivery process and collaborating with other teams to ensure that security is integrated into the process.
 
-##### DevSecOps
+GitOps be the practice of using Git as the source of truth for yer infrastructure. GitOps professionals work on tasks such as using Git as the source of truth for yer infrastructure and collaborating with other teams to ensure that Git is used as the source of truth.
 
-DevSecOps is the practice of integrating security into the software development and delivery process. DevSecOps professionals work on tasks such as integrating security into the software development and delivery process and collaborating with other teams to ensure that security is integrated into the process.
+And finally, Site Reliability Engineering (SRE) be the practice of ensuring that systems are reliable, secure, and scalable. SRE professionals work on tasks such as monitoring system performance, identifying potential issues, and implementing improvements to ensure that systems are running smoothly and effectively.
 
-##### GitOps
-
-GitOps is the practice of using Git as the source of truth for your infrastructure. GitOps professionals work on tasks such as using Git as the source of truth for your infrastructure and collaborating with other teams to ensure that Git is used as the source of truth.
+Arrrr, all these roles are crucial for making sure yer software development and delivery is smooth sailing, and yer ship stays afloat!
 
 ## Chapter Two - The Fundamentals
 
@@ -3812,10 +3654,10 @@ As for the week ahead, I've got me work cut out for me. I'm planning to do a dee
 
 ## Testemonials
 
-**Linus Torvalds:** "As the creator of the Linux kernel, I can confidently say that pirating software is a big no-no. But if I were a pirate, I'd have to say that Dean Lofts' book "Linux for Pirates" would be my go-to guide for all things pirate- and Linux-related. Dean may not be as seasoned a pirate as Captain Jack Sparrow, but he sure knows his stuff when it comes to Linux. And let's be honest, a little bit of clever hacking never hurt anyone in a fight against the Royal Navy."
+**Linus Torvalds:** "As the creator of the Linux kernel, I can confidently say that pirating software is a big no-no. But if I were a pirate, I'd have to say that Dean Lofts' book "Linux for Pirates" would be my go-to guide for all things pirate- and Linux-related. Dean may not be as seasoned a pirate as Captain Loftwah Sparrow, but he sure knows his stuff when it comes to Linux. And let's be honest, a little bit of clever hacking never hurt anyone in a fight against the Royal Navy."
 
-**Richard Stallman:** "As a strong advocate for free software, I can't condone piracy in any form. However, if I had to choose a resource for learning about Linux and pirating, it would have to be Dean Lofts' book "Linux for Pirates!". Dean may not be as ruthless a pirate as Captain Jack Sparrow, but he's certainly got a way with words and a wicked sense of humor. Plus, his book is chock full of useful information for pirates looking to make the most of their Linux systems."
+**Richard Stallman:** "As a strong advocate for free software, I can't condone piracy in any form. However, if I had to choose a resource for learning about Linux and pirating, it would have to be Dean Lofts' book "Linux for Pirates!". Dean may not be as ruthless a pirate as Captain Loftwah Sparrow, but he's certainly got a way with words and a wicked sense of humor. Plus, his book is chock full of useful information for pirates looking to make the most of their Linux systems."
 
-**Captain Jack Sparrow:** "Ahoy there, mateys! As a seasoned pirate, I can tell ye that there's no one I'd rather have by my side in a fight than Linus Torvalds and Richard Stallman. And when it comes to learning about Linux and pirating, Dean Lofts' book "Linux for Pirates!" is a must-read. Dean may not have as much experience on the high seas as I do, but he sure knows his way around a Linux system. So hoist the sails and let's set a course for adventure, with Dean's book as our guide!"
+**Captain Loftwah Sparrow:** "Ahoy there, mateys! As a seasoned pirate, I can tell ye that there's no one I'd rather have by my side in a fight than Linus Torvalds and Richard Stallman. And when it comes to learning about Linux and pirating, Dean Lofts' book "Linux for Pirates!" is a must-read. Dean may not have as much experience on the high seas as I do, but he sure knows his way around a Linux system. So hoist the sails and let's set a course for adventure, with Dean's book as our guide!"
 
 > **Note** These are not real tersemonials, but they could be if you want them to be bad enough.
