@@ -3007,6 +3007,8 @@ Here are some practice problems to help you get familiar with subnetting:
 2. With a subnet mask of `11111111.11111111.11110000.00000000`, you can create 8 subnets, each with 1024 hosts.
 3. With a subnet mask of `11111111.11111111.11111000.00000000`, you can create 16 subnets, each with 512 hosts.
 
+![TCP & UDP meme](images/tcp-udp.png)
+
 ### TCP/IP
 
 TCP/IP be a suite of networking protocols that be used to connect devices on the internet. It be the foundation of the internet, and it be what allow devices to communicate with each other and exchange data over the network.
