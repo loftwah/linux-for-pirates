@@ -13,8 +13,9 @@ jobs:
     - name: Checkout the repository
       uses: actions/checkout@v2
 
-    - name: Install Pandoc
-      run: sudo apt-get install pandoc -y
-
     - name: Convert Markdown to PDF
-      run: pandoc index.md -o linux-for-pirates.pdf
+      uses: pandoc/action-pandoc@v2
+      with:
+        inputs: index.md
+        outputs: linux-for-pirates.pdf
+        args: --pdf-engine=xelatex
