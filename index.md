@@ -1580,6 +1580,8 @@ So hoist the mainsail and set course for the World Wide Web! With the World Wide
 
 Sir Tim Berners-Lee be a British computer scientist and engineer who be best known as the inventor of the World Wide Web. He be a pioneer in the field of computer science, and he be the founder of the World Wide Web Consortium (W3C), which be a standards organization that be responsible for the development of web standards.
 
+![Sir Tim Berners-Lee](images/sirtbl.png)
+
 #### Web Server
 
 A web server be a computer that be used to host web resources, such as web pages, images, and videos. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
