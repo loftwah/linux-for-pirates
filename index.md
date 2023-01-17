@@ -250,8 +250,6 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
 - [Jokes](#jokes)
   - [Check Yer Deployments](#check-yer-deployments)
-  - [Late to the Party](#late-to-the-party)
-- [Captain's Log](#captains-log)
 - [Testemonials](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -3636,26 +3634,6 @@ The captain, a seasoned veteran of the high seas, knew they needed to act fast. 
 "Leave that to me," replied the captain, pulling out his trusty sword. "I'll just cut the anchor's deployment pipeline and redeploy the sails manually." And with a mighty swing, he severed the anchor's deployment pipeline and the ship was finally on its way.
 
 From then on, the DevOps pirate made sure to double check his deployments before setting sail. And the rest of the crew lived happily ever after, sailing the seas and deploying their sails with ease.
-
-### Late to the Party
-
-Why was the DevOps pirate always late to meetings?
-
-He kept deployin' the wrong island!
-
-## Captain's Log
-
-**Date:** 2023-01-09
-
-**Location:** The Seven Seas
-
-**Weather:** Fair
-
-**Log:**
-
-Arrr, it was quite a busy week for this ol' sea dog. I assisted me matey @Chrissy and the crew with a hackathon, and made some great progress on Linux for Pirates!. I even managed to avoid the plank and earn me self a promotion at work, though I was a bit worried I might be headed for Davy Jones' locker. I had to think on me feet and figure out how to manage a Git repository with actual interest and contributions. I also had a grand chat with me mate @ibilalkayy about all things DevOps, open source, and escapin' Tutorial Hell. I even visited an old shipmate who's now a React developer and is much better at Linux than I be. I also made a tool for GitHub Actions that syncs playlists between YouTube and Amazon Music, though I may have caused me mate Eddie a bit of grief while tryin' to help with a JSON validation action. I also wrote the release notes for our latest sprint because all me other mates were away, and even wrote a Medium article about copin' with loss and dealin' with adversity that seems to be a hit.
-
-As for the week ahead, I've got me work cut out for me. I'm planning to do a deep dive into AWS ECS and try to get our application running smoothly. I'll also be continuin' me education in Ruby and Ruby on Rails, and startin' up with Svelte and SvelteKit. I'm also gettin' started on yepcal, a schedulin' application inspired by Calendly with a focus on video chat using Yep. I'll also be tinkering with a remotion.js project involving LinkFree and generatin' some cool videos from our profiles and the site. I'll be readin' and editin' contributions for Linux for Pirates!, and hopin' I have enough energy left for some more writin'. And to top it all off, I've got a new music release due this month that I'll be mixin' and masterin'. It's goin' to be a busy week, but I'm ready to face it with me cutlass drawn.
 
 ## Testemonials
 
