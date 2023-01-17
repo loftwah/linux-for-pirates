@@ -200,6 +200,8 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [SSH Keys](#ssh-keys)
       - [How to generate SSH keys](#how-to-generate-ssh-keys)
     - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSH Tunneling](#ssh-tunneling)
+    - [Poor man's VPN (scurvy dog's sneak way)](#poor-mans-vpn-scurvy-dogs-sneak-way)
   - [SSL/TLS](#ssltls)
     - [SSL Certificates](#ssl-certificates)
       - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
@@ -2841,6 +2843,20 @@ SSH port forwarding is a feature that allows you to forward traffic from a local
 When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
 
 SSH port forwarding is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
+
+#### SSH Tunneling
+
+SSH tunneling is a feature that allows you to forward traffic from a local port to a remote port on an SSH server. This can be useful for accessing services that are only available on a remote server, such as a web server or database.
+
+When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
+
+#### Poor man's VPN (scurvy dog's sneak way)
+
+[sshuttle](https://github.com/sshuttle/sshuttle)
+
+sshuttle (a poor man's VPN) is a tool that uses SSH to create a VPN between your local machine and a remote server. It can be used to access services that are only available on a remote server, such as a web server or database.
+
+When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
 
 ### SSL/TLS
 
