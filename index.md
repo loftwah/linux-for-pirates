@@ -102,6 +102,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [Web Server](#web-server)
       - [Apache](#apache)
       - [Nginx](#nginx)
+      - [Puma](#puma)
       - [Ad-hoc Web Servers](#ad-hoc-web-servers)
   - [Amazon Web Services](#amazon-web-services)
   - [Cloudflare](#cloudflare)
@@ -929,7 +930,43 @@ chown -R pirate:pirates treasure_chest
 
 [PacketLife](https://packetlife.net/)
 
+Ahoy there me hearties! Welcome to the wonderful world of computer networking, where the bytes flow like rum and the packets be flyin' like cannonballs. Ye be a fresh recruit to the tech industry, and it be time for ye to learn the ropes of this digital high seas.
+
+First things first, let's talk about the lingo of the land. Ye be hearin' words like "MAC addresses" and "frames" thrown around like a shanty at a crew singalong. A MAC address be a unique identifier for a device on a network, kind of like a pirate's tattoo. And frames, why they be like the hull of a ship, holdin' all the important information together as it travels across the network.
+
+Next, we have packets, the little buccaneers of data, carryin' information from one port to another. And just like how a pirate ship needs a crew to navigate, packets be usin' protocols like TCP and IP to make sure they reach their destination safe and sound.
+
+And what be a network without a map? Ye be needin' IP addresses to navigate these digital waters and find yer way to other ships. And just like how ye need a compass to find true north, ye be usin' DNS to find the IP address of a website.
+
+Routing protocols be like the maps and compass of the network world, they help guide packets to their destination. Let's take a look at some of the most commonly used ones:
+
+**OSPF (Open Shortest Path First):** This be a link state routing protocol, it's used mostly in large enterprise networks and service providers. It builds a map of the entire network and uses the shortest path to route the packets.
+
+**EIGRP (Enhanced Interior Gateway Routing Protocol):** This be a Cisco proprietary protocol, it's similar to OSPF but it's more efficient in terms of bandwidth usage and faster convergence. It's mostly used in Cisco networks.
+
+**RIP (Routing Information Protocol):** This be one of the oldest routing protocols, it's simple to configure and it's mostly used in small networks. It uses hop count as the metric for determining the best path for routing.
+
+**BGP (Border Gateway Protocol):** This be the king of routing protocols, it's used to route packets between different autonomous systems (AS) on the Internet. It's more complex to configure than the other protocols and it's mostly used by service providers and large organizations. It uses a path vector algorithm to determine the best path.
+
+**IS-IS (Intermediate System to Intermediate System):** This be another link-state routing protocol, it's mainly used in large service provider networks and it's similar to OSPF.
+
+So, as you may expect BGP be specially important for internet routing and used for interconnect different networks, it's a robust and complex protocol that requires a good understanding of how internet routing works.
+
+So there ye have it, a quick overview of the most common routing protocols. Remember, just like how a pirate ship needs a good navigator, a network needs a good routing protocol to reach its destination.
+
+So grab yerself a mug of grog and set sail on this journey through the tech industry. And remember, always keep a lookout for them scallywag hackers tryin' to steal yer treasure.
+
+Yarr!
+
 `arp`: This command be used to display and manipulate the system's ARP cache. Ye can use it to view the ARP cache, add or delete entries, and more.
+
+  Ahoy matey! An ARP request be like a call to the crew of another ship, askin' for their location on the network. Ye see, on a ship, ye need to know where everyone be to coordinate yer actions. Same goes for a network, each device needs to know the location of other devices to communicate with them.
+
+  An ARP request be a broadcast message sent by a device, askin' other devices on the network "Where be the device with this IP address? Give me its MAC address so I can talk to it." And just like how a crew member would respond with their location, the other devices on the network respond with their MAC address.
+
+  And just like how a pirate ship needs a good lookout to spot other ships, a network needs ARP to spot other devices and communicate with them.
+
+  Yarr!
 
 `ip`: This command be used to configure network interfaces on yer system. Ye can use it to view information about yer network interfaces, set their IP addresses, and more.
 
@@ -938,6 +975,22 @@ chown -R pirate:pirates treasure_chest
 `traceroute`: This command be used to trace the route between yer system and another device on the network. Ye can use it to see the path that packets be taking between yer system and the destination.
 
 `netstat`: This command be used to display information about yer system's network connections and routing tables. Ye can use it to view information about active connections and network routes.
+
+  Ahoy matey! ICMP be like a messenger bird for yer network, it be used for sendin' error messages and status information between devices. Ye see, just like how a pirate ship needs to send messages to other ships to coordinate actions, a network needs to send messages to other devices to coordinate communication.
+
+  ICMP be used for a variety of things, such as letting a device know that it can't reach a destination, or that a destination is too busy to respond. It also be used for diagnostic purposes, such as the "ping" command, which be like shoutin' "Ahoy!" to a ship to see if they be there.
+
+  And just like how a pirate ship needs a good messenger to send important messages, a network needs ICMP to send important information between devices.
+
+  SNMP be like the ship's log of yer network, it be used for keepin' track of all the happenings on the network and givin' ye information about the devices connected to it. Ye see, just like how a pirate ship needs a log to keep track of its journey, a network needs SNMP to keep track of what's happening on it.
+
+  SNMP be used for monitorin' and managin' devices on a network, it be used to gather information about the devices, such as their uptime, CPU usage, and memory usage, and it can also be used to change settings on the devices.
+
+  SNMP be based on a client-server model, the devices on the network be the "servers" and the network management system be the "client". The client sends SNMP requests to the servers and the servers respond with the requested information.
+
+  SNMP is one of the most common protocol for network management, it's easy to use and widely supported by many different vendors. And just like how a pirate ship needs a good navigator to find its way, a network needs SNMP to find its way around and keep track of everything.
+
+  Yarr!
 
 `route`: This command be used to view and modify the routing table on yer system. Ye can use it to add, delete, or modify routes on yer system.
 
@@ -1556,6 +1609,20 @@ Nginx be a popular web server that be used to host web resources, such as web pa
 In a pirate theme, ye can think of Nginx as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, Nginx be able to explore a vast world of information and resources.
 
 A reverse proxy server be a server that be used to forward client requests to one or more backend servers. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+
+##### Puma
+
+Ahoy there me hearties! Puma be like the crewman that helps ye to hoist the sails on yer website, it be a web server, used for serving up yer website to the landlubbers who be visitin' it. Ye see, just like how a pirate ship needs a crew to hoist the sails and set sail, a website needs a web server to serve up its content to visitors.
+
+Puma be a web server built for speed, it's designed to handle high concurrency and be able to handle many connections at once. It's built on top of the Ruby programming language, but it can handle other languages as well.
+
+Puma be a "concurrent" web server, it uses a technique called "Evented I/O" to handle multiple connections at once, this makes it more efficient than traditional "threaded" web servers. It uses a small number of threads to handle many connections, this reduces the overhead and makes it faster.
+
+Puma is considered a good web server for small and medium-sized websites, it's easy to use, and it's compatible with most Ruby frameworks like Ruby on Rails, Sinatra, and Hanami. It's widely used and it's considered a robust option for web server.
+
+So there ye have it, Puma be a web server that helps hoist yer website sails and set it on its journey, it's fast, efficient, and widely used. Just like how a pirate ship needs a good crew to set sail, a website needs a good web server to hoist its sails and set it on its journey.
+
+Yarr!
 
 ##### Ad-hoc Web Servers
 
