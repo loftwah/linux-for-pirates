@@ -1,5 +1,4 @@
 name: Generate PDF
-
 on:
   push:
     branches:
@@ -22,7 +21,7 @@ jobs:
       run: pandoc index.md -o linux-for-pirates.pdf --pdf-engine=xelatex
 
     - name: Upload PDF to main branch
-          uses: actions/upload-artifact@v2
-          with:
-            name: linux-for-pirates.pdf
-            path: linux-for-pirates.pdf
+      uses: actions/upload-artifact@v2
+      with:
+        name: linux-for-pirates.pdf
+        path: linux-for-pirates.pdf
