@@ -592,6 +592,8 @@ All three roles be playin' important roles in keepin' the ship safe and sailin' 
 
 Aye, Kevin Mitnick be a legendary figure in the world of cybersecurity. He was once known as one of the most notorious hackers, but after servin' time in prison, he turned his life around and now uses his skills and knowledge to help companies and organizations protect themselves from cyber threats. As a cybersecurity consultant and public speaker, he be sharin' his expertise and helpin' others to better understand the dangers of the digital world and how to defend against them.
 
+![Kevin Mitnick as a Pirate](images/mitnick-pirate.png)
+
 A pirate might look up to Kevin Mitnick because of his reputation as a skilled and successful hacker. Just like how a pirate is known to be a skilled and successful looter in the sea, Mitnick's reputation as a successful hacker could be seen as admirable by someone who values those traits. Additionally, Mitnick's story of being a notorious hacker, serving time in prison, and then turning his life around to become a respected cybersecurity expert could also be seen as an inspiration for someone looking to change their ways.
 
 **What exactly did Kevin Mitnick do?**
