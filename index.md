@@ -798,7 +798,7 @@ Yarr! Sales professionals be playin' a crucial role in makin' sure the treasure 
 
 #### Software development and delivery
 
-Aye, aye Captain! Arrrr, there be four key roles in software development and delivery that be important for improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, Platform Engineering and Site Reliability Engineering (SRE).
+Aye, aye Captain! Arrrr, there be five key roles in software development and delivery that be important for improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, Platform Engineering and Site Reliability Engineering (SRE).
 
 DevOps be the practice of integrating development and operations to improve the efficiency and effectiveness of software development and delivery. To get started with DevOps, it be important to understand the principles of DevOps, choose the right tools, automate processes, collaborate with yer team, and monitor and measure performance.
 
