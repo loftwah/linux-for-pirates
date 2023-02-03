@@ -1691,13 +1691,13 @@ This command will start a web server using the Go programming language. To insta
 
 [Amazon Web Services](https://aws.amazon.com/)
 
-Amazon Web Services (AWS) be a cloud computing platform that be used to host web resources, such as web pages, images, and videos. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
+Amazon Web Services (AWS) is a cloud computing platform that is used to host web resources, such as web pages, images, and videos. It is a powerful tool that is used by billions of people every day to access information, communicate, and perform a wide range of tasks.
 
-Ahoy, matey! As an AWS professional, ye should be well-versed in the ways of the cloud. This means having a strong understanding of Amazon Web Services and all its nooks and crannies. Ye should be able to navigate the AWS Management Console with ease and know how to set up and configure various services such as EC2 instances, S3 buckets, and RDS databases.
+Ahoy, matey! As an AWS professional, you should be well-versed in the ways of the cloud. This means having a strong understanding of Amazon Web Services and all its nooks and crannies. You should be able to navigate the AWS Management Console with ease and know how to set up and configure various services such as EC2 instances, S3 buckets, and RDS databases.
 
-In addition to having a broad knowledge of the various AWS services, it be important for ye to be able to deploy and manage applications in the cloud. This means being able to write scripts and code to automate tasks and processes, as well as being able to troubleshoot and debug issues that may arise.
+In addition to having a broad knowledge of the various AWS services, it is important for you to be able to deploy and manage applications in the cloud. This means being able to write scripts and code to automate tasks and processes, as well as being able to troubleshoot and debug issues that may arise.
 
-Finally, as a true AWS professional, ye should be able to keep yer head in a crisis and be able to think on yer feet. Whether it be dealing with a sudden influx of traffic to yer application or a network outage, ye should be able to think quickly and come up with solutions to keep yer ship sailing smoothly. So shiver me timbers and get to work, matey!
+Finally, as a true AWS professional, you should be able to keep your head in a crisis and be able to think on your feet. Whether it is dealing with a sudden influx of traffic to your application or a network outage, you should be able to think quickly and come up with solutions to keep your ship sailing smoothly. So shiver me timbers and get to work, matey!
 
 ### Cloudflare
 
@@ -1705,17 +1705,17 @@ Finally, as a true AWS professional, ye should be able to keep yer head in a cri
 
 Cloudflare is a content delivery network (CDN) and DNS service that can be used to improve the performance and security of a website. It does this by caching content on its global network of servers, which can help to reduce the load on the origin server. It also provides a number of security features, such as DDoS protection, bot management, and TLS encryption.
 
-Ahoy, matey! For Cloudflare, ye should be well-versed in the ways of the web. This means having a strong understanding of how to use Cloudflare's various services to protect and optimize websites.
+Ahoy, matey! For Cloudflare, you should be well-versed in the ways of the web. This means having a strong understanding of how to use Cloudflare's various services to protect and optimize websites.
 
-Ye should be able to set up and configure Cloudflare's services such as its content delivery network (CDN), DDoS protection, and SSL/TLS certificates. Ye should also be familiar with Cloudflare's Web Application Firewall (WAF) and know how to use it to protect websites from malicious traffic and attacks.
+You should be able to set up and configure Cloudflare's services such as its content delivery network (CDN), DDoS protection, and SSL/TLS certificates. You should also be familiar with Cloudflare's Web Application Firewall (WAF) and know how to use it to protect websites from malicious traffic and attacks.
 
-In addition to these technical skills, it be important for ye to be able to communicate with clients and stakeholders about the benefits of using Cloudflare. Ye should be able to explain how Cloudflare can improve website performance, security, and reliability in a way that is easy for non-technical folks to understand.
+In addition to these technical skills, it is important for you to be able to communicate with clients and stakeholders about the benefits of using Cloudflare. You should be able to explain how Cloudflare can improve website performance, security, and reliability in a way that is easy for non-technical folks to understand.
 
-Finally, as a true Cloudflare professional, ye should be able to keep yer head in a crisis and be able to think on yer feet. Whether it be dealing with a sudden influx of traffic to a client's website or a network outage, ye should be able to think quickly and come up with solutions to keep yer ship sailing smoothly. So hoist the mainsail and get to work, matey!
+Finally, as a true Cloudflare professional, you should be able to keep your head in a crisis and be able to think on your feet. Whether it is dealing with a sudden influx of traffic to a client's website or a network outage, you should be able to think quickly and come up with solutions to keep your ship sailing smoothly. So hoist the mainsail and get to work, matey!
 
 ### CI/CD
 
-CI/CD be a software development practice where code changes be automatically built, tested, and deployed to production. It allow for faster and more frequent updates to a software application, as code changes be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it take for new features or bug fixes to reach users.
+CI/CD be a software development practice where code changes are automatically built, tested, and deployed to production. This allows for faster and more frequent updates to a software application, as code changes are automatically deployed as soon as they pass tests. This can help reduce the risk of deployments, as well as speed up the time it takes for new features or bug fixes to reach users.
 
 #### Continuous Delivery
 
