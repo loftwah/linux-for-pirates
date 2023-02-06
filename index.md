@@ -258,7 +258,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## In memory of Aaron Swartz
+## **In memory of Aaron Swartz**
 
 [The Internet's Own Boy: The Story of Aaron Swartz](https://www.youtube.com/watch?v=M85UvH0TRPc)
 
@@ -276,7 +276,7 @@ Aaron was also a strong advocate for open access, which is the movement to make 
 
 Aaron's work had a major impact on the development of the internet and the open access movement, and he is remembered as a pioneer and a hero by many in the tech community. Tragically, Aaron took his own life in 2013, at the age of 26. His legacy lives on through the work of those who continue to fight for open access and the free flow of information. Arrr!
 
-## What is Linux?
+## **What is Linux?**
 
 Linux is a free and open-source operating system that was created by Linus Torvalds in 1991. At the time, Linus was a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
@@ -290,7 +290,7 @@ Linux quickly gained popularity among pirates, and a large community of develope
 
 Today, Linux is an important part of the open source software movement, and is used by pirates around the world for a variety of purposes, including running servers, developing software, and as a platform for scientific and technical computing. It is known for its stability, security, and flexibility, and is an essential tool in the arsenal of any self-respecting pirate. Arrr!
 
-### What is GNU?
+### **What is GNU?**
 
 GNU is a free and open-source operating system that was created by Richard Stallman in 1983. At the time, Stallman was a computer science student at the Massachusetts Institute of Technology (MIT), and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
@@ -304,57 +304,57 @@ GNU quickly gained popularity among pirates, and a large community of developers
 
 Today, GNU is an important part of the open source software movement, and is used by pirates around the world for a variety of purposes, including running servers, developing software, and as a platform for scientific and technical computing. It is known for its stability, security, and flexibility, and is an essential tool in the arsenal of any self-respecting pirate. Arrr!
 
-### What is open source software?
+### **What is open source software?**
 
 Open source software is software that is freely available to anyone who wants to use it, modify it, or distribute it. It is a model for software development that encourages collaboration and the sharing of ideas and code.
 
 Open source software is often developed using a model called "open source development", which is a process that encourages collaboration and the sharing of ideas and code. In this model, the source code for the software is made available to the community, and anyone can contribute to the project by writing code, fixing bugs, or improving the software in some way.
 
-#### What are open source licenses?
+#### **What are open source licenses?**
 
 Open source licenses are legal documents that grant users the right to use, modify, and distribute open source software. They are used to protect the rights of the developers and users of open source software, and to ensure that the software remains free and open.
 
 There are many different open source licenses, and each one has its own set of rules and requirements. The most popular open source licenses are the GNU General Public License (GPL) and the MIT License.
 
-#### What is the GNU General Public License (GPL)?
+#### **What is the GNU General Public License (GPL)?**
 
 The GNU General Public License (GPL) is a free and open-source software license that is used by many open source projects. It is a copyleft license, which means that derivative works can only be distributed under the same license terms.
 
 The GPL was originally developed by Richard Stallman in 1989, and was released as open source software under the GNU General Public License. It is one of the most widely used open source licenses, and is used by many popular open source projects, including the Linux kernel, the GNU Compiler Collection (GCC), and the GNU C Library (glibc).
 
-#### What is the MIT License?
+#### **What is the MIT License?**
 
 The MIT License is a free and open-source software license that is used by many open source projects. It is a permissive license, which means that derivative works can be distributed under any license.
 
 The MIT License was originally developed by the Massachusetts Institute of Technology (MIT) in 1980, and was released as open source software under the MIT License. It is one of the most widely used open source licenses, and is used by many popular open source projects, including the Node.js runtime, the jQuery JavaScript library, and the Angular web framework.
 
-### What is free software?
+### **What is free software?**
 
 Free software is software that is freely available to anyone who wants to use it, modify it, or distribute it. It is a model for software development that encourages collaboration and the sharing of ideas and code.
 
 Free software is often developed using a model called "free software development", which is a process that encourages collaboration and the sharing of ideas and code. In this model, the source code for the software is made available to the community, and anyone can contribute to the project by writing code, fixing bugs, or improving the software in some way.
 
-#### Free as in freedom
+#### **Free as in freedom**
 
 Free software is often referred to as "free as in freedom", which is a reference to the freedom that is granted to users of free software. Free software is free to use, modify, and distribute, and users are free to use it for any purpose, including commercial purposes.
 
-#### Free as in beer
+#### **Free as in beer**
 
 Free software is often referred to as "free as in beer", which is a reference to the fact that users are not required to pay for a license to use free software. Free software is free to use, modify, and distribute, and users are free to use it for any purpose, including commercial purposes.
 
-### What is the Linux kernel?
+### **What is the Linux kernel?**
 
 The Linux kernel is the core component of the Linux operating system. It is a piece of software that acts as an interface between the hardware and the rest of the operating system, and is responsible for managing the resources of the computer and allocating them to the various applications and processes that are running.
 
 The Linux kernel was originally developed by Linus Torvalds in 1991, and was released as open source software under the GNU General Public License. It is written in the C programming language, and is available for a wide variety of computer architectures, including x86, ARM, and PowerPC.
 
-### Linus Torvalds
+### **Linus Torvalds**
 
 ![Linus Torvalds](images/linustorvalds.png)
 
 Linus Torvalds is the creator of the Linux operating system. He is a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
-### Richard Stallman
+### **Richard Stallman**
 
 ![Richard Stallman](images/richardstallman.png)
 
@@ -362,7 +362,7 @@ Richard Stallman is the creator of the GNU operating system. He is a computer sc
 
 ![Linus Torvalds and Richard Stallman as Pirates](images/linus_richard.png)
 
-## Before we begin
+## **Before we begin**
 
 Loftwah stood at the helm of his ship, staring out at the vast expanse of the ocean. He had been a pirate for as long as he could remember, and he loved nothing more than the thrill of the hunt and the rush of adrenaline that came with finding treasure.
 
@@ -384,7 +384,7 @@ And in the end, their hard work paid off. They found the Black Pearl, and it was
 
 As they sailed back home, filled with treasure and stories to tell, Loftwah couldn't help but feel grateful for the diverse and skilled crew that he had assembled. He knew that it was their combined knowledge and creativity that had led them to victory, and he couldn't wait to see what other adventures they would have together in the future.
 
-## About the author (This isn't on the test)
+## **About the author (This isn't on the test)**
 
 ![Dean Lofts](images/deanlofts.png)
 
@@ -402,7 +402,7 @@ As they sailed off into the sunset with their prize, Loftwah raised their fist t
 
 So if you ever find yourself sailing the high seas and you see a pirate flag with a Loftwah-shaped skull and crossbones on it, beware! You're in for a wild ride with the fearless Loftwah and their trusty crew. Ahoy, matey!
 
-## Chapter One - Getting Started
+## **Chapter One - Getting Started**
 
 ![Chapter One - Getting Started](images/chapterone.png)
 
@@ -424,7 +424,7 @@ There be many reasons why a scurvy dog might want to set sail with Linux, includ
 
 All in all, Linux be a versatile and powerful operating system that be suitable for a wide range o' uses. Whether ye be a greenhorn or an experienced swashbuckler, Linux has something to offer for all.
 
-### Ubuntu
+### **Ubuntu**
 
 [Awesome Ubuntu](https://github.com/bpearson/Awesome-Ubuntu-Linux)
 
@@ -438,7 +438,7 @@ Ubuntu be released in October 2004, and it be the first Linux distribution to us
 
 Ubuntu be released in three editions: Ubuntu Desktop, Ubuntu Server, and Ubuntu Core. Ubuntu Desktop be a desktop operating system that be suitable for use on desktop computers, laptops, and other devices. Ubuntu Server be a server operating system that be suitable for use on servers and other devices that be runnin' headless. Ubuntu Core be a lightweight version o' Ubuntu that be designed for use on embedded devices.
 
-#### Kubuntu
+#### **Kubuntu**
 
 Kubuntu be a version o' Ubuntu that be based on KDE Plasma. It be developed and maintained by the KDE Community.
 
@@ -446,7 +446,7 @@ Aye, matie! KDE be a free and open-source desktop environment fer Linux and Unix
 
 Kubuntu be a version o' the Ubuntu Linux operatin' system that uses the KDE desktop environment. 'Tis a community-supported version o' Ubuntu that be focused on providin' a polished and easy-to-use desktop experience with KDE.
 
-#### Arch Linux
+#### **Arch Linux**
 
 [Awesome Arch](https://github.com/PandaFoss/Awesome-Arch)
 
@@ -454,7 +454,7 @@ Arch Linux be a free and open-source Linux distribution that be based on the Lin
 
 Although Arch Linux is worthy o' mention, it be not covered in this book. If ye be interested in learnin' more about Arch Linux, ye be welcome to check out the [Arch Wiki](https://wiki.archlinux.org/).
 
-### Setting up Ubuntu
+### **Setting up Ubuntu**
 
 Ubuntu be available for download from the official website. There be two versions o' Ubuntu available for download: Ubuntu Desktop and Ubuntu Server. The desktop version be suitable for use on desktop computers, laptops, and other devices, while the server version be suitable for use on servers and other devices that be runnin' headless.
 
@@ -470,7 +470,7 @@ Once the computer be bootin' from the bootable USB or DVD, follow the on-screen 
 
 Once the installation be complete, boot into yer newly installed Ubuntu system.
 
-#### What to do next?
+#### **What to do next?**
 
 **Captain!** Here be a guide on what ye can do *after* installing Ubuntu:
 
@@ -494,7 +494,7 @@ Overall, the best way to get started with Ubuntu be to explore and try out diffe
 
 So hoist the mainsail and set sail for the world o' Linux with Ubuntu!
 
-##### Checklist
+##### **Checklist**
 
 - [ ] Familiarise yerself with the Ubuntu interface.
 - [ ] Customise the desktop.
@@ -507,7 +507,7 @@ So hoist the mainsail and set sail for the world o' Linux with Ubuntu!
 - [ ] Explore the official documentation.
 - [ ] Take online courses or tutorials.
 
-### Where to go from here?
+### **Where to go from here?**
 
 Aye, matey! If ye be interested in pursuin' a career in the field o' Linux, there be several steps ye can take to get started:
 
@@ -525,7 +525,7 @@ Aye, matey! If ye be interested in pursuin' a career in the field o' Linux, ther
 
 - [The Odin Project](https://www.theodinproject.com/) be a free online curriculum that be designed to teach web development. It be run by a community o' volunteers, and it be supported by donations from the community.
 
-#### Backend
+#### **Backend**
 
 Backend developers are responsible for creating and maintaining the systems and infrastructure that power your network. Backend developers typically work on the "backend" of a website or application, which refers to the servers, databases, and other systems that support the frontend (the user-facing part of the site or application).
 
@@ -543,7 +543,7 @@ You might imagine that backend developers are responsible for creating and maint
 
 > **Note** Backend developers are sometimes referred to as "back-end developers" or "back end developers."
 
-#### Cloud Computing
+#### **Cloud Computing**
 
 **Learn the basics of cloud computing:** Start by learnin' the fundamental concepts and technologies of cloud computing, such as virtualization, infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). Ye can find a wealth of resources online, including tutorials, articles, and online courses.
 
@@ -555,7 +555,7 @@ You might imagine that backend developers are responsible for creating and maint
 
 **Look for internships or entry-level positions:** If ye be just startin' out in yer career, it can be helpful to look for internships or entry-level positions that can provide ye with hands-on experience and help ye build up yer skills. These might include internships at cloud-based companies, or junior-level positions as a cloud developer or system administrator. As ye gain experience, ye can then look for more advanced positions that align with yer career goals.
 
-#### Cybersecurity
+#### **Cybersecurity**
 
 [Awesome Security](https://github.com/sbilly/awesome-security)
 
@@ -587,7 +587,7 @@ The security engineer be like the ship's mechanic, implementin' and maintainin' 
 
 All three roles be playin' important roles in keepin' the ship safe and sailin' smooth. So, hoist the anchor and set sail on the digital seas with a crew of cybersecurity scallywags by yer side!
 
-##### Kevin Mitnick
+##### **Kevin Mitnick**
 
 ![Kevin Mitnick](images/kevinmitnick.png)
 
@@ -619,7 +619,7 @@ So, if ye ever find yerself sailin' the digital seas and come across the name Ke
 
 The movie [Takedown](https://www.imdb.com/title/tt0159784/) is based on the life of Kevin Mitnick.
 
-#### Data analysis and interpretation
+#### **Data analysis and interpretation**
 
 Ahoy, me hearties! In the realm of data analysis and interpretation, there be three key roles that be playin' important roles in understandin' and utilizin' data: data science, artificial intelligence, and machine learnin'.
 
@@ -633,7 +633,7 @@ All three roles be playin' important roles in helpin' the ship navigate the data
 
 So, hoist the anchor and set sail on the data seas with a crew of data analysis scallywags by yer side!
 
-#### Database
+#### **Database**
 
 Aye, a DBA (Database Administrator) be responsible for managing and maintaining the databases that be used on yer network. DBAs be often workin' on tasks such as:
 
@@ -647,25 +647,25 @@ Aye, a DBA (Database Administrator) be responsible for managing and maintaining 
 
 You might imagine that a DBA be responsible for managing and maintaining the databases that be used on yer network. They be playin' a crucial role in ensurin' that the databases be efficient, secure, and accurate, and in supportin' the needs and requirements of the organization.
 
-##### Graph
+##### **Graph**
 
 A graph database be a type of database that be designed to store and organize data in a way that be similar to a graph, like a treasure map leadin' to valuable data. Graph databases be often used to store and analyze data that be connected in some way, such as social networks or supply chains.
 
 Some examples of graph databases be [Neo4j](https://neo4j.com/), [ArangoDB](https://www.arangodb.com/) , and [OrientDB](https://orientdb.org/).
 
-##### noSQL
+##### **NoSQL**
 
-A noSQL database be a type of database that be designed to store and organize data in a way that be different from traditional relational databases, like a treasure chest full of unstructured data. noSQL databases be often used to store large amounts of data, and they be often more flexible and scalable than relational databases.
+A NoSQL database be a type of database that be designed to store and organize data in a way that be different from traditional relational databases, like a treasure chest full of unstructured data. NoSQL databases be often used to store large amounts of data, and they be often more flexible and scalable than relational databases.
 
-Some examples of noSQL databases be [MongoDB](https://www.mongodb.com/), [CouchDB](https://couchdb.apache.org/), and [Cassandra](https://cassandra.apache.org/).
+Some examples of NoSQL databases be [MongoDB](https://www.mongodb.com/), [CouchDB](https://couchdb.apache.org/), and [Cassandra](https://cassandra.apache.org/).
 
-##### SQL
+##### **SQL**
 
-A SQL database be a type of database that be designed to store and organize data in a way that be similar to a spreadsheet, like a treasure logbook of structured data. SQL databases be often used to store structured data, and they be often more efficient and reliable than noSQL databases.
+A SQL database be a type of database that be designed to store and organize data in a way that be similar to a spreadsheet, like a treasure logbook of structured data. SQL databases be often used to store structured data, and they be often more efficient and reliable than NoSQL databases.
 
 Some examples of SQL databases be [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), and [SQLite](https://www.sqlite.org/index.html).
 
-#### Design
+#### **Design**
 
 Ahoy mateys, A UX designer be responsible for designing the user experience of yer network, like a captain chartin' a course for a smooth journey. UX designers be often workin' on tasks such as:
 
@@ -679,37 +679,37 @@ Ahoy mateys, A UX designer be responsible for designing the user experience of y
 
 You might imagine that a UX designer be responsible for designing the user experience of yer network. They be playin' a crucial role in ensurin' that the user experience be effective and meets the needs of users.
 
-##### Figma
+##### **Figma**
 
 [Figma](https://www.figma.com/login)
 
 Aye, Figma be a web-based design tool that can be used to create and collaborate on designs, like a pirate sharin' treasure maps with their crew. Figma be often used by UX designers to create prototypes and mockups of user interfaces, like a pirate creatin' a map of a treasure island.
 
-##### DaisyUI
+##### **DaisyUI**
 
 [DaisyUI](https://daisyui.com/)
 
 DaisyUI be a CSS framework that can be used to create user interfaces that be consistent with Fluent Design, like a compass that always points true north. DaisyUI be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that be easy to read and leads to treasure.
 
-##### Fluent Design
+##### **Fluent Design**
 
 [Fluent UI](https://developer.microsoft.com/en-us/fluentui)
 
 Fluent Design be a design system that be developed by Microsoft to create a consistent user experience across all of its products, like a treasure map that be the same for all the pirate crews. Fluent Design be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that leads to the treasure easily.
 
-##### Material Design
+##### **Material Design**
 
 [Material Design](https://m3.material.io)
 
 Material Design be a design system that be developed by Google to create a consistent user experience across all of its products, like a treasure map that be the same for all the pirate crews. Material Design be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that leads to the treasure easily.
 
-#### Developer Advocacy and Developer Relations
+#### **Developer Advocacy and Developer Relations**
 
 Arrrr, listen up me hearties! A developer advocate be like a swashbucklin' tech evangelist, promisin' the wares of their company or organization to other developers. They be writin' technical articles, creatin' demos and tutorials, and minglin' with developer communities. They be gatherin' feedback from other developers about the company's products or services and usin' it to guide product development and strategy. They be buildin' and maintainin' relationships with developers, and workin' closely with other teams like product management, marketin', and engineering to make sure the company's products and services be meetin' the needs and expectations of developers.
 
 DevRel, or developer relations, be like a company or organization's way of engagin' and supportin' developers who use their products or services. DevRel professionals be buildin' and maintainin' relationships with developers, gatherin' and analyzin' feedback, promotin' the company's products or services, and workin' with other teams to make sure everything be meetin' the needs and expectations of developers. They be playin' a crucial role in ensurin' the company's products and services be meetin' the needs and expectations of developers and supportin' the needs of the organization. So, grab a tankard of grog and raise a cheer for the DevRel and developer advocate teams!
 
-#### Finance
+#### **Finance**
 
 Aye, aye! Finance professionals be the ones responsible for keeping the treasure chests of a company full and organized. They be workin' on tasks such as:
 
@@ -723,7 +723,7 @@ Collaboratin' with other teams: Finance professionals be workin' closely with ot
 
 You might imagine that finance professionals be the ones responsible for the financial health of a company. They play a crucial role in keepin' the company in compliance with regulations, and in supportin' the needs and requirements of the organization.
 
-#### Frontend
+#### **Frontend**
 
 Ahoy, ye landlubbers! Ye be lookin' fer a frontend developer, are ye? These scallywags be the ones responsible fer designing and building the user interface of yer network. Ye see, the frontend be the part of the website or application that users interact with, and these developers be the ones that make sure it looks shipshape and easy to navigate.
 
@@ -739,7 +739,7 @@ So if ye be needin' someone to make yer website or application look as pretty as
 
 > **Note** Frontend developers are often referred to as "front-end developers" or "front end developers".
 
-#### Management
+#### **Management**
 
 Arrrr me hearties! Ye best be listenin' up if ye wants to know 'bout the roles o' management! Ye see, management be responsibile fer the overall direction of an organization and makin' sure it's meetin' its goals and objectives. They be workin' on tasks like settin' the direction fer the organization, managin' its resources, and overseein' projects.
 
@@ -749,7 +749,7 @@ And as fer Project Management, that be the practice o' plannin', organizin', and
 
 So ye best be payin' attention to these management roles if ye wants yer organization to be sailin' smoothly. And remember, always keep an eye out fer any mutiny on the horizon!
 
-#### Marketing
+#### **Marketing**
 
 Ahoy, ye landlubbers! Marketing be the practice of shillin' and sellin' yer wares to the customers. Marketing professionals be workin' on tasks such as:
 
@@ -765,7 +765,7 @@ Ahoy, ye landlubbers! Marketing be the practice of shillin' and sellin' yer ware
 
 You might imagine that marketing professionals be responsible for shillin' and sellin' yer wares to the customers. They play a crucial role in ensurin' that the company's products or services be meetin'
 
-#### Network Engineering
+#### **Network Engineering**
 
 Arrrr, network engineering be the practice of designing, building, and maintaining the digital high seas, if ye will. Network engineers, or "network swashbucklers" as we like to call 'em, often find themselves tackling tasks such as:
 
@@ -781,11 +781,11 @@ Arrrr, network engineering be the practice of designing, building, and maintaini
 
 You might imagine that network engineers are responsible for designing, building, and maintaining the digital high seas. They play a crucial role in charting the course for network infrastructure, manning the network infrastructure, protecting the network from scallywags, monitoring and optimizing the network's performance
 
-#### Operations
+#### **Operations**
 
 Ahoy Mateys! Ye be lookin' fer the scallywags in charge of keepin' the ship runnin' smoothly? Look no further, those be the operations professionals! They be the ones responsible for mangin' the day-to-day operations of the company, like a captain navigatin' the seas. Ye can find them optimizin' the business processes, like the supply chain and customer service, makin' sure everythin' runs like a well-oiled machine. They be workin' with other teams, like finance and marketing, to ensure the company be reachin' its treasure trove of goals. And ye best believe they be managing the resources of the company like a true pirate manages their loot. Without them, the ship would be sinkin' faster than a barrel of rum in a storm. So raise the anchor and set sail with the operations team!
 
-#### Sales
+#### **Sales**
 
 Aye, sales professionals be like the captain of the ship, steerin' the course towards treasure and riches! They be responsible for takin' the goods and services of the company and sellin' 'em to the scallywags out there in the market. They be workin' on tasks such as:
 
@@ -797,7 +797,7 @@ Aye, sales professionals be like the captain of the ship, steerin' the course to
 
 Yarr! Sales professionals be playin' a crucial role in makin' sure the treasure be flowin' in and the company be reachin' its goals and objectives.
 
-#### Software development and delivery
+#### **Software development and delivery**
 
 Aye, aye Captain! Arrrr, there be five key roles in software development and delivery that be important for improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, Platform Engineering and Site Reliability Engineering (SRE).
 
@@ -811,7 +811,7 @@ And finally, Site Reliability Engineering (SRE) be the practice of ensuring that
 
 Arrrr, all these roles are crucial for making sure yer software development and delivery is smooth sailing, and yer ship stays afloat!
 
-## Chapter Two - The Fundamentals
+## **Chapter Two - The Fundamentals**
 
 ![Chapter Two - The Fundamentals](images/fundamentals.png)
 
@@ -827,7 +827,7 @@ Ahoy mateys! If ye be lookin' to set sail on the Linux sea, here be some things 
 
 **Customize yer system:** Linux be highly customizable, and ye can tweak yer system to suit yer needs and preferences. Ye'll need to learn how to customize yer system's settings, install and configure desktop environments, and more.
 
-### What is DevOps?
+### **What is DevOps?**
 
 Ahoy matey! Let's talk about DevOps, ye landlubbers!
 
@@ -847,7 +847,7 @@ The DevOps journey be like a never-endin' loop, always improvin' and changin', l
 
 So hoist the sails and set course for DevOps, me hearties! Yarrr!
 
-### Handybilly
+### **Handybilly**
 
 A handybilly is a notebook that a pirate should carry with them at all times. It be used to keep track of important information, such as passwords, notes, and other useful tidbits. Ye can use yer handybilly to keep track of the information that ye learn in this book.
 
@@ -867,7 +867,7 @@ A handybilly is a notebook that a pirate should carry with them at all times. It
 
 `rm`: This command be used to delete files and directories. Ye can use it to remove unwanted files from yer system.
 
-### Linux filesystem
+### **Linux filesystem**
 
 Ahoy matey! Welcome to the world of Linux filesystems, where we navigate through the vast ocean of data like pirates searching for buried treasure.
 
@@ -881,7 +881,7 @@ But be warned, matey! Just like how a pirate's treasure is guarded by treacherou
 
 So set sail and explore the seas of data, but always remember to respect the rules of the Linux filesystem and the hierarchies of ownership and access. Arrr!
 
-#### Filesystem examples
+#### **Filesystem examples**
 
 Aye aye, matey! Here are some examples of common tasks that a pirate (or a Linux user) might encounter when using the Linux filesystem:
 
@@ -895,7 +895,7 @@ Aye aye, matey! Here are some examples of common tasks that a pirate (or a Linux
 
 I hope these examples give you a better understanding of how the Linux filesystem works and how a pirate might use it to complete common tasks. Arrr!
 
-#### Permissions
+#### **Permissions**
 
 Ahoy matey! In the world of Linux, file permissions are like the rules and regulations that govern access to a pirate's treasure. Just like how a pirate might only allow certain members of their crew to access their treasure, in Linux, file permissions control who is allowed to read, write, and execute specific files and directories.
 
@@ -915,7 +915,7 @@ To change the permissions of a file or directory, a pirate can use the `chmod` c
 
 I hope this helps you understand how file permissions work in Linux and how a pirate might use them to control access to their treasures. Arrr!
 
-##### chmod
+##### **chmod**
 
 Ahoy matey! The `chmod` command is used to change the permissions of a file or directory. Ye can use it to give or remove read, write, and execute permissions for the owner, the group, and others.
 
@@ -936,7 +936,7 @@ chmod 755 treasurehunter.sh
 chmod 666 treasurehunter.sh
 ```
 
-##### chown
+##### **chown**
 
 Ahoy matey! The `chown` command is used to change the owner and group of a file or directory. Ye can use it to change the owner and group of a file or directory to a specific user or group.
 
@@ -951,7 +951,7 @@ chown -R pirate treasure_chest
 chown -R pirate:pirates treasure_chest
 ```
 
-### Networking
+### **Networking**
 
 [PacketLife](https://packetlife.net/)
 
@@ -1019,7 +1019,7 @@ Yarr!
 
 `route`: This command be used to view and modify the routing table on yer system. Ye can use it to add, delete, or modify routes on yer system.
 
-#### ip
+#### **ip**
 
 Ahoy matey! The `ip` command is used to configure network interfaces on yer system. Ye can use it to view information about yer network interfaces, set their IP addresses, and more.
 
@@ -1050,7 +1050,7 @@ ip link set dev eth0 address aa:bb:cc:dd:ee:ff
 ip neighbor show
 ```
 
-#### Netcat
+#### **Netcat**
 
 Ahoy matey! Netcat, or `nc`, is a command-line utility for reading from and writing to network connections using TCP or UDP. Just like how a pirate might use a telescope to spy on their enemies, `nc` can be used to spy on network connections and send data to and receive data from network services.
 
@@ -1073,7 +1073,7 @@ nc -x<proxy-host>:<proxy-port> -Xconnect -Pruser <host> <port>   # "Connect to <
 nc -zv -s source_IP target_IP Port   # "Choose the source IP for the testing using the -s option to connect to <target_IP> on <Port>"
 ```
 
-#### nmap
+#### **nmap**
 
 Ahoy matey! Nmap, or the Network Mapper, is a command-line utility for network exploration and security auditing. Just like how a pirate might use a telescope to spy on their enemies, `nmap` can be used to spy on network connections and send data to and receive data from network services.
 
@@ -1138,7 +1138,7 @@ nmap -d ...   # "Show all information in debug mode to search for [target]"
 nmap --script broadcast-dhcp-discover -e eth0   # "Discover DHCP information on the interface to search for [target]"
 ```
 
-#### tcpdump
+#### **tcpdump**
 
 Ahoy matey! Tcpdump, or the packet sniffer, is a command-line utility for network traffic analysis. Just like how a pirate might use a telescope to spy on their enemies, `tcpdump` can be used to spy on network connections and send data to and receive data from network services.
 
@@ -1203,13 +1203,13 @@ tcpdump -ttttt   # "Gather packets and print the relative timestamp, seconds sin
 tcpdump -tttttt   # "Gather packets and print the absolute timestamp, including the date"
 ```
 
-#### Wireshark
+#### **Wireshark**
 
 [Wireshark](https://www.wireshark.org/)
 
 Ahoy matey! Wireshark, or the network protocol analyzer, is a graphical utility for network traffic analysis. Just like how a pirate might use a telescope to spy on their enemies, Wireshark can be used to spy on network connections and send data to and receive data from network services.
 
-### Bash
+### **Bash**
 
 Ahoy matey! Bash, or the Bourne-Again Shell, is a command-line interpreter for Linux and other Unix-like operating systems. Just like how a pirate might use a compass to navigate through the open seas, Bash helps users navigate and interact with their operating system by allowing them to enter commands and execute programs.
 
@@ -1227,7 +1227,7 @@ Bash supports a wide variety of commands, including built-in commands like `ls` 
 
 I hope this helps you understand what Bash is and how a pirate might use it to interact with their operating system. Arrr!
 
-#### .bashrc
+#### **.bashrc**
 
 Ahoy matey! In the world of Linux, the `.bashrc` file is a configuration file that contains commands that are executed when a user logs in to their system. Just like how a pirate might use a treasure map to find their way to their treasure, the `.bashrc` file can be used to customize a user's environment and make it easier for them to perform common tasks.
 
@@ -1246,7 +1246,7 @@ alias ls='ls --color=auto'
 
 The first line sets the prompt to include the current time. The second line sets the default editor to Vim. The third line sets an alias for the `ls` command, which is a shortcut that can be used to run the command. For example, a pirate could type `ls` instead of `ls --color=auto`.
 
-#### Bash scripting
+#### **Bash scripting**
 
 Ahoy matey! In the world of Linux, Bash scripting is a powerful tool that allows pirates (and users) to automate tasks and customize their environment. Just like how a pirate might use a treasure map to find their way to their treasure, Bash scripts can be used to automate common tasks and make it easier for users to perform repetitive operations.
 
@@ -1267,7 +1267,7 @@ The third line is the actual command that is executed by the script. In this cas
 
 I hope this helps you understand what Bash scripting is and how a pirate might use it to automate tasks and customize their environment. Arrr!
 
-#### Bash history
+#### **Bash history**
 
 Ahoy matey! In the world of Linux, the Bash history is a list of commands that have been executed in the current session. Just like how a pirate might use a treasure map to find their way to their treasure, the Bash history can be used to view a list of commands that have been executed in the current session.
 
@@ -1277,7 +1277,7 @@ The Bash history can be viewed by using the `history` command. The `history` com
 
 I hope this helps you understand what the Bash history is and how a pirate might use it to view a list of commands that have been executed in the current session. Arrr!
 
-#### Bash one-liners
+#### **Bash one-liners**
 
 Ahoy matey! In the world of Linux, a Bash one-liner is a command that can be used to perform a single task. Just like how a pirate might use a treasure map to find their way to their treasure, Bash one-liners can be used to perform a single task.
 
@@ -1315,7 +1315,7 @@ I hope this helps you understand what a Bash one-liner is and how a pirate might
 
 `tail -f /var/log/syslog`
 
-### chroot
+### **chroot**
 
 Ahoy matey! The `chroot` command is used to change the root directory for the current shell session. Ye can use it to run a command or shell with a different root directory.
 
@@ -1330,7 +1330,7 @@ chroot /tmp zsh
 chroot /tmp fish
 ```
 
-### Cron
+### **Cron**
 
 [Crontab.guru](https://crontab.guru)
 
@@ -1356,7 +1356,7 @@ It's important to note that cron tasks are executed with the permissions of the 
 
 I hope this helps you understand how cron works and how a pirate might use it to automate tasks on their Linux system. Arrr!
 
-### Devices
+### **Devices**
 
 Ahoy matey! In the world of Linux, a device is a piece of hardware that is connected to the system. Just like how a pirate might use a treasure map to find their way to their treasure, devices can be used to interact with the operating system.
 
@@ -1366,7 +1366,7 @@ The `lsblk` command can be used to view a list of all the devices that are curre
 
 I hope this helps you understand what a device is and how a pirate might use it to interact with the operating system. Arrr!
 
-### Drivers
+### **Drivers**
 
 Ahoy matey! In the world of Linux, a driver is a program that allows a device to interact with the operating system. Just like how a pirate might use a treasure map to find their way to their treasure, drivers can be used to interact with the operating system.
 
@@ -1376,7 +1376,7 @@ The `lsmod` command can be used to view a list of all the drivers that are curre
 
 I hope this helps you understand what a driver is and how a pirate might use it to interact with the operating system. Arrr!
 
-### Processes
+### **Processes**
 
 Ahoy matey! In the world of Linux, a process is a program that is currently running on the system. Just like how a pirate might use a treasure map to find their way to their treasure, processes can be used to perform tasks and interact with the operating system.
 
@@ -1394,9 +1394,9 @@ To find the process ID of a process, a pirate can use the `ps` command. The `ps`
 
 I hope this helps you understand what a process is and how a pirate might use it to perform tasks and interact with the operating system. Arrr!
 
-### cURL
+### **curl**
 
-cURL be a command line tool for transferring data using various network protocols. It be a powerful tool that be widely used by systems administrators and developers for a variety of tasks, such as testing APIs, downloading files, and more. Here be some basics ye should know to use cURL:
+curl be a command line tool for transferring data using various network protocols. It be a powerful tool that be widely used by systems administrators and developers for a variety of tasks, such as testing APIs, downloading files, and more. Here be some basics ye should know to use cURL:
 
 **Syntax:** The basic syntax for using cURL be `curl [options] [URL]`. Ye can specify various options to control how cURL be behavior, and then specify the URL of the resource ye be requesting.
 
@@ -1430,7 +1430,7 @@ A typical cURL `POST` request would look like this:
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Pirate"}' https://example.com
 ```
 
-### Vim (Vi IMproved)
+### **Vim (Vi IMproved)**
 
 Vim be a text editor that be widely used by developers and systems administrators for editing files in the command line. It be a powerful tool that be highly customizable, and it be known for its steep learning curve. Here be some things ye should know to use Vim effectively:
 
@@ -1444,7 +1444,7 @@ Saving and quitting: To save yer changes and quit Vim, ye can use the :wq comman
 
 Customization: Vim be highly customizable, and ye can configure it to suit yer needs and preferences. Ye can customize Vim by editing the .vimrc configuration file or by using Lua to create custom plugins.
 
-#### .vimrc
+#### **.vimrc**
 
 Ahoy matey! In the world of Linux, the `.vimrc` file is a configuration file that contains commands that are executed when a user starts Vim. Just like how a pirate might use a treasure map to find their way to their treasure, the `.vimrc` file can be used to customize a user's Vim environment and make it easier for them to perform common tasks.
 
@@ -1471,7 +1471,7 @@ set spell
 set spelllang=en_us
 ```
 
-#### NeoVim
+#### **NeoVim**
 
 [NeoVim Website](https://neovim.io) | [Awesome NeoVim](https://github.com/rockerBOO/awesome-neovim)
 
@@ -1485,7 +1485,7 @@ NeoVim be available on a variety of platforms, including Windows, Mac, and Linux
 
 So there ye have it, a brief overview of NeoVim and how ye might be usin' it as a developer. I hope this be helpin' ye to understand this powerful code editor and all that it be capable of. Ah
 
-### VS Code
+### **VS Code**
 
 [VS Code Website](https://code.visualstudio.com) | [Awesome VS Code](https://github.com/viatsko/awesome-vscode)
 
@@ -1499,7 +1499,7 @@ VS Code be available on a variety of platforms, including Windows, Mac, and Linu
 
 So there ye have it, a brief overview of Visual Studio Code and how ye might be usin' it as a developer. I hope this be helpin' ye to understand this powerful code editor and all that it be capable of. Ahoy!
 
-### The Internet
+### **The Internet**
 
 The internet be a global network of interconnected computer networks that be used to share information and resources. It be a vast network that be made up of millions of computers, servers, and other devices that be connected together using a variety of technologies and protocols. The internet be used by people all over the world to communicate, access information, and perform a wide range of tasks.
 
@@ -1507,21 +1507,21 @@ In simpler terms, ye can think of the internet as a vast ocean of data and infor
 
 So hoist the mainsail and set course for the internet! With the internet at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
 
-#### Domain name
+#### **Domain name**
 
 A domain name is a human-readable name that can be used to identify a website or other online resource. Domain names are typically made up of two or more labels, separated by periods. For example, the domain name "example.com" is made up of two labels: "example" and "com".
 
-##### Domain Name Registrar
+##### **Domain Name Registrar**
 
 A domain name registrar be a company that be responsible for registering domain names. Domain name registrars be responsible for maintaining a database of domain names and ensuring that they be unique and available for registration.
 
 In a pirate theme, ye can think of a domain name registrar as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, a domain name registrar be able to explore a vast world of information and resources.
 
-##### Buying a Domain Name
+##### **Buying a Domain Name**
 
 To buy a domain name, ye can use a domain name registrar to register a domain name. Ye can then use the domain name to identify a website or other online resource.
 
-##### Namecheap
+##### **Namecheap**
 
 [Namecheap Website](https://namecheap.com)
 
@@ -1533,25 +1533,25 @@ Namecheap be available on a variety of platforms, including Windows, Mac, and Li
 
 So there ye have it, a brief overview of Namecheap and how ye might be usin' it to buy a domain name. I hope this be helpin' ye to understand this powerful domain name registrar and all that it be capable of. Ahoy!
 
-#### IANA (Internet Assigned Numbers Authority)
+#### **IANA (Internet Assigned Numbers Authority)**
 
 The Internet Assigned Numbers Authority (IANA) be a nonprofit organization that be responsible for coordinating the global internet. It be responsible for assigning domain names and IP addresses, and it be also responsible for maintaining the infrastructure that be used to provide internet access.
 
 In a pirate theme, ye can think of IANA as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, IANA be able to explore a vast world of information and resources.
 
-#### ICAAN (Internet Corporation for Assigned Names and Numbers)
+#### **ICAAN (Internet Corporation for Assigned Names and Numbers)**
 
 The Internet Corporation for Assigned Names and Numbers (ICANN) be a nonprofit organization that be responsible for coordinating the global internet. It be responsible for assigning domain names and IP addresses, and it be also responsible for maintaining the infrastructure that be used to provide internet access.
 
 In a pirate theme, ye can think of ICANN as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, ICANN be able to explore a vast world of information and resources.
 
-#### Internet Service Provider
+#### **Internet Service Provider**
 
 An internet service provider (ISP) be a company that be responsible for providing internet access to its customers. ISPs be responsible for connecting their customers to the internet, and they be also responsible for maintaining the infrastructure that be used to provide internet access.
 
 In a pirate theme, ye can think of an ISP as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, an ISP be able to explore a vast world of information and resources.
 
-#### Web Browser
+#### **Web Browser**
 
 A web browser be a software application that be used to access and view web resources. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
 
@@ -1563,19 +1563,19 @@ Today, there be a wide variety of web browsers available, including Google Chrom
 
 So hoist the mainsail and set course for the internet! With a web browser at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
 
-##### Document Object Model (DOM)
+##### **Document Object Model (DOM)**
 
 The Document Object Model (DOM) be a programming interface for HTML and XML documents. It be a powerful tool that be used by web developers to create interactive web pages and web applications.
 
 In a pirate theme, ye can think of the Document Object Model as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, the Document Object Model be able to explore a vast world of information and resources.
 
-##### Virtual DOM
+##### **Virtual DOM**
 
 The Virtual DOM be a programming interface for HTML and XML documents. It be a powerful tool that be used by web developers to create interactive web pages and web applications.
 
 In a pirate theme, ye can think of the Virtual DOM as a ship that be used to explore the internet. Just like a ship be able to sail the oceans and explore new lands, the Virtual DOM be able to explore a vast world of information and resources.
 
-##### How do they work together?
+##### **How do they work together?**
 
 Arrr matey! The DOM be a hierarchy of objects that be representin' the structure of a web page. It be like a map of the elements on the page, allowin' ye to access and manipulate them.
 
@@ -1587,7 +1587,7 @@ The virtual DOM be a lightweight copy of the DOM that be used to speed up change
 
 So ye see, the DOM be a powerful tool for manipulatin' the elements on a web page, and the virtual DOM be there to help ye do it more efficiently. Just watch out for those pesky DOM-based cross-site scriptin' attacks!
 
-#### World Wide Web
+#### **World Wide Web**
 
 The World Wide Web (WWW) be a system of interlinked hypertext documents that be accessed via the internet. It be a vast collection of resources that be accessible from anywhere in the world, and it be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
 
@@ -1597,7 +1597,7 @@ The creators of the World Wide Web, Tim Berners-Lee and Robert Cailliau, be insp
 
 So hoist the mainsail and set course for the World Wide Web! With the World Wide Web at yer fingertips, ye'll be able to explore a vast and ever-expanding world of information and resources. Arrrr!
 
-##### Sir Tim Berners-Lee
+##### **Sir Tim Berners-Lee**
 
 ![Sir Tim Berners-Lee](images/sirtimbernerslee.png)
 
@@ -1605,7 +1605,7 @@ Sir Tim Berners-Lee be a British computer scientist and engineer who be best kno
 
 ![Sir Tim Berners-Lee](images/sirtbl.png)
 
-#### Web Server
+#### **Web Server**
 
 A web server be a computer that be used to host web resources, such as web pages, images, and videos. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
 
@@ -1615,7 +1615,7 @@ The first web server, WorldWideWeb, be created by Tim Berners-Lee in 1990. It be
 
 Some examples of popular web servers include Apache, Nginx, and Microsoft IIS. Each web server be different, and they be optimized for different platforms and use cases. For example, Apache be optimized for speed and performance, while Nginx be optimized for customization and extensibility.
 
-##### Apache
+##### **Apache**
 
 [Apache Website](https://www.apache.org) | [Apache Server Configs](https://github.com/h5bp/server-configs-apache)
 
@@ -1627,7 +1627,7 @@ In a pirate theme, ye can think of Apache as a ship that be used to explore the 
 
 Apache modules be a set of functions that be used to extend the functionality of the Apache web server. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
 
-##### Nginx
+##### **Nginx**
 
 [Nginx Website](https://www.nginx.com) | [Awesome Nginx](https://github.com/agile6v/awesome-nginx) | [NGINXConfig](https://www.digitalocean.com/community/tools/nginx)
 
@@ -1637,7 +1637,7 @@ In a pirate theme, ye can think of Nginx as a ship that be used to explore the i
 
 A reverse proxy server be a server that be used to forward client requests to one or more backend servers. It be a powerful tool that be used by billions of people every day to access information, communicate, and perform a wide range of tasks.
 
-##### Puma
+##### **Puma**
 
 Ahoy there me hearties! Puma be like the crewman that helps ye to hoist the sails on yer website, it be a web server, used for serving up yer website to the landlubbers who be visitin' it. Ye see, just like how a pirate ship needs a crew to hoist the sails and set sail, a website needs a web server to serve up its content to visitors.
 
@@ -1651,7 +1651,7 @@ So there ye have it, Puma be a web server that helps hoist yer website sails and
 
 Yarr!
 
-##### Ad-hoc Web Servers
+##### **Ad-hoc Web Servers**
 
 Here are some one-liner examples of simple web servers written in various programming languages. Note that these examples are meant to serve as a starting point, and may not be suitable for production use without further modification.
 
@@ -1687,7 +1687,7 @@ This command will start a web server using the Go programming language. To insta
 
 `sudo apt-get install golang -y`
 
-### Amazon Web Services
+### **Amazon Web Services**
 
 [Amazon Web Services](https://aws.amazon.com/)
 
@@ -1699,7 +1699,7 @@ In addition to having a broad knowledge of the various AWS services, it be impor
 
 Finally, as a true AWS professional, ye should be able to keep yer head in a crisis and be able to think on yer feet. Whether it be dealing with a sudden influx of traffic to yer application or a network outage, ye should be able to think quickly and come up with solutions to keep yer ship sailing smoothly. So shiver me timbers and get to work, matey!
 
-### Cloudflare
+### **Cloudflare**
 
 [Cloudflare](https://www.cloudflare.com/)
 
@@ -1713,69 +1713,69 @@ In addition to these technical skills, it be important for ye to be able to comm
 
 Finally, as a true Cloudflare professional, ye should be able to keep yer head in a crisis and be able to think on yer feet. Whether it be dealing with a sudden influx of traffic to a client's website or a network outage, ye should be able to think quickly and come up with solutions to keep yer ship sailing smoothly. So hoist the mainsail and get to work, matey!
 
-### CI/CD
+### **CI/CD**
 
-CI/CD be a software development practice where code changes be automatically built, tested, and deployed to production. It allow for faster and more frequent updates to a software application, as code changes be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it take for new features or bug fixes to reach users.
+CI/CD be a software development practice where code changes be automatically built, tested, and deployed to production. It allows for faster and more frequent updates to a software application, as code changes be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it take for new features or bug fixes to reach users.
 
-#### Continuous Delivery
+#### **Continuous Integration**
+
+Continuous integration (CI) is a software development practice where developers regularly integrate their code changes into a shared repository, typically several times a day. Each integration is then automatically built and tested to ensure that the code changes do not introduce any new bugs or regressions.
+
+In a pirate theme, you could think of continuous integration as a way to keep your ship (the software application) in good repair. Instead of waiting until the end of a long voyage to fix any problems with the ship, continuous integration allows you to make small repairs and improvements as you go. By regularly integrating and testing code changes, you can catch and fix problems early, before they become bigger issues that could sink the ship. This helps to ensure that your ship is always ready to set sail and that you can respond more quickly to new threats (bug fixes and feature requests) as they arise.
+
+#### **Continuous Delivery**
 
 Continuous delivery is a software development practice where code changes are automatically built, tested, and deployed to production. It allows for faster and more frequent updates to a software application, as code changes can be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it takes for new features or bug fixes to reach users.
 
 In a pirate theme, you could think of continuous delivery as a way to quickly and efficiently get your ship (the software application) ready for battle. Instead of spending a lot of time preparing and repairing the ship before each voyage (deployment), continuous delivery allows you to make small, incremental changes to the ship as needed, so that it is always ready to set sail. This way, you can respond more quickly to new threats (bug fixes and feature requests) and be better prepared for whatever the seas (your users) might throw your way.
 
-#### Continuous Integration
-
-Continuous integration (CI) is a software development practice where developers regularly integrate their code changes into a shared repository, typically several times a day. Each integration is then automatically built and tested to ensure that the code changes do not introduce any new bugs or regressions.
-
-In a pirate theme, you could think of continuous integration as a way to keep your ship (the software application) in good repair. Instead of waiting until the end of a long voyage to fix any problems with the ship, continuous integration allows you to make small repairs and improvements as you go. By regularly integrating and testing code changes, you can catch and fix problems early, before they become bigger issues that could sink the ship. This helps to ensure that your ship is always ready to set sail, and that you can respond more quickly to new threats (bug fixes and feature requests) as they arise.
-
-#### CI/CD Tools
+#### **CI/CD Tools**
 
 Here are some popular CI/CD tools that can be used to automate the build, test, and deployment of software applications.
 
-##### Argo CD
+##### **Argo CD**
 
 [Argo CD](https://argoproj.github.io/argo-cd/)
 
 Argo CD is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
 
-##### CircleCI
+##### **CircleCI**
 
 [CircleCI](https://circleci.com/)
 
 CircleCI is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
 
-##### GitHub Actions
+##### **GitHub Actions**
 
 [GitHub Actions](https://github.com/features/actions) | [Awesome GitHub Actions](https://github.com/sdras/awesome-actions)
 
 GitHub Actions is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
 
-##### GitLab CI/CD
+##### **GitLab CI/CD**
 
 [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
 
 GitLab CI/CD is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
 
-##### Jenkins
+##### **Jenkins**
 
 [Jenkins](https://www.jenkins.io/)
 
 Jenkins is a popular open source CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
 
-##### Portainer
+##### **Portainer**
 
 [Portainer](https://www.portainer.io/)
 
 Portainer is a popular open source CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
 
-##### Travis CI
+##### **Travis CI**
 
 [Travis CI](https://travis-ci.org/)
 
 Travis CI is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
 
-### DigitalOcean
+### **DigitalOcean**
 
 [DigitalOcean](https://www.digitalocean.com/)
 
@@ -1789,7 +1789,7 @@ In addition to these technical skills, it be important for ye to be able to comm
 
 Finally, as a true DigitalOcean professional, ye should be able to keep yer head in a crisis and be able to think on yer feet. Whether it be dealing with a sudden influx of traffic to a client's website or a network outage, ye should be able to think quickly and come up with solutions to keep yer ship sailing smoothly. So hoist the mainsail and get to work, matey!
 
-### eBPF
+### **eBPF**
 
 [Awesome eBFP](https://github.com/zoidbergwill/awesome-ebpf)
 
@@ -1797,7 +1797,7 @@ eBPF (extended Berkeley Packet Filter) is a technology that allows for the dynam
 
 In a pirate theme, you could think of eBPF as a way to add new features to your ship (the Linux kernel). Instead of having to modify the ship's hull (the Linux kernel) to add new features, eBPF allows you to add new features by inserting new code into the ship's hull (the Linux kernel). This allows you to add new features without having to modify the ship's hull, which can be a time-consuming and error-prone process.
 
-### DNS (Domain Name System)
+### **DNS (Domain Name System)**
 
 In the context of the internet, the Domain Name System (DNS) is a decentralized system that maps human-readable domain names (such as "example.com") to the numerical IP addresses that computers use to communicate with each other. DNS helps to make it easier for people to access websites and other online resources, as it allows us to use easy-to-remember names instead of having to remember complex numerical addresses.
 
@@ -1805,11 +1805,11 @@ In a pirate theme, you could think of DNS as a way to navigate the vast and ofte
 
 DNS also helps to ensure that internet users can reach their destination even if the underlying landscape (IP addresses) changes. Just as a pirate might need to adjust their course if the winds or currents shift, DNS can automatically route internet users to the correct location even if the underlying IP addresses change. This helps to make the internet more reliable and accessible, even in the midst of constantly-changing conditions.
 
-#### Types of DNS Records
+#### **Types of DNS Records**
 
 There are several different types of DNS records that can be used to map domain names to IP addresses. The most common types of DNS records are A records, which map a domain name to a single IP address, and CNAME records, which map a domain name to another domain name. Other types of DNS records include MX records, which map a domain name to an email server, and TXT records, which can be used to store arbitrary text data.
 
-#### Examples of DNS Records
+#### **Examples of DNS Records**
 
 **A record:**
 
@@ -1836,81 +1836,81 @@ pirate.com.      IN NS      ns2.pirate.com.`
 
 These NS records specify the name servers for the domain "pirate.com".
 
-#### DNS servers
+#### **DNS servers**
 
 Ahoy there! DNS servers be the computers that store the DNS records for a given domain. When a user tries to access a website, their computer will first query a DNS server to find the IP address for the requested domain. The DNS server will then return the IP address to the user's computer, which can then use the IP address to connect to the requested website.
 
-#### DNSSEC
+#### **DNSSEC**
 
 DNSSEC (Domain Name System Security Extensions) be a set of extensions to the DNS protocol that help to ensure that DNS queries and responses be secure and authentic. It does this by adding digital signatures to DNS records, which can be used to verify that the DNS records have not been tampered with. It also adds a mechanism for verifying that the DNS server that is responding to a query be the correct DNS server for the requested domain.
 
-#### DNS over HTTPS (DoH)
+#### **DNS over HTTPS (DoH)**
 
 DNS over HTTPS (DoH) be a protocol that allows DNS queries to be sent over HTTPS instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses be secure and private.
 
-#### DNS over TLS (DoT)
+#### **DNS over TLS (DoT)**
 
 DNS over TLS (DoT) be a protocol that allows DNS queries to be sent over TLS instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses be secure and private.
 
-#### DNS over QUIC (DoQ)
+#### **DNS over QUIC (DoQ)**
 
 DNS over QUIC (DoQ) be a protocol that allows DNS queries to be sent over QUIC instead of the traditional DNS protocol. This allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses be secure and private.
 
-#### DNSCrypt
+#### **DNSCrypt**
 
 DNSCrypt be a protocol that allows DNS queries to be sent over an encrypted connection, which helps to ensure that DNS queries and responses be secure and private. It does this by encrypting DNS queries and responses using the NaCl (Networking and Cryptography library) encryption library.
 
-#### DNS Amplification Attacks
+#### **DNS Amplification Attacks**
 
 DNS amplification attacks be a type of denial-of-service (DoS) attack that can be used to flood a target server with large amounts of traffic. They work by sending a large number of DNS queries to a DNS server, which will then respond to each query with a large amount of data. This can be used to flood a target server with large amounts of traffic, which can cause the server to become overloaded and crash.
 
-#### Hosts file
+#### **Hosts file**
 
 The hosts file be a file that can be used to map domain names to IP addresses. It be typically located at `/etc/hosts` on Linux systems, but the exact location may vary depending on the operating system. The hosts file can be used to override the DNS records for a given domain, which can be useful for testing purposes.
 
-#### AWS Route 53
+#### **AWS Route 53**
 
 [AWS Route 53](https://aws.amazon.com/route53/)
 
 AWS Route 53 be a DNS service that can be used to route traffic to AWS resources such as EC2 instances and S3 buckets. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
 
-#### Azure DNS
+#### **Azure DNS**
 
 [Azure DNS](https://azure.microsoft.com/en-us/services/dns/)
 
 Azure DNS be a DNS service that can be used to route traffic to Azure resources such as Virtual Machines and Storage Accounts. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
 
-#### Google Cloud DNS
+#### **Google Cloud DNS**
 
 [Google Cloud DNS](https://cloud.google.com/dns)
 
 Google Cloud DNS be a DNS service that can be used to route traffic to Google Cloud resources such as Compute Engine instances and Cloud Storage buckets. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
 
-#### DigitalOcean DNS
+#### **DigitalOcean DNS**
 
 [DigitalOcean DNS](https://www.digitalocean.com/products/dns/)
 
 DigitalOcean DNS be a DNS service that can be used to route traffic to DigitalOcean resources such as Droplets and Spaces. It also provides a number of additional features, such as health checks, failover, and geolocation routing.
 
-#### Cloudflare DNS
+#### **Cloudflare DNS**
 
 [Cloudflare DNS](https://www.cloudflare.com/dns/)
 
 Cloudflare DNS be a DNS service that can be used to route traffic to Cloudflare resources such as websites and APIs. It also provides a number of additional features, such as DDoS protection, CDN, and caching.
 
-#### OpenDNS
+#### **OpenDNS**
 
 [OpenDNS](https://www.opendns.com/)
 
 OpenDNS be a DNS service that can be used to route traffic to websites and other internet resources. It also provides a number of additional features, such as content filtering, security, and analytics.
 
-#### Bind
+#### **Bind**
 
 [Bind](https://www.isc.org/bind/)
 
 Bind be a DNS server software that can be used to host DNS records for a domain. It be commonly used on Linux and Unix systems, and can be configured to provide a variety of DNS services, including caching, authoritative, and recursive.
 
-### Docker
+### **Docker**
 
 Arr matey, ye be askin' about Docker, the popular containerization software that be makin' it easier to ship, run, and manage applications.
 
@@ -1922,11 +1922,11 @@ In terms of practical use, ye might be usin' Docker to set up a development envi
 
 So there ye have it, a brief overview of Docker and how ye might be workin' with it. I hope this be helpin' ye to understand this powerful tool for managing and running applications. Shiver me timbers!
 
-#### Install Docker
+#### **Install Docker**
 
 To install Docker, ye can follow the instructions on the Docker website. Ye can also use the Docker Toolbox to install Docker on Windows and Mac.
 
-##### Docker Engine
+##### **Docker Engine**
 
 Docker Engine be a client-server application that be used to build, run, and manage Docker containers. The Docker Engine be made up of two parts: the Docker daemon and the Docker client.
 
@@ -1939,13 +1939,13 @@ sh get-docker.sh
 
 Once Docker be installed, ye can verify that it be workin' by runnin' the docker version command in a terminal window.
 
-#### Docker Compose
+#### **Docker Compose**
 
 [Awesome Compose](https://github.com/docker/awesome-compose)
 
 Docker Compose be a tool for defining and runnin' multi-container Docker applications. With Compose, ye can use a YAML file to configure your application's services. Then, with a single command, ye can create and start all the services from yer configuration.
 
-##### Install Docker Compose
+##### **Install Docker Compose**
 
 To install Docker Compose, ye can follow the instructions on the Docker Compose website. Ye can also use the Docker Toolbox to install Docker Compose on Windows and Mac.
 
@@ -1956,13 +1956,13 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo sh -c "curl -L https://raw.githubusercontent.com/docker/compose/${COMPOSE_VERSION}/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose"
 ```
 
-#### Docker Swarm
+#### **Docker Swarm**
 
 [Docker Swarm Rocks](https://dockerswarm.rocks/)
 
 Docker Swarm be a native clustering tool for Docker. It be used to deploy and manage a cluster of Docker Engines.
 
-### Git
+### **Git**
 
 Git be a free and open-source version control system that be used by developers to track changes to their code and collaborate with other developers on software projects. It be a way to keep a record of the history of a project, so ye can go back and see what be changed and when.
 
@@ -1972,7 +1972,7 @@ To use Git, ye first need to install it on yer computer. Then, ye can create a n
 
 Git be a powerful tool that be widely used by developers around the world, and it be particularly useful for working on large, complex software projects with multiple contributors. I hope this helps ye understand what Git be and how it can be used!
 
-#### GitHub
+#### **GitHub**
 
 [GitHub](https://github.com)
 
@@ -1982,7 +1982,7 @@ GitHub be a great place for developers to store their code and track changes to 
 
 GitHub be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what GitHub be and how it can be used by developers!
 
-##### GitHub sounds a litttle overwhelming. What be the basics?
+##### **GitHub sounds a litttle overwhelming. What be the basics?**
 
 Ahoy, matey! As for GitHub, ye should be well-versed in the ways of version control and collaboration. This means having a strong understanding of Git and the GitHub platform, and being able to use them effectively to manage and track code changes.
 
@@ -1992,7 +1992,7 @@ In addition to these technical skills, it be important for ye to be able to comm
 
 Finally, as a true GitHub professional, ye should be able to keep yer head in a crisis and be able to think on yer feet. Whether it be dealing with a sudden influx of pull requests or a merge conflict, ye should be able to think quickly and come up with solutions to keep yer ship sailing smoothly. So hoist the mainsail and get to work, matey!
 
-#### GitLab
+#### **GitLab**
 
 [GitLab](https://gitlab.com)
 
@@ -2002,7 +2002,7 @@ GitLab be a great place for developers to store their code and track changes to 
 
 GitLab be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what GitLab be and how it can be used by developers!
 
-#### Gitea
+#### **Gitea**
 
 [Gitea](https://gitea.io)
 
@@ -2012,7 +2012,7 @@ Gitea be a great place for developers to store their code and track changes to i
 
 Gitea be a valuable resource for developers, as it be a place to find and share code, as well as collaborate with other developers on projects. It be also a great place to find open-source projects and contribute to them. I hope this helps ye understand what Gitea be and how it can be used by developers!
 
-#### Getting Started with Git and GitHub
+#### **Getting Started with Git and GitHub**
 
 Here be a few basic commands ye can use to get started with Git and GitHub:
 
@@ -2055,7 +2055,7 @@ git config --global user.email "[email address]"
 
 These be just a few of the basic commands ye can use to get started with Git and GitHub, matey. There be many more commands and features available, so don't be afraid to explore and learn more. Just watch out for those scurvy Git merge conflicts!
 
-##### What if I get stuck?
+##### **What if I get stuck?**
 
 Ye might find yerself stuck in a few common scenarios from time to time. Here are a few examples and how ye might be able to get yerself out of them:
 
@@ -2069,7 +2069,7 @@ Ye might find yerself stuck in a few common scenarios from time to time. Here ar
 
 I hope these tips help ye navigate the choppy waters of GitHub, matey!
 
-##### Get involved in open-source projects
+##### **Get involved in open-source projects**
 
 [EddieHub](https://eddiehub.org)
 
@@ -2085,7 +2085,7 @@ Join a community. There are many open source communities ye can join to connect 
 
 I hope these ideas help ye set sail on yer open source journey, matey!
 
-##### Eddie Jaoude
+##### **Eddie Jaoude**
 
 ![Eddie Jaoude](images/eddiejaoude.jpg)
 
@@ -2093,7 +2093,7 @@ I hope these ideas help ye set sail on yer open source journey, matey!
 
 Eddie Jaoude be a software engineer and open source enthusiast. He be the founder of EddieHub, a community of open source contributors. He be also the host of the "Open Source Show" podcast, where he interviews open source contributors and maintainers.
 
-##### EddieHub and LinkFree
+##### **EddieHub and LinkFree**
 
 [EddieHub](https://www.eddiehub.org) | [LinkFree](https://linkfree.eddiehub.io)
 
@@ -2107,7 +2107,7 @@ Supporting open source projects like LinkFree be important because it helps to e
 
 Joining a community like EddieHub can also be a great way to get involved in the tech world and connect with other salty dogs who have similar interests. It can provide opportunities to learn from others, share your own knowledge and experiences, and potentially find job opportunities or collaborate on projects. Overall, participating in a community like EddieHub can be a valuable and rewarding experience for those just starting out in tech. So hoist up the mainsail and join the crew at EddieHub, matey!
 
-### Homebrew
+### **Homebrew**
 
 [Homebrew](https://brew.sh)
 
@@ -2141,7 +2141,7 @@ To install a package called "treasuremap," you can run the following command:
 brew install treasuremap
 ```
 
-### HTML
+### **HTML**
 
 Ahoy matey! HTML, or Hypertext Markup Language, is a standardized system for marking up text files to indicate how they should be displayed in a web browser. Just like how a pirate might use a map to navigate through the open seas, HTML helps web browsers interpret and display the content of a web page.
 
@@ -2168,7 +2168,7 @@ HTML is just one part of the puzzle when it comes to building a website. Other t
 
 I hope this helps you understand what HTML is and how a pirate might use it to build their own website. Arrr!
 
-#### Meta tags
+#### **Meta tags**
 
 Ahoy matey! Meta tags are a set of HTML tags that be used to provide information about a web page to web browsers and search engines. Just like how a pirate might use a map to navigate through the open seas, meta tags help web browsers and search engines interpret and display the content of a web page.
 
@@ -2182,11 +2182,11 @@ Here's an example of some basic meta tags:
 <title>Pirate's Cove</title>
 ```
 
-#### Is HTML a programming language?
+#### **Is HTML a programming language?**
 
 HTML is not a programming language, but it is a markup language. A markup language is a system for annotating a document in a way that is syntactically distinguishable from the text, and can assign meaning to the text. HTML is used to define the structure and content of a web page, and is often used in conjunction with CSS (Cascading Style Sheets) and JavaScript to create more dynamic and interactive web pages.
 
-#### CSS
+#### **CSS**
 
 Ahoy matey! CSS, or Cascading Style Sheets, is a stylesheet language used for describing the look and formatting of a document written in HTML. Just like how a pirate might use a map to navigate through the open seas, CSS helps web browsers interpret and display the content of a web page in a specific way.
 
@@ -2217,7 +2217,7 @@ CSS can be used to style a wide variety of elements on a web page, including tex
 
 I hope this helps you understand what CSS is and how a pirate might use it to style their website. Arrr!
 
-### HTTP
+### **HTTP**
 
 HTTP, or Hypertext Transfer Protocol, is a protocol for transmitting data on the internet. It is the foundation of the World Wide Web, and is used to transfer data from a server to a client, or vice versa.
 
@@ -2225,7 +2225,7 @@ In a pirate theme, you could think of HTTP as the system that allows pirates to 
 
 HTTP is just one of many protocols that make the internet work, but it is an important one because it allows us to access and interact with websites and other online resources. Arrr!
 
-#### HTTP error codes
+#### **HTTP error codes**
 
 HTTP error codes are a set of standardized codes that are used to indicate the status of an HTTP request. They are returned by the server in the HTTP response, and can be used to determine whether a request was successful or not.
 
@@ -2250,7 +2250,7 @@ Here are some more obscure HTTP error codes:
 - 418 I'm a teapot - The server refuses to brew coffee because it is a teapot
 - 451 Unavailable For Legal Reasons - The requested resource is unavailable due to legal reasons
 
-#### HTTP methods
+#### **HTTP methods**
 
 HTTP methods are a set of standardized methods that are used to indicate the action that should be performed for a given resource. They are used in the HTTP request, and can be used to determine what action should be performed on the server.
 
@@ -2269,7 +2269,7 @@ Here are some of the most common `Content-Type` values:
 - `application/x-www-form-urlencoded` - Form data
 - `multipart/form-data` - Form data with file uploads
 
-#### HTTP headers
+#### **HTTP headers**
 
 HTTP headers are a set of standardized fields that are used to send additional information with an HTTP request or response. They are used to provide additional context about the request or response, and can be used to pass additional information between the client and the server.
 
@@ -2288,7 +2288,7 @@ Here are some of the most common HTTP headers:
 
 HTTP headers can also be used to pass additional information between the client and the server. For example, the `X-Forwarded-For` header can be used to pass the IP address of the client to the server.
 
-#### HTTPS
+#### **HTTPS**
 
 HTTPS (Hypertext Transfer Protocol Secure) can be thought of as a way to secure communication between two parties. HTTPS is a protocol that is used to transmit data over the internet, and it is designed to provide an additional layer of security on top of the regular HTTP protocol.
 
@@ -2298,7 +2298,7 @@ In addition to encryption, HTTPS also provides authentication, which means that 
 
 Overall, HTTPS is a useful tool for pirates (or anyone else) who want to keep their communication private and secure. It can help protect against interception and tampering, and it can also provide reassurance that the messages are actually coming from the intended sender.
 
-#### API (Application Programming Interface)
+#### **API (Application Programming Interface)**
 
 An API (Application Programming Interface) can be thought of as a set of standardized methods that are used to interact with a web application. It is a way for a client to communicate with a server, and it can be used to retrieve data from the server or to send data to the server.
 
@@ -2306,7 +2306,7 @@ In a pirate theme, you could think of an API as a way for a pirate to interact w
 
 APIs are often used to retrieve data from a server, but they can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
 
-##### GraphQL (Graph Query Language)
+##### **GraphQL (Graph Query Language)**
 
 GraphQL (Graph Query Language) can be thought of as a set of standardized methods that are used to interact with a web application. It is a way for a client to communicate with a server, and it can be used to retrieve data from the server or to send data to the server.
 
@@ -2314,7 +2314,7 @@ In a pirate theme, you could think of GraphQL as a way for a pirate to interact 
 
 GraphQL is often used to retrieve data from a server, but it can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
 
-##### REST (Representational State Transfer)
+##### **REST (Representational State Transfer)**
 
 REST (Representational State Transfer) can be thought of as a set of standardized principles that are used to design web applications. It is a way to design web applications so that they can be easily accessed and used by clients.
 
@@ -2322,7 +2322,7 @@ In a pirate theme, you could think of REST as a set of principles that are used 
 
 REST is often used to retrieve data from a server, but it can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
 
-##### SOAP (Simple Object Access Protocol)
+##### **SOAP (Simple Object Access Protocol)**
 
 SOAP (Simple Object Access Protocol) can be thought of as a set of standardized methods that are used to interact with a web application. It is a way for a client to communicate with a server, and it can be used to retrieve data from the server or to send data to the server.
 
@@ -2330,7 +2330,7 @@ In a pirate theme, you could think of SOAP as a way for a pirate to interact wit
 
 SOAP is often used to retrieve data from a server, but it can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
 
-### JSON (JavaScript Object Notation)
+### **JSON (JavaScript Object Notation)**
 
 JSON (JavaScript Object Notation) is a secret code that pirates use to store and share information about their treasure, their crew, and their adventures on the high seas.
 
@@ -2342,7 +2342,7 @@ To use JSON, you need to understand its syntax, which is based on key-value pair
 
 JSON is a powerful and flexible tool that is widely used in modern web development, and is an important part of a pirate's arsenal. Arrr!
 
-### ICMP (Internet Control Message Protocol)
+### **ICMP (Internet Control Message Protocol)**
 
 ICMP (Internet Control Message Protocol) can be thought of as a communication protocol that is used to transmit messages between devices on a network. It is often used to send error messages or to request information from other devices.
 
@@ -2366,7 +2366,7 @@ An example of troubleshooting a network problem using ICMP might look like this:
 6. The pirate sends another ping message to the device to verify that the network is working again.
 7. The device responds with an ICMP echo reply message.
 
-### Infrastructure as Code
+### **Infrastructure as Code**
 
 Infrastructure as code (IaC) is a way to define and manage your infrastructure and its dependencies using code, rather than manually configuring resources through a graphical user interface. This allows you to version control your infrastructure, automate the provisioning and management of resources, and apply testing and deployment practices similar to those used in software development.
 
@@ -2374,7 +2374,7 @@ In a pirate theme, you could think of infrastructure as code as a way to manage 
 
 By using infrastructure as code, you can also more easily track and manage changes to your ships' systems and equipment over time, as well as roll back any changes that might cause problems. This can help you to keep your fleet seaworthy and ready to set sail at a moment's notice, no matter where you are in the world.
 
-#### Ansible
+#### **Ansible**
 
 Ansible is a configuration management tool that can be used to automate the provisioning and management of infrastructure. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
 
@@ -2392,7 +2392,7 @@ Ansible can be used to automate the provisioning and management of infrastructur
 
 You might imagine that Ansible is a useful tool for pirates to automate the provisioning and management of their fleet of ships. It can be used to automate the configuration of a ship's sails, masts, and engines, as well as the deployment of new cannons and other equipment.
 
-##### Install Ansible
+##### **Install Ansible**
 
 Ansible can be installed on a Linux system using the package manager for your distribution. For example, on Ubuntu, you can install Ansible using the following command:
 
@@ -2400,7 +2400,7 @@ Ansible can be installed on a Linux system using the package manager for your di
 sudo apt-get install ansible -y
 ```
 
-##### Jeff Geerling
+##### **Jeff Geerling**
 
 [@geerlingguy GitHub](https://github.com/geerlingguy) | [@geerlingguy Twitter](https://twitter.com/geerlingguy) | [geerlingguy.com](https://www.geerlingguy.com/) | [Jeff Geerling on YouTube](https://www.youtube.com/c/jeffgeerling)
 
@@ -2408,7 +2408,7 @@ Jeff Geerling is a software developer and author who has written several books a
 
 You might imagine that Jeff Geerling is a useful person for pirates to know. He has written several books about Ansible, including Ansible for DevOps and Ansible for Kubernetes.
 
-##### Jeff Geerling's Ansible for DevOps
+##### **Jeff Geerling's Ansible for DevOps**
 
 [Ansible for DevOps](https://www.ansiblefordevops.com)
 
@@ -2416,61 +2416,61 @@ Jeff Geerling's Ansible for DevOps is a book that can be used to learn how to us
 
 You might imagine that Jeff Geerling's Ansible for DevOps is a useful book for pirates to learn how to use Ansible to automate the provisioning and management of their fleet of ships. It covers the basics of Ansible, including how to install and configure Ansible, how to write Ansible playbooks, and how to use Ansible to automate the configuration of servers, networks, and other infrastructure components.
 
-##### Ansible Galaxy
+##### **Ansible Galaxy**
 
 Ansible Galaxy is a repository of Ansible roles that can be used to automate the configuration of servers, networks, and other infrastructure components. It can be used to automate the configuration of a wide variety of software, including web servers, databases, and monitoring tools.
 
 You might imagine that Ansible Galaxy is a useful tool for pirates to automate the configuration of their fleet of ships. It can be used to automate the configuration of a wide variety of software, including web servers, databases, and monitoring tools.
 
-##### Ansible Tower
+##### **Ansible Tower**
 
 Ansible Tower is a web-based user interface that can be used to manage Ansible playbooks and automate the provisioning and management of infrastructure. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
 
 You might imagine that Ansible Tower is a useful tool for pirates to manage their fleet of ships and automate the provisioning and management of their infrastructure. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
 
-##### Ansible Vault
+##### **Ansible Vault**
 
 Ansible Vault is a tool that can be used to encrypt sensitive data that is stored in Ansible playbooks. This allows you to store sensitive data, such as passwords, in a secure way that can be used by Ansible playbooks without exposing the data to unauthorized users.
 
 You might imagine that Ansible Vault is a useful tool for pirates to encrypt sensitive data that is stored in Ansible playbooks. This allows them to store sensitive data, such as passwords, in a secure way that can be used by Ansible playbooks without exposing the data to unauthorized users.
 
-##### Ansible Molecule
+##### **Ansible Molecule**
 
 Ansible Molecule is a tool that can be used to test Ansible roles. It can be used to test the configuration of servers, networks, and other infrastructure components, and it can also be used to test the deployment of applications.
 
 You might imagine that Ansible Molecule is a useful tool for pirates to test Ansible roles. It can be used to test the configuration of servers, networks, and other infrastructure components, and it can also be used to test the deployment of applications.
 
-##### Ansible Container
+##### **Ansible Container**
 
 Ansible Container is a tool that can be used to build and deploy containerized applications. It can be used to automate the configuration of Docker containers and Kubernetes clusters, and it can also be used to automate the deployment of applications.
 
 You might imagine that Ansible Container is a useful tool for pirates to build and deploy containerized applications. It can be used to automate the configuration of Docker containers and Kubernetes clusters, and it can also be used to automate the deployment of applications.
 
-##### Ansible Network Automation
+##### **Ansible Network Automation**
 
 Ansible Network Automation is a collection of Ansible roles that can be used to automate the configuration of networks, including configuring switches, routers, and firewalls. It can be used to automate the configuration of a wide variety of network devices, including Cisco, Juniper, and Arista.
 
 You might imagine that Ansible Network Automation is a useful tool for pirates to automate the configuration of their fleet of ships. It can be used to automate the configuration of a wide variety of network devices, including Cisco, Juniper, and Arista.
 
-##### Ansible Cloud Automation
+##### **Ansible Cloud Automation**
 
 Ansible Cloud Automation is a collection of Ansible roles that can be used to automate the configuration of cloud infrastructure, including configuring virtual machines, load balancers, and storage. It can be used to automate the configuration of a wide variety of cloud providers, including Amazon Web Services, Microsoft Azure, and Google Cloud Platform.
 
 You might imagine that Ansible Cloud Automation is a useful tool for pirates to automate the configuration of their fleet of ships. It can be used to automate the configuration of a wide variety of cloud providers, including Amazon Web Services, Microsoft Azure, and Google Cloud Platform.
 
-##### Ansible Container Orchestration
+##### **Ansible Container Orchestration**
 
 Ansible Container Orchestration is a collection of Ansible roles that can be used to automate the configuration of containers, including configuring Docker containers and Kubernetes clusters. It can be used to automate the configuration of a wide variety of container platforms, including Docker, Kubernetes, and OpenShift.
 
 You might imagine that Ansible Container Orchestration is a useful tool for pirates to automate the configuration of their fleet of ships. It can be used to automate the configuration of a wide variety of container platforms, including Docker, Kubernetes, and OpenShift.
 
-##### Ansible Service Broker
+##### **Ansible Service Broker**
 
 Ansible Service Broker is a tool that can be used to automate the deployment of applications. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
 
 You might imagine that Ansible Service Broker is a useful tool for pirates to automate the deployment of applications. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
 
-#### Terraform
+#### **Terraform**
 
 Terraform is a tool that can be used to automate the provisioning and management of infrastructure. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
 
@@ -2488,7 +2488,7 @@ Terraform can be used to automate the provisioning and management of infrastruct
 
 You might imagine that Terraform is a useful tool for pirates to automate the provisioning and management of their fleet of ships. It can be used to automate the configuration of a ship's sails, masts, and engines, as well as the deployment of new cannons and other equipment.
 
-##### Install Terraform
+##### **Install Terraform**
 
 Terraform can be installed on a Linux system using the package manager for your distribution. For example, on Ubuntu, you can install Terraform using the following command:
 
@@ -2519,7 +2519,7 @@ ln -s ~/.tfenv/bin/* ~/.local/bin
 which tfenv
 ```
 
-##### Terraform Cloud Development Kit (CDK)
+##### **Terraform Cloud Development Kit (CDK)**
 
 Terraform Cloud Development Kit (CDK) is a tool that can be used to automate the provisioning and management of infrastructure. It can be used to automate the configuration of servers, networks, and other infrastructure components, and it can also be used to automate the deployment of applications.
 
@@ -2612,7 +2612,7 @@ Options:
   -h, --help                      Show help                            [boolean]
 ```
 
-### IP Addresses
+### **IP Addresses**
 
 An IP address (Internet Protocol address) can be thought of as a unique identifier that is assigned to each device that is connected to the internet. It is a numerical label that is used to identify a specific device, and it is similar to a physical address or a phone number.
 
@@ -2622,7 +2622,7 @@ IP addresses are usually assigned by internet service providers (ISPs) or networ
 
 You might imagine that each pirate has a unique IP address that they use to communicate with other pirates over the internet. They might also use IP addresses to access websites and other online resources, just like how people use IP addresses in the real world.
 
-#### What is an IP made up of?
+#### **What is an IP made up of?**
 
 Ahoy matey! An IP address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. Just like how a pirate might use a map to navigate through the open seas, an IP address helps devices on a network find and communicate with each other.
 
@@ -2638,7 +2638,7 @@ To understand an IP address, it's important to know the difference between a pub
 
 I hope this helps you understand how IP addresses work and how a pirate might use them to navigate the vast ocean of the Internet. Arrr!
 
-### JavaScript
+### **JavaScript**
 
 Ahoy matey! Are ye interested in learning about JavaScript, the programming language used to make websites and web applications more interactive and dynamic?
 
@@ -2652,7 +2652,7 @@ JavaScript is also an object-oriented programming language, meaning that it is b
 
 I hope that helps ye get a better understanding of JavaScript, matey! If ye have any more questions, don't hesitate to ask.
 
-### Kubernetes
+### **Kubernetes**
 
 Kubernetes (also known as "K8s") is an open-source system for automating the deployment, scaling, and management of containerized applications. It helps to provide a consistent and reliable environment for running applications, regardless of where they are deployed.
 
@@ -2660,7 +2660,7 @@ In a pirate theme, you could think of Kubernetes as a way to manage and maintain
 
 Kubernetes also helps to ensure that your ships are running smoothly and reliably, by providing features like automatic self-healing, rolling updates, and resource management. This can help to keep your fleet seaworthy and ready to set sail at a moment's notice, no matter where you are in the world.
 
-### Latency
+### **Latency**
 
 Latency is the time it takes for a signal to travel from one point to another. In a pirate theme, you could think of latency as the time it takes for a message to travel from one pirate to another.
 
@@ -2670,7 +2670,7 @@ Latency is an important metric to consider when designing a network, as it can a
 
 Latency can also be affected by the distance between two devices, as well as the type of network connection that is being used. For example, a wireless connection will typically have higher latency than a wired connection.
 
-### Logging
+### **Logging**
 
 Logging on a Linux system can be thought of as a way for pirates to keep track of what is happening on their network. Logging is the process of recording events and activities that occur on a computer system, and it is a useful tool for diagnosing problems, tracking changes, and detecting security breaches.
 
@@ -2680,7 +2680,7 @@ There are several different types of log messages that can be recorded on a Linu
 
 Logging can be a useful tool for pirates to monitor their network and keep track of what is happening on their systems. It can help them identify problems, track changes, and detect security breaches, all of which are important for keeping their network running smoothly and securely.
 
-#### Logrotate
+#### **Logrotate**
 
 Logrotate is a utility that can be used to manage log files on a Linux system. It can be used to rotate, compress, and remove log files, as well as send log files to a remote server.
 
@@ -2688,7 +2688,7 @@ Logrotate is typically configured using a configuration file called logrotate.co
 
 Logrotate can be used to rotate log files on a daily, weekly, monthly, or yearly basis. It can also be used to compress log files, which can help to save disk space. Logrotate can also be used to remove old log files, which can help to keep the system clean and organized.
 
-### Monitoring
+### **Monitoring**
 
 Monitoring on a Linux system can be thought of as a way for pirates to keep track of the performance and status of their systems. Monitoring is the process of collecting and analyzing data about a system's resources and activities, and it is a useful tool for identifying problems, optimizing performance, and detecting security breaches.
 
@@ -2702,7 +2702,7 @@ There are many different tools and techniques that can be used to monitor a Linu
 
 Monitoring can be a useful tool for pirates to keep their systems running smoothly and securely. It allows them to identify problems, optimize performance, and detect security breaches, all of which are important for maintaining a healthy and efficient network.
 
-### OSI model
+### **OSI model**
 
 The OSI model be a framework fer understanding and designing how data be transmitted over yer network. It be made up of seven layers, each representing a different aspect of networking:
 
@@ -2724,7 +2724,7 @@ The OSI model be a useful tool fer understanding and designing the communication
 
 > **Note** Layer 8 be the most important layer of the OSI model. It be responsible fer the most important tasks, such as drinking rum and eating grog.
 
-### SSH
+### **SSH**
 
 Secure Shell (SSH) is a secret code that allows pirates to remotely control their ships and protect their communications from prying eyes.
 
@@ -2734,7 +2734,7 @@ To use SSH, you need an SSH client, which is a program that connects to an SSH s
 
 SSH is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
 
-#### SSH Agent
+#### **SSH Agent**
 
 SSH Agent is a program that can be used to store and manage private keys on a Linux system. It can be used to securely store private keys, which can be used to authenticate SSH connections.
 
@@ -2766,7 +2766,7 @@ ssh-add -D
 ssh-add -K path/to/private_key
 ```
 
-#### SSH Confguration
+#### **SSH Confguration**
 
 SSH can be configured using a configuration file called sshd_config, which is located in the /etc/ssh directory. This file contains a list of configuration options that can be used to customize the behavior of the SSH daemon.
 
@@ -2901,7 +2901,7 @@ PubkeyAcceptedKeyTypes
 HostbasedAcceptedKeyTypes
 ```
 
-#### SSH Keys
+#### **SSH Keys**
 
 SSH keys are a type of secret code that can be used to authenticate a user when connecting to an SSH server. SSH keys are a more secure alternative to passwords, as they are much harder to guess or brute force.
 
@@ -2909,7 +2909,7 @@ When you connect to an SSH server, you are prompted to enter a username and pass
 
 SSH keys are widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. They are a more secure alternative to passwords, and are an essential tool in the pirate's toolkit. Arrr!
 
-##### How to generate SSH keys
+##### **How to generate SSH keys**
 
 To generate SSH keys, you can use the `ssh-keygen` command. This command will generate a private key and a public key, which can be used to authenticate you when connecting to an SSH server.
 
@@ -2930,7 +2930,7 @@ ssh-keygen -l -E md5 -f ~/.ssh/filename
 ssh-keygen -p -f ~/.ssh/filename
 ```
 
-#### SSH Port Forwarding
+#### **SSH Port Forwarding**
 
 SSH port forwarding is a feature that allows you to forward traffic from a local port to a remote port on an SSH server. This can be useful for accessing services that are only available on a remote server, such as a web server or database.
 
@@ -2938,13 +2938,13 @@ When you connect to an SSH server, you are prompted to enter a username and pass
 
 SSH port forwarding is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
 
-#### SSH Tunneling
+#### **SSH Tunneling**
 
 SSH tunneling is a feature that allows you to forward traffic from a local port to a remote port on an SSH server. This can be useful for accessing services that are only available on a remote server, such as a web server or database.
 
 When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
 
-#### Poor man's VPN (scurvy dog's sneak way)
+#### **Poor man's VPN (scurvy dog's sneak way)**
 
 [sshuttle](https://github.com/sshuttle/sshuttle)
 
@@ -2952,13 +2952,13 @@ sshuttle (a poor man's VPN) is a tool that uses SSH to create a VPN between your
 
 When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
 
-### SSL/TLS
+### **SSL/TLS**
 
 SSL (Secure Sockets Layer) and TLS (Transport Layer Security) be a set of protocols that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
 When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
 
-#### SSL Certificates
+#### **SSL Certificates**
 
 SSL (Secure Sockets Layer) certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
 
@@ -2970,13 +2970,13 @@ There be a few different types of SSL certificates, each with its own level of v
 
 I hope this be helpin' ye to understand how SSL certificates be workin' and how ye might be usin' them with nginx. Ahoy!
 
-##### Self-signed SSL Certificates
+##### **Self-signed SSL Certificates**
 
 Self-signed SSL certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
 
 When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
 
-#### Let's Encrypt
+#### **Let's Encrypt**
 
 Let's Encrypt be a free, automated, and open certificate authority (CA) that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
@@ -2984,29 +2984,29 @@ Certbot be a free, open-source tool that be usin' Let's Encrypt to obtain and in
 
 The EFF (Electronic Frontier Foundation) be a non-profit organization that be workin' to protect and advance digital rights. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
-#### Certificate Authorities
+#### **Certificate Authorities**
 
 A certificate authority (CA) be a trusted third party that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
-#### CAA Records
+#### **CAA Records**
 
 A CAA (Certification Authority Authorization) record be a type of DNS record that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
 When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
 
-#### OCSP Stapling
+#### **OCSP Stapling**
 
 OCSP (Online Certificate Status Protocol) stapling be a method of improving the performance of SSL/TLS connections by caching the results of OCSP requests. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
 When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
 
-#### OCSP Must-Staple
+#### **OCSP Must-Staple**
 
 OCSP (Online Certificate Status Protocol) must-staple be a method of improving the performance of SSL/TLS connections by caching the results of OCSP requests. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
 
 When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
 
-### Streaming
+### **Streaming**
 
 You could think of streaming as a way for pirates to continuously receive updates and information from other ships as they sail the seas of the internet.
 
@@ -3016,7 +3016,7 @@ Streaming is commonly used for media, such as music and video, but it can also b
 
 Streaming can be implemented using a variety of technologies and protocols, such as HTTP streaming, WebSockets, and WebRTC. It is an important part of modern software engineering, and is a valuable tool for pirates as they navigate the choppy waters of the internet. Arrr!
 
-### Subnet
+### **Subnet**
 
 A subnet (short for "subnetwork") can be thought of as a smaller network that is contained within a larger network. It is a way to divide a larger network into smaller, more manageable parts.
 
@@ -3026,7 +3026,7 @@ For example, they might create a subnet for pirates who are located in the same 
 
 In a real-world context, subnets are often used to improve the efficiency of networks by reducing the amount of traffic that needs to be routed between different parts of the network. They can also be used to improve security by isolating different parts of the network from each other.
 
-#### Subnet mask
+#### **Subnet mask**
 
 A subnet mask is a string of numbers that is used to identify which part of an IP address belongs to the network and which part belongs to the host. It is used in conjunction with an IP address to determine which devices are part of the same subnet.
 
@@ -3036,7 +3036,7 @@ For example, if the subnet mask is "255.255.255.0", it means that the first thre
 
 In the real-world, subnet masks are used to divide networks into smaller, more manageable parts and to improve the efficiency of communication between devices on a network. They are an important part of the IP addressing system, and they are used in many different types of networks, including pirate networks.
 
-#### How to calculate a subnet mask
+#### **How to calculate a subnet mask**
 
 Determine the size of your network and the number of subnets you want to create. Consider factors such as the number of pirates and devices that will be connected to the network, the geographical location of the pirates, and the types of resources that will be shared on the network.
 
@@ -3048,11 +3048,11 @@ Assign an IP address to each device on the network. The IP address should be uni
 
 For example, let's say that you have a network with 100 pirates, and you want to create 10 subnets with 10 pirates each. You might select a subnet mask of "255.255.255.0", which would allow you to create up to 256 subnets. To calculate the subnet address for each subnet, you would use the subnet mask and the IP address of each device. For example, if the IP address of a device is "192.168.1.1", and the subnet mask is "255.255.255.0", the subnet address would be "192.168.1.0".
 
-#### Subnetting Cheatsheet
+#### **Subnetting Cheatsheet**
 
 Subnetting is the process of dividing a network into smaller subnetworks, called subnets. Subnetting allows an organization to break up its network into smaller, more manageable pieces, and assign specific subnets to different departments or locations.
 
-##### Subnet Mask
+##### **Subnet Mask**
 
 A subnet mask is a 32-bit binary number that is used to divide the IP address into the network portion and the host portion. The subnet mask is used to determine which portion of the IP address belongs to the network and which portion belongs to the host.
 
@@ -3065,13 +3065,13 @@ The subnet mask is usually written in the form of an IP address, such as `255.25
 
 The subnet mask is used in conjunction with the IP address to determine which portion of the IP address belongs to the network and which portion belongs to the host.
 
-##### CIDR Notation
+##### **CIDR Notation**
 
 CIDR (Classless Inter-Domain Routing) notation is a standard syntax for representing IP addresses and their associated subnet masks. In CIDR notation, the subnet mask is represented by a slash followed by a number, called the prefix length.
 
 For example, the subnet mask `255.255.255.0` can be written in CIDR notation as `/24`, because the first 24 bits are set to 1 and the remaining 8 bits are set to 0.
 
-##### Subnetting a Network
+##### **Subnetting a Network**
 
 To subnet a network, the network administrator must first determine the number of subnets needed and the number of hosts per subnet. The network administrator can then use the following formula to determine the subnet mask:
 
@@ -3089,7 +3089,7 @@ For example, if a network administrator needs to create 8 subnets, each with 30 
 4. Determine the subnet mask by setting the first `8` bits to 1 and the remaining bits to 0: `11111111.11111111.11111000.00000000`
 5. Convert the subnet mask to CIDR notation: `/23`
 
-##### Subnetting Examples
+##### **Subnetting Examples**
 
 Here are some more examples of how to subnet a network using the subnet mask and CIDR notation:
 
@@ -3103,7 +3103,7 @@ Here are some more examples of how to subnet a network using the subnet mask and
   - Subnet mask: `11111111.11111111.11111111.11111100`
   - CIDR notation: `/30`
 
-##### Subnetting Practice
+##### **Subnetting Practice**
 
 Here are some practice problems to help you get familiar with subnetting:
 
@@ -3119,7 +3119,7 @@ Here are some practice problems to help you get familiar with subnetting:
 
 ![TCP & UDP meme](images/tcp-udp.png)
 
-### TCP/IP
+### **TCP/IP**
 
 TCP/IP be a suite of networking protocols that be used to connect devices on the internet. It be the foundation of the internet, and it be what allow devices to communicate with each other and exchange data over the network.
 
@@ -3129,13 +3129,13 @@ IP (Internet Protocol) be a protocol that be used to route packets of data betwe
 
 Together, TCP and IP be the backbone of the internet, and they be what allow devices to communicate and exchange data with each other. So hoist the mainsail and set course for TCP/IP mastery! With a solid understanding of these protocols, ye'll be well on yer way to becoming a skilled network administrator. Arrrr!
 
-### UDP
+### **UDP**
 
 UDP stands for User Datagram Protocol. It is a communication protocol that is used to transmit data over networks, such as the internet. It is a connectionless protocol, which means that it does not establish a dedicated connection between the sender and receiver before transmitting data. This makes UDP faster and more efficient than protocols that require a connection to be established, but it also means that data transmitted using UDP is less reliable, as there is no guarantee that the data will be received by the intended recipient.
 
 You might imagine UDP as a way for pirates to send messages to each other without having to go through the trouble of setting up a formal communication channel. They could simply send a message using UDP and hope that it gets to the intended recipient, much like a pirate sending a message in a bottle and hoping it reaches its destination.
 
-### YAML (Yet Another Markup Language)
+### **YAML (Yet Another Markup Language)**
 
 YAML (Yet Another Markup Language) is a secret code that pirates use to store and share information about their treasure maps and their plans for future raids.
 
@@ -3147,7 +3147,7 @@ YAML is a popular choice for configuration files because it is easy to read and 
 
 To use YAML effectively as a pirate, you should familiarize yourself with its syntax and conventions, and understand how it is used in the tools and technologies you are working with. Arrr!
 
-### Zsh
+### **Zsh**
 
 Arrr matey! Zsh, also known as the "Z shell," is a Unix shell and command-line interpreter that you can use on your Linux system. It's similar to other shells like the Bourne shell (sh) or the Bourne Again shell (bash), but it offers additional features and functionality that can make it easier and more efficient to use.
 
@@ -3167,7 +3167,7 @@ chsh -s /usr/bin/zsh
 
 I hope this helps get you started with zsh on your Linux system, matey! Let me know if you have any other questions.
 
-#### Oh My Zsh
+#### **Oh My Zsh**
 
 Oh My Zsh is a popular open-source project that helps users configure and customize the Z shell (zsh). It provides a variety of themes, plugins, and features that can make it easier to use zsh and add additional functionality to your terminal.
 
@@ -3186,7 +3186,7 @@ Once you have Oh My Zsh installed, you can start using it by launching a termina
 
 You can customize Oh My Zsh by modifying the configuration file located at "~/.zshrc" and selecting different themes or plugins to use. There are many themes and plugins available, so you can choose the ones that best suit your needs and preferences.
 
-## Chapter Three: Your first day as a pirate
+## **Chapter Three: Your first day as a pirate**
 
 We are going to get a little bit hands on here. We are going to create a new project and we are going to create a new file. We are going to call this file `index.html`. We are going to open this file in our text editor. We are going to add some HTML to this file. We are going to save this file. We are going to open this file in our browser. We are going to see the result of our work. We are going to be very happy. We are going to celebrate. We are going to go to the pub. We are going to have a drink. We are going to have a good time. We are going to be pirates.
 
@@ -3212,7 +3212,7 @@ Just kidding. Although that is a great way to start, we should do a little bit m
 
 10. **Sending Signals:** When ye need to get someone's attention, ye need to know how to send a signal. In the terminal, try using the `kill` command to send a signal to a running process, and the `ps` command to list the processes running on the ship. Can ye find a way to stop a process from running?
 
-### Common problems
+### **Common problems**
 
 Here are a few examples of common problems you might face when working with Linux, along with some possible solutions in a pirate theme:
 
@@ -3226,11 +3226,11 @@ Here are a few examples of common problems you might face when working with Linu
 
 I hope these examples give ye an idea of some common problems ye might face when working with Linux, and how ye might go about solving them.
 
-### Initiation
+### **Initiation**
 
 Ye be now ready to begin yer journey as a Linux pirate! Ye can start by reading the rest of this book, or ye can try some of the challenges below.
 
-#### Question 1: Arrrrrgh
+#### **Question 1: Arrrrrgh**
 
 **Question:**
 
@@ -3298,7 +3298,7 @@ Then, add the following line to the end of the file:
 
 This will run the `apt-get update` and `apt-get upgrade -y` commands every hour. The `apt-get update` command checks for updates to the package manager, and the `apt-get upgrade -y` command installs any available updates.
 
-#### Question 2: The Black Pearl
+#### **Question 2: The Black Pearl**
 
 **Question:**
 
@@ -3377,7 +3377,7 @@ Then, run the following command to transfer the backups to the remote server:
 rsync -avz -e ssh /path/to/backup.tar.gz <remote server IP address>:/path/to/backup
 ```
 
-#### Question 3: The Flying Dutchman
+#### **Question 3: The Flying Dutchman**
 
 **Question:**
 
@@ -3471,7 +3471,7 @@ Then, run the following command to transfer the backups to the remote server:
 rsync -avz -e ssh /path/to/backup.tar.gz <remote server IP address>:/path/to/backup
 ```
 
-#### Question 4: Operation Blackbeard
+#### **Question 4: Operation Blackbeard**
 
 **Question:**
 
@@ -3543,13 +3543,13 @@ git push -u origin master
 
 This will push the local master branch to the remote repository.
 
-### Is it YAML or YML?
+### **Is it YAML or YML?**
 
 Both `.yml` and `.yaml` are file extensions for files written in the YAML (YAML Ain't Markup Language) format. YAML is a human-readable data serialization language that is often used for configuration files, but it can also be used to store and transmit data in a variety of applications.
 
 The `.yml` and `.yaml` extensions are interchangeable, so you can use either one. Some people prefer to use `.yaml` because the .yml extension is often used for YAML configuration files in the Ruby on Rails framework, and the `.yaml` extension helps to indicate that the file is a YAML file, rather than a Ruby file. However, either extension will work for a YAML file.
 
-## GitHub Actions in the wild
+## **GitHub Actions in the wild**
 
 GitHub Actions runners come with a variety of tools and languages pre-installed, including Ruby. You can use Ruby to run scripts and build or test your code as part of your workflow.
 
@@ -3570,65 +3570,65 @@ In this example, the build job runs on an Ubuntu runner, which has Ruby pre-inst
 
 > **Note** that you can also specify a different environment that has Ruby installed, such as a Windows or macOS runner.
 
-## Chapter Four - Desktop Environments and Window Managers
+## **Chapter Four - Desktop Environments and Window Managers**
 
 Avast ye, mateys! In this chapter, we'll be setting sail with desktop environments and window managers in Ubuntu. These be the tools that be responsible for how ye interact with yer operating system and its applications. Let's set the course and dive in!
 
-### Desktop Environments
+### **Desktop Environments**
 
 A desktop environment be a collection o' software that be responsible for the overall look and feel o' yer operating system. It includes things like the desktop background, the panel at the top o' the screen, and the menus and icons that be used to launch applications.
 
 Ubuntu comes with several desktop environments to choose from, including GNOME, KDE, Xfce, and LXDE. Each desktop environment be unique, with its own style and features. Let's take a closer look at each one:
 
-#### GNOME
+#### **GNOME**
 
 [Awesome GNOME](https://github.com/Kazhnuz/awesome-gnome)
 
 GNOME be the default desktop environment for Ubuntu. It be a user-friendly and modern desktop environment that be designed to be easy to use and customize. It be also designed to be highly accessible, with features like a high contrast theme and text-to-speech support.
 
-#### KDE
+#### **KDE**
 
 [Awesome KDE](https://github.com/francoism90/awesome-kde)
 
 KDE be a desktop environment that be known for its high level o' customization and eye-catching visual effects. It be also highly configurable, with a wide range o' settings and options for tweaking the look and feel o' the desktop.
 
-#### Xfce
+#### **Xfce**
 
 [Xfce](https://www.xfce.org)
 
 Xfce be a lightweight and fast desktop environment that be designed to be easy on resources. It be a good choice for pirates who be runnin' older or low-powered computers, or for those who be lookin' for a more minimalistic desktop experience.
 
-#### LXDE
+#### **LXDE**
 
 [LXDE](https://lxde.org)
 
 LXDE be another lightweight and fast desktop environment, similar to Xfce. It be known for its low resource usage and simple, clean interface.
 
-### Window Managers
+### **Window Managers**
 
 A window manager be a software program that be responsible for the layout and appearance o' the windows on yer desktop. It be responsible for things like how windows be resized, moved, and minimized, as well as how the desktop be organized and navigated.
 
 Ubuntu comes with several window managers to choose from, including Openbox, Fluxbox, and i3. Let's take a closer look at each one:
 
-#### Openbox
+#### **Openbox**
 
 [Openbox](https://openbox.org)
 
 Openbox be a lightweight and highly configurable window manager that be designed to be fast and efficient. It be a good choice for pirates who be lookin' for a minimalistic and customizable desktop experience.
 
-#### Fluxbox
+#### **Fluxbox**
 
 [Fluxbox](http://fluxbox.org)
 
 Fluxbox be a fast and lightweight window manager that be similar to Openbox. It be known for its minimalistic interface and high level o' customization.
 
-#### i3
+#### **i3**
 
 [i3](https://i3wm.org)
 
 i3 be a tiling window manager that be designed to be fast and efficient. It be a good choice for pirates who be lookin' for a more organized and efficient desktop experience, as it allows ye to split yer screen into multiple "tiles" and easily switch between different applications.
 
-### Installing a Desktop Environment
+### **Installing a Desktop Environment**
 
 To install a desktop environment in Ubuntu, follow these steps:
 
@@ -3644,7 +3644,7 @@ To install a desktop environment in Ubuntu, follow these steps:
 
 **6.** Log in with yer username and password.
 
-### Configuring a Desktop Environment
+### **Configuring a Desktop Environment**
 
 Once ye have installed a desktop environment, ye can customize and configure it to suit yer needs. Here be a few things ye can do:
 
@@ -3656,7 +3656,7 @@ Once ye have installed a desktop environment, ye can customize and configure it 
 
 **Customize the panel:** Right-click on the panel and select "Properties" from the menu to access the panel settings.
 
-### Installing a Window Manager
+### **Installing a Window Manager**
 
 To install a window manager in Ubuntu, follow these steps:
 
@@ -3671,7 +3671,7 @@ Install the desired window manager with the command `sudo apt install [window ma
 
 **5.** Log in with yer username and password.
 
-### Configuring a Window Manager
+### **Configuring a Window Manager**
 
 **Customize the window behavior:** Most window managers allow ye to customize things like the way windows are resized, moved, and minimized. This can typically be done through a configuration file, which can be accessed through a terminal window or a text editor.
 
@@ -3679,13 +3679,13 @@ Install the desired window manager with the command `sudo apt install [window ma
 
 In this chapter, we set sail with desktop environments and window managers in Ubuntu. We learned about the different options available, and how to install and configure them to suit yer needs. Whether ye be a greenhorn or an experienced swashbuckler, there be a desktop environment or window manager out there for ye. Set yer course and start explorin'!
 
-## Chapter 5: Ruby on Rails and the Seven Seas
+## **Chapter 5: Ruby on Rails and the Seven Seas**
 
 ![Ruby on Rails](images/rubyonrails.png)
 
 Ruby on Rails be a web application framework that be designed to make it easier to build web applications. It be written in the Ruby programming language, and be based on the Model-View-Controller (MVC) software design pattern. It be also known for its high level o' customization and ease o' use.
 
-## A stern warning: The dangers of the high seas
+## **A stern warning: The dangers of the high seas**
 
 ![Pirate Circada](images/piratecircada.png)
 
@@ -3703,7 +3703,7 @@ So put on yer thinkin' cap and give it a try, And maybe, just maybe, ye'll figur
 
 And remember, to fully solve this riddle and claim yer treasure, ye'll need to think outside the box and find the hidden key. It's not as obvious as it seems."
 
-## Jokes
+## **Jokes**
 
 I'm not sure where to put this yet, but here they are.
 
@@ -3747,7 +3747,7 @@ The captain, a seasoned veteran of the high seas, knew they needed to act fast. 
 
 From then on, the DevOps pirate made sure to double check his deployments before setting sail. And the rest of the crew lived happily ever after, sailing the seas and deploying their sails with ease.
 
-## Testemonials
+## **Testemonials**
 
 **Linus Torvalds:** "As the creator of the Linux kernel, I can confidently say that pirating software is a big no-no. But if I were a pirate, I'd have to say that Dean Lofts' book "Linux for Pirates" would be my go-to guide for all things pirate- and Linux-related. Dean may not be as seasoned a pirate as Captain Jack Sparrow, but he sure knows his stuff when it comes to Linux. And let's be honest, a little bit of clever hacking never hurt anyone in a fight against the Royal Navy."
 
