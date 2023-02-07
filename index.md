@@ -3,7 +3,7 @@ title: Linux for Pirates!
 layout: home
 ---
 
-![Linux for Pirates!](linux-for-pirates.png)
+![Linux for Pirates!](linux-for-pirates.jpg)
 
 By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
 
