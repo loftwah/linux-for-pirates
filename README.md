@@ -14,6 +14,8 @@ Welcome to the Linux for Pirates project! This repository is the home of a compr
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+[JOIN OUR DAILY.DEV SQUAD!](https://app.daily.dev/squads/linuxforpirates/xdPR1FF6VNgNmoG6RSM2YExuqODCcNYfr2tyLnAUQ3c)
+
 ## Contributing
 We welcome contributions from individuals of all backgrounds and experience levels. Contributions can include writing new content, editing existing content, and providing technical reviews.
 
