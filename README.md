@@ -2,6 +2,7 @@
 
 Welcome to the Linux for Pirates project! This repository is the home of a comprehensive and user-friendly for learning about the Linux operating system and advancing as a professional in the field. With a focus on Cloud Computing and DevOps, this guide will provide you with the knowledge and skills you need to succeed in the Linux job market and secure a job as a Linux administrator. Click [here](index.md) to start reading.  
 
+![Linux for Pirates!](images/linux-for-pirates.jpg)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
