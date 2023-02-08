@@ -8,8 +8,9 @@ Welcome to the Linux for Pirates project! This repository is the home of a compr
 **Table of Contents**
 
 - [Contributing](#contributing)
-- [Style Guide](#style-guide) 
-- [Code of Conduct](#code-of-conduct) 
+- [Style Guide](#style-guide)
+- [Code of Conduct](#code-of-conduct)
+- [Acknowledgements](#acknowledgements)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
