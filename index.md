@@ -3,9 +3,9 @@ title: Linux for Pirates!
 layout: home
 ---
 
-![Linux for Pirates!](linux-for-pirates.png)
+![Linux for Pirates!](images/linux-for-pirates.jpg)
 
-By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
+Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -249,8 +249,252 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 - [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
 - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
 - [Jokes](#jokes)
+=======
+- [**In memory of Aaron Swartz**](#in-memory-of-aaron-swartz)
+- [**What is Linux?**](#what-is-linux)
+  - [**What is GNU?**](#what-is-gnu)
+  - [**What is open source software?**](#what-is-open-source-software)
+    - [**What are open source licenses?**](#what-are-open-source-licenses)
+    - [**What is the GNU General Public License (GPL)?**](#what-is-the-gnu-general-public-license-gpl)
+    - [**What is the MIT License?**](#what-is-the-mit-license)
+  - [**What is free software?**](#what-is-free-software)
+    - [**Free as in freedom**](#free-as-in-freedom)
+    - [**Free as in beer**](#free-as-in-beer)
+  - [**What is the Linux kernel?**](#what-is-the-linux-kernel)
+  - [**Linus Torvalds**](#linus-torvalds)
+  - [**Richard Stallman**](#richard-stallman)
+- [**Before we begin**](#before-we-begin)
+- [**About the author (This isn't on the test)**](#about-the-author-this-isnt-on-the-test)
+- [**Chapter One - Getting Started**](#chapter-one---getting-started)
+  - [**Ubuntu**](#ubuntu)
+    - [**Kubuntu**](#kubuntu)
+    - [**Arch Linux**](#arch-linux)
+  - [**Setting up Ubuntu**](#setting-up-ubuntu)
+    - [**What to do next?**](#what-to-do-next)
+      - [**Checklist**](#checklist)
+  - [**Where to go from here?**](#where-to-go-from-here)
+    - [**Backend**](#backend)
+    - [**Cloud Computing**](#cloud-computing)
+    - [**Cybersecurity**](#cybersecurity)
+      - [**Kevin Mitnick**](#kevin-mitnick)
+    - [**Data analysis and interpretation**](#data-analysis-and-interpretation)
+    - [**Database**](#database)
+      - [**Graph**](#graph)
+      - [**NoSQL**](#nosql)
+      - [**SQL**](#sql)
+    - [**Design**](#design)
+      - [**Figma**](#figma)
+      - [**DaisyUI**](#daisyui)
+      - [**Fluent Design**](#fluent-design)
+      - [**Material Design**](#material-design)
+    - [**Developer Advocacy and Developer Relations**](#developer-advocacy-and-developer-relations)
+    - [**Finance**](#finance)
+    - [**Frontend**](#frontend)
+    - [**Management**](#management)
+    - [**Marketing**](#marketing)
+    - [**Network Engineering**](#network-engineering)
+    - [**Operations**](#operations)
+    - [**Sales**](#sales)
+    - [**Software development and delivery**](#software-development-and-delivery)
+- [**Chapter Two - The Fundamentals**](#chapter-two---the-fundamentals)
+  - [**What is DevOps?**](#what-is-devops)
+  - [**How DevOps Works?**](#how-devops-works)
+  - [**Handybilly**](#handybilly)
+  - [**Linux filesystem**](#linux-filesystem)
+    - [**Filesystem examples**](#filesystem-examples)
+    - [**Permissions**](#permissions)
+      - [**chmod**](#chmod)
+      - [**chown**](#chown)
+  - [**Networking**](#networking)
+    - [**ip**](#ip)
+    - [**Netcat**](#netcat)
+    - [**nmap**](#nmap)
+    - [**tcpdump**](#tcpdump)
+    - [**Wireshark**](#wireshark)
+  - [**Bash**](#bash)
+    - [**.bashrc**](#bashrc)
+    - [**Bash scripting**](#bash-scripting)
+    - [**Bash history**](#bash-history)
+    - [**Bash one-liners**](#bash-one-liners)
+  - [**chroot**](#chroot)
+  - [**Cron**](#cron)
+  - [**Devices**](#devices)
+  - [**Drivers**](#drivers)
+  - [**Processes**](#processes)
+  - [**curl**](#curl)
+  - [**Vim (Vi IMproved)**](#vim-vi-improved)
+    - [**.vimrc**](#vimrc)
+    - [**NeoVim**](#neovim)
+  - [**VS Code**](#vs-code)
+  - [**The Internet**](#the-internet)
+    - [**Domain name**](#domain-name)
+      - [**Domain Name Registrar**](#domain-name-registrar)
+      - [**Buying a Domain Name**](#buying-a-domain-name)
+      - [**Namecheap**](#namecheap)
+    - [**IANA (Internet Assigned Numbers Authority)**](#iana-internet-assigned-numbers-authority)
+    - [**ICAAN (Internet Corporation for Assigned Names and Numbers)**](#icaan-internet-corporation-for-assigned-names-and-numbers)
+    - [**Internet Service Provider**](#internet-service-provider)
+    - [**Web Browser**](#web-browser)
+      - [**Document Object Model (DOM)**](#document-object-model-dom)
+      - [**Virtual DOM**](#virtual-dom)
+      - [**How do they work together?**](#how-do-they-work-together)
+    - [**World Wide Web**](#world-wide-web)
+      - [**Sir Tim Berners-Lee**](#sir-tim-berners-lee)
+    - [**Web Server**](#web-server)
+      - [**Apache**](#apache)
+      - [**Nginx**](#nginx)
+      - [**Puma**](#puma)
+      - [**Ad-hoc Web Servers**](#ad-hoc-web-servers)
+  - [**Amazon Web Services**](#amazon-web-services)
+  - [**Cloudflare**](#cloudflare)
+  - [**CI/CD**](#cicd)
+    - [**Continuous Integration**](#continuous-integration)
+    - [**Continuous Delivery**](#continuous-delivery)
+    - [**CI/CD Tools**](#cicd-tools)
+      - [**Argo CD**](#argo-cd)
+      - [**CircleCI**](#circleci)
+      - [**GitHub Actions**](#github-actions)
+      - [**GitLab CI/CD**](#gitlab-cicd)
+      - [**Jenkins**](#jenkins)
+      - [**Portainer**](#portainer)
+      - [**Travis CI**](#travis-ci)
+  - [**DigitalOcean**](#digitalocean)
+  - [**eBPF**](#ebpf)
+  - [**DNS (Domain Name System)**](#dns-domain-name-system)
+    - [**Types of DNS Records**](#types-of-dns-records)
+    - [**Examples of DNS Records**](#examples-of-dns-records)
+    - [**DNS servers**](#dns-servers)
+    - [**DNSSEC**](#dnssec)
+    - [**DNS over HTTPS (DoH)**](#dns-over-https-doh)
+    - [**DNS over TLS (DoT)**](#dns-over-tls-dot)
+    - [**DNS over QUIC (DoQ)**](#dns-over-quic-doq)
+    - [**DNSCrypt**](#dnscrypt)
+    - [**DNS Amplification Attacks**](#dns-amplification-attacks)
+    - [**Hosts file**](#hosts-file)
+    - [**AWS Route 53**](#aws-route-53)
+    - [**Azure DNS**](#azure-dns)
+    - [**Google Cloud DNS**](#google-cloud-dns)
+    - [**DigitalOcean DNS**](#digitalocean-dns)
+    - [**Cloudflare DNS**](#cloudflare-dns)
+    - [**OpenDNS**](#opendns)
+    - [**Bind**](#bind)
+  - [**Docker**](#docker)
+    - [**Install Docker**](#install-docker)
+      - [**Docker Engine**](#docker-engine)
+    - [**Docker Compose**](#docker-compose)
+      - [**Install Docker Compose**](#install-docker-compose)
+    - [**Docker Swarm**](#docker-swarm)
+  - [**Git**](#git)
+    - [**GitHub**](#github)
+      - [**GitHub sounds a litttle overwhelming. What be the basics?**](#github-sounds-a-litttle-overwhelming-what-be-the-basics)
+    - [**GitLab**](#gitlab)
+    - [**Gitea**](#gitea)
+    - [**Getting Started with Git and GitHub**](#getting-started-with-git-and-github)
+      - [**What if I get stuck?**](#what-if-i-get-stuck)
+      - [**Get involved in open-source projects**](#get-involved-in-open-source-projects)
+      - [**Eddie Jaoude**](#eddie-jaoude)
+      - [**EddieHub and LinkFree**](#eddiehub-and-linkfree)
+  - [**Homebrew**](#homebrew)
+  - [**HTML**](#html)
+    - [**Meta tags**](#meta-tags)
+    - [**Is HTML a programming language?**](#is-html-a-programming-language)
+    - [**CSS**](#css)
+  - [**HTTP**](#http)
+    - [**HTTP error codes**](#http-error-codes)
+    - [**HTTP methods**](#http-methods)
+    - [**HTTP headers**](#http-headers)
+    - [**HTTPS**](#https)
+    - [**API (Application Programming Interface)**](#api-application-programming-interface)
+      - [**GraphQL (Graph Query Language)**](#graphql-graph-query-language)
+      - [**REST (Representational State Transfer)**](#rest-representational-state-transfer)
+      - [**SOAP (Simple Object Access Protocol)**](#soap-simple-object-access-protocol)
+  - [**JSON (JavaScript Object Notation)**](#json-javascript-object-notation)
+  - [**ICMP (Internet Control Message Protocol)**](#icmp-internet-control-message-protocol)
+  - [**Infrastructure as Code**](#infrastructure-as-code)
+    - [**Ansible**](#ansible)
+      - [**Install Ansible**](#install-ansible)
+      - [**Jeff Geerling**](#jeff-geerling)
+      - [**Jeff Geerling's Ansible for DevOps**](#jeff-geerlings-ansible-for-devops)
+      - [**Ansible Galaxy**](#ansible-galaxy)
+      - [**Ansible Tower**](#ansible-tower)
+      - [**Ansible Vault**](#ansible-vault)
+      - [**Ansible Molecule**](#ansible-molecule)
+      - [**Ansible Container**](#ansible-container)
+      - [**Ansible Network Automation**](#ansible-network-automation)
+      - [**Ansible Cloud Automation**](#ansible-cloud-automation)
+      - [**Ansible Container Orchestration**](#ansible-container-orchestration)
+      - [**Ansible Service Broker**](#ansible-service-broker)
+    - [**Terraform**](#terraform)
+      - [**Install Terraform**](#install-terraform)
+      - [**Terraform Cloud Development Kit (CDK)**](#terraform-cloud-development-kit-cdk)
+  - [**IP Addresses**](#ip-addresses)
+    - [**What is an IP made up of?**](#what-is-an-ip-made-up-of)
+  - [**JavaScript**](#javascript)
+  - [**Kubernetes**](#kubernetes)
+  - [**Latency**](#latency)
+  - [**Logging**](#logging)
+    - [**Logrotate**](#logrotate)
+  - [**Monitoring**](#monitoring)
+  - [**OSI model**](#osi-model)
+  - [**SSH**](#ssh)
+    - [**SSH Agent**](#ssh-agent)
+    - [**SSH Confguration**](#ssh-confguration)
+    - [**SSH Keys**](#ssh-keys)
+      - [**How to generate SSH keys**](#how-to-generate-ssh-keys)
+    - [**SSH Port Forwarding**](#ssh-port-forwarding)
+    - [**SSH Tunneling**](#ssh-tunneling)
+    - [**Poor man's VPN (scurvy dog's sneak way)**](#poor-mans-vpn-scurvy-dogs-sneak-way)
+  - [**SSL/TLS**](#ssltls)
+    - [**SSL Certificates**](#ssl-certificates)
+      - [**Self-signed SSL Certificates**](#self-signed-ssl-certificates)
+    - [**Let's Encrypt**](#lets-encrypt)
+    - [**Certificate Authorities**](#certificate-authorities)
+    - [**CAA Records**](#caa-records)
+    - [**OCSP Stapling**](#ocsp-stapling)
+    - [**OCSP Must-Staple**](#ocsp-must-staple)
+  - [**Streaming**](#streaming)
+  - [**Subnet**](#subnet)
+    - [**Subnet mask**](#subnet-mask)
+    - [**How to calculate a subnet mask**](#how-to-calculate-a-subnet-mask)
+    - [**Subnetting Cheatsheet**](#subnetting-cheatsheet)
+      - [**Subnet Mask**](#subnet-mask-1)
+      - [**CIDR Notation**](#cidr-notation)
+      - [**Subnetting a Network**](#subnetting-a-network)
+      - [**Subnetting Examples**](#subnetting-examples)
+      - [**Subnetting Practice**](#subnetting-practice)
+  - [**TCP/IP**](#tcpip)
+  - [**UDP**](#udp)
+  - [**YAML (Yet Another Markup Language)**](#yaml-yet-another-markup-language)
+  - [**Zsh**](#zsh)
+    - [**Oh My Zsh**](#oh-my-zsh)
+- [**Chapter Three: Your first day as a pirate**](#chapter-three-your-first-day-as-a-pirate)
+  - [**Common problems**](#common-problems)
+  - [**Initiation**](#initiation)
+    - [**Question 1: Arrrrrgh**](#question-1-arrrrrgh)
+    - [**Question 2: The Black Pearl**](#question-2-the-black-pearl)
+    - [**Question 3: The Flying Dutchman**](#question-3-the-flying-dutchman)
+    - [**Question 4: Operation Blackbeard**](#question-4-operation-blackbeard)
+  - [**Is it YAML or YML?**](#is-it-yaml-or-yml)
+- [**GitHub Actions in the wild**](#github-actions-in-the-wild)
+- [**Chapter Four - Desktop Environments and Window Managers**](#chapter-four---desktop-environments-and-window-managers)
+  - [**Desktop Environments**](#desktop-environments)
+    - [**GNOME**](#gnome)
+    - [**KDE**](#kde)
+    - [**Xfce**](#xfce)
+    - [**LXDE**](#lxde)
+  - [**Window Managers**](#window-managers)
+    - [**Openbox**](#openbox)
+    - [**Fluxbox**](#fluxbox)
+    - [**i3**](#i3)
+  - [**Installing a Desktop Environment**](#installing-a-desktop-environment)
+  - [**Configuring a Desktop Environment**](#configuring-a-desktop-environment)
+  - [**Installing a Window Manager**](#installing-a-window-manager)
+  - [**Configuring a Window Manager**](#configuring-a-window-manager)
+- [**Chapter 5: Ruby on Rails and the Seven Seas**](#chapter-5-ruby-on-rails-and-the-seven-seas)
+- [**A stern warning: The dangers of the high seas**](#a-stern-warning-the-dangers-of-the-high-seas)
+- [**Jokes**](#jokes)
   - [Check Yer Deployments](#check-yer-deployments)
-- [Testemonials](#testemonials)
+- [**Testemonials**](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -764,6 +1008,32 @@ Ahoy mateys! If ye be lookin' to set sail on the Linux sea, here be some things 
 **Work with users and groups:** In Linux, users and groups be used to control access to resources on the system. Ye'll need to learn how to create and manage users and groups, and how to set up user accounts and permissions.
 
 **Customize yer system:** Linux be highly customizable, and ye can tweak yer system to suit yer needs and preferences. Ye'll need to learn how to customize yer system's settings, install and configure desktop environments, and more.
+
+### **What is DevOps?**
+
+Ahoy matey! Let's talk about DevOps, ye landlubbers!
+
+![DevOps Pirate](images/devops-pirate.png)
+
+DevOps be a bunch o' tools, practices, and a philosophy that be gettin' the software development and IT teams walkin' the plank together. It be all about workin' as a crew, communicatin' like parrots, and automatin' all the processes!
+
+Yarr, this be startin' 'round 2007, when the software development and IT teams started grievin' 'bout the old way of doin' things, with the developers writin' code and the IT operations hoisting the sails and keepin' the ship afloat. But DevOps changed all that! It brought the two teams together, like rum and coconuts!
+
+Under DevOps, there be no more "silos". Sometimes, the two teams be mergin' into one big happy crew, with engineers workin' on all parts of the journey from developin' to deploying and operatin'.
+
+DevOps teams use tools to make the journey smoother and quicker, like a good set of sails on a calm day. They use a bunch o' tools called the "DevOps toolchain" to help 'em tackle the important stuff, like continuous integration, continuous delivery, automation, and workin' together like a well-oiled crew!
+
+In some DevOps models, quality assurance and security teams may also become more tightly integrated with development and operations and throughout the application lifecycle. When security is the focus of everyone on a DevOps team and even the security teams be gettin' in on the action, with a thing called "DevSecOps". It's like havin' a lookout on the masthead, keepin' a keen eye out for danger at all times!
+
+The DevOps journey be like a never-endin' loop, always improvin' and changin', like the wind direction on a voyage. It's made up of eight phases, representin' the processes, capabilities, and tools needed for development and operations. And throughout it all, the teams be workin' and communicatin' together, like a good crew on a ship!
+
+So hoist the sails and set course for DevOps, me hearties! Yarrr!
+
+### **How DevOps Works?**
+
+Under the DevOps model, development and operations teams are no longer siled. Sometimes, these two teams are merged into a single team where the engineers work across the entire application lifecycle, from development and test to deployment to operations, and develop a range of skills not limited to a single function.
+
+It is an ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.
 
 ### **Handybilly**
 
@@ -1970,6 +2240,28 @@ git config --global user.email "[email address]"
 - "I be needin' to pull the latest changes from the remote repository on GitHub, arrr!"
 
 `git pull origin [branch]`
+
+- "It will pull or fetch the remote repository data into the local repo."
+
+`ls -a .git`
+
+- "It will show the hidden files that are created after initializing the Git."
+
+`git status` 
+
+- "It will show the status of the files that are newly created, modified or deleted."
+
+`git add filename` OR `git add .`
+
+- "This will add a particular or all the file data into the staging area and after that, the data will be committed into the Git."
+
+`git commit -m "add a message"`
+
+- "This command will commit the changes in the Git when you first add the files."
+
+`git commit -am "add a message"`
+
+- "This one command will add the file data into the staging area and it will also commit that data in the Git."
 
 These be just a few of the basic commands ye can use to get started with Git and GitHub, matey. There be many more commands and features available, so don't be afraid to explore and learn more. Just watch out for those scurvy Git merge conflicts!
 
