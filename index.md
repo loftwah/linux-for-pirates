@@ -12,12 +12,8 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 **Table of Contents**
 
 - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](#what-is-linux)
-  - [What is GNU?](#what-is-gnu)
-  - [What is open source software?](#what-is-open-source-software)
-    - [What are open source licenses?](#what-are-open-source-licenses)
-    - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
-    - [What is the MIT License?](#what-is-the-mit-license)
+- [What is Linux?](Content/Linux/)
+  - [Open source](Content/Open-Source/Open-Source.md)
   - [What is free software?](#what-is-free-software)
     - [Free as in freedom](#free-as-in-freedom)
     - [Free as in beer](#free-as-in-beer)
@@ -48,7 +44,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
       - [DaisyUI](#daisyui)
       - [Fluent Design](#fluent-design)
       - [Material Design](#material-design)
-    - [Developer Advocacy and Developer Relations](#developer-advocacy-and-developer-relations)
+    - [Developer Advocacy and Developer Relations](Content/DevRel/DevRel.md)
     - [Finance](#finance)
     - [Frontend](#frontend)
     - [Management](#management)
@@ -58,7 +54,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [Sales](#sales)
     - [Software development and delivery](#software-development-and-delivery)
 - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [What is DevOps?](#what-is-devops)
+  - [DevOps](Content/DevOps/DevOps.md)
   - [Handybilly](#handybilly)
   - [Linux filesystem](#linux-filesystem)
     - [Filesystem examples](#filesystem-examples)
@@ -275,58 +271,6 @@ Aaron was born in 1986, and became interested in computers and the internet at a
 Aaron was also a strong advocate for open access, which is the movement to make knowledge and information freely available to all, rather than being locked behind paywalls and controlled by a few powerful corporations or institutions. He believed that access to knowledge and information was a fundamental right, and that it should be freely available to everyone.
 
 Aaron's work had a major impact on the development of the internet and the open access movement, and he is remembered as a pioneer and a hero by many in the tech community. Tragically, Aaron took his own life in 2013, at the age of 26. His legacy lives on through the work of those who continue to fight for open access and the free flow of information. Arrr!
-
-## **What is Linux?**
-
-Linux is a free and open-source operating system that was created by Linus Torvalds in 1991. At the time, Linus was a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
-
-Linus began working on Linux as a hobby project, and released the first version of the operating system on the internet in 1991. He made the source code for Linux available to anyone who wanted it, and encouraged other pirates to contribute to the project by writing code and helping to debug and improve the operating system.
-
-Linux is based on the Unix operating system, which was developed in the 1970s and 1980s by a group of pirates at AT&T's Bell Labs. Unix is a powerful and flexible operating system that is widely used by pirates for a variety of purposes, including running servers, developing software, and performing scientific and technical computing.
-
-Linus's goal with Linux was to create an operating system that would be free and open, and that would allow pirates to freely modify and distribute the source code. This was in contrast to proprietary operating systems, such as Microsoft Windows, which were closed and required users to pay for a license.
-
-Linux quickly gained popularity among pirates, and a large community of developers and users began to form around the project. Over time, Linux has evolved into a powerful and widely used operating system, with versions available for a wide variety of devices, including servers, desktop computers, laptops, smartphones, and smart TVs.
-
-Today, Linux is an important part of the open source software movement, and is used by pirates around the world for a variety of purposes, including running servers, developing software, and as a platform for scientific and technical computing. It is known for its stability, security, and flexibility, and is an essential tool in the arsenal of any self-respecting pirate. Arrr!
-
-### **What is GNU?**
-
-GNU is a free and open-source operating system that was created by Richard Stallman in 1983. At the time, Stallman was a computer science student at the Massachusetts Institute of Technology (MIT), and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
-
-Stallman began working on GNU as a hobby project, and released the first version of the operating system in 1983. He made the source code for GNU available to anyone who wanted it, and encouraged other pirates to contribute to the project by writing code and helping to debug and improve the operating system.
-
-GNU is based on the Unix operating system, which was developed in the 1970s and 1980s by a group of pirates at AT&T's Bell Labs. Unix is a powerful and flexible operating system that is widely used by pirates for a variety of purposes, including running servers, developing software, and performing scientific and technical computing.
-
-Stallman's goal with GNU was to create an operating system that would be free and open, and that would allow pirates to freely modify and distribute the source code. This was in contrast to proprietary operating systems, such as Microsoft Windows, which were closed and required users to pay for a license.
-
-GNU quickly gained popularity among pirates, and a large community of developers and users began to form around the project. Over time, GNU has evolved into a powerful and widely used operating system, with versions available for a wide variety of devices, including servers, desktop computers, laptops, smartphones, and smart TVs.
-
-Today, GNU is an important part of the open source software movement, and is used by pirates around the world for a variety of purposes, including running servers, developing software, and as a platform for scientific and technical computing. It is known for its stability, security, and flexibility, and is an essential tool in the arsenal of any self-respecting pirate. Arrr!
-
-### **What is open source software?**
-
-Open source software is software that is freely available to anyone who wants to use it, modify it, or distribute it. It is a model for software development that encourages collaboration and the sharing of ideas and code.
-
-Open source software is often developed using a model called "open source development", which is a process that encourages collaboration and the sharing of ideas and code. In this model, the source code for the software is made available to the community, and anyone can contribute to the project by writing code, fixing bugs, or improving the software in some way.
-
-#### **What are open source licenses?**
-
-Open source licenses are legal documents that grant users the right to use, modify, and distribute open source software. They are used to protect the rights of the developers and users of open source software, and to ensure that the software remains free and open.
-
-There are many different open source licenses, and each one has its own set of rules and requirements. The most popular open source licenses are the GNU General Public License (GPL) and the MIT License.
-
-#### **What is the GNU General Public License (GPL)?**
-
-The GNU General Public License (GPL) is a free and open-source software license that is used by many open source projects. It is a copyleft license, which means that derivative works can only be distributed under the same license terms.
-
-The GPL was originally developed by Richard Stallman in 1989, and was released as open source software under the GNU General Public License. It is one of the most widely used open source licenses, and is used by many popular open source projects, including the Linux kernel, the GNU Compiler Collection (GCC), and the GNU C Library (glibc).
-
-#### **What is the MIT License?**
-
-The MIT License is a free and open-source software license that is used by many open source projects. It is a permissive license, which means that derivative works can be distributed under any license.
-
-The MIT License was originally developed by the Massachusetts Institute of Technology (MIT) in 1980, and was released as open source software under the MIT License. It is one of the most widely used open source licenses, and is used by many popular open source projects, including the Node.js runtime, the jQuery JavaScript library, and the Angular web framework.
 
 ### **What is free software?**
 
@@ -703,12 +647,6 @@ Fluent Design be a design system that be developed by Microsoft to create a cons
 
 Material Design be a design system that be developed by Google to create a consistent user experience across all of its products, like a treasure map that be the same for all the pirate crews. Material Design be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that leads to the treasure easily.
 
-#### **Developer Advocacy and Developer Relations**
-
-Arrrr, listen up me hearties! A developer advocate be like a swashbucklin' tech evangelist, promisin' the wares of their company or organization to other developers. They be writin' technical articles, creatin' demos and tutorials, and minglin' with developer communities. They be gatherin' feedback from other developers about the company's products or services and usin' it to guide product development and strategy. They be buildin' and maintainin' relationships with developers, and workin' closely with other teams like product management, marketin', and engineering to make sure the company's products and services be meetin' the needs and expectations of developers.
-
-DevRel, or developer relations, be like a company or organization's way of engagin' and supportin' developers who use their products or services. DevRel professionals be buildin' and maintainin' relationships with developers, gatherin' and analyzin' feedback, promotin' the company's products or services, and workin' with other teams to make sure everything be meetin' the needs and expectations of developers. They be playin' a crucial role in ensurin' the company's products and services be meetin' the needs and expectations of developers and supportin' the needs of the organization. So, grab a tankard of grog and raise a cheer for the DevRel and developer advocate teams!
-
 #### **Finance**
 
 Aye, aye! Finance professionals be the ones responsible for keeping the treasure chests of a company full and organized. They be workin' on tasks such as:
@@ -826,26 +764,6 @@ Ahoy mateys! If ye be lookin' to set sail on the Linux sea, here be some things 
 **Work with users and groups:** In Linux, users and groups be used to control access to resources on the system. Ye'll need to learn how to create and manage users and groups, and how to set up user accounts and permissions.
 
 **Customize yer system:** Linux be highly customizable, and ye can tweak yer system to suit yer needs and preferences. Ye'll need to learn how to customize yer system's settings, install and configure desktop environments, and more.
-
-### **What is DevOps?**
-
-Ahoy matey! Let's talk about DevOps, ye landlubbers!
-
-![DevOps Pirate](images/devops-pirate.png)
-
-DevOps be a bunch o' tools, practices, and a philosophy that be gettin' the software development and IT teams walkin' the plank together. It be all about workin' as a crew, communicatin' like parrots, and automatin' all the processes!
-
-Yarr, this be startin' 'round 2007, when the software development and IT teams started grievin' 'bout the old way of doin' things, with the developers writin' code and the IT operations hoisting the sails and keepin' the ship afloat. But DevOps changed all that! It brought the two teams together, like rum and coconuts!
-
-Under DevOps, there be no more "silos". Sometimes, the two teams be mergin' into one big happy crew, with engineers workin' on all parts of the journey from developin' to deploying and operatin'.
-
-DevOps teams use tools to make the journey smoother and quicker, like a good set of sails on a calm day. They use a bunch o' tools called the "DevOps toolchain" to help 'em tackle the important stuff, like continuous integration, continuous delivery, automation, and workin' together like a well-oiled crew!
-
-Even the security teams be gettin' in on the action, with a thing called "DevSecOps". It's like havin' a lookout on the masthead, keepin' a keen eye out for danger at all times!
-
-The DevOps journey be like a never-endin' loop, always improvin' and changin', like the wind direction on a voyage. It's made up of eight phases, representin' the processes, capabilities, and tools needed for development and operations. And throughout it all, the teams be workin' and communicatin' together, like a good crew on a ship!
-
-So hoist the sails and set course for DevOps, me hearties! Yarrr!
 
 ### **Handybilly**
 
