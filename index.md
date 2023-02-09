@@ -55,6 +55,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [Software development and delivery](#software-development-and-delivery)
 - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
   - [DevOps](Content/DevOps/DevOps.md)
+  - [How DevOps Works?](#how-devops-works)
   - [Handybilly](#handybilly)
   - [Linux filesystem](#linux-filesystem)
     - [Filesystem examples](#filesystem-examples)
@@ -765,6 +766,35 @@ Ahoy mateys! If ye be lookin' to set sail on the Linux sea, here be some things 
 
 **Customize yer system:** Linux be highly customizable, and ye can tweak yer system to suit yer needs and preferences. Ye'll need to learn how to customize yer system's settings, install and configure desktop environments, and more.
 
+<<<<<<< HEAD
+=======
+### **What is DevOps?**
+
+Ahoy matey! Let's talk about DevOps, ye landlubbers!
+
+![DevOps Pirate](images/devops-pirate.png)
+
+DevOps be a bunch o' tools, practices, and a philosophy that be gettin' the software development and IT teams walkin' the plank together. It be all about workin' as a crew, communicatin' like parrots, and automatin' all the processes!
+
+Yarr, this be startin' 'round 2007, when the software development and IT teams started grievin' 'bout the old way of doin' things, with the developers writin' code and the IT operations hoisting the sails and keepin' the ship afloat. But DevOps changed all that! It brought the two teams together, like rum and coconuts!
+
+Under DevOps, there be no more "silos". Sometimes, the two teams be mergin' into one big happy crew, with engineers workin' on all parts of the journey from developin' to deploying and operatin'.
+
+DevOps teams use tools to make the journey smoother and quicker, like a good set of sails on a calm day. They use a bunch o' tools called the "DevOps toolchain" to help 'em tackle the important stuff, like continuous integration, continuous delivery, automation, and workin' together like a well-oiled crew!
+
+In some DevOps models, quality assurance and security teams may also become more tightly integrated with development and operations and throughout the application lifecycle. When security is the focus of everyone on a DevOps team and even the security teams be gettin' in on the action, with a thing called "DevSecOps". It's like havin' a lookout on the masthead, keepin' a keen eye out for danger at all times!
+
+The DevOps journey be like a never-endin' loop, always improvin' and changin', like the wind direction on a voyage. It's made up of eight phases, representin' the processes, capabilities, and tools needed for development and operations. And throughout it all, the teams be workin' and communicatin' together, like a good crew on a ship!
+
+So hoist the sails and set course for DevOps, me hearties! Yarrr!
+
+### **How DevOps Works?**
+
+Under the DevOps model, development and operations teams are no longer siled. Sometimes, these two teams are merged into a single team where the engineers work across the entire application lifecycle, from development and test to deployment to operations, and develop a range of skills not limited to a single function.
+
+It is an ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.
+
+>>>>>>> git_and_devops_stuff
 ### **Handybilly**
 
 A handybilly is a notebook that a pirate should carry with them at all times. It be used to keep track of important information, such as passwords, notes, and other useful tidbits. Ye can use yer handybilly to keep track of the information that ye learn in this book.
@@ -1970,6 +2000,28 @@ git config --global user.email "[email address]"
 - "I be needin' to pull the latest changes from the remote repository on GitHub, arrr!"
 
 `git pull origin [branch]`
+
+- "It will pull or fetch the remote repository data into the local repo."
+
+`ls -a .git`
+
+- "It will show the hidden files that are created after initializing the Git."
+
+`git status` 
+
+- "It will show the status of the files that are newly created, modified or deleted."
+
+`git add filename` OR `git add .`
+
+- "This will add a particular or all the file data into the staging area and after that, the data will be committed into the Git."
+
+`git commit -m "add a message"`
+
+- "This command will commit the changes in the Git when you first add the files."
+
+`git commit -am "add a message"`
+
+- "This one command will add the file data into the staging area and it will also commit that data in the Git."
 
 These be just a few of the basic commands ye can use to get started with Git and GitHub, matey. There be many more commands and features available, so don't be afraid to explore and learn more. Just watch out for those scurvy Git merge conflicts!
 
