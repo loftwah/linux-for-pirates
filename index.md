@@ -11,6 +11,245 @@ Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https:/
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+- [What is Linux?](Content/Linux/)
+  - [Open source](Content/Open-Source/Open-Source.md)
+  - [What is free software?](#what-is-free-software)
+    - [Free as in freedom](#free-as-in-freedom)
+    - [Free as in beer](#free-as-in-beer)
+  - [What is the Linux kernel?](#what-is-the-linux-kernel)
+  - [Linus Torvalds](#linus-torvalds)
+  - [Richard Stallman](#richard-stallman)
+- [Before we begin](#before-we-begin)
+- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+- [Chapter One - Getting Started](#chapter-one---getting-started)
+  - [Ubuntu](#ubuntu)
+    - [Kubuntu](#kubuntu)
+    - [Arch Linux](#arch-linux)
+  - [Setting up Ubuntu](#setting-up-ubuntu)
+    - [What to do next?](#what-to-do-next)
+      - [Checklist](#checklist)
+  - [Where to go from here?](#where-to-go-from-here)
+    - [Backend](#backend)
+    - [Cloud Computing](#cloud-computing)
+    - [Cybersecurity](#cybersecurity)
+      - [Kevin Mitnick](#kevin-mitnick)
+    - [Data analysis and interpretation](#data-analysis-and-interpretation)
+    - [Database](#database)
+      - [Graph](#graph)
+      - [noSQL](#nosql)
+      - [SQL](#sql)
+    - [Design](#design)
+      - [Figma](#figma)
+      - [DaisyUI](#daisyui)
+      - [Fluent Design](#fluent-design)
+      - [Material Design](#material-design)
+    - [Developer Advocacy and Developer Relations](Content/DevRel/DevRel.md)
+    - [Finance](#finance)
+    - [Frontend](#frontend)
+    - [Management](#management)
+    - [Marketing](#marketing)
+    - [Network Engineering](#network-engineering)
+    - [Operations](#operations)
+    - [Sales](#sales)
+    - [Software development and delivery](#software-development-and-delivery)
+- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+  - [DevOps](Content/DevOps/DevOps.md)
+  - [Handybilly](#handybilly)
+  - [Linux filesystem](#linux-filesystem)
+    - [Filesystem examples](#filesystem-examples)
+    - [Permissions](#permissions)
+      - [chmod](#chmod)
+      - [chown](#chown)
+  - [Networking](#networking)
+    - [ip](#ip)
+    - [Netcat](#netcat)
+    - [nmap](#nmap)
+    - [tcpdump](#tcpdump)
+    - [Wireshark](#wireshark)
+  - [Bash](#bash)
+    - [.bashrc](#bashrc)
+    - [Bash scripting](#bash-scripting)
+    - [Bash history](#bash-history)
+    - [Bash one-liners](#bash-one-liners)
+  - [chroot](#chroot)
+  - [Cron](#cron)
+  - [Devices](#devices)
+  - [Drivers](#drivers)
+  - [Processes](#processes)
+  - [cURL](#curl)
+  - [Vim (Vi IMproved)](#vim-vi-improved)
+    - [.vimrc](#vimrc)
+    - [NeoVim](#neovim)
+  - [VS Code](#vs-code)
+  - [The Internet](#the-internet)
+    - [Domain name](#domain-name)
+      - [Domain Name Registrar](#domain-name-registrar)
+      - [Buying a Domain Name](#buying-a-domain-name)
+      - [Namecheap](#namecheap)
+    - [IANA (Internet Assigned Numbers Authority)](#iana-internet-assigned-numbers-authority)
+    - [ICAAN (Internet Corporation for Assigned Names and Numbers)](#icaan-internet-corporation-for-assigned-names-and-numbers)
+    - [Internet Service Provider](#internet-service-provider)
+    - [Web Browser](#web-browser)
+      - [Document Object Model (DOM)](#document-object-model-dom)
+      - [Virtual DOM](#virtual-dom)
+      - [How do they work together?](#how-do-they-work-together)
+    - [World Wide Web](#world-wide-web)
+      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+    - [Web Server](#web-server)
+      - [Apache](#apache)
+      - [Nginx](#nginx)
+      - [Puma](#puma)
+      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+  - [Amazon Web Services](#amazon-web-services)
+  - [Cloudflare](#cloudflare)
+  - [CI/CD](#cicd)
+    - [Continuous Delivery](#continuous-delivery)
+    - [Continuous Integration](#continuous-integration)
+    - [CI/CD Tools](#cicd-tools)
+      - [Argo CD](#argo-cd)
+      - [CircleCI](#circleci)
+      - [GitHub Actions](#github-actions)
+      - [GitLab CI/CD](#gitlab-cicd)
+      - [Jenkins](#jenkins)
+      - [Portainer](#portainer)
+      - [Travis CI](#travis-ci)
+  - [DigitalOcean](#digitalocean)
+  - [eBPF](#ebpf)
+  - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Types of DNS Records](#types-of-dns-records)
+    - [Examples of DNS Records](#examples-of-dns-records)
+    - [DNS servers](#dns-servers)
+    - [DNSSEC](#dnssec)
+    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+    - [DNS over TLS (DoT)](#dns-over-tls-dot)
+    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+    - [DNSCrypt](#dnscrypt)
+    - [DNS Amplification Attacks](#dns-amplification-attacks)
+    - [Hosts file](#hosts-file)
+    - [AWS Route 53](#aws-route-53)
+    - [Azure DNS](#azure-dns)
+    - [Google Cloud DNS](#google-cloud-dns)
+    - [DigitalOcean DNS](#digitalocean-dns)
+    - [Cloudflare DNS](#cloudflare-dns)
+    - [OpenDNS](#opendns)
+    - [Bind](#bind)
+  - [Docker](#docker)
+    - [Install Docker](#install-docker)
+      - [Docker Engine](#docker-engine)
+    - [Docker Compose](#docker-compose)
+      - [Install Docker Compose](#install-docker-compose)
+    - [Docker Swarm](#docker-swarm)
+  - [Git](#git)
+    - [GitHub](#github)
+      - [GitHub sounds a litttle overwhelming. What be the basics?](#github-sounds-a-litttle-overwhelming-what-be-the-basics)
+    - [GitLab](#gitlab)
+    - [Gitea](#gitea)
+    - [Getting Started with Git and GitHub](#getting-started-with-git-and-github)
+      - [What if I get stuck?](#what-if-i-get-stuck)
+      - [Get involved in open-source projects](#get-involved-in-open-source-projects)
+      - [Eddie Jaoude](#eddie-jaoude)
+      - [EddieHub and LinkFree](#eddiehub-and-linkfree)
+  - [Homebrew](#homebrew)
+  - [HTML](#html)
+    - [Meta tags](#meta-tags)
+    - [Is HTML a programming language?](#is-html-a-programming-language)
+    - [CSS](#css)
+  - [HTTP](#http)
+    - [HTTP error codes](#http-error-codes)
+    - [HTTP methods](#http-methods)
+    - [HTTP headers](#http-headers)
+    - [HTTPS](#https)
+    - [API (Application Programming Interface)](#api-application-programming-interface)
+      - [GraphQL (Graph Query Language)](#graphql-graph-query-language)
+      - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+      - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
+  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+  - [Infrastructure as Code](#infrastructure-as-code)
+    - [Ansible](#ansible)
+      - [Install Ansible](#install-ansible)
+      - [Jeff Geerling](#jeff-geerling)
+      - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
+      - [Ansible Galaxy](#ansible-galaxy)
+      - [Ansible Tower](#ansible-tower)
+      - [Ansible Vault](#ansible-vault)
+      - [Ansible Molecule](#ansible-molecule)
+      - [Ansible Container](#ansible-container)
+      - [Ansible Network Automation](#ansible-network-automation)
+      - [Ansible Cloud Automation](#ansible-cloud-automation)
+      - [Ansible Container Orchestration](#ansible-container-orchestration)
+      - [Ansible Service Broker](#ansible-service-broker)
+    - [Terraform](#terraform)
+      - [Install Terraform](#install-terraform)
+      - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
+  - [IP Addresses](#ip-addresses)
+    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+  - [JavaScript](#javascript)
+  - [Kubernetes](#kubernetes)
+  - [Latency](#latency)
+  - [Logging](#logging)
+    - [Logrotate](#logrotate)
+  - [Monitoring](#monitoring)
+  - [OSI model](#osi-model)
+  - [SSH](#ssh)
+    - [SSH Agent](#ssh-agent)
+    - [SSH Confguration](#ssh-confguration)
+    - [SSH Keys](#ssh-keys)
+      - [How to generate SSH keys](#how-to-generate-ssh-keys)
+    - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSH Tunneling](#ssh-tunneling)
+    - [Poor man's VPN (scurvy dog's sneak way)](#poor-mans-vpn-scurvy-dogs-sneak-way)
+  - [SSL/TLS](#ssltls)
+    - [SSL Certificates](#ssl-certificates)
+      - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
+    - [Let's Encrypt](#lets-encrypt)
+    - [Certificate Authorities](#certificate-authorities)
+    - [CAA Records](#caa-records)
+    - [OCSP Stapling](#ocsp-stapling)
+    - [OCSP Must-Staple](#ocsp-must-staple)
+  - [Streaming](#streaming)
+  - [Subnet](#subnet)
+    - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [Subnetting Cheatsheet](#subnetting-cheatsheet)
+      - [Subnet Mask](#subnet-mask-1)
+      - [CIDR Notation](#cidr-notation)
+      - [Subnetting a Network](#subnetting-a-network)
+      - [Subnetting Examples](#subnetting-examples)
+      - [Subnetting Practice](#subnetting-practice)
+  - [TCP/IP](#tcpip)
+  - [UDP](#udp)
+  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Zsh](#zsh)
+    - [Oh My Zsh](#oh-my-zsh)
+- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Common problems](#common-problems)
+  - [Initiation](#initiation)
+    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Is it YAML or YML?](#is-it-yaml-or-yml)
+- [GitHub Actions in the wild](#github-actions-in-the-wild)
+- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+  - [Desktop Environments](#desktop-environments)
+    - [GNOME](#gnome)
+    - [KDE](#kde)
+    - [Xfce](#xfce)
+    - [LXDE](#lxde)
+  - [Window Managers](#window-managers)
+    - [Openbox](#openbox)
+    - [Fluxbox](#fluxbox)
+    - [i3](#i3)
+  - [Installing a Desktop Environment](#installing-a-desktop-environment)
+  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+  - [Installing a Window Manager](#installing-a-window-manager)
+  - [Configuring a Window Manager](#configuring-a-window-manager)
+- [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
+- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+- [Jokes](#jokes)
+=======
 - [**In memory of Aaron Swartz**](#in-memory-of-aaron-swartz)
 - [**What is Linux?**](#what-is-linux)
   - [**What is GNU?**](#what-is-gnu)
@@ -276,58 +515,6 @@ Aaron was born in 1986, and became interested in computers and the internet at a
 Aaron was also a strong advocate for open access, which is the movement to make knowledge and information freely available to all, rather than being locked behind paywalls and controlled by a few powerful corporations or institutions. He believed that access to knowledge and information was a fundamental right, and that it should be freely available to everyone.
 
 Aaron's work had a major impact on the development of the internet and the open access movement, and he is remembered as a pioneer and a hero by many in the tech community. Tragically, Aaron took his own life in 2013, at the age of 26. His legacy lives on through the work of those who continue to fight for open access and the free flow of information. Arrr!
-
-## **What is Linux?**
-
-Linux is a free and open-source operating system that was created by Linus Torvalds in 1991. At the time, Linus was a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
-
-Linus began working on Linux as a hobby project, and released the first version of the operating system on the internet in 1991. He made the source code for Linux available to anyone who wanted it, and encouraged other pirates to contribute to the project by writing code and helping to debug and improve the operating system.
-
-Linux is based on the Unix operating system, which was developed in the 1970s and 1980s by a group of pirates at AT&T's Bell Labs. Unix is a powerful and flexible operating system that is widely used by pirates for a variety of purposes, including running servers, developing software, and performing scientific and technical computing.
-
-Linus's goal with Linux was to create an operating system that would be free and open, and that would allow pirates to freely modify and distribute the source code. This was in contrast to proprietary operating systems, such as Microsoft Windows, which were closed and required users to pay for a license.
-
-Linux quickly gained popularity among pirates, and a large community of developers and users began to form around the project. Over time, Linux has evolved into a powerful and widely used operating system, with versions available for a wide variety of devices, including servers, desktop computers, laptops, smartphones, and smart TVs.
-
-Today, Linux is an important part of the open source software movement, and is used by pirates around the world for a variety of purposes, including running servers, developing software, and as a platform for scientific and technical computing. It is known for its stability, security, and flexibility, and is an essential tool in the arsenal of any self-respecting pirate. Arrr!
-
-### **What is GNU?**
-
-GNU is a free and open-source operating system that was created by Richard Stallman in 1983. At the time, Stallman was a computer science student at the Massachusetts Institute of Technology (MIT), and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
-
-Stallman began working on GNU as a hobby project, and released the first version of the operating system in 1983. He made the source code for GNU available to anyone who wanted it, and encouraged other pirates to contribute to the project by writing code and helping to debug and improve the operating system.
-
-GNU is based on the Unix operating system, which was developed in the 1970s and 1980s by a group of pirates at AT&T's Bell Labs. Unix is a powerful and flexible operating system that is widely used by pirates for a variety of purposes, including running servers, developing software, and performing scientific and technical computing.
-
-Stallman's goal with GNU was to create an operating system that would be free and open, and that would allow pirates to freely modify and distribute the source code. This was in contrast to proprietary operating systems, such as Microsoft Windows, which were closed and required users to pay for a license.
-
-GNU quickly gained popularity among pirates, and a large community of developers and users began to form around the project. Over time, GNU has evolved into a powerful and widely used operating system, with versions available for a wide variety of devices, including servers, desktop computers, laptops, smartphones, and smart TVs.
-
-Today, GNU is an important part of the open source software movement, and is used by pirates around the world for a variety of purposes, including running servers, developing software, and as a platform for scientific and technical computing. It is known for its stability, security, and flexibility, and is an essential tool in the arsenal of any self-respecting pirate. Arrr!
-
-### **What is open source software?**
-
-Open source software is software that is freely available to anyone who wants to use it, modify it, or distribute it. It is a model for software development that encourages collaboration and the sharing of ideas and code.
-
-Open source software is often developed using a model called "open source development", which is a process that encourages collaboration and the sharing of ideas and code. In this model, the source code for the software is made available to the community, and anyone can contribute to the project by writing code, fixing bugs, or improving the software in some way.
-
-#### **What are open source licenses?**
-
-Open source licenses are legal documents that grant users the right to use, modify, and distribute open source software. They are used to protect the rights of the developers and users of open source software, and to ensure that the software remains free and open.
-
-There are many different open source licenses, and each one has its own set of rules and requirements. The most popular open source licenses are the GNU General Public License (GPL) and the MIT License.
-
-#### **What is the GNU General Public License (GPL)?**
-
-The GNU General Public License (GPL) is a free and open-source software license that is used by many open source projects. It is a copyleft license, which means that derivative works can only be distributed under the same license terms.
-
-The GPL was originally developed by Richard Stallman in 1989, and was released as open source software under the GNU General Public License. It is one of the most widely used open source licenses, and is used by many popular open source projects, including the Linux kernel, the GNU Compiler Collection (GCC), and the GNU C Library (glibc).
-
-#### **What is the MIT License?**
-
-The MIT License is a free and open-source software license that is used by many open source projects. It is a permissive license, which means that derivative works can be distributed under any license.
-
-The MIT License was originally developed by the Massachusetts Institute of Technology (MIT) in 1980, and was released as open source software under the MIT License. It is one of the most widely used open source licenses, and is used by many popular open source projects, including the Node.js runtime, the jQuery JavaScript library, and the Angular web framework.
 
 ### **What is free software?**
 
@@ -703,12 +890,6 @@ Fluent Design be a design system that be developed by Microsoft to create a cons
 [Material Design](https://m3.material.io)
 
 Material Design be a design system that be developed by Google to create a consistent user experience across all of its products, like a treasure map that be the same for all the pirate crews. Material Design be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that leads to the treasure easily.
-
-#### **Developer Advocacy and Developer Relations**
-
-Arrrr, listen up me hearties! A developer advocate be like a swashbucklin' tech evangelist, promisin' the wares of their company or organization to other developers. They be writin' technical articles, creatin' demos and tutorials, and minglin' with developer communities. They be gatherin' feedback from other developers about the company's products or services and usin' it to guide product development and strategy. They be buildin' and maintainin' relationships with developers, and workin' closely with other teams like product management, marketin', and engineering to make sure the company's products and services be meetin' the needs and expectations of developers.
-
-DevRel, or developer relations, be like a company or organization's way of engagin' and supportin' developers who use their products or services. DevRel professionals be buildin' and maintainin' relationships with developers, gatherin' and analyzin' feedback, promotin' the company's products or services, and workin' with other teams to make sure everything be meetin' the needs and expectations of developers. They be playin' a crucial role in ensurin' the company's products and services be meetin' the needs and expectations of developers and supportin' the needs of the organization. So, grab a tankard of grog and raise a cheer for the DevRel and developer advocate teams!
 
 #### **Finance**
 
