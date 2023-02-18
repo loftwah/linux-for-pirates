@@ -11,6 +11,224 @@ Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https:/
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+- [What is Linux?](Content/Linux/)
+  - [Open source](Content/Open-Source/Open-Source.md)
+  - [What is free software?](#what-is-free-software)
+    - [Free as in freedom](#free-as-in-freedom)
+    - [Free as in beer](#free-as-in-beer)
+  - [What is the Linux kernel?](#what-is-the-linux-kernel)
+  - [Linus Torvalds](#linus-torvalds)
+  - [Richard Stallman](#richard-stallman)
+- [Before we begin](#before-we-begin)
+- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+- [Chapter One - Getting Started](#chapter-one---getting-started)
+  - [Operating System](Content/Operating-System/Operating-System.md)
+  - [Where to go from here?](#where-to-go-from-here)
+    - [Backend](#backend)
+    - [Cloud Computing](#cloud-computing)
+    - [Cybersecurity](#cybersecurity)
+      - [Kevin Mitnick](#kevin-mitnick)
+    - [Data analysis and interpretation](#data-analysis-and-interpretation)
+    - [Database](Content/Database/Database.md)
+    - [Design](Content/Design/Design.md)
+    - [Developer Advocacy and Developer Relations](Content/DevRel/DevRel.md)
+    - [Finance](Content/Finance/Finance.md)
+    - [Frontend](#frontend)
+    - [Management](#management)
+    - [Marketing](#marketing)
+    - [Network Engineering](#network-engineering)
+    - [Operations](#operations)
+    - [Sales](#sales)
+    - [Software development and delivery](#software-development-and-delivery)
+- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+  - [DevOps](Content/DevOps/DevOps.md)
+  - [How DevOps Works?](#how-devops-works)
+  - [Handybilly](#handybilly)
+  - [Linux filesystem](#linux-filesystem)
+    - [Filesystem examples](#filesystem-examples)
+    - [Permissions](#permissions)
+      - [chmod](#chmod)
+      - [chown](#chown)
+  - [Networking](#networking)
+    - [ip](#ip)
+    - [Netcat](#netcat)
+    - [nmap](#nmap)
+    - [tcpdump](#tcpdump)
+    - [Wireshark](#wireshark)
+  - [Bash](#bash)
+    - [.bashrc](#bashrc)
+    - [Bash scripting](#bash-scripting)
+    - [Bash history](#bash-history)
+    - [Bash one-liners](#bash-one-liners)
+  - [chroot](#chroot)
+  - [Cron](#cron)
+  - [Devices](#devices)
+  - [Drivers](#drivers)
+  - [Processes](#processes)
+  - [cURL](#curl)
+  - [Vim (Vi IMproved)](#vim-vi-improved)
+    - [.vimrc](#vimrc)
+    - [NeoVim](#neovim)
+  - [VS Code](#vs-code)
+  - [The Internet](#the-internet)
+    - [Domain name](#domain-name)
+      - [Domain Name Registrar](#domain-name-registrar)
+      - [Buying a Domain Name](#buying-a-domain-name)
+      - [Namecheap](#namecheap)
+    - [IANA (Internet Assigned Numbers Authority)](#iana-internet-assigned-numbers-authority)
+    - [ICAAN (Internet Corporation for Assigned Names and Numbers)](#icaan-internet-corporation-for-assigned-names-and-numbers)
+    - [Internet Service Provider](#internet-service-provider)
+    - [Web Browser](#web-browser)
+      - [Document Object Model (DOM)](#document-object-model-dom)
+      - [Virtual DOM](#virtual-dom)
+      - [How do they work together?](#how-do-they-work-together)
+    - [World Wide Web](#world-wide-web)
+      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+    - [Web Server](#web-server)
+      - [Apache](#apache)
+      - [Nginx](#nginx)
+      - [Puma](#puma)
+      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+  - [Amazon Web Services](#amazon-web-services)
+  - [Cloudflare](#cloudflare)
+  - [CI/CD](Content/DevOps/CICD.md)
+  - [DigitalOcean](#digitalocean)
+  - [eBPF](#ebpf)
+  - [DNS (Domain Name System)](#dns-domain-name-system)
+    - [Types of DNS Records](#types-of-dns-records)
+    - [Examples of DNS Records](#examples-of-dns-records)
+    - [DNS servers](#dns-servers)
+    - [DNSSEC](#dnssec)
+    - [DNS over HTTPS (DoH)](#dns-over-https-doh)
+    - [DNS over TLS (DoT)](#dns-over-tls-dot)
+    - [DNS over QUIC (DoQ)](#dns-over-quic-doq)
+    - [DNSCrypt](#dnscrypt)
+    - [DNS Amplification Attacks](#dns-amplification-attacks)
+    - [Hosts file](#hosts-file)
+    - [AWS Route 53](#aws-route-53)
+    - [Azure DNS](#azure-dns)
+    - [Google Cloud DNS](#google-cloud-dns)
+    - [DigitalOcean DNS](#digitalocean-dns)
+    - [Cloudflare DNS](#cloudflare-dns)
+    - [OpenDNS](#opendns)
+    - [Bind](#bind)
+  - [Docker](#docker)
+    - [Install Docker](#install-docker)
+      - [Docker Engine](#docker-engine)
+    - [Docker Compose](#docker-compose)
+      - [Install Docker Compose](#install-docker-compose)
+    - [Docker Swarm](#docker-swarm)
+  - [Git](#git)
+    - [GitHub](#github)
+      - [GitHub sounds a litttle overwhelming. What be the basics?](#github-sounds-a-litttle-overwhelming-what-be-the-basics)
+    - [GitLab](#gitlab)
+    - [Gitea](#gitea)
+    - [Getting Started with Git and GitHub](#getting-started-with-git-and-github)
+      - [What if I get stuck?](#what-if-i-get-stuck)
+      - [Get involved in open-source projects](#get-involved-in-open-source-projects)
+      - [Eddie Jaoude](#eddie-jaoude)
+      - [EddieHub and LinkFree](#eddiehub-and-linkfree)
+  - [Homebrew](#homebrew)
+  - [HTML](#html)
+    - [Meta tags](#meta-tags)
+    - [Is HTML a programming language?](#is-html-a-programming-language)
+    - [CSS](#css)
+  - [HTTP](#http)
+    - [HTTP error codes](#http-error-codes)
+    - [HTTP methods](#http-methods)
+    - [HTTP headers](#http-headers)
+    - [HTTPS](#https)
+    - [API (Application Programming Interface)](#api-application-programming-interface)
+      - [GraphQL (Graph Query Language)](#graphql-graph-query-language)
+      - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+      - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
+  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+  - [Infrastructure as Code](#infrastructure-as-code)
+    - [Ansible](#ansible)
+      - [Install Ansible](#install-ansible)
+      - [Jeff Geerling](#jeff-geerling)
+      - [Jeff Geerling's Ansible for DevOps](#jeff-geerlings-ansible-for-devops)
+      - [Ansible Galaxy](#ansible-galaxy)
+      - [Ansible Tower](#ansible-tower)
+      - [Ansible Vault](#ansible-vault)
+      - [Ansible Molecule](#ansible-molecule)
+      - [Ansible Container](#ansible-container)
+      - [Ansible Network Automation](#ansible-network-automation)
+      - [Ansible Cloud Automation](#ansible-cloud-automation)
+      - [Ansible Container Orchestration](#ansible-container-orchestration)
+      - [Ansible Service Broker](#ansible-service-broker)
+    - [Terraform](#terraform)
+      - [Install Terraform](#install-terraform)
+      - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
+  - [IP Addresses](#ip-addresses)
+    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+  - [JavaScript](#javascript)
+  - [Kubernetes](#kubernetes)
+  - [Latency](#latency)
+  - [Logging](#logging)
+    - [Logrotate](#logrotate)
+  - [Monitoring](#monitoring)
+  - [OSI model](#osi-model)
+  - [SSH](#ssh)
+    - [SSH Agent](#ssh-agent)
+    - [SSH Confguration](#ssh-confguration)
+    - [SSH Keys](#ssh-keys)
+      - [How to generate SSH keys](#how-to-generate-ssh-keys)
+    - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSH Tunneling](#ssh-tunneling)
+    - [Poor man's VPN (scurvy dog's sneak way)](#poor-mans-vpn-scurvy-dogs-sneak-way)
+  - [SSL/TLS](#ssltls)
+    - [SSL Certificates](#ssl-certificates)
+      - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
+    - [Let's Encrypt](#lets-encrypt)
+    - [Certificate Authorities](#certificate-authorities)
+    - [CAA Records](#caa-records)
+    - [OCSP Stapling](#ocsp-stapling)
+    - [OCSP Must-Staple](#ocsp-must-staple)
+  - [Streaming](#streaming)
+  - [Subnet](#subnet)
+    - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [Subnetting Cheatsheet](#subnetting-cheatsheet)
+      - [Subnet Mask](#subnet-mask-1)
+      - [CIDR Notation](#cidr-notation)
+      - [Subnetting a Network](#subnetting-a-network)
+      - [Subnetting Examples](#subnetting-examples)
+      - [Subnetting Practice](#subnetting-practice)
+  - [TCP/IP](#tcpip)
+  - [UDP](#udp)
+  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Zsh](#zsh)
+    - [Oh My Zsh](#oh-my-zsh)
+- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Common problems](#common-problems)
+  - [Initiation](#initiation)
+    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Is it YAML or YML?](#is-it-yaml-or-yml)
+- [GitHub Actions in the wild](#github-actions-in-the-wild)
+- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+  - [Desktop Environments](#desktop-environments)
+    - [GNOME](#gnome)
+    - [KDE](#kde)
+    - [Xfce](#xfce)
+    - [LXDE](#lxde)
+  - [Window Managers](#window-managers)
+    - [Openbox](#openbox)
+    - [Fluxbox](#fluxbox)
+    - [i3](#i3)
+  - [Installing a Desktop Environment](#installing-a-desktop-environment)
+  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+  - [Installing a Window Manager](#installing-a-window-manager)
+  - [Configuring a Window Manager](#configuring-a-window-manager)
+- [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
+- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+- [Jokes](#jokes)
+=======
 - [**In memory of Aaron Swartz**](#in-memory-of-aaron-swartz)
   - [**What is free software?**](#what-is-free-software)
     - [**Free as in freedom**](#free-as-in-freedom)
@@ -324,89 +542,6 @@ There be many reasons why a scurvy dog might want to set sail with Linux, includ
 - **It has a wide range o' software available:** Linux has a huge repository o' free and open-source software available, from office applications to media players to games.
 
 All in all, Linux be a versatile and powerful operating system that be suitable for a wide range o' uses. Whether ye be a greenhorn or an experienced swashbuckler, Linux has something to offer for all.
-
-### **Ubuntu**
-
-[Awesome Ubuntu](https://github.com/bpearson/Awesome-Ubuntu-Linux)
-
-For this book, we be usin' Ubuntu, a popular Linux distribution that be based on Debian. Ubuntu be a popular choice among pirates, as it be easy to use and comes with a wide range o' pre-installed applications.
-
-Ubuntu be a free and open-source operating system that be based on Debian. It be developed and maintained by Canonical Ltd., a company founded by South African entrepreneur Mark Shuttleworth.
-
-Ubuntu be named after the Southern African philosophy of ubuntu, which be translated as "humanity to others". The philosophy be based on the belief that all humans are equal and that we are all connected to each other.
-
-Ubuntu be released in October 2004, and it be the first Linux distribution to use GNOME as its default desktop environment. It be also the first Linux distribution to use Upstart as its default init system.
-
-Ubuntu be released in three editions: Ubuntu Desktop, Ubuntu Server, and Ubuntu Core. Ubuntu Desktop be a desktop operating system that be suitable for use on desktop computers, laptops, and other devices. Ubuntu Server be a server operating system that be suitable for use on servers and other devices that be runnin' headless. Ubuntu Core be a lightweight version o' Ubuntu that be designed for use on embedded devices.
-
-#### **Kubuntu**
-
-Kubuntu be a version o' Ubuntu that be based on KDE Plasma. It be developed and maintained by the KDE Community.
-
-Aye, matie! KDE be a free and open-source desktop environment fer Linux and Unix-like operatin' systems. 'Tis known fer its customizable interface and a wide range o' features, such as a file manager, text editor, and multimedia player.
-
-Kubuntu be a version o' the Ubuntu Linux operatin' system that uses the KDE desktop environment. 'Tis a community-supported version o' Ubuntu that be focused on providin' a polished and easy-to-use desktop experience with KDE.
-
-#### **Arch Linux**
-
-[Awesome Arch](https://github.com/PandaFoss/Awesome-Arch)
-
-Arch Linux be a free and open-source Linux distribution that be based on the Linux kernel. It be developed and maintained by a community o' volunteers, and it be known for its simplicity and flexibility.
-
-Although Arch Linux is worthy o' mention, it be not covered in this book. If ye be interested in learnin' more about Arch Linux, ye be welcome to check out the [Arch Wiki](https://wiki.archlinux.org/).
-
-### **Setting up Ubuntu**
-
-Ubuntu be available for download from the official website. There be two versions o' Ubuntu available for download: Ubuntu Desktop and Ubuntu Server. The desktop version be suitable for use on desktop computers, laptops, and other devices, while the server version be suitable for use on servers and other devices that be runnin' headless.
-
-Ubuntu be available for download in two formats: a live image and an installation image. The live image be a bootable image that be suitable for tryin' out Ubuntu without installin' it. The installation image be a bootable image that be suitable for installin' Ubuntu on a computer.
-
-To download Ubuntu, visit the [official website](https://ubuntu.com/download/desktop) and click on the "Download" button. Select the version o' Ubuntu that ye be wantin' to download, and then select the format o' the image. Click on the "Download" button to download the image.
-
-Once the image be downloaded, use a tool like [Etcher](https://www.balena.io/etcher/) to create a bootable USB or DVD using the downloaded image. Set yer computer to boot from the bootable USB or DVD by changin' the boot order in the BIOS settings.
-
-Some other tools that be suitable for creatin' bootable USBs and DVDs include [Rufus](https://rufus.ie/), [UNetbootin](https://unetbootin.github.io/), and [YUMI](https://www.pendrivelinux.com/yumi-multiboot-usb-creator/). Ventoy is also a good tool for creatin' bootable USBs and DVDs. It be easy to use and it be also able to boot ISO files. [Ventoy](https://www.ventoy.net/en/index.html) be available for download from the official website.
-
-Once the computer be bootin' from the bootable USB or DVD, follow the on-screen instructions to install Ubuntu. Make sure to allocate enough space for the installation and create a user account.
-
-Once the installation be complete, boot into yer newly installed Ubuntu system.
-
-#### **What to do next?**
-
-**Captain!** Here be a guide on what ye can do *after* installing Ubuntu:
-
-- Familiarise yerself with the Ubuntu interface and try out the pre-installed applications.
-
-- Learn more about Linux and Ubuntu, ye can refer to the official [documentation](https://help.ubuntu.com/) or take online courses or tutorials. There be also many forums and communities where ye can ask for help and guidance.
-
-**Explore the interface:** Take some time to familiarise yerself with the Ubuntu interface, includin' the desktop, menu, and pre-installed applications.
-
-**Customise the desktop:** Ye can change the desktop background, install new themes, and install new applications to customise yer Ubuntu experience.
-
-**Connect to the internet:** If ye have an internet connection, ye can connect to the internet using the Network Manager applet in the top panel.
-
-**Update the system:** It be a good idea to update yer system to the latest version by runnin' the "Software Updater" application. This will ensure that ye have the latest security updates and bug fixes.
-
-**Learn the command line:** The command line be a powerful way to interact with yer Linux system, and it can be useful to learn some basic commands. Ye can access the command line by openin' a terminal window.
-
-**Install additional software:** Ubuntu comes with a large repository o' free and open-source software, but ye can also install additional software from the internet. Ye can use the "Ubuntu Software" application to search for and install new software.
-
-Overall, the best way to get started with Ubuntu be to explore and try out different features and applications. As ye become more comfortable with the operating system, ye can start learnin' more advanced topics and customizin' yer system to yer likin'.
-
-So hoist the mainsail and set sail for the world o' Linux with Ubuntu!
-
-##### **Checklist**
-
-- [ ] Familiarise yerself with the Ubuntu interface.
-- [ ] Customise the desktop.
-- [ ] Connect to the internet.
-- [ ] Update the system.
-- [ ] Learn the command line.
-- [ ] Install additional software.
-- [ ] Explore and try out different features and applications.
-- [ ] Learn more advanced topics and customise yer system.
-- [ ] Explore the official documentation.
-- [ ] Take online courses or tutorials.
 
 ### **Where to go from here?**
 
@@ -1613,68 +1748,6 @@ Ye should be able to set up and configure Cloudflare's services such as its cont
 In addition to these technical skills, it be important for ye to be able to communicate with clients and stakeholders about the benefits of using Cloudflare. Ye should be able to explain how Cloudflare can improve website performance, security, and reliability in a way that is easy for non-technical folks to understand.
 
 Finally, as a true Cloudflare professional, ye should be able to keep yer head in a crisis and be able to think on yer feet. Whether it be dealing with a sudden influx of traffic to a client's website or a network outage, ye should be able to think quickly and come up with solutions to keep yer ship sailing smoothly. So hoist the mainsail and get to work, matey!
-
-### **CI/CD**
-
-CI/CD be a software development practice where code changes be automatically built, tested, and deployed to production. It allows for faster and more frequent updates to a software application, as code changes be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it take for new features or bug fixes to reach users.
-
-#### **Continuous Integration**
-
-Continuous integration (CI) is a software development practice where developers regularly integrate their code changes into a shared repository, typically several times a day. Each integration is then automatically built and tested to ensure that the code changes do not introduce any new bugs or regressions.
-
-In a pirate theme, you could think of continuous integration as a way to keep your ship (the software application) in good repair. Instead of waiting until the end of a long voyage to fix any problems with the ship, continuous integration allows you to make small repairs and improvements as you go. By regularly integrating and testing code changes, you can catch and fix problems early, before they become bigger issues that could sink the ship. This helps to ensure that your ship is always ready to set sail and that you can respond more quickly to new threats (bug fixes and feature requests) as they arise.
-
-#### **Continuous Delivery**
-
-Continuous delivery is a software development practice where code changes are automatically built, tested, and deployed to production. It allows for faster and more frequent updates to a software application, as code changes can be automatically deployed as soon as they pass testing. This can help to reduce the risk of deployments, as well as speed up the time it takes for new features or bug fixes to reach users.
-
-In a pirate theme, you could think of continuous delivery as a way to quickly and efficiently get your ship (the software application) ready for battle. Instead of spending a lot of time preparing and repairing the ship before each voyage (deployment), continuous delivery allows you to make small, incremental changes to the ship as needed, so that it is always ready to set sail. This way, you can respond more quickly to new threats (bug fixes and feature requests) and be better prepared for whatever the seas (your users) might throw your way.
-
-#### **CI/CD Tools**
-
-Here are some popular CI/CD tools that can be used to automate the build, test, and deployment of software applications.
-
-##### **Argo CD**
-
-[Argo CD](https://argoproj.github.io/argo-cd/)
-
-Argo CD is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
-
-##### **CircleCI**
-
-[CircleCI](https://circleci.com/)
-
-CircleCI is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
-
-##### **GitHub Actions**
-
-[GitHub Actions](https://github.com/features/actions) | [Awesome GitHub Actions](https://github.com/sdras/awesome-actions)
-
-GitHub Actions is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
-
-##### **GitLab CI/CD**
-
-[GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
-
-GitLab CI/CD is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
-
-##### **Jenkins**
-
-[Jenkins](https://www.jenkins.io/)
-
-Jenkins is a popular open source CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
-
-##### **Portainer**
-
-[Portainer](https://www.portainer.io/)
-
-Portainer is a popular open source CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
-
-##### **Travis CI**
-
-[Travis CI](https://travis-ci.org/)
-
-Travis CI is a popular CI/CD tool that can be used to automate the build, test, and deployment of software applications. It can be used to build and test code changes, as well as deploy code changes to production. It can also be used to automate many other aspects of the software development process, such as sending notifications when code changes are merged, or automatically deploying code changes to a staging environment.
 
 ### **DigitalOcean**
 
