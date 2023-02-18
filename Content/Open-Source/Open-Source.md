@@ -1,3 +1,9 @@
+- [Open Source](#open-source)
+    - [What is open source software?](#what-is-open-source-software)
+        - [What are open source licenses?](#what-are-open-source-licenses)
+        - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
+        - [What is the MIT License?](#what-is-the-mit-license)
+
 # Open Source
 
 ## **What is open source software?**
