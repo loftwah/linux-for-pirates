@@ -3,9 +3,9 @@ title: Linux for Pirates!
 layout: home
 ---
 
-![Linux for Pirates!](linux-for-pirates.png)
+![Linux for Pirates!](images/linux-for-pirates.jpg)
 
-By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
+Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -205,8 +205,244 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 - [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
 - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
 - [Jokes](#jokes)
+- [**In memory of Aaron Swartz**](#in-memory-of-aaron-swartz)
+  - [**What is free software?**](#what-is-free-software)
+    - [**Free as in freedom**](#free-as-in-freedom)
+    - [**Free as in beer**](#free-as-in-beer)
+  - [**What is the Linux kernel?**](#what-is-the-linux-kernel)
+  - [**Linus Torvalds**](#linus-torvalds)
+  - [**Richard Stallman**](#richard-stallman)
+- [**Before we begin**](#before-we-begin)
+- [**About the author (This isn't on the test)**](#about-the-author-this-isnt-on-the-test)
+- [**Chapter One - Getting Started**](#chapter-one---getting-started)
+  - [**Ubuntu**](#ubuntu)
+    - [**Kubuntu**](#kubuntu)
+    - [**Arch Linux**](#arch-linux)
+  - [**Setting up Ubuntu**](#setting-up-ubuntu)
+    - [**What to do next?**](#what-to-do-next)
+      - [**Checklist**](#checklist)
+  - [**Where to go from here?**](#where-to-go-from-here)
+    - [**Backend**](#backend)
+    - [**Cloud Computing**](#cloud-computing)
+    - [**Cybersecurity**](#cybersecurity)
+      - [**Kevin Mitnick**](#kevin-mitnick)
+    - [**Data analysis and interpretation**](#data-analysis-and-interpretation)
+    - [**Database**](#database)
+      - [**Graph**](#graph)
+      - [**NoSQL**](#nosql)
+      - [**SQL**](#sql)
+    - [**Design**](#design)
+      - [**Figma**](#figma)
+      - [**DaisyUI**](#daisyui)
+      - [**Fluent Design**](#fluent-design)
+      - [**Material Design**](#material-design)
+    - [**Finance**](#finance)
+    - [**Frontend**](#frontend)
+    - [**Management**](#management)
+    - [**Marketing**](#marketing)
+    - [**Network Engineering**](#network-engineering)
+    - [**Operations**](#operations)
+    - [**Sales**](#sales)
+    - [**Software development and delivery**](#software-development-and-delivery)
+- [**Chapter Two - The Fundamentals**](#chapter-two---the-fundamentals)
+  - [**What is DevOps?**](#what-is-devops)
+  - [**How DevOps Works?**](#how-devops-works)
+  - [**Handybilly**](#handybilly)
+  - [**Linux filesystem**](#linux-filesystem)
+    - [**Filesystem examples**](#filesystem-examples)
+    - [**Permissions**](#permissions)
+      - [**chmod**](#chmod)
+      - [**chown**](#chown)
+  - [**Networking**](#networking)
+    - [**ip**](#ip)
+    - [**Netcat**](#netcat)
+    - [**nmap**](#nmap)
+    - [**tcpdump**](#tcpdump)
+    - [**Wireshark**](#wireshark)
+  - [**Bash**](#bash)
+    - [**.bashrc**](#bashrc)
+    - [**Bash scripting**](#bash-scripting)
+    - [**Bash history**](#bash-history)
+    - [**Bash one-liners**](#bash-one-liners)
+  - [**chroot**](#chroot)
+  - [**Cron**](#cron)
+  - [**Devices**](#devices)
+  - [**Drivers**](#drivers)
+  - [**Processes**](#processes)
+  - [**curl**](#curl)
+  - [**Vim (Vi IMproved)**](#vim-vi-improved)
+    - [**.vimrc**](#vimrc)
+    - [**NeoVim**](#neovim)
+  - [**VS Code**](#vs-code)
+  - [**The Internet**](#the-internet)
+    - [**Domain name**](#domain-name)
+      - [**Domain Name Registrar**](#domain-name-registrar)
+      - [**Buying a Domain Name**](#buying-a-domain-name)
+      - [**Namecheap**](#namecheap)
+    - [**IANA (Internet Assigned Numbers Authority)**](#iana-internet-assigned-numbers-authority)
+    - [**ICAAN (Internet Corporation for Assigned Names and Numbers)**](#icaan-internet-corporation-for-assigned-names-and-numbers)
+    - [**Internet Service Provider**](#internet-service-provider)
+    - [**Web Browser**](#web-browser)
+      - [**Document Object Model (DOM)**](#document-object-model-dom)
+      - [**Virtual DOM**](#virtual-dom)
+      - [**How do they work together?**](#how-do-they-work-together)
+    - [**World Wide Web**](#world-wide-web)
+      - [**Sir Tim Berners-Lee**](#sir-tim-berners-lee)
+    - [**Web Server**](#web-server)
+      - [**Apache**](#apache)
+      - [**Nginx**](#nginx)
+      - [**Puma**](#puma)
+      - [**Ad-hoc Web Servers**](#ad-hoc-web-servers)
+  - [**Amazon Web Services**](#amazon-web-services)
+  - [**Cloudflare**](#cloudflare)
+  - [**CI/CD**](#cicd)
+    - [**Continuous Integration**](#continuous-integration)
+    - [**Continuous Delivery**](#continuous-delivery)
+    - [**CI/CD Tools**](#cicd-tools)
+      - [**Argo CD**](#argo-cd)
+      - [**CircleCI**](#circleci)
+      - [**GitHub Actions**](#github-actions)
+      - [**GitLab CI/CD**](#gitlab-cicd)
+      - [**Jenkins**](#jenkins)
+      - [**Portainer**](#portainer)
+      - [**Travis CI**](#travis-ci)
+  - [**DigitalOcean**](#digitalocean)
+  - [**eBPF**](#ebpf)
+  - [**DNS (Domain Name System)**](#dns-domain-name-system)
+    - [**Types of DNS Records**](#types-of-dns-records)
+    - [**Examples of DNS Records**](#examples-of-dns-records)
+    - [**DNS servers**](#dns-servers)
+    - [**DNSSEC**](#dnssec)
+    - [**DNS over HTTPS (DoH)**](#dns-over-https-doh)
+    - [**DNS over TLS (DoT)**](#dns-over-tls-dot)
+    - [**DNS over QUIC (DoQ)**](#dns-over-quic-doq)
+    - [**DNSCrypt**](#dnscrypt)
+    - [**DNS Amplification Attacks**](#dns-amplification-attacks)
+    - [**Hosts file**](#hosts-file)
+    - [**AWS Route 53**](#aws-route-53)
+    - [**Azure DNS**](#azure-dns)
+    - [**Google Cloud DNS**](#google-cloud-dns)
+    - [**DigitalOcean DNS**](#digitalocean-dns)
+    - [**Cloudflare DNS**](#cloudflare-dns)
+    - [**OpenDNS**](#opendns)
+    - [**Bind**](#bind)
+  - [**Docker**](#docker)
+    - [**Install Docker**](#install-docker)
+      - [**Docker Engine**](#docker-engine)
+    - [**Docker Compose**](#docker-compose)
+      - [**Install Docker Compose**](#install-docker-compose)
+    - [**Docker Swarm**](#docker-swarm)
+  - [**Git**](#git)
+    - [**GitHub**](#github)
+      - [**GitHub sounds a litttle overwhelming. What be the basics?**](#github-sounds-a-litttle-overwhelming-what-be-the-basics)
+    - [**GitLab**](#gitlab)
+    - [**Gitea**](#gitea)
+    - [**Getting Started with Git and GitHub**](#getting-started-with-git-and-github)
+      - [**What if I get stuck?**](#what-if-i-get-stuck)
+      - [**Get involved in open-source projects**](#get-involved-in-open-source-projects)
+      - [**Eddie Jaoude**](#eddie-jaoude)
+      - [**EddieHub and LinkFree**](#eddiehub-and-linkfree)
+  - [**Homebrew**](#homebrew)
+  - [**HTML**](#html)
+    - [**Meta tags**](#meta-tags)
+    - [**Is HTML a programming language?**](#is-html-a-programming-language)
+    - [**CSS**](#css)
+  - [**HTTP**](#http)
+    - [**HTTP error codes**](#http-error-codes)
+    - [**HTTP methods**](#http-methods)
+    - [**HTTP headers**](#http-headers)
+    - [**HTTPS**](#https)
+    - [**API (Application Programming Interface)**](#api-application-programming-interface)
+      - [**GraphQL (Graph Query Language)**](#graphql-graph-query-language)
+      - [**REST (Representational State Transfer)**](#rest-representational-state-transfer)
+      - [**SOAP (Simple Object Access Protocol)**](#soap-simple-object-access-protocol)
+  - [**JSON (JavaScript Object Notation)**](#json-javascript-object-notation)
+  - [**ICMP (Internet Control Message Protocol)**](#icmp-internet-control-message-protocol)
+  - [**Infrastructure as Code**](#infrastructure-as-code)
+    - [**Ansible**](#ansible)
+      - [**Install Ansible**](#install-ansible)
+      - [**Jeff Geerling**](#jeff-geerling)
+      - [**Jeff Geerling's Ansible for DevOps**](#jeff-geerlings-ansible-for-devops)
+      - [**Ansible Galaxy**](#ansible-galaxy)
+      - [**Ansible Tower**](#ansible-tower)
+      - [**Ansible Vault**](#ansible-vault)
+      - [**Ansible Molecule**](#ansible-molecule)
+      - [**Ansible Container**](#ansible-container)
+      - [**Ansible Network Automation**](#ansible-network-automation)
+      - [**Ansible Cloud Automation**](#ansible-cloud-automation)
+      - [**Ansible Container Orchestration**](#ansible-container-orchestration)
+      - [**Ansible Service Broker**](#ansible-service-broker)
+    - [**Terraform**](#terraform)
+      - [**Install Terraform**](#install-terraform)
+      - [**Terraform Cloud Development Kit (CDK)**](#terraform-cloud-development-kit-cdk)
+  - [**IP Addresses**](#ip-addresses)
+    - [**What is an IP made up of?**](#what-is-an-ip-made-up-of)
+  - [**JavaScript**](#javascript)
+  - [**Kubernetes**](#kubernetes)
+  - [**Latency**](#latency)
+  - [**Logging**](#logging)
+    - [**Logrotate**](#logrotate)
+  - [**Monitoring**](#monitoring)
+  - [**OSI model**](#osi-model)
+  - [**SSH**](#ssh)
+    - [**SSH Agent**](#ssh-agent)
+    - [**SSH Confguration**](#ssh-confguration)
+    - [**SSH Keys**](#ssh-keys)
+      - [**How to generate SSH keys**](#how-to-generate-ssh-keys)
+    - [**SSH Port Forwarding**](#ssh-port-forwarding)
+    - [**SSH Tunneling**](#ssh-tunneling)
+    - [**Poor man's VPN (scurvy dog's sneak way)**](#poor-mans-vpn-scurvy-dogs-sneak-way)
+  - [**SSL/TLS**](#ssltls)
+    - [**SSL Certificates**](#ssl-certificates)
+      - [**Self-signed SSL Certificates**](#self-signed-ssl-certificates)
+    - [**Let's Encrypt**](#lets-encrypt)
+    - [**Certificate Authorities**](#certificate-authorities)
+    - [**CAA Records**](#caa-records)
+    - [**OCSP Stapling**](#ocsp-stapling)
+    - [**OCSP Must-Staple**](#ocsp-must-staple)
+  - [**Streaming**](#streaming)
+  - [**Subnet**](#subnet)
+    - [**Subnet mask**](#subnet-mask)
+    - [**How to calculate a subnet mask**](#how-to-calculate-a-subnet-mask)
+    - [**Subnetting Cheatsheet**](#subnetting-cheatsheet)
+      - [**Subnet Mask**](#subnet-mask-1)
+      - [**CIDR Notation**](#cidr-notation)
+      - [**Subnetting a Network**](#subnetting-a-network)
+      - [**Subnetting Examples**](#subnetting-examples)
+      - [**Subnetting Practice**](#subnetting-practice)
+  - [**TCP/IP**](#tcpip)
+  - [**UDP**](#udp)
+  - [**YAML (Yet Another Markup Language)**](#yaml-yet-another-markup-language)
+  - [**Zsh**](#zsh)
+    - [**Oh My Zsh**](#oh-my-zsh)
+- [**Chapter Three: Your first day as a pirate**](#chapter-three-your-first-day-as-a-pirate)
+  - [**Common problems**](#common-problems)
+  - [**Initiation**](#initiation)
+    - [**Question 1: Arrrrrgh**](#question-1-arrrrrgh)
+    - [**Question 2: The Black Pearl**](#question-2-the-black-pearl)
+    - [**Question 3: The Flying Dutchman**](#question-3-the-flying-dutchman)
+    - [**Question 4: Operation Blackbeard**](#question-4-operation-blackbeard)
+  - [**Is it YAML or YML?**](#is-it-yaml-or-yml)
+- [**GitHub Actions in the wild**](#github-actions-in-the-wild)
+- [**Chapter Four - Desktop Environments and Window Managers**](#chapter-four---desktop-environments-and-window-managers)
+  - [**Desktop Environments**](#desktop-environments)
+    - [**GNOME**](#gnome)
+    - [**KDE**](#kde)
+    - [**Xfce**](#xfce)
+    - [**LXDE**](#lxde)
+  - [**Window Managers**](#window-managers)
+    - [**Openbox**](#openbox)
+    - [**Fluxbox**](#fluxbox)
+    - [**i3**](#i3)
+  - [**Installing a Desktop Environment**](#installing-a-desktop-environment)
+  - [**Configuring a Desktop Environment**](#configuring-a-desktop-environment)
+  - [**Installing a Window Manager**](#installing-a-window-manager)
+  - [**Configuring a Window Manager**](#configuring-a-window-manager)
+- [**Chapter 5: Ruby on Rails and the Seven Seas**](#chapter-5-ruby-on-rails-and-the-seven-seas)
+- [**A stern warning: The dangers of the high seas**](#a-stern-warning-the-dangers-of-the-high-seas)
+- [**Jokes**](#jokes)
   - [Check Yer Deployments](#check-yer-deployments)
-- [Testemonials](#testemonials)
+- [**Testemonials**](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -533,6 +769,90 @@ All three roles be playin' important roles in helpin' the ship navigate the data
 
 So, hoist the anchor and set sail on the data seas with a crew of data analysis scallywags by yer side!
 
+#### **Database**
+
+Aye, a DBA (Database Administrator) be responsible for managing and maintaining the databases that be used on yer network. DBAs be often workin' on tasks such as:
+
+**Designin' and implementin' databases:** DBAs might design and implement databases to store and organize data in an efficient and secure manner, like a skilled shipwright buildin' a sturdy vessel to hold all yer valuable data.
+
+**Maintainin' and optimizin' databases:** DBAs might be responsible for maintainin' and optimizin' the performance of databases, including tasks such as backups, recovery, and performance tuning, like a ship's captain keepin' the vessel in tip-top shape.
+
+**Ensurin' data integrity:** DBAs might work to ensure the integrity and accuracy of the data in the databases, and to prevent data loss or corruption, like a ship's navigator keepin' the course true.
+
+**Collaboratin' with other teams:** DBAs might work closely with other teams such as development, QA, and IT to ensure that the databases meet the needs and requirements of the organization, like a ship's crew workin' together to reach their destination.
+
+You might imagine that a DBA be responsible for managing and maintaining the databases that be used on yer network. They be playin' a crucial role in ensurin' that the databases be efficient, secure, and accurate, and in supportin' the needs and requirements of the organization.
+
+##### **Graph**
+
+A graph database be a type of database that be designed to store and organize data in a way that be similar to a graph, like a treasure map leadin' to valuable data. Graph databases be often used to store and analyze data that be connected in some way, such as social networks or supply chains.
+
+Some examples of graph databases be [Neo4j](https://neo4j.com/), [ArangoDB](https://www.arangodb.com/) , and [OrientDB](https://orientdb.org/).
+
+##### **NoSQL**
+
+A NoSQL database be a type of database that be designed to store and organize data in a way that be different from traditional relational databases, like a treasure chest full of unstructured data. NoSQL databases be often used to store large amounts of data, and they be often more flexible and scalable than relational databases.
+
+Some examples of NoSQL databases be [MongoDB](https://www.mongodb.com/), [CouchDB](https://couchdb.apache.org/), and [Cassandra](https://cassandra.apache.org/).
+
+##### **SQL**
+
+A SQL database be a type of database that be designed to store and organize data in a way that be similar to a spreadsheet, like a treasure logbook of structured data. SQL databases be often used to store structured data, and they be often more efficient and reliable than NoSQL databases.
+
+Some examples of SQL databases be [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), and [SQLite](https://www.sqlite.org/index.html).
+
+#### **Design**
+
+Ahoy mateys, A UX designer be responsible for designing the user experience of yer network, like a captain chartin' a course for a smooth journey. UX designers be often workin' on tasks such as:
+
+**Researchin' and analyzin' user needs:** UX designers might research and analyze user needs, such as the tasks that users need to perform and the problems that they need to solve, like a treasure hunter gatherin' clues to find the treasure.
+
+**Designin' user interfaces:** UX designers might design user interfaces that be easy to use and that meet the needs of users, like a mapmaker creatin' a easy to read map for a treasure hunt.
+
+**Developin' prototypes:** UX designers might develop prototypes to test and validate their designs, like a treasure hunter testin' a map for accuracy before settin' sail.
+
+**Collaboratin' with other teams:** UX designers might work closely with other teams such as development, QA, and marketing to ensure that the user experience of yer network be effective and meets the needs of users, like a ship's crew workin' together to reach their destination.
+
+You might imagine that a UX designer be responsible for designing the user experience of yer network. They be playin' a crucial role in ensurin' that the user experience be effective and meets the needs of users.
+
+##### **Figma**
+
+[Figma](https://www.figma.com/login)
+
+Aye, Figma be a web-based design tool that can be used to create and collaborate on designs, like a pirate sharin' treasure maps with their crew. Figma be often used by UX designers to create prototypes and mockups of user interfaces, like a pirate creatin' a map of a treasure island.
+
+##### **DaisyUI**
+
+[DaisyUI](https://daisyui.com/)
+
+DaisyUI be a CSS framework that can be used to create user interfaces that be consistent with Fluent Design, like a compass that always points true north. DaisyUI be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that be easy to read and leads to treasure.
+
+##### **Fluent Design**
+
+[Fluent UI](https://developer.microsoft.com/en-us/fluentui)
+
+Fluent Design be a design system that be developed by Microsoft to create a consistent user experience across all of its products, like a treasure map that be the same for all the pirate crews. Fluent Design be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that leads to the treasure easily.
+
+##### **Material Design**
+
+[Material Design](https://m3.material.io)
+
+Material Design be a design system that be developed by Google to create a consistent user experience across all of its products, like a treasure map that be the same for all the pirate crews. Material Design be often used by UX designers to create user interfaces that be easy to use and that meet the needs of users, like a treasure map that leads to the treasure easily.
+
+#### **Finance**
+
+Aye, aye! Finance professionals be the ones responsible for keeping the treasure chests of a company full and organized. They be workin' on tasks such as:
+
+Managing the company's booty: Finance professionals be keepin' track of all the company's riches, including payin' the bills, keepin' track of the payroll, and makin' sure the company pays its fair share of taxes.
+
+Budgetin' and plannin' for future loot: Finance professionals be makin' sure the company has a plan for future riches, including preparin' financial reports and projections, and analyzin' data to find new ways to earn more treasure.
+
+Stayin' compliant with the law: Finance professionals be makin' sure the company be followin' all the rules and regulations, including tax regulations and financial reportin' requirements.
+
+Collaboratin' with other teams: Finance professionals be workin' closely with other teams such as operations, marketing, and sales to ensure the company be reachin' its goals and objectives.
+
+You might imagine that finance professionals be the ones responsible for the financial health of a company. They play a crucial role in keepin' the company in compliance with regulations, and in supportin' the needs and requirements of the organization.
+
 #### **Frontend**
 
 Ahoy, ye landlubbers! Ye be lookin' fer a frontend developer, are ye? These scallywags be the ones responsible fer designing and building the user interface of yer network. Ye see, the frontend be the part of the website or application that users interact with, and these developers be the ones that make sure it looks shipshape and easy to navigate.
@@ -637,8 +957,6 @@ Ahoy mateys! If ye be lookin' to set sail on the Linux sea, here be some things 
 
 **Customize yer system:** Linux be highly customizable, and ye can tweak yer system to suit yer needs and preferences. Ye'll need to learn how to customize yer system's settings, install and configure desktop environments, and more.
 
-<<<<<<< HEAD
-=======
 ### **What is DevOps?**
 
 Ahoy matey! Let's talk about DevOps, ye landlubbers!
@@ -665,7 +983,6 @@ Under the DevOps model, development and operations teams are no longer siled. So
 
 It is an ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.
 
->>>>>>> git_and_devops_stuff
 ### **Handybilly**
 
 A handybilly is a notebook that a pirate should carry with them at all times. It be used to keep track of important information, such as passwords, notes, and other useful tidbits. Ye can use yer handybilly to keep track of the information that ye learn in this book.
