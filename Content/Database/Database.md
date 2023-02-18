@@ -1,3 +1,8 @@
+- [Database](#database)
+    - [Graph](#graph)
+    - [SQL](#sql)
+    - [NoSQL](#nosql)
+
 # **Database**
 
 Aye, a DBA (Database Administrator) be responsible for managing and maintaining the databases that be used on yer network. DBAs be often workin' on tasks such as:
@@ -18,14 +23,14 @@ A graph database be a type of database that be designed to store and organize da
 
 Some examples of graph databases be [Neo4j](https://neo4j.com/), [ArangoDB](https://www.arangodb.com/) , and [OrientDB](https://orientdb.org/).
 
-## **NoSQL**
-
-A NoSQL database be a type of database that be designed to store and organize data in a way that be different from traditional relational databases, like a treasure chest full of unstructured data. NoSQL databases be often used to store large amounts of data, and they be often more flexible and scalable than relational databases.
-
-Some examples of NoSQL databases be [MongoDB](https://www.mongodb.com/), [CouchDB](https://couchdb.apache.org/), and [Cassandra](https://cassandra.apache.org/).
-
 ## **SQL**
 
 A SQL database be a type of database that be designed to store and organize data in a way that be similar to a spreadsheet, like a treasure logbook of structured data. SQL databases be often used to store structured data, and they be often more efficient and reliable than NoSQL databases.
 
 Some examples of SQL databases be [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), and [SQLite](https://www.sqlite.org/index.html).
+
+## **NoSQL**
+
+A NoSQL database be a type of database that be designed to store and organize data in a way that be different from traditional relational databases, like a treasure chest full of unstructured data. NoSQL databases be often used to store large amounts of data, and they be often more flexible and scalable than relational databases.
+
+Some examples of NoSQL databases be [MongoDB](https://www.mongodb.com/), [CouchDB](https://couchdb.apache.org/), and [Cassandra](https://cassandra.apache.org/).

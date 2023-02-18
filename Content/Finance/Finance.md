@@ -1,3 +1,5 @@
+- [Finance](#finance)
+
 # **Finance**
 
 Aye, aye! Finance professionals be the ones responsible for keeping the treasure chests of a company full and organized. They be workin' on tasks such as:

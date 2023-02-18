@@ -1,3 +1,9 @@
+- [Design](#design)
+    - [Figma](#figma)
+    - [DaisyUI](#daisyui)
+    - [Fluent Design](#fluent-design)
+    - [Material Design](#material-design)
+
 # **Design**
 
 Ahoy mateys, A UX designer be responsible for designing the user experience of yer network, like a captain chartin' a course for a smooth journey. UX designers be often workin' on tasks such as:
