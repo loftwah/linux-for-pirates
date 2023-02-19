@@ -3,6 +3,12 @@
     - [Types of DNS Records](#types-of-dns-records)
     - [Examples of DNS Records](#examples-of-dns-records)
     - [DNS Servers](#dns-servers)
+- [Networking](#networking)
+    - [ip](#ip)
+    - [Netcat](#netcat)
+    - [nmap](#nmap)
+    - [tcpdump](#tcpdump)
+    - [Wireshark](#wireshark)
 
 ## **DNS (Domain Name System)**
 
@@ -116,3 +122,261 @@ OpenDNS be a DNS service that can be used to route traffic to websites and other
 [Bind](https://www.isc.org/bind/)
 
 Bind be a DNS server software that can be used to host DNS records for a domain. It be commonly used on Linux and Unix systems, and can be configured to provide a variety of DNS services, including caching, authoritative, and recursive.
+
+## **Networking**
+
+[PacketLife](https://packetlife.net/)
+
+Ahoy there me hearties! Welcome to the wonderful world of computer networking, where the bytes flow like rum and the packets be flyin' like cannonballs. Ye be a fresh recruit to the tech industry, and it be time for ye to learn the ropes of this digital high seas.
+
+First things first, let's talk about the lingo of the land. Ye be hearin' words like "MAC addresses" and "frames" thrown around like a shanty at a crew singalong. A MAC address be a unique identifier for a device on a network, kind of like a pirate's tattoo. And frames, why they be like the hull of a ship, holdin' all the important information together as it travels across the network.
+
+Next, we have packets, the little buccaneers of data, carryin' information from one port to another. And just like how a pirate ship needs a crew to navigate, packets be usin' protocols like TCP and IP to make sure they reach their destination safe and sound.
+
+And what be a network without a map? Ye be needin' IP addresses to navigate these digital waters and find yer way to other ships. And just like how ye need a compass to find true north, ye be usin' DNS to find the IP address of a website.
+
+Routing protocols be like the maps and compass of the network world, they help guide packets to their destination. Let's take a look at some of the most commonly used ones:
+
+**OSPF (Open Shortest Path First):** This be a link state routing protocol, it's used mostly in large enterprise networks and service providers. It builds a map of the entire network and uses the shortest path to route the packets.
+
+**EIGRP (Enhanced Interior Gateway Routing Protocol):** This be a Cisco proprietary protocol, it's similar to OSPF but it's more efficient in terms of bandwidth usage and faster convergence. It's mostly used in Cisco networks.
+
+**RIP (Routing Information Protocol):** This be one of the oldest routing protocols, it's simple to configure and it's mostly used in small networks. It uses hop count as the metric for determining the best path for routing.
+
+**BGP (Border Gateway Protocol):** This be the king of routing protocols, it's used to route packets between different autonomous systems (AS) on the Internet. It's more complex to configure than the other protocols and it's mostly used by service providers and large organizations. It uses a path vector algorithm to determine the best path.
+
+**IS-IS (Intermediate System to Intermediate System):** This be another link-state routing protocol, it's mainly used in large service provider networks and it's similar to OSPF.
+
+So, as you may expect BGP be specially important for internet routing and used for interconnect different networks, it's a robust and complex protocol that requires a good understanding of how internet routing works.
+
+So there ye have it, a quick overview of the most common routing protocols. Remember, just like how a pirate ship needs a good navigator, a network needs a good routing protocol to reach its destination.
+
+So grab yerself a mug of grog and set sail on this journey through the tech industry. And remember, always keep a lookout for them scallywag hackers tryin' to steal yer treasure.
+
+Yarr!
+
+`arp`: This command be used to display and manipulate the system's ARP cache. Ye can use it to view the ARP cache, add or delete entries, and more.
+
+  Ahoy matey! An ARP request be like a call to the crew of another ship, askin' for their location on the network. Ye see, on a ship, ye need to know where everyone be to coordinate yer actions. Same goes for a network, each device needs to know the location of other devices to communicate with them.
+
+  An ARP request be a broadcast message sent by a device, askin' other devices on the network "Where be the device with this IP address? Give me its MAC address so I can talk to it." And just like how a crew member would respond with their location, the other devices on the network respond with their MAC address.
+
+  And just like how a pirate ship needs a good lookout to spot other ships, a network needs ARP to spot other devices and communicate with them.
+
+  Yarr!
+
+`ip`: This command be used to configure network interfaces on yer system. Ye can use it to view information about yer network interfaces, set their IP addresses, and more.
+
+`ping`: This command be used to test the connectivity between two devices on a network. Ye can use it to check if yer system be able to reach another device on the network.
+
+`traceroute`: This command be used to trace the route between yer system and another device on the network. Ye can use it to see the path that packets be taking between yer system and the destination.
+
+`netstat`: This command be used to display information about yer system's network connections and routing tables. Ye can use it to view information about active connections and network routes.
+
+  Ahoy matey! ICMP be like a messenger bird for yer network, it be used for sendin' error messages and status information between devices. Ye see, just like how a pirate ship needs to send messages to other ships to coordinate actions, a network needs to send messages to other devices to coordinate communication.
+
+  ICMP be used for a variety of things, such as letting a device know that it can't reach a destination, or that a destination is too busy to respond. It also be used for diagnostic purposes, such as the "ping" command, which be like shoutin' "Ahoy!" to a ship to see if they be there.
+
+  And just like how a pirate ship needs a good messenger to send important messages, a network needs ICMP to send important information between devices.
+
+  SNMP be like the ship's log of yer network, it be used for keepin' track of all the happenings on the network and givin' ye information about the devices connected to it. Ye see, just like how a pirate ship needs a log to keep track of its journey, a network needs SNMP to keep track of what's happening on it.
+
+  SNMP be used for monitorin' and managin' devices on a network, it be used to gather information about the devices, such as their uptime, CPU usage, and memory usage, and it can also be used to change settings on the devices.
+
+  SNMP be based on a client-server model, the devices on the network be the "servers" and the network management system be the "client". The client sends SNMP requests to the servers and the servers respond with the requested information.
+
+  SNMP is one of the most common protocol for network management, it's easy to use and widely supported by many different vendors. And just like how a pirate ship needs a good navigator to find its way, a network needs SNMP to find its way around and keep track of everything.
+
+  Yarr!
+
+`route`: This command be used to view and modify the routing table on yer system. Ye can use it to add, delete, or modify routes on yer system.
+
+#### **ip**
+
+Ahoy matey! The `ip` command is used to configure network interfaces on yer system. Ye can use it to view information about yer network interfaces, set their IP addresses, and more.
+
+```bash
+# To display all interfaces with addresses:
+ip addr
+# To take down / up the wireless adapter:
+ip link set dev wlan0 {up|down}
+# To set a static IP and netmask:
+ip addr add 192.168.1.100/32 dev eth0
+# To remove a IP from an interface:
+ip addr del 192.168.1.100/32 dev eth0
+# To remove all IPs from an interface:
+ip address flush dev eth0
+# To display all routes:
+ip route
+# To display all routes for IPv6:
+ip -6 route
+# To add default route via gateway IP:
+ip route add default via 192.168.1.1
+# To add route via interface:
+ip route add 192.168.0.0/24 dev eth0
+# To get the route used for an destination
+ip route get to 8.8.8.8
+# To change your mac address :
+ip link set dev eth0 address aa:bb:cc:dd:ee:ff
+# To view neighbors (using ARP and NDP):
+ip neighbor show
+```
+
+#### **Netcat**
+
+Ahoy matey! Netcat, or `nc`, is a command-line utility for reading from and writing to network connections using TCP or UDP. Just like how a pirate might use a telescope to spy on their enemies, `nc` can be used to spy on network connections and send data to and receive data from network services.
+
+```bash
+# To open a TCP connection from <src-port> to <dest-port> of <dest-host>, with a timeout of <seconds>
+nc -p <src-port> -w <seconds> <dest-host> <dest-port>   # "Open a TCP connection from <src-port> to <dest-port> on <dest-host>, with a deadline of <seconds>"
+# To open a UDP connection to <dest-port> of <dest-host>:
+nc -u <dest-host> <dest-port>   # "Open a UDP connection to <dest-port> on <dest-host>"
+# To open a TCP connection to port 42 of <host> using <source-host> as the IP for the local end of the connection:
+nc -s <source-host> <dest-host> <port>   # "Open a TCP connection to port 42 on <dest-host> using <source-host> as the IP for the local end"
+# To create and listen on a UNIX-domain stream socket:
+nc -lU /var/tmp/dsocket   # "Create and listen on a UNIX-domain stream socket at /var/tmp/dsocket"
+# To connect to <dest-port> of <dest-host> via an HTTP proxy at <proxy-host>,
+# <proxy-port>. This example could also be used by ssh(1); see the ProxyCommand
+# directive in ssh_config(5) for more information.
+nc -x<proxy-host>:<proxy-port> -Xconnect <dest-host> <dest-port>   # "Connect to <dest-port> on <dest-host> via an HTTP proxy at <proxy-host>:<proxy-port>"
+# The same example again, this time enabling proxy authentication with username "ruser" if the proxy requires it:
+nc -x<proxy-host>:<proxy-port> -Xconnect -Pruser <host> <port>   # "Connect to <dest-port> on <dest-host> via an HTTP proxy at <proxy-host>:<proxy-port>, enabling proxy authentication with username 'ruser' if necessary"
+# To choose the source IP for the testing using the -s option
+nc -zv -s source_IP target_IP Port   # "Choose the source IP for the testing using the -s option to connect to <target_IP> on <Port>"
+```
+
+#### **nmap**
+
+Ahoy matey! Nmap, or the Network Mapper, is a command-line utility for network exploration and security auditing. Just like how a pirate might use a telescope to spy on their enemies, `nmap` can be used to spy on network connections and send data to and receive data from network services.
+
+```bash
+# Single target scan:
+nmap [target]   # "Scour the horizon for signs of [target]"
+# Scan from a list of targets:
+nmap -iL [list.txt]   # "Scour the horizon for signs of all the scallywags on our hit list"
+# Scan port for all available A records
+# (useful when multiple A records are returned by the DNS server)
+nmap --script resolveall \
+    --script-args newtargets,resolveall.hosts=[target] -p [port]   # "Search for any sign of [target] on all available channels"
+# iPv6:
+nmap -6 [target]   # "Look for any trace of [target] on the open sea"
+# OS detection:
+nmap -O --osscan_guess [target]   # "Attempt to identify [target]'s flag"
+# Save output to text file:
+nmap -oN [output.txt] [target]   # "Record all findings on [target] in our log book"
+# Save output to xml file:
+nmap -oX [output.xml] [target]   # "Record all findings on [target] in our secret code"
+# Scan a specific port:
+nmap -p [port] [target]   # "Search [target]'s port for any hidden treasure"
+# Do an aggressive scan:
+nmap -A [target]   # "Launch a full-blown attack on [target]"
+# Speedup your scan:
+# -n => disable ReverseDNS
+# --min-rate=X => min X packets / sec
+nmap -T5 --min-parallelism=50 -n --min-rate=300 [target]   # "Hasten the search for [target] by any means necessary"
+# Traceroute:
+nmap -traceroute [target]   # "Trace [target]'s path through the treacherous waters"
+# Ping scan only: -sP
+# Don't ping:     -PN <- Useful if a host doesn't reply to a ping.
+# TCP SYN ping:   -PS
+# TCP ACK ping:   -PA
+# UDP ping:       -PU
+# ARP ping:       -PR
+# Example: Ping scan all machines on a class C network
+nmap -sP 192.168.0.0/24   # "Ping all scallywags in this area to see who's about"
+# Force TCP scan: -sT
+# Force UDP scan: -sU
+# Use some script:
+nmap --script default,safe   # "Employ our default and safe scripts to search for [target]"
+# Loads the script in the default category, the banner script,
+# and all .nse files in the directory /home/user/customscripts.
+nmap --script default,banner,/home/user/customscripts   # "Employ our default and banner scripts, as well as all custom scripts in /home/user/customscripts to search for [target]"
+# Loads all scripts whose name starts with http-,
+# such as http-auth and http-open-proxy.
+nmap --script 'http-*'   # "Employ all scripts starting with 'http-' to search for [target]"
+# Loads every script except for those in the intrusive category.
+nmap --script "not intrusive"   # "Employ all scripts except those in the intrusive category to search for [target]"
+# Loads those scripts that are in both the default and safe categories.
+nmap --script "default and safe"   # "Employ all scripts in the default and safe categories to search for [target]"
+# Loads scripts in the default, safe, or intrusive categories,
+# except for those whose names start with http-.
+nmap --script "(default or safe or intrusive) and not http-*"   # "Employ all scripts in the default, safe, or intrusive categories, except for those starting with 'http-', to search for [target]"
+# Scan for the heartbleed
+# -pT:443 => Scan only port 443 with TCP (T:)
+nmap -T5 --min-parallelism=50 -n --script "ssl-heartbleed" -pT:443 127.0.0.1   # "Scan for the heartbleed on port 443 using TCP to search for [target]"
+# Show all information (debug mode)
+nmap -d ...   # "Show all information in debug mode to search for [target]"
+# Discover DHCP information on an interface
+nmap --script broadcast-dhcp-discover -e eth0   # "Discover DHCP information on the interface to search for [target]"
+```
+
+#### **tcpdump**
+
+Ahoy matey! Tcpdump, or the packet sniffer, is a command-line utility for network traffic analysis. Just like how a pirate might use a telescope to spy on their enemies, `tcpdump` can be used to spy on network connections and send data to and receive data from network services.
+
+```bash
+# Capture all packets and save them to a file:
+tcpdump -w [capture.pcap]   # "Gather all packets and save them to a file for later review"
+# Capture only TCP packets:
+tcpdump 'tcp'   # "Gather only TCP packets"
+# Capture only packets to or from a specific host:
+tcpdump host [hostname]   # "Gather only packets bound for or coming from [hostname]"
+# Capture only packets to or from a specific network:
+tcpdump net [network]   # "Gather only packets bound for or coming from [network]"
+# Capture only packets to or from a specific port:
+tcpdump port [port]   # "Gather only packets bound for or coming from [port]"
+# Capture only packets with a specific payload:
+tcpdump 'payload'   # "Gather only packets with a specific payload"
+# Capture packets and display them in ASCII:
+tcpdump -A   # "Gather packets and display them in ASCII"
+# Capture packets and display them in hexadecimal:
+tcpdump -xx   # "Gather packets and display them in hexadecimal"
+# Capture packets and display the timestamp:
+tcpdump -tttt   # "Gather packets and display the timestamp"
+# Capture packets and display the link-level header:
+tcpdump -e   # "Gather packets and display the link-level header"
+# Capture packets and display the IP and/or TCP header:
+tcpdump -n   # "Gather packets and display the IP and/or TCP header"
+# Capture packets and display the protocol:
+tcpdump -nn   # "Gather packets and display the protocol"
+# Capture packets and display the packet summary line:
+tcpdump -S   # "Gather packets and display the packet summary line"
+# Capture packets and display the interface and packet length:
+tcpdump -i [interface]   # "Gather packets and display the interface and packet length"
+# Capture packets and display the packet length:
+tcpdump -s [length]   # "Gather packets and display the packet length"
+# Capture packets and apply a BPF filter:
+tcpdump '[filter]'   # "Gather packets and apply a BPF filter"
+# Capture packets and stop after [count] packets:
+tcpdump -c [count]   # "Gather packets and stop after [count] packets"
+# Capture packets and stop after [duration] seconds:
+tcpdump -G [duration]   # "Gather packets and stop after [duration] seconds"
+# Capture packets and print statistics:
+tcpdump -C [size]   # "Gather packets and print statistics"
+# Capture packets and rotate the capture file after [size] kilobytes:
+tcpdump -W [count] -C [size]   # "Gather packets and rotate the capture file after [size] kilobytes"
+# Capture packets and specify a file prefix:
+tcpdump -C [size] -Z [user]   # "Gather packets and specify a file prefix"
+# Capture packets and print packet info, excluding data:
+tcpdump -v   # "Gather packets and print packet info, excluding data"
+# Capture packets and print packet info, including data:
+tcpdump -vv   # "Gather packets and print packet info, including data"
+# Capture packets and print packet info, including data and hex dumps:
+tcpdump -vvv   # "Gather packets and print packet info, including data and hex dumps"
+# Capture packets and print the raw packets, including link-level headers:
+tcpdump -vvvv   # "Gather packets and print the raw packets, including link-level headers"
+# Capture packets and don't translate protocol addresses:
+tcpdump -nnnn   # "Gather packets and don't translate protocol addresses"
+# Capture packets and don't convert flags to human-readable form:
+tcpdump -cccc   # "Gather packets and don't convert flags to human-readable form"
+# Capture packets and print the relative timestamp, seconds since previous packet:
+tcpdump -ttttt   # "Gather packets and print the relative timestamp, seconds since previous packet"
+# Capture packets and print the absolute timestamp, including the date:
+tcpdump -tttttt   # "Gather packets and print the absolute timestamp, including the date"
+```
+
+#### **Wireshark**
+
+[Wireshark](https://www.wireshark.org/)
+
+Ahoy matey! Wireshark, or the network protocol analyzer, is a graphical utility for network traffic analysis. Just like how a pirate might use a telescope to spy on their enemies, Wireshark can be used to spy on network connections and send data to and receive data from network services.
