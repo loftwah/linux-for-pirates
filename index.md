@@ -11,6 +11,180 @@ Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https:/
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+- [What is Linux?](Content/Linux/)
+  - [Open source](Content/Open-Source/Open-Source.md)
+  - [What is free software?](#what-is-free-software)
+    - [Free as in freedom](#free-as-in-freedom)
+    - [Free as in beer](#free-as-in-beer)
+  - [What is the Linux kernel?](#what-is-the-linux-kernel)
+  - [Linus Torvalds](#linus-torvalds)
+  - [Richard Stallman](#richard-stallman)
+- [Before we begin](#before-we-begin)
+- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+- [Chapter One - Getting Started](#chapter-one---getting-started)
+  - [Operating System](Content/Operating-System/Operating-System.md)
+  - [Where to go from here?](#where-to-go-from-here)
+    - [Backend](#backend)
+    - [Cloud Computing](#cloud-computing)
+    - [Cybersecurity](Content/Cybersecurity/Cybersecurity.md)
+    - [Data analysis and interpretation](#data-analysis-and-interpretation)
+    - [Database](Content/Database/Database.md)
+    - [Design](Content/Design/Design.md)
+    - [Developer Advocacy and Developer Relations](Content/DevRel/DevRel.md)
+    - [Finance](Content/Finance/Finance.md)
+    - [Frontend](#frontend)
+    - [Management](#management)
+    - [Marketing](#marketing)
+    - [Network Engineering](#network-engineering)
+    - [Operations](#operations)
+    - [Sales](#sales)
+    - [Software development and delivery](#software-development-and-delivery)
+- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+  - [DevOps](Content/DevOps/DevOps.md)
+  - [How DevOps Works?](#how-devops-works)
+  - [Handybilly](#handybilly)
+  - [Linux filesystem](#linux-filesystem)
+    - [Filesystem examples](#filesystem-examples)
+    - [Permissions](#permissions)
+      - [chmod](#chmod)
+      - [chown](#chown)
+  - [Networking](Content/Networking/Networking.md)
+  - [Bash](#bash)
+    - [.bashrc](#bashrc)
+    - [Bash scripting](#bash-scripting)
+    - [Bash history](#bash-history)
+    - [Bash one-liners](#bash-one-liners)
+  - [chroot](#chroot)
+  - [Cron](#cron)
+  - [Devices](#devices)
+  - [Drivers](#drivers)
+  - [Processes](#processes)
+  - [cURL](#curl)
+  - [Vim (Vi IMproved)](#vim-vi-improved)
+    - [.vimrc](#vimrc)
+    - [NeoVim](#neovim)
+  - [VS Code](#vs-code)
+  - [The Internet](#the-internet)
+    - [Domain name](#domain-name)
+      - [Domain Name Registrar](#domain-name-registrar)
+      - [Buying a Domain Name](#buying-a-domain-name)
+      - [Namecheap](#namecheap)
+    - [IANA (Internet Assigned Numbers Authority)](#iana-internet-assigned-numbers-authority)
+    - [ICAAN (Internet Corporation for Assigned Names and Numbers)](#icaan-internet-corporation-for-assigned-names-and-numbers)
+    - [Internet Service Provider](#internet-service-provider)
+    - [Web Browser](#web-browser)
+      - [Document Object Model (DOM)](#document-object-model-dom)
+      - [Virtual DOM](#virtual-dom)
+      - [How do they work together?](#how-do-they-work-together)
+    - [World Wide Web](#world-wide-web)
+      - [Sir Tim Berners-Lee](#sir-tim-berners-lee)
+    - [Web Server](#web-server)
+      - [Apache](#apache)
+      - [Nginx](#nginx)
+      - [Puma](#puma)
+      - [Ad-hoc Web Servers](#ad-hoc-web-servers)
+  - [Amazon Web Services](#amazon-web-services)
+  - [Cloudflare](#cloudflare)
+  - [CI/CD](Content/DevOps/CICD.md)
+  - [DigitalOcean](#digitalocean)
+  - [eBPF](#ebpf)
+  - [DNS (Domain Name System)](Content/Networking/Networking.md)
+  - [Docker](Content/DevOps/DevOps.md)
+  - [Git](#git)
+    - [GitHub](#github)
+      - [GitHub sounds a litttle overwhelming. What be the basics?](#github-sounds-a-litttle-overwhelming-what-be-the-basics)
+    - [GitLab](#gitlab)
+    - [Gitea](#gitea)
+    - [Getting Started with Git and GitHub](#getting-started-with-git-and-github)
+      - [What if I get stuck?](#what-if-i-get-stuck)
+      - [Get involved in open-source projects](#get-involved-in-open-source-projects)
+      - [Eddie Jaoude](#eddie-jaoude)
+      - [EddieHub and LinkFree](#eddiehub-and-linkfree)
+  - [Homebrew](#homebrew)
+  - [HTML](#html)
+    - [Meta tags](#meta-tags)
+    - [Is HTML a programming language?](#is-html-a-programming-language)
+    - [CSS](#css)
+  - [HTTP](#http)
+    - [HTTP error codes](#http-error-codes)
+    - [HTTP methods](#http-methods)
+    - [HTTP headers](#http-headers)
+    - [HTTPS](#https)
+    - [API (Application Programming Interface)](#api-application-programming-interface)
+      - [GraphQL (Graph Query Language)](#graphql-graph-query-language)
+      - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+      - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
+  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+  - [Infrastructure as Code](Content/DevOps/DevOps.md)
+  - [IP Addresses](#ip-addresses)
+    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+  - [JavaScript](#javascript)
+  - [Kubernetes](#kubernetes)
+  - [Latency](#latency)
+  - [Logging](#logging)
+    - [Logrotate](#logrotate)
+  - [Monitoring](#monitoring)
+  - [OSI model](#osi-model)
+  - [SSH](#ssh)
+    - [SSH Agent](#ssh-agent)
+    - [SSH Confguration](#ssh-confguration)
+    - [SSH Keys](#ssh-keys)
+      - [How to generate SSH keys](#how-to-generate-ssh-keys)
+    - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSH Tunneling](#ssh-tunneling)
+    - [Poor man's VPN (scurvy dog's sneak way)](#poor-mans-vpn-scurvy-dogs-sneak-way)
+  - [SSL/TLS](#ssltls)
+    - [SSL Certificates](#ssl-certificates)
+      - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
+    - [Let's Encrypt](#lets-encrypt)
+    - [Certificate Authorities](#certificate-authorities)
+    - [CAA Records](#caa-records)
+    - [OCSP Stapling](#ocsp-stapling)
+    - [OCSP Must-Staple](#ocsp-must-staple)
+  - [Streaming](#streaming)
+  - [Subnet](#subnet)
+    - [Subnet mask](#subnet-mask)
+    - [How to calculate a subnet mask](#how-to-calculate-a-subnet-mask)
+    - [Subnetting Cheatsheet](#subnetting-cheatsheet)
+      - [Subnet Mask](#subnet-mask-1)
+      - [CIDR Notation](#cidr-notation)
+      - [Subnetting a Network](#subnetting-a-network)
+      - [Subnetting Examples](#subnetting-examples)
+      - [Subnetting Practice](#subnetting-practice)
+  - [TCP/IP](#tcpip)
+  - [UDP](#udp)
+  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Zsh](#zsh)
+    - [Oh My Zsh](#oh-my-zsh)
+- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Common problems](#common-problems)
+  - [Initiation](#initiation)
+    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Is it YAML or YML?](#is-it-yaml-or-yml)
+- [GitHub Actions in the wild](#github-actions-in-the-wild)
+- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+  - [Desktop Environments](#desktop-environments)
+    - [GNOME](#gnome)
+    - [KDE](#kde)
+    - [Xfce](#xfce)
+    - [LXDE](#lxde)
+  - [Window Managers](#window-managers)
+    - [Openbox](#openbox)
+    - [Fluxbox](#fluxbox)
+    - [i3](#i3)
+  - [Installing a Desktop Environment](#installing-a-desktop-environment)
+  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+  - [Installing a Window Manager](#installing-a-window-manager)
+  - [Configuring a Window Manager](#configuring-a-window-manager)
+- [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
+- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+- [Jokes](#jokes)
+=======
 - [**In memory of Aaron Swartz**](#in-memory-of-aaron-swartz)
   - [**What is free software?**](#what-is-free-software)
     - [**Free as in freedom**](#free-as-in-freedom)
@@ -355,70 +529,6 @@ You might imagine that backend developers are responsible for creating and maint
 **Network and build relationships:** Networkin' and buildin' relationships with others in the cloud computing industry can be a valuable way to learn about job openings and get yer foot in the door at companies that be hirin'. Attend local meetups, participate in online forums and discussion groups, and consider joinin' a professional association or user group.
 
 **Look for internships or entry-level positions:** If ye be just startin' out in yer career, it can be helpful to look for internships or entry-level positions that can provide ye with hands-on experience and help ye build up yer skills. These might include internships at cloud-based companies, or junior-level positions as a cloud developer or system administrator. As ye gain experience, ye can then look for more advanced positions that align with yer career goals.
-
-#### **Cybersecurity**
-
-[Awesome Security](https://github.com/sbilly/awesome-security)
-
-Arrr, ye landlubbers might be wonderin' what a cybersecurity analyst does. Let me tell ya, they be the protectors of yer digital treasure, keepin' yer network free from any cyber scallywags and their sneaky tricks. They be analyzin' and keepin' a watchful eye on yer network security, respondin' to any security breaches or attacks, implementin' security measures like firewalls and antivirus software, and workin' with other scallywags such as developers and legal to make sure yer network is shipshape and compliant with all the rules and regulations.
-
-When it comes to network security, there be three types of teams that be playin' important roles in keepin' the ship afloat: blue, purple, and red teams.
-
-The blue team be like the ship's navigator, chartin' the course to keep the ship out of harm's way. They be protectin' the network from any cyber threats and vulnerabilities.
-
-The purple team be like the ship's surgeon, patchin' up any wounds and keepin' an eye out for any potential dangers. They be identifyin' and exploitin' vulnerabilities and reportin' their findings to the captain with recommendations on how to avoid them.
-
-The red team be like the ship's enemy, testin' the ship's defenses and tryin' to sink it. They be simulating the tactics and techniques of a real enemy to test the effectiveness of the ship's security measures and reportin' their findings to the captain with recommendations on how to improve the ship's defenses.
-
-All three teams be playin' important roles in keepin' the ship safe and sailin' smooth. So, hoist the anchor and set sail on the digital seas with a crew of cybersecurity scallywags by yer side!
-
-A penetration tester be the scallywag that be responsible for findin' and exploitin' vulnerabilities in yer network. They be like treasure hunters, searchin' for any weak spots in yer digital defenses and takin' advantage of them to gain unauthorized access to yer sensitive information or systems. They be reportin' their findings to the captain and givin' recommendations on how to prevent similar attacks from happenin' in the future. They also be workin' closely with other scallywags such as developers and legal to ensure yer network is shipshape and compliant with all the rules and regulations.
-
-But watch out for those sneaky phishermen, tryin' to trick ye into givin' up yer treasure with fake emails and malicious links. And don't be fallin' for any social engineering tricks, where scallywags use their charm and deception to steal yer sensitive information.
-
-And remember the infamous Kevin Mitnick, a notorious hacker who was once one of the most wanted scallywags in the world. He be now a cybersecurity consultant and public speaker, and ye can even watch his story in the movie "Takedown".
-
-In the realm of network security, there be three key roles that be playin' important roles in keepin' the ship afloat: security architecture, security compliance, and security engineering.
-
-The security architect be like the ship's designer, creatin' and maintainin' the overall security of the network.
-
-The security compliance analyst be like the ship's lawyer, ensurin' the network is compliant with all the rules and regulations.
-
-The security engineer be like the ship's mechanic, implementin' and maintainin' the security controls of the network.
-
-All three roles be playin' important roles in keepin' the ship safe and sailin' smooth. So, hoist the anchor and set sail on the digital seas with a crew of cybersecurity scallywags by yer side!
-
-##### **Kevin Mitnick**
-
-![Kevin Mitnick](images/kevinmitnick.png)
-
-Aye, Kevin Mitnick be a legendary figure in the world of cybersecurity. He was once known as one of the most notorious hackers, but after servin' time in prison, he turned his life around and now uses his skills and knowledge to help companies and organizations protect themselves from cyber threats. As a cybersecurity consultant and public speaker, he be sharin' his expertise and helpin' others to better understand the dangers of the digital world and how to defend against them.
-
-![Kevin Mitnick as a Pirate](images/mitnick-pirate.png)
-
-A pirate might look up to Kevin Mitnick because of his reputation as a skilled and successful hacker. Just like how a pirate is known to be a skilled and successful looter in the sea, Mitnick's reputation as a successful hacker could be seen as admirable by someone who values those traits. Additionally, Mitnick's story of being a notorious hacker, serving time in prison, and then turning his life around to become a respected cybersecurity expert could also be seen as an inspiration for someone looking to change their ways.
-
-**What exactly did Kevin Mitnick do?**
-
-Aye, aye captain! Let me give ye all the juicy details about the infamous Kevin Mitnick and his wild journey through the digital seas.
-
-It all began back in the early days of the internet, when Mitnick was just a young scallywag with a love for all things computer-related. He started off small, breakin' into the computer systems of local businesses and schools, but he quickly moved on to bigger and more valuable targets.
-
-Mitnick be known as a master of "social engineering" - the art of trickin' people into givin' up sensitive information. He be known to use this skills to obtain passwords and other valuable information from unsuspecting victims, and he be always one step ahead of the authorities.
-
-As his infamy grew, Mitnick be takin' on bigger and more powerful targets, causin' mischief and makin' off with valuable information from some of the biggest corporations in the world, including Motorola, Nokia, and even the US government. He be known as the "Black Hat Pirate" of the computer world, and the authorities be hot on his trail.
-
-But just like many a pirate before him, Mitnick's luck eventually ran out and he be caught by the FBI in 1995. He be sentenced to five years in prison and be released in 2000.
-
-But unlike many a pirate, Mitnick decided to change his ways and use his skills for good. After servin' his time, Mitnick rebranded himself as a "White Hat Pirate" and set sail on a new journey as a cybersecurity consultant and public speaker. He be now helping companies and organizations protect their digital treasure from the likes of himself and other cyber scallywags.
-
-He be sharing his tales of adventure and the lessons he learned during his time as a notorious hacker, and he be helpin' others to understand the dangers of the digital seas and how to navigate them safely. He be also working with law enforcement and organizations to help them understand the mind of a hacker and help to prevent cybercrime.
-
-Some may see him as a reformed scallywag, others as a cautionary tale, but one thing's for sure, Mitnick's story be one for the ages and a true testament to the fact that even the most notorious pirate can change their ways and become a valuable member of society. He's a true example that every one of us can learn from.
-
-So, if ye ever find yerself sailin' the digital seas and come across the name Kevin Mitnick, remember that he be a true pirate of the cyber world, and his story be one for the ages.
-
-The movie [Takedown](https://www.imdb.com/title/tt0159784/) is based on the life of Kevin Mitnick.
 
 #### **Data analysis and interpretation**
 
