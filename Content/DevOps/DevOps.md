@@ -3,6 +3,7 @@
 ![DevOps Pirate](../../images/devops-pirate.png)
 
 - [What is DevOps](#what-is-devops)
+    - [How DevOps Works](#how-devops-works)
     - [Docker](#docker)
         - [Install Docker](#install-docker)
             - [Docker Engine](#docker-engine) 
@@ -44,6 +45,12 @@ Even the security teams be gettin' in on the action, with a thing called "DevSec
 The DevOps journey be like a never-endin' loop, always improvin' and changin', like the wind direction on a voyage. It's made up of eight phases, representin' the processes, capabilities, and tools needed for development and operations. And throughout it all, the teams be workin' and communicatin' together, like a good crew on a ship!
 
 So hoist the sails and set course for DevOps, me hearties! Yarrr!
+
+### **How DevOps Works?**
+
+Under the DevOps model, development and operations teams are no longer siled. Sometimes, these two teams are merged into a single team where the engineers work across the entire application lifecycle, from development and test to deployment to operations, and develop a range of skills not limited to a single function.
+
+It is an ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.
 
 ## **Docker**
 
