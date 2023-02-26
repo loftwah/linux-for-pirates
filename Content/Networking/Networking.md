@@ -27,6 +27,14 @@
       - [GraphQL (Graph Query Language)](#graphql-graph-query-language)
       - [REST (Representational State Transfer)](#rest-representational-state-transfer)
       - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
+- [SSH](#ssh)
+    - [SSH Agent](#ssh-agent)
+    - [SSH Confguration](#ssh-confguration)
+    - [SSH Keys](#ssh-keys)
+      - [How to generate SSH keys](#how-to-generate-ssh-keys)
+    - [SSH Port Forwarding](#ssh-port-forwarding)
+    - [SSH Tunneling](#ssh-tunneling)
+    - [Poor man's VPN (scurvy dog's sneak way)](#poor-mans-vpn-scurvy-dogs-sneak-way)
 
 ## **DNS (Domain Name System)**
 
@@ -615,4 +623,231 @@ SOAP (Simple Object Access Protocol) can be thought of as a set of standardized 
 In a pirate theme, you could think of SOAP as a way for a pirate to interact with a web application. Just like a pirate uses a telescope to look for treasure, a client uses an API to retrieve data from a server. Similarly, just like a pirate uses a telescope to look for treasure, a client uses an API to send data to a server.
 
 SOAP is often used to retrieve data from a server, but it can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
->>>>>>> http
+
+## **SSH**
+
+Secure Shell (SSH) is a secret code that allows pirates to remotely control their ships and protect their communications from prying eyes.
+
+SSH is a network protocol that allows you to securely connect to a remote computer over an unsecured network, such as the internet. It is often used to remotely access and control servers, but it can also be used to securely transfer files and perform other tasks.
+
+To use SSH, you need an SSH client, which is a program that connects to an SSH server. When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
+
+SSH is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
+
+### **SSH Agent**
+
+SSH Agent is a program that can be used to store and manage private keys on a Linux system. It can be used to securely store private keys, which can be used to authenticate SSH connections.
+
+SSH Agent is typically configured using a configuration file called sshd_config, which is located in the /etc/ssh directory. This file contains a list of configuration options that can be used to customize the behavior of the SSH agent.
+
+```bash
+# Start an SSH Agent for the current shell:
+eval $(ssh-agent)
+# Kill the currently running agent:
+ssh-agent -k
+```
+
+> **Note** The `eval $(ssh-agent)` command can be added to your shell configuration file, such as `~/.bashrc`, to automatically start an SSH agent when you open a new shell.
+
+You can use the `ssh-add` command to add private keys to the SSH agent. You can also use the `ssh-add` command to remove private keys from the SSH agent.
+
+```bash
+# Add the default ssh keys in `~/.ssh` to the ssh-agent:
+ssh-add
+# Add a specific key to the ssh-agent:
+ssh-add path/to/private_key
+# List fingerprints of currently loaded keys:
+ssh-add -l
+# Delete a key from the ssh-agent:
+ssh-add -d path/to/private_key
+# Delete all currently loaded keys from the ssh-agent:
+ssh-add -D
+# Add a key to the ssh-agent and the keychain:
+ssh-add -K path/to/private_key
+```
+
+### **SSH Confguration**
+
+SSH can be configured using a configuration file called sshd_config, which is located in the /etc/ssh directory. This file contains a list of configuration options that can be used to customize the behavior of the SSH daemon.
+
+The most common configuration options include:
+
+`Port`: This option can be used to specify the port that the SSH daemon should listen on. By default, the SSH daemon listens on port 22, but this can be changed to any other port number.
+
+`PermitRootLogin`: This option can be used to specify whether or not root login is allowed. By default, root login is disabled, but this can be changed to yes or no.
+
+`PasswordAuthentication`: This option can be used to specify whether or not password authentication is allowed. By default, password authentication is enabled, but this can be changed to yes or no.
+
+`PubkeyAuthentication`: This option can be used to specify whether or not public key authentication is allowed. By default, public key authentication is enabled, but this can be changed to yes or no.
+
+`AuthorizedKeysFile`: This option can be used to specify the location of the authorized_keys file. By default, the authorized_keys file is located in the /root/.ssh directory, but this can be changed to any other location.
+
+`PermitEmptyPasswords`: This option can be used to specify whether or not empty passwords are allowed. By default, empty passwords are disabled, but this can be changed to yes or no.
+
+`PermitUserEnvironment`: This option can be used to specify whether or not users can set environment variables. By default, users are not allowed to set environment variables, but this can be changed to yes or no.
+
+`AllowTcpForwarding`: This option can be used to specify whether or not TCP forwarding is allowed. By default, TCP forwarding is enabled, but this can be changed to yes or no.
+
+`AllowAgentForwarding`: This option can be used to specify whether or not agent forwarding is allowed. By default, agent forwarding is enabled, but this can be changed to yes or no.
+
+`AllowStreamLocalForwarding`: This option can be used to specify whether or not stream local forwarding is allowed. By default, stream local forwarding is enabled, but this can be changed to yes or no.
+
+`AllowUsers`: This option can be used to specify a list of users that are allowed to connect to the SSH daemon. By default, all users are allowed to connect, but this can be changed to any list of users.
+
+`DenyUsers`: This option can be used to specify a list of users that are not allowed to connect to the SSH daemon. By default, no users are denied access, but this can be changed to any list of users.
+
+`AllowGroups`: This option can be used to specify a list of groups that are allowed to connect to the SSH daemon. By default, all groups are allowed to connect, but this can be changed to any list of groups.
+
+`DenyGroups`: This option can be used to specify a list of groups that are not allowed to connect to the SSH daemon. By default, no groups are denied access, but this can be changed to any list of groups.
+
+You can also configure you local SSH client using a configuration file called config, which is located in the ~/.ssh directory. This file contains a list of configuration options that can be used to customize the behavior of the SSH client.
+
+The most common configuration options include:
+
+`Host`: This option can be used to specify a hostname or IP address that the SSH client should connect to. By default, the SSH client will connect to the host specified on the command line, but this can be changed to any hostname or IP address.
+
+`Port`: This option can be used to specify the port that the SSH client should connect to. By default, the SSH client will connect to port 22, but this can be changed to any other port number.
+
+`User`: This option can be used to specify the username that the SSH client should use when connecting to the remote host. By default, the SSH client will use the username specified on the command line, but this can be changed to any username.
+
+`IdentityFile`: This option can be used to specify the location of the private key that the SSH client should use when connecting to the remote host. By default, the SSH client will use the private key specified on the command line, but this can be changed to any private key.
+
+`IdentitiesOnly`: This option can be used to specify whether or not the SSH client should only use the private keys specified in the IdentityFile option. By default, the SSH client will use any private keys that are available, but this can be changed to yes or no.
+
+`StrictHostKeyChecking`: This option can be used to specify whether or not the SSH client should check the host key when connecting to the remote host. By default, the SSH client will check the host key, but this can be changed to yes or no.
+
+`UserKnownHostsFile`: This option can be used to specify the location of the known_hosts file. By default, the known_hosts file is located in the ~/.ssh directory, but this can be changed to any other location.
+
+`LogLevel`: This option can be used to specify the level of logging that the SSH client should use. By default, the SSH client will use the level of logging specified on the command line, but this can be changed to any level of logging.
+
+`ForwardAgent`: This option can be used to specify whether or not the SSH client should forward the authentication agent when connecting to the remote host. By default, the SSH client will not forward the authentication agent, but this can be changed to yes or no.
+
+`ForwardX11`: This option can be used to specify whether or not the SSH client should forward X11 connections when connecting to the remote host. By default, the SSH client will not forward X11 connections, but this can be changed to yes or no.
+
+`ForwardX11Trusted`: This option can be used to specify whether or not the SSH client should forward trusted X11 connections when connecting to the remote host. By default, the SSH client will not forward trusted X11 connections, but this can be changed to yes or no.
+
+`ForwardX11Timeout`: This option can be used to specify the timeout for X11 forwarding. By default, the SSH client will use a timeout of 20 seconds, but this can be changed to any other value.
+
+`ForwardX11DisplayOffset`: This option can be used to specify the display offset for X11 forwarding. By default, the SSH client will use a display offset of 10, but this can be changed to any other value.
+
+`ForwardX11UseLocalhost`: This option can be used to specify whether or not the SSH client should use localhost for X11 forwarding. By default, the SSH client will use localhost, but this can be changed to yes or no.
+
+`XAuthLocation`: This option can be used to specify the location of the xauth command. By default, the SSH client will use the xauth command that is located in the /usr/bin directory, but this can be changed to any other location.
+
+`Compression`: This option can be used to specify whether or not the SSH client should use compression when connecting to the remote host. By default, the SSH client will not use compression, but this can be changed to yes or no.
+
+`CompressionLevel`: This option can be used to specify the compression level that the SSH client should use when connecting to the remote host. By default, the SSH client will use a compression level of 6, but this can be changed to any other value.
+
+`Protocol`: This option can be used to specify the SSH protocol that the SSH client should use when connecting to the remote host. By default, the SSH client will use the SSH protocol specified on the command line, but this can be changed to any other protocol.
+
+`Ciphers`: This option can be used to specify the list of ciphers that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of ciphers specified on the command line, but this can be changed to any other list of ciphers.
+
+`MACs`: This option can be used to specify the list of MACs that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of MACs specified on the command line, but this can be changed to any other list of MACs.
+
+`KexAlgorithms`: This option can be used to specify the list of key exchange algorithms that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of key exchange algorithms specified on the command line, but this can be changed to any other list of key exchange algorithms.
+
+`HostKeyAlgorithms`: This option can be used to specify the list of host key algorithms that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of host key algorithms specified on the command line, but this can be changed to any other list of host key algorithms.
+
+`PubkeyAcceptedKeyTypes`: This option can be used to specify the list of public key types that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of public key types specified on the command line, but this can be changed to any other list of public key types.
+
+`HostbasedAcceptedKeyTypes`: This option can be used to specify the list of host-based key types that the SSH client should use when connecting to the remote host. By default, the SSH client will use the list of host-based key types specified on the command line, but this can be changed to any other list of host-based key types.
+
+An example of the SSH client configuration file is shown below:
+
+```bash
+# SSH client configuration file
+# ~/.ssh/config
+# Specify the location of the private key to use when connecting to the remote host
+IdentityFile ~/.ssh/id_rsa
+# Specify whether or not the SSH client should only use the private keys specified in the IdentityFile option
+IdentitiesOnly yes
+# Specify whether or not the SSH client should check the host key when connecting to the remote host
+StrictHostKeyChecking yes
+# Specify the location of the known_hosts file
+UserKnownHostsFile ~/.ssh/known_hosts
+# Specify the level of logging that the SSH client should use
+LogLevel INFO
+# Specify whether or not the SSH client should forward the authentication agent when connecting to the remote host
+ForwardAgent no
+# Specify whether or not the SSH client should forward X11 connections when connecting to the remote host
+ForwardX11 no
+# Specify whether or not the SSH client should forward trusted X11 connections when connecting to the remote host
+ForwardX11Trusted no
+# Specify the timeout for X11 forwarding
+ForwardX11Timeout 20
+# Specify the display offset for X11 forwarding
+ForwardX11DisplayOffset 10
+# Specify whether or not the SSH client should use localhost for X11 forwarding
+ForwardX11UseLocalhost yes
+# Specify the location of the xauth command
+XAuthLocation /usr/bin/xauth
+# Specify whether or not the SSH client should use compression when connecting to the remote host
+Compression no
+# Specify the compression level that the SSH client should use when connecting to the remote host
+CompressionLevel 6
+# Specify the SSH protocol that the SSH client should use when connecting to the remote host
+Protocol 2
+# Specify the list of ciphers that the SSH client should use when connecting to the remote host
+Ciphers aes128-ctr,aes192-ctr,aes256-ctr
+# Specify the list of MACs that the SSH client should use when connecting to the remote host
+MACs hmac-sha2-256,hmac-sha2-512
+# Specify the list of key exchange algorithms that the SSH client should use when connecting to the remote host
+KexAlgorithms
+# Specify the list of host key algorithms that the SSH client should use when connecting to the remote host
+HostKeyAlgorithms
+# Specify the list of public key types that the SSH client should use when connecting to the remote host
+PubkeyAcceptedKeyTypes
+# Specify the list of host-based key types that the SSH client should use when connecting to the remote host
+HostbasedAcceptedKeyTypes
+```
+
+### **SSH Keys**
+
+SSH keys are a type of secret code that can be used to authenticate a user when connecting to an SSH server. SSH keys are a more secure alternative to passwords, as they are much harder to guess or brute force.
+
+When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. If you provide a private key, the SSH server will use the corresponding public key to authenticate you. If the public key matches the private key, you will be granted access to the server.
+
+SSH keys are widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. They are a more secure alternative to passwords, and are an essential tool in the pirate's toolkit. Arrr!
+
+#### **How to generate SSH keys**
+
+To generate SSH keys, you can use the `ssh-keygen` command. This command will generate a private key and a public key, which can be used to authenticate you when connecting to an SSH server.
+
+```bash
+# Generate a key interactively:
+ssh-keygen
+# Specify file in which to save the key:
+ssh-keygen -f ~/.ssh/filename
+# Generate an ed25519 key with 100 key derivation function rounds:
+ssh-keygen -t ed25519 -a 100
+# Generate an RSA 4096-bit key with email as a comment:
+ssh-keygen -t dsa|ecdsa|ed25519|rsa -b 4096 -C "comment|email"
+# Remove the keys of a host from the known_hosts file (useful when a known host has a new key):
+ssh-keygen -R remote_host
+# Retrieve the fingerprint of a key in MD5 Hex:
+ssh-keygen -l -E md5 -f ~/.ssh/filename
+# Change the password of a key:
+ssh-keygen -p -f ~/.ssh/filename
+```
+
+### **SSH Port Forwarding**
+
+SSH port forwarding is a feature that allows you to forward traffic from a local port to a remote port on an SSH server. This can be useful for accessing services that are only available on a remote server, such as a web server or database.
+
+When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
+
+SSH port forwarding is widely used by IT professionals, developers, and system administrators to remotely manage servers and other computer systems. It is a secure and convenient way to access and control remote computers, and is an essential tool in the pirate's toolkit. Arrr!
+
+### **SSH Tunneling**
+
+SSH tunneling is a feature that allows you to forward traffic from a local port to a remote port on an SSH server. This can be useful for accessing services that are only available on a remote server, such as a web server or database.
+
+When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
+
+### **Poor man's VPN (scurvy dog's sneak way)**
+
+[sshuttle](https://github.com/sshuttle/sshuttle)
+
+sshuttle (a poor man's VPN) is a tool that uses SSH to create a VPN between your local machine and a remote server. It can be used to access services that are only available on a remote server, such as a web server or database.
+
+When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
