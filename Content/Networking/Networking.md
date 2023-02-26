@@ -3,6 +3,15 @@
     - [Types of DNS Records](#types-of-dns-records)
     - [Examples of DNS Records](#examples-of-dns-records)
     - [DNS Servers](#dns-servers)
+- [HTTP](#http)
+    - [HTTP error codes](#http-error-codes)
+    - [HTTP methods](#http-methods)
+    - [HTTP headers](#http-headers)
+    - [HTTPS](#https)
+    - [API (Application Programming Interface)](#api-application-programming-interface)
+      - [GraphQL (Graph Query Language)](#graphql-graph-query-language)
+      - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+      - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
 
 ## **DNS (Domain Name System)**
 
@@ -116,3 +125,116 @@ OpenDNS be a DNS service that can be used to route traffic to websites and other
 [Bind](https://www.isc.org/bind/)
 
 Bind be a DNS server software that can be used to host DNS records for a domain. It be commonly used on Linux and Unix systems, and can be configured to provide a variety of DNS services, including caching, authoritative, and recursive.
+
+## **HTTP**
+
+HTTP, or Hypertext Transfer Protocol, is a protocol for transmitting data on the internet. It is the foundation of the World Wide Web, and is used to transfer data from a server to a client, or vice versa.
+
+In a pirate theme, you could think of HTTP as the system that allows pirates to send and receive messages and information as they sail the seas of the internet. Just like a pirate ship uses a flag to communicate with other ships, a website uses HTTP to communicate with a client's web browser. When you enter a website's address into your browser, your browser sends an HTTP request to the server hosting the website. The server then responds with an HTTP response, which includes the content of the website.
+
+HTTP is just one of many protocols that make the internet work, but it is an important one because it allows us to access and interact with websites and other online resources. Arrr!
+
+### **HTTP error codes**
+
+HTTP error codes are a set of standardized codes that are used to indicate the status of an HTTP request. They are returned by the server in the HTTP response, and can be used to determine whether a request was successful or not.
+
+Here are some of the most common HTTP error codes:
+
+- 200 OK - The request was successful
+- 301 Moved Permanently - The requested resource has been moved permanently
+- 302 Found - The requested resource has been moved temporarily
+- 400 Bad Request - The request was invalid
+- 401 Unauthorized - The request requires authentication
+- 403 Forbidden - The server refused to fulfill the request
+- 404 Not Found - The requested resource could not be found
+- 500 Internal Server Error - An error occurred on the server
+- 503 Service Unavailable - The server is currently unavailable
+
+For a bit of a laugh, here is an image you'll see as a 404 error page on some of my applications: (not to be taken seriously)
+
+![404](images/404.png)
+
+Here are some more obscure HTTP error codes:
+
+- 418 I'm a teapot - The server refuses to brew coffee because it is a teapot
+- 451 Unavailable For Legal Reasons - The requested resource is unavailable due to legal reasons
+
+### **HTTP methods**
+
+HTTP methods are a set of standardized methods that are used to indicate the action that should be performed for a given resource. They are used in the HTTP request, and can be used to determine what action should be performed on the server.
+
+Here are some of the most common HTTP methods:
+
+- **GET** - Retrieve a resource
+- **POST** - Create a resource
+- **PUT** - Update a resource
+- **DELETE** - Delete a resource
+
+HTTP methods can also be used to indicate the type of data that is being sent in the request. For example, the `Content-Type` header can be used to indicate that the request body contains JSON data.
+
+Here are some of the most common `Content-Type` values:
+
+- `application/json` - JSON data
+- `application/x-www-form-urlencoded` - Form data
+- `multipart/form-data` - Form data with file uploads
+
+### **HTTP headers**
+
+HTTP headers are a set of standardized fields that are used to send additional information with an HTTP request or response. They are used to provide additional context about the request or response, and can be used to pass additional information between the client and the server.
+
+Here are some of the most common HTTP headers:
+
+- `Accept` - The types of data that the client can accept
+- `Accept-Encoding` - The types of data encoding that the client can accept
+- `Accept-Language` - The languages that the client can accept
+- `Authorization` - The credentials that the client can use to authenticate
+- `Cache-Control` - The caching behavior that the client can accept
+- `Content-Length` - The length of the request body
+- `Content-Type` - The type of data that is contained in the request body
+- `Cookie` - The cookies that the client can send to the server
+- `Host` - The host name of the server
+- `User-Agent` - The user agent that the client is using
+
+HTTP headers can also be used to pass additional information between the client and the server. For example, the `X-Forwarded-For` header can be used to pass the IP address of the client to the server.
+
+### **HTTPS**
+
+HTTPS (Hypertext Transfer Protocol Secure) can be thought of as a way to secure communication between two parties. HTTPS is a protocol that is used to transmit data over the internet, and it is designed to provide an additional layer of security on top of the regular HTTP protocol.
+
+Imagine that two pirates are trying to send messages to each other over the internet, but they are worried that their messages might be intercepted by other pirates or other parties. To secure their communication, they could use HTTPS. When they use HTTPS, their messages are encrypted, which means that they are transformed into a code that can only be deciphered by the intended recipient. This makes it much harder for anyone else to intercept and read the messages, as they would need to have the key to decrypt the code.
+
+In addition to encryption, HTTPS also provides authentication, which means that it can verify the identity of the sender and the recipient. This helps to prevent man-in-the-middle attacks, where a third party tries to intercept and manipulate the communication between two parties.
+
+Overall, HTTPS is a useful tool for pirates (or anyone else) who want to keep their communication private and secure. It can help protect against interception and tampering, and it can also provide reassurance that the messages are actually coming from the intended sender.
+
+### **API (Application Programming Interface)**
+
+An API (Application Programming Interface) can be thought of as a set of standardized methods that are used to interact with a web application. It is a way for a client to communicate with a server, and it can be used to retrieve data from the server or to send data to the server.
+
+In a pirate theme, you could think of an API as a way for a pirate to interact with a web application. Just like a pirate uses a telescope to look for treasure, a client uses an API to retrieve data from a server. Similarly, just like a pirate uses a telescope to look for treasure, a client uses an API to send data to a server.
+
+APIs are often used to retrieve data from a server, but they can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
+
+#### **GraphQL (Graph Query Language)**
+
+GraphQL (Graph Query Language) can be thought of as a set of standardized methods that are used to interact with a web application. It is a way for a client to communicate with a server, and it can be used to retrieve data from the server or to send data to the server.
+
+In a pirate theme, you could think of GraphQL as a way for a pirate to interact with a web application. Just like a pirate uses a telescope to look for treasure, a client uses an API to retrieve data from a server. Similarly, just like a pirate uses a telescope to look for treasure, a client uses an API to send data to a server.
+
+GraphQL is often used to retrieve data from a server, but it can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
+
+#### **REST (Representational State Transfer)**
+
+REST (Representational State Transfer) can be thought of as a set of standardized principles that are used to design web applications. It is a way to design web applications so that they can be easily accessed and used by clients.
+
+In a pirate theme, you could think of REST as a set of principles that are used to design web applications. Just like a pirate uses a telescope to look for treasure, a client uses an API to retrieve data from a server. Similarly, just like a pirate uses a telescope to look for treasure, a client uses an API to send data to a server.
+
+REST is often used to retrieve data from a server, but it can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
+
+#### **SOAP (Simple Object Access Protocol)**
+
+SOAP (Simple Object Access Protocol) can be thought of as a set of standardized methods that are used to interact with a web application. It is a way for a client to communicate with a server, and it can be used to retrieve data from the server or to send data to the server.
+
+In a pirate theme, you could think of SOAP as a way for a pirate to interact with a web application. Just like a pirate uses a telescope to look for treasure, a client uses an API to retrieve data from a server. Similarly, just like a pirate uses a telescope to look for treasure, a client uses an API to send data to a server.
+
+SOAP is often used to retrieve data from a server, but it can also be used to send data to a server. For example, an API can be used to create a new user account or to update an existing user account.
