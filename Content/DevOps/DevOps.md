@@ -10,6 +10,7 @@
         - [Docker Compose](#docker-compose)
             - [Install Docker Compose](#install-docker-compose)
         - [Docker Swarm](#docker-swarm)
+    - [Kubernetes](#kubernetes)
     - [Infrastructure as Code](#infrastructure-as-code)
         - [Ansible](#ansible)
         - [Install Ansible](#install-ansible)
@@ -103,6 +104,14 @@ sudo sh -c "curl -L https://raw.githubusercontent.com/docker/compose/${COMPOSE_V
 [Docker Swarm Rocks](https://dockerswarm.rocks/)
 
 Docker Swarm be a native clustering tool for Docker. It be used to deploy and manage a cluster of Docker Engines.
+
+## **Kubernetes**
+
+Kubernetes (also known as "K8s") is an open-source system for automating the deployment, scaling, and management of containerized applications. It helps to provide a consistent and reliable environment for running applications, regardless of where they are deployed.
+
+In a pirate theme, you could think of Kubernetes as a way to manage and maintain your fleet of ships (the containerized applications). Instead of having to manually deploy and manage each ship individually, Kubernetes allows you to automate the process and scale your fleet as needed. This can help you to be more efficient and responsive, as you can deploy new ships or make changes to existing ones more quickly and easily.
+
+Kubernetes also helps to ensure that your ships are running smoothly and reliably, by providing features like automatic self-healing, rolling updates, and resource management. This can help to keep your fleet seaworthy and ready to set sail at a moment's notice, no matter where you are in the world.
 
 ## **Infrastructure as Code**
 
