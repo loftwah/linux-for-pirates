@@ -85,8 +85,8 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [OCSP Must-Staple](#ocsp-must-staple)
   - [Streaming](#streaming)
   - [Subnet](Content/Networking/Networking.md#subnet)
-  - [TCP/IP](#tcpip)
-  - [UDP](#udp)
+  - [TCP/IP](Content/Networking/Networking.md#tcpip)
+  - [UDP](Content/Networking/Networking.md#udp)
   - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
   - [Zsh](#zsh)
     - [Oh My Zsh](#oh-my-zsh)
@@ -659,24 +659,6 @@ In software engineering, streaming refers to the process of continuously transmi
 Streaming is commonly used for media, such as music and video, but it can also be used for other types of data, such as financial data or social media updates. It allows users to access and process large amounts of data in real-time, rather than having to wait for it to be transferred and stored locally.
 
 Streaming can be implemented using a variety of technologies and protocols, such as HTTP streaming, WebSockets, and WebRTC. It is an important part of modern software engineering, and is a valuable tool for pirates as they navigate the choppy waters of the internet. Arrr!
-
-![TCP & UDP meme](images/tcp-udp.png)
-
-### **TCP/IP**
-
-TCP/IP be a suite of networking protocols that be used to connect devices on the internet. It be the foundation of the internet, and it be what allow devices to communicate with each other and exchange data over the network.
-
-TCP (Transmission Control Protocol) be a protocol that be used to establish and maintain connections between devices on the network. It be responsible for dividing data into smaller packets and sending them over the network, and it be also responsible for ensuring that the packets be delivered to the destination reliably.
-
-IP (Internet Protocol) be a protocol that be used to route packets of data between devices on the network. It be responsible for assigning unique addresses to devices on the network and routing packets to the correct destination based on these addresses.
-
-Together, TCP and IP be the backbone of the internet, and they be what allow devices to communicate and exchange data with each other. So hoist the mainsail and set course for TCP/IP mastery! With a solid understanding of these protocols, ye'll be well on yer way to becoming a skilled network administrator. Arrrr!
-
-### **UDP**
-
-UDP stands for User Datagram Protocol. It is a communication protocol that is used to transmit data over networks, such as the internet. It is a connectionless protocol, which means that it does not establish a dedicated connection between the sender and receiver before transmitting data. This makes UDP faster and more efficient than protocols that require a connection to be established, but it also means that data transmitted using UDP is less reliable, as there is no guarantee that the data will be received by the intended recipient.
-
-You might imagine UDP as a way for pirates to send messages to each other without having to go through the trouble of setting up a formal communication channel. They could simply send a message using UDP and hope that it gets to the intended recipient, much like a pirate sending a message in a bottle and hoping it reaches its destination.
 
 ### **YAML (Yet Another Markup Language)**
 
