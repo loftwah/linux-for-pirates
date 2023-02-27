@@ -3,6 +3,7 @@
     - [DaisyUI](#daisyui)
     - [Fluent Design](#fluent-design)
     - [Material Design](#material-design)
+- [JavaScript](#javascript)
 - [HTML](#html)
     - [Meta tags](#meta-tags)
     - [Is HTML a programming language?](#is-html-a-programming-language)
@@ -121,3 +122,17 @@ This code defines the styles for the `body`, `h1`, and `p` elements on a web pag
 CSS can be used to style a wide variety of elements on a web page, including text, images, and layout. It can also be used to create responsive designs that adapt to different screen sizes and devices.
 
 I hope this helps you understand what CSS is and how a pirate might use it to style their website. Arrr!
+
+# **JavaScript**
+
+Ahoy matey! Are ye interested in learning about JavaScript, the programming language used to make websites and web applications more interactive and dynamic?
+
+JavaScript is a popular, cross-platform programming language that is primarily used to create dynamic and interactive elements on websites. It is one of the three core technologies of the World Wide Web, along with HTML (HyperText Markup Language) and CSS (Cascading Style Sheets). JavaScript is often used in combination with these other technologies to build complex web applications and sites.
+
+JavaScript code is usually written in text editors and then run in web browsers, such as Google Chrome, Mozilla Firefox, or Microsoft Edge. The code can be written directly in an HTML file, or it can be linked to an external JavaScript file that is then referenced in the HTML file.
+
+One of the key features of JavaScript is its ability to manipulate the Document Object Model (DOM), which is the structure of a website's HTML and CSS. This allows JavaScript to modify the appearance and content of a website in real-time, as well as respond to user input and interactivity.
+
+JavaScript is also an object-oriented programming language, meaning that it is based on the concept of "objects" that have properties and methods. These objects can be used to represent real-world concepts, such as a person or a car, and can be manipulated and controlled using the JavaScript language.
+
+I hope that helps ye get a better understanding of JavaScript, matey! If ye have any more questions, don't hesitate to ask.
