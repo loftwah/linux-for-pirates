@@ -36,6 +36,8 @@
     - [SSH Port Forwarding](#ssh-port-forwarding)
     - [SSH Tunneling](#ssh-tunneling)
     - [Poor man's VPN (scurvy dog's sneak way)](#poor-mans-vpn-scurvy-dogs-sneak-way)
+- [TCP/IP](#tcpip)
+- [UDP](#udp)
 
 ## **DNS (Domain Name System)**
 
@@ -849,3 +851,21 @@ When you connect to an SSH server, you are prompted to enter a username and pass
 sshuttle (a poor man's VPN) is a tool that uses SSH to create a VPN between your local machine and a remote server. It can be used to access services that are only available on a remote server, such as a web server or database.
 
 When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
+
+![TCP & UDP meme](images/tcp-udp.png)
+
+## **TCP/IP**
+
+TCP/IP be a suite of networking protocols that be used to connect devices on the internet. It be the foundation of the internet, and it be what allow devices to communicate with each other and exchange data over the network.
+
+TCP (Transmission Control Protocol) be a protocol that be used to establish and maintain connections between devices on the network. It be responsible for dividing data into smaller packets and sending them over the network, and it be also responsible for ensuring that the packets be delivered to the destination reliably.
+
+IP (Internet Protocol) be a protocol that be used to route packets of data between devices on the network. It be responsible for assigning unique addresses to devices on the network and routing packets to the correct destination based on these addresses.
+
+Together, TCP and IP be the backbone of the internet, and they be what allow devices to communicate and exchange data with each other. So hoist the mainsail and set course for TCP/IP mastery! With a solid understanding of these protocols, ye'll be well on yer way to becoming a skilled network administrator. Arrrr!
+
+## **UDP**
+
+UDP stands for User Datagram Protocol. It is a communication protocol that is used to transmit data over networks, such as the internet. It is a connectionless protocol, which means that it does not establish a dedicated connection between the sender and receiver before transmitting data. This makes UDP faster and more efficient than protocols that require a connection to be established, but it also means that data transmitted using UDP is less reliable, as there is no guarantee that the data will be received by the intended recipient.
+
+You might imagine UDP as a way for pirates to send messages to each other without having to go through the trouble of setting up a formal communication channel. They could simply send a message using UDP and hope that it gets to the intended recipient, much like a pirate sending a message in a bottle and hoping it reaches its destination.
