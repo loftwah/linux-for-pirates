@@ -4,6 +4,10 @@
     - [Fluent Design](#fluent-design)
     - [Material Design](#material-design)
 - [JavaScript](#javascript)
+- [HTML](#html)
+    - [Meta tags](#meta-tags)
+    - [Is HTML a programming language?](#is-html-a-programming-language)
+    - [CSS](#css)
 
 # **Design**
 

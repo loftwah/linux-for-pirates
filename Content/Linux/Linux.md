@@ -131,6 +131,7 @@ chown pirate:pirates treasure_map.txt
 chown -R pirate treasure_chest
 # Change owner to pirate and group to pirates recursively (treasure_chest)
 chown -R pirate:pirates treasure_chest
+
 ### **Handybilly**
 
 A handybilly is a notebook that a pirate should carry with them at all times. It be used to keep track of important information, such as passwords, notes, and other useful tidbits. Ye can use yer handybilly to keep track of the information that ye learn in this book.
