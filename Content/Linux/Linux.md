@@ -18,6 +18,8 @@
         - [Drivers](#drivers)
         - [Processes](#processes)
         - [cURL](#curl)
+        - [Zsh](#zsh)
+            - [Oh My Zsh](#oh-my-zsh)
 
 # **Linux**
 
@@ -371,3 +373,42 @@ A typical cURL `POST` request would look like this:
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Pirate"}' https://example.com
 ```
+
+### **Zsh**
+
+Arrr matey! Zsh, also known as the "Z shell," is a Unix shell and command-line interpreter that you can use on your Linux system. It's similar to other shells like the Bourne shell (sh) or the Bourne Again shell (bash), but it offers additional features and functionality that can make it easier and more efficient to use.
+
+To get started with zsh on your Linux system, you'll need to install it first. You can do this using your system's package manager, such as "apt" on Debian-based systems or "yum" on Red Hat-based systems. For example, you might run a command like this:
+
+```bash
+sudo apt-get install zsh -y
+```
+
+Once zsh is installed, you can start using it by launching a terminal window and entering `zsh` at the command prompt. This will launch the zsh shell, and you can start entering commands just like you would with any other shell.
+
+You can also set zsh as your default shell, so that it will be launched automatically whenever you open a terminal window. To do this, you'll need to use the `chsh` command and specify the path to the zsh executable. For example:
+
+```bash
+chsh -s /usr/bin/zsh
+```
+
+I hope this helps get you started with zsh on your Linux system, matey! Let me know if you have any other questions.
+
+#### **Oh My Zsh**
+
+Oh My Zsh is a popular open-source project that helps users configure and customize the Z shell (zsh). It provides a variety of themes, plugins, and features that can make it easier to use zsh and add additional functionality to your terminal.
+
+To use Oh My Zsh, you'll need to install it on your system. You can do this by following the instructions:
+
+- Open a terminal window and enter the following command:
+
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+- Follow the prompts to install Oh My Zsh.
+- Once the installation is complete, you can start using Oh My Zsh by launching a terminal window and entering `zsh` at the command prompt.
+
+Once you have Oh My Zsh installed, you can start using it by launching a terminal window and entering "zsh" at the command prompt. This will launch the zsh shell with Oh My Zsh configured, and you'll see a variety of additional features and options available to you.
+
+You can customize Oh My Zsh by modifying the configuration file located at "~/.zshrc" and selecting different themes or plugins to use. There are many themes and plugins available, so you can choose the ones that best suit your needs and preferences.
