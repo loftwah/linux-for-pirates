@@ -36,6 +36,14 @@
     - [SSH Port Forwarding](#ssh-port-forwarding)
     - [SSH Tunneling](#ssh-tunneling)
     - [Poor man's VPN (scurvy dog's sneak way)](#poor-mans-vpn-scurvy-dogs-sneak-way)
+- [SSL/TLS](#ssltls)
+    - [SSL Certificates](#ssl-certificates)
+      - [Self-signed SSL Certificates](#self-signed-ssl-certificates)
+    - [Let's Encrypt](#lets-encrypt)
+    - [Certificate Authorities](#certificate-authorities)
+    - [CAA Records](#caa-records)
+    - [OCSP Stapling](#ocsp-stapling)
+    - [OCSP Must-Staple](#ocsp-must-staple)
 - [TCP/IP](#tcpip)
 - [UDP](#udp)
 
@@ -537,7 +545,7 @@ Here are some of the most common HTTP error codes:
 
 For a bit of a laugh, here is an image you'll see as a 404 error page on some of my applications: (not to be taken seriously)
 
-![404](images/404.png)
+![404](../../images/404.png)
 
 Here are some more obscure HTTP error codes:
 
@@ -852,7 +860,61 @@ sshuttle (a poor man's VPN) is a tool that uses SSH to create a VPN between your
 
 When you connect to an SSH server, you are prompted to enter a username and password, or to provide a private key for authentication. Once authenticated, you can use the command line to execute commands on the remote server, just as if you were sitting in front of it.
 
-![TCP & UDP meme](images/tcp-udp.png)
+## **SSL/TLS**
+
+SSL (Secure Sockets Layer) and TLS (Transport Layer Security) be a set of protocols that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+### **SSL Certificates**
+
+SSL (Secure Sockets Layer) certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+In the context of nginx, ye might be usin' an SSL certificate to secure the connection between nginx and the clients that be connectin' to it, such as web browsers. To do this, ye will need to obtain an SSL certificate and configure nginx to use it.
+
+There be a few different types of SSL certificates, each with its own level of validation and security. Some be more expensive and time-consuming to obtain, but offer a higher level of trust and security.
+
+I hope this be helpin' ye to understand how SSL certificates be workin' and how ye might be usin' them with nginx. Ahoy!
+
+#### **Self-signed SSL Certificates**
+
+Self-signed SSL certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+### **Let's Encrypt**
+
+Let's Encrypt be a free, automated, and open certificate authority (CA) that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+Certbot be a free, open-source tool that be usin' Let's Encrypt to obtain and install SSL certificates. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+The EFF (Electronic Frontier Foundation) be a non-profit organization that be workin' to protect and advance digital rights. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+### **Certificate Authorities**
+
+A certificate authority (CA) be a trusted third party that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+### **CAA Records**
+
+A CAA (Certification Authority Authorization) record be a type of DNS record that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+### **OCSP Stapling**
+
+OCSP (Online Certificate Status Protocol) stapling be a method of improving the performance of SSL/TLS connections by caching the results of OCSP requests. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+### **OCSP Must-Staple**
+
+OCSP (Online Certificate Status Protocol) must-staple be a method of improving the performance of SSL/TLS connections by caching the results of OCSP requests. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
+
+When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
+
+![TCP & UDP meme](../../images/tcp-udp.png)
 
 ## **TCP/IP**
 

@@ -11,75 +11,104 @@ Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https:/
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [**In memory of Aaron Swartz**](#in-memory-of-aaron-swartz)
-  - [**What is free software?**](#what-is-free-software)
-    - [**Free as in freedom**](#free-as-in-freedom)
-    - [**Free as in beer**](#free-as-in-beer)
-  - [**What is the Linux kernel?**](#what-is-the-linux-kernel)
-  - [**Linus Torvalds**](#linus-torvalds)
-  - [**Richard Stallman**](#richard-stallman)
-- [**Before we begin**](#before-we-begin)
-- [**About the author (This isn't on the test)**](#about-the-author-this-isnt-on-the-test)
-- [**Chapter One - Getting Started**](#chapter-one---getting-started)
-  - [**Where to go from here?**](#where-to-go-from-here)
-    - [**Data analysis and interpretation**](#data-analysis-and-interpretation)
-    - [**Operations**](#operations)
-    - [**Sales**](#sales)
-    - [**Software development and delivery**](#software-development-and-delivery)
-- [**Chapter Two - The Fundamentals**](#chapter-two---the-fundamentals)
-  - [**Vim (Vi IMproved)**](#vim-vi-improved)
-    - [**.vimrc**](#vimrc)
-    - [**NeoVim**](#neovim)
-  - [**VS Code**](#vs-code)
-  - [**Cloudflare**](#cloudflare)
-  - [**eBPF**](#ebpf)
-  - [**Homebrew**](#homebrew)
-  - [**JSON (JavaScript Object Notation)**](#json-javascript-object-notation)
-  - [**ICMP (Internet Control Message Protocol)**](#icmp-internet-control-message-protocol)
-  - [**IP Addresses**](#ip-addresses)
-    - [**What is an IP made up of?**](#what-is-an-ip-made-up-of)
-  - [**Latency**](#latency)
-  - [**Logging**](#logging)
-    - [**Logrotate**](#logrotate)
-  - [**Monitoring**](#monitoring)
-  - [**OSI model**](#osi-model)
-  - [**SSL/TLS**](#ssltls)
-    - [**SSL Certificates**](#ssl-certificates)
-      - [**Self-signed SSL Certificates**](#self-signed-ssl-certificates)
-    - [**Let's Encrypt**](#lets-encrypt)
-    - [**Certificate Authorities**](#certificate-authorities)
-    - [**CAA Records**](#caa-records)
-    - [**OCSP Stapling**](#ocsp-stapling)
-    - [**OCSP Must-Staple**](#ocsp-must-staple)
-  - [**Streaming**](#streaming)
-  - [**YAML (Yet Another Markup Language)**](#yaml-yet-another-markup-language)
-  - [**Zsh**](#zsh)
-    - [**Oh My Zsh**](#oh-my-zsh)
-- [**Chapter Three: Your first day as a pirate**](#chapter-three-your-first-day-as-a-pirate)
-  - [**Common problems**](#common-problems)
-  - [**Initiation**](#initiation)
-    - [**Question 1: Arrrrrgh**](#question-1-arrrrrgh)
-    - [**Question 2: The Black Pearl**](#question-2-the-black-pearl)
-    - [**Question 3: The Flying Dutchman**](#question-3-the-flying-dutchman)
-    - [**Question 4: Operation Blackbeard**](#question-4-operation-blackbeard)
-  - [**Is it YAML or YML?**](#is-it-yaml-or-yml)
-- [**Chapter Four - Desktop Environments and Window Managers**](#chapter-four---desktop-environments-and-window-managers)
-  - [**Desktop Environments**](#desktop-environments)
-    - [**GNOME**](#gnome)
-    - [**KDE**](#kde)
-    - [**Xfce**](#xfce)
-    - [**LXDE**](#lxde)
-  - [**Window Managers**](#window-managers)
-    - [**Openbox**](#openbox)
-    - [**Fluxbox**](#fluxbox)
-    - [**i3**](#i3)
-  - [**Installing a Desktop Environment**](#installing-a-desktop-environment)
-  - [**Configuring a Desktop Environment**](#configuring-a-desktop-environment)
-  - [**Installing a Window Manager**](#installing-a-window-manager)
-  - [**Configuring a Window Manager**](#configuring-a-window-manager)
-- [**Chapter 5: Ruby on Rails and the Seven Seas**](#chapter-5-ruby-on-rails-and-the-seven-seas)
-- [**A stern warning: The dangers of the high seas**](#a-stern-warning-the-dangers-of-the-high-seas)
-- [**Jokes**](#jokes)
+- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+- [What is Linux?](Content/Linux/)
+  - [Open source](Content/Open-Source/Open-Source.md)
+  - [What is free software?](#what-is-free-software)
+    - [Free as in freedom](#free-as-in-freedom)
+    - [Free as in beer](#free-as-in-beer)
+  - [What is the Linux kernel?](#what-is-the-linux-kernel)
+  - [Linus Torvalds](#linus-torvalds)
+  - [Richard Stallman](#richard-stallman)
+- [Before we begin](#before-we-begin)
+- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+- [Chapter One - Getting Started](#chapter-one---getting-started)
+  - [Operating System](Content/Operating-System/Operating-System.md)
+  - [Where to go from here?](#where-to-go-from-here)
+    - [Backend](Content/Backend/Backend.md)
+    - [Cloud Computing](Content/Cloud/Cloud.md)
+    - [Cybersecurity](Content/Cybersecurity/Cybersecurity.md)
+    - [Data analysis and interpretation](#data-analysis-and-interpretation)
+    - [Database](Content/Database/Database.md)
+    - [Design](Content/Design/Design.md)
+    - [Developer Advocacy and Developer Relations](Content/DevRel/DevRel.md)
+    - [Finance](Content/Finance/Finance.md)
+    - [Frontend](Content/Design/Frontend.md)
+    - [Management](Content/Management/Management.md)
+    - [Marketing](Content/Marketing/Marketing.md)
+    - [Network Engineering](Content/Networking/Network_Engineering.md)
+    - [Operations](#operations)
+    - [Sales](#sales)
+    - [Software development and delivery](#software-development-and-delivery)
+- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+  - [DevOps](Content/DevOps/DevOps.md)
+  - [How DevOps Works?](#how-devops-works)
+  - [Handybilly](Content/Linux/Linux.md#handybilly)
+  - [Linux filesystem](Content/Linux/Linux.md)
+  - [Networking](Content/Networking/Networking.md)
+  - [Bash](Content/Linux/Linux.md#bash)
+  - [Vim (Vi IMproved)](#vim-vi-improved)
+    - [.vimrc](#vimrc)
+    - [NeoVim](#neovim)
+  - [VS Code](#vs-code)
+  - [The Internet](Content/Internet/Internet.md)
+  - [Amazon Web Services](Content/Cloud/Cloud.md)
+  - [Cloudflare](#cloudflare)
+  - [CI/CD](Content/DevOps/CICD.md)
+  - [DigitalOcean](Content/Cloud/Cloud.md)
+  - [eBPF](#ebpf)
+  - [DNS (Domain Name System)](Content/Networking/Networking.md)
+  - [Docker](Content/DevOps/DevOps.md)
+  - [Git](Content/Git/Git.md)
+  - [Homebrew](#homebrew)
+  - [HTML](Content/Design/Design.md)
+  - [HTTP](Content/Networking/Networking.md)
+  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+  - [Infrastructure as Code](Content/DevOps/DevOps.md)
+  - [IP Addresses](#ip-addresses)
+    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+  - [JavaScript](Content/Design/Design.md)
+  - [Latency](#latency)
+  - [Logging](#logging)
+    - [Logrotate](#logrotate)
+  - [Monitoring](#monitoring)
+  - [OSI model](#osi-model)
+  - [SSH](Content/Networking/Networking.md#ssh)
+  - [SSL/TLS](Content/Networking/Networking.md#ssltls)
+  - [Streaming](#streaming)
+  - [Subnet](Content/Networking/Networking.md#subnet)
+  - [TCP/IP](Content/Networking/Networking.md#tcpip)
+  - [UDP](Content/Networking/Networking.md#udp)
+  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [Zsh](#zsh)
+    - [Oh My Zsh](#oh-my-zsh)
+- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Common problems](#common-problems)
+  - [Initiation](#initiation)
+    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Is it YAML or YML?](#is-it-yaml-or-yml)
+- [GitHub Actions in the wild](Content/Git/Git.md#github-actions-in-the-wild)
+- [Chapter Four - Desktop Environments and Window Managers](#chapter-four---desktop-environments-and-window-managers)
+  - [Desktop Environments](#desktop-environments)
+    - [GNOME](#gnome)
+    - [KDE](#kde)
+    - [Xfce](#xfce)
+    - [LXDE](#lxde)
+  - [Window Managers](#window-managers)
+    - [Openbox](#openbox)
+    - [Fluxbox](#fluxbox)
+    - [i3](#i3)
+  - [Installing a Desktop Environment](#installing-a-desktop-environment)
+  - [Configuring a Desktop Environment](#configuring-a-desktop-environment)
+  - [Installing a Window Manager](#installing-a-window-manager)
+  - [Configuring a Window Manager](#configuring-a-window-manager)
+- [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
+- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+- [Jokes](#jokes)
   - [Check Yer Deployments](#check-yer-deployments)
 - [**Testemonials**](#testemonials)
 
@@ -559,60 +588,6 @@ The OSI model be a framework fer understanding and designing how data be transmi
 The OSI model be a useful tool fer understanding and designing the communication systems on yer network. It provides a framework fer understanding the different layers of networking, and fer identifying the tasks and responsibilities that be associated with each layer.
 
 > **Note** Layer 8 be the most important layer of the OSI model. It be responsible fer the most important tasks, such as drinking rum and eating grog.
-
-### **SSL/TLS**
-
-SSL (Secure Sockets Layer) and TLS (Transport Layer Security) be a set of protocols that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
-
-When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
-
-#### **SSL Certificates**
-
-SSL (Secure Sockets Layer) certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
-
-When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
-
-In the context of nginx, ye might be usin' an SSL certificate to secure the connection between nginx and the clients that be connectin' to it, such as web browsers. To do this, ye will need to obtain an SSL certificate and configure nginx to use it.
-
-There be a few different types of SSL certificates, each with its own level of validation and security. Some be more expensive and time-consuming to obtain, but offer a higher level of trust and security.
-
-I hope this be helpin' ye to understand how SSL certificates be workin' and how ye might be usin' them with nginx. Ahoy!
-
-##### **Self-signed SSL Certificates**
-
-Self-signed SSL certificates be a type of digital certificate that be used to establish a secure, encrypted connection between a web server and a client, such as a web browser. This be makin' it more difficult for third parties to intercept or tamper with the communication between the server and client.
-
-When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
-
-#### **Let's Encrypt**
-
-Let's Encrypt be a free, automated, and open certificate authority (CA) that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
-
-Certbot be a free, open-source tool that be usin' Let's Encrypt to obtain and install SSL certificates. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
-
-The EFF (Electronic Frontier Foundation) be a non-profit organization that be workin' to protect and advance digital rights. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
-
-#### **Certificate Authorities**
-
-A certificate authority (CA) be a trusted third party that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
-
-#### **CAA Records**
-
-A CAA (Certification Authority Authorization) record be a type of DNS record that be usin' SSL certificates to secure websites and other online services. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
-
-When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
-
-#### **OCSP Stapling**
-
-OCSP (Online Certificate Status Protocol) stapling be a method of improving the performance of SSL/TLS connections by caching the results of OCSP requests. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
-
-When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
-
-#### **OCSP Must-Staple**
-
-OCSP (Online Certificate Status Protocol) must-staple be a method of improving the performance of SSL/TLS connections by caching the results of OCSP requests. It be makin' it easier fer people to obtain and install SSL certificates, and be helpin' to increase the security of the internet.
-
-When a client, such as a web browser, connects to a server that be usin' an SSL certificate, the server will present the certificate to the client. The client will then verify the certificate, and if it be valid, the two will establish an encrypted connection.
 
 ### **Streaming**
 
