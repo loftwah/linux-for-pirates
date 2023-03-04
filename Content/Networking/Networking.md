@@ -27,6 +27,7 @@
       - [GraphQL (Graph Query Language)](#graphql-graph-query-language)
       - [REST (Representational State Transfer)](#rest-representational-state-transfer)
       - [SOAP (Simple Object Access Protocol)](#soap-simple-object-access-protocol)
+
 - [SSH](#ssh)
     - [SSH Agent](#ssh-agent)
     - [SSH Confguration](#ssh-confguration)
@@ -159,8 +160,6 @@ OpenDNS be a DNS service that can be used to route traffic to websites and other
 
 Bind be a DNS server software that can be used to host DNS records for a domain. It be commonly used on Linux and Unix systems, and can be configured to provide a variety of DNS services, including caching, authoritative, and recursive.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## **Networking**
 
 [PacketLife](https://packetlife.net/)
@@ -418,7 +417,7 @@ tcpdump -tttttt   # "Gather packets and print the absolute timestamp, including 
 [Wireshark](https://www.wireshark.org/)
 
 Ahoy matey! Wireshark, or the network protocol analyzer, is a graphical utility for network traffic analysis. Just like how a pirate might use a telescope to spy on their enemies, Wireshark can be used to spy on network connections and send data to and receive data from network services.
-=======
+
 ## **Subnet**
 
 A subnet (short for "subnetwork") can be thought of as a smaller network that is contained within a larger network. It is a way to divide a larger network into smaller, more manageable parts.
@@ -519,8 +518,7 @@ Here are some practice problems to help you get familiar with subnetting:
 1. With a subnet mask of `11111111.11111111.11100000.00000000`, you can create 4 subnets, each with 2048 hosts.
 2. With a subnet mask of `11111111.11111111.11110000.00000000`, you can create 8 subnets, each with 1024 hosts.
 3. With a subnet mask of `11111111.11111111.11111000.00000000`, you can create 16 subnets, each with 512 hosts.
->>>>>>> subnet
-=======
+
 ## **HTTP**
 
 HTTP, or Hypertext Transfer Protocol, is a protocol for transmitting data on the internet. It is the foundation of the World Wide Web, and is used to transfer data from a server to a client, or vice versa.
