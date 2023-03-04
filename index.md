@@ -47,9 +47,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
   - [Linux filesystem](Content/Linux/Linux.md)
   - [Networking](Content/Networking/Networking.md)
   - [Bash](Content/Linux/Linux.md#bash)
-  - [Vim (Vi IMproved)](#vim-vi-improved)
-    - [.vimrc](#vimrc)
-    - [NeoVim](#neovim)
+  - [Vim (Vi IMproved)](Content/Linux/Linux.md#vim-vi-improved)
   - [VS Code](#vs-code)
   - [The Internet](Content/Internet/Internet.md)
   - [Amazon Web Services](Content/Cloud/Cloud.md)
@@ -304,61 +302,6 @@ Ahoy mateys! If ye be lookin' to set sail on the Linux sea, here be some things 
 **Work with users and groups:** In Linux, users and groups be used to control access to resources on the system. Ye'll need to learn how to create and manage users and groups, and how to set up user accounts and permissions.
 
 **Customize yer system:** Linux be highly customizable, and ye can tweak yer system to suit yer needs and preferences. Ye'll need to learn how to customize yer system's settings, install and configure desktop environments, and more.
-
-### **Vim (Vi IMproved)**
-
-Vim be a text editor that be widely used by developers and systems administrators for editing files in the command line. It be a powerful tool that be highly customizable, and it be known for its steep learning curve. Here be some things ye should know to use Vim effectively:
-
-Modes: Vim be operated in different modes, including normal mode, insert mode, and command mode. Ye'll need to understand these modes and how to switch between them in order to effectively use Vim.
-
-Movement: In normal mode, ye can use movement commands to navigate around yer document. These include commands like `h`, `j`, `k`, `l` to move left, down, up, and right, respectively.
-
-Editing: In insert mode, ye can enter text and make changes to yer document. To enter insert mode, ye can use the `i` command.
-
-Saving and quitting: To save yer changes and quit Vim, ye can use the :wq command in command mode. To save yer changes and continue editing, ye can use the :w command. To quit without saving, ye can use the `:q!` command.
-
-Customization: Vim be highly customizable, and ye can configure it to suit yer needs and preferences. Ye can customize Vim by editing the .vimrc configuration file or by using Lua to create custom plugins.
-
-#### **.vimrc**
-
-Ahoy matey! In the world of Linux, the `.vimrc` file is a configuration file that contains commands that are executed when a user starts Vim. Just like how a pirate might use a treasure map to find their way to their treasure, the `.vimrc` file can be used to customize a user's Vim environment and make it easier for them to perform common tasks.
-
-An example `.vimrc` file might look like this:
-
-```vim
-" Set the color scheme to material
-colorscheme material
-" Enable syntax highlighting
-syntax on
-" Enable line numbers
-set number
-" Enable relative line numbers
-set relativenumber
-" Enable auto-indenting
-set autoindent
-" Enable smart indenting
-set smartindent
-" Enable line wrapping
-set wrap
-" Enable spell checking
-set spell
-" Enable spell checking for comments
-set spelllang=en_us
-```
-
-#### **NeoVim**
-
-[NeoVim Website](https://neovim.io) | [Awesome NeoVim](https://github.com/rockerBOO/awesome-neovim)
-
-Arr matey, ye be askin' about NeoVim, a fork of Vim that be makin' it easier for ye to write, debug, and collaborate on code.
-
-NeoVim be a fork of Vim that be designed to be more extensible and customizable than Vim. It be also designed to be more performant and reliable than Vim, and it be compatible with Vim plugins and scripts.
-
-To work with NeoVim, ye simply need to open up the editor and start writin' or editin' your code. Ye can also use the integrated terminal to run command-line tools, such as compilers or test runners.
-
-NeoVim be available on a variety of platforms, including Windows, Mac, and Linux, so ye can use it on the operating system of your choosin'.
-
-So there ye have it, a brief overview of NeoVim and how ye might be usin' it as a developer. I hope this be helpin' ye to understand this powerful code editor and all that it be capable of. Ah
 
 ### **VS Code**
 
