@@ -3,9 +3,9 @@ title: Linux for Pirates!
 layout: home
 ---
 
-![Linux for Pirates!](linux-for-pirates.png)
+![Linux for Pirates!](images/linux-for-pirates.jpg)
 
-By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
+Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -107,7 +107,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
 - [Jokes](#jokes)
   - [Check Yer Deployments](#check-yer-deployments)
-- [Testemonials](#testemonials)
+- [**Testemonials**](#testemonials)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
