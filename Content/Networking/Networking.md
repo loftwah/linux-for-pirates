@@ -45,6 +45,7 @@
     - [OCSP Must-Staple](#ocsp-must-staple)
 - [TCP/IP](#tcpip)
 - [UDP](#udp)
+- [OSI model](#osi-model)
 
 ## **DNS (Domain Name System)**
 
@@ -933,3 +934,25 @@ Together, TCP and IP be the backbone of the internet, and they be what allow dev
 UDP stands for User Datagram Protocol. It is a communication protocol that is used to transmit data over networks, such as the internet. It is a connectionless protocol, which means that it does not establish a dedicated connection between the sender and receiver before transmitting data. This makes UDP faster and more efficient than protocols that require a connection to be established, but it also means that data transmitted using UDP is less reliable, as there is no guarantee that the data will be received by the intended recipient.
 
 You might imagine UDP as a way for pirates to send messages to each other without having to go through the trouble of setting up a formal communication channel. They could simply send a message using UDP and hope that it gets to the intended recipient, much like a pirate sending a message in a bottle and hoping it reaches its destination.
+
+## **OSI model**
+
+The OSI model be a framework fer understanding and designing how data be transmitted over yer network. It be made up of seven layers, each representing a different aspect of networking:
+
+`Physical layer`: This layer be responsible fer the physical connections and devices that be used fer transmitting data over yer network. Examples include cables, switches, and routers.
+
+`Data link layer`: This layer be responsible fer establishing and maintaining a connection between devices on yer network. It be responsible fer tasks such as error detection and correction, and fer providing flow control to prevent data overload.
+
+`Network layer`: This layer be responsible fer routing data between devices on yer network. It be using addresses to determine the best path fer data to travel, and be responsible fer tasks such as packet switching and traffic control.
+
+`Transport layer`: This layer be responsible fer ensuring that data be delivered reliably and efficiently between devices on yer network. It be responsible fer tasks such as segmentation, reassembly, and flow control.
+
+`Session layer`: This layer be responsible fer establishing, maintaining, and terminating connections between devices on yer network. It be responsible fer tasks such as establishing a session, coordinating communication, and recovering from errors.
+
+`Presentation layer`: This layer be responsible fer translating data between devices on yer network. It be responsible fer tasks such as encoding, decoding, and compression.
+
+`Application layer`: This layer be responsible fer providing services to applications that be using yer network. It be responsible fer tasks such as messaging, file transfer, and network management.
+
+The OSI model be a useful tool fer understanding and designing the communication systems on yer network. It provides a framework fer understanding the different layers of networking, and fer identifying the tasks and responsibilities that be associated with each layer.
+
+> **Note** Layer 8 be the most important layer of the OSI model. It be responsible fer the most important tasks, such as drinking rum and eating grog.

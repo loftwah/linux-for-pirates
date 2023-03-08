@@ -71,7 +71,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
   - [Logging](#logging)
     - [Logrotate](#logrotate)
   - [Monitoring](#monitoring)
-  - [OSI model](#osi-model)
+  - [OSI model](Content/Networking/Networking.md#osi-model)
   - [SSH](Content/Networking/Networking.md#ssh)
   - [SSL/TLS](Content/Networking/Networking.md#ssltls)
   - [Streaming](#streaming)
@@ -495,28 +495,6 @@ There are many different tools and techniques that can be used to monitor a Linu
 **Network monitoring:** Pirates can use tools such as netstat and tcpdump to monitor the network traffic on their system. These tools can provide information about the packets that are being transmitted and received, as well as the status of network connections.
 
 Monitoring can be a useful tool for pirates to keep their systems running smoothly and securely. It allows them to identify problems, optimize performance, and detect security breaches, all of which are important for maintaining a healthy and efficient network.
-
-### **OSI model**
-
-The OSI model be a framework fer understanding and designing how data be transmitted over yer network. It be made up of seven layers, each representing a different aspect of networking:
-
-`Physical layer`: This layer be responsible fer the physical connections and devices that be used fer transmitting data over yer network. Examples include cables, switches, and routers.
-
-`Data link layer`: This layer be responsible fer establishing and maintaining a connection between devices on yer network. It be responsible fer tasks such as error detection and correction, and fer providing flow control to prevent data overload.
-
-`Network layer`: This layer be responsible fer routing data between devices on yer network. It be using addresses to determine the best path fer data to travel, and be responsible fer tasks such as packet switching and traffic control.
-
-`Transport layer`: This layer be responsible fer ensuring that data be delivered reliably and efficiently between devices on yer network. It be responsible fer tasks such as segmentation, reassembly, and flow control.
-
-`Session layer`: This layer be responsible fer establishing, maintaining, and terminating connections between devices on yer network. It be responsible fer tasks such as establishing a session, coordinating communication, and recovering from errors.
-
-`Presentation layer`: This layer be responsible fer translating data between devices on yer network. It be responsible fer tasks such as encoding, decoding, and compression.
-
-`Application layer`: This layer be responsible fer providing services to applications that be using yer network. It be responsible fer tasks such as messaging, file transfer, and network management.
-
-The OSI model be a useful tool fer understanding and designing the communication systems on yer network. It provides a framework fer understanding the different layers of networking, and fer identifying the tasks and responsibilities that be associated with each layer.
-
-> **Note** Layer 8 be the most important layer of the OSI model. It be responsible fer the most important tasks, such as drinking rum and eating grog.
 
 ### **Streaming**
 
