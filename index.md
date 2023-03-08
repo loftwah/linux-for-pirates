@@ -78,7 +78,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
   - [Subnet](Content/Networking/Networking.md#subnet)
   - [TCP/IP](Content/Networking/Networking.md#tcpip)
   - [UDP](Content/Networking/Networking.md#udp)
-  - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+  - [YAML (Yet Another Markup Language)](Content/DevOps/DevOps.md#yaml-yet-another-markup-language)
   - [Zsh](Content/Linux/Linux.md#zsh)
 - [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
   - [Common problems](#common-problems)
@@ -527,18 +527,6 @@ In software engineering, streaming refers to the process of continuously transmi
 Streaming is commonly used for media, such as music and video, but it can also be used for other types of data, such as financial data or social media updates. It allows users to access and process large amounts of data in real-time, rather than having to wait for it to be transferred and stored locally.
 
 Streaming can be implemented using a variety of technologies and protocols, such as HTTP streaming, WebSockets, and WebRTC. It is an important part of modern software engineering, and is a valuable tool for pirates as they navigate the choppy waters of the internet. Arrr!
-
-### **YAML (Yet Another Markup Language)**
-
-YAML (Yet Another Markup Language) is a secret code that pirates use to store and share information about their treasure maps and their plans for future raids.
-
-In software engineering and devops, YAML is a human-readable data serialization language that is often used for configuration files and in applications that need to process data from multiple sources. It is designed to be easy for humans to read and write, and is often used as an alternative to XML or JSON.
-
-To use YAML, you need to understand its syntax, which is based on indentation and key-value pairs. A key-value pair consists of a unique key, followed by a colon, followed by the value. Indentation is used to indicate the hierarchy of the data, with each level of indentation representing a new level in the hierarchy.
-
-YAML is a popular choice for configuration files because it is easy to read and write, and it is flexible enough to support a wide variety of data structures. It is also often used in devops tools, such as Ansible and Docker, to define infrastructure as code.
-
-To use YAML effectively as a pirate, you should familiarize yourself with its syntax and conventions, and understand how it is used in the tools and technologies you are working with. Arrr!
 
 ## **Chapter Three: Your first day as a pirate**
 
