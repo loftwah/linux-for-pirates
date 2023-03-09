@@ -1,0 +1,32 @@
+name: Other issue
+description: Use this for any other issues. Please do NOT create blank issues
+title: "[OTHER]: "
+labels: ["awaiting triage"] # A new label will be needed for this
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ahoy matey!
+
+        Before ye create a new issue, please make sure to search through the
+        existing issues to see if your problem has already been addressed.
+  - type: textarea
+    id: description
+    attributes:
+      label: What would ye like to share?
+      description: Provide a clear and concise explanation of your issue.
+    validations:
+      required: true
+  - type: textarea
+    id: extrainfo
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this issue?
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for bringing this issue to our attention. We'll do our best to address it as soon as we can.
+        
+        Yarrrr! 🏴‍☠️
