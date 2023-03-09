@@ -28,7 +28,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [Backend](Content/Backend/Backend.md)
     - [Cloud Computing](Content/Cloud/Cloud.md)
     - [Cybersecurity](Content/Cybersecurity/Cybersecurity.md)
-    - [Data analysis and interpretation](#data-analysis-and-interpretation)
+    - [Data analysis and interpretation](Content/Data%20Science/Data%20Science.md#data-analysis-and-interpretation)
     - [Database](Content/Database/Database.md)
     - [Design](Content/Design/Design.md)
     - [Developer Advocacy and Developer Relations](Content/DevRel/DevRel.md)
@@ -229,20 +229,6 @@ Aye, matey! If ye be interested in pursuin' a career in the field o' Linux, ther
 - [freeCodeCamp](https://www.freecodecamp.org/) be a non-profit organisation that be dedicated to helpin' people learn to code for free. It be run by a community o' volunteers, and it be supported by donations from the community.
 
 - [The Odin Project](https://www.theodinproject.com/) be a free online curriculum that be designed to teach web development. It be run by a community o' volunteers, and it be supported by donations from the community.
-
-#### **Data analysis and interpretation**
-
-Ahoy, me hearties! In the realm of data analysis and interpretation, there be three key roles that be playin' important roles in understandin' and utilizin' data: data science, artificial intelligence, and machine learnin'.
-
-The data scientist be like the ship's cartographer, studyin' and interpretin' the data to chart a course for business decisions and solvin' problems.
-
-The artificial intelligence (AI) engineer be like the ship's navigator, designin' and implementin' AI systems to guide the ship through the treacherous data seas.
-
-The machine learnin' engineer be like the ship's quartermaster, designin' and implementin' machine learnin' systems to help the ship make sense of the data and find valuable treasure.
-
-All three roles be playin' important roles in helpin' the ship navigate the data seas and find valuable insights and information. They be workin' closely with other scallywags such as business and IT teams to ensure that the data they be analyzin' is relevant and useful.
-
-So, hoist the anchor and set sail on the data seas with a crew of data analysis scallywags by yer side!
 
 #### **Operations**
 
