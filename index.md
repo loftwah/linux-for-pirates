@@ -38,7 +38,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [Marketing](Content/Marketing/Marketing.md)
     - [Network Engineering](Content/Networking/Network_Engineering.md)
     - [Operations](#operations)
-    - [Sales](#sales)
+    - [Sales](Content/Sales/Sales.md#sales)
     - [Software development and delivery](#software-development-and-delivery)
 - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
   - [DevOps](Content/DevOps/DevOps.md)
@@ -247,18 +247,6 @@ So, hoist the anchor and set sail on the data seas with a crew of data analysis 
 #### **Operations**
 
 Ahoy Mateys! Ye be lookin' fer the scallywags in charge of keepin' the ship runnin' smoothly? Look no further, those be the operations professionals! They be the ones responsible for mangin' the day-to-day operations of the company, like a captain navigatin' the seas. Ye can find them optimizin' the business processes, like the supply chain and customer service, makin' sure everythin' runs like a well-oiled machine. They be workin' with other teams, like finance and marketing, to ensure the company be reachin' its treasure trove of goals. And ye best believe they be managing the resources of the company like a true pirate manages their loot. Without them, the ship would be sinkin' faster than a barrel of rum in a storm. So raise the anchor and set sail with the operations team!
-
-#### **Sales**
-
-Aye, sales professionals be like the captain of the ship, steerin' the course towards treasure and riches! They be responsible for takin' the goods and services of the company and sellin' 'em to the scallywags out there in the market. They be workin' on tasks such as:
-
-**Promotin' the loot:** Sales professionals be settin' sail to find potential customers, buildin' relationships with 'em, and negotiatin' deals to make sure the treasure ends up in their hands.
-
-**Ensurin' efficiency and effectiveness:** Sales professionals be makin' sure the sales process be runnin' smoothly, and if not, they be fixin' it up like patchin' a leaky hull.
-
-**Collaboratin' with other teams:** Sales professionals be workin' closely with other teams such as finance, marketing, and operations to make sure the ship be stayin' afloat and reachin' its destination.
-
-Yarr! Sales professionals be playin' a crucial role in makin' sure the treasure be flowin' in and the company be reachin' its goals and objectives.
 
 #### **Software development and delivery**
 
