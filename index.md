@@ -39,7 +39,6 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [Network Engineering](Content/Networking/Network_Engineering.md)
     - [Operations](Content/Operations/Operations.md#operations)
     - [Sales](Content/Sales/Sales.md#sales)
-    - [Software development and delivery](#software-development-and-delivery)
 - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
   - [DevOps](Content/DevOps/DevOps.md)
   - [How DevOps Works?](#how-devops-works)
@@ -229,20 +228,6 @@ Aye, matey! If ye be interested in pursuin' a career in the field o' Linux, ther
 - [freeCodeCamp](https://www.freecodecamp.org/) be a non-profit organisation that be dedicated to helpin' people learn to code for free. It be run by a community o' volunteers, and it be supported by donations from the community.
 
 - [The Odin Project](https://www.theodinproject.com/) be a free online curriculum that be designed to teach web development. It be run by a community o' volunteers, and it be supported by donations from the community.
-
-#### **Software development and delivery**
-
-Aye, aye Captain! Arrrr, there be five key roles in software development and delivery that be important for improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, Platform Engineering and Site Reliability Engineering (SRE).
-
-DevOps be the practice of integrating development and operations to improve the efficiency and effectiveness of software development and delivery. To get started with DevOps, it be important to understand the principles of DevOps, choose the right tools, automate processes, collaborate with yer team, and monitor and measure performance.
-
-DevSecOps be the practice of integrating security into the software development and delivery process. DevSecOps professionals work on tasks such as integrating security into the software development and delivery process and collaborating with other teams to ensure that security is integrated into the process.
-
-GitOps be the practice of using Git as the source of truth for yer infrastructure. GitOps professionals work on tasks such as using Git as the source of truth for yer infrastructure and collaborating with other teams to ensure that Git is used as the source of truth.
-
-And finally, Site Reliability Engineering (SRE) be the practice of ensuring that systems are reliable, secure, and scalable. SRE professionals work on tasks such as monitoring system performance, identifying potential issues, and implementing improvements to ensure that systems are running smoothly and effectively.
-
-Arrrr, all these roles are crucial for making sure yer software development and delivery is smooth sailing, and yer ship stays afloat!
 
 ## **Chapter Two - The Fundamentals**
 
