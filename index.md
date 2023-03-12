@@ -37,7 +37,7 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [Management](Content/Management/Management.md)
     - [Marketing](Content/Marketing/Marketing.md)
     - [Network Engineering](Content/Networking/Network_Engineering.md)
-    - [Operations](#operations)
+    - [Operations](Content/Operations/Operations.md#operations)
     - [Sales](Content/Sales/Sales.md#sales)
     - [Software development and delivery](#software-development-and-delivery)
 - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
@@ -229,10 +229,6 @@ Aye, matey! If ye be interested in pursuin' a career in the field o' Linux, ther
 - [freeCodeCamp](https://www.freecodecamp.org/) be a non-profit organisation that be dedicated to helpin' people learn to code for free. It be run by a community o' volunteers, and it be supported by donations from the community.
 
 - [The Odin Project](https://www.theodinproject.com/) be a free online curriculum that be designed to teach web development. It be run by a community o' volunteers, and it be supported by donations from the community.
-
-#### **Operations**
-
-Ahoy Mateys! Ye be lookin' fer the scallywags in charge of keepin' the ship runnin' smoothly? Look no further, those be the operations professionals! They be the ones responsible for mangin' the day-to-day operations of the company, like a captain navigatin' the seas. Ye can find them optimizin' the business processes, like the supply chain and customer service, makin' sure everythin' runs like a well-oiled machine. They be workin' with other teams, like finance and marketing, to ensure the company be reachin' its treasure trove of goals. And ye best believe they be managing the resources of the company like a true pirate manages their loot. Without them, the ship would be sinkin' faster than a barrel of rum in a storm. So raise the anchor and set sail with the operations team!
 
 #### **Software development and delivery**
 
