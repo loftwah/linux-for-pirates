@@ -1,0 +1,53 @@
+name: Bug report
+description: Create a report to help us improve
+title: "[BUG]: "
+labels: [bug] # A new label will be needed for this.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ahoy matey!
+
+        Before ye create a new issue, please make sure to search through the
+        existing issues to see if your problem has already been addressed.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue ye are experiencing
+    validations:
+      required: true
+  - type: input
+    id: number_chapter
+    attributes:
+      label: Page number/chapter
+      description: Include the page number and chapter where the issue is located (if applicable)
+    validations:
+      required: false
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: Expected result
+      description: Describe what ye expected to happen
+    validations:
+      required: true
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: Actual result
+      description: Describe what actually happens
+    validations:
+      required: true
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Include any additional information that might be relevant to the issue
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for bringing this issue to our attention. We'll do our best to address it as soon as we can.
+        
+        Yarrrr! 🏴‍☠️
