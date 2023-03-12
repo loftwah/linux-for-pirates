@@ -11,65 +11,87 @@ Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https:/
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [**In memory of Aaron Swartz**](#in-memory-of-aaron-swartz)
-  - [**What is free software?**](#what-is-free-software)
-    - [**Free as in freedom**](#free-as-in-freedom)
-    - [**Free as in beer**](#free-as-in-beer)
-  - [**What is the Linux kernel?**](#what-is-the-linux-kernel)
-  - [**Linus Torvalds**](#linus-torvalds)
-  - [**Richard Stallman**](#richard-stallman)
-- [**Before we begin**](#before-we-begin)
-- [**About the author (This isn't on the test)**](#about-the-author-this-isnt-on-the-test)
-- [**Chapter One - Getting Started**](#chapter-one---getting-started)
-  - [**Where to go from here?**](#where-to-go-from-here)
-    - [**Data analysis and interpretation**](#data-analysis-and-interpretation)
-    - [**Operations**](#operations)
-    - [**Sales**](#sales)
-    - [**Software development and delivery**](#software-development-and-delivery)
-- [**Chapter Two - The Fundamentals**](#chapter-two---the-fundamentals)
-  - [**Vim (Vi IMproved)**](#vim-vi-improved)
-    - [**.vimrc**](#vimrc)
-    - [**NeoVim**](#neovim)
-  - [**VS Code**](#vs-code)
-  - [**Cloudflare**](#cloudflare)
-  - [**eBPF**](#ebpf)
-  - [**Homebrew**](#homebrew)
-  - [**JSON (JavaScript Object Notation)**](#json-javascript-object-notation)
-  - [**ICMP (Internet Control Message Protocol)**](#icmp-internet-control-message-protocol)
-  - [**IP Addresses**](#ip-addresses)
-    - [**What is an IP made up of?**](#what-is-an-ip-made-up-of)
-  - [**Latency**](#latency)
-  - [**Logging**](#logging)
-    - [**Logrotate**](#logrotate)
-  - [**Monitoring**](#monitoring)
-  - [**OSI model**](#osi-model)
-  - [**Streaming**](#streaming)
-  - [**YAML (Yet Another Markup Language)**](#yaml-yet-another-markup-language)
-- [**Chapter Three: Your first day as a pirate**](#chapter-three-your-first-day-as-a-pirate)
-  - [**Common problems**](#common-problems)
-  - [**Initiation**](#initiation)
-    - [**Question 1: Arrrrrgh**](#question-1-arrrrrgh)
-    - [**Question 2: The Black Pearl**](#question-2-the-black-pearl)
-    - [**Question 3: The Flying Dutchman**](#question-3-the-flying-dutchman)
-    - [**Question 4: Operation Blackbeard**](#question-4-operation-blackbeard)
-  - [**Is it YAML or YML?**](#is-it-yaml-or-yml)
-- [**Chapter Four - Desktop Environments and Window Managers**](#chapter-four---desktop-environments-and-window-managers)
-  - [**Desktop Environments**](#desktop-environments)
-    - [**GNOME**](#gnome)
-    - [**KDE**](#kde)
-    - [**Xfce**](#xfce)
-    - [**LXDE**](#lxde)
-  - [**Window Managers**](#window-managers)
-    - [**Openbox**](#openbox)
-    - [**Fluxbox**](#fluxbox)
-    - [**i3**](#i3)
-  - [**Installing a Desktop Environment**](#installing-a-desktop-environment)
-  - [**Configuring a Desktop Environment**](#configuring-a-desktop-environment)
-  - [**Installing a Window Manager**](#installing-a-window-manager)
-  - [**Configuring a Window Manager**](#configuring-a-window-manager)
-- [**Chapter 5: Ruby on Rails and the Seven Seas**](#chapter-5-ruby-on-rails-and-the-seven-seas)
-- [**A stern warning: The dangers of the high seas**](#a-stern-warning-the-dangers-of-the-high-seas)
-- [**Jokes**](#jokes)
+- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+- [What is Linux?](Content/Linux/)
+  - [Open source](Content/Open-Source/Open-Source.md)
+  - [What is free software?](#what-is-free-software)
+    - [Free as in freedom](#free-as-in-freedom)
+    - [Free as in beer](#free-as-in-beer)
+  - [What is the Linux kernel?](#what-is-the-linux-kernel)
+  - [Linus Torvalds](#linus-torvalds)
+  - [Richard Stallman](#richard-stallman)
+- [Before we begin](#before-we-begin)
+- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+- [Chapter One - Getting Started](#chapter-one---getting-started)
+  - [Operating System](Content/Operating-System/Operating-System.md)
+  - [Where to go from here?](#where-to-go-from-here)
+    - [Backend](Content/Backend/Backend.md)
+    - [Cloud Computing](Content/Cloud/Cloud.md)
+    - [Cybersecurity](Content/Cybersecurity/Cybersecurity.md)
+    - [Data analysis and interpretation](Content/Data%20Science/Data%20Science.md#data-analysis-and-interpretation)
+    - [Database](Content/Database/Database.md)
+    - [Design](Content/Design/Design.md)
+    - [Developer Advocacy and Developer Relations](Content/DevRel/DevRel.md)
+    - [Finance](Content/Finance/Finance.md)
+    - [Frontend](Content/Design/Frontend.md)
+    - [Management](Content/Management/Management.md)
+    - [Marketing](Content/Marketing/Marketing.md)
+    - [Network Engineering](Content/Networking/Network_Engineering.md)
+    - [Operations](Content/Operations/Operations.md#operations)
+    - [Sales](Content/Sales/Sales.md#sales)
+- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
+  - [DevOps](Content/DevOps/DevOps.md)
+  - [How DevOps Works?](#how-devops-works)
+  - [Handybilly](Content/Linux/Linux.md#handybilly)
+  - [Linux filesystem](Content/Linux/Linux.md)
+  - [Networking](Content/Networking/Networking.md)
+  - [Bash](Content/Linux/Linux.md#bash)
+  - [Vim (Vi IMproved)](Content/Linux/Linux.md#vim-vi-improved)
+  - [VS Code](#vs-code)
+  - [The Internet](Content/Internet/Internet.md)
+  - [Amazon Web Services](Content/Cloud/Cloud.md)
+  - [Cloudflare](#cloudflare)
+  - [CI/CD](Content/DevOps/CICD.md)
+  - [DigitalOcean](Content/Cloud/Cloud.md)
+  - [eBPF](#ebpf)
+  - [DNS (Domain Name System)](Content/Networking/Networking.md)
+  - [Docker](Content/DevOps/DevOps.md)
+  - [Git](Content/Git/Git.md)
+  - [Homebrew](#homebrew)
+  - [HTML](Content/Design/Design.md)
+  - [HTTP](Content/Networking/Networking.md)
+  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
+  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
+  - [Infrastructure as Code](Content/DevOps/DevOps.md)
+  - [IP Addresses](#ip-addresses)
+    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
+  - [JavaScript](Content/Design/Design.md)
+  - [Latency](#latency)
+  - [Logging](#logging)
+    - [Logrotate](#logrotate)
+  - [Monitoring](#monitoring)
+  - [OSI model](Content/Networking/Networking.md#osi-model)
+  - [SSH](Content/Networking/Networking.md#ssh)
+  - [SSL/TLS](Content/Networking/Networking.md#ssltls)
+  - [Streaming](#streaming)
+  - [Subnet](Content/Networking/Networking.md#subnet)
+  - [TCP/IP](Content/Networking/Networking.md#tcpip)
+  - [UDP](Content/Networking/Networking.md#udp)
+  - [YAML (Yet Another Markup Language)](Content/DevOps/DevOps.md#yaml-yet-another-markup-language)
+  - [Zsh](Content/Linux/Linux.md#zsh)
+- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
+  - [Common problems](#common-problems)
+  - [Initiation](#initiation)
+    - [Question 1: Arrrrrgh](#question-1-arrrrrgh)
+    - [Question 2: The Black Pearl](#question-2-the-black-pearl)
+    - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
+    - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
+  - [Is it YAML or YML?](#is-it-yaml-or-yml)
+- [GitHub Actions in the wild](Content/Git/Git.md#github-actions-in-the-wild)
+- [Chapter Four - Desktop Environments and Window Managers](Content/Desktop/Desktop.md#chapter-four---desktop-environments-and-window-managers)
+- [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
+- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+- [Jokes](#jokes)
   - [Check Yer Deployments](#check-yer-deployments)
 - [**Testemonials**](#testemonials)
 
@@ -207,50 +229,6 @@ Aye, matey! If ye be interested in pursuin' a career in the field o' Linux, ther
 
 - [The Odin Project](https://www.theodinproject.com/) be a free online curriculum that be designed to teach web development. It be run by a community o' volunteers, and it be supported by donations from the community.
 
-#### **Data analysis and interpretation**
-
-Ahoy, me hearties! In the realm of data analysis and interpretation, there be three key roles that be playin' important roles in understandin' and utilizin' data: data science, artificial intelligence, and machine learnin'.
-
-The data scientist be like the ship's cartographer, studyin' and interpretin' the data to chart a course for business decisions and solvin' problems.
-
-The artificial intelligence (AI) engineer be like the ship's navigator, designin' and implementin' AI systems to guide the ship through the treacherous data seas.
-
-The machine learnin' engineer be like the ship's quartermaster, designin' and implementin' machine learnin' systems to help the ship make sense of the data and find valuable treasure.
-
-All three roles be playin' important roles in helpin' the ship navigate the data seas and find valuable insights and information. They be workin' closely with other scallywags such as business and IT teams to ensure that the data they be analyzin' is relevant and useful.
-
-So, hoist the anchor and set sail on the data seas with a crew of data analysis scallywags by yer side!
-
-#### **Operations**
-
-Ahoy Mateys! Ye be lookin' fer the scallywags in charge of keepin' the ship runnin' smoothly? Look no further, those be the operations professionals! They be the ones responsible for mangin' the day-to-day operations of the company, like a captain navigatin' the seas. Ye can find them optimizin' the business processes, like the supply chain and customer service, makin' sure everythin' runs like a well-oiled machine. They be workin' with other teams, like finance and marketing, to ensure the company be reachin' its treasure trove of goals. And ye best believe they be managing the resources of the company like a true pirate manages their loot. Without them, the ship would be sinkin' faster than a barrel of rum in a storm. So raise the anchor and set sail with the operations team!
-
-#### **Sales**
-
-Aye, sales professionals be like the captain of the ship, steerin' the course towards treasure and riches! They be responsible for takin' the goods and services of the company and sellin' 'em to the scallywags out there in the market. They be workin' on tasks such as:
-
-**Promotin' the loot:** Sales professionals be settin' sail to find potential customers, buildin' relationships with 'em, and negotiatin' deals to make sure the treasure ends up in their hands.
-
-**Ensurin' efficiency and effectiveness:** Sales professionals be makin' sure the sales process be runnin' smoothly, and if not, they be fixin' it up like patchin' a leaky hull.
-
-**Collaboratin' with other teams:** Sales professionals be workin' closely with other teams such as finance, marketing, and operations to make sure the ship be stayin' afloat and reachin' its destination.
-
-Yarr! Sales professionals be playin' a crucial role in makin' sure the treasure be flowin' in and the company be reachin' its goals and objectives.
-
-#### **Software development and delivery**
-
-Aye, aye Captain! Arrrr, there be five key roles in software development and delivery that be important for improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, Platform Engineering and Site Reliability Engineering (SRE).
-
-DevOps be the practice of integrating development and operations to improve the efficiency and effectiveness of software development and delivery. To get started with DevOps, it be important to understand the principles of DevOps, choose the right tools, automate processes, collaborate with yer team, and monitor and measure performance.
-
-DevSecOps be the practice of integrating security into the software development and delivery process. DevSecOps professionals work on tasks such as integrating security into the software development and delivery process and collaborating with other teams to ensure that security is integrated into the process.
-
-GitOps be the practice of using Git as the source of truth for yer infrastructure. GitOps professionals work on tasks such as using Git as the source of truth for yer infrastructure and collaborating with other teams to ensure that Git is used as the source of truth.
-
-And finally, Site Reliability Engineering (SRE) be the practice of ensuring that systems are reliable, secure, and scalable. SRE professionals work on tasks such as monitoring system performance, identifying potential issues, and implementing improvements to ensure that systems are running smoothly and effectively.
-
-Arrrr, all these roles are crucial for making sure yer software development and delivery is smooth sailing, and yer ship stays afloat!
-
 ## **Chapter Two - The Fundamentals**
 
 ![Chapter Two - The Fundamentals](images/fundamentals.png)
@@ -266,61 +244,6 @@ Ahoy mateys! If ye be lookin' to set sail on the Linux sea, here be some things 
 **Work with users and groups:** In Linux, users and groups be used to control access to resources on the system. Ye'll need to learn how to create and manage users and groups, and how to set up user accounts and permissions.
 
 **Customize yer system:** Linux be highly customizable, and ye can tweak yer system to suit yer needs and preferences. Ye'll need to learn how to customize yer system's settings, install and configure desktop environments, and more.
-
-### **Vim (Vi IMproved)**
-
-Vim be a text editor that be widely used by developers and systems administrators for editing files in the command line. It be a powerful tool that be highly customizable, and it be known for its steep learning curve. Here be some things ye should know to use Vim effectively:
-
-Modes: Vim be operated in different modes, including normal mode, insert mode, and command mode. Ye'll need to understand these modes and how to switch between them in order to effectively use Vim.
-
-Movement: In normal mode, ye can use movement commands to navigate around yer document. These include commands like `h`, `j`, `k`, `l` to move left, down, up, and right, respectively.
-
-Editing: In insert mode, ye can enter text and make changes to yer document. To enter insert mode, ye can use the `i` command.
-
-Saving and quitting: To save yer changes and quit Vim, ye can use the :wq command in command mode. To save yer changes and continue editing, ye can use the :w command. To quit without saving, ye can use the `:q!` command.
-
-Customization: Vim be highly customizable, and ye can configure it to suit yer needs and preferences. Ye can customize Vim by editing the .vimrc configuration file or by using Lua to create custom plugins.
-
-#### **.vimrc**
-
-Ahoy matey! In the world of Linux, the `.vimrc` file is a configuration file that contains commands that are executed when a user starts Vim. Just like how a pirate might use a treasure map to find their way to their treasure, the `.vimrc` file can be used to customize a user's Vim environment and make it easier for them to perform common tasks.
-
-An example `.vimrc` file might look like this:
-
-```vim
-" Set the color scheme to material
-colorscheme material
-" Enable syntax highlighting
-syntax on
-" Enable line numbers
-set number
-" Enable relative line numbers
-set relativenumber
-" Enable auto-indenting
-set autoindent
-" Enable smart indenting
-set smartindent
-" Enable line wrapping
-set wrap
-" Enable spell checking
-set spell
-" Enable spell checking for comments
-set spelllang=en_us
-```
-
-#### **NeoVim**
-
-[NeoVim Website](https://neovim.io) | [Awesome NeoVim](https://github.com/rockerBOO/awesome-neovim)
-
-Arr matey, ye be askin' about NeoVim, a fork of Vim that be makin' it easier for ye to write, debug, and collaborate on code.
-
-NeoVim be a fork of Vim that be designed to be more extensible and customizable than Vim. It be also designed to be more performant and reliable than Vim, and it be compatible with Vim plugins and scripts.
-
-To work with NeoVim, ye simply need to open up the editor and start writin' or editin' your code. Ye can also use the integrated terminal to run command-line tools, such as compilers or test runners.
-
-NeoVim be available on a variety of platforms, including Windows, Mac, and Linux, so ye can use it on the operating system of your choosin'.
-
-So there ye have it, a brief overview of NeoVim and how ye might be usin' it as a developer. I hope this be helpin' ye to understand this powerful code editor and all that it be capable of. Ah
 
 ### **VS Code**
 
@@ -528,28 +451,6 @@ There are many different tools and techniques that can be used to monitor a Linu
 
 Monitoring can be a useful tool for pirates to keep their systems running smoothly and securely. It allows them to identify problems, optimize performance, and detect security breaches, all of which are important for maintaining a healthy and efficient network.
 
-### **OSI model**
-
-The OSI model be a framework fer understanding and designing how data be transmitted over yer network. It be made up of seven layers, each representing a different aspect of networking:
-
-`Physical layer`: This layer be responsible fer the physical connections and devices that be used fer transmitting data over yer network. Examples include cables, switches, and routers.
-
-`Data link layer`: This layer be responsible fer establishing and maintaining a connection between devices on yer network. It be responsible fer tasks such as error detection and correction, and fer providing flow control to prevent data overload.
-
-`Network layer`: This layer be responsible fer routing data between devices on yer network. It be using addresses to determine the best path fer data to travel, and be responsible fer tasks such as packet switching and traffic control.
-
-`Transport layer`: This layer be responsible fer ensuring that data be delivered reliably and efficiently between devices on yer network. It be responsible fer tasks such as segmentation, reassembly, and flow control.
-
-`Session layer`: This layer be responsible fer establishing, maintaining, and terminating connections between devices on yer network. It be responsible fer tasks such as establishing a session, coordinating communication, and recovering from errors.
-
-`Presentation layer`: This layer be responsible fer translating data between devices on yer network. It be responsible fer tasks such as encoding, decoding, and compression.
-
-`Application layer`: This layer be responsible fer providing services to applications that be using yer network. It be responsible fer tasks such as messaging, file transfer, and network management.
-
-The OSI model be a useful tool fer understanding and designing the communication systems on yer network. It provides a framework fer understanding the different layers of networking, and fer identifying the tasks and responsibilities that be associated with each layer.
-
-> **Note** Layer 8 be the most important layer of the OSI model. It be responsible fer the most important tasks, such as drinking rum and eating grog.
-
 ### **Streaming**
 
 You could think of streaming as a way for pirates to continuously receive updates and information from other ships as they sail the seas of the internet.
@@ -559,18 +460,6 @@ In software engineering, streaming refers to the process of continuously transmi
 Streaming is commonly used for media, such as music and video, but it can also be used for other types of data, such as financial data or social media updates. It allows users to access and process large amounts of data in real-time, rather than having to wait for it to be transferred and stored locally.
 
 Streaming can be implemented using a variety of technologies and protocols, such as HTTP streaming, WebSockets, and WebRTC. It is an important part of modern software engineering, and is a valuable tool for pirates as they navigate the choppy waters of the internet. Arrr!
-
-### **YAML (Yet Another Markup Language)**
-
-YAML (Yet Another Markup Language) is a secret code that pirates use to store and share information about their treasure maps and their plans for future raids.
-
-In software engineering and devops, YAML is a human-readable data serialization language that is often used for configuration files and in applications that need to process data from multiple sources. It is designed to be easy for humans to read and write, and is often used as an alternative to XML or JSON.
-
-To use YAML, you need to understand its syntax, which is based on indentation and key-value pairs. A key-value pair consists of a unique key, followed by a colon, followed by the value. Indentation is used to indicate the hierarchy of the data, with each level of indentation representing a new level in the hierarchy.
-
-YAML is a popular choice for configuration files because it is easy to read and write, and it is flexible enough to support a wide variety of data structures. It is also often used in devops tools, such as Ansible and Docker, to define infrastructure as code.
-
-To use YAML effectively as a pirate, you should familiarize yourself with its syntax and conventions, and understand how it is used in the tools and technologies you are working with. Arrr!
 
 ## **Chapter Three: Your first day as a pirate**
 
@@ -934,115 +823,6 @@ This will push the local master branch to the remote repository.
 Both `.yml` and `.yaml` are file extensions for files written in the YAML (YAML Ain't Markup Language) format. YAML is a human-readable data serialization language that is often used for configuration files, but it can also be used to store and transmit data in a variety of applications.
 
 The `.yml` and `.yaml` extensions are interchangeable, so you can use either one. Some people prefer to use `.yaml` because the .yml extension is often used for YAML configuration files in the Ruby on Rails framework, and the `.yaml` extension helps to indicate that the file is a YAML file, rather than a Ruby file. However, either extension will work for a YAML file.
-
-## **Chapter Four - Desktop Environments and Window Managers**
-
-Avast ye, mateys! In this chapter, we'll be setting sail with desktop environments and window managers in Ubuntu. These be the tools that be responsible for how ye interact with yer operating system and its applications. Let's set the course and dive in!
-
-### **Desktop Environments**
-
-A desktop environment be a collection o' software that be responsible for the overall look and feel o' yer operating system. It includes things like the desktop background, the panel at the top o' the screen, and the menus and icons that be used to launch applications.
-
-Ubuntu comes with several desktop environments to choose from, including GNOME, KDE, Xfce, and LXDE. Each desktop environment be unique, with its own style and features. Let's take a closer look at each one:
-
-#### **GNOME**
-
-[Awesome GNOME](https://github.com/Kazhnuz/awesome-gnome)
-
-GNOME be the default desktop environment for Ubuntu. It be a user-friendly and modern desktop environment that be designed to be easy to use and customize. It be also designed to be highly accessible, with features like a high contrast theme and text-to-speech support.
-
-#### **KDE**
-
-[Awesome KDE](https://github.com/francoism90/awesome-kde)
-
-KDE be a desktop environment that be known for its high level o' customization and eye-catching visual effects. It be also highly configurable, with a wide range o' settings and options for tweaking the look and feel o' the desktop.
-
-#### **Xfce**
-
-[Xfce](https://www.xfce.org)
-
-Xfce be a lightweight and fast desktop environment that be designed to be easy on resources. It be a good choice for pirates who be runnin' older or low-powered computers, or for those who be lookin' for a more minimalistic desktop experience.
-
-#### **LXDE**
-
-[LXDE](https://lxde.org)
-
-LXDE be another lightweight and fast desktop environment, similar to Xfce. It be known for its low resource usage and simple, clean interface.
-
-### **Window Managers**
-
-A window manager be a software program that be responsible for the layout and appearance o' the windows on yer desktop. It be responsible for things like how windows be resized, moved, and minimized, as well as how the desktop be organized and navigated.
-
-Ubuntu comes with several window managers to choose from, including Openbox, Fluxbox, and i3. Let's take a closer look at each one:
-
-#### **Openbox**
-
-[Openbox](https://openbox.org)
-
-Openbox be a lightweight and highly configurable window manager that be designed to be fast and efficient. It be a good choice for pirates who be lookin' for a minimalistic and customizable desktop experience.
-
-#### **Fluxbox**
-
-[Fluxbox](http://fluxbox.org)
-
-Fluxbox be a fast and lightweight window manager that be similar to Openbox. It be known for its minimalistic interface and high level o' customization.
-
-#### **i3**
-
-[i3](https://i3wm.org)
-
-i3 be a tiling window manager that be designed to be fast and efficient. It be a good choice for pirates who be lookin' for a more organized and efficient desktop experience, as it allows ye to split yer screen into multiple "tiles" and easily switch between different applications.
-
-### **Installing a Desktop Environment**
-
-To install a desktop environment in Ubuntu, follow these steps:
-
-**1.** Open a terminal window.
-
-**2.** Update yer package repository with the command `sudo apt update`.
-
-**3.** Install the desired desktop environment with the command `sudo apt install [desktop environment] -y`, where `[desktop environment]` be the name o' the desired desktop environment. For example, to install GNOME, ye would use the command `sudo apt install gnome-desktop-environment`.
-
-**4.** Restart yer computer.
-
-**5.** During the boot process, ye will be presented with a login screen. Click the gear icon in the top right corner and select yer desired desktop environment from the dropdown menu.
-
-**6.** Log in with yer username and password.
-
-### **Configuring a Desktop Environment**
-
-Once ye have installed a desktop environment, ye can customize and configure it to suit yer needs. Here be a few things ye can do:
-
-**Change the desktop background:** Right-click on the desktop and select "Change Desktop Background" from the menu.
-
-**Add and remove icons from the desktop:** Right-click on the desktop and select "Add to Desktop" or "Remove from Desktop" from the menu.
-
-**Add and remove applications from the panel:** Right-click on the panel and select "Add to Panel" or "Remove from Panel" from the menu.
-
-**Customize the panel:** Right-click on the panel and select "Properties" from the menu to access the panel settings.
-
-### **Installing a Window Manager**
-
-To install a window manager in Ubuntu, follow these steps:
-
-**1.** Open a terminal window.
-
-**2.** Update yer package repository with the command `sudo apt update`.
-Install the desired window manager with the command `sudo apt install [window manager] -y`, where `[window manager]` be the name o' the desired window manager. For example, to install Openbox, ye would use the command `sudo apt install openbox -y`.
-
-**3.** Restart yer computer.
-
-**4.** During the boot process, ye will be presented with a login screen. Click the gear icon in the top right corner and select yer desired window manager from the dropdown menu.
-
-**5.** Log in with yer username and password.
-
-### **Configuring a Window Manager**
-
-**Customize the window behavior:** Most window managers allow ye to customize things like the way windows are resized, moved, and minimized. This can typically be done through a configuration file, which can be accessed through a terminal window or a text editor.
-
-**Customize the desktop layout:** Some window managers, like i3, allow ye to customize the way yer desktop is laid out, including the arrangement and size of windows. This can typically be done through a configuration file, which can be accessed through a terminal window or a text editor.
-
-In this chapter, we set sail with desktop environments and window managers in Ubuntu. We learned about the different options available, and how to install and configure them to suit yer needs. Whether ye be a greenhorn or an experienced swashbuckler, there be a desktop environment or window manager out there for ye. Set yer course and start explorin'!
 
 ## **Chapter 5: Ruby on Rails and the Seven Seas**
 
