@@ -14,9 +14,6 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
 - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
 - [What is Linux?](Content/Linux/)
   - [Open source](Content/Open-Source/Open-Source.md)
-  - [What is free software?](#what-is-free-software)
-    - [Free as in freedom](#free-as-in-freedom)
-    - [Free as in beer](#free-as-in-beer)
   - [What is the Linux kernel?](#what-is-the-linux-kernel)
   - [Linus Torvalds](#linus-torvalds)
   - [Richard Stallman](#richard-stallman)
@@ -114,20 +111,6 @@ Aaron was born in 1986, and became interested in computers and the internet at a
 Aaron was also a strong advocate for open access, which is the movement to make knowledge and information freely available to all, rather than being locked behind paywalls and controlled by a few powerful corporations or institutions. He believed that access to knowledge and information was a fundamental right, and that it should be freely available to everyone.
 
 Aaron's work had a major impact on the development of the internet and the open access movement, and he is remembered as a pioneer and a hero by many in the tech community. Tragically, Aaron took his own life in 2013, at the age of 26. His legacy lives on through the work of those who continue to fight for open access and the free flow of information. Arrr!
-
-### **What is free software?**
-
-Free software is software that is freely available to anyone who wants to use it, modify it, or distribute it. It is a model for software development that encourages collaboration and the sharing of ideas and code.
-
-Free software is often developed using a model called "free software development", which is a process that encourages collaboration and the sharing of ideas and code. In this model, the source code for the software is made available to the community, and anyone can contribute to the project by writing code, fixing bugs, or improving the software in some way.
-
-#### **Free as in freedom**
-
-Free software is often referred to as "free as in freedom", which is a reference to the freedom that is granted to users of free software. Free software is free to use, modify, and distribute, and users are free to use it for any purpose, including commercial purposes.
-
-#### **Free as in beer**
-
-Free software is often referred to as "free as in beer", which is a reference to the fact that users are not required to pay for a license to use free software. Free software is free to use, modify, and distribute, and users are free to use it for any purpose, including commercial purposes.
 
 ### **What is the Linux kernel?**
 
