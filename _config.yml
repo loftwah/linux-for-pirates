@@ -1,9 +1,0 @@
-title: Linux For Pirates!
-description: A book I'm writing about Linux
-# theme: just-the-docs
-remote_theme: pmarsceill/just-the-docs
-url: https://loftwah.github.io/linux-for-pirates
-
-aux_links:
-  Loftwah LinkFree: https://linkfree.eddiehub.io/loftwah
-  Download PDF: https://github.com/loftwah/linux-for-pirates/raw/main/linux-for-pirates.pdf
