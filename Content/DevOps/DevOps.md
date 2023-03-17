@@ -28,6 +28,9 @@
     - [Terraform](#terraform)
         - [Install Terraform](#install-terraform)
         - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
+    - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+        - [Is it YAML or YML?](#is-it-yaml-or-yml)
+
 
 ## **What is DevOps?**
 
@@ -358,3 +361,21 @@ Options:
                                   details                              [boolean]
   -h, --help                      Show help                            [boolean]
 ```
+
+### **YAML (Yet Another Markup Language)**
+
+YAML (Yet Another Markup Language) is a secret code that pirates use to store and share information about their treasure maps and their plans for future raids.
+
+In software engineering and devops, YAML is a human-readable data serialization language that is often used for configuration files and in applications that need to process data from multiple sources. It is designed to be easy for humans to read and write, and is often used as an alternative to XML or JSON.
+
+To use YAML, you need to understand its syntax, which is based on indentation and key-value pairs. A key-value pair consists of a unique key, followed by a colon, followed by the value. Indentation is used to indicate the hierarchy of the data, with each level of indentation representing a new level in the hierarchy.
+
+YAML is a popular choice for configuration files because it is easy to read and write, and it is flexible enough to support a wide variety of data structures. It is also often used in devops tools, such as Ansible and Docker, to define infrastructure as code.
+
+To use YAML effectively as a pirate, you should familiarize yourself with its syntax and conventions, and understand how it is used in the tools and technologies you are working with. Arrr!
+
+#### **Is it YAML or YML?**
+
+Both `.yml` and `.yaml` are file extensions for files written in the YAML (YAML Ain't Markup Language) format. YAML is a human-readable data serialization language that is often used for configuration files, but it can also be used to store and transmit data in a variety of applications.
+
+The `.yml` and `.yaml` extensions are interchangeable, so you can use either one. Some people prefer to use `.yaml` because the .yml extension is often used for YAML configuration files in the Ruby on Rails framework, and the `.yaml` extension helps to indicate that the file is a YAML file, rather than a Ruby file. However, either extension will work for a YAML file.
