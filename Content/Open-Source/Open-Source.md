@@ -1,10 +1,28 @@
+ - [What is free software?](Content/Open-Source/Open-Source.md#what-is-free-software)
+    - [Free as in freedom](Content/Open-Source/Open-Source.md#free-as-in-freedom)
+    - [Free as in beer](Content/Open-Source/Open-Source.md#free-as-in-beer)
 - [Open Source](#open-source)
     - [What is open source software?](#what-is-open-source-software)
         - [What are open source licenses?](#what-are-open-source-licenses)
         - [What is the GNU General Public License (GPL)?](#what-is-the-gnu-general-public-license-gpl)
         - [What is the MIT License?](#what-is-the-mit-license)
 
-# Open Source
+
+## **What is free software?**
+
+Free software is software that is freely available to anyone who wants to use it, modify it, or distribute it. It is a model for software development that encourages collaboration and the sharing of ideas and code.
+
+Free software is often developed using a model called "free software development", which is a process that encourages collaboration and the sharing of ideas and code. In this model, the source code for the software is made available to the community, and anyone can contribute to the project by writing code, fixing bugs, or improving the software in some way.
+
+### **Free as in freedom**
+
+Free software is often referred to as "free as in freedom", which is a reference to the freedom that is granted to users of free software. Free software is free to use, modify, and distribute, and users are free to use it for any purpose, including commercial purposes.
+
+### **Free as in beer**
+
+Free software is often referred to as "free as in beer", which is a reference to the fact that users are not required to pay for a license to use free software. Free software is free to use, modify, and distribute, and users are free to use it for any purpose, including commercial purposes.
+
+## **Open Source**
 
 ## **What is open source software?**
 
