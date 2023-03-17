@@ -83,7 +83,6 @@ By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.
     - [Question 2: The Black Pearl](#question-2-the-black-pearl)
     - [Question 3: The Flying Dutchman](#question-3-the-flying-dutchman)
     - [Question 4: Operation Blackbeard](#question-4-operation-blackbeard)
-  - [Is it YAML or YML?](#is-it-yaml-or-yml)
 - [GitHub Actions in the wild](Content/Git/Git.md#github-actions-in-the-wild)
 - [Chapter Four - Desktop Environments and Window Managers](Content/Desktop/Desktop.md#chapter-four---desktop-environments-and-window-managers)
 - [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
@@ -800,12 +799,6 @@ git push -u origin master
 ```
 
 This will push the local master branch to the remote repository.
-
-### **Is it YAML or YML?**
-
-Both `.yml` and `.yaml` are file extensions for files written in the YAML (YAML Ain't Markup Language) format. YAML is a human-readable data serialization language that is often used for configuration files, but it can also be used to store and transmit data in a variety of applications.
-
-The `.yml` and `.yaml` extensions are interchangeable, so you can use either one. Some people prefer to use `.yaml` because the .yml extension is often used for YAML configuration files in the Ruby on Rails framework, and the `.yaml` extension helps to indicate that the file is a YAML file, rather than a Ruby file. However, either extension will work for a YAML file.
 
 ## **Chapter 5: Ruby on Rails and the Seven Seas**
 
