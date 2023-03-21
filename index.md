@@ -14,9 +14,6 @@ Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https:/
 - [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
 - [What is Linux?](Content/Linux/)
   - [Open source](Content/Open-Source/Open-Source.md)
-  - [What is free software?](#what-is-free-software)
-    - [Free as in freedom](#free-as-in-freedom)
-    - [Free as in beer](#free-as-in-beer)
   - [What is the Linux kernel?](#what-is-the-linux-kernel)
   - [Linus Torvalds](#linus-torvalds)
   - [Richard Stallman](#richard-stallman)
@@ -39,7 +36,6 @@ Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https:/
     - [Network Engineering](Content/Networking/Network_Engineering.md)
     - [Operations](Content/Operations/Operations.md#operations)
     - [Sales](Content/Sales/Sales.md#sales)
-    - [Software development and delivery](#software-development-and-delivery)
 - [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
   - [DevOps](Content/DevOps/DevOps.md)
   - [How DevOps Works?](#how-devops-works)
@@ -115,20 +111,6 @@ Aaron was born in 1986, and became interested in computers and the internet at a
 Aaron was also a strong advocate for open access, which is the movement to make knowledge and information freely available to all, rather than being locked behind paywalls and controlled by a few powerful corporations or institutions. He believed that access to knowledge and information was a fundamental right, and that it should be freely available to everyone.
 
 Aaron's work had a major impact on the development of the internet and the open access movement, and he is remembered as a pioneer and a hero by many in the tech community. Tragically, Aaron took his own life in 2013, at the age of 26. His legacy lives on through the work of those who continue to fight for open access and the free flow of information. Arrr!
-
-### **What is free software?**
-
-Free software is software that is freely available to anyone who wants to use it, modify it, or distribute it. It is a model for software development that encourages collaboration and the sharing of ideas and code.
-
-Free software is often developed using a model called "free software development", which is a process that encourages collaboration and the sharing of ideas and code. In this model, the source code for the software is made available to the community, and anyone can contribute to the project by writing code, fixing bugs, or improving the software in some way.
-
-#### **Free as in freedom**
-
-Free software is often referred to as "free as in freedom", which is a reference to the freedom that is granted to users of free software. Free software is free to use, modify, and distribute, and users are free to use it for any purpose, including commercial purposes.
-
-#### **Free as in beer**
-
-Free software is often referred to as "free as in beer", which is a reference to the fact that users are not required to pay for a license to use free software. Free software is free to use, modify, and distribute, and users are free to use it for any purpose, including commercial purposes.
 
 ### **What is the Linux kernel?**
 
@@ -229,20 +211,6 @@ Aye, matey! If ye be interested in pursuin' a career in the field o' Linux, ther
 - [freeCodeCamp](https://www.freecodecamp.org/) be a non-profit organisation that be dedicated to helpin' people learn to code for free. It be run by a community o' volunteers, and it be supported by donations from the community.
 
 - [The Odin Project](https://www.theodinproject.com/) be a free online curriculum that be designed to teach web development. It be run by a community o' volunteers, and it be supported by donations from the community.
-
-#### **Software development and delivery**
-
-Aye, aye Captain! Arrrr, there be five key roles in software development and delivery that be important for improving efficiency and effectiveness: DevOps, DevSecOps, GitOps, Platform Engineering and Site Reliability Engineering (SRE).
-
-DevOps be the practice of integrating development and operations to improve the efficiency and effectiveness of software development and delivery. To get started with DevOps, it be important to understand the principles of DevOps, choose the right tools, automate processes, collaborate with yer team, and monitor and measure performance.
-
-DevSecOps be the practice of integrating security into the software development and delivery process. DevSecOps professionals work on tasks such as integrating security into the software development and delivery process and collaborating with other teams to ensure that security is integrated into the process.
-
-GitOps be the practice of using Git as the source of truth for yer infrastructure. GitOps professionals work on tasks such as using Git as the source of truth for yer infrastructure and collaborating with other teams to ensure that Git is used as the source of truth.
-
-And finally, Site Reliability Engineering (SRE) be the practice of ensuring that systems are reliable, secure, and scalable. SRE professionals work on tasks such as monitoring system performance, identifying potential issues, and implementing improvements to ensure that systems are running smoothly and effectively.
-
-Arrrr, all these roles are crucial for making sure yer software development and delivery is smooth sailing, and yer ship stays afloat!
 
 ## **Chapter Two - The Fundamentals**
 
