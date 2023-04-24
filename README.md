@@ -18,6 +18,7 @@ Welcome to the Linux for Pirates project! This repository is the home of a compr
 [JOIN OUR DAILY.DEV SQUAD!](https://app.daily.dev/squads/linuxforpirates/xdPR1FF6VNgNmoG6RSM2YExuqODCcNYfr2tyLnAUQ3c)
 
 ## Contributing
+
 We welcome contributions from individuals of all backgrounds and experience levels. Contributions can include writing new content, editing existing content, and providing technical reviews.
 
 To contribute to the Linux for Pirates guide, please follow these steps:
@@ -34,12 +35,13 @@ To contribute to the Linux for Pirates guide, please follow these steps:
 
 ## Style Guide
 
-Please follow the [style guide](https://chat.openai.com/chat#style-guide) to maintain consistency and clarity in all content for the Linux for Pirates project. It covers language, grammar and punctuation, tone and voice, formatting, and images and media.
+Please follow the [style guide](https://github.com/loftwah/linux-for-pirates/blob/main/STYLE_GUIDE.md) to maintain consistency and clarity in all content for the Linux for Pirates project. It covers language, grammar and punctuation, tone and voice, formatting, and images and media.
 ## Code of Conduct
 
-We have a [Code of Conduct](https://chat.openai.com/chat#code-of-conduct) in place to ensure a positive and inclusive contribution experience for everyone. Please make sure to review and follow the code of conduct.
+We have a [Code of Conduct](https://github.com/loftwah/linux-for-pirates/blob/main/CODE_OF_CONDUCT.md) in place to ensure a positive and inclusive contribution experience for everyone. Please make sure to review and follow the code of conduct.
 
 We look forward to your contributions to the Linux for Pirates project!
 
 ## Acknowledgements
+
 Thank you [EddieHub](https://github.com/EddieHubCommunity) for being one of our biggest supporters in our sea voyage! 
