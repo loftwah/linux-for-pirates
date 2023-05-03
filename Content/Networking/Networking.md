@@ -4,6 +4,8 @@
     - [Examples of DNS Records](#examples-of-dns-records)
     - [DNS Servers](#dns-servers)
 - [Networking](#networking)
+    - [IP Addresses](#ip-addresses)
+    - [What is an IP made up of?](#what-is-an-ip-made-up-of)
     - [ip](#ip)
     - [Netcat](#netcat)
     - [nmap](#nmap)
@@ -229,6 +231,32 @@ Yarr!
   Yarr!
 
 `route`: This command be used to view and modify the routing table on yer system. Ye can use it to add, delete, or modify routes on yer system.
+
+#### **IP Addresses**
+
+An IP address (Internet Protocol address) can be thought of as a unique identifier that is assigned to each device that is connected to the internet. It is a numerical label that is used to identify a specific device, and it is similar to a physical address or a phone number.
+
+Imagine that a group of pirates are all connected to the same network, and they want to communicate with each other over the internet. In order to send messages to a specific pirate, they need to know the pirate's IP address. Just like how a physical address tells you where a house is located, an IP address tells you where a device is located on the internet.
+
+IP addresses are usually assigned by internet service providers (ISPs) or network administrators, and they can be either static (meaning they never change) or dynamic (meaning they are assigned temporarily and can change over time).
+
+You might imagine that each pirate has a unique IP address that they use to communicate with other pirates over the internet. They might also use IP addresses to access websites and other online resources, just like how people use IP addresses in the real world.
+
+#### **What is an IP made up of?**
+
+Ahoy matey! An IP address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. Just like how a pirate might use a map to navigate through the open seas, an IP address helps devices on a network find and communicate with each other.
+
+An IP address consists of four numbers separated by periods, and each number can range from 0 to 255. For example, an IP address might look like this: 192.168.1.1
+
+These four numbers represent different parts of the IP address, known as octets. Each octet is a group of 8 bits, and together, the four octets make up a 32-bit number.
+
+The first octet is used to identify the network that the device is a part of. The remaining three octets are used to identify the specific device within that network.
+
+There are two main versions of IP addresses in use today: IPv4 and IPv6. IPv4 is the most widely used version and uses 32-bit numbers, as described above. IPv6, on the other hand, uses 128-bit numbers and allows for a much larger number of unique IP addresses.
+
+To understand an IP address, it's important to know the difference between a public and a private IP address. A public IP address is a unique address that is assigned to a device by an Internet Service Provider (ISP) and is used to identify the device on the Internet. A private IP address, on the other hand, is used to identify devices within a private network, such as a home or office network. Private IP addresses are not unique and are usually assigned by the router on the network.
+
+I hope this helps you understand how IP addresses work and how a pirate might use them to navigate the vast ocean of the Internet. Arrr!
 
 #### **ip**
 
