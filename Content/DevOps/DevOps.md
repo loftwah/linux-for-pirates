@@ -29,6 +29,8 @@
         - [Install Terraform](#install-terraform)
         - [Terraform Cloud Development Kit (CDK)](#terraform-cloud-development-kit-cdk)
     - [YAML (Yet Another Markup Language)](#yaml-yet-another-markup-language)
+        - [Is it YAML or YML?](#is-it-yaml-or-yml)
+
 
 ## **What is DevOps?**
 
@@ -371,3 +373,9 @@ To use YAML, you need to understand its syntax, which is based on indentation an
 YAML is a popular choice for configuration files because it is easy to read and write, and it is flexible enough to support a wide variety of data structures. It is also often used in devops tools, such as Ansible and Docker, to define infrastructure as code.
 
 To use YAML effectively as a pirate, you should familiarize yourself with its syntax and conventions, and understand how it is used in the tools and technologies you are working with. Arrr!
+
+#### **Is it YAML or YML?**
+
+Both `.yml` and `.yaml` are file extensions for files written in the YAML (YAML Ain't Markup Language) format. YAML is a human-readable data serialization language that is often used for configuration files, but it can also be used to store and transmit data in a variety of applications.
+
+The `.yml` and `.yaml` extensions are interchangeable, so you can use either one. Some people prefer to use `.yaml` because the .yml extension is often used for YAML configuration files in the Ruby on Rails framework, and the `.yaml` extension helps to indicate that the file is a YAML file, rather than a Ruby file. However, either extension will work for a YAML file.
