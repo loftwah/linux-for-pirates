@@ -363,13 +363,13 @@ Just kidding. Although that is a great way to start, we should do a little bit m
 
 As the digital landscape evolves, cloud infrastructure and version control become the backbone of any software development lifecycle. This chapter is designed to provide you with foundational knowledge about Amazon Web Services (AWS) and GitHub, two leading platforms in their respective domains.
 
-### **2. Presentation**
+### **Presentation**
 
 Hello and welcome! My name is Loftwah, and I'm excited to guide you through the essentials of AWS and GitHub. Today, we'll peel back the layers of the cloud, demystify Git's power, and demonstrate how these tools shape the DevOps landscape.
 
 Before diving in, let's discuss DevOps. In essence, DevOps is the blending of software development and IT operations, aiming to shorten the systems development life cycle and provide continuous delivery with high software quality.
 
-### **4. AWS**
+### **AWS**
 
 Starting with AWS:
 
@@ -386,7 +386,7 @@ Starting with AWS:
 
 _Important:_ Always be aware of security. Your EC2 security group should be configured to only accept connections from trusted IPs to prevent unauthorized access.
 
-### **3. GitHub**
+### **GitHub**
 
 Transitioning to GitHub:
 
@@ -402,14 +402,14 @@ Transitioning to GitHub:
    * Push changes to GitHub
    * Open a Pull Request (PR) to merge your changes into the main codebase.
 
-### **5. Integration**
+### **Integration**
 
 Let's witness the synergy between AWS and GitHub:
 
 1. **Continuous Deployment:** One method is using webhooks on GitHub. When changes are made to your repository, your server gets a ping, allowing it to pull these changes and restart the application.
 2. **Demo:** Using the provided Ruby on Rails setup, we'll showcase how changes made locally can be pushed to GitHub and then deployed onto an EC2 instance. Remember, this setup, while illustrative, is not meant for production environments. For production, consider using web servers like Nginx or Apache.
 
-### **6. Conclusion**
+### **Conclusion**
 
 What a journey! We explored the sprawling ecosystem of AWS, delved into the intricacies of GitHub, and witnessed their combined power. While this is just the tip of the iceberg, I hope it provides a sturdy foundation for your DevOps endeavors.
 
