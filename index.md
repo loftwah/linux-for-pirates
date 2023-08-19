@@ -357,7 +357,7 @@ Just kidding. Although that is a great way to start, we should do a little bit m
 
 10. **Sending Signals:** When ye need to get someone's attention, ye need to know how to send a signal. In the terminal, try using the `kill` command to send a signal to a running process, and the `ps` command to list the processes running on the ship. Can ye find a way to stop a process from running?
 
-## **Chapter 4: AWS and GitHub Basics with Loftwah**
+## **Chapter Four: AWS and GitHub Basics**
 
 [Watch on YouTube](https://www.youtube.com/live/-NVhnF8fZcE?feature=share)
 
