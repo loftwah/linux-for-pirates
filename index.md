@@ -435,11 +435,63 @@ Just kidding. Although that is a great way to start, we should do a little bit m
 
 10. **Sending Signals:** When ye need to get someone's attention, ye need to know how to send a signal. In the terminal, try using the `kill` command to send a signal to a running process, and the `ps` command to list the processes running on the ship. Can ye find a way to stop a process from running?
 
-## **Chapter 5: Ruby on Rails and the Seven Seas**
+## **Chapter 5: AWS and GitHub Basics with Loftwah**
 
-![Ruby on Rails](images/rubyonrails.png)
+As the digital landscape evolves, cloud infrastructure and version control become the backbone of any software development lifecycle. This chapter is designed to provide you with foundational knowledge about Amazon Web Services (AWS) and GitHub, two leading platforms in their respective domains.
 
-Ruby on Rails be a web application framework that be designed to make it easier to build web applications. It be written in the Ruby programming language, and be based on the Model-View-Controller (MVC) software design pattern. It be also known for its high level o' customization and ease o' use.
+### **2. Presentation**
+
+Hello and welcome! My name is Loftwah, and I'm excited to guide you through the essentials of AWS and GitHub. Today, we'll peel back the layers of the cloud, demystify Git's power, and demonstrate how these tools shape the DevOps landscape.
+
+Before diving in, let's discuss DevOps. In essence, DevOps is the blending of software development and IT operations, aiming to shorten the systems development life cycle and provide continuous delivery with high software quality.
+
+### **4. AWS Section**
+
+Starting with AWS:
+
+1. **Account Creation:** Begin by creating an AWS account. Don't forget that AWS offers a free tier for new users, providing access to a range of services without incurring costs for a defined period.
+
+2. **AWS Management Console:** Once logged in, you'll land on the AWS Management Console, a user interface to access and manage AWS services. You'll see a plethora of service icons. For today, our focus will be on EC2 and S3.
+
+3. **Identity and Access Management (IAM):** Security is paramount in AWS. With IAM, you can manage access to AWS services and resources securely. It allows you to create and manage AWS users and groups and establish permissions to allow and deny access.
+
+4. **Key AWS Services:**
+
+   * **EC2 (Elastic Compute Cloud):** Virtual servers in the cloud where you can run applications.
+   * **S3 (Simple Storage Service):** Object storage service that offers scalability, data availability, and security.
+
+_Important:_ Always be aware of security. Your EC2 security group should be configured to only accept connections from trusted IPs to prevent unauthorized access.
+
+### **3. GitHub Section**
+
+Transitioning to GitHub:
+
+1. **Setup:** Start by creating a GitHub account. Once done, explore the [cheatsheet](https://github.com/loftwah/loftwahs-cheatsheet) for some useful commands and best practices.
+
+2. **SSH and GPG keys:** Security in GitHub is equally important. You can set up SSH for secure code pushes and pulls. GPG keys are essential for signing commits, validating the legitimacy of the changes made.
+
+3. **Git Flow:** The beauty of Git lies in its workflow. Typical steps include:
+
+   * Clone a repository
+   * Create a new branch for your changes
+   * Make your changes and commit them
+   * Push changes to GitHub
+   * Open a Pull Request (PR) to merge your changes into the main codebase.
+
+### **5. Integration Demo**
+
+[Watch on YouTube](https://www.youtube.com/live/-NVhnF8fZcE?feature=share)
+
+Let's witness the synergy between AWS and GitHub:
+
+1. **Continuous Deployment:** One method is using webhooks on GitHub. When changes are made to your repository, your server gets a ping, allowing it to pull these changes and restart the application.
+2. **Demo:** Using the provided Ruby on Rails setup, we'll showcase how changes made locally can be pushed to GitHub and then deployed onto an EC2 instance. Remember, this setup, while illustrative, is not meant for production environments. For production, consider using web servers like Nginx or Apache.
+
+### **6. Conclusion**
+
+What a journey! We explored the sprawling ecosystem of AWS, delved into the intricacies of GitHub, and witnessed their combined power. While this is just the tip of the iceberg, I hope it provides a sturdy foundation for your DevOps endeavors.
+
+I encourage you to dig deeper, experiment, and never stop learning. Feel free to reach out with any questions. Happy coding!
 
 ## **A stern warning: The dangers of the high seas**
 
@@ -459,39 +511,37 @@ So put on yer thinkin' cap and give it a try, And maybe, just maybe, ye'll figur
 
 And remember, to fully solve this riddle and claim yer treasure, ye'll need to think outside the box and find the hidden key. It's not as obvious as it seems."
 
-## **Jokes**
+## **Digital Pirate Jokes**
 
-I'm not sure where to put this yet, but here they are.
+**Why couldn't the pirate join the WiFi network?** It demanded, "Aye, matey, and password!"
 
-**Why couldn't the pirate get on the WiFi?** Because it kept saying "Yo ho ho and a password!"
+**Why did the pirate's computer always face threats?** He didn't have a firewall to guard his treasure.
 
-**Why did the pirate's computer crash?** He forgot to set sail the anti-virus.
+**Why did the pirate cross the road?** To ARRchive his data.
 
-**Why did the pirate cross the road?** To booty-fy his system.
+**How do pirates troubleshoot their code?** With an X-marks-the-spot debug map.
 
-**How do pirates debug their code?** With a treasure map.
+**What do you call a pirate who knows how to code?** Captain Bytebeard.
 
-**What do you get when you cross a pirate and a computer programmer?** A scurvy code monkey.
+**Why did the pirate's laptop stand on a peg leg?** It was booting from Windows '95.
 
-**Why did the pirate's laptop have a wooden leg?** It was running Windows 95.
+**Why was the pirate's PC feeling a chill?** Because of too many breezy Windows.
 
-**Why was the pirate's computer always cold?** It left its Windows open.
+**What's a pirate's favorite networking tool?** The router saber.
 
-**What do you get when you cross a pirate with a network administrator?** A router buccaneer.
+**Why did the pirate go open-source?** Because proprietary software was plunder and loot.
 
-**Why did the pirate switch to Linux?** He heard it was more stable than Windows and less buggy than MacOS.
+**Why did the pirate upgrade his PC?** His old rig was stuck in the digital doldrums.
 
-**Why did the pirate buy a new computer?** His old one was starting to lag behind.
+**Why couldn't the pirate surf the web?** His connection kept drifting to sea.
 
-**Why couldn't the pirate connect to the Internet?** He had a sinking modem.
+**Why did the pirate favor a certain OS during the flood?** He wanted Windows on his Ark.
 
-**Why did the pirate upgrade his operating system?** He heard it was the only way to get Windows on the Ark.
+**What do you call a pirate who's good with databases?** The Data Buccaneer.
 
-**What do you get when you cross a pirate with a database administrator?** A swashbuckling SQL pirate.
+**Why didn't the pirate's PC ever fail him?** He sailed with a sturdy SSD.
 
-**Why did the pirate's computer never crash?** He had a solid-state drive.
-
-**Why did the pirate's website always crash?** He used too many iframes.
+**Why did the pirate's website capsize?** Too many iframe deckhands onboard!
 
 ### Check Yer Deployments
 
