@@ -5,7 +5,7 @@ layout: home
 
 ![Linux for Pirates!](images/linux-for-pirates.jpg)
 
-By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
+By [Dean Lofts](https://linkfree.io/loftwah) | [GitHub](https://github.com/loftwah)
 
 ## **In memory of Aaron Swartz**
 
