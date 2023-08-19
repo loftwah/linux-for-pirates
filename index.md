@@ -5,85 +5,7 @@ layout: home
 
 ![Linux for Pirates!](images/linux-for-pirates.jpg)
 
-Started By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
-- [What is Linux?](Content/Linux/)
-  - [Open source](Content/Open-Source/Open-Source.md)
-  - [What is the Linux kernel?](#what-is-the-linux-kernel)
-  - [Linus Torvalds](#linus-torvalds)
-  - [Richard Stallman](#richard-stallman)
-- [Before we begin](#before-we-begin)
-- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
-- [Chapter One - Getting Started](#chapter-one---getting-started)
-  - [Operating System](Content/Operating-System/Operating-System.md)
-  - [Where to go from here?](#where-to-go-from-here)
-    - [Backend](Content/Backend/Backend.md)
-    - [Cloud Computing](Content/Cloud/Cloud.md)
-    - [Cybersecurity](Content/Cybersecurity/Cybersecurity.md)
-    - [Data analysis and interpretation](Content/Data%20Science/Data%20Science.md#data-analysis-and-interpretation)
-    - [Database](Content/Database/Database.md)
-    - [Design](Content/Design/Design.md)
-    - [Developer Advocacy and Developer Relations](Content/DevRel/DevRel.md)
-    - [Finance](Content/Finance/Finance.md)
-    - [Frontend](Content/Design/Frontend.md)
-    - [Management](Content/Management/Management.md)
-    - [Marketing](Content/Marketing/Marketing.md)
-    - [Network Engineering](Content/Networking/Network_Engineering.md)
-    - [Operations](Content/Operations/Operations.md#operations)
-    - [Sales](Content/Sales/Sales.md#sales)
-- [Chapter Two - The Fundamentals](#chapter-two---the-fundamentals)
-  - [DevOps](Content/DevOps/DevOps.md)
-  - [How DevOps Works?](#how-devops-works)
-  - [Handybilly](Content/Linux/Linux.md#handybilly)
-  - [Linux filesystem](Content/Linux/Linux.md)
-  - [Networking](Content/Networking/Networking.md)
-  - [Bash](Content/Linux/Linux.md#bash)
-  - [Vim (Vi IMproved)](Content/Linux/Linux.md#vim-vi-improved)
-  - [VS Code](#vs-code)
-  - [The Internet](Content/Internet/Internet.md)
-  - [Amazon Web Services](Content/Cloud/Cloud.md)
-  - [Cloudflare](#cloudflare)
-  - [CI/CD](Content/DevOps/CICD.md)
-  - [DigitalOcean](Content/Cloud/Cloud.md)
-  - [eBPF](#ebpf)
-  - [DNS (Domain Name System)](Content/Networking/Networking.md)
-  - [Docker](Content/DevOps/DevOps.md)
-  - [Git](Content/Git/Git.md)
-  - [Homebrew](#homebrew)
-  - [HTML](Content/Design/Design.md)
-  - [HTTP](Content/Networking/Networking.md)
-  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
-  - [ICMP (Internet Control Message Protocol)](#icmp-internet-control-message-protocol)
-  - [Infrastructure as Code](Content/DevOps/DevOps.md)
-  - [JavaScript](Content/Design/Design.md)
-  - [Latency](#latency)
-  - [Logging](#logging)
-    - [Logrotate](#logrotate)
-  - [Monitoring](#monitoring)
-  - [OSI model](Content/Networking/Networking.md#osi-model)
-  - [SSH](Content/Networking/Networking.md#ssh)
-  - [SSL/TLS](Content/Networking/Networking.md#ssltls)
-  - [Streaming](#streaming)
-  - [Subnet](Content/Networking/Networking.md#subnet)
-  - [TCP/IP](Content/Networking/Networking.md#tcpip)
-  - [UDP](Content/Networking/Networking.md#udp)
-  - [YAML (Yet Another Markup Language)](Content/DevOps/DevOps.md#yaml-yet-another-markup-language)
-  - [Zsh](Content/Linux/Linux.md#zsh)
-- [Chapter Three: Your first day as a pirate](#chapter-three-your-first-day-as-a-pirate)
-  - [FAQs](Content/FAQs/FAQs.md)
-- [Chapter Four - Desktop Environments and Window Managers](Content/Desktop/Desktop.md#chapter-four---desktop-environments-and-window-managers)
-- [Chapter 5: Ruby on Rails and the Seven Seas](#chapter-5-ruby-on-rails-and-the-seven-seas)
-- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
-- [Jokes](#jokes)
-  - [Check Yer Deployments](#check-yer-deployments)
-- [**Testemonials**](#testemonials)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+By [Dean Lofts](https://linkfree.eddiehub.io/loftwah) | [GitHub](https://github.com/loftwah)
 
 ## **In memory of Aaron Swartz**
 
@@ -435,7 +357,7 @@ Just kidding. Although that is a great way to start, we should do a little bit m
 
 10. **Sending Signals:** When ye need to get someone's attention, ye need to know how to send a signal. In the terminal, try using the `kill` command to send a signal to a running process, and the `ps` command to list the processes running on the ship. Can ye find a way to stop a process from running?
 
-## **Chapter 5: AWS and GitHub Basics with Loftwah**
+## **Chapter 4: AWS and GitHub Basics with Loftwah**
 
 [Watch on YouTube](https://www.youtube.com/live/-NVhnF8fZcE?feature=share)
 
