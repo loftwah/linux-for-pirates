@@ -437,6 +437,8 @@ Just kidding. Although that is a great way to start, we should do a little bit m
 
 ## **Chapter 5: AWS and GitHub Basics with Loftwah**
 
+[Watch on YouTube](https://www.youtube.com/live/-NVhnF8fZcE?feature=share)
+
 As the digital landscape evolves, cloud infrastructure and version control become the backbone of any software development lifecycle. This chapter is designed to provide you with foundational knowledge about Amazon Web Services (AWS) and GitHub, two leading platforms in their respective domains.
 
 ### **2. Presentation**
@@ -445,7 +447,7 @@ Hello and welcome! My name is Loftwah, and I'm excited to guide you through the 
 
 Before diving in, let's discuss DevOps. In essence, DevOps is the blending of software development and IT operations, aiming to shorten the systems development life cycle and provide continuous delivery with high software quality.
 
-### **4. AWS Section**
+### **4. AWS**
 
 Starting with AWS:
 
@@ -462,7 +464,7 @@ Starting with AWS:
 
 _Important:_ Always be aware of security. Your EC2 security group should be configured to only accept connections from trusted IPs to prevent unauthorized access.
 
-### **3. GitHub Section**
+### **3. GitHub**
 
 Transitioning to GitHub:
 
@@ -478,9 +480,7 @@ Transitioning to GitHub:
    * Push changes to GitHub
    * Open a Pull Request (PR) to merge your changes into the main codebase.
 
-### **5. Integration Demo**
-
-[Watch on YouTube](https://www.youtube.com/live/-NVhnF8fZcE?feature=share)
+### **5. Integration**
 
 Let's witness the synergy between AWS and GitHub:
 
