@@ -35,7 +35,7 @@ The Linux kernel was originally developed by Linus Torvalds in 1991, and was rel
 
 ![Linus Torvalds](images/linustorvalds.png)
 
-Linus Torvalds is the creator of the Linux operating system. He is a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
+Linus Torvalds is the creator of the Linux operating system. He was a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
 ### **Richard Stallman**
 
