@@ -41,7 +41,7 @@ Linus Torvalds is the creator of the Linux operating system. He was a computer s
 
 ![Richard Stallman](images/richardstallman.png)
 
-Richard Stallman is the creator of the GNU operating system. He is a computer science student at the Massachusetts Institute of Technology (MIT), and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
+Richard Stallman is the creator of the GNU operating system. He was a computer science student at the Massachusetts Institute of Technology (MIT), and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
 ![Linus Torvalds and Richard Stallman as Pirates](images/linus_richard.png)
 
