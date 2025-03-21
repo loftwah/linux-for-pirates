@@ -17,7 +17,11 @@ const isRubyPage = pathname.includes('ruby-on-whales');
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="description" content={description} />
     <title>{title}</title>
     
@@ -51,13 +55,18 @@ const isRubyPage = pathname.includes('ruby-on-whales');
     <!-- Set theme based on user preference -->
     <script is:inline>
       const theme = (() => {
-        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-          return localStorage.getItem('theme');
+        try {
+          if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+            return localStorage.getItem('theme');
+          }
+          if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+          }
+          return 'light';
+        } catch (e) {
+          console.log('Error accessing localStorage:', e);
+          return 'light';
         }
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          return 'dark';
-        }
-        return 'light';
       })();
       
       if (theme === 'dark') {
@@ -66,7 +75,11 @@ const isRubyPage = pathname.includes('ruby-on-whales');
         document.documentElement.classList.remove('dark');
       }
       
-      window.localStorage.setItem('theme', theme);
+      try {
+        window.localStorage.setItem('theme', theme);
+      } catch (e) {
+        console.log('Error setting localStorage:', e);
+      }
     </script>
   </head>
   <body class="min-h-screen bg-slate-50 dark:bg-[#080f1d] dark:text-white transition-colors duration-300 font-sans">
@@ -221,12 +234,16 @@ const isRubyPage = pathname.includes('ruby-on-whales');
         if (themeToggle) {
           themeToggle.addEventListener('click', () => {
             // Toggle dark mode
-            if (htmlEl.classList.contains('dark')) {
-              htmlEl.classList.remove('dark');
-              localStorage.setItem('theme', 'light');
-            } else {
-              htmlEl.classList.add('dark');
-              localStorage.setItem('theme', 'dark');
+            try {
+              if (htmlEl.classList.contains('dark')) {
+                htmlEl.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+              } else {
+                htmlEl.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+              }
+            } catch (e) {
+              console.log('Error toggling theme:', e);
             }
           });
         }
@@ -238,24 +255,37 @@ const isRubyPage = pathname.includes('ruby-on-whales');
           scrollTopBtn.style.opacity = '1';
           scrollTopBtn.style.visibility = 'visible';
           
+          // Use passive event listener for better performance on mobile
           window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-              scrollTopBtn.style.opacity = '1';
-              scrollTopBtn.style.visibility = 'visible';
-              scrollTopBtn.classList.add('visible');
-            } else {
-              // Keep button visible even at top of page
-              scrollTopBtn.style.opacity = '1';
-              scrollTopBtn.style.visibility = 'visible';
-              scrollTopBtn.classList.remove('visible');
+            try {
+              const scrollY = window.scrollY || window.pageYOffset;
+              if (scrollY > 300) {
+                scrollTopBtn.style.opacity = '1';
+                scrollTopBtn.style.visibility = 'visible';
+                scrollTopBtn.classList.add('visible');
+              } else {
+                // Keep button visible even at top of page
+                scrollTopBtn.style.opacity = '1';
+                scrollTopBtn.style.visibility = 'visible';
+                scrollTopBtn.classList.remove('visible');
+              }
+            } catch (e) {
+              console.log('Error in scroll event:', e);
             }
-          });
+          }, { passive: true });
           
-          scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-              top: 0,
-              behavior: 'smooth'
-            });
+          scrollTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            try {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+            } catch (e) {
+              // Fallback for older browsers
+              window.scrollTo(0, 0);
+              console.log('Error scrolling to top:', e);
+            }
           });
         }
       });

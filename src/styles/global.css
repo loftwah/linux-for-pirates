@@ -7,6 +7,8 @@
     scroll-padding-top: 80px;
     font-size: 16px;
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 
   /* Set consistent colors for the entire site in both light and dark modes */
@@ -44,6 +46,14 @@
     background-attachment: fixed !important;
     background-blend-mode: overlay !important;
     background-color: var(--bg-color) !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Prevent overscroll bounce effect on iOS */
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    /* Fix for iOS height issues */
+    min-height: -webkit-fill-available;
   }
 
   .dark body {
@@ -185,6 +195,7 @@
     overflow-x: auto;
     white-space: pre;
     margin: 1.5rem 0;
+    -webkit-overflow-scrolling: touch;
   }
 
   .dark .prose pre {
@@ -1620,6 +1631,7 @@ footer {
 input, textarea, select {
   border: 1px solid #e2e8f0 !important;
   transition: all 0.2s ease !important;
+  font-size: 16px; /* Prevents zoom on focus in iOS */
 }
 
 input:focus, textarea:focus, select:focus {
@@ -2234,4 +2246,31 @@ html {
 .dark .markdown-content {
   background-color: #080f1d !important;
   color: #dce6ef;
+}
+
+/* Fix for iOS iframe and embedded content */
+iframe, embed, object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* iOS Safari specific - prevent element highlighting */
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Fix for scrolling issues on iOS */
+.prose pre {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for iOS input zooming */
+input, select, textarea {
+  font-size: 16px; /* Prevents zoom on focus in iOS */
+}
+
+/* Fix for fixed position elements on iOS */
+.sticky, .fixed {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
