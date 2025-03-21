@@ -1,6 +1,8 @@
-# Linux for Pirates! Ruby on Whales
+---
+title: Ruby on Whales!
+---
 
-![DevOps with Docker, Ruby on Rails and Linux for Pirates!](https://github.com/user-attachments/assets/2732a87d-2b4f-421a-9828-ab31f8ab9156)
+# Linux for Pirates! Ruby on Whales
 
 ## Introduction
 
@@ -1108,7 +1110,7 @@ When ye generate a new Rails project, it comes with a Dockerfile ready to use. H
 
 Here’s the modified Dockerfile with the necessary changes to handle secrets and build the application:
 
-```Dockerfile
+```
 # syntax=docker/dockerfile:1
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
@@ -1180,7 +1182,7 @@ CMD ["./bin/rails", "server"]
 
 The changes we made are here:
 
-```dockerfile
+```
 # Use secret to access GitHub token to install private packages
 RUN --mount=type=secret,id=GITHUB_TOKEN \
     GITHUB_TOKEN=${GITHUB_TOKEN} && \
@@ -1216,7 +1218,7 @@ Let’s walk through the Dockerfile step-by-step to understand each part and how
 
 #### Base Stage
 
-```Dockerfile
+```
 # syntax=docker/dockerfile:1
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
@@ -1385,7 +1387,7 @@ The original Dockerfile is optimized for production environments:
 
 Here's the production Dockerfile:
 
-```dockerfile
+```
 # syntax=docker/dockerfile:1
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
@@ -1463,7 +1465,7 @@ Using the same Dockerfile for both production and development can lead to ineffi
 
 Here's the development Dockerfile:
 
-```dockerfile
+```
 # Dockerfile.dev
 # syntax=docker/dockerfile:1
 
@@ -1850,7 +1852,7 @@ Swab the decks and prepare to clone private repositories using SSH mounts in Doc
 
 ### Dockerfile for SSH Authentication
 
-```Dockerfile
+```
 # syntax=docker/dockerfile:1
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
@@ -2236,7 +2238,7 @@ docker run hello-world
 
 If you have been following along we have broken our `Dockerfile` for production. I will go through and figure this out but for now we will have this section that explains what we need for it to build properly for Vite. Please update your `Dockerfile` to the following.
 
-```dockerfile
+```
 # syntax=docker/dockerfile:1
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
@@ -2451,7 +2453,7 @@ Arrr, ye scallywags, gather 'round and lend an ear! The seas be rough, and our s
 
 To start, ye be needin' a Dockerfile more cunning than a fox in a henhouse. First, we be usin' one stage to build our treasures, then another to copy only the finest loot into our final image. Here be an example from the ship’s log:
 
-```Dockerfile
+```
 # syntax=docker/dockerfile:1
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
@@ -2931,7 +2933,7 @@ Fair winds and following seas, mateys! Arrr!
 
 #### Production Dockerfile
 
-```Dockerfile
+```
 # syntax=docker/dockerfile:1
 
 ARG RUBY_VERSION=3.3.0
