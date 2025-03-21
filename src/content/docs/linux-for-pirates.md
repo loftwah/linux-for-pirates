@@ -17,11 +17,75 @@ By [Dean Lofts](https://linkarooie.com/loftwah) | [GitHub](https://github.com/lo
 - [Richard Stallman](#richard-stallman)
 - [Before we begin](#before-we-begin)
 - [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
-- [Chapter One - Settin' Sail with Linux](#chapter-one---settin-sail-with-linux)
-- [Chapter Two - Mastering the Ship's Fundamentals](#chapter-two---mastering-the-ships-fundamentals)
-- [Chapter Three: Your First Day as a Pirate](#chapter-three-your-first-day-as-a-pirate)
-- [Chapter Four: Navigatin' the Cloud Seas - AWS and GitHub Basics](#chapter-four-navigatin-the-cloud-seas---aws-and-github-basics)
+
+### **Chapter One - Settin' Sail with Linux**
+
+- [What Be This Linux Beast?](#what-be-this-linux-beast)
+- [Why Would A Savvy Buccaneer Choose Linux?](#why-would-a-savvy-buccaneer-choose-linux)
+- [Choosin' Yer First Linux Vessel](#choosin-yer-first-linux-vessel)
+- [Installin' Yer First Linux System](#installin-yer-first-linux-system)
+- [First Commands Every Linux Pirate Should Know](#first-commands-every-linux-pirate-should-know)
+- [The Pirate's Guide to Modern Navigation Tools](#the-pirates-guide-to-modern-navigation-tools)
+- [Chartin' Yer Course Forward](#chartin-yer-course-forward)
+- [Claiming Yer First Piece of the Digital Ocean](#claiming-yer-first-piece-of-the-digital-ocean)
+- [Resources for the Aspiring Linux Pirate](#resources-for-the-aspiring-linux-pirate)
+- [Conclusion: The Adventure Begins!](#conclusion-the-adventure-begins)
+
+### **Chapter Two - Mastering the Ship's Fundamentals**
+
+- [The Pirate's Map: Understanding the Linux Filesystem](#the-pirates-map-understanding-the-linux-filesystem)
+- [Navigatin' the Digital Seas: Networking Fundamentals](#navigatin-the-digital-seas-networking-fundamentals)
+- [Docker: Sailing with Containers](#docker-sailing-with-containers)
+- [Password Management: Guarding Your Treasure Keys](#password-management-guarding-your-treasure-keys)
+- [Databases: The Vast Treasure Vaults](#databases-the-vast-treasure-vaults)
+- [Cron Jobs and Scheduling: The Ship's Automatic Routines](#cron-jobs-and-scheduling-the-ships-automatic-routines)
+- [Infrastructure as Code: Drawing Treasure Maps for Your Fleet](#infrastructure-as-code-drawing-treasure-maps-for-your-fleet)
+- [The Evolution of Web Development: From Ancient Scrolls to Modern Maps](#the-evolution-of-web-development-from-ancient-scrolls-to-modern-maps)
+- [Working on a Development Crew: The Pirate's Life](#working-on-a-development-crew-the-pirates-life)
+- [Using AI Tools: The Modern Pirate's First Mate](#using-ai-tools-the-modern-pirates-first-mate)
+- [Navigating Stormy Seas: Handling Git Merge Conflicts](#navigating-stormy-seas-handling-git-merge-conflicts)
+- [Treasure Protection: Backup Strategies for Modern Pirates](#treasure-protection-backup-strategies-for-modern-pirates)
+- [Modern Hardware: The Pirates' Guide to 2025's Equipment](#modern-hardware-the-pirates-guide-to-2025s-equipment)
+- [Git and SSH Setup: Secure Communications for Pirates](#git-and-ssh-setup-secure-communications-for-pirates)
+- [Writing the Perfect Pull Request: The Art of Code Contribution](#writing-the-perfect-pull-request-the-art-of-code-contribution)
+- [System Services: Managing Your Ship's Automated Crew](#system-services-managing-your-ships-automated-crew)
+- [Network Management: Sailing the Digital Seas](#network-management-sailing-the-digital-seas)
+- [Hardware Considerations: Choosing the Right Ship](#hardware-considerations-choosing-the-right-ship)
+- [Cloud Providers: Renting Ships Instead of Building](#cloud-providers-renting-ships-instead-of-building)
+- [Enterprise Networking: Sailing in Corporate Waters](#enterprise-networking-sailing-in-corporate-waters)
+- [Keeping Up with Technology: The Ever-Changing Digital Seas](#keeping-up-with-technology-the-ever-changing-digital-seas)
+- [The Ship's Log: Documenting Our First Voyage](#the-ships-log-documenting-our-first-voyage)
+
+### **Chapter Three: Your First Day as a Pirate**
+
+- [Preparatory Notes for New Pirates](#preparatory-notes-for-new-pirates)
+- [Exercise 1: Setting Sail - Basic Navigation](#exercise-1-setting-sail---basic-navigation)
+- [Exercise 2: Finding Yer Way Home - Creating and Moving](#exercise-2-finding-yer-way-home---creating-and-moving)
+- [Exercise 3: Managing Yer Crew - User Information](#exercise-3-managing-yer-crew---user-information)
+- [Exercise 4: Navigating the Seas - Using Documentation](#exercise-4-navigating-the-seas---using-documentation)
+- [Exercise 5: Arranging Yer Crew - Sorting and Filtering](#exercise-5-arranging-yer-crew---sorting-and-filtering)
+- [Exercise 6: Setting Up Anchor - File Management](#exercise-6-setting-up-anchor---file-management)
+- [Exercise 7: Modern Command Tools - Enhancing Your Ship](#exercise-7-modern-command-tools---enhancing-your-ship)
+- [Exercise 8: Setting up a Simple Web Server](#exercise-8-setting-up-a-simple-web-server)
+- [Exercise 9: Raising the Anchor - Permission Management](#exercise-9-raising-the-anchor---permission-management)
+- [Exercise 10: Version Control - Tracking Your Treasure Maps](#exercise-10-version-control---tracking-your-treasure-maps)
+- [Conclusion: The End of Your First Day](#conclusion-the-end-of-your-first-day)
+
+### **Chapter Four: Navigatin' the Cloud Seas - AWS and GitHub Basics**
+
+- [Preparin' to Set Sail](#preparin-to-set-sail)
+- [AWS: The Vast Ocean of Cloud Resources](#aws-the-vast-ocean-of-cloud-resources)
+- [GitHub: The Master Map Repository](#github-the-master-map-repository)
+- [Joinin' Forces: AWS and GitHub Integration](#joinin-forces-aws-and-github-integration)
+- [Expandin' Yer Fleet: Beyond the Basics](#expandin-yer-fleet-beyond-the-basics)
+- [Navigational Tips and Best Practices](#navigational-tips-and-best-practices)
+- [Conclusion: The End of Our AWS and GitHub Voyage](#conclusion-the-end-of-our-aws-and-github-voyage)
+- [Recommended Reading for Ambitious Pirates](#recommended-reading-for-ambitious-pirates)
+
+### **Conclusion and Extras**
+
 - [Conclusion: Treasures Beyond the Horizon](#conclusion-treasures-beyond-the-horizon)
+- [Commandin' from the Quarterdeck: The Terminal](#commandin-from-the-quarterdeck-the-terminal)
 - [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
 - [Digital Pirate Jokes & Tales From the Cyber Seas](#digital-pirate-jokes--tales-from-the-cyber-seas)
 - [The Pirate's Glossary of Tech Terms](#the-pirates-glossary-of-tech-terms)
@@ -6359,6 +6423,7 @@ Many pirate captains distribute their fleets across multiple cloud providers:
   ```
 
 - **CI/CD Pipelines:** Deploy to multiple environments
+
   ```yaml
   # GitHub Actions example
   jobs:
