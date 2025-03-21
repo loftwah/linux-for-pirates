@@ -1601,6 +1601,7 @@ body {
   position: relative !important;
   padding-left: 1.5rem !important;
   padding-bottom: 0.5rem !important;
+  padding-top: 1rem !important; /* Added padding at the top */
   border-bottom: 1px dashed rgba(143, 54, 230, 0.3) !important;
   font-family: 'Cinzel Decorative', serif !important;
 }
@@ -1651,4 +1652,17 @@ body {
   background: linear-gradient(120deg, #a3fe0d, #c7ff65) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+}
+
+/* Add this new section for better spacing between notes and headings */
+.markdown-content > * + h2,
+.markdown-content > * + h3,
+.markdown-content > * + h4 {
+  margin-top: 3rem !important; /* Increased space before headings */
+}
+
+.markdown-content blockquote + h2,
+.markdown-content blockquote + h3,
+.markdown-content blockquote + h4 {
+  margin-top: 3.5rem !important; /* Extra space when heading follows a note/blockquote */
 }
