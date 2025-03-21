@@ -75,6 +75,21 @@
     background-color: #a3fe0d;
   }
 
+  /* Hide empty table of contents containers */
+  .table-of-contents:empty,
+  .table-of-contents ul:empty {
+    display: none;
+  }
+  
+  /* Hide table of contents with no actual links */
+  .table-of-contents ul:not(:has(li)) {
+    display: none;
+  }
+  
+  .table-of-contents:not(:has(ul li)) {
+    display: none;
+  }
+
   /* Content styling enhancements */
   .prose img {
     margin-left: auto;

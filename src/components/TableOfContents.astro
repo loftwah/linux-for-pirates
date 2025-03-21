@@ -7,20 +7,25 @@ interface Heading {
   slug: string;
   text: string;
 }
+
+// Only display the TOC if there are headings to show
+const hasHeadings = headings && headings.length > 0;
 ---
 
-<div class="table-of-contents">
-  <h2>Table of Contents</h2>
-  <ul>
-    {headings.map((heading: Heading) => (
-      <li>
-        <a href={`#${heading.slug}`}>
-          {heading.text}
-        </a>
-      </li>
-    ))}
-  </ul>
-</div>
+{hasHeadings && (
+  <div class="table-of-contents">
+    <h2>Table of Contents</h2>
+    <ul>
+      {headings.map((heading: Heading) => (
+        <li>
+          <a href={`#${heading.slug}`}>
+            {heading.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
 
 <script is:inline>
   // Add anchor links to all headings

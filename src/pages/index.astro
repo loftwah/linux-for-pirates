@@ -13,6 +13,9 @@ const { Content, headings } = await guideEntry.render();
 
 // Filter headings to include only h2 and h3 (depth 2 and 3)
 const tocHeadings = headings.filter(heading => heading.depth <= 3);
+
+// Check if we have headings to show
+const hasHeadings = tocHeadings && tocHeadings.length > 0;
 ---
 
 <MainLayout 
@@ -21,7 +24,7 @@ const tocHeadings = headings.filter(heading => heading.depth <= 3);
   ogImage="/images/linux-for-pirates-og.jpg"
 >
   <div class="markdown-content overflow-hidden w-full">
-    <TableOfContents headings={tocHeadings} />
+    {hasHeadings && <TableOfContents headings={tocHeadings} />}
     <Content />
   </div>
 </MainLayout>
@@ -32,7 +35,7 @@ const tocHeadings = headings.filter(heading => heading.depth <= 3);
     const contentSection = document.querySelector('.markdown-content');
     if (!contentSection) return;
     
-    // Find the manual TOC section
+    // Find the manual TOC section - look for the exact heading text from the markdown
     const tocHeader = Array.from(contentSection.querySelectorAll('h2')).find(
       h2 => h2.textContent?.includes('Table of Contents')
     );
@@ -40,16 +43,25 @@ const tocHeadings = headings.filter(heading => heading.depth <= 3);
     if (tocHeader) {
       // Find the TOC list (it should be the next ul after the tocHeader)
       let tocList = tocHeader.nextElementSibling;
+      
+      // Keep searching for the next list until we find a ul or run out of elements
       while (tocList && tocList.tagName !== 'UL') {
         tocList = tocList.nextElementSibling;
       }
       
       // If found, remove both the header and the list
       if (tocList) {
+        // We've confirmed we found the manual TOC, so remove it
         tocHeader.remove();
         tocList.remove();
       }
     }
+    
+    // Check for any empty table-of-contents divs and hide them
+    const emptyTocs = document.querySelectorAll('.table-of-contents:not(:has(li))');
+    emptyTocs.forEach(toc => {
+      toc.style.display = 'none';
+    });
   });
 
   // Make external links open in new tabs
