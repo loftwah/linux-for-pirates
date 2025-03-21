@@ -8,6 +8,25 @@ By [Dean Lofts](https://linkarooie.com/loftwah) | [GitHub](https://github.com/lo
 
 ![Book Cat](/images/bookcat.jpg)
 
+## **Table of Contents**
+
+- [In memory of Aaron Swartz](#in-memory-of-aaron-swartz)
+- [What is the Linux kernel?](#what-is-the-linux-kernel)
+- [Linus Torvalds](#linus-torvalds)
+- [Richard Stallman](#richard-stallman)
+- [Before we begin](#before-we-begin)
+- [About the author (This isn't on the test)](#about-the-author-this-isnt-on-the-test)
+- [Chapter One - Settin' Sail with Linux](#chapter-one---settin-sail-with-linux)
+- [Chapter Two - Mastering the Ship's Fundamentals](#chapter-two---mastering-the-ships-fundamentals)
+- [Chapter Three: Your First Day as a Pirate](#chapter-three-your-first-day-as-a-pirate)
+- [Chapter Four: Navigatin' the Cloud Seas - AWS and GitHub Basics](#chapter-four-navigatin-the-cloud-seas---aws-and-github-basics)
+- [Conclusion: Treasures Beyond the Horizon](#conclusion-treasures-beyond-the-horizon)
+- [A stern warning: The dangers of the high seas](#a-stern-warning-the-dangers-of-the-high-seas)
+- [Digital Pirate Jokes & Tales From the Cyber Seas](#digital-pirate-jokes--tales-from-the-cyber-seas)
+- [The Pirate's Glossary of Tech Terms](#the-pirates-glossary-of-tech-terms)
+- [Legendary Pirates of the Digital Seas](#legendary-pirates-of-the-digital-seas)
+- [Testemonials](#testemonials)
+
 ## **In memory of Aaron Swartz**
 
 [The Internet's Own Boy: The Story of Aaron Swartz](https://www.youtube.com/watch?v=M85UvH0TRPc)
@@ -2122,7 +2141,7 @@ Every pirate crew needs some good laughs while navigatin' the treacherous digita
 
 ![TCP vs UDP explained with a pirate theme](/images/tcp-udp.png)
 
-*Why be this joke funny, ye ask? Well, TCP (Transmission Control Protocol) be the reliable shipmate that makes sure all yer data packets arrive safely, checkin' and double-checkin' with "SYN" and "ACK" signals. UDP (User Datagram Protocol) just fires the packets into the digital sea without carin' if they reach their destination—much like a careless pirate! When speed matters more than reliability, UDP be yer protocol of choice, matey!*
+_Why be this joke funny, ye ask? Well, TCP (Transmission Control Protocol) be the reliable shipmate that makes sure all yer data packets arrive safely, checkin' and double-checkin' with "SYN" and "ACK" signals. UDP (User Datagram Protocol) just fires the packets into the digital sea without carin' if they reach their destination—much like a careless pirate! When speed matters more than reliability, UDP be yer protocol of choice, matey!_
 
 **How many pirates does it take to set up a proxy server?** Two—one to configure the settings and another to say "Aye P address!"
 
