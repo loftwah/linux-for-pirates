@@ -1,6 +1,34 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwind from '@tailwindcss/vite';
+import rehypePrettyCode from 'rehype-pretty-code';
+
+/**
+ * @type {import('rehype-pretty-code').Options}
+ */
+const prettyCodeOptions = {
+  theme: {
+    light: 'github-light',
+    dark: 'github-dark'
+  },
+  onVisitLine(node) {
+    // Prevent lines from collapsing in `display: grid` mode, and
+    // allow empty lines to be copy/pasted
+    if (node.children.length === 0) {
+      node.children = [{ type: 'text', value: ' ' }];
+    }
+  },
+  onVisitHighlightedLine(node) {
+    // Add a class to highlighted lines
+    node.properties.className = node.properties.className || [];
+    node.properties.className.push('highlighted');
+  },
+  // Using onVisitHighlightedChars instead of onVisitHighlightedWord as per the correct API
+  onVisitHighlightedChars(node) {
+    // Add a class to highlighted words/chars
+    node.properties.className = ['word'];
+  }
+};
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,7 +41,10 @@ export default defineConfig({
     assets: 'assets',
   },
   markdown: {
-    syntaxHighlight: 'prism',
+    syntaxHighlight: false, // Disable the built-in syntax highlighter
+    rehypePlugins: [
+      [rehypePrettyCode, prettyCodeOptions],
+    ],
   },
   legacy: {
     collections: true

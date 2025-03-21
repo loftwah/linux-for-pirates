@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.5.3"
+    "astro": "^5.5.3",
+    "rehype-pretty-code": "^0.14.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.15",

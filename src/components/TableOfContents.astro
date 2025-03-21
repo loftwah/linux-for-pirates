@@ -1,0 +1,48 @@
+---
+// Component for generating a styled table of contents
+const { headings } = Astro.props;
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+---
+
+<div class="table-of-contents">
+  <h2>Table of Contents</h2>
+  <ul>
+    {headings.map((heading: Heading) => (
+      <li>
+        <a href={`#${heading.slug}`}>
+          {heading.text}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<script is:inline>
+  // Add anchor links to all headings
+  document.addEventListener('DOMContentLoaded', () => {
+    const headings = document.querySelectorAll('.prose h2, .prose h3, .prose h4');
+    
+    headings.forEach(heading => {
+      // Skip headings that already have anchor links or are in the table of contents
+      if (heading.querySelector('.heading-anchor') || heading.closest('.table-of-contents')) {
+        return;
+      }
+      
+      const id = heading.id;
+      if (!id) return;
+      
+      const anchor = document.createElement('a');
+      anchor.className = 'heading-anchor';
+      anchor.href = `#${id}`;
+      anchor.innerHTML = '§';
+      
+      heading.prepend(anchor);
+      heading.classList.add('group');
+    });
+  });
+</script> 

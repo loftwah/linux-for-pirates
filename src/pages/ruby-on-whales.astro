@@ -1,6 +1,7 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 import { getEntry } from 'astro:content';
+import TableOfContents from '../components/TableOfContents.astro';
 
 const guideEntry = await getEntry('docs', 'ruby-on-whales');
 
@@ -8,7 +9,10 @@ if (!guideEntry) {
   throw new Error("Could not find ruby-on-whales document in content collection");
 }
 
-const { Content } = await guideEntry.render();
+const { Content, headings } = await guideEntry.render();
+
+// Filter headings to include only h2 and h3 (depth 2 and 3)
+const tocHeadings = headings.filter(heading => heading.depth <= 3);
 ---
 
 <MainLayout 
@@ -17,11 +21,37 @@ const { Content } = await guideEntry.render();
   ogImage="/images/lfp2-og.jpg"
 >
   <div class="markdown-content overflow-hidden w-full">
+    <TableOfContents headings={tocHeadings} />
     <Content />
   </div>
 </MainLayout>
 
-<script>
+<script is:inline>
+  // Process the table of contents
+  document.addEventListener('DOMContentLoaded', () => {
+    const contentSection = document.querySelector('.markdown-content');
+    if (!contentSection) return;
+    
+    // Find the manual TOC section
+    const tocHeader = Array.from(contentSection.querySelectorAll('h2')).find(
+      h2 => h2.textContent?.includes('Table of Contents')
+    );
+    
+    if (tocHeader) {
+      // Find the TOC list (it should be the next ul after the tocHeader)
+      let tocList = tocHeader.nextElementSibling;
+      while (tocList && tocList.tagName !== 'UL') {
+        tocList = tocList.nextElementSibling;
+      }
+      
+      // If found, remove both the header and the list
+      if (tocList) {
+        tocHeader.remove();
+        tocList.remove();
+      }
+    }
+  });
+
   // Make external links open in new tabs
   document.addEventListener('DOMContentLoaded', () => {
     const externalLinks = document.querySelectorAll('.markdown-content a[href^="http"]');

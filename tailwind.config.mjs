@@ -19,6 +19,10 @@ export default {
           },
         },
       },
+      fontFamily: {
+        'display': ['"Cinzel Decorative"', 'serif'],
+        'sans': ['Lato', 'sans-serif'],
+      },
     },
   },
   plugins: [
