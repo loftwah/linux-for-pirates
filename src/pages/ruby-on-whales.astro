@@ -1,7 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 import { getEntry } from 'astro:content';
-import TableOfContents from '../components/TableOfContents.astro';
 
 const guideEntry = await getEntry('docs', 'ruby-on-whales');
 
@@ -9,13 +8,7 @@ if (!guideEntry) {
   throw new Error("Could not find ruby-on-whales document in content collection");
 }
 
-const { Content, headings } = await guideEntry.render();
-
-// Filter headings to include only h2 and h3 (depth 2 and 3)
-const tocHeadings = headings.filter(heading => heading.depth <= 3);
-
-// Check if we have headings to show
-const hasHeadings = tocHeadings && tocHeadings.length > 0;
+const { Content } = await guideEntry.render();
 ---
 
 <MainLayout 
@@ -23,49 +16,14 @@ const hasHeadings = tocHeadings && tocHeadings.length > 0;
   description="A guide to Ruby and Docker from a pirate perspective"
   ogImage="/images/lfp2-og.jpg"
 >
-  <div class="markdown-content overflow-hidden w-full dark:bg-[#080f1d]">
-    <Content />
+  <div class="container mx-auto px-4 py-8">
+    <div class="markdown-content overflow-hidden w-full dark:bg-[#080f1d]">
+      <Content />
+    </div>
   </div>
 </MainLayout>
 
 <script is:inline>
-  // Check if device is mobile - run simpler code on mobile
-  const isMobile = window.innerWidth <= 768;
-
-  // Process the table of contents
-  document.addEventListener('DOMContentLoaded', () => {
-    const contentSection = document.querySelector('.markdown-content');
-    if (!contentSection) return;
-    
-    // Find the manual TOC section - look for the exact heading text from the markdown
-    const tocHeader = Array.from(contentSection.querySelectorAll('h2')).find(
-      h2 => h2.textContent?.includes('Table of Contents')
-    );
-    
-    if (tocHeader) {
-      // Find the TOC list (it should be the next ul after the tocHeader)
-      let tocList = tocHeader.nextElementSibling;
-      
-      // Keep searching for the next list until we find a ul or run out of elements
-      while (tocList && tocList.tagName !== 'UL') {
-        tocList = tocList.nextElementSibling;
-      }
-      
-      // If found, remove both the header and the list
-      if (tocList) {
-        // We've confirmed we found the manual TOC, so remove it
-        tocHeader.remove();
-        tocList.remove();
-      }
-    }
-    
-    // Check for any empty table-of-contents divs and hide them
-    const emptyTocs = document.querySelectorAll('.table-of-contents:not(:has(li))');
-    emptyTocs.forEach(toc => {
-      toc.style.display = 'none';
-    });
-  });
-
   // Make external links open in new tabs
   document.addEventListener('DOMContentLoaded', () => {
     const externalLinks = document.querySelectorAll('.markdown-content a[href^="http"]');
@@ -76,6 +34,9 @@ const hasHeadings = tocHeadings && tocHeadings.length > 0;
       }
     });
   });
+  
+  // Process command line code blocks to style prefixes - simpler on mobile
+  const isMobile = window.innerWidth <= 768;
 
   // Process command line code blocks to style prefixes - simpler on mobile
   document.addEventListener('DOMContentLoaded', () => {

@@ -407,33 +407,29 @@
 
   /* Enhanced Table of Contents styling */
   .table-of-contents {
-    margin: 2.5rem 0;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, #f5f7fa, #eff3f9, #ebe0fa) !important; /* Much more noticeable purple hint */
-    border-radius: 0.75rem;
-    border: 1px solid rgba(143, 54, 230, 0.2);
-    box-shadow: 0 8px 15px -3px rgba(143, 54, 230, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    @apply p-4 my-4 rounded-lg bg-gray-50 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700;
+  }
+
+  .table-of-contents h2 {
+    @apply text-lg font-semibold mb-2;
+  }
+
+  .table-of-contents ul {
+    @apply space-y-1 list-disc pl-5;
+  }
+
+  .table-of-contents li {
+    @apply text-sm;
+  }
+
+  .table-of-contents a {
+    @apply text-purple-700 dark:text-lime-400 hover:underline;
   }
 
   .dark .table-of-contents {
     background: linear-gradient(135deg, #0c1524, #0a1327, #081129) !important;
     border-color: rgba(163, 254, 13, 0.2);
     box-shadow: 0 8px 15px -3px rgba(163, 254, 13, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.25);
-  }
-
-  .table-of-contents h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #e2e8f0;
-    color: #8f36e6;
-    font-family: 'Cinzel Decorative', serif;
-    position: relative;
-  }
-
-  .dark .table-of-contents h2 {
-    color: #a3fe0d;
-    border-color: #334155;
   }
 
   .table-of-contents h2::before {
