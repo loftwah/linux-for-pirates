@@ -16,6 +16,7 @@
     --code-bg-color: #131c2e;
     --code-text-color: #f8fafc;
     --accent-color: #8f36e6;
+    --accent-rgb: 143, 54, 230;
     --accent-hover: #7c2bd0;
   }
 
@@ -25,6 +26,7 @@
     --code-bg-color: #131c2e;
     --code-text-color: #f8fafc;
     --accent-color: #a3fe0d;
+    --accent-rgb: 163, 254, 13;
     --accent-hover: #8fe00b;
   }
 
@@ -43,9 +45,9 @@
 
   /* Consistent link styling */
   a {
-    color: #8f36e6;
+    color: var(--accent-color);
     text-decoration: none;
-    background-image: linear-gradient(to right, #8f36e6, #9d4feb);
+    background-image: linear-gradient(to right, var(--accent-color), var(--accent-hover));
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -143,15 +145,17 @@
   .prose blockquote {
     font-style: italic;
     border-left: 4px solid #8f36e6;
-    background: linear-gradient(135deg, rgba(143, 54, 230, 0.05), rgba(143, 54, 230, 0.08), rgba(143, 54, 230, 0.05));
+    background: linear-gradient(135deg, rgba(143, 54, 230, 0.07), rgba(143, 54, 230, 0.12), rgba(143, 54, 230, 0.07)) !important;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
     font-size: 1.1rem;
+    box-shadow: 0 4px 6px -1px rgba(143, 54, 230, 0.05) !important;
   }
 
   .dark .prose blockquote {
     border-left-color: #a3fe0d;
-    background: linear-gradient(135deg, rgba(163, 254, 13, 0.05), rgba(163, 254, 13, 0.07), rgba(163, 254, 13, 0.05));
+    background: linear-gradient(135deg, rgba(163, 254, 13, 0.07), rgba(163, 254, 13, 0.12), rgba(163, 254, 13, 0.07)) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2) !important;
   }
 
   /* Simple code block styling */
@@ -200,19 +204,20 @@
   }
 
   .prose table thead {
-    background: linear-gradient(135deg, #f8fafc, #f3f6fa, #f0f2f9) !important;
+    background: linear-gradient(135deg, #f5f7fa, #eff3f9, #ebe0fa) !important;
+  }
+
+  .prose table thead th {
+    color: #8f36e6 !important;
+    font-weight: 600 !important;
   }
 
   .dark .prose table thead {
-    background: linear-gradient(135deg, #1e293b, #192434, #192531) !important;
+    background: linear-gradient(135deg, #1e293b, #192538, #1b2240) !important;
   }
 
-  .prose table th {
-    color: #8f36e6;
-  }
-
-  .dark .prose table th {
-    color: #a3fe0d;
+  .dark .prose table thead th {
+    color: #a3fe0d !important;
   }
 
   .prose table td, 
@@ -319,15 +324,16 @@
   .table-of-contents {
     margin: 2.5rem 0;
     padding: 1.5rem;
-    background: linear-gradient(135deg, #f8fafc, #f3f6fa, #f0f2f9) !important; /* Subtle gradient with hint of purple */
+    background: linear-gradient(135deg, #f5f7fa, #eff3f9, #ebe0fa) !important; /* Much more noticeable purple hint */
     border-radius: 0.75rem;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(143, 54, 230, 0.2);
+    box-shadow: 0 8px 15px -3px rgba(143, 54, 230, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .dark .table-of-contents {
-    background: linear-gradient(135deg, #1e293b, #192434, #192531) !important; /* Subtle gradient with hint of green */
-    border-color: #334155;
+    background: linear-gradient(135deg, #1e293b, #192538, #1b2240) !important; /* More noticeable green hint */
+    border-color: rgba(163, 254, 13, 0.2);
+    box-shadow: 0 8px 15px -3px rgba(163, 254, 13, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   }
 
   .table-of-contents h2 {
@@ -544,13 +550,13 @@
     justify-content: flex-end !important;
     align-items: center !important;
     padding: 0.6rem 1rem !important;
-    background: linear-gradient(135deg, #cbd5e1, #d5cfea, #c6b8e3) !important; /* Multi-stop with purple hint */
-    border-bottom: 1px solid rgba(143, 54, 230, 0.15) !important;
+    background: linear-gradient(135deg, #c5d1e1, #d1c5e8, #c4b0e6) !important; /* Bolder gradient with more purple influence */
+    border-bottom: 1px solid rgba(143, 54, 230, 0.25) !important;
   }
 
   .dark .code-header {
-    background: linear-gradient(135deg, #1e293b, #1a2831, #1a2826) !important; /* Multi-stop with green hint */
-    border-color: rgba(163, 254, 13, 0.15) !important;
+    background: linear-gradient(135deg, #1e293b, #182a33, #142a25, #0e2a1c) !important; /* Stronger green tint gradient */
+    border-color: rgba(163, 254, 13, 0.35) !important; /* More visible border */
   }
 
   /* Polished copy button with micro-interactions */
@@ -644,11 +650,10 @@
     line-height: 1.7 !important;
     border-left: 3px solid var(--accent-color) !important;
     scrollbar-width: thin !important;
-    scrollbar-color: rgba(143, 54, 230, 0.3) transparent !important;
+    scrollbar-color: rgba(var(--accent-color), 0.3) transparent !important;
   }
 
   .dark pre {
-    border-left: 3px solid var(--accent-color) !important;
     scrollbar-color: rgba(163, 254, 13, 0.3) transparent !important;
   }
 
@@ -662,7 +667,7 @@
   }
 
   pre::-webkit-scrollbar-thumb {
-    background-color: rgba(143, 54, 230, 0.3) !important;
+    background-color: rgba(var(--accent-color), 0.3) !important;
     border-radius: 3px !important;
   }
 
@@ -801,17 +806,97 @@
       padding: 0.25rem 0.6rem !important;
     }
   }
+
+  .action-button {
+    background: linear-gradient(135deg, #8f36e6, #9d4feb) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 0.5rem !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 6px rgba(143, 54, 230, 0.2) !important;
+  }
+
+  .action-button:hover {
+    background: linear-gradient(135deg, #7c2bd0, #8f36e6) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 10px rgba(143, 54, 230, 0.25) !important;
+  }
+
+  .dark .action-button {
+    background: linear-gradient(135deg, #a3fe0d, #93e80d) !important;
+    color: #0f172a !important;
+    box-shadow: 0 4px 6px rgba(163, 254, 13, 0.2) !important;
+  }
+
+  .dark .action-button:hover {
+    background: linear-gradient(135deg, #93e80d, #83d60b) !important;
+    box-shadow: 0 6px 10px rgba(163, 254, 13, 0.25) !important;
+  }
+
+  .card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border: 1px solid rgba(143, 54, 230, 0.1) !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+
+  .card::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(to right bottom, rgba(143, 54, 230, 0.05), transparent) !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+
+  .card:hover::before {
+    opacity: 1 !important;
+  }
+
+  .card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px rgba(143, 54, 230, 0.1) !important;
+    border-color: rgba(143, 54, 230, 0.2) !important;
+  }
+
+  .dark .card::before {
+    background: linear-gradient(to right bottom, rgba(163, 254, 13, 0.05), transparent) !important;
+  }
+
+  .dark .card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
+    border-color: rgba(163, 254, 13, 0.2) !important;
+  }
 }
 
 /* Scroll to top button transitions */
 #scroll-top {
   opacity: 0;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, #8f36e6, #9d4feb) !important;
+  background: linear-gradient(135deg, #8f36e6, #a54ced) !important;
+  box-shadow: 0 4px 10px rgba(143, 54, 230, 0.3) !important;
+}
+
+#scroll-top:hover {
+  background: linear-gradient(135deg, #7c2bd0, #9d4feb) !important;
+  box-shadow: 0 6px 15px rgba(143, 54, 230, 0.4) !important;
 }
 
 .dark #scroll-top {
-  background: linear-gradient(135deg, #a3fe0d, #b4ff3d) !important;
+  background: linear-gradient(135deg, #a3fe0d, #b6ff40) !important;
+  box-shadow: 0 4px 10px rgba(163, 254, 13, 0.2) !important;
+}
+
+.dark #scroll-top:hover {
+  background: linear-gradient(135deg, #93e80d, #a8ee30) !important;
+  box-shadow: 0 6px 15px rgba(163, 254, 13, 0.3) !important;
 }
 
 /* Mobile responsiveness improvements */
@@ -1125,13 +1210,13 @@ html {
   justify-content: flex-end !important;
   align-items: center !important;
   padding: 0.6rem 1rem !important;
-  background: linear-gradient(135deg, #cbd5e1, #d5cfea, #c6b8e3) !important; /* Multi-stop with purple hint */
-  border-bottom: 1px solid rgba(143, 54, 230, 0.15) !important;
+  background: linear-gradient(135deg, #c5d1e1, #d1c5e8, #c4b0e6) !important; /* Bolder gradient with more purple influence */
+  border-bottom: 1px solid rgba(143, 54, 230, 0.25) !important;
 }
 
 .dark .code-header {
-  background: linear-gradient(135deg, #1e293b, #1a2831, #1a2826) !important; /* Multi-stop with green hint */
-  border-color: rgba(163, 254, 13, 0.15) !important;
+  background: linear-gradient(135deg, #1e293b, #182a33, #142a25, #0e2a1c) !important; /* Stronger green tint gradient */
+  border-color: rgba(163, 254, 13, 0.35) !important; /* More visible border */
 }
 
 /* Polished copy button with micro-interactions */
@@ -1225,11 +1310,10 @@ pre {
   line-height: 1.7 !important;
   border-left: 3px solid var(--accent-color) !important;
   scrollbar-width: thin !important;
-  scrollbar-color: rgba(143, 54, 230, 0.3) transparent !important;
+  scrollbar-color: rgba(var(--accent-color), 0.3) transparent !important;
 }
 
 .dark pre {
-  border-left: 3px solid var(--accent-color) !important;
   scrollbar-color: rgba(163, 254, 13, 0.3) transparent !important;
 }
 
@@ -1243,7 +1327,7 @@ pre::-webkit-scrollbar-track {
 }
 
 pre::-webkit-scrollbar-thumb {
-  background-color: rgba(143, 54, 230, 0.3) !important;
+  background-color: rgba(var(--accent-color), 0.3) !important;
   border-radius: 3px !important;
 }
 
@@ -1402,4 +1486,240 @@ pre code {
 
 :root {
   --font-mono: 'Fira Code', Menlo, Monaco, 'Courier New', monospace;
+}
+
+nav {
+  background: linear-gradient(to right, rgba(248, 250, 252, 0.9), rgba(244, 242, 252, 0.95), rgba(240, 238, 253, 0.98)) !important;
+  backdrop-filter: blur(8px) !important;
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.2) !important;
+  box-shadow: 0 2px 10px rgba(var(--accent-rgb), 0.1) !important;
+}
+
+.dark nav {
+  background: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(16, 24, 38, 0.97), rgba(15, 25, 32, 0.98)) !important;
+  backdrop-filter: blur(8px) !important;
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.25) !important; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(var(--accent-rgb), 0.1) !important;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9, #e7e5fb, #e2defa) !important;
+  border-radius: 1rem !important;
+  margin: 2rem 0 !important;
+  padding: 2rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05) !important;
+}
+
+.dark .hero-section {
+  background: linear-gradient(135deg, #0f172a, #121936, #151a3c, #161940) !important;
+  box-shadow: 0 10px 25px -15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.content-section {
+  background: linear-gradient(to bottom right, #ffffff, #fafbff) !important;
+  border-radius: 0.75rem !important;
+  border: 1px solid rgba(var(--accent-rgb), 0.1) !important;
+  padding: 1.5rem !important;
+  margin: 1.5rem 0 !important;
+}
+
+.dark .content-section {
+  background: linear-gradient(to bottom right, #0f172a, #111a32) !important;
+  border: 1px solid rgba(var(--accent-rgb), 0.1) !important;
+}
+
+.gradient-divider {
+  height: 2px !important;
+  background: linear-gradient(to right, rgba(var(--accent-rgb), 0.1), rgba(var(--accent-rgb), 0.5), rgba(var(--accent-rgb), 0.1)) !important;
+  margin: 2rem 0 !important;
+  border: none !important;
+}
+
+.dark .gradient-divider {
+  background: linear-gradient(to right, rgba(var(--accent-rgb), 0.1), rgba(var(--accent-rgb), 0.5), rgba(var(--accent-rgb), 0.1)) !important;
+}
+
+footer {
+  background: linear-gradient(to top, rgba(248, 250, 252, 0.8), rgba(248, 250, 252, 0.9), rgba(243, 244, 253, 0.95)) !important;
+  border-top: 1px solid rgba(var(--accent-rgb), 0.15) !important;
+  padding: 3rem 0 !important;
+}
+
+.dark footer {
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9), rgba(17, 24, 45, 0.95)) !important;
+  border-top: 1px solid rgba(var(--accent-rgb), 0.15) !important;
+}
+
+input, textarea, select {
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.2s ease !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.1) !important;
+  outline: none !important;
+  background: linear-gradient(to bottom, white, rgba(var(--accent-rgb), 0.02)) !important;
+}
+
+.dark input, .dark textarea, .dark select {
+  border-color: #334155 !important;
+  background-color: #1e293b !important;
+}
+
+.dark input:focus, .dark textarea:focus, .dark select:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.1) !important;
+  background: linear-gradient(to bottom, #1e293b, rgba(var(--accent-rgb), 0.02)) !important;
+}
+
+.nav-button {
+  background-color: rgba(31, 41, 55, 0.8) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 9999px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.nav-button:hover {
+  background-color: rgba(31, 41, 55, 0.9) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.nav-button.accent {
+  background: linear-gradient(135deg, var(--accent-hover), var(--accent-color)) !important;
+  border-color: rgba(var(--accent-rgb), 0.5) !important;
+}
+
+.dark .nav-button.accent {
+  background: linear-gradient(135deg, var(--accent-hover), var(--accent-color)) !important;
+  border-color: rgba(var(--accent-rgb), 0.5) !important;
+  color: #0f172a !important;
+}
+
+.dark .nav-button.accent:hover {
+  background: linear-gradient(135deg, #83d60b, var(--accent-hover)) !important;
+  box-shadow: 0 3px 10px rgba(var(--accent-rgb), 0.2), 0 0 0 1px rgba(var(--accent-rgb), 0.4) !important;
+}
+
+/* Fixed navbar styles */
+nav {
+  background: linear-gradient(to right, rgba(248, 250, 252, 0.9), rgba(244, 242, 252, 0.95), rgba(240, 238, 253, 0.98)) !important;
+  backdrop-filter: blur(8px) !important;
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.2) !important;
+  box-shadow: 0 2px 10px rgba(var(--accent-rgb), 0.1) !important;
+}
+
+.dark nav {
+  background: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(16, 24, 38, 0.97), rgba(15, 25, 32, 0.98)) !important;
+  backdrop-filter: blur(8px) !important;
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.25) !important; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(var(--accent-rgb), 0.1) !important;
+}
+
+/* Fixed GitHub button in navbar */
+.github-button {
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.dark .github-button {
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.github-button:hover {
+  background-color: rgba(var(--accent-rgb), 0.1) !important;
+}
+
+.dark .github-button:hover {
+  background-color: rgba(var(--accent-rgb), 0.1) !important;
+}
+
+/* Fixed Join Squad button in navbar */
+.join-squad-button {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border-color: var(--accent-color) !important;
+}
+
+.dark .join-squad-button {
+  background-color: var(--accent-color) !important;
+  color: #0f172a !important;
+  border-color: var(--accent-color) !important;
+}
+
+.join-squad-button:hover {
+  background-color: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+}
+
+.dark .join-squad-button:hover {
+  background-color: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+}
+
+/* Fixed Toggle Theme button in navbar */
+.theme-toggle {
+  color: var(--accent-color) !important;
+}
+
+.dark .theme-toggle {
+  color: var(--accent-color) !important;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(var(--accent-rgb), 0.1) !important;
+}
+
+.dark .theme-toggle:hover {
+  background-color: rgba(var(--accent-rgb), 0.1) !important;
+}
+
+/* General nav link fixes */
+.nav-link {
+  color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.dark .nav-link {
+  color: var(--text-color) !important;
+}
+
+.dark .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Active nav link */
+.nav-link.active {
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.dark .nav-link.active {
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* Fixed mobile menu button */
+.mobile-menu-button {
+  color: var(--text-color) !important;
+}
+
+.dark .mobile-menu-button {
+  color: var(--text-color) !important;
+}
+
+.mobile-menu-button:hover {
+  color: var(--accent-color) !important;
+}
+
+.dark .mobile-menu-button:hover {
+  color: var(--accent-color) !important;
 } 
