@@ -12,7 +12,32 @@ const { Content } = await guideEntry.render();
 ---
 
 <MainLayout title="Linux for Pirates!">
-  <article class="prose dark:prose-invert max-w-none">
+  <div class="markdown-content">
     <Content />
-  </article>
+  </div>
 </MainLayout>
+
+<script>
+  // Make external links open in new tabs
+  document.addEventListener('DOMContentLoaded', () => {
+    const externalLinks = document.querySelectorAll('.markdown-content a[href^="http"]');
+    externalLinks.forEach(link => {
+      if (!link.hasAttribute('target')) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  });
+</script>
+
+<style>
+  .markdown-content :global(img) {
+    border-radius: 0.75rem;
+    margin: 2.5rem auto;
+  }
+  
+  .markdown-content :global(h2),
+  .markdown-content :global(h3) {
+    scroll-margin-top: 100px;
+  }
+</style>

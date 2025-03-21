@@ -38,19 +38,48 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-slate-200 dark:bg-slate-800;
+    background-color: #e2e8f0;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background-color: #1e293b;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-[#8f36e6] dark:bg-[#a3fe0d] rounded-full;
+    background-color: #8f36e6;
+    border-radius: 9999px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background-color: #a3fe0d;
   }
 
   /* Content styling enhancements */
   .prose img {
     margin-left: auto;
     margin-right: auto;
-    max-width: 85%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
     display: block;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .dark .prose img {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  }
+
+  .prose figure {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .prose p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
   }
 
   .prose blockquote {
