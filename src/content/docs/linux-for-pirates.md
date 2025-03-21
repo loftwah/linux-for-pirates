@@ -1913,107 +1913,85 @@ sudo systemctl start rails-app
 
 This setup, while functional for demonstration purposes, has some limitations:
 
-- It uses Rails' built-in server, which isn't recommended for production
+- It uses Rails' default server (Puma) without proper production configuration
 - It lacks proper environment configuration
 - It doesn't handle database migrations automatically
 
 For a production-ready ship, ye'd want to use:
 
-- A proper application server like Puma or Unicorn behind Nginx
+- Properly configured Puma or Unicorn behind Nginx
 - A process manager like Systemd or Supervisor
-- A more sophisticated deployment tool like Capistrano or Ansible
+- A more sophisticated deployment tool like Capistrano, Kamal, Ansible, cinc (Chef open source alternative), or OpenTofu
 
 ### **Expandin' Yer Fleet: Beyond the Basics**
 
-As ye gain confidence navigatin' these waters, consider these more advanced techniques:
+As ye gain confidence navigatin' these waters, consider these more advanced techniques for 2025:
 
-#### **AWS Elastic Beanstalk**
+#### **Containerization with Docker and Kubernetes**
 
-For pirates who prefer a more automated approach, AWS Elastic Beanstalk handles many deployment details for ye:
-
-```bash
-# Install the AWS EB CLI
-pip install awsebcli
-
-# Initialize yer EB application
-eb init
-
-# Create an environment and deploy
-eb create production-environment
-
-# Deploy changes
-git commit -am "Update treasure map"
-eb deploy
-```
-
-#### **AWS CodePipeline and CodeDeploy**
-
-For larger fleets, consider a fully automated pipeline:
-
-1. **CodePipeline** orchestrates the entire process:
-
-   - Source: Pull code from GitHub
-   - Build: Compile, test, and package
-   - Deploy: Roll out to EC2 instances
-
-2. **CodeDeploy** handles the deployment itself:
-   - Blue/green deployments for zero downtime
-   - Automatic rollback if something goes wrong
-   - Detailed deployment tracking
-
-#### **Infrastructure as Code with AWS CloudFormation**
-
-The most advanced pirates define their entire fleet in code:
-
-```yaml
-# Example CloudFormation template for a basic web server
-AWSTemplateFormatVersion: "2010-09-09"
-Resources:
-  WebServerInstance:
-    Type: AWS::EC2::Instance
-    Properties:
-      InstanceType: t2.micro
-      ImageId: ami-0c55b159cbfafe1f0
-      SecurityGroups:
-        - !Ref WebServerSecurityGroup
-      UserData:
-        Fn::Base64: !Sub |
-          #!/bin/bash -xe
-          apt-get update
-          apt-get install -y nginx
-          echo "Ahoy from the clouds!" > /var/www/html/index.html
-          systemctl start nginx
-
-  WebServerSecurityGroup:
-    Type: AWS::EC2::SecurityGroup
-    Properties:
-      GroupDescription: Allow HTTP and SSH
-      SecurityGroupIngress:
-        - IpProtocol: tcp
-          FromPort: 80
-          ToPort: 80
-          CidrIp: 0.0.0.0/0
-        - IpProtocol: tcp
-          FromPort: 22
-          ToPort: 22
-          CidrIp: 0.0.0.0/0
-```
-
-#### **Containers and Orchestration**
-
-For the most sophisticated pirate fleets, containers provide consistency and scalability:
-
-- **Docker** lets ye package yer application and its dependencies into a standard unit
-- **Amazon ECS** or **EKS** help manage containers at scale
-- **Docker Compose** for local development and testing
+Modern pirates containerize their applications for consistent deployment:
 
 ```bash
-# Example Dockerfile for a simple web application
-FROM nginx:alpine
-COPY ./website /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Create a Dockerfile for yer Rails app
+cat > Dockerfile << 'EOF'
+FROM ruby:3.3-slim
+WORKDIR /app
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+COPY . .
+CMD ["rails", "server", "-b", "0.0.0.0"]
+EOF
+
+# Build and run yer container
+docker build -t rails-app .
+docker run -p 3000:3000 rails-app
 ```
+
+For orchestratin' a fleet o' containers, Kubernetes be the choice of modern buccaneers.
+
+#### **Serverless Deployments**
+
+Save on doubloons with serverless options:
+
+```bash
+# Deploy yer API with AWS Lambda and API Gateway using Serverless Framework
+npm install -g serverless
+serverless create --template aws-ruby
+serverless deploy
+```
+
+#### **Infrastructure as Code with Modern Tools**
+
+The savviest pirates define their entire fleet in code:
+
+- AWS CDK or Pulumi for programmatic infrastructure
+- Terraform or OpenTofu for declarative infrastructure
+- GitOps with ArgoCD or Flux for Kubernetes deployments
+
+#### **Modern CI/CD Practices**
+
+- GitHub Actions or GitLab CI for integrated pipelines
+- CircleCI or BuildKite for specialized CI/CD needs
+- Feature flags and canary deployments for safer releases
+
+#### **Observability and Monitoring**
+
+Keep yer ship's systems under watchful eye:
+
+- Prometheus and Grafana for metrics
+- OpenTelemetry for distributed tracing
+- Datadog or New Relic for comprehensive monitoring
+
+### **Continue Yer Pirate Code Journey**
+
+To stay current with the ever-changin' winds of technology, follow these treasure troves of knowledge:
+
+- **Traversy Media** - For practical web development tutorials
+- **ThePrimeagen** - For advanced coding techniques and developer productivity
+- **TheOgg** - For open source and tech news
+- **Boot.dev** - For structured learning paths in backend development
+
+Remember, the most fearsome pirates never stop learnin'!
 
 ### **Navigational Tips and Best Practices**
 
