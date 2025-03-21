@@ -1,0 +1,16 @@
+---
+// NavbarButton.astro
+export interface Props {
+  href: string;
+  className?: string;
+}
+
+const { href, className = "" } = Astro.props;
+---
+
+<a 
+  href={href}
+  class={`inline-flex items-center px-4 py-2 rounded-full transition-all duration-200 ${className}`}
+>
+  <slot />
+</a> 
