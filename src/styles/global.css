@@ -6,10 +6,12 @@
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
     font-size: 16px;
+    overflow-x: hidden;
   }
 
   body {
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -250,13 +252,185 @@
   .prose h4 {
     font-size: 1.25rem; /* Smaller h4 on mobile */
   }
-  
+
   .prose img {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    width: 100%; /* Full width images on mobile */
+    max-width: 100%;
   }
-  
+
+  .prose pre {
+    font-size: 0.9rem; /* Smaller code blocks on mobile */
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  .prose code {
+    font-size: 0.9rem; /* Smaller inline code on mobile */
+  }
+
+  .prose table {
+    display: block;
+    overflow-x: auto;
+    font-size: 0.9rem;
+  }
+
+  .prose p, .prose li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
   .treasure-note {
     padding: 1rem;
+    margin: 1.5rem 0;
   }
-} 
+}
+
+/* Ensure code blocks don't break mobile layout */
+.prose pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Make tables responsive */
+.prose table {
+  width: 100%;
+  table-layout: auto;
+}
+
+@media (max-width: 480px) {
+  .prose table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Consistent book styling */
+.markdown-content :global(img) {
+  border-radius: 0.75rem;
+  margin: 2.5rem auto;
+  max-width: 100%;
+  height: auto;
+}
+  
+.markdown-content :global(h2),
+.markdown-content :global(h3) {
+  scroll-margin-top: 100px;
+}
+
+.markdown-content :global(p) {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.markdown-content :global(ul),
+.markdown-content :global(ol) {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.markdown-content :global(li) {
+  margin-bottom: 0.75rem;
+  line-height: 1.8;
+}
+
+.markdown-content :global(h1) {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.markdown-content :global(h2) {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.markdown-content :global(h3) {
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.markdown-content :global(h4) {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-content :global(pre) {
+  overflow-x: auto;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.markdown-content :global(table) {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .markdown-content :global(table) {
+    display: table;
+  }
+}
+
+/* Additional responsive image fixes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Additional mobile improvements */
+@media (max-width: 480px) {
+  .prose {
+    font-size: 0.95rem;
+  }
+  
+  .prose h1 {
+    font-size: 1.8rem;
+  }
+  
+  .prose h2 {
+    font-size: 1.5rem;
+  }
+  
+  .prose h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Adjust padding for better content display on small screens */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Ensure code blocks are readable on small screens */
+  pre {
+    max-width: calc(100vw - 2rem);
+    padding: 0.75rem !important;
+  }
+  
+  code {
+    word-break: break-word;
+  }
+}
+
+/* Minimal fixes for overflow issues */
+.container {
+  overflow-x: hidden;
+}
+
+.markdown-content {
+  overflow-x: hidden;
+}
+
+/* End of file */ 

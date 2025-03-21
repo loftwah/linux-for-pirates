@@ -16,7 +16,7 @@ const { Content } = await guideEntry.render();
   description="A guide to Linux from a pirate perspective"
   ogImage="/images/linux-for-pirates-og.jpg"
 >
-  <div class="markdown-content">
+  <div class="markdown-content overflow-hidden w-full">
     <Content />
   </div>
 </MainLayout>
@@ -33,15 +33,3 @@ const { Content } = await guideEntry.render();
     });
   });
 </script>
-
-<style>
-  .markdown-content :global(img) {
-    border-radius: 0.75rem;
-    margin: 2.5rem auto;
-  }
-  
-  .markdown-content :global(h2),
-  .markdown-content :global(h3) {
-    scroll-margin-top: 100px;
-  }
-</style>
