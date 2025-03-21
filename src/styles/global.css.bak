@@ -141,26 +141,6 @@
     background-color: #a3fe0d;
   }
 
-  /* Animated navbar links */
-  #book-nav a {
-    position: relative;
-  }
-
-  #book-nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background: linear-gradient(to right, #8f36e6, #a3fe0d, #8f36e6);
-    transition: width 0.3s ease;
-  }
-
-  #book-nav a:hover::after {
-    width: 100%;
-  }
-
   /* Hide empty table of contents containers */
   .table-of-contents:empty,
   .table-of-contents ul:empty {
@@ -1941,6 +1921,11 @@ body {
   }
 }
 
+/* Gradient underline animation */
+.gradient-underline {
+  background-size: 200% 200%;
+  animation: gradientFlow 3s ease infinite;
+}
 
 @keyframes gradientFlow {
   0% {

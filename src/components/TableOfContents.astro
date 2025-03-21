@@ -28,11 +28,19 @@ const hasHeadings = headings && headings.length > 0;
 )}
 
 <script is:inline>
-  // Add anchor links to all headings
+  // Check if device is mobile - run simpler code on mobile
+  const isMobile = window.innerWidth <= 768;
+
+  // Add anchor links to all headings - with mobile optimization
   document.addEventListener('DOMContentLoaded', () => {
-    const headings = document.querySelectorAll('.prose h2, .prose h3, .prose h4');
+    // On mobile, only add anchors to major headings (h2)
+    const headings = document.querySelectorAll(isMobile ? '.prose h2' : '.prose h2, .prose h3, .prose h4');
     
-    headings.forEach(heading => {
+    // Limit the total number of headings processed on mobile
+    const headingsArray = Array.from(headings);
+    const headingsToProcess = isMobile ? headingsArray.slice(0, 10) : headingsArray;
+    
+    headingsToProcess.forEach(heading => {
       // Skip headings that already have anchor links or are in the table of contents
       if (heading.querySelector('.heading-anchor') || heading.closest('.table-of-contents')) {
         return;

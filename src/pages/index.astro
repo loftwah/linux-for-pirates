@@ -24,12 +24,14 @@ const hasHeadings = tocHeadings && tocHeadings.length > 0;
   ogImage="/images/linux-for-pirates-og.jpg"
 >
   <div class="markdown-content overflow-hidden w-full dark:bg-[#080f1d]">
-    {hasHeadings && <TableOfContents headings={tocHeadings} />}
     <Content />
   </div>
 </MainLayout>
 
 <script is:inline>
+  // Check if device is mobile - run simpler code on mobile
+  const isMobile = window.innerWidth <= 768;
+
   // Process the table of contents
   document.addEventListener('DOMContentLoaded', () => {
     const contentSection = document.querySelector('.markdown-content');
@@ -75,8 +77,26 @@ const hasHeadings = tocHeadings && tocHeadings.length > 0;
     });
   });
 
-  // Process command line code blocks to style prefixes
+  // Process command line code blocks to style prefixes - simpler on mobile
   document.addEventListener('DOMContentLoaded', () => {
+    // On mobile, use simplified code without wrapper creation and animations
+    if (isMobile) {
+      // Do minimal styling only
+      const commandBlocks = document.querySelectorAll('pre code.language-bash, pre code.language-sh');
+      commandBlocks.forEach(block => {
+        const content = block.innerHTML;
+        // Replace common command line prefixes with styled spans
+        const processedContent = content
+          .replace(/^(\$ )/gm, '<span class="command-line-prefix">$</span>')
+          .replace(/^(> )/gm, '<span class="command-line-prefix">></span>')
+          .replace(/^(# )/gm, '<span class="command-line-prefix">#</span>');
+        
+        block.innerHTML = processedContent;
+      });
+      return;
+    }
+    
+    // Desktop - full styling
     // Style command line prefixes
     const commandBlocks = document.querySelectorAll('pre code.language-bash, pre code.language-sh');
     
@@ -91,7 +111,7 @@ const hasHeadings = tocHeadings && tocHeadings.length > 0;
       block.innerHTML = processedContent;
     });
 
-    // Fix inconsistent styling between pages
+    // Fix inconsistent styling between pages - SKIP ON MOBILE
     document.querySelectorAll('.markdown-content pre, .prose pre').forEach(pre => {
       if (!pre.parentElement.classList.contains('code-block-wrapper')) {
         // If this pre isn't already wrapped, wrap it

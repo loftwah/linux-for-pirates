@@ -91,9 +91,10 @@ const isRubyPage = pathname.includes('ruby-on-whales');
             <div>
               <img src="/images/pirate_flag.svg" alt="Pirate Flag" class="h-7 w-7 sm:h-8 sm:w-8" />
             </div>
-            <div>
+            <div class="relative">
               <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-display tracking-wider">
-                <span class="text-slate-800 dark:text-[#f8fafc]">Linux</span> <span class="text-[#8f36e6] dark:text-[#a3fe0d]">for</span> <span class="text-slate-800 dark:text-[#f8fafc]">Pirates!</span>
+                <span class="text-slate-800 dark:text-[#f8fafc]">LINUX</span> <span class="text-[#8f36e6] dark:text-[#a3fe0d]">FOR</span> <span class="text-slate-800 dark:text-[#f8fafc]">PIRATES!</span>
+                <div class="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-[#8f36e6] via-[#a3fe0d] to-[#8f36e6]"></div>
               </h1>
             </div>
           </div>
@@ -149,11 +150,11 @@ const isRubyPage = pathname.includes('ruby-on-whales');
     <div class="bg-white dark:bg-[#080f1d] border-b border-slate-200 dark:border-[#0d1a2f] shadow-sm">
       <div class="container mx-auto px-4 w-full">
         <div class="flex justify-center py-2">
-          <div class="flex space-x-4 sm:space-x-6 w-full justify-center">
-            <a href="/" class={`font-medium text-xs sm:text-sm ${isLinuxPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-[#dce6ef] hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-colors`}>
+          <div id="book-nav" class="flex space-x-4 sm:space-x-6 w-full justify-center">
+            <a href="/" class={`font-medium text-xs sm:text-sm ${isLinuxPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-[#dce6ef] hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-all duration-300`}>
               Linux for Pirates
             </a>
-            <a href="/ruby-on-whales" class={`font-medium text-xs sm:text-sm ${isRubyPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-[#dce6ef] hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-colors`}>
+            <a href="/ruby-on-whales" class={`font-medium text-xs sm:text-sm ${isRubyPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-[#dce6ef] hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-all duration-300`}>
               Ruby on Whales
             </a>
           </div>
@@ -193,10 +194,11 @@ const isRubyPage = pathname.includes('ruby-on-whales');
         <div class="flex flex-col items-center">
           <div class="flex items-center gap-2 mb-3 sm:mb-4">
             <img src="/images/pirate_flag.svg" alt="Pirate Flag" class="h-7 w-7 sm:h-8 sm:w-8" />
-            <span class="font-display text-base sm:text-lg">
-              <span class="text-slate-800 dark:text-[#f8fafc]">Linux</span> 
-              <span class="text-[#8f36e6] dark:text-[#a3fe0d]">for</span> 
-              <span class="text-slate-800 dark:text-[#f8fafc]">Pirates</span>
+            <span class="font-display text-base sm:text-lg relative">
+              <span class="text-slate-800 dark:text-[#f8fafc]">LINUX</span> 
+              <span class="text-[#8f36e6] dark:text-[#a3fe0d]">FOR</span> 
+              <span class="text-slate-800 dark:text-[#f8fafc]">PIRATES</span>
+              <div class="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-[#8f36e6] via-[#a3fe0d] to-[#8f36e6]"></div>
             </span>
           </div>
           
