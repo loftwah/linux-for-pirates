@@ -83,13 +83,6 @@ const isRubyPage = pathname.includes('ruby-on-whales');
     </script>
   </head>
   <body class="min-h-screen bg-slate-50 dark:bg-[#080f1d] dark:text-white transition-colors duration-300 font-sans">
-    <!-- Add this background shapes element -->
-    <div class="background-shapes">
-      <div class="shape"></div>
-      <div class="shape"></div>
-      <div class="shape"></div>
-    </div>
-
     <!-- Navigation Header -->
     <header class="sticky top-0 z-50 border-b border-slate-200 dark:border-[#0d1a2f] bg-white dark:bg-[#080f1d] shadow-md">
       <div class="container mx-auto px-4 py-3 w-full">
@@ -225,9 +218,9 @@ const isRubyPage = pathname.includes('ruby-on-whales');
       </div>
     </footer>
 
-    <script is:inline>
-      // Theme toggling
-      document.addEventListener('DOMContentLoaded', () => {
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Theme toggle code remains unchanged
         const themeToggle = document.getElementById('theme-toggle');
         const htmlEl = document.documentElement;
         
@@ -247,45 +240,18 @@ const isRubyPage = pathname.includes('ruby-on-whales');
             }
           });
         }
-
-        // Scroll to top button
+        
+        // Simplified scroll-to-top functionality
         const scrollTopBtn = document.getElementById('scroll-top');
+        
         if (scrollTopBtn) {
-          // Make button visible by default
-          scrollTopBtn.style.opacity = '1';
-          scrollTopBtn.style.visibility = 'visible';
-          
-          // Use passive event listener for better performance on mobile
-          window.addEventListener('scroll', () => {
-            try {
-              const scrollY = window.scrollY || window.pageYOffset;
-              if (scrollY > 300) {
-                scrollTopBtn.style.opacity = '1';
-                scrollTopBtn.style.visibility = 'visible';
-                scrollTopBtn.classList.add('visible');
-              } else {
-                // Keep button visible even at top of page
-                scrollTopBtn.style.opacity = '1';
-                scrollTopBtn.style.visibility = 'visible';
-                scrollTopBtn.classList.remove('visible');
-              }
-            } catch (e) {
-              console.log('Error in scroll event:', e);
-            }
-          }, { passive: true });
-          
+          // Simplified event handler with fewer properties to change
           scrollTopBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            try {
-              window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-              });
-            } catch (e) {
-              // Fallback for older browsers
-              window.scrollTo(0, 0);
-              console.log('Error scrolling to top:', e);
-            }
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
           });
         }
       });

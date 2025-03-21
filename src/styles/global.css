@@ -932,23 +932,23 @@
 
 /* Scroll to top button transitions */
 #scroll-top {
-  opacity: 0.7 !important;
-  visibility: visible !important;
+  opacity: 0.7;
+  visibility: visible;
   z-index: 9999;
-  position: fixed !important;
-  transition: opacity 0.2s ease !important;
+  position: fixed;
+  transition: opacity 0.2s ease;
 }
 
 #scroll-top:hover {
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .dark #scroll-top {
-  opacity: 0.7 !important;
+  opacity: 0.7;
 }
 
 .dark #scroll-top:hover {
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 /* Mobile responsiveness improvements */
@@ -1839,9 +1839,7 @@ main {
 }
 
 .dark main {
-  background-color: rgba(8, 15, 29, 0.85) !important;
-  backdrop-filter: blur(10px) !important;
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(8, 15, 29, 0.95);
 }
 
 @keyframes fadeIn {
@@ -2095,84 +2093,87 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
   overflow: hidden;
+  z-index: -1;
   pointer-events: none;
 }
 
 .shape {
   position: absolute;
-  opacity: 0.03;
+  background-color: rgba(143, 54, 230, 0.03);
   border-radius: 50%;
-  background: var(--accent-color);
-  animation: float 15s infinite ease-in-out;
+  /* Reduce complexity and animation demands */
+  animation: float 20s ease-in-out infinite;
+  opacity: 0.3;
 }
 
+/* Reduce number of shapes and simplify animation */
 .shape:nth-child(1) {
   width: 200px;
   height: 200px;
-  top: 10%;
+  top: 20%;
   left: 10%;
   animation-delay: 0s;
-  animation-duration: 25s;
 }
 
 .shape:nth-child(2) {
   width: 150px;
   height: 150px;
-  top: 70%;
-  left: 80%;
+  top: 60%;
+  left: 70%;
   animation-delay: -5s;
-  animation-duration: 30s;
 }
 
-.shape:nth-child(3) {
-  width: 300px;
-  height: 300px;
-  top: 40%;
-  left: 40%;
-  animation-delay: -10s;
-  animation-duration: 35s;
-}
-
+/* Simplify float animation */
 @keyframes float {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(-20px, 20px) rotate(5deg); }
-  50% { transform: translate(20px, -20px) rotate(10deg); }
-  75% { transform: translate(-20px, -20px) rotate(5deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .shape {
+    animation: none;
+    transform: none;
+  }
+}
+
+/* Disable animations on smaller screens to improve performance */
+@media (max-width: 640px) {
+  .shape {
+    animation: none;
+    opacity: 0.2;
+  }
 }
 
 /* Adjust paragraph and list text in dark mode */
 .dark .prose p, 
 .dark .prose li {
-  color: #dce6ef;
+  color: #dce6ef !important;
 }
 
 /* Adjust inline code in dark mode */
 .dark .prose code {
-  color: #a3fe0d;
-  background-color: rgba(163, 254, 13, 0.12);
+  color: #a3fe0d !important;
+  background-color: rgba(163, 254, 13, 0.12) !important;
 }
 
 /* Main content background color */
 .dark main {
-  background-color: rgba(8, 15, 29, 0.85) !important;
-  backdrop-filter: blur(10px) !important;
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(8, 15, 29, 0.95) !important;
 }
 
 /* Adjust table cells in dark mode */
 .dark .prose table td, 
 .dark .prose table th {
-  border-color: #1c2a3a; 
-  color: #dce6ef;
+  border-color: #1c2a3a !important; 
+  color: #dce6ef !important;
 }
 
 /* Adjust blockquote in dark mode */
 .dark .prose blockquote {
-  background: linear-gradient(135deg, rgba(163, 254, 13, 0.07), rgba(163, 254, 13, 0.12), rgba(163, 254, 13, 0.07)) !important;
-  color: #dce6ef;
+  background-color: rgba(163, 254, 13, 0.07) !important;
+  color: #dce6ef !important;
 }
 
 /* Make heading stand out more in dark mode */
@@ -2180,7 +2181,7 @@ html {
 .dark .prose h2, 
 .dark .prose h3, 
 .dark .prose h4 {
-  color: #a3fe0d;
+  color: #a3fe0d !important;
 }
 
 /* Fix all slate text colors in dark mode */
@@ -2198,23 +2199,23 @@ html {
 
 /* Ensure back to top button is visible */
 #scroll-top {
-  opacity: 0.7 !important;
-  visibility: visible !important;
+  opacity: 0.7;
+  visibility: visible;
   z-index: 9999;
-  position: fixed !important;
-  transition: opacity 0.2s ease !important;
+  position: fixed;
+  transition: opacity 0.2s ease;
 }
 
 #scroll-top:hover {
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .dark #scroll-top {
-  opacity: 0.7 !important;
+  opacity: 0.7;
 }
 
 .dark #scroll-top:hover {
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 /* Fix any bg elements that might still have the gray color */
