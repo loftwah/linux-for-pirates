@@ -14,6 +14,24 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel Decorative', serif;
+    color: #8f36e6; /* Light mode accent color for all headings */
+  }
+
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #a3fe0d; /* Dark mode accent color for all headings */
+  }
+
+  a {
+    color: #8f36e6; /* Light mode accent color for links */
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .dark a {
+    color: #a3fe0d; /* Dark mode accent color for links */
   }
 
   .font-display {
@@ -138,18 +156,52 @@
   /* Heading size adjustments */
   .prose h1 {
     font-size: 2.5rem;
+    color: #8f36e6;
+  }
+
+  .dark .prose h1 {
+    color: #a3fe0d;
   }
 
   .prose h2 {
     font-size: 2rem;
+    color: #8f36e6;
+  }
+
+  .dark .prose h2 {
+    color: #a3fe0d;
   }
 
   .prose h3 {
     font-size: 1.75rem;
+    color: #9d4feb; /* Slightly lighter shade for subheadings */
+  }
+
+  .dark .prose h3 {
+    color: #b4ff3d; /* Slightly lighter shade for dark mode subheadings */
   }
 
   .prose h4 {
     font-size: 1.5rem;
+    color: #9d4feb; /* Slightly lighter shade for subheadings */
+  }
+  
+  .dark .prose h4 {
+    color: #b4ff3d; /* Slightly lighter shade for dark mode subheadings */
+  }
+
+  .prose a {
+    color: #8f36e6;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+  }
+
+  .prose a:hover {
+    text-decoration: underline;
+  }
+
+  .dark .prose a {
+    color: #a3fe0d;
   }
 
   /* Animated elements */
@@ -175,4 +227,36 @@
 #scroll-top {
   opacity: 0;
   transition: all 0.3s ease;
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 640px) {
+  html {
+    font-size: 15px; /* Slightly smaller base font size on mobile */
+  }
+  
+  .prose h1 {
+    font-size: 2rem; /* Smaller h1 on mobile */
+  }
+  
+  .prose h2 {
+    font-size: 1.75rem; /* Smaller h2 on mobile */
+  }
+  
+  .prose h3 {
+    font-size: 1.5rem; /* Smaller h3 on mobile */
+  }
+  
+  .prose h4 {
+    font-size: 1.25rem; /* Smaller h4 on mobile */
+  }
+  
+  .prose img {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .treasure-note {
+    padding: 1rem;
+  }
 } 
