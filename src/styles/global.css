@@ -530,13 +530,13 @@
     justify-content: flex-end !important;
     align-items: center !important;
     padding: 0.5rem 1rem !important;
-    background-color: #f8fafc !important;
-    border-bottom: 1px solid rgba(143, 54, 230, 0.1) !important;
+    background-color: #e2e8f0 !important;
+    border-bottom: 1px solid rgba(143, 54, 230, 0.2) !important;
   }
 
   .dark .code-header {
     background-color: #1e293b !important;
-    border-color: rgba(163, 254, 13, 0.1) !important;
+    border-color: rgba(163, 254, 13, 0.2) !important;
   }
 
   .copy-button {
@@ -586,13 +586,13 @@
   pre {
     margin: 0 !important;
     padding: 1.25rem !important;
-    background-color: #131c2e !important;
-    color: #f8fafc !important;
+    background-color: var(--code-bg-color) !important;
+    color: var(--code-text-color) !important;
     border-radius: 0 0 0.75rem 0.75rem !important;
     overflow-x: auto !important;
     font-size: 0.875rem !important;
     line-height: 1.7 !important;
-    border-left: 4px solid #8f36e6 !important;
+    border-left: 4px solid var(--accent-color) !important;
   }
 
   .dark pre {
@@ -601,7 +601,7 @@
 
   pre code {
     font-family: var(--font-mono), monospace !important;
-    color: #f8fafc !important;
+    color: var(--code-text-color) !important;
     padding: 0 !important;
     background-color: transparent !important;
     white-space: pre !important;
@@ -610,14 +610,10 @@
 
   /* Command line prefix styling */
   .command-line-prefix {
-    color: #8f36e6 !important;
+    color: var(--accent-color) !important;
     user-select: none !important;
     margin-right: 0.5rem !important;
     font-weight: bold !important;
-  }
-
-  .dark .command-line-prefix {
-    color: #a3fe0d !important;
   }
 
   /* Ensure consistent styling across all contexts */
@@ -943,22 +939,22 @@ html {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Code header styling */
+/* Improved header with better contrast in light mode */
 .code-header {
   display: flex !important;
   justify-content: flex-end !important;
   align-items: center !important;
   padding: 0.5rem 1rem !important;
-  background-color: #f8fafc !important;
-  border-bottom: 1px solid rgba(143, 54, 230, 0.1) !important;
+  background-color: #e2e8f0 !important;
+  border-bottom: 1px solid rgba(143, 54, 230, 0.2) !important;
 }
 
 .dark .code-header {
   background-color: #1e293b !important;
-  border-color: rgba(163, 254, 13, 0.1) !important;
+  border-color: rgba(163, 254, 13, 0.2) !important;
 }
 
-/* Copy button styling */
+/* Enhanced copy button style */
 .copy-button {
   font-size: 0.75rem !important;
   font-weight: 500 !important;
@@ -1002,17 +998,17 @@ html {
   border-color: #a3fe0d !important;
 }
 
-/* Code block styling */
+/* Code block styling using theme variables */
 pre {
   margin: 0 !important;
   padding: 1.25rem !important;
-  background-color: #131c2e !important;
-  color: #f8fafc !important;
+  background-color: var(--code-bg-color) !important;
+  color: var(--code-text-color) !important;
   border-radius: 0 0 0.75rem 0.75rem !important;
   overflow-x: auto !important;
   font-size: 0.875rem !important;
   line-height: 1.7 !important;
-  border-left: 4px solid #8f36e6 !important;
+  border-left: 4px solid var(--accent-color) !important;
 }
 
 .dark pre {
@@ -1021,182 +1017,45 @@ pre {
 
 pre code {
   font-family: var(--font-mono), monospace !important;
-  color: #f8fafc !important;
+  color: var(--code-text-color) !important;
   padding: 0 !important;
   background-color: transparent !important;
   white-space: pre !important;
   display: block !important;
 }
 
-/* Inline code styling */
-:not(pre) > code {
-  font-family: monospace !important;
-  font-size: 0.875em !important;
-  font-weight: 500 !important;
-  background-color: var(--inline-code-bg-light) !important;
-  color: var(--inline-code-color-light) !important;
-  padding: 0.2em 0.4em !important;
-  border-radius: 0.25rem !important;
-  white-space: normal !important;
-  word-break: break-word !important;
-  display: inline !important;
-}
-
-.dark :not(pre) > code {
-  background-color: var(--inline-code-bg-dark) !important;
-  color: var(--inline-code-color-dark) !important;
-}
-
-/* Override any page-specific styles that might conflict */
-.markdown-content pre,
-.prose pre {
-  background-color: var(--code-bg) !important;
-  color: var(--code-text) !important;
-}
-
-.markdown-content pre code,
-.prose pre code {
-  color: var(--code-text) !important;
-}
-
-/* Fix for code blocks in lists */
-.prose li pre,
-.markdown-content li pre {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-}
-
-.prose li .code-block-wrapper,
-.markdown-content li .code-block-wrapper {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.75rem !important;
-}
-
-/* Command line prefix styling */
+/* Command line prefix styling with theme colors */
 .command-line-prefix {
-  color: #8f36e6 !important;
+  color: var(--accent-color) !important;
   user-select: none !important;
   margin-right: 0.5rem !important;
   font-weight: bold !important;
 }
 
-/* Force tables to display consistently */
-.markdown-content table {
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow-x: auto !important;
-  margin: 1.5rem 0 !important;
-  border-collapse: collapse !important;
-}
-
-@media (min-width: 768px) {
-  .markdown-content table {
-    display: table !important;
-    width: 100% !important;
-  }
-}
-
-/* Consistent table cell styling */
-.markdown-content table th,
-.markdown-content table td {
-  padding: 0.75rem 1rem !important;
-  border: 1px solid #e2e8f0 !important;
-  text-align: left !important;
-}
-
-.dark .markdown-content table th,
-.dark .markdown-content table td {
-  border-color: #334155 !important;
-}
-
-/* Force images to display consistently */
-.markdown-content img {
-  display: block !important;
-  margin: 2.5rem auto !important;
-  max-width: 100% !important;
-  height: auto !important;
-  border-radius: 0.75rem !important;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-}
-
-.dark .markdown-content img {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2) !important;
-}
-
-/* Style cleanup - override problematic styles */
-.markdown-content *,
-.prose * {
-  box-sizing: border-box !important;
-}
-
-/* Reset potentially problematic properties */
+/* Override any page-specific styles that might conflict */
 .markdown-content pre,
 .prose pre {
-  white-space: pre !important;
-  tab-size: 4 !important;
-  hyphens: none !important;
-  overflow-wrap: normal !important;
+  background-color: var(--code-bg-color) !important;
+  color: var(--code-text-color) !important;
 }
 
-/* Ensure inline code is properly displayed */
-:not(pre) > code {
-  white-space: pre-wrap !important;
-  word-break: break-word !important;
-}
-
-/* !IMPORTANT overrides for stubborn elements */
-.markdown-content h1,
-.markdown-content h2,
-.markdown-content h3,
-.markdown-content h4,
-.markdown-content h5,
-.markdown-content h6 {
-  color: #8f36e6 !important;
-  font-family: 'Cinzel Decorative', serif !important;
-}
-
-.dark .markdown-content h1,
-.dark .markdown-content h2,
-.dark .markdown-content h3,
-.dark .markdown-content h4,
-.dark .markdown-content h5,
-.dark .markdown-content h6 {
-  color: #a3fe0d !important;
-}
-
-.markdown-content a {
-  color: #8f36e6 !important;
-  text-decoration: none !important;
-}
-
-.dark .markdown-content a {
-  color: #a3fe0d !important;
-}
-
-.markdown-content a:hover {
-  text-decoration: underline !important;
+.markdown-content pre code,
+.prose pre code {
+  color: var(--code-text-color) !important;
 }
 
 /* Force consistent code blocks across all contexts */
 .markdown-content pre,
 .prose pre,
 pre {
-  background-color: #131c2e !important;
-  color: #f8fafc !important;
+  background-color: var(--code-bg-color) !important;
+  color: var(--code-text-color) !important;
   margin: 0 !important;
-  padding: 1rem !important;
-}
-
-.dark .markdown-content pre,
-.dark .prose pre,
-.dark pre {
-  background-color: #131c2e !important;
-  color: #f8fafc !important;
+  padding: 1.25rem !important;
 }
 
 .markdown-content pre code,
 .prose pre code,
 pre code {
-  color: #f8fafc !important;
+  color: var(--code-text-color) !important;
 } 
