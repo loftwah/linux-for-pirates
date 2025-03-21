@@ -133,23 +133,43 @@
     background-color: rgba(163, 254, 13, 0.05);
   }
 
+  /* Simple code block styling */
   .prose pre {
     border-radius: 0.5rem;
     padding: 1.25rem;
-    font-size: 1.05rem;
+    font-size: 0.9rem;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    overflow-x: auto;
+    white-space: pre;
+    margin: 1.5rem 0;
   }
 
+  .dark .prose pre {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+
+  /* Simple inline code styling */
   .prose code {
     color: #8f36e6;
     font-weight: 500;
     background-color: rgba(143, 54, 230, 0.1);
     padding: 0.15rem 0.3rem;
     border-radius: 0.25rem;
+    font-size: 0.9em;
+    font-family: monospace;
   }
 
   .dark .prose code {
     color: #a3fe0d;
     background-color: rgba(163, 254, 13, 0.1);
+  }
+
+  /* Fix for inline code spans */
+  :not(pre) > code {
+    display: inline;
+    white-space: normal;
   }
 
   .prose table {
@@ -454,6 +474,70 @@
     background-color: rgba(163, 254, 13, 0.1);
     color: #a3fe0d;
   }
+
+  /* Fix for code blocks in lists */
+  .prose ol li pre,
+  .prose ul li pre {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Simple code block and copy button styling */
+  .code-block-wrapper {
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0.5rem 1rem;
+  }
+
+  .dark .code-header {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+
+  .copy-button {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .dark .copy-button {
+    background-color: #0f172a;
+    border-color: #334155;
+    color: #e2e8f0;
+  }
+
+  .copy-button:hover {
+    border-color: #8f36e6;
+  }
+
+  .dark .copy-button:hover {
+    border-color: #a3fe0d;
+  }
+
+  .copy-button.copied {
+    background-color: #8f36e6;
+    color: white;
+    border-color: #8f36e6;
+  }
+
+  .dark .copy-button.copied {
+    background-color: #a3fe0d;
+    color: #0f172a;
+    border-color: #a3fe0d;
+  }
 }
 
 /* Scroll to top button transitions */
@@ -515,7 +599,7 @@
 }
 
 .prose pre {
-  white-space: pre-wrap;
+  white-space: pre;
   word-wrap: break-word;
   overflow-x: auto;
 }
@@ -666,4 +750,247 @@ img {
   overflow-x: hidden;
 }
 
-/* End of file */ 
+/* End of file */
+
+/* Base styles */
+:root {
+  --font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --font-body: 'Inter', var(--font-fallback);
+  --font-mono: 'Fira Mono', monospace;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  --color-blue: #3894ff;
+  --color-blue-rgb: 56, 148, 255;
+  --color-green: #17c083;
+  --color-green-rgb: 23, 192, 131;
+  --color-orange: #ff5d01;
+  --color-orange-rgb: 255, 93, 1;
+  --color-purple: #882de7;
+  --color-purple-rgb: 136, 45, 231;
+  --color-red: #ff1639;
+  --color-red-rgb: 255, 22, 57;
+  --color-yellow: #ffbe2d;
+  --color-yellow-rgb: 255, 190, 45;
+}
+
+:root {
+  color-scheme: light;
+  --theme-accent: var(--color-orange);
+  --theme-accent-rgb: var(--color-orange-rgb);
+  --theme-accent-opacity: 0.1;
+  --theme-divider: var(--color-gray-100);
+  --theme-text: var(--color-gray-800);
+  --theme-text-light: var(--color-gray-600);
+  --theme-text-lighter: var(--color-gray-400);
+  --theme-bg: var(--color-white);
+  --theme-bg-offset: var(--color-gray-100);
+  --theme-bg-accent: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
+  --theme-code-inline-bg: var(--color-gray-100);
+  --theme-code-inline-text: var(--color-gray-800);
+  --theme-code-bg: var(--color-gray-100);
+  --theme-code-text: var(--color-gray-900);
+  --theme-navbar-bg: var(--color-white);
+  --theme-navbar-height: 6rem;
+  --theme-selection-color: var(--color-orange);
+  --theme-selection-bg: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Code Blocks and Inline Code Styling */
+:not(pre) > code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: var(--theme-code-inline-bg);
+  border-radius: 4px;
+  color: var(--theme-code-inline-text);
+  font-family: var(--font-mono);
+  word-break: break-word;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: pre-wrap;
+}
+
+pre {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 6px;
+  background-color: var(--theme-code-bg);
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+}
+
+pre > code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  line-height: 1.45;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: var(--theme-code-text);
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  display: block;
+}
+
+/* Fix the gap between code header and code content */
+.code-block-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0 !important;
+  border-radius: 0.5rem !important;
+  overflow: hidden !important;
+  border: 1px solid var(--theme-divider);
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--theme-bg-offset);
+  border-bottom: 1px solid var(--theme-divider);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.code-header + pre {
+  margin: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0.75rem;
+  border: none;
+}
+
+/* Ensure code blocks in list items look good */
+.prose ol li pre,
+.prose ul li pre {
+  margin: 0.5rem 0 !important;
+}
+
+.prose ol li .code-block-wrapper,
+.prose ul li .code-block-wrapper {
+  margin: 0.5rem 0 1rem 0 !important;
+}
+
+/* Fix for inline code spans being treated as blocks */
+:not(pre) > code {
+  display: inline !important;
+  white-space: normal !important;
+}
+
+/* Style for copy button */
+.copy-button {
+  background-color: transparent;
+  border: 1px solid var(--theme-divider);
+  border-radius: 4px;
+  font-size: 0.8em;
+  padding: 0.4em 0.6em;
+  color: var(--theme-text-light);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+  background-color: var(--theme-bg-accent);
+  color: var(--theme-accent);
+}
+
+.copy-button.copied {
+  background-color: var(--theme-accent);
+  color: white;
+}
+
+/* Fix for RVM installation steps */
+ol li pre {
+  margin-bottom: 1em;
+}
+
+/* Combined code block for installation steps */
+.combined-code-block {
+  margin-top: 1em;
+  border: 1px solid var(--theme-divider);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.combined-code-block .code-header {
+  margin-top: 0;
+}
+
+.combined-code-block pre {
+  margin: 0;
+  border-radius: 0;
+}
+
+.combined-code-message {
+  background-color: var(--theme-bg-accent);
+  color: var(--theme-text);
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  border-bottom: 1px solid var(--theme-divider);
+}
+
+/* Ensure ordered list items in RVM section have proper spacing */
+[id^="using-rvm"] + ol li {
+  margin-bottom: 1em;
+}
+
+/* Ensure code blocks in RVM steps don't get separated */
+[id^="using-rvm"] + ol li p + pre {
+  margin-top: 0.5em;
+}
+
+/* Improve ordered list spacing and appearance */
+ol {
+  counter-reset: item;
+  padding-left: 2em;
+}
+
+ol li {
+  display: block;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+ol li:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  position: absolute;
+  left: -2em;
+  width: 1.5em;
+  text-align: right;
+  color: var(--theme-text-light);
+}
+
+/* Ensure inline code inside lists doesn't break the layout */
+ol li p code,
+ul li p code {
+  display: inline;
+  white-space: normal;
+}
+
+/* Remove top margin from code blocks right after a list item's text */
+li > p + pre {
+  margin-top: 0.5em;
+} 

@@ -23,11 +23,13 @@ const prettyCodeOptions = {
     node.properties.className = node.properties.className || [];
     node.properties.className.push('highlighted');
   },
-  // Using onVisitHighlightedChars instead of onVisitHighlightedWord as per the correct API
   onVisitHighlightedChars(node) {
     // Add a class to highlighted words/chars
     node.properties.className = ['word'];
-  }
+  },
+  // Keep backgrounds and code blocks intact
+  keepBackground: true,
+  grid: true
 };
 
 // https://astro.build/config

@@ -205,111 +205,103 @@ const isRubyPage = pathname.includes('ruby-on-whales');
       </div>
     </footer>
 
-    <script>
+    <script is:inline>
       // Theme toggling
-      const themeToggle = document.getElementById('theme-toggle');
-      
-      themeToggle?.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.contains('dark');
-        
-        if (isDark) {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('theme', 'light');
-        } else {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('theme', 'dark');
-        }
-      });
-
-      // Scroll to top button
-      const scrollTopButton = document.getElementById('scroll-top');
-      
-      if (scrollTopButton) {
-        window.addEventListener('scroll', () => {
-          if (window.scrollY > 300) {
-            scrollTopButton.classList.remove('opacity-0', 'invisible');
-            scrollTopButton.classList.add('opacity-100', 'visible');
-          } else {
-            scrollTopButton.classList.remove('opacity-100', 'visible');
-            scrollTopButton.classList.add('opacity-0', 'invisible');
-          }
-        });
-        
-        scrollTopButton.addEventListener('click', () => {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
-        });
-      }
-
-      // Active link highlighting
       document.addEventListener('DOMContentLoaded', () => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const id = entry.target.getAttribute('id');
-              if (id) {
-                const links = document.querySelectorAll(`a[href="#${id}"]`);
-                links.forEach(link => {
-                  link.classList.add('font-bold');
-                });
-              }
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
+        
+        if (themeToggle) {
+          themeToggle.addEventListener('click', () => {
+            // Toggle dark mode
+            if (htmlEl.classList.contains('dark')) {
+              htmlEl.classList.remove('dark');
+              localStorage.setItem('theme', 'light');
+            } else {
+              htmlEl.classList.add('dark');
+              localStorage.setItem('theme', 'dark');
             }
           });
-        }, { threshold: 0.1 });
+        }
 
-        // Observe all section headings
-        document.querySelectorAll('h2[id], h3[id]').forEach(heading => {
-          observer.observe(heading);
-        });
-      });
-
-      // Enhance code blocks with header and copy button
-      document.addEventListener('DOMContentLoaded', () => {
-        const codeBlocks = document.querySelectorAll('pre > code');
-        codeBlocks.forEach(codeBlock => {
-          const pre = codeBlock.parentElement;
-          const parent = pre?.parentElement;
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scroll-top');
+        if (scrollTopBtn) {
+          window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+              scrollTopBtn.style.opacity = '1';
+              scrollTopBtn.style.visibility = 'visible';
+            } else {
+              scrollTopBtn.style.opacity = '0';
+              scrollTopBtn.style.visibility = 'hidden';
+            }
+          });
           
-          if (parent && !parent.classList.contains('code-block-wrapper')) {
-            const wrapper = document.createElement('div');
-            wrapper.className = 'code-block-wrapper relative group';
-            
-            const header = document.createElement('div');
-            header.className = 'code-header flex items-center justify-between px-4 py-2 bg-slate-100 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 rounded-t-lg';
-            
-            const language = codeBlock.className.split('-')[1] || 'text';
-            const langLabel = document.createElement('span');
-            langLabel.className = 'text-xs font-mono text-slate-500 dark:text-slate-400';
-            langLabel.textContent = language;
-            
-            const copyButton = document.createElement('button');
-            copyButton.className = 'copy-button text-xs bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-2 py-1 rounded transition-colors hover:bg-[#8f36e6] dark:hover:bg-[#a3fe0d] hover:text-white dark:hover:text-black';
-            copyButton.textContent = 'Copy';
-            
-            copyButton.addEventListener('click', () => {
-              const text = codeBlock.textContent || '';
-              navigator.clipboard.writeText(text).then(() => {
-                const originalText = copyButton.textContent;
-                copyButton.textContent = 'Copied!';
-                copyButton.classList.add('bg-green-500', 'text-white');
-                
-                setTimeout(() => {
-                  copyButton.textContent = originalText;
-                  copyButton.classList.remove('bg-green-500', 'text-white');
-                }, 2000);
-              });
+          scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
             });
-            
-            header.appendChild(langLabel);
-            header.appendChild(copyButton);
-            
-            pre.classList.add('rounded-t-none', 'mt-0');
-            
-            parent.insertBefore(wrapper, pre);
+          });
+        }
+
+        // Simple code block enhancement
+        const codeBlocks = document.querySelectorAll('pre:not(.enhanced)');
+        codeBlocks.forEach(block => {
+          block.classList.add('enhanced');
+          
+          // Create wrapper
+          const wrapper = document.createElement('div');
+          wrapper.className = 'code-block-wrapper';
+          
+          // Determine language
+          let language = 'text';
+          const codeEl = block.querySelector('code');
+          if (codeEl && codeEl.className) {
+            const match = codeEl.className.match(/language-(\w+)/);
+            if (match) {
+              language = match[1];
+            }
+          }
+          
+          // Create header
+          const header = document.createElement('div');
+          header.className = 'code-header';
+          
+          // Create language label
+          const langLabel = document.createElement('span');
+          langLabel.className = 'text-xs font-mono';
+          langLabel.textContent = language;
+          
+          // Create copy button
+          const copyBtn = document.createElement('button');
+          copyBtn.className = 'copy-button';
+          copyBtn.textContent = 'Copy';
+          
+          // Add event listener to copy button
+          copyBtn.addEventListener('click', () => {
+            const code = block.textContent || '';
+            navigator.clipboard.writeText(code).then(() => {
+              copyBtn.textContent = 'Copied!';
+              copyBtn.classList.add('copied');
+              
+              setTimeout(() => {
+                copyBtn.textContent = 'Copy';
+                copyBtn.classList.remove('copied');
+              }, 2000);
+            });
+          });
+          
+          // Assemble the header
+          header.appendChild(langLabel);
+          header.appendChild(copyBtn);
+          
+          // Insert everything - maintain parent reference
+          const parent = block.parentNode;
+          if (parent) {
+            parent.insertBefore(wrapper, block);
             wrapper.appendChild(header);
-            wrapper.appendChild(pre);
+            wrapper.appendChild(block);
           }
         });
       });
