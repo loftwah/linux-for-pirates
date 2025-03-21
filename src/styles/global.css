@@ -628,6 +628,65 @@
     margin-top: 0.5rem !important;
     margin-bottom: 0.75rem !important;
   }
+
+  /* Syntax highlighting enhancements */
+  .prose pre code .token.comment,
+  .markdown-content pre code .token.comment {
+    color: #607B96 !important; /* Subtle comments */
+    font-style: italic !important;
+  }
+
+  .prose pre code .token.string,
+  .markdown-content pre code .token.string {
+    color: #C3E88D !important; /* Vibrant strings */
+  }
+
+  .prose pre code .token.keyword,
+  .markdown-content pre code .token.keyword {
+    color: #C792EA !important; /* Purple keywords */
+    font-weight: bold !important;
+  }
+
+  .prose pre code .token.function,
+  .markdown-content pre code .token.function {
+    color: #82AAFF !important; /* Bright blue functions */
+  }
+
+  .prose pre code .token.number,
+  .markdown-content pre code .token.number {
+    color: #F78C6C !important; /* Orange numbers */
+  }
+
+  .prose pre code .token.operator,
+  .markdown-content pre code .token.operator {
+    color: #89DDFF !important; /* Cyan operators */
+  }
+
+  .prose pre code .token.class-name,
+  .markdown-content pre code .token.class-name {
+    color: #FFCB6B !important; /* Yellow class names */
+  }
+
+  .prose pre code .token.tag,
+  .markdown-content pre code .token.tag {
+    color: #F07178 !important; /* Red tags */
+  }
+
+  .prose pre code .token.attr-name,
+  .markdown-content pre code .token.attr-name {
+    color: #C792EA !important; /* Purple attribute names */
+  }
+
+  /* Dark mode variations */
+  .dark .prose pre code .token.string,
+  .dark .markdown-content pre code .token.string {
+    color: #A3FE0D !important; /* Match your accent in dark mode */
+  }
+
+  .dark .prose pre code .token.keyword,
+  .dark .markdown-content pre code .token.keyword {
+    color: #A3FE0D !important; /* Match your accent in dark mode */
+  }
 }
 
 /* Scroll to top button transitions */

@@ -7,7 +7,7 @@ import rehypePrettyCode from 'rehype-pretty-code';
  * @type {import('rehype-pretty-code').Options}
  */
 const prettyCodeOptions = {
-  theme: 'one-dark-pro',
+  theme: 'synthwave-84',
   keepBackground: true,
   onVisitLine(node) {
     if (node.children.length === 0) {
