@@ -5,6 +5,7 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    font-size: 16px;
   }
 
   body {
@@ -80,6 +81,7 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    font-size: 1.1rem;
   }
 
   .prose blockquote {
@@ -88,6 +90,7 @@
     background-color: rgba(143, 54, 230, 0.05);
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
+    font-size: 1.1rem;
   }
 
   .dark .prose blockquote {
@@ -98,6 +101,7 @@
   .prose pre {
     border-radius: 0.5rem;
     padding: 1.25rem;
+    font-size: 1.05rem;
   }
 
   .prose code {
@@ -115,6 +119,7 @@
 
   .prose table {
     @apply border-collapse shadow-sm;
+    font-size: 1.05rem;
   }
 
   .prose table thead {
@@ -130,6 +135,23 @@
     @apply border border-slate-300 dark:border-slate-700 p-2;
   }
 
+  /* Heading size adjustments */
+  .prose h1 {
+    font-size: 2.5rem;
+  }
+
+  .prose h2 {
+    font-size: 2rem;
+  }
+
+  .prose h3 {
+    font-size: 1.75rem;
+  }
+
+  .prose h4 {
+    font-size: 1.5rem;
+  }
+
   /* Animated elements */
   @keyframes float {
     0% { transform: translateY(0px); }
@@ -140,6 +162,7 @@
   /* Special callout boxes */
   .treasure-note {
     @apply relative p-6 my-8 bg-gradient-to-r from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-xl border border-slate-300 dark:border-slate-700 shadow-md;
+    font-size: 1.1rem;
   }
 
   .treasure-note::before {

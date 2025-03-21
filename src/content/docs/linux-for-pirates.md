@@ -2120,6 +2120,10 @@ Every pirate crew needs some good laughs while navigatin' the treacherous digita
 
 **Why do pirates prefer UDP over TCP?** Because they don't care if packets get lost at sea!
 
+![TCP vs UDP explained with a pirate theme](/linux-for-pirates/images/tcp-udp.png)
+
+*Why be this joke funny, ye ask? Well, TCP (Transmission Control Protocol) be the reliable shipmate that makes sure all yer data packets arrive safely, checkin' and double-checkin' with "SYN" and "ACK" signals. UDP (User Datagram Protocol) just fires the packets into the digital sea without carin' if they reach their destination—much like a careless pirate! When speed matters more than reliability, UDP be yer protocol of choice, matey!*
+
 **How many pirates does it take to set up a proxy server?** Two—one to configure the settings and another to say "Aye P address!"
 
 **What's a pirate's favorite networking tool?** The router saber, perfect for cuttin' through firewall defenses!
@@ -2516,19 +2520,9 @@ Remember, me hearties, that mastery of these terms will mark ye as a true pirate
 
 May the wind be at yer back, and may yer terminal never display "command not found"!
 
-## **Testemonials**
+## **Legendary Pirates of the Digital Seas**
 
-**Linus Torvalds:** "As the creator of the Linux kernel, I can confidently say that pirating software is a big no-no. But if I were a pirate, I'd have to say that Dean Lofts' book "Linux for Pirates" would be my go-to guide for all things pirate- and Linux-related. Dean may not be as seasoned a pirate as Captain Jack Sparrow, but he sure knows his stuff when it comes to Linux. And let's be honest, a little bit of clever hacking never hurt anyone in a fight against the Royal Navy."
-
-**Richard Stallman:** "As a strong advocate for free software, I can't condone piracy in any form. However, if I had to choose a resource for learning about Linux and pirating, it would have to be Dean Lofts' book "Linux for Pirates!". Dean may not be as ruthless a pirate as Captain Jack Sparrow, but he's certainly got a way with words and a wicked sense of humor. Plus, his book is chock full of useful information for pirates looking to make the most of their Linux systems."
-
-**Captain Jack Sparrow:** "Ahoy there, mateys! As a seasoned pirate, I can tell ye that there's no one I'd rather have by my side in a fight than Linus Torvalds and Richard Stallman. And when it comes to learning about Linux and pirating, Dean Lofts' book "Linux for Pirates!" is a must-read. Dean may not have as much experience on the high seas as I do, but he sure knows his way around a Linux system. So hoist the sails and let's set a course for adventure, with Dean's book as our guide!"
-
-> **Note** These are not real tersemonials, but they could be if you want them to be bad enough.
-
-### **Legendary Pirates of the Digital Seas**
-
-#### **Sir Tim Berners-Lee: The Navigator Who Charted the World Wide Web**
+### **Sir Tim Berners-Lee: The Navigator Who Charted the World Wide Web**
 
 ![Sir Tim Berners-Lee](/linux-for-pirates/images/sirtimbernerslee.png)
 
@@ -2542,7 +2536,7 @@ For his revolutionary contributions, he was knighted by Queen Elizabeth II in 20
 
 When ye surf the web, remember ye're following the charts laid down by this visionary pirate!
 
-#### **Kevin Mitnick: The Ghost in the Wires**
+### **Kevin Mitnick: The Ghost in the Wires**
 
 ![Kevin Mitnick](/linux-for-pirates/images/mitnick-pirate.png)
 
@@ -2556,15 +2550,7 @@ He founded Mitnick Security Consulting and became a bestselling author, sharing 
 
 The tale of Kevin Mitnick reminds us that in the digital world, the line between pirate and protector can sometimes blur, and that reformed pirates often make the best defenders of digital treasures!
 
-### **TCP and UDP: The Twin Communication Protocols of the Digital Seas**
-
-![TCP and UDP](/linux-for-pirates/images/tcp-udp.png)
-
-In the vast oceans of networking, TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) be the two main vessels pirates use to transport their data treasures.
-
-### **Community Contributors**
-
-#### **Eddie Jaoude: Open Source Hero**
+### **Eddie Jaoude: Open Source Hero**
 
 ![Eddie Jaoude](/linux-for-pirates/images/eddiejaoude.jpg)
 
@@ -2575,3 +2561,13 @@ With his signature phrase "Everyone can contribute to open source," Eddie has in
 Eddie's dedication to open source earned him GitHub Star of the Year recognition, and his community continues to grow stronger with each passing day. His approach embodies the true spirit of piracy: sharing knowledge freely, building community, and making technology accessible to all who wish to learn.
 
 Any pirate lookin' to make their mark on the open seas of code would do well to follow Eddie's example of generosity, persistence, and community-building!
+
+## **Testemonials**
+
+**Linus Torvalds:** "As the creator of the Linux kernel, I can confidently say that pirating software is a big no-no. But if I were a pirate, I'd have to say that Dean Lofts' book "Linux for Pirates" would be my go-to guide for all things pirate- and Linux-related. Dean may not be as seasoned a pirate as Captain Jack Sparrow, but he sure knows his stuff when it comes to Linux. And let's be honest, a little bit of clever hacking never hurt anyone in a fight against the Royal Navy."
+
+**Richard Stallman:** "As a strong advocate for free software, I can't condone piracy in any form. However, if I had to choose a resource for learning about Linux and pirating, it would have to be Dean Lofts' book "Linux for Pirates!". Dean may not be as ruthless a pirate as Captain Jack Sparrow, but he's certainly got a way with words and a wicked sense of humor. Plus, his book is chock full of useful information for pirates looking to make the most of their Linux systems."
+
+**Captain Jack Sparrow:** "Ahoy there, mateys! As a seasoned pirate, I can tell ye that there's no one I'd rather have by my side in a fight than Linus Torvalds and Richard Stallman. And when it comes to learning about Linux and pirating, Dean Lofts' book "Linux for Pirates!" is a must-read. Dean may not have as much experience on the high seas as I do, but he sure knows his way around a Linux system. So hoist the sails and let's set a course for adventure, with Dean's book as our guide!"
+
+> **Note** These are not real tersemonials, but they could be if you want them to be bad enough.
