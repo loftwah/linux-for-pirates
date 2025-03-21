@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --color-text: #1e293b;
+    --color-bg: #f8fafc;
+    --color-border: #e2e8f0;
+  }
+
+  .dark {
+    --color-text: #f8fafc;
+    --color-bg: #0f172a;
+    --color-border: #334155;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    @apply rounded-md shadow-md dark:shadow-slate-800;
+  }
+
+  /* Apply custom styles for blockquotes */
+  blockquote {
+    @apply pl-4 border-l-4 border-slate-300 dark:border-slate-700 italic;
+  }
+
+  /* Apply custom styles for code blocks */
+  pre {
+    @apply p-4 rounded-md bg-slate-100 dark:bg-slate-800 overflow-x-auto text-sm;
+  }
+
+  code {
+    @apply font-mono px-1 py-0.5 bg-slate-100 dark:bg-slate-800 rounded;
+  }
+
+  pre code {
+    @apply bg-transparent p-0;
+  }
+}
+
+/* Additional custom styles can be added here */ 

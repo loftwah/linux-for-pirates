@@ -1,0 +1,75 @@
+---
+const { title = 'Linux for Pirates!', description = 'A guide to Linux from a pirate perspective' } = Astro.props;
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Set theme based on user preference -->
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+        return 'light';
+      })();
+      
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      
+      window.localStorage.setItem('theme', theme);
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-50 dark:bg-slate-900 dark:text-white transition-colors duration-300">
+    <header class="p-4 bg-white dark:bg-slate-800 shadow-md sticky top-0 z-10">
+      <div class="container mx-auto flex justify-between items-center">
+        <div>
+          <h1 class="text-2xl font-bold">Linux for Pirates!</h1>
+        </div>
+        <div>
+          <button id="theme-toggle" class="px-3 py-2 rounded-md bg-slate-200 dark:bg-slate-700">
+            <span class="dark:hidden">🌙</span>
+            <span class="hidden dark:inline">☀️</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto p-4 prose dark:prose-invert prose-lg prose-headings:text-primary dark:prose-headings:text-slate-300 prose-a:text-blue-600 dark:prose-a:text-blue-400">
+      <slot />
+    </main>
+    <footer class="p-4 bg-white dark:bg-slate-800 mt-8">
+      <div class="container mx-auto text-center">
+        <p>© 2024 Linux for Pirates</p>
+      </div>
+    </footer>
+
+    <script>
+      // Dark mode toggle functionality
+      const themeToggle = document.getElementById('theme-toggle');
+      
+      themeToggle?.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.contains('dark');
+        
+        if (isDark) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,18 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { getEntry } from 'astro:content';
+
+const guideEntry = await getEntry('docs', 'linux-for-pirates');
+
+if (!guideEntry) {
+  throw new Error("Could not find linux-for-pirates document in content collection");
+}
+
+const { Content } = await guideEntry.render();
+---
+
+<MainLayout title="Linux for Pirates!">
+  <article class="prose dark:prose-invert max-w-none">
+    <Content />
+  </article>
+</MainLayout>

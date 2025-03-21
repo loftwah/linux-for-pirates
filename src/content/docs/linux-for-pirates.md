@@ -1,9 +1,8 @@
 ---
 title: Linux for Pirates!
-layout: home
 ---
 
-![Linux for Pirates!](images/linux-for-pirates.jpg)
+![Linux for Pirates!](/linux-for-pirates/images/linux-for-pirates.jpg)
 
 By [Dean Lofts](https://linkfree.io/loftwah) | [GitHub](https://github.com/loftwah)
 
@@ -13,13 +12,13 @@ By [Dean Lofts](https://linkfree.io/loftwah) | [GitHub](https://github.com/loftw
 
 > **Note** This is a **must** watch documentary.
 
-![Aaron Swartz](images/aaronswartz.png)
+![Aaron Swartz](/linux-for-pirates/images/aaronswartz.png)
 
 [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz) was a computer programmer, entrepreneur, and internet activist who made significant contributions to the development of the internet and the open access movement.
 
 Aaron was born in 1986, and became interested in computers and the internet at a young age. He was a brilliant and talented programmer, and was known for his ability to quickly grasp and master new technologies. He co-authored the RSS 1.0 specification at the age of 14, and went on to work on a variety of other projects, including the development of the Creative Commons license, the building of the first consumer web feed platform, and the creation of the social news site Reddit.
 
-![Aaron Swartz as a Pirate](images/aaron-swartz-pirate.png)
+![Aaron Swartz as a Pirate](/linux-for-pirates/images/aaron-swartz-pirate.png)
 
 Aaron was also a strong advocate for open access, which is the movement to make knowledge and information freely available to all, rather than being locked behind paywalls and controlled by a few powerful corporations or institutions. He believed that access to knowledge and information was a fundamental right, and that it should be freely available to everyone.
 
@@ -33,17 +32,17 @@ The Linux kernel was originally developed by Linus Torvalds in 1991, and was rel
 
 ### **Linus Torvalds**
 
-![Linus Torvalds](images/linustorvalds.png)
+![Linus Torvalds](/linux-for-pirates/images/linustorvalds.png)
 
 Linus Torvalds is the creator of the Linux operating system. He was a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
 ### **Richard Stallman**
 
-![Richard Stallman](images/richardstallman.png)
+![Richard Stallman](/linux-for-pirates/images/richardstallman.png)
 
 Richard Stallman is the creator of the GNU operating system. He was a computer science student at the Massachusetts Institute of Technology (MIT), and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
-![Linus Torvalds and Richard Stallman as Pirates](images/linus_richard.png)
+![Linus Torvalds and Richard Stallman as Pirates](/linux-for-pirates/images/linus_richard.png)
 
 ## **Before we begin**
 
@@ -69,7 +68,7 @@ As they sailed back home, filled with treasure and stories to tell, Loftwah coul
 
 ## **About the author (This isn't on the test)**
 
-![Dean Lofts](images/deanlofts.png)
+![Dean Lofts](/linux-for-pirates/images/deanlofts.png)
 
 Once upon a time, in the golden age of piracy, there lived a fearless pirate by the name of Dean (Loftwah) Lofts. Loftwah was a notorious buccaneer, known throughout the seven seas for their technical expertise and programming prowess.
 
@@ -87,7 +86,7 @@ So if you ever find yourself sailing the high seas and you see a pirate flag wit
 
 ## **Chapter One - Settin' Sail with Linux**
 
-![Chapter One - Settin' Sail with Linux](images/chapterone.png)
+![Chapter One - Settin' Sail with Linux](/linux-for-pirates/images/chapterone.png)
 
 Ahoy, me hearties! Welcome to the grand adventure o' Linux! In this 'ere chapter, we'll be firin' the first cannon o' knowledge to start ye on yer journey through the mighty seas o' open-source software. So hoist the mainsail and prepare to catch the winds o' technological freedom!
 
@@ -214,7 +213,7 @@ Until then, may fair winds fill yer sails and fortune favor the bold!
 
 ## **Chapter Two - Mastering the Ship's Fundamentals**
 
-![Chapter Two - The Fundamentals](images/fundamentals.png)
+![Chapter Two - The Fundamentals](/linux-for-pirates/images/fundamentals.png)
 
 Ahoy there, brave seafarers! Now that ye've boarded the mighty Linux vessel, it be time to learn how to properly command her! Every successful pirate captain needs to understand the fundamentals of their ship before sailin' into treacherous waters. In this chapter, we'll be learnin' the essential skills ye need to navigate the Linux seas with confidence!
 
@@ -2087,7 +2086,7 @@ Until then, this be Cap'n Loftwah, signin' off—but always watchin' the horizon
 
 ## **A stern warning: The dangers of the high seas**
 
-![Pirate Circada](images/piratecircada.png)
+![Pirate Circada](/linux-for-pirates/images/piratecircada.png)
 
 "Ahoy, mateys! Ye be warned, the circadas be a-singin' their song o' prime numbers. Ye can hear them all through the night, marking their time with the beat of their wings. But beware, for those numbers be the key to unlockin' treasure beyond yer wildest dreams. So set sail and follow the siren call o' the circadas, and ye may just find yerself a rich pirate indeed.
 
