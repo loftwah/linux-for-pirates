@@ -43,13 +43,18 @@
 
   /* Consistent link styling */
   a {
-    color: var(--accent-color);
-    transition: color 0.2s ease, text-decoration 0.2s ease;
+    color: #8f36e6;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #8f36e6, #9d4feb);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s ease;
   }
 
   a:hover {
-    text-decoration: underline;
-    color: var(--accent-hover);
+    text-decoration: none;
+    background-size: 100% 2px;
   }
 
   .font-display {
@@ -137,8 +142,8 @@
 
   .prose blockquote {
     font-style: italic;
-    border-left-color: #8f36e6;
-    background-color: rgba(143, 54, 230, 0.05);
+    border-left: 4px solid #8f36e6;
+    background: linear-gradient(135deg, rgba(143, 54, 230, 0.05), rgba(143, 54, 230, 0.08), rgba(143, 54, 230, 0.05));
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
     font-size: 1.1rem;
@@ -146,7 +151,7 @@
 
   .dark .prose blockquote {
     border-left-color: #a3fe0d;
-    background-color: rgba(163, 254, 13, 0.05);
+    background: linear-gradient(135deg, rgba(163, 254, 13, 0.05), rgba(163, 254, 13, 0.07), rgba(163, 254, 13, 0.05));
   }
 
   /* Simple code block styling */
@@ -195,11 +200,11 @@
   }
 
   .prose table thead {
-    background-color: #f8fafc;
+    background: linear-gradient(135deg, #f8fafc, #f3f6fa, #f0f2f9) !important;
   }
 
   .dark .prose table thead {
-    background-color: #1e293b;
+    background: linear-gradient(135deg, #1e293b, #192434, #192531) !important;
   }
 
   .prose table th {
@@ -261,15 +266,21 @@
   .prose a {
     color: #8f36e6;
     text-decoration: none;
-    transition: text-decoration 0.2s ease;
+    background-image: linear-gradient(to right, #8f36e6, #9d4feb);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s ease;
   }
 
   .prose a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-size: 100% 2px;
   }
 
   .dark .prose a {
     color: #a3fe0d;
+    background-image: linear-gradient(to right, #a3fe0d, #b4ff3d);
   }
 
   /* Animated elements */
@@ -284,7 +295,7 @@
     position: relative;
     padding: 1.5rem;
     margin: 2rem 0;
-    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+    background: linear-gradient(135deg, #f8fafc, #f5f6fb, #f2f2fa) !important;
     border-radius: 0.75rem;
     border: 1px solid #e2e8f0;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -292,7 +303,7 @@
   }
 
   .dark .treasure-note {
-    background: linear-gradient(to right, #1e293b, #0f172a);
+    background: linear-gradient(135deg, #1e293b, #1b2738, #1a2535) !important;
     border-color: #334155;
   }
 
@@ -308,14 +319,14 @@
   .table-of-contents {
     margin: 2.5rem 0;
     padding: 1.5rem;
-    background-color: #f8fafc;
+    background: linear-gradient(135deg, #f8fafc, #f3f6fa, #f0f2f9) !important; /* Subtle gradient with hint of purple */
     border-radius: 0.75rem;
     border: 1px solid #e2e8f0;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
   .dark .table-of-contents {
-    background-color: #1e293b;
+    background: linear-gradient(135deg, #1e293b, #192434, #192531) !important; /* Subtle gradient with hint of green */
     border-color: #334155;
   }
 
@@ -796,6 +807,11 @@
 #scroll-top {
   opacity: 0;
   transition: all 0.3s ease;
+  background: linear-gradient(135deg, #8f36e6, #9d4feb) !important;
+}
+
+.dark #scroll-top {
+  background: linear-gradient(135deg, #a3fe0d, #b4ff3d) !important;
 }
 
 /* Mobile responsiveness improvements */
