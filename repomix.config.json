@@ -1,0 +1,21 @@
+{
+    // Output settings
+    "output": {
+      "filePath": "repomix-output.xml", // Default output file name
+      "style": "xml",                   // Default style, can change to "markdown" or "plain" if preferred
+      "fileSummary": true,              // Include a summary of files
+      "directoryStructure": true        // Include the repository structure
+    },
+    // Include all files by default
+    "include": [
+      "**/*"
+    ],
+    // Ignore settings
+    "ignore": {
+      "useGitignore": true,             // Respect .gitignore (if it exists)
+      "useDefaultPatterns": true,       // Use Repomix's default ignore patterns (e.g., node_modules, .git)
+      "customPatterns": [
+        "docs/**"                      // Ignore everything under the docs/ directory
+      ]
+    }
+  }
