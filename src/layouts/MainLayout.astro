@@ -1,6 +1,10 @@
 ---
 const { title = 'Linux for Pirates!', description = 'A guide to Linux from a pirate perspective' } = Astro.props;
 import '../styles/global.css';
+
+// Base URL for absolute URLs
+const siteUrl = 'https://loftwah.github.io/linux-for-pirates';
+const ogImageUrl = `${siteUrl}/images/linux-for-pirates-og.jpg`;
 ---
 
 <!DOCTYPE html>
@@ -10,10 +14,34 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/linux-for-pirates/images/pirate_flag.svg" />
+    
+    <!-- OpenGraph / Social Media Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Linux for Pirates" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="author" content="Dean Lofts" />
+    <meta name="keywords" content="linux, pirates, guide, tutorial, learning, open source" />
+    <link rel="canonical" href={siteUrl} />
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- Set theme based on user preference -->
     <script is:inline>
       const theme = (() => {
