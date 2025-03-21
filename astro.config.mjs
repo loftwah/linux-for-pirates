@@ -52,6 +52,7 @@ export default defineConfig({
     }
   },
   experimental: {
-    viewTransitions: true
+    clientPrerender: true,
+    responsiveImages: true
   }
 });
