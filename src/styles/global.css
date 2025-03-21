@@ -407,579 +407,178 @@
 
   /* Enhanced Table of Contents styling */
   .table-of-contents {
-    @apply p-4 my-4 rounded-lg bg-gray-50 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700;
-  }
-
-  .table-of-contents h2 {
-    @apply text-lg font-semibold mb-2;
-  }
-
-  .table-of-contents ul {
-    @apply space-y-1 list-disc pl-5;
-  }
-
-  .table-of-contents li {
-    @apply text-sm;
-  }
-
-  .table-of-contents a {
-    @apply text-purple-700 dark:text-lime-400 hover:underline;
+    display: block !important;
+    margin: 2rem 0 !important;
+    padding: 1.5rem !important;
+    background: linear-gradient(135deg, rgba(143, 54, 230, 0.05), rgba(163, 254, 13, 0.1)) !important;
+    border-radius: 0.75rem !important;
+    border: 1px solid rgba(143, 54, 230, 0.3) !important;
+    box-shadow: 0 4px 15px -3px rgba(143, 54, 230, 0.15) !important;
   }
 
   .dark .table-of-contents {
-    background: linear-gradient(135deg, #0c1524, #0a1327, #081129) !important;
-    border-color: rgba(163, 254, 13, 0.2);
-    box-shadow: 0 8px 15px -3px rgba(163, 254, 13, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, rgba(143, 54, 230, 0.1), rgba(163, 254, 13, 0.05)) !important;
+    border: 1px solid rgba(163, 254, 13, 0.3) !important;
+    box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.3) !important;
   }
 
-  .table-of-contents h2::before {
-    content: "☠️";
-    margin-right: 0.5rem;
+  /* Vibrant TOC heading */
+  .table-of-contents h2 {
+    font-size: 1.8rem !important;
+    margin-bottom: 1.2rem !important;
+    background: linear-gradient(90deg, #8f36e6, #a3fe0d) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    letter-spacing: -0.03em !important;
   }
 
-  .table-of-contents ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    margin-top: 1rem;
-    padding-left: 0;
+  .dark .table-of-contents h2 {
+    background: linear-gradient(90deg, #a3fe0d, #8f36e6) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
   }
 
-  @media (min-width: 768px) {
-    .table-of-contents ul {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  .table-of-contents li {
-    margin-bottom: 0.5rem;
-    padding-left: 0;
-    list-style-type: none;
-  }
-
-  .table-of-contents a {
-    display: flex;
-    align-items: center;
-    padding: 0.75rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    border: 1px solid #e2e8f0;
-    transition: all 0.2s ease;
-    text-decoration: none;
-  }
-
-  .dark .table-of-contents a {
-    background-color: #080f1d;
-    border-color: #1c2a3a;
-  }
-
-  .table-of-contents a:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    border-color: #8f36e6;
-    text-decoration: none;
-  }
-
-  .dark .table-of-contents a:hover {
-    border-color: #a3fe0d;
-  }
-
-  .table-of-contents a::before {
-    content: "➡️";
-    margin-right: 0.5rem;
-    color: #8f36e6;
-    transition: transform 0.3s ease;
-  }
-
-  .dark .table-of-contents a::before {
-    color: #a3fe0d;
-  }
-
-  .table-of-contents a:hover::before {
-    transform: translateX(3px);
-  }
-
-  /* Improved heading styling with anchor links */
-  .prose h2,
-  .prose h3,
-  .prose h4 {
-    scroll-margin-top: 100px;
-    position: relative;
-  }
-
-  .prose h2 .heading-anchor,
-  .prose h3 .heading-anchor,
-  .prose h4 .heading-anchor {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: #8f36e6;
-    margin-left: -1.5rem;
-    font-size: 0.8em;
-  }
-
-  .dark .prose h2 .heading-anchor,
-  .dark .prose h3 .heading-anchor,
-  .dark .prose h4 .heading-anchor {
-    color: #a3fe0d;
-  }
-
-  .prose h2:hover .heading-anchor,
-  .prose h3:hover .heading-anchor,
-  .prose h4:hover .heading-anchor {
-    opacity: 1;
-  }
-
-  /* Enhanced list styling */
-  .prose ul {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .prose ul li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    list-style-type: none;
-  }
-  
-  .prose ul li::before {
-    content: "☠️";
-    position: absolute;
-    left: 0;
-    color: #8f36e6;
-    font-size: 0.75em;
-  }
-  
-  .dark .prose ul li::before {
-    color: #a3fe0d;
-  }
-  
-  .prose ol {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    counter-reset: list-counter;
-  }
-  
-  .prose ol li {
-    position: relative;
-    padding-left: 2rem;
-    margin-bottom: 0.5rem;
-    counter-increment: list-counter;
-    list-style-type: none;
-  }
-  
-  .prose ol li::before {
-    content: counter(list-counter);
-    position: absolute;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 9999px;
-    background-color: rgba(143, 54, 230, 0.1);
-    color: #8f36e6;
-    font-size: 0.875rem;
-    font-weight: bold;
-  }
-  
-  .dark .prose ol li::before {
-    background-color: rgba(163, 254, 13, 0.1);
-    color: #a3fe0d;
-  }
-
-  /* Fix for code blocks in lists */
-  .prose ol li pre,
-  .prose ul li pre {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-  }
-
-  /* Simple code block and copy button styling */
-  .code-block-wrapper {
-    display: flex !important;
-    flex-direction: column !important;
-    margin: 1.75rem 0 !important;
-    border-radius: 0.75rem !important;
-    overflow: hidden !important;
-    border: 1px solid rgba(143, 54, 230, 0.15) !important;
-    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.1), 0 2px 10px -5px rgba(0, 0, 0, 0.04) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  /* Mixed-accent heading styles for markdown content */
+  .markdown-content h1 {
+    font-size: 2.5rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    font-weight: 800 !important;
+    background: linear-gradient(45deg, #a3fe0d, #b4ff3d, #c7ff65) !important; /* Using dark mode accent in light mode */
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+    animation: gradientFlow 8s ease infinite !important;
     position: relative !important;
+    font-family: 'Cinzel Decorative', serif !important;
+    letter-spacing: -0.025em !important;
   }
 
-  .dark .code-block-wrapper {
-    border: 1px solid rgba(163, 254, 13, 0.15) !important;
-    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.25), 0 2px 10px -5px rgba(0, 0, 0, 0.15) !important;
+  .dark .markdown-content h1 {
+    background: linear-gradient(45deg, #8f36e6, #9d4feb, #b36eff) !important; /* Using light mode accent in dark mode */
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+    animation: gradientFlow 8s ease infinite !important;
   }
 
-  .code-block-wrapper:hover {
-    transform: translateY(-2px) !important;
-    border-color: rgba(143, 54, 230, 0.3) !important;
-    box-shadow: 0 12px 25px -7px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.06) !important;
+  .markdown-content h2 {
+    font-size: 1.875rem !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: 700 !important;
+    position: relative !important;
+    padding-bottom: 0.75rem !important;
+    border-bottom: 2px solid !important;
+    border-image: linear-gradient(90deg, #8f36e6, #a3fe0d) 1 !important; /* Mixed border */
+    background: linear-gradient(90deg, #8f36e6, #a3fe0d, #8f36e6) !important; /* Purple to lime to purple */
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+    font-family: 'Cinzel Decorative', serif !important;
   }
 
-  .dark .code-block-wrapper:hover {
-    border-color: rgba(163, 254, 13, 0.3) !important;
-    box-shadow: 0 12px 25px -7px rgba(0, 0, 0, 0.3), 0 8px 10px -5px rgba(0, 0, 0, 0.15) !important;
+  .dark .markdown-content h2 {
+    border-image: linear-gradient(90deg, #a3fe0d, #8f36e6) 1 !important; /* Mixed border reverse */
+    background: linear-gradient(90deg, #a3fe0d, #8f36e6, #a3fe0d) !important; /* Lime to purple to lime for dark mode */
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
   }
 
-  /* Code block glow effect on hover */
-  .code-block-wrapper:hover {
-    box-shadow: 0 15px 35px -10px rgba(var(--accent-rgb), 0.3) !important;
-    border-color: rgba(var(--accent-rgb), 0.4) !important;
-  }
-
-  /* Code language badge */
-  .code-header::before {
-    content: attr(data-language);
+  /* Restore h2 pirate flag icon */
+  .markdown-content h2::before {
+    content: "☠️" !important;
     position: absolute !important;
-    left: 1rem !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    font-family: var(--font-mono) !important;
-    font-size: 0.8rem !important;
-    padding: 0.2rem 0.6rem !important;
-    border-radius: 0.3rem !important;
-    background-color: var(--accent-color) !important;
-    color: white !important;
+    left: -2rem !important;
+    top: 0.25rem !important;
+    font-size: 1.5rem !important;
+    opacity: 0.8 !important;
+    -webkit-text-fill-color: initial !important; /* Fix for the icon */
+    background: none !important; /* Ensure no gradient background on the icon */
+  }
+
+  /* Animated table links with dual-tone accent */
+  .table-of-contents a {
+    display: block !important;
+    padding: 0.75rem 1rem !important;
+    margin-bottom: 0.5rem !important;
+    border-radius: 0.5rem !important;
+    color: #8f36e6 !important;
+    background: linear-gradient(90deg, rgba(143, 54, 230, 0.05), rgba(163, 254, 13, 0.05)) !important;
+    border: 1px solid rgba(143, 54, 230, 0.2) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    padding-left: 2.5rem !important;
+    text-decoration: none !important;
     font-weight: 500 !important;
   }
 
-  .dark .code-header::before {
-    color: black !important;
-  }
-
-  /* Refined header with subtle gradient background */
-  .code-header {
-    display: flex !important;
-    justify-content: flex-end !important;
-    align-items: center !important;
-    padding: 0.6rem 1rem !important;
-    background: linear-gradient(135deg, #c5d1e1, #d1c5e8, #c4b0e6) !important; /* Bolder gradient with more purple influence */
-    border-bottom: 1px solid rgba(143, 54, 230, 0.25) !important;
-  }
-
-  .dark .code-header {
-    background: linear-gradient(135deg, #1e293b, #182a33, #142a25, #0e2a1c) !important; /* Stronger green tint gradient */
-    border-color: rgba(163, 254, 13, 0.35) !important; /* More visible border */
-  }
-
-  /* Polished copy button with micro-interactions */
-  .copy-button {
-    font-size: 0.75rem !important;
-    font-weight: 600 !important;
-    padding: 0.3rem 0.75rem !important;
-    background-color: white !important;
-    color: #8f36e6 !important;
-    border: 1px solid rgba(143, 54, 230, 0.3) !important;
-    border-radius: 0.375rem !important;
-    cursor: pointer !important;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    font-family: 'Lato', sans-serif !important;
-    letter-spacing: 0.01em !important;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-
-  .dark .copy-button {
-    background-color: #0f172a !important;
+  .dark .table-of-contents a {
     color: #a3fe0d !important;
-    border-color: rgba(163, 254, 13, 0.3) !important;
+    background: linear-gradient(90deg, rgba(163, 254, 13, 0.05), rgba(143, 54, 230, 0.05)) !important;
+    border: 1px solid rgba(163, 254, 13, 0.2) !important;
   }
 
-  .copy-button:hover {
-    background-color: rgba(143, 54, 230, 0.08) !important;
-    border-color: rgba(143, 54, 230, 0.6) !important;
-    transform: translateY(-1px) !important;
-    box-shadow: 0 2px 5px rgba(143, 54, 230, 0.2) !important;
-  }
-
-  .dark .copy-button:hover {
-    background-color: rgba(163, 254, 13, 0.08) !important;
-    border-color: rgba(163, 254, 13, 0.6) !important;
-    transform: translateY(-1px) !important;
-    box-shadow: 0 2px 5px rgba(163, 254, 13, 0.2) !important;
-  }
-
-  .copy-button:active {
-    transform: translateY(0) !important;
-  }
-
-  .copy-button.copied {
-    background-color: #8f36e6 !important;
-    color: white !important;
-    border-color: #8f36e6 !important;
-  }
-
-  .dark .copy-button.copied {
-    background-color: #a3fe0d !important;
-    color: #0f172a !important;
-    border-color: #a3fe0d !important;
-  }
-
-  .copy-button::after {
-    content: '';
-    position: absolute !important;
-    width: 100% !important;
-    height: 100% !important;
-    top: 0 !important;
-    left: 0 !important;
-    pointer-events: none !important;
-    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%) !important;
-    background-repeat: no-repeat !important;
-    background-position: 50% !important;
-    transform: scale(10, 10) !important;
-    opacity: 0 !important;
-    transition: transform 0.3s, opacity 0.8s !important;
-  }
-
-  .dark .copy-button::after {
-    background-image: radial-gradient(circle, rgba(163, 254, 13, 0.3) 10%, transparent 10.01%) !important;
-  }
-
-  .copy-button:active::after {
-    transform: scale(0, 0) !important;
-    opacity: 0.3 !important;
-    transition: 0s !important;
-  }
-
-  /* Enhanced code block styling with a subtle accent line */
-  pre {
-    margin: 0 !important;
-    padding: 1.25rem !important;
-    background-color: var(--code-bg-color) !important;
-    color: var(--code-text-color) !important;
-    border-radius: 0 0 0.75rem 0.75rem !important;
-    overflow-x: auto !important;
-    font-size: 0.9rem !important;
-    line-height: 1.7 !important;
-    border-left: 3px solid var(--accent-color) !important;
-    scrollbar-width: thin !important;
-    scrollbar-color: rgba(var(--accent-color), 0.3) transparent !important;
-  }
-
-  .dark pre {
-    scrollbar-color: rgba(163, 254, 13, 0.3) transparent !important;
-  }
-
-  pre::-webkit-scrollbar {
-    height: 6px !important;
-    width: 6px !important;
-  }
-
-  pre::-webkit-scrollbar-track {
-    background: transparent !important;
-  }
-
-  pre::-webkit-scrollbar-thumb {
-    background-color: rgba(var(--accent-color), 0.3) !important;
-    border-radius: 3px !important;
-  }
-
-  .dark pre::-webkit-scrollbar-thumb {
-    background-color: rgba(163, 254, 13, 0.3) !important;
-  }
-
-  pre code {
-    font-family: var(--font-mono, Menlo, Monaco, 'Courier New', monospace) !important;
-    color: var(--code-text-color) !important;
-    padding: 0 !important;
-    background-color: transparent !important;
-    white-space: pre !important;
-    display: block !important;
-    tab-size: 2 !important;
-  }
-
-  /* Enhanced command line prefix styling */
-  .command-line-prefix {
-    color: var(--accent-color) !important;
-    user-select: none !important;
-    margin-right: 0.5rem !important;
-    font-weight: bold !important;
-    display: inline-block !important;
-    opacity: 0.9 !important;
-    text-shadow: 0 0 1px rgba(143, 54, 230, 0.4) !important;
-  }
-
-  .dark .command-line-prefix {
-    text-shadow: 0 0 1px rgba(163, 254, 13, 0.4) !important;
-  }
-
-  /* Add a subtle line number column */
-  .code-block-with-line-numbers {
-    padding-left: 3.5rem !important;
-    position: relative !important;
-  }
-
-  .code-block-with-line-numbers::before {
-    content: attr(data-line) !important;
+  .table-of-contents a::before {
+    content: "⚓" !important;
     position: absolute !important;
     left: 1rem !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    width: 1.5rem !important;
-    font-size: 0.8rem !important;
-    user-select: none !important;
-    color: rgba(143, 54, 230, 0.5) !important;
-    text-align: right !important;
-    pointer-events: none !important;
+    font-size: 1rem !important;
+    transition: transform 0.3s ease !important;
   }
 
-  .dark .code-block-with-line-numbers::before {
-    color: rgba(163, 254, 13, 0.5) !important;
-  }
-
-  /* Syntax highlighting customization for token types */
-  .token.comment {
-    font-style: italic !important;
-    color: #a0aec0 !important;
-  }
-
-  .token.keyword {
-    color: #f92aad !important;
-    font-weight: bold !important;
-  }
-
-  .token.string {
-    color: #ffe000 !important;
-  }
-
-  .token.function {
-    color: #36f9f6 !important;
-  }
-
-  .token.number {
-    color: #ff8b39 !important;
-  }
-
-  .token.operator {
-    color: #ff8b39 !important;
-  }
-
-  .token.class-name {
-    color: #f4eee4 !important;
-    text-decoration: underline !important;
-    text-decoration-color: #f92aad !important;
-    text-decoration-thickness: 1px !important;
-  }
-
-  .dark .token.keyword {
-    color: #f92aad !important;
-  }
-
-  .dark .token.string {
-    color: #ffe000 !important;
-  }
-
-  .dark .token.function {
-    color: #36f9f6 !important;
-  }
-
-  /* Add subtle transitions for token hover effects */
-  .token {
-    transition: all 0.15s ease-in-out !important;
-  }
-
-  .token:hover {
-    filter: brightness(1.2) !important;
-  }
-
-  /* Highlighted line styling */
-  .highlighted {
-    background-color: rgba(143, 54, 230, 0.07) !important;
-    display: block !important;
-    width: calc(100% + 2.5rem) !important;
-    margin-left: -1.25rem !important;
-    padding-left: 1.25rem !important;
-    border-left: 2px solid var(--accent-color) !important;
-  }
-
-  .dark .highlighted {
-    background-color: rgba(163, 254, 13, 0.07) !important;
-    border-left: 2px solid var(--accent-color) !important;
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 640px) {
-    pre {
-      font-size: 0.8rem !important;
-      padding: 1rem !important;
-    }
-    
-    .copy-button {
-      font-size: 0.7rem !important;
-      padding: 0.25rem 0.6rem !important;
-    }
-  }
-
-  .action-button {
-    background: linear-gradient(135deg, #8f36e6, #9d4feb) !important;
-    color: white !important;
-    font-weight: 600 !important;
-    padding: 0.75rem 1.5rem !important;
-    border-radius: 0.5rem !important;
-    border: none !important;
-    transition: all 0.3s ease !important;
-    box-shadow: 0 4px 6px rgba(143, 54, 230, 0.2) !important;
-  }
-
-  .action-button:hover {
-    background: linear-gradient(135deg, #7c2bd0, #8f36e6) !important;
+  .table-of-contents a:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 10px rgba(143, 54, 230, 0.25) !important;
+    background: linear-gradient(90deg, rgba(143, 54, 230, 0.1), rgba(163, 254, 13, 0.1)) !important;
+    border: 1px solid !important;
+    border-image: linear-gradient(90deg, rgba(143, 54, 230, 0.4), rgba(163, 254, 13, 0.4)) 1 !important;
+    box-shadow: 0 5px 15px rgba(143, 54, 230, 0.1) !important;
   }
 
-  .dark .action-button {
-    background: linear-gradient(135deg, #a3fe0d, #93e80d) !important;
-    color: #0f172a !important;
-    box-shadow: 0 4px 6px rgba(163, 254, 13, 0.2) !important;
+  .dark .table-of-contents a:hover {
+    background: linear-gradient(90deg, rgba(163, 254, 13, 0.1), rgba(143, 54, 230, 0.1)) !important;
+    border-image: linear-gradient(90deg, rgba(163, 254, 13, 0.4), rgba(143, 54, 230, 0.4)) 1 !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
   }
 
-  .dark .action-button:hover {
-    background: linear-gradient(135deg, #93e80d, #83d60b) !important;
-    box-shadow: 0 6px 10px rgba(163, 254, 13, 0.25) !important;
+  .table-of-contents a:hover::before {
+    transform: rotate(-15deg) scale(1.2) !important;
   }
 
-  .card {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    border: 1px solid rgba(143, 54, 230, 0.1) !important;
-    overflow: hidden !important;
-    position: relative !important;
-  }
-
-  .card::before {
-    content: "" !important;
+  /* Make the heading anchor links more visible */
+  .heading-anchor {
     position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: linear-gradient(to right bottom, rgba(143, 54, 230, 0.05), transparent) !important;
-    opacity: 0 !important;
-    transition: opacity 0.3s ease !important;
-    z-index: 1 !important;
-    pointer-events: none !important;
+    left: -1.5rem !important;
+    opacity: 0.4 !important;
+    font-size: 1rem !important;
+    display: inline-block !important;
+    padding: 0 0.5rem !important;
+    color: #8f36e6 !important;
+    transition: all 0.2s ease !important;
   }
 
-  .card:hover::before {
+  .dark .heading-anchor {
+    color: #a3fe0d !important;
+  }
+
+  .markdown-content h2:hover .heading-anchor,
+  .markdown-content h3:hover .heading-anchor {
     opacity: 1 !important;
-  }
-
-  .card:hover {
-    transform: translateY(-5px) !important;
-    box-shadow: 0 15px 30px rgba(143, 54, 230, 0.1) !important;
-    border-color: rgba(143, 54, 230, 0.2) !important;
-  }
-
-  .dark .card::before {
-    background: linear-gradient(to right bottom, rgba(163, 254, 13, 0.05), transparent) !important;
-  }
-
-  .dark .card:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
-    border-color: rgba(163, 254, 13, 0.2) !important;
+    transform: scale(1.2) !important;
   }
 }
 
@@ -1093,62 +692,78 @@
 }
 
 .markdown-content :global(p) {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.8;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  line-height: 1.8 !important;
 }
 
 .markdown-content :global(ul),
 .markdown-content :global(ol) {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding-left: 1.5rem;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-left: 1.5rem !important;
 }
 
 .markdown-content :global(li) {
-  margin-bottom: 0.75rem;
-  line-height: 1.8;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.8 !important;
 }
 
 .markdown-content :global(h1) {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .markdown-content :global(h2) {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-top: 3rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .markdown-content :global(h3) {
-  margin-top: 2.5rem;
-  margin-bottom: 1.2rem;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.2rem !important;
 }
 
 .markdown-content :global(h4) {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .markdown-content :global(pre) {
-  overflow-x: auto;
-  max-width: 100%;
-  border-radius: 0.5rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 !important;
 }
 
 .markdown-content :global(table) {
-  width: 100%;
-  overflow-x: auto;
-  display: block;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 !important;
 }
 
-@media (min-width: 768px) {
-  .markdown-content :global(table) {
-    display: table;
-  }
+.markdown-content :global(blockquote) {
+  margin: 1.75rem 0 !important;
+  padding: 1.25rem 1.5rem !important;
+}
+
+.markdown-content :global(img) {
+  margin: 2rem auto !important;
+}
+
+/* Ensure proper list styling */
+.prose ul li {
+  position: relative !important;
+  padding-left: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  list-style-type: none !important;
+}
+
+.prose ul li::before {
+  content: "☠️" !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: #8f36e6 !important;
+  font-size: 0.75em !important;
+}
+
+.dark .prose ul li::before {
+  color: #a3fe0d !important;
 }
 
 /* Additional responsive image fixes */
@@ -1948,4 +1563,92 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* Restore and enhance animated links in content */
+.markdown-content a {
+  color: #8f36e6 !important;
+  text-decoration: none !important;
+  position: relative !important;
+  background-image: linear-gradient(to right, #8f36e6, #9d4feb) !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
+  background-size: 0% 2px !important;
+  transition: background-size 0.3s ease !important;
+}
+
+.dark .markdown-content a {
+  color: #a3fe0d !important;
+  background-image: linear-gradient(to right, #a3fe0d, #b4ff3d) !important;
+}
+
+.markdown-content a:hover {
+  text-decoration: none !important;
+  background-size: 100% 2px !important;
+}
+
+/* Enhanced H3 Headings with better contrast */
+.markdown-content h3 {
+  font-size: 1.5rem !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem !important;
+  font-weight: 600 !important;
+  background: linear-gradient(90deg, #8f36e6, #a3fe0d) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent !important;
+  position: relative !important;
+  padding-left: 1.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 1px dashed rgba(143, 54, 230, 0.3) !important;
+  font-family: 'Cinzel Decorative', serif !important;
+}
+
+.dark .markdown-content h3 {
+  background: linear-gradient(90deg, #a3fe0d, #8f36e6) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent !important;
+  border-bottom: 1px dashed rgba(163, 254, 13, 0.3) !important;
+}
+
+.markdown-content h3::before {
+  content: "⚓" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0.2rem !important;
+  font-size: 1rem !important;
+  opacity: 0.9 !important;
+  color: #8f36e6 !important;
+  -webkit-text-fill-color: #8f36e6 !important; /* Fix for the icon */
+  background: none !important; /* Ensure no gradient background on the icon */
+}
+
+.dark .markdown-content h3::before {
+  color: #a3fe0d !important;
+  -webkit-text-fill-color: #a3fe0d !important; /* Fix for the icon */
+}
+
+.markdown-content h3:hover::before {
+  transform: rotate(-15deg) scale(1.2) !important;
+  transition: transform 0.3s ease !important;
+}
+
+/* Make bold text even more noticeable */
+.markdown-content strong {
+  font-weight: 700 !important;
+  color: #8f36e6 !important;
+  background: linear-gradient(120deg, #8f36e6, #a670ee) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  padding: 0 0.15rem !important;
+}
+
+.dark .markdown-content strong {
+  color: #a3fe0d !important;
+  background: linear-gradient(120deg, #a3fe0d, #c7ff65) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
