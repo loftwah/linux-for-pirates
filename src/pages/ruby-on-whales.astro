@@ -97,9 +97,6 @@ const hasHeadings = tocHeadings && tocHeadings.length > 0;
         // If this pre isn't already wrapped, wrap it
         const code = pre.querySelector('code');
         if (code) {
-          const lang = Array.from(code.classList)
-            .find(cls => cls.startsWith('language-'))?.replace('language-', '') || 'text';
-          
           // Create wrapper
           const wrapper = document.createElement('div');
           wrapper.className = 'code-block-wrapper';
@@ -107,10 +104,6 @@ const hasHeadings = tocHeadings && tocHeadings.length > 0;
           // Create header
           const header = document.createElement('div');
           header.className = 'code-header';
-          
-          // Create language span
-          const langSpan = document.createElement('span');
-          langSpan.textContent = lang;
           
           // Create copy button
           const copyBtn = document.createElement('button');
@@ -129,7 +122,6 @@ const hasHeadings = tocHeadings && tocHeadings.length > 0;
           });
           
           // Assemble the elements
-          header.appendChild(langSpan);
           header.appendChild(copyBtn);
           
           // Replace the pre with our wrapper structure

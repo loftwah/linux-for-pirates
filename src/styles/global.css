@@ -503,88 +503,134 @@
     display: flex;
     flex-direction: column;
     margin: 1.5rem 0 !important;
-    border-radius: 0.5rem !important;
+    border-radius: 0.75rem !important;
     overflow: hidden !important;
-    border: 1px solid var(--theme-divider);
+    border: 1px solid rgba(143, 54, 230, 0.2) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .dark .code-block-wrapper {
+    border: 1px solid rgba(163, 254, 13, 0.2) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .code-block-wrapper:hover {
+    border-color: rgba(143, 54, 230, 0.4) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .dark .code-block-wrapper:hover {
+    border-color: rgba(163, 254, 13, 0.4) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
   }
 
   .code-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #f5f7fa;
-    padding: 0.35rem 0.5rem;
-    margin: 0;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    padding: 0.5rem 1rem !important;
+    background-color: #f8fafc !important;
+    border-bottom: 1px solid rgba(143, 54, 230, 0.1) !important;
   }
 
   .dark .code-header {
-    background-color: #131c2e;
-  }
-
-  .code-header + pre {
-    margin: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    padding: 0.75rem;
-    border: none;
+    background-color: #1e293b !important;
+    border-color: rgba(163, 254, 13, 0.1) !important;
   }
 
   .copy-button {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    color: #4b5563;
-    cursor: pointer;
-    transition: all 0.2s ease;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    padding: 0.25rem 0.75rem !important;
+    background-color: white !important;
+    color: #8f36e6 !important;
+    border: 1px solid rgba(143, 54, 230, 0.3) !important;
+    border-radius: 0.375rem !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    font-family: 'Lato', sans-serif !important;
   }
 
   .dark .copy-button {
-    background-color: #1a2234;
-    border-color: #334155;
-    color: #e2e8f0;
+    background-color: #0f172a !important;
+    color: #a3fe0d !important;
+    border-color: rgba(163, 254, 13, 0.3) !important;
   }
 
   .copy-button:hover {
-    background-color: #f0f4f8;
-    color: #8f36e6;
-    border-color: #8f36e6;
+    background-color: rgba(143, 54, 230, 0.1) !important;
+    border-color: #8f36e6 !important;
+    transform: translateY(-1px) !important;
   }
 
   .dark .copy-button:hover {
-    background-color: #293548;
-    color: #a3fe0d;
-    border-color: #a3fe0d;
+    background-color: rgba(163, 254, 13, 0.1) !important;
+    border-color: #a3fe0d !important;
+    transform: translateY(-1px) !important;
   }
 
   .copy-button.copied {
-    background-color: #8f36e6;
-    color: white;
-    border-color: #8f36e6;
+    background-color: #8f36e6 !important;
+    color: white !important;
+    border-color: #8f36e6 !important;
   }
 
   .dark .copy-button.copied {
-    background-color: #a3fe0d;
-    color: #0f172a;
-    border-color: #a3fe0d;
+    background-color: #a3fe0d !important;
+    color: #0f172a !important;
+    border-color: #a3fe0d !important;
   }
 
-  /* Ensure code blocks in list items look good */
-  .prose ol li pre,
-  .prose ul li pre {
-    margin: 0.5rem 0 !important;
+  /* Enhanced code block styling */
+  pre {
+    margin: 0 !important;
+    padding: 1.25rem !important;
+    background-color: #131c2e !important;
+    color: #f8fafc !important;
+    border-radius: 0 0 0.75rem 0.75rem !important;
+    overflow-x: auto !important;
+    font-size: 0.875rem !important;
+    line-height: 1.7 !important;
+    border-left: 4px solid #8f36e6 !important;
   }
 
-  .prose ol li .code-block-wrapper,
-  .prose ul li .code-block-wrapper {
-    margin: 0.5rem 0 1rem 0 !important;
+  .dark pre {
+    border-left: 4px solid #a3fe0d !important;
   }
 
-  /* Fix for inline code spans being treated as blocks */
-  :not(pre) > code {
-    display: inline !important;
-    white-space: normal;
+  pre code {
+    font-family: var(--font-mono), monospace !important;
+    color: #f8fafc !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    white-space: pre !important;
+    display: block !important;
+  }
+
+  /* Command line prefix styling */
+  .command-line-prefix {
+    color: #8f36e6 !important;
+    user-select: none !important;
+    margin-right: 0.5rem !important;
+    font-weight: bold !important;
+  }
+
+  .dark .command-line-prefix {
+    color: #a3fe0d !important;
+  }
+
+  /* Ensure consistent styling across all contexts */
+  .markdown-content .code-block-wrapper,
+  .prose .code-block-wrapper {
+    margin: 1.5rem 0 !important;
+  }
+
+  /* Fix for code blocks in lists */
+  .prose li .code-block-wrapper,
+  .markdown-content li .code-block-wrapper {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
   }
 }
 
@@ -860,9 +906,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* CLEAR ALL PREVIOUS CODE BLOCK STYLING */
-/* Removing all previous code block styles to avoid conflicts */
-
 /* UNIFIED CODE BLOCK STYLING - CONSISTENT ACROSS ALL PAGES */
 :root {
   --code-bg: #131c2e;
@@ -878,68 +921,73 @@ html {
   display: flex !important;
   flex-direction: column !important;
   margin: 1.5rem 0 !important;
-  border-radius: 0.5rem !important;
+  border-radius: 0.75rem !important;
   overflow: hidden !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid rgba(143, 54, 230, 0.2) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.3s ease !important;
 }
 
 .dark .code-block-wrapper {
-  border-color: #334155 !important;
+  border: 1px solid rgba(163, 254, 13, 0.2) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+.code-block-wrapper:hover {
+  border-color: rgba(143, 54, 230, 0.4) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.dark .code-block-wrapper:hover {
+  border-color: rgba(163, 254, 13, 0.4) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Code header styling */
 .code-header {
   display: flex !important;
-  justify-content: space-between !important;
+  justify-content: flex-end !important;
   align-items: center !important;
   padding: 0.5rem 1rem !important;
-  background-color: #f1f5f9 !important;
-  border-bottom: 1px solid #e2e8f0 !important;
+  background-color: #f8fafc !important;
+  border-bottom: 1px solid rgba(143, 54, 230, 0.1) !important;
 }
 
 .dark .code-header {
   background-color: #1e293b !important;
-  border-color: #334155 !important;
-}
-
-.code-header span {
-  font-family: monospace !important;
-  font-size: 0.75rem !important;
-  color: #64748b !important;
-}
-
-.dark .code-header span {
-  color: #94a3b8 !important;
+  border-color: rgba(163, 254, 13, 0.1) !important;
 }
 
 /* Copy button styling */
 .copy-button {
   font-size: 0.75rem !important;
-  padding: 0.25rem 0.5rem !important;
+  font-weight: 500 !important;
+  padding: 0.25rem 0.75rem !important;
   background-color: white !important;
-  color: #64748b !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 0.25rem !important;
+  color: #8f36e6 !important;
+  border: 1px solid rgba(143, 54, 230, 0.3) !important;
+  border-radius: 0.375rem !important;
   cursor: pointer !important;
   transition: all 0.2s ease !important;
+  font-family: 'Lato', sans-serif !important;
 }
 
 .dark .copy-button {
   background-color: #0f172a !important;
-  color: #e2e8f0 !important;
-  border-color: #334155 !important;
+  color: #a3fe0d !important;
+  border-color: rgba(163, 254, 13, 0.3) !important;
 }
 
 .copy-button:hover {
-  background-color: #f8fafc !important;
-  color: #8f36e6 !important;
+  background-color: rgba(143, 54, 230, 0.1) !important;
   border-color: #8f36e6 !important;
+  transform: translateY(-1px) !important;
 }
 
 .dark .copy-button:hover {
-  background-color: #1e293b !important;
-  color: #a3fe0d !important;
+  background-color: rgba(163, 254, 13, 0.1) !important;
   border-color: #a3fe0d !important;
+  transform: translateY(-1px) !important;
 }
 
 .copy-button.copied {
@@ -957,17 +1005,23 @@ html {
 /* Code block styling */
 pre {
   margin: 0 !important;
-  padding: 1rem !important;
-  background-color: var(--code-bg) !important;
-  color: var(--code-text) !important;
-  border-radius: 0 0 0.5rem 0.5rem !important;
+  padding: 1.25rem !important;
+  background-color: #131c2e !important;
+  color: #f8fafc !important;
+  border-radius: 0 0 0.75rem 0.75rem !important;
   overflow-x: auto !important;
   font-size: 0.875rem !important;
+  line-height: 1.7 !important;
+  border-left: 4px solid #8f36e6 !important;
+}
+
+.dark pre {
+  border-left: 4px solid #a3fe0d !important;
 }
 
 pre code {
-  font-family: monospace !important;
-  color: var(--code-text) !important;
+  font-family: var(--font-mono), monospace !important;
+  color: #f8fafc !important;
   padding: 0 !important;
   background-color: transparent !important;
   white-space: pre !important;
@@ -1020,9 +1074,10 @@ pre code {
 
 /* Command line prefix styling */
 .command-line-prefix {
-  color: #888 !important;
+  color: #8f36e6 !important;
   user-select: none !important;
   margin-right: 0.5rem !important;
+  font-weight: bold !important;
 }
 
 /* Force tables to display consistently */
