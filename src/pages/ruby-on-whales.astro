@@ -44,4 +44,43 @@ const { Content } = await guideEntry.render();
   .markdown-content :global(h3) {
     scroll-margin-top: 100px;
   }
+
+  /* Additional spacing fixes for Ruby on Whales */
+  .markdown-content :global(p) {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .markdown-content :global(ul),
+  .markdown-content :global(ol) {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .markdown-content :global(li) {
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+  }
+
+  .markdown-content :global(h1) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .markdown-content :global(h2) {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .markdown-content :global(h3) {
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .markdown-content :global(h4) {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 </style> 

@@ -2,6 +2,9 @@
 title: Ruby on Whales!
 ---
 
+![Ruby on Whales!](/images/lfp2-cover.png)
+By [Dean Lofts](https://linkarooie.com/loftwah) | [GitHub](https://github.com/loftwah)
+
 # Linux for Pirates! Ruby on Whales
 
 ## Introduction
@@ -509,7 +512,7 @@ Using environment variables for sensitive information (like database passwords) 
 
   - On Windows, you can set environment variables using the `set` command:
 
-    ```cmd
+    ```bash
     set PIRATE_APP_DATABASE_PASSWORD=your_secure_password
     ```
 
@@ -1247,7 +1250,7 @@ ENV RAILS_ENV="production" \
 
 #### Build Stage
 
-```Dockerfile
+```
 # Throw-away build stage to reduce size of final image
 FROM base as build
 
@@ -1293,7 +1296,7 @@ RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
 
 #### Final Stage
 
-```Dockerfile
+```
 # Final stage for app image
 FROM base
 
@@ -1546,7 +1549,7 @@ Using `.env` files for environment-specific configurations helps in maintaining 
 
 Ensure your `.env` file contains the necessary environment variables:
 
-```env
+```bash
 # .env
 GITHUB_TOKEN=<your-github-token>
 SECRET_KEY_BASE=<your-secret-key-base>
@@ -2692,7 +2695,7 @@ In the treacherous waters ye must guard yer Docker containers against scallywags
 
 - **Unnecessary Privileges**: Run containers with the least privilege necessary. Avoid root user; create a dedicated user instead.
 
-  ```Dockerfile
+  ```
   FROM registry.docker.com/library/ruby:3.3.0-slim
   RUN useradd -m appuser
   USER appuser
@@ -2780,7 +2783,7 @@ Even the finest ships encounter rough seas. Here be some common issues ye might 
 
 - **Missing Gems or Node Modules**: Double-check yer `Dockerfile` and ensure that dependencies be properly installed.
 
-  ```Dockerfile
+  ```
   COPY Gemfile Gemfile.lock ./
   RUN bundle install
   COPY package.json package-lock.json ./
