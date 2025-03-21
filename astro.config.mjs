@@ -33,6 +33,7 @@ export default defineConfig({
   },
   build: {
     assets: 'assets',
+    inlineStylesheets: 'auto',
   },
   markdown: {
     syntaxHighlight: false, // Disable the built-in syntax highlighter
@@ -49,5 +50,8 @@ export default defineConfig({
     service: {
       entrypoint: 'astro/assets/services/sharp'
     }
+  },
+  experimental: {
+    viewTransitions: true
   }
 });
