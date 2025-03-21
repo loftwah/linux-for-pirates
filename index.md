@@ -617,7 +617,7 @@ To view logs, ye can use various commands:
 # View system logs
 less /var/log/syslog
 
-# Follow logs in real-time (like watching the horizon)
+# Follow logs in real-time (like watchin' the horizon)
 tail -f /var/log/syslog
 
 # Search for specific events
@@ -760,8 +760,6 @@ Remember, a true Linux pirate never stops learning! The digital seas be ever-cha
 Now, hoist the Tux flag high and prepare to sail into Chapter Three, where real adventure awaits! Arrr!
 
 ## **Chapter Three: Your First Day as a Pirate**
-
-![Chapter Three - Your First Day](images/firstday.png)
 
 Ahoy there, new recruits! Welcome to yer first day as a proper Linux pirate! In this chapter, we'll be gettin' our hands dirty with some real seafarin' tasks. No more just readin' about the ship - it be time to grab the wheel and feel the wind in yer hair!
 
@@ -1488,8 +1486,6 @@ May fair winds fill yer sails, and may yer terminal always be responsive!
 
 ## **Chapter Four: Navigatin' the Cloud Seas - AWS and GitHub Basics**
 
-![Chapter Four - AWS and GitHub Basics](images/cloud_seas.png)
-
 [Watch Cap'n Loftwah's Video Guide on YouTube](https://www.youtube.com/live/-NVhnF8fZcE?feature=share)
 
 Ahoy, me hearties! As we continue our voyage through the digital realms, we find ourselves approachin' the vast and mighty Cloud Seas! No modern pirate can call themselves a true buccaneer without masterin' two of the most powerful tools in today's technology waters: Amazon Web Services (AWS) and GitHub. These be the twin winds that propel the finest ships across the DevOps waters!
@@ -2109,8 +2105,6 @@ And remember, to fully solve this riddle and claim yer treasure, ye'll need to t
 
 ## **Digital Pirate Jokes & Tales From the Cyber Seas**
 
-![Digital Pirate Jokes](images/pirate_jokes.png)
-
 Every pirate crew needs some good laughs while navigatin' the treacherous digital waters! Gather 'round, me hearties, as we share some of the finest tech humor to ever sail the seven digital seas!
 
 ### **Networking Yarns**
@@ -2244,8 +2238,6 @@ And so began the great migration. With each passing sprint, more features moved 
 The captain raised his glass in a toast: "Remember, me hearties: today's cutting-edge code be tomorrow's legacy system. Document well, test thoroughly, and always keep an eye on the horizon for what comes next!"
 
 ## **The Pirate's Glossary of Tech Terms**
-
-![Pirate's Glossary](images/glossary.png)
 
 Ahoy there, me hearties! Navigatin' the vast seas o' Linux and technology can sometimes feel like tryin' to read a treasure map written in a foreign tongue. Fear not! This comprehensive glossary translates the technical jargon of the digital realm into proper pirate speak, so ye can converse like a true technologist buccaneer!
 
@@ -2528,3 +2520,5 @@ May the wind be at yer back, and may yer terminal never display "command not fou
 **Captain Jack Sparrow:** "Ahoy there, mateys! As a seasoned pirate, I can tell ye that there's no one I'd rather have by my side in a fight than Linus Torvalds and Richard Stallman. And when it comes to learning about Linux and pirating, Dean Lofts' book "Linux for Pirates!" is a must-read. Dean may not have as much experience on the high seas as I do, but he sure knows his way around a Linux system. So hoist the sails and let's set a course for adventure, with Dean's book as our guide!"
 
 > **Note** These are not real tersemonials, but they could be if you want them to be bad enough.
+
+## **A Pirate's Glossary: The Lingo of the Digital Seas**
