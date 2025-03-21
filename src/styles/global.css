@@ -9,31 +9,47 @@
     overflow-x: hidden;
   }
 
+  /* Set consistent colors for the entire site in both light and dark modes */
+  :root {
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --code-bg-color: #131c2e;
+    --code-text-color: #f8fafc;
+    --accent-color: #8f36e6;
+    --accent-hover: #7c2bd0;
+  }
+
+  .dark {
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --code-bg-color: #131c2e;
+    --code-text-color: #f8fafc;
+    --accent-color: #a3fe0d;
+    --accent-hover: #8fe00b;
+  }
+
   body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-color);
   }
 
+  /* Ensure all headings have consistent styling */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel Decorative', serif;
-    color: #8f36e6; /* Light mode accent color for all headings */
+    color: var(--accent-color);
   }
 
-  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-    color: #a3fe0d; /* Dark mode accent color for all headings */
-  }
-
+  /* Consistent link styling */
   a {
-    color: #8f36e6; /* Light mode accent color for links */
+    color: var(--accent-color);
     transition: color 0.2s ease, text-decoration 0.2s ease;
   }
 
   a:hover {
     text-decoration: underline;
-  }
-
-  .dark a {
-    color: #a3fe0d; /* Dark mode accent color for links */
+    color: var(--accent-hover);
   }
 
   .font-display {
@@ -484,46 +500,61 @@
 
   /* Simple code block and copy button styling */
   .code-block-wrapper {
-    margin: 1.5rem 0;
-    border-radius: 0.5rem;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0 !important;
+    border-radius: 0.5rem !important;
+    overflow: hidden !important;
+    border: 1px solid var(--theme-divider);
   }
 
   .code-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    background-color: #f1f5f9;
-    border-bottom: 1px solid #e2e8f0;
-    padding: 0.5rem 1rem;
+    background-color: #f5f7fa;
+    padding: 0.35rem 0.5rem;
+    margin: 0;
   }
 
   .dark .code-header {
-    background-color: #1e293b;
-    border-color: #334155;
+    background-color: #131c2e;
+  }
+
+  .code-header + pre {
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0.75rem;
+    border: none;
   }
 
   .copy-button {
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 0.25rem;
-    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
     font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    color: #4b5563;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
   }
 
   .dark .copy-button {
-    background-color: #0f172a;
+    background-color: #1a2234;
     border-color: #334155;
     color: #e2e8f0;
   }
 
   .copy-button:hover {
+    background-color: #f0f4f8;
+    color: #8f36e6;
     border-color: #8f36e6;
   }
 
   .dark .copy-button:hover {
+    background-color: #293548;
+    color: #a3fe0d;
     border-color: #a3fe0d;
   }
 
@@ -537,6 +568,23 @@
     background-color: #a3fe0d;
     color: #0f172a;
     border-color: #a3fe0d;
+  }
+
+  /* Ensure code blocks in list items look good */
+  .prose ol li pre,
+  .prose ul li pre {
+    margin: 0.5rem 0 !important;
+  }
+
+  .prose ol li .code-block-wrapper,
+  .prose ul li .code-block-wrapper {
+    margin: 0.5rem 0 1rem 0 !important;
+  }
+
+  /* Fix for inline code spans being treated as blocks */
+  :not(pre) > code {
+    display: inline !important;
+    white-space: normal;
   }
 }
 
@@ -812,185 +860,288 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Code Blocks and Inline Code Styling */
-:not(pre) > code {
-  padding: 0.2em 0.4em;
-  margin: 0;
-  font-size: 85%;
-  background-color: var(--theme-code-inline-bg);
-  border-radius: 4px;
-  color: var(--theme-code-inline-text);
-  font-family: var(--font-mono);
-  word-break: break-word;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: pre-wrap;
+/* CLEAR ALL PREVIOUS CODE BLOCK STYLING */
+/* Removing all previous code block styles to avoid conflicts */
+
+/* UNIFIED CODE BLOCK STYLING - CONSISTENT ACROSS ALL PAGES */
+:root {
+  --code-bg: #131c2e;
+  --code-text: #f8fafc;
+  --inline-code-bg-light: rgba(143, 54, 230, 0.1);
+  --inline-code-color-light: #8f36e6;
+  --inline-code-bg-dark: rgba(163, 254, 13, 0.1);
+  --inline-code-color-dark: #a3fe0d;
 }
 
-pre {
-  margin: 1em 0;
-  padding: 1em;
-  border-radius: 6px;
-  background-color: var(--theme-code-bg);
-  overflow-x: auto;
-  overflow-y: hidden;
-  position: relative;
-}
-
-pre > code {
-  font-family: var(--font-mono);
-  font-size: 0.9em;
-  line-height: 1.45;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  color: var(--theme-code-text);
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  display: block;
-}
-
-/* Fix the gap between code header and code content */
+/* Code block container */
 .code-block-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   margin: 1.5rem 0 !important;
   border-radius: 0.5rem !important;
   overflow: hidden !important;
-  border: 1px solid var(--theme-divider);
+  border: 1px solid #e2e8f0 !important;
 }
 
+.dark .code-block-wrapper {
+  border-color: #334155 !important;
+}
+
+/* Code header styling */
 .code-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--theme-bg-offset);
-  border-bottom: 1px solid var(--theme-divider);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  padding: 0.5rem 1rem;
-  margin: 0;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0.5rem 1rem !important;
+  background-color: #f1f5f9 !important;
+  border-bottom: 1px solid #e2e8f0 !important;
 }
 
-.code-header + pre {
-  margin: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  padding: 0.75rem;
-  border: none;
+.dark .code-header {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
 }
 
-/* Ensure code blocks in list items look good */
-.prose ol li pre,
-.prose ul li pre {
-  margin: 0.5rem 0 !important;
+.code-header span {
+  font-family: monospace !important;
+  font-size: 0.75rem !important;
+  color: #64748b !important;
 }
 
-.prose ol li .code-block-wrapper,
-.prose ul li .code-block-wrapper {
-  margin: 0.5rem 0 1rem 0 !important;
+.dark .code-header span {
+  color: #94a3b8 !important;
 }
 
-/* Fix for inline code spans being treated as blocks */
-:not(pre) > code {
-  display: inline !important;
-  white-space: normal !important;
-}
-
-/* Style for copy button */
+/* Copy button styling */
 .copy-button {
-  background-color: transparent;
-  border: 1px solid var(--theme-divider);
-  border-radius: 4px;
-  font-size: 0.8em;
-  padding: 0.4em 0.6em;
-  color: var(--theme-text-light);
-  cursor: pointer;
-  transition: all 0.2s ease;
+  font-size: 0.75rem !important;
+  padding: 0.25rem 0.5rem !important;
+  background-color: white !important;
+  color: #64748b !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0.25rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.dark .copy-button {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+  border-color: #334155 !important;
 }
 
 .copy-button:hover {
-  background-color: var(--theme-bg-accent);
-  color: var(--theme-accent);
+  background-color: #f8fafc !important;
+  color: #8f36e6 !important;
+  border-color: #8f36e6 !important;
+}
+
+.dark .copy-button:hover {
+  background-color: #1e293b !important;
+  color: #a3fe0d !important;
+  border-color: #a3fe0d !important;
 }
 
 .copy-button.copied {
-  background-color: var(--theme-accent);
-  color: white;
+  background-color: #8f36e6 !important;
+  color: white !important;
+  border-color: #8f36e6 !important;
 }
 
-/* Fix for RVM installation steps */
-ol li pre {
-  margin-bottom: 1em;
+.dark .copy-button.copied {
+  background-color: #a3fe0d !important;
+  color: #0f172a !important;
+  border-color: #a3fe0d !important;
 }
 
-/* Combined code block for installation steps */
-.combined-code-block {
-  margin-top: 1em;
-  border: 1px solid var(--theme-divider);
-  border-radius: 6px;
-  overflow: hidden;
+/* Code block styling */
+pre {
+  margin: 0 !important;
+  padding: 1rem !important;
+  background-color: var(--code-bg) !important;
+  color: var(--code-text) !important;
+  border-radius: 0 0 0.5rem 0.5rem !important;
+  overflow-x: auto !important;
+  font-size: 0.875rem !important;
 }
 
-.combined-code-block .code-header {
-  margin-top: 0;
+pre code {
+  font-family: monospace !important;
+  color: var(--code-text) !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  white-space: pre !important;
+  display: block !important;
 }
 
-.combined-code-block pre {
-  margin: 0;
-  border-radius: 0;
+/* Inline code styling */
+:not(pre) > code {
+  font-family: monospace !important;
+  font-size: 0.875em !important;
+  font-weight: 500 !important;
+  background-color: var(--inline-code-bg-light) !important;
+  color: var(--inline-code-color-light) !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 0.25rem !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  display: inline !important;
 }
 
-.combined-code-message {
-  background-color: var(--theme-bg-accent);
-  color: var(--theme-text);
-  padding: 0.5em 1em;
-  font-size: 0.9em;
-  border-bottom: 1px solid var(--theme-divider);
+.dark :not(pre) > code {
+  background-color: var(--inline-code-bg-dark) !important;
+  color: var(--inline-code-color-dark) !important;
 }
 
-/* Ensure ordered list items in RVM section have proper spacing */
-[id^="using-rvm"] + ol li {
-  margin-bottom: 1em;
+/* Override any page-specific styles that might conflict */
+.markdown-content pre,
+.prose pre {
+  background-color: var(--code-bg) !important;
+  color: var(--code-text) !important;
 }
 
-/* Ensure code blocks in RVM steps don't get separated */
-[id^="using-rvm"] + ol li p + pre {
-  margin-top: 0.5em;
+.markdown-content pre code,
+.prose pre code {
+  color: var(--code-text) !important;
 }
 
-/* Improve ordered list spacing and appearance */
-ol {
-  counter-reset: item;
-  padding-left: 2em;
+/* Fix for code blocks in lists */
+.prose li pre,
+.markdown-content li pre {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
-ol li {
-  display: block;
-  position: relative;
-  margin-bottom: 0.5em;
+.prose li .code-block-wrapper,
+.markdown-content li .code-block-wrapper {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.75rem !important;
 }
 
-ol li:before {
-  content: counter(item) ".";
-  counter-increment: item;
-  position: absolute;
-  left: -2em;
-  width: 1.5em;
-  text-align: right;
-  color: var(--theme-text-light);
+/* Command line prefix styling */
+.command-line-prefix {
+  color: #888 !important;
+  user-select: none !important;
+  margin-right: 0.5rem !important;
 }
 
-/* Ensure inline code inside lists doesn't break the layout */
-ol li p code,
-ul li p code {
-  display: inline;
-  white-space: normal;
+/* Force tables to display consistently */
+.markdown-content table {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  margin: 1.5rem 0 !important;
+  border-collapse: collapse !important;
 }
 
-/* Remove top margin from code blocks right after a list item's text */
-li > p + pre {
-  margin-top: 0.5em;
+@media (min-width: 768px) {
+  .markdown-content table {
+    display: table !important;
+    width: 100% !important;
+  }
+}
+
+/* Consistent table cell styling */
+.markdown-content table th,
+.markdown-content table td {
+  padding: 0.75rem 1rem !important;
+  border: 1px solid #e2e8f0 !important;
+  text-align: left !important;
+}
+
+.dark .markdown-content table th,
+.dark .markdown-content table td {
+  border-color: #334155 !important;
+}
+
+/* Force images to display consistently */
+.markdown-content img {
+  display: block !important;
+  margin: 2.5rem auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.dark .markdown-content img {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Style cleanup - override problematic styles */
+.markdown-content *,
+.prose * {
+  box-sizing: border-box !important;
+}
+
+/* Reset potentially problematic properties */
+.markdown-content pre,
+.prose pre {
+  white-space: pre !important;
+  tab-size: 4 !important;
+  hyphens: none !important;
+  overflow-wrap: normal !important;
+}
+
+/* Ensure inline code is properly displayed */
+:not(pre) > code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+}
+
+/* !IMPORTANT overrides for stubborn elements */
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  color: #8f36e6 !important;
+  font-family: 'Cinzel Decorative', serif !important;
+}
+
+.dark .markdown-content h1,
+.dark .markdown-content h2,
+.dark .markdown-content h3,
+.dark .markdown-content h4,
+.dark .markdown-content h5,
+.dark .markdown-content h6 {
+  color: #a3fe0d !important;
+}
+
+.markdown-content a {
+  color: #8f36e6 !important;
+  text-decoration: none !important;
+}
+
+.dark .markdown-content a {
+  color: #a3fe0d !important;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline !important;
+}
+
+/* Force consistent code blocks across all contexts */
+.markdown-content pre,
+.prose pre,
+pre {
+  background-color: #131c2e !important;
+  color: #f8fafc !important;
+  margin: 0 !important;
+  padding: 1rem !important;
+}
+
+.dark .markdown-content pre,
+.dark .prose pre,
+.dark pre {
+  background-color: #131c2e !important;
+  color: #f8fafc !important;
+}
+
+.markdown-content pre code,
+.prose pre code,
+pre code {
+  color: #f8fafc !important;
 } 

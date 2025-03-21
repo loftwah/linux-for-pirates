@@ -244,66 +244,6 @@ const isRubyPage = pathname.includes('ruby-on-whales');
             });
           });
         }
-
-        // Simple code block enhancement
-        const codeBlocks = document.querySelectorAll('pre:not(.enhanced)');
-        codeBlocks.forEach(block => {
-          block.classList.add('enhanced');
-          
-          // Create wrapper
-          const wrapper = document.createElement('div');
-          wrapper.className = 'code-block-wrapper';
-          
-          // Determine language
-          let language = 'text';
-          const codeEl = block.querySelector('code');
-          if (codeEl && codeEl.className) {
-            const match = codeEl.className.match(/language-(\w+)/);
-            if (match) {
-              language = match[1];
-            }
-          }
-          
-          // Create header
-          const header = document.createElement('div');
-          header.className = 'code-header';
-          
-          // Create language label
-          const langLabel = document.createElement('span');
-          langLabel.className = 'text-xs font-mono';
-          langLabel.textContent = language;
-          
-          // Create copy button
-          const copyBtn = document.createElement('button');
-          copyBtn.className = 'copy-button';
-          copyBtn.textContent = 'Copy';
-          
-          // Add event listener to copy button
-          copyBtn.addEventListener('click', () => {
-            const code = block.textContent || '';
-            navigator.clipboard.writeText(code).then(() => {
-              copyBtn.textContent = 'Copied!';
-              copyBtn.classList.add('copied');
-              
-              setTimeout(() => {
-                copyBtn.textContent = 'Copy';
-                copyBtn.classList.remove('copied');
-              }, 2000);
-            });
-          });
-          
-          // Assemble the header
-          header.appendChild(langLabel);
-          header.appendChild(copyBtn);
-          
-          // Insert everything - maintain parent reference
-          const parent = block.parentNode;
-          if (parent) {
-            parent.insertBefore(wrapper, block);
-            wrapper.appendChild(header);
-            wrapper.appendChild(block);
-          }
-        });
       });
     </script>
   </body>
