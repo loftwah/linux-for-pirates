@@ -1,0 +1,21 @@
+Based on the expanded Linux for Pirates book, here's a list of all the new images you'll need to create:
+
+1. `/images/networking-pirate.png` - Pirate navigating network connections
+2. `/images/docker-pirate.png` - Pirate with container ships
+3. `/images/merge-conflict-pirate.png` - Pirate resolving conflicts on a map
+4. `/images/database-pirate.png` - Pirate organizing treasure in database chests
+5. `/images/service-pirate.png` - Pirate managing automated ship services
+6. `/images/blockdiagram-pirate.png` - Pirate drawing system diagrams
+7. `/images/package-pirate.png` - Pirate managing supply crates/packages
+8. `/images/oh-my-zsh-pirate.png` - Pirate with fancy command deck
+9. `/images/hardware-pirate.png` - Pirate examining computer hardware
+10. `/images/cloud-pirate.png` - Pirate with different cloud provider ships
+11. `/images/pr-pirate.png` - Pirate submitting a treasure map for review
+12. `/images/load-balancer-pirate.png` - Pirate distributing cargo across ships
+13. `/images/ai-pirate.png` - Pirate using AI assistant to generate maps
+14. `/images/enterprise-pirate.png` - Pirate in corporate fleet uniform
+15. `/images/tech-change-pirate.png` - Pirate with spyglass watching horizon
+16. `/images/conclusion-pirate.png` - Pirate captain with treasure chest of skills
+17. `/images/backup-pirate.png` - Pirate making copies of treasure maps
+
+Each image should maintain the pirate theme while illustrating the technical concept of the section it represents. The style should be consistent with the existing images in the book.
