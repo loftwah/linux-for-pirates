@@ -45,14 +45,14 @@ import '../styles/global.css';
               <img src="/linux-for-pirates/images/pirate_flag.svg" alt="Pirate Flag" class="h-8 w-8" />
             </div>
             <div>
-              <h1 class="text-xl sm:text-2xl font-bold font-display tracking-wider text-[#8f36e6] dark:text-[#a3fe0d]">
-                Linux for Pirates!
+              <h1 class="text-xl sm:text-2xl font-bold font-display tracking-wider">
+                <span class="text-slate-800 dark:text-white">Linux</span> <span class="text-[#8f36e6] dark:text-[#a3fe0d]">for</span> <span class="text-slate-800 dark:text-white">Pirates!</span>
               </h1>
             </div>
           </div>
           
           <div class="flex items-center gap-3">
-            <a href="https://github.com/loftwah" 
+            <a href="https://github.com/loftwah/linux-for-pirates" 
               class="hidden sm:flex items-center px-3 py-1.5 text-sm border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -76,21 +76,9 @@ import '../styles/global.css';
     <!-- Navigation Tab Links -->
     <div class="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm">
       <div class="container mx-auto px-4">
-        <div class="flex overflow-x-auto py-2 gap-2 no-scrollbar">
-          <a href="#chapter-one" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-[#8f36e6] dark:text-[#a3fe0d] focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
-            Chapter One
-          </a>
-          <a href="#chapter-two" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-[#8f36e6] dark:text-[#a3fe0d] focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
-            Chapter Two
-          </a>
-          <a href="#what-be-this-linux-beast" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
-            What Be Linux?
-          </a>
-          <a href="#why-would-a-savvy-buccaneer-choose-linux" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
-            Why Choose Linux?
-          </a>
-          <a href="#about-the-author" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
-            About the Author
+        <div class="flex justify-center py-2">
+          <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
+            Back to Top
           </a>
         </div>
       </div>
@@ -98,7 +86,7 @@ import '../styles/global.css';
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
-      <article class="prose dark:prose-invert lg:prose-lg prose-headings:font-display max-w-none prose-a:text-[#8f36e6] dark:prose-a:text-[#a3fe0d] prose-headings:text-[#8f36e6] dark:prose-headings:text-[#a3fe0d] prose-headings:font-bold prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-img:rounded-xl prose-img:shadow-lg">
+      <article class="prose dark:prose-invert lg:prose-xl max-w-3xl mx-auto prose-headings:font-display prose-a:text-[#8f36e6] dark:prose-a:text-[#a3fe0d] prose-headings:text-[#8f36e6] dark:prose-headings:text-[#a3fe0d] prose-headings:font-bold prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-img:rounded-xl prose-img:shadow-lg prose-p:leading-8 prose-li:leading-8 prose-p:my-6 prose-h2:mt-12 prose-h2:mb-6 prose-h3:mt-8 prose-h3:mb-4 prose-img:my-10">
         <slot />
       </article>
     </main>
@@ -110,22 +98,6 @@ import '../styles/global.css';
       </svg>
     </button>
 
-    <!-- Chapter Navigation Footer -->
-    <div class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-6">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-center mb-6">
-          <div class="inline-flex rounded-md shadow-sm" role="group">
-            <a href="#chapter-one" class="px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-l-lg hover:bg-slate-100 dark:hover:bg-slate-600 focus:z-10">
-              Chapter One
-            </a>
-            <a href="#chapter-two" class="px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-700 border-t border-b border-r border-slate-200 dark:border-slate-600 rounded-r-lg hover:bg-slate-100 dark:hover:bg-slate-600 focus:z-10">
-              Chapter Two
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Treasure Map Footer -->
     <footer class="relative bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-8">
       <div class="absolute left-0 right-0 h-2 top-0 bg-gradient-to-r from-[#8f36e6] via-[#a3fe0d] to-[#8f36e6]"></div>
@@ -133,46 +105,22 @@ import '../styles/global.css';
         <div class="flex flex-col items-center">
           <div class="flex items-center gap-2 mb-4">
             <img src="/linux-for-pirates/images/pirate_flag.svg" alt="Pirate Flag" class="h-8 w-8" />
-            <span class="font-display text-xl text-[#8f36e6] dark:text-[#a3fe0d]">Linux for Pirates</span>
-          </div>
-          
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-12 text-center sm:text-left mb-6">
-            <div>
-              <h3 class="font-bold text-[#8f36e6] dark:text-[#a3fe0d] mb-2">Chapters</h3>
-              <ul class="space-y-1 text-sm">
-                <li><a href="#chapter-one" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">Chapter One</a></li>
-                <li><a href="#chapter-two" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">Chapter Two</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 class="font-bold text-[#8f36e6] dark:text-[#a3fe0d] mb-2">Sections</h3>
-              <ul class="space-y-1 text-sm">
-                <li><a href="#what-be-this-linux-beast" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">What Be Linux?</a></li>
-                <li><a href="#why-would-a-savvy-buccaneer-choose-linux" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">Why Choose Linux?</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 class="font-bold text-[#8f36e6] dark:text-[#a3fe0d] mb-2">About</h3>
-              <ul class="space-y-1 text-sm">
-                <li><a href="#about-the-author" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">About the Author</a></li>
-                <li><a href="#before-we-begin" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">Before We Begin</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 class="font-bold text-[#8f36e6] dark:text-[#a3fe0d] mb-2">Connect</h3>
-              <ul class="space-y-1 text-sm">
-                <li><a href="https://github.com/loftwah" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">GitHub</a></li>
-                <li><a href="https://linkfree.io/loftwah" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">LinkFree</a></li>
-              </ul>
-            </div>
+            <span class="font-display text-xl">
+              <span class="text-slate-800 dark:text-white">Linux</span> 
+              <span class="text-[#8f36e6] dark:text-[#a3fe0d]">for</span> 
+              <span class="text-slate-800 dark:text-white">Pirates</span>
+            </span>
           </div>
           
           <div class="text-center text-sm text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-6 w-full">
             <p>© 2024 Linux for Pirates. Created with ☠️ by <a href="https://linkfree.io/loftwah" class="text-[#8f36e6] dark:text-[#a3fe0d]">Dean Lofts</a>.</p>
             <p class="mt-1">In memory of <a href="https://en.wikipedia.org/wiki/Aaron_Swartz" class="text-[#8f36e6] dark:text-[#a3fe0d]">Aaron Swartz</a>.</p>
+            <p class="mt-3"><a href="https://github.com/loftwah/linux-for-pirates" class="text-[#8f36e6] dark:text-[#a3fe0d] hover:underline inline-flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub Repository
+            </a></p>
           </div>
         </div>
       </div>

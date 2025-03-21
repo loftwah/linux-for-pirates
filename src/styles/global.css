@@ -47,15 +47,41 @@
 
   /* Content styling enhancements */
   .prose img {
-    @apply mx-auto my-8;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    display: block;
   }
 
   .prose blockquote {
-    @apply border-l-4 border-[#8f36e6] dark:border-[#a3fe0d] px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-r;
+    font-style: italic;
+    border-left-color: #8f36e6;
+    background-color: rgba(143, 54, 230, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .dark .prose blockquote {
+    border-left-color: #a3fe0d;
+    background-color: rgba(163, 254, 13, 0.05);
   }
 
   .prose pre {
-    @apply shadow-lg;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+  }
+
+  .prose code {
+    color: #8f36e6;
+    font-weight: 500;
+    background-color: rgba(143, 54, 230, 0.1);
+    padding: 0.15rem 0.3rem;
+    border-radius: 0.25rem;
+  }
+
+  .dark .prose code {
+    color: #a3fe0d;
+    background-color: rgba(163, 254, 13, 0.1);
   }
 
   .prose table {
