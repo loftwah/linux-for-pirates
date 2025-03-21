@@ -3,10 +3,11 @@ title: Linux for Pirates!
 ---
 
 ![Linux for Pirates!](/images/linux-for-pirates.jpg)
-
 By [Dean Lofts](https://linkarooie.com/loftwah) | [GitHub](https://github.com/loftwah)
 
 ![Book Cat](/images/bookcat.jpg)
+
+# Linux for Pirates!
 
 ## **Table of Contents**
 

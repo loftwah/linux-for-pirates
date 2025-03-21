@@ -7,6 +7,23 @@ By [Dean Lofts](https://linkarooie.com/loftwah) | [GitHub](https://github.com/lo
 
 # Linux for Pirates! Ruby on Whales
 
+## **Table of Contents**
+
+- [Introduction](#introduction)
+- [Chapter 1: Setting Sail with Ruby on Rails](#chapter-1-setting-sail-with-ruby-on-rails)
+- [Chapter 2: Treasure Mapping Your Project Structure](#chapter-2-treasure-mapping-your-project-structure)
+- [Chapter 3: Docker – Your Ship for the Journey](#chapter-3-docker--your-ship-for-the-journey)
+- [Chapter 4: Docker Compose – Coordinating Your Fleet](#chapter-4-docker-compose--coordinating-your-fleet)
+- [Chapter 5: Guarding Your Treasure – Using Private Dependencies](#chapter-5-guarding-your-treasure--using-private-dependencies)
+- [Chapter 6: Secure Authentication with SSH and HTTPS](#chapter-6-secure-authentication-with-ssh-and-https)
+- [Chapter 7: CI/CD – Automating Your Deployment](#chapter-7-cicd--automating-your-deployment)
+- [Chapter 8: Advanced Docker Techniques](#chapter-8-advanced-docker-techniques)
+- [Chapter 9: Monitoring and Scaling Your Application](#chapter-9-monitoring-and-scaling-your-application)
+- [Chapter 10: Security Best Practices](#chapter-10-security-best-practices)
+- [Chapter 11: Troubleshooting and Debugging](#chapter-11-troubleshooting-and-debugging)
+- [Conclusion](#conclusion)
+- [Appendices](#appendices)
+
 ## Introduction
 
 Ahoy, mateys! Welcome aboard the grand adventure that be "Linux for Pirates! Ruby on Whales" This here tome be yer trusty map through the treacherous seas of Ruby on Rails, Docker, and the mystical arts of DevOps. Whether ye be a scallywag just learning the ropes or a seasoned buccaneer, this book be the compass to guide ye through the stormy waters of modern application deployment.
