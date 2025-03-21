@@ -21,9 +21,9 @@
   }
 
   .dark {
-    --bg-color: #0f172a;
+    --bg-color: #080f1d;
     --text-color: #f8fafc;
-    --code-bg-color: #131c2e;
+    --code-bg-color: #0c1524;
     --code-text-color: #f8fafc;
     --accent-color: #a3fe0d;
     --accent-rgb: 163, 254, 13;
@@ -188,8 +188,8 @@
   }
 
   .dark .prose pre {
-    background-color: #1e293b;
-    border-color: #334155;
+    background-color: #0c1524;
+    border-color: #1c2a3a;
   }
 
   /* Simple inline code styling */
@@ -230,7 +230,7 @@
   }
 
   .dark .prose table thead {
-    background: linear-gradient(135deg, #1e293b, #192538, #1b2240) !important;
+    background: linear-gradient(135deg, #0c1524, #0a1327, #081129) !important;
   }
 
   .dark .prose table thead th {
@@ -245,7 +245,7 @@
 
   .dark .prose table td, 
   .dark .prose table th {
-    border-color: #334155;
+    border-color: #1c2a3a;
   }
 
   /* Heading size adjustments */
@@ -348,9 +348,9 @@
   }
 
   .dark .table-of-contents {
-    background: linear-gradient(135deg, #1e293b, #192538, #1b2240) !important; /* More noticeable green hint */
+    background: linear-gradient(135deg, #0c1524, #0a1327, #081129) !important;
     border-color: rgba(163, 254, 13, 0.2);
-    box-shadow: 0 8px 15px -3px rgba(163, 254, 13, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px -3px rgba(163, 254, 13, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.25);
   }
 
   .table-of-contents h2 {
@@ -405,8 +405,8 @@
   }
 
   .dark .table-of-contents a {
-    background-color: #0f172a;
-    border-color: #334155;
+    background-color: #080f1d;
+    border-color: #1c2a3a;
   }
 
   .table-of-contents a:hover {
@@ -925,21 +925,30 @@
   transition: all 0.3s ease;
   background: linear-gradient(135deg, #8f36e6, #a54ced) !important;
   box-shadow: 0 4px 10px rgba(143, 54, 230, 0.3) !important;
+  z-index: 9999 !important; /* Ensure it's on top of everything */
+}
+
+#scroll-top.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 #scroll-top:hover {
   background: linear-gradient(135deg, #7c2bd0, #9d4feb) !important;
   box-shadow: 0 6px 15px rgba(143, 54, 230, 0.4) !important;
+  transform: scale(1.1);
 }
 
 .dark #scroll-top {
   background: linear-gradient(135deg, #a3fe0d, #b6ff40) !important;
-  box-shadow: 0 4px 10px rgba(163, 254, 13, 0.2) !important;
+  box-shadow: 0 4px 10px rgba(163, 254, 13, 0.4) !important;
+  color: #000 !important;
 }
 
 .dark #scroll-top:hover {
   background: linear-gradient(135deg, #93e80d, #a8ee30) !important;
-  box-shadow: 0 6px 15px rgba(163, 254, 13, 0.3) !important;
+  box-shadow: 0 6px 15px rgba(163, 254, 13, 0.5) !important;
+  transform: scale(1.1);
 }
 
 /* Mobile responsiveness improvements */
@@ -1184,8 +1193,8 @@ img {
 
 :root {
   color-scheme: light;
-  --theme-accent: var(--color-orange);
-  --theme-accent-rgb: var(--color-orange-rgb);
+  --theme-accent: var(--accent-color);
+  --theme-accent-rgb: var(--accent-rgb);
   --theme-accent-opacity: 0.1;
   --theme-divider: var(--color-gray-100);
   --theme-text: var(--color-gray-800);
@@ -1200,8 +1209,8 @@ img {
   --theme-code-text: var(--color-gray-900);
   --theme-navbar-bg: var(--color-white);
   --theme-navbar-height: 6rem;
-  --theme-selection-color: var(--color-orange);
-  --theme-selection-bg: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
+  --theme-selection-color: var(--accent-color);
+  --theme-selection-bg: rgba(var(--accent-rgb), var(--theme-accent-opacity));
 }
 
 html {
@@ -1565,10 +1574,10 @@ nav {
 }
 
 .dark nav {
-  background: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(16, 24, 38, 0.97), rgba(15, 25, 32, 0.98)) !important;
+  background: linear-gradient(to right, rgba(8, 15, 29, 0.95), rgba(10, 18, 33, 0.97), rgba(12, 20, 36, 0.98)) !important;
   backdrop-filter: blur(8px) !important;
-  border-bottom: 1px solid rgba(var(--accent-rgb), 0.25) !important; 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(var(--accent-rgb), 0.1) !important;
+  border-bottom: 1px solid rgba(163, 254, 13, 0.25) !important; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(163, 254, 13, 0.1) !important;
 }
 
 .hero-section {
@@ -1580,8 +1589,8 @@ nav {
 }
 
 .dark .hero-section {
-  background: linear-gradient(135deg, #0f172a, #121936, #151a3c, #161940) !important;
-  box-shadow: 0 10px 25px -15px rgba(0, 0, 0, 0.3) !important;
+  background: linear-gradient(135deg, #080f1d, #0a1225, #0d142c, #0e1631) !important;
+  box-shadow: 0 10px 25px -15px rgba(0, 0, 0, 0.4) !important;
 }
 
 .content-section {
@@ -1593,8 +1602,8 @@ nav {
 }
 
 .dark .content-section {
-  background: linear-gradient(to bottom right, #0f172a, #111a32) !important;
-  border: 1px solid rgba(var(--accent-rgb), 0.1) !important;
+  background: linear-gradient(to bottom right, #080f1d, #0a1225) !important;
+  border: 1px solid rgba(163, 254, 13, 0.1) !important;
 }
 
 .gradient-divider {
@@ -1615,8 +1624,8 @@ footer {
 }
 
 .dark footer {
-  background: linear-gradient(to top, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9), rgba(17, 24, 45, 0.95)) !important;
-  border-top: 1px solid rgba(var(--accent-rgb), 0.15) !important;
+  background: linear-gradient(to top, rgba(8, 15, 29, 0.8), rgba(10, 18, 33, 0.9), rgba(12, 20, 36, 0.95)) !important;
+  border-top: 1px solid rgba(163, 254, 13, 0.15) !important;
 }
 
 input, textarea, select {
@@ -1826,6 +1835,12 @@ main {
   box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1) !important;
   padding: 2rem !important;
   margin: 1rem auto !important;
+}
+
+.dark main {
+  background-color: rgba(8, 15, 29, 0.85) !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3) !important;
 }
 
 @keyframes fadeIn {
@@ -2125,4 +2140,107 @@ html {
   50% { transform: translate(20px, -20px) rotate(10deg); }
   75% { transform: translate(-20px, -20px) rotate(5deg); }
   100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Adjust paragraph and list text in dark mode */
+.dark .prose p, 
+.dark .prose li {
+  color: #dce6ef;
+}
+
+/* Adjust inline code in dark mode */
+.dark .prose code {
+  color: #a3fe0d;
+  background-color: rgba(163, 254, 13, 0.12);
+}
+
+/* Main content background color */
+.dark main {
+  background-color: rgba(8, 15, 29, 0.85) !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Adjust table cells in dark mode */
+.dark .prose table td, 
+.dark .prose table th {
+  border-color: #1c2a3a; 
+  color: #dce6ef;
+}
+
+/* Adjust blockquote in dark mode */
+.dark .prose blockquote {
+  background: linear-gradient(135deg, rgba(163, 254, 13, 0.07), rgba(163, 254, 13, 0.12), rgba(163, 254, 13, 0.07)) !important;
+  color: #dce6ef;
+}
+
+/* Make heading stand out more in dark mode */
+.dark .prose h1, 
+.dark .prose h2, 
+.dark .prose h3, 
+.dark .prose h4 {
+  color: #a3fe0d;
+}
+
+/* Fix all slate text colors in dark mode */
+.dark .text-slate-300,
+.dark .text-slate-400,
+.dark .text-slate-500,
+.dark .text-slate-600 {
+  color: #dce6ef !important;
+}
+
+/* Fix any remaining RGB value that might be gray */
+.dark [style*="rgb(179, 180, 182)"] {
+  color: #dce6ef !important;
+}
+
+/* Ensure back to top button is visible */
+#scroll-top {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 9999;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8f36e6;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.dark #scroll-top {
+  background-color: #a3fe0d;
+  color: black;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* Fix any bg elements that might still have the gray color */
+.dark [style*="background-color: rgb(179, 180, 182)"],
+.dark [style*="background: rgb(179, 180, 182)"],
+.dark [style*="background-color:#b3b4b6"],
+.dark [style*="background:#b3b4b6"] {
+  background-color: #080f1d !important;
+}
+
+/* Fix any svg elements with the gray fill */
+.dark svg [style*="fill: rgb(179, 180, 182)"],
+.dark svg [style*="fill:#b3b4b6"] {
+  fill: #dce6ef !important;
+}
+
+/* Fix any borders with the gray color */
+.dark [style*="border-color: rgb(179, 180, 182)"],
+.dark [style*="border-color:#b3b4b6"] {
+  border-color: #0d1a2f !important;
+}
+
+.markdown-content {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.dark .markdown-content {
+  background-color: #080f1d !important;
+  color: #dce6ef;
 }
