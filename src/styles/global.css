@@ -500,56 +500,63 @@
 
   /* Simple code block and copy button styling */
   .code-block-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 1.5rem 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 1.75rem 0 !important;
     border-radius: 0.75rem !important;
     overflow: hidden !important;
-    border: 1px solid rgba(143, 54, 230, 0.2) !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
-    transition: all 0.3s ease !important;
+    border: 1px solid rgba(143, 54, 230, 0.15) !important;
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.1), 0 2px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
   }
 
   .dark .code-block-wrapper {
-    border: 1px solid rgba(163, 254, 13, 0.2) !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid rgba(163, 254, 13, 0.15) !important;
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.25), 0 2px 10px -5px rgba(0, 0, 0, 0.15) !important;
   }
 
   .code-block-wrapper:hover {
-    border-color: rgba(143, 54, 230, 0.4) !important;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    transform: translateY(-2px) !important;
+    border-color: rgba(143, 54, 230, 0.3) !important;
+    box-shadow: 0 12px 25px -7px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.06) !important;
   }
 
   .dark .code-block-wrapper:hover {
-    border-color: rgba(163, 254, 13, 0.4) !important;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
+    border-color: rgba(163, 254, 13, 0.3) !important;
+    box-shadow: 0 12px 25px -7px rgba(0, 0, 0, 0.3), 0 8px 10px -5px rgba(0, 0, 0, 0.15) !important;
   }
 
+  /* Refined header with subtle gradient background */
   .code-header {
     display: flex !important;
     justify-content: flex-end !important;
     align-items: center !important;
-    padding: 0.5rem 1rem !important;
-    background-color: #e2e8f0 !important;
-    border-bottom: 1px solid rgba(143, 54, 230, 0.2) !important;
+    padding: 0.6rem 1rem !important;
+    background: linear-gradient(to right, #f1f5f9, #e2e8f0) !important;
+    border-bottom: 1px solid rgba(143, 54, 230, 0.15) !important;
   }
 
   .dark .code-header {
-    background-color: #1e293b !important;
-    border-color: rgba(163, 254, 13, 0.2) !important;
+    background: linear-gradient(to right, #1e293b, #0f172a) !important;
+    border-color: rgba(163, 254, 13, 0.15) !important;
   }
 
+  /* Polished copy button with micro-interactions */
   .copy-button {
     font-size: 0.75rem !important;
-    font-weight: 500 !important;
-    padding: 0.25rem 0.75rem !important;
+    font-weight: 600 !important;
+    padding: 0.3rem 0.75rem !important;
     background-color: white !important;
     color: #8f36e6 !important;
     border: 1px solid rgba(143, 54, 230, 0.3) !important;
     border-radius: 0.375rem !important;
     cursor: pointer !important;
-    transition: all 0.2s ease !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
     font-family: 'Lato', sans-serif !important;
+    letter-spacing: 0.01em !important;
+    position: relative !important;
+    overflow: hidden !important;
   }
 
   .dark .copy-button {
@@ -559,15 +566,21 @@
   }
 
   .copy-button:hover {
-    background-color: rgba(143, 54, 230, 0.1) !important;
-    border-color: #8f36e6 !important;
+    background-color: rgba(143, 54, 230, 0.08) !important;
+    border-color: rgba(143, 54, 230, 0.6) !important;
     transform: translateY(-1px) !important;
+    box-shadow: 0 2px 5px rgba(143, 54, 230, 0.2) !important;
   }
 
   .dark .copy-button:hover {
-    background-color: rgba(163, 254, 13, 0.1) !important;
-    border-color: #a3fe0d !important;
+    background-color: rgba(163, 254, 13, 0.08) !important;
+    border-color: rgba(163, 254, 13, 0.6) !important;
     transform: translateY(-1px) !important;
+    box-shadow: 0 2px 5px rgba(163, 254, 13, 0.2) !important;
+  }
+
+  .copy-button:active {
+    transform: translateY(0) !important;
   }
 
   .copy-button.copied {
@@ -582,7 +595,33 @@
     border-color: #a3fe0d !important;
   }
 
-  /* Enhanced code block styling */
+  .copy-button::after {
+    content: '';
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    pointer-events: none !important;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%) !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+    transform: scale(10, 10) !important;
+    opacity: 0 !important;
+    transition: transform 0.3s, opacity 0.8s !important;
+  }
+
+  .dark .copy-button::after {
+    background-image: radial-gradient(circle, rgba(163, 254, 13, 0.3) 10%, transparent 10.01%) !important;
+  }
+
+  .copy-button:active::after {
+    transform: scale(0, 0) !important;
+    opacity: 0.3 !important;
+    transition: 0s !important;
+  }
+
+  /* Enhanced code block styling with a subtle accent line */
   pre {
     margin: 0 !important;
     padding: 1.25rem !important;
@@ -590,102 +629,166 @@
     color: var(--code-text-color) !important;
     border-radius: 0 0 0.75rem 0.75rem !important;
     overflow-x: auto !important;
-    font-size: 0.875rem !important;
+    font-size: 0.9rem !important;
     line-height: 1.7 !important;
-    border-left: 4px solid var(--accent-color) !important;
+    border-left: 3px solid var(--accent-color) !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(143, 54, 230, 0.3) transparent !important;
   }
 
   .dark pre {
-    border-left: 4px solid #a3fe0d !important;
+    border-left: 3px solid var(--accent-color) !important;
+    scrollbar-color: rgba(163, 254, 13, 0.3) transparent !important;
+  }
+
+  pre::-webkit-scrollbar {
+    height: 6px !important;
+    width: 6px !important;
+  }
+
+  pre::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+
+  pre::-webkit-scrollbar-thumb {
+    background-color: rgba(143, 54, 230, 0.3) !important;
+    border-radius: 3px !important;
+  }
+
+  .dark pre::-webkit-scrollbar-thumb {
+    background-color: rgba(163, 254, 13, 0.3) !important;
   }
 
   pre code {
-    font-family: var(--font-mono), monospace !important;
+    font-family: var(--font-mono, Menlo, Monaco, 'Courier New', monospace) !important;
     color: var(--code-text-color) !important;
     padding: 0 !important;
     background-color: transparent !important;
     white-space: pre !important;
     display: block !important;
+    tab-size: 2 !important;
   }
 
-  /* Command line prefix styling */
+  /* Enhanced command line prefix styling */
   .command-line-prefix {
     color: var(--accent-color) !important;
     user-select: none !important;
     margin-right: 0.5rem !important;
     font-weight: bold !important;
+    display: inline-block !important;
+    opacity: 0.9 !important;
+    text-shadow: 0 0 1px rgba(143, 54, 230, 0.4) !important;
   }
 
-  /* Ensure consistent styling across all contexts */
-  .markdown-content .code-block-wrapper,
-  .prose .code-block-wrapper {
-    margin: 1.5rem 0 !important;
+  .dark .command-line-prefix {
+    text-shadow: 0 0 1px rgba(163, 254, 13, 0.4) !important;
   }
 
-  /* Fix for code blocks in lists */
-  .prose li .code-block-wrapper,
-  .markdown-content li .code-block-wrapper {
-    margin-top: 0.5rem !important;
-    margin-bottom: 0.75rem !important;
+  /* Add a subtle line number column */
+  .code-block-with-line-numbers {
+    padding-left: 3.5rem !important;
+    position: relative !important;
   }
 
-  /* Syntax highlighting enhancements */
-  .prose pre code .token.comment,
-  .markdown-content pre code .token.comment {
-    color: #607B96 !important; /* Subtle comments */
+  .code-block-with-line-numbers::before {
+    content: attr(data-line) !important;
+    position: absolute !important;
+    left: 1rem !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 1.5rem !important;
+    font-size: 0.8rem !important;
+    user-select: none !important;
+    color: rgba(143, 54, 230, 0.5) !important;
+    text-align: right !important;
+    pointer-events: none !important;
+  }
+
+  .dark .code-block-with-line-numbers::before {
+    color: rgba(163, 254, 13, 0.5) !important;
+  }
+
+  /* Syntax highlighting customization for token types */
+  .token.comment {
     font-style: italic !important;
+    color: #a0aec0 !important;
   }
 
-  .prose pre code .token.string,
-  .markdown-content pre code .token.string {
-    color: #C3E88D !important; /* Vibrant strings */
-  }
-
-  .prose pre code .token.keyword,
-  .markdown-content pre code .token.keyword {
-    color: #C792EA !important; /* Purple keywords */
+  .token.keyword {
+    color: #f92aad !important;
     font-weight: bold !important;
   }
 
-  .prose pre code .token.function,
-  .markdown-content pre code .token.function {
-    color: #82AAFF !important; /* Bright blue functions */
+  .token.string {
+    color: #ffe000 !important;
   }
 
-  .prose pre code .token.number,
-  .markdown-content pre code .token.number {
-    color: #F78C6C !important; /* Orange numbers */
+  .token.function {
+    color: #36f9f6 !important;
   }
 
-  .prose pre code .token.operator,
-  .markdown-content pre code .token.operator {
-    color: #89DDFF !important; /* Cyan operators */
+  .token.number {
+    color: #ff8b39 !important;
   }
 
-  .prose pre code .token.class-name,
-  .markdown-content pre code .token.class-name {
-    color: #FFCB6B !important; /* Yellow class names */
+  .token.operator {
+    color: #ff8b39 !important;
   }
 
-  .prose pre code .token.tag,
-  .markdown-content pre code .token.tag {
-    color: #F07178 !important; /* Red tags */
+  .token.class-name {
+    color: #f4eee4 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #f92aad !important;
+    text-decoration-thickness: 1px !important;
   }
 
-  .prose pre code .token.attr-name,
-  .markdown-content pre code .token.attr-name {
-    color: #C792EA !important; /* Purple attribute names */
+  .dark .token.keyword {
+    color: #f92aad !important;
   }
 
-  /* Dark mode variations */
-  .dark .prose pre code .token.string,
-  .dark .markdown-content pre code .token.string {
-    color: #A3FE0D !important; /* Match your accent in dark mode */
+  .dark .token.string {
+    color: #ffe000 !important;
   }
 
-  .dark .prose pre code .token.keyword,
-  .dark .markdown-content pre code .token.keyword {
-    color: #A3FE0D !important; /* Match your accent in dark mode */
+  .dark .token.function {
+    color: #36f9f6 !important;
+  }
+
+  /* Add subtle transitions for token hover effects */
+  .token {
+    transition: all 0.15s ease-in-out !important;
+  }
+
+  .token:hover {
+    filter: brightness(1.2) !important;
+  }
+
+  /* Highlighted line styling */
+  .highlighted {
+    background-color: rgba(143, 54, 230, 0.07) !important;
+    display: block !important;
+    width: calc(100% + 2.5rem) !important;
+    margin-left: -1.25rem !important;
+    padding-left: 1.25rem !important;
+    border-left: 2px solid var(--accent-color) !important;
+  }
+
+  .dark .highlighted {
+    background-color: rgba(163, 254, 13, 0.07) !important;
+    border-left: 2px solid var(--accent-color) !important;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    pre {
+      font-size: 0.8rem !important;
+      padding: 1rem !important;
+    }
+    
+    .copy-button {
+      font-size: 0.7rem !important;
+      padding: 0.25rem 0.6rem !important;
+    }
   }
 }
 
@@ -905,7 +1008,7 @@ img {
 :root {
   --font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   --font-body: 'Inter', var(--font-fallback);
-  --font-mono: 'Fira Mono', monospace;
+  --font-mono: 'Fira Code', Menlo, Monaco, 'Courier New', monospace;
 
   --color-white: #fff;
   --color-black: #000;
@@ -975,56 +1078,61 @@ html {
 .code-block-wrapper {
   display: flex !important;
   flex-direction: column !important;
-  margin: 1.5rem 0 !important;
+  margin: 1.75rem 0 !important;
   border-radius: 0.75rem !important;
   overflow: hidden !important;
-  border: 1px solid rgba(143, 54, 230, 0.2) !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
-  transition: all 0.3s ease !important;
+  border: 1px solid rgba(143, 54, 230, 0.15) !important;
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.1), 0 2px 10px -5px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
 }
 
 .dark .code-block-wrapper {
-  border: 1px solid rgba(163, 254, 13, 0.2) !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(163, 254, 13, 0.15) !important;
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.25), 0 2px 10px -5px rgba(0, 0, 0, 0.15) !important;
 }
 
 .code-block-wrapper:hover {
-  border-color: rgba(143, 54, 230, 0.4) !important;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  transform: translateY(-2px) !important;
+  border-color: rgba(143, 54, 230, 0.3) !important;
+  box-shadow: 0 12px 25px -7px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.06) !important;
 }
 
 .dark .code-block-wrapper:hover {
-  border-color: rgba(163, 254, 13, 0.4) !important;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
+  border-color: rgba(163, 254, 13, 0.3) !important;
+  box-shadow: 0 12px 25px -7px rgba(0, 0, 0, 0.3), 0 8px 10px -5px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Improved header with better contrast in light mode */
+/* Refined header with subtle gradient background */
 .code-header {
   display: flex !important;
   justify-content: flex-end !important;
   align-items: center !important;
-  padding: 0.5rem 1rem !important;
-  background-color: #e2e8f0 !important;
-  border-bottom: 1px solid rgba(143, 54, 230, 0.2) !important;
+  padding: 0.6rem 1rem !important;
+  background: linear-gradient(to right, #f1f5f9, #e2e8f0) !important;
+  border-bottom: 1px solid rgba(143, 54, 230, 0.15) !important;
 }
 
 .dark .code-header {
-  background-color: #1e293b !important;
-  border-color: rgba(163, 254, 13, 0.2) !important;
+  background: linear-gradient(to right, #1e293b, #0f172a) !important;
+  border-color: rgba(163, 254, 13, 0.15) !important;
 }
 
-/* Enhanced copy button style */
+/* Polished copy button with micro-interactions */
 .copy-button {
   font-size: 0.75rem !important;
-  font-weight: 500 !important;
-  padding: 0.25rem 0.75rem !important;
+  font-weight: 600 !important;
+  padding: 0.3rem 0.75rem !important;
   background-color: white !important;
   color: #8f36e6 !important;
   border: 1px solid rgba(143, 54, 230, 0.3) !important;
   border-radius: 0.375rem !important;
   cursor: pointer !important;
-  transition: all 0.2s ease !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
   font-family: 'Lato', sans-serif !important;
+  letter-spacing: 0.01em !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 .dark .copy-button {
@@ -1034,15 +1142,21 @@ html {
 }
 
 .copy-button:hover {
-  background-color: rgba(143, 54, 230, 0.1) !important;
-  border-color: #8f36e6 !important;
+  background-color: rgba(143, 54, 230, 0.08) !important;
+  border-color: rgba(143, 54, 230, 0.6) !important;
   transform: translateY(-1px) !important;
+  box-shadow: 0 2px 5px rgba(143, 54, 230, 0.2) !important;
 }
 
 .dark .copy-button:hover {
-  background-color: rgba(163, 254, 13, 0.1) !important;
-  border-color: #a3fe0d !important;
+  background-color: rgba(163, 254, 13, 0.08) !important;
+  border-color: rgba(163, 254, 13, 0.6) !important;
   transform: translateY(-1px) !important;
+  box-shadow: 0 2px 5px rgba(163, 254, 13, 0.2) !important;
+}
+
+.copy-button:active {
+  transform: translateY(0) !important;
 }
 
 .copy-button.copied {
@@ -1057,7 +1171,33 @@ html {
   border-color: #a3fe0d !important;
 }
 
-/* Code block styling using theme variables */
+.copy-button::after {
+  content: '';
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  pointer-events: none !important;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%) !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% !important;
+  transform: scale(10, 10) !important;
+  opacity: 0 !important;
+  transition: transform 0.3s, opacity 0.8s !important;
+}
+
+.dark .copy-button::after {
+  background-image: radial-gradient(circle, rgba(163, 254, 13, 0.3) 10%, transparent 10.01%) !important;
+}
+
+.copy-button:active::after {
+  transform: scale(0, 0) !important;
+  opacity: 0.3 !important;
+  transition: 0s !important;
+}
+
+/* Enhanced code block styling with a subtle accent line */
 pre {
   margin: 0 !important;
   padding: 1.25rem !important;
@@ -1065,56 +1205,185 @@ pre {
   color: var(--code-text-color) !important;
   border-radius: 0 0 0.75rem 0.75rem !important;
   overflow-x: auto !important;
-  font-size: 0.875rem !important;
+  font-size: 0.9rem !important;
   line-height: 1.7 !important;
-  border-left: 4px solid var(--accent-color) !important;
+  border-left: 3px solid var(--accent-color) !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(143, 54, 230, 0.3) transparent !important;
 }
 
 .dark pre {
-  border-left: 4px solid #a3fe0d !important;
+  border-left: 3px solid var(--accent-color) !important;
+  scrollbar-color: rgba(163, 254, 13, 0.3) transparent !important;
+}
+
+pre::-webkit-scrollbar {
+  height: 6px !important;
+  width: 6px !important;
+}
+
+pre::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: rgba(143, 54, 230, 0.3) !important;
+  border-radius: 3px !important;
+}
+
+.dark pre::-webkit-scrollbar-thumb {
+  background-color: rgba(163, 254, 13, 0.3) !important;
 }
 
 pre code {
-  font-family: var(--font-mono), monospace !important;
+  font-family: var(--font-mono, Menlo, Monaco, 'Courier New', monospace) !important;
   color: var(--code-text-color) !important;
   padding: 0 !important;
   background-color: transparent !important;
   white-space: pre !important;
   display: block !important;
+  tab-size: 2 !important;
 }
 
-/* Command line prefix styling with theme colors */
+/* Enhanced command line prefix styling */
 .command-line-prefix {
   color: var(--accent-color) !important;
   user-select: none !important;
   margin-right: 0.5rem !important;
   font-weight: bold !important;
+  display: inline-block !important;
+  opacity: 0.9 !important;
+  text-shadow: 0 0 1px rgba(143, 54, 230, 0.4) !important;
 }
 
-/* Override any page-specific styles that might conflict */
-.markdown-content pre,
-.prose pre {
-  background-color: var(--code-bg-color) !important;
-  color: var(--code-text-color) !important;
+.dark .command-line-prefix {
+  text-shadow: 0 0 1px rgba(163, 254, 13, 0.4) !important;
 }
 
-.markdown-content pre code,
-.prose pre code {
-  color: var(--code-text-color) !important;
+/* Add a subtle line number column */
+.code-block-with-line-numbers {
+  padding-left: 3.5rem !important;
+  position: relative !important;
 }
 
-/* Force consistent code blocks across all contexts */
-.markdown-content pre,
-.prose pre,
-pre {
-  background-color: var(--code-bg-color) !important;
-  color: var(--code-text-color) !important;
-  margin: 0 !important;
-  padding: 1.25rem !important;
+.code-block-with-line-numbers::before {
+  content: attr(data-line) !important;
+  position: absolute !important;
+  left: 1rem !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 1.5rem !important;
+  font-size: 0.8rem !important;
+  user-select: none !important;
+  color: rgba(143, 54, 230, 0.5) !important;
+  text-align: right !important;
+  pointer-events: none !important;
 }
 
-.markdown-content pre code,
-.prose pre code,
-pre code {
-  color: var(--code-text-color) !important;
+.dark .code-block-with-line-numbers::before {
+  color: rgba(163, 254, 13, 0.5) !important;
+}
+
+/* Syntax highlighting customization for token types */
+.token.comment {
+  font-style: italic !important;
+  color: #a0aec0 !important;
+}
+
+.token.keyword {
+  color: #f92aad !important;
+  font-weight: bold !important;
+}
+
+.token.string {
+  color: #ffe000 !important;
+}
+
+.token.function {
+  color: #36f9f6 !important;
+}
+
+.token.number {
+  color: #ff8b39 !important;
+}
+
+.token.operator {
+  color: #ff8b39 !important;
+}
+
+.token.class-name {
+  color: #f4eee4 !important;
+  text-decoration: underline !important;
+  text-decoration-color: #f92aad !important;
+  text-decoration-thickness: 1px !important;
+}
+
+.dark .token.keyword {
+  color: #f92aad !important;
+}
+
+.dark .token.string {
+  color: #ffe000 !important;
+}
+
+.dark .token.function {
+  color: #36f9f6 !important;
+}
+
+/* Add subtle transitions for token hover effects */
+.token {
+  transition: all 0.15s ease-in-out !important;
+}
+
+.token:hover {
+  filter: brightness(1.2) !important;
+}
+
+/* Highlighted line styling */
+.highlighted {
+  background-color: rgba(143, 54, 230, 0.07) !important;
+  display: block !important;
+  width: calc(100% + 2.5rem) !important;
+  margin-left: -1.25rem !important;
+  padding-left: 1.25rem !important;
+  border-left: 2px solid var(--accent-color) !important;
+}
+
+.dark .highlighted {
+  background-color: rgba(163, 254, 13, 0.07) !important;
+  border-left: 2px solid var(--accent-color) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  pre {
+    font-size: 0.8rem !important;
+    padding: 1rem !important;
+  }
+  
+  .copy-button {
+    font-size: 0.7rem !important;
+    padding: 0.25rem 0.6rem !important;
+  }
+}
+
+/* Ensure code font is properly loaded */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/FiraCode-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/FiraCode-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-mono: 'Fira Code', Menlo, Monaco, 'Courier New', monospace;
 } 

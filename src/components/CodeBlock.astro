@@ -1,43 +1,70 @@
 ---
-// This component never needs to be explicitly imported - 
-// it's automatically injected into Markdown code blocks via rehype plugin
-const { code, lang = 'text' } = Astro.props;
+// This component is automatically injected into Markdown code blocks via rehype plugin
+const { code, lang = 'text', meta = '' } = Astro.props;
+
+// Extract any highlight lines from meta
+const highlightLines = meta.match(/\{([\d,-]+)\}/)?.[1]?.split(',') || [];
+const shouldHighlight = highlightLines.length > 0;
+
+// Check if we're rendering a shell command
+const isShellCommand = ['bash', 'sh', 'shell', 'zsh'].includes(lang);
+
+// Enhanced code with processable content
+let processedCode = code;
+if (isShellCommand) {
+  processedCode = code
+    .replace(/^(\$ )/gm, '<span class="command-line-prefix">$</span>')
+    .replace(/^(> )/gm, '<span class="command-line-prefix">></span>')
+    .replace(/^(# )/gm, '<span class="command-line-prefix">#</span>');
+}
 ---
 
 <div class="code-block-wrapper">
   <div class="code-header">
-    <button class="copy-button">
+    <button class="copy-button" aria-label="Copy code to clipboard">
       Copy
     </button>
   </div>
-  <pre><code class={`language-${lang}`}>{code}</code></pre>
+  <pre class:list={[{ 'code-block-with-line-numbers': shouldHighlight }]}>
+    <code class={`language-${lang}`} set:html={processedCode}></code>
+  </pre>
 </div>
 
 <script is:inline>
-  // Add functionality to copy buttons
+  // Enhanced copy button functionality
   document.addEventListener('DOMContentLoaded', () => {
     const copyButtons = document.querySelectorAll('.copy-button');
     
     copyButtons.forEach(button => {
-      button.addEventListener('click', () => {
+      button.addEventListener('click', async () => {
         // Find the code element
         const codeBlock = button.closest('.code-block-wrapper')?.querySelector('code');
         if (!codeBlock) return;
         
-        // Copy the text
-        const text = codeBlock.textContent || '';
-        navigator.clipboard.writeText(text).then(() => {
-          // Show copied message
-          const originalText = button.textContent;
+        try {
+          // Get plain text content (without HTML formatting)
+          const text = codeBlock.textContent || '';
+          
+          // Copy to clipboard
+          await navigator.clipboard.writeText(text);
+          
+          // Show copied message with animation
           button.textContent = 'Copied!';
           button.classList.add('copied');
           
           // Reset after 2 seconds
           setTimeout(() => {
-            button.textContent = originalText;
+            button.textContent = 'Copy';
             button.classList.remove('copied');
           }, 2000);
-        });
+        } catch (err) {
+          // Fallback for browsers that don't support clipboard API
+          console.error('Failed to copy: ', err);
+          button.textContent = 'Error';
+          setTimeout(() => {
+            button.textContent = 'Copy';
+          }, 2000);
+        }
       });
     });
   });
