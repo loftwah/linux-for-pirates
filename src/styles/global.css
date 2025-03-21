@@ -533,12 +533,12 @@
     justify-content: flex-end !important;
     align-items: center !important;
     padding: 0.6rem 1rem !important;
-    background: linear-gradient(to right, #f1f5f9, #e2e8f0) !important;
+    background: linear-gradient(135deg, #cbd5e1, #d5cfea, #c6b8e3) !important; /* Multi-stop with purple hint */
     border-bottom: 1px solid rgba(143, 54, 230, 0.15) !important;
   }
 
   .dark .code-header {
-    background: linear-gradient(to right, #1e293b, #0f172a) !important;
+    background: linear-gradient(135deg, #1e293b, #1a2831, #1a2826) !important; /* Multi-stop with green hint */
     border-color: rgba(163, 254, 13, 0.15) !important;
   }
 
@@ -1109,12 +1109,12 @@ html {
   justify-content: flex-end !important;
   align-items: center !important;
   padding: 0.6rem 1rem !important;
-  background: linear-gradient(to right, #f1f5f9, #e2e8f0) !important;
+  background: linear-gradient(135deg, #cbd5e1, #d5cfea, #c6b8e3) !important; /* Multi-stop with purple hint */
   border-bottom: 1px solid rgba(143, 54, 230, 0.15) !important;
 }
 
 .dark .code-header {
-  background: linear-gradient(to right, #1e293b, #0f172a) !important;
+  background: linear-gradient(135deg, #1e293b, #1a2831, #1a2826) !important; /* Multi-stop with green hint */
   border-color: rgba(163, 254, 13, 0.15) !important;
 }
 
