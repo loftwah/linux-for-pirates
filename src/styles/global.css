@@ -2206,6 +2206,8 @@ html {
   color: white;
   font-weight: bold;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  position: fixed !important;
 }
 
 .dark #scroll-top {
