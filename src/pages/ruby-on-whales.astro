@@ -2,19 +2,19 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import { getEntry } from 'astro:content';
 
-const guideEntry = await getEntry('docs', 'linux-for-pirates');
+const guideEntry = await getEntry('docs', 'ruby-on-whales');
 
 if (!guideEntry) {
-  throw new Error("Could not find linux-for-pirates document in content collection");
+  throw new Error("Could not find ruby-on-whales document in content collection");
 }
 
 const { Content } = await guideEntry.render();
 ---
 
 <MainLayout 
-  title="Linux for Pirates!" 
-  description="A guide to Linux from a pirate perspective"
-  ogImage="/images/linux-for-pirates-og.jpg"
+  title="Ruby on Whales!" 
+  description="A guide to Ruby and Docker from a pirate perspective"
+  ogImage="/images/lfp2-og.jpg"
 >
   <div class="markdown-content">
     <Content />
@@ -44,4 +44,4 @@ const { Content } = await guideEntry.render();
   .markdown-content :global(h3) {
     scroll-margin-top: 100px;
   }
-</style>
+</style> 

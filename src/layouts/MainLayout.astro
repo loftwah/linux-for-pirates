@@ -1,10 +1,16 @@
 ---
-const { title = 'Linux for Pirates!', description = 'A guide to Linux from a pirate perspective' } = Astro.props;
+const { title = 'Linux for Pirates!', description = 'A guide to Linux from a pirate perspective', ogImage = '/images/linux-for-pirates-og.jpg' } = Astro.props;
 import '../styles/global.css';
 
 // Base URL for absolute URLs
 const siteUrl = 'https://loftwah.github.io/linux-for-pirates';
-const ogImageUrl = `${siteUrl}/images/linux-for-pirates-og.jpg`;
+// Use the provided ogImage or fallback to default
+const ogImageUrl = `${siteUrl}${ogImage}`;
+
+// Determine the current page for active styling
+const pathname = Astro.url.pathname;
+const isLinuxPage = pathname === '/' || pathname.includes('linux-for-pirates');
+const isRubyPage = pathname.includes('ruby-on-whales');
 ---
 
 <!DOCTYPE html>
@@ -111,12 +117,28 @@ const ogImageUrl = `${siteUrl}/images/linux-for-pirates-og.jpg`;
       </div>
     </header>
 
+    <!-- Book Navigation -->
+    <div class="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-center py-2">
+          <div class="flex space-x-6">
+            <a href="/" class={`font-medium text-sm ${isLinuxPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-slate-300 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-colors`}>
+              Linux for Pirates
+            </a>
+            <a href="/ruby-on-whales" class={`font-medium text-sm ${isRubyPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-slate-300 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-colors`}>
+              Ruby on Whales
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Navigation Tab Links -->
     <div class="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm">
       <div class="container mx-auto px-4">
         <div class="flex justify-center py-2">
           <div class="text-sm text-slate-500 dark:text-slate-400">
-            A guide to Linux from a pirate perspective
+            {isRubyPage ? 'A guide to Ruby and Docker from a pirate perspective' : 'A guide to Linux from a pirate perspective'}
           </div>
         </div>
       </div>
