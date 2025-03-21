@@ -2,50 +2,99 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
-  :root {
-    --color-text: #1e293b;
-    --color-bg: #f8fafc;
-    --color-border: #e2e8f0;
-  }
-
-  .dark {
-    --color-text: #f8fafc;
-    --color-bg: #0f172a;
-    --color-border: #334155;
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
   }
 
   body {
-    @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Lato', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold;
+    font-family: 'Cinzel Decorative', serif;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
-    @apply rounded-md shadow-md dark:shadow-slate-800;
-  }
-
-  /* Apply custom styles for blockquotes */
-  blockquote {
-    @apply pl-4 border-l-4 border-slate-300 dark:border-slate-700 italic;
-  }
-
-  /* Apply custom styles for code blocks */
-  pre {
-    @apply p-4 rounded-md bg-slate-100 dark:bg-slate-800 overflow-x-auto text-sm;
-  }
-
-  code {
-    @apply font-mono px-1 py-0.5 bg-slate-100 dark:bg-slate-800 rounded;
-  }
-
-  pre code {
-    @apply bg-transparent p-0;
+  .font-display {
+    font-family: 'Cinzel Decorative', serif;
   }
 }
 
-/* Additional custom styles can be added here */ 
+@layer components {
+  /* Hide scrollbar for horizontal navigation */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Custom scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-200 dark:bg-slate-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#8f36e6] dark:bg-[#a3fe0d] rounded-full;
+  }
+
+  /* Content styling enhancements */
+  .prose img {
+    @apply mx-auto my-8;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-[#8f36e6] dark:border-[#a3fe0d] px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-r;
+  }
+
+  .prose pre {
+    @apply shadow-lg;
+  }
+
+  .prose table {
+    @apply border-collapse shadow-sm;
+  }
+
+  .prose table thead {
+    @apply bg-slate-100 dark:bg-slate-800;
+  }
+
+  .prose table th {
+    @apply text-[#8f36e6] dark:text-[#a3fe0d];
+  }
+
+  .prose table td, 
+  .prose table th {
+    @apply border border-slate-300 dark:border-slate-700 p-2;
+  }
+
+  /* Animated elements */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  /* Special callout boxes */
+  .treasure-note {
+    @apply relative p-6 my-8 bg-gradient-to-r from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-xl border border-slate-300 dark:border-slate-700 shadow-md;
+  }
+
+  .treasure-note::before {
+    content: "☠️";
+    @apply absolute -top-5 left-5 text-xl;
+  }
+}
+
+/* Scroll to top button transitions */
+#scroll-top {
+  opacity: 0;
+  transition: all 0.3s ease;
+} 

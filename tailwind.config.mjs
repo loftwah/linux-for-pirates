@@ -7,6 +7,10 @@ export default {
       colors: {
         primary: '#0f172a',
         secondary: '#64748b',
+        accent: {
+          light: '#8f36e6', // Purple accent for light mode
+          dark: '#a3fe0d',  // Neon green accent for dark mode
+        }
       },
       typography: {
         DEFAULT: {

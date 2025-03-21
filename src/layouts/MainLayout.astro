@@ -10,7 +10,10 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/linux-for-pirates/images/pirate_flag.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <!-- Set theme based on user preference -->
     <script is:inline>
       const theme = (() => {
@@ -32,31 +35,151 @@ import '../styles/global.css';
       window.localStorage.setItem('theme', theme);
     </script>
   </head>
-  <body class="min-h-screen bg-slate-50 dark:bg-slate-900 dark:text-white transition-colors duration-300">
-    <header class="p-4 bg-white dark:bg-slate-800 shadow-md sticky top-0 z-10">
-      <div class="container mx-auto flex justify-between items-center">
-        <div>
-          <h1 class="text-2xl font-bold">Linux for Pirates!</h1>
-        </div>
-        <div>
-          <button id="theme-toggle" class="px-3 py-2 rounded-md bg-slate-200 dark:bg-slate-700">
-            <span class="dark:hidden">🌙</span>
-            <span class="hidden dark:inline">☀️</span>
-          </button>
+  <body class="min-h-screen bg-slate-50 dark:bg-slate-900 dark:text-white transition-colors duration-300 font-sans">
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-md">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <div>
+              <img src="/linux-for-pirates/images/pirate_flag.svg" alt="Pirate Flag" class="h-8 w-8" />
+            </div>
+            <div>
+              <h1 class="text-xl sm:text-2xl font-bold font-display tracking-wider text-[#8f36e6] dark:text-[#a3fe0d]">
+                Linux for Pirates!
+              </h1>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-3">
+            <a href="https://github.com/loftwah" 
+              class="hidden sm:flex items-center px-3 py-1.5 text-sm border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+            
+            <button id="theme-toggle" class="flex items-center justify-center h-9 w-9 rounded-full bg-slate-200 dark:bg-slate-700 hover:ring-2 ring-[#8f36e6] dark:ring-[#a3fe0d] transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 dark:hidden" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block text-[#a3fe0d]" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
-    <main class="container mx-auto p-4 prose dark:prose-invert prose-lg prose-headings:text-primary dark:prose-headings:text-slate-300 prose-a:text-blue-600 dark:prose-a:text-blue-400">
-      <slot />
+
+    <!-- Navigation Tab Links -->
+    <div class="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex overflow-x-auto py-2 gap-2 no-scrollbar">
+          <a href="#chapter-one" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-[#8f36e6] dark:text-[#a3fe0d] focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
+            Chapter One
+          </a>
+          <a href="#chapter-two" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-[#8f36e6] dark:text-[#a3fe0d] focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
+            Chapter Two
+          </a>
+          <a href="#what-be-this-linux-beast" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
+            What Be Linux?
+          </a>
+          <a href="#why-would-a-savvy-buccaneer-choose-linux" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
+            Why Choose Linux?
+          </a>
+          <a href="#about-the-author" class="flex-shrink-0 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-[#8f36e6] dark:focus:ring-[#a3fe0d]">
+            About the Author
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+      <article class="prose dark:prose-invert lg:prose-lg prose-headings:font-display max-w-none prose-a:text-[#8f36e6] dark:prose-a:text-[#a3fe0d] prose-headings:text-[#8f36e6] dark:prose-headings:text-[#a3fe0d] prose-headings:font-bold prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-img:rounded-xl prose-img:shadow-lg">
+        <slot />
+      </article>
     </main>
-    <footer class="p-4 bg-white dark:bg-slate-800 mt-8">
-      <div class="container mx-auto text-center">
-        <p>© 2024 Linux for Pirates</p>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="fixed bottom-6 right-6 h-12 w-12 bg-[#8f36e6] dark:bg-[#a3fe0d] text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+      </svg>
+    </button>
+
+    <!-- Chapter Navigation Footer -->
+    <div class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-6">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-center mb-6">
+          <div class="inline-flex rounded-md shadow-sm" role="group">
+            <a href="#chapter-one" class="px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-l-lg hover:bg-slate-100 dark:hover:bg-slate-600 focus:z-10">
+              Chapter One
+            </a>
+            <a href="#chapter-two" class="px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-700 border-t border-b border-r border-slate-200 dark:border-slate-600 rounded-r-lg hover:bg-slate-100 dark:hover:bg-slate-600 focus:z-10">
+              Chapter Two
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Treasure Map Footer -->
+    <footer class="relative bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-8">
+      <div class="absolute left-0 right-0 h-2 top-0 bg-gradient-to-r from-[#8f36e6] via-[#a3fe0d] to-[#8f36e6]"></div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center">
+          <div class="flex items-center gap-2 mb-4">
+            <img src="/linux-for-pirates/images/pirate_flag.svg" alt="Pirate Flag" class="h-8 w-8" />
+            <span class="font-display text-xl text-[#8f36e6] dark:text-[#a3fe0d]">Linux for Pirates</span>
+          </div>
+          
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-12 text-center sm:text-left mb-6">
+            <div>
+              <h3 class="font-bold text-[#8f36e6] dark:text-[#a3fe0d] mb-2">Chapters</h3>
+              <ul class="space-y-1 text-sm">
+                <li><a href="#chapter-one" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">Chapter One</a></li>
+                <li><a href="#chapter-two" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">Chapter Two</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="font-bold text-[#8f36e6] dark:text-[#a3fe0d] mb-2">Sections</h3>
+              <ul class="space-y-1 text-sm">
+                <li><a href="#what-be-this-linux-beast" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">What Be Linux?</a></li>
+                <li><a href="#why-would-a-savvy-buccaneer-choose-linux" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">Why Choose Linux?</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="font-bold text-[#8f36e6] dark:text-[#a3fe0d] mb-2">About</h3>
+              <ul class="space-y-1 text-sm">
+                <li><a href="#about-the-author" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">About the Author</a></li>
+                <li><a href="#before-we-begin" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">Before We Begin</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="font-bold text-[#8f36e6] dark:text-[#a3fe0d] mb-2">Connect</h3>
+              <ul class="space-y-1 text-sm">
+                <li><a href="https://github.com/loftwah" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">GitHub</a></li>
+                <li><a href="https://linkfree.io/loftwah" class="text-slate-600 dark:text-slate-400 hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]">LinkFree</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="text-center text-sm text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-6 w-full">
+            <p>© 2024 Linux for Pirates. Created with ☠️ by <a href="https://linkfree.io/loftwah" class="text-[#8f36e6] dark:text-[#a3fe0d]">Dean Lofts</a>.</p>
+            <p class="mt-1">In memory of <a href="https://en.wikipedia.org/wiki/Aaron_Swartz" class="text-[#8f36e6] dark:text-[#a3fe0d]">Aaron Swartz</a>.</p>
+          </div>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Dark mode toggle functionality
+      // Theme toggling
       const themeToggle = document.getElementById('theme-toggle');
       
       themeToggle?.addEventListener('click', () => {
@@ -69,6 +192,50 @@ import '../styles/global.css';
           document.documentElement.classList.add('dark');
           localStorage.setItem('theme', 'dark');
         }
+      });
+
+      // Scroll to top button
+      const scrollTopButton = document.getElementById('scroll-top');
+      
+      if (scrollTopButton) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 400) {
+            scrollTopButton.classList.remove('opacity-0', 'invisible');
+            scrollTopButton.classList.add('opacity-100', 'visible');
+          } else {
+            scrollTopButton.classList.remove('opacity-100', 'visible');
+            scrollTopButton.classList.add('opacity-0', 'invisible');
+          }
+        });
+        
+        scrollTopButton.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      }
+
+      // Active link highlighting
+      document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute('id');
+              if (id) {
+                const links = document.querySelectorAll(`a[href="#${id}"]`);
+                links.forEach(link => {
+                  link.classList.add('font-bold');
+                });
+              }
+            }
+          });
+        }, { threshold: 0.1 });
+
+        // Observe all section headings
+        document.querySelectorAll('h2[id], h3[id]').forEach(heading => {
+          observer.observe(heading);
+        });
       });
     </script>
   </body>
