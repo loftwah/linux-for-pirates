@@ -18,4 +18,11 @@ export default defineConfig({
   legacy: {
     collections: true
   },
+  outDir: './dist',
+  publicDir: './public',
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/sharp'
+    }
+  }
 });

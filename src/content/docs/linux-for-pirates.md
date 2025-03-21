@@ -2,11 +2,11 @@
 title: Linux for Pirates!
 ---
 
-![Linux for Pirates!](/linux-for-pirates/images/linux-for-pirates.jpg)
+![Linux for Pirates!](/images/linux-for-pirates.jpg)
 
 By [Dean Lofts](https://linkfree.io/loftwah) | [GitHub](https://github.com/loftwah)
 
-![Book Cat](/linux-for-pirates/images/bookcat.jpg)
+![Book Cat](/images/bookcat.jpg)
 
 ## **In memory of Aaron Swartz**
 
@@ -14,13 +14,13 @@ By [Dean Lofts](https://linkfree.io/loftwah) | [GitHub](https://github.com/loftw
 
 > **Note** This is a **must** watch documentary.
 
-![Aaron Swartz](/linux-for-pirates/images/aaronswartz.png)
+![Aaron Swartz](/images/aaronswartz.png)
 
 [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz) was a computer programmer, entrepreneur, and internet activist who made significant contributions to the development of the internet and the open access movement.
 
 Aaron was born in 1986, and became interested in computers and the internet at a young age. He was a brilliant and talented programmer, and was known for his ability to quickly grasp and master new technologies. He co-authored the RSS 1.0 specification at the age of 14, and went on to work on a variety of other projects, including the development of the Creative Commons license, the building of the first consumer web feed platform, and the creation of the social news site Reddit.
 
-![Aaron Swartz as a Pirate](/linux-for-pirates/images/aaron-swartz-pirate.png)
+![Aaron Swartz as a Pirate](/images/aaron-swartz-pirate.png)
 
 Aaron was also a strong advocate for open access, which is the movement to make knowledge and information freely available to all, rather than being locked behind paywalls and controlled by a few powerful corporations or institutions. He believed that access to knowledge and information was a fundamental right, and that it should be freely available to everyone.
 
@@ -34,17 +34,17 @@ The Linux kernel was originally developed by Linus Torvalds in 1991, and was rel
 
 ### **Linus Torvalds**
 
-![Linus Torvalds](/linux-for-pirates/images/linustorvalds.png)
+![Linus Torvalds](/images/linustorvalds.png)
 
 Linus Torvalds is the creator of the Linux operating system. He was a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
 ### **Richard Stallman**
 
-![Richard Stallman](/linux-for-pirates/images/richardstallman.png)
+![Richard Stallman](/images/richardstallman.png)
 
 Richard Stallman is the creator of the GNU operating system. He was a computer science student at the Massachusetts Institute of Technology (MIT), and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
-![Linus Torvalds and Richard Stallman as Pirates](/linux-for-pirates/images/linus_richard.png)
+![Linus Torvalds and Richard Stallman as Pirates](/images/linus_richard.png)
 
 ## **Before we begin**
 
@@ -70,7 +70,7 @@ As they sailed back home, filled with treasure and stories to tell, Loftwah coul
 
 ## **About the author (This isn't on the test)**
 
-![Dean Lofts](/linux-for-pirates/images/deanlofts.png)
+![Dean Lofts](/images/deanlofts.png)
 
 Once upon a time, in the golden age of piracy, there lived a fearless pirate by the name of Dean (Loftwah) Lofts. Loftwah was a notorious buccaneer, known throughout the seven seas for their technical expertise and programming prowess.
 
@@ -88,7 +88,7 @@ So if you ever find yourself sailing the high seas and you see a pirate flag wit
 
 ## **Chapter One - Settin' Sail with Linux**
 
-![Chapter One - Settin' Sail with Linux](/linux-for-pirates/images/chapterone.png)
+![Chapter One - Settin' Sail with Linux](/images/chapterone.png)
 
 Ahoy, me hearties! Welcome to the grand adventure o' Linux! In this 'ere chapter, we'll be firin' the first cannon o' knowledge to start ye on yer journey through the mighty seas o' open-source software. So hoist the mainsail and prepare to catch the winds o' technological freedom!
 
@@ -215,7 +215,7 @@ Until then, may fair winds fill yer sails and fortune favor the bold!
 
 ## **Chapter Two - Mastering the Ship's Fundamentals**
 
-![Chapter Two - The Fundamentals](/linux-for-pirates/images/fundamentals.png)
+![Chapter Two - The Fundamentals](/images/fundamentals.png)
 
 Ahoy there, brave seafarers! Now that ye've boarded the mighty Linux vessel, it be time to learn how to properly command her! Every successful pirate captain needs to understand the fundamentals of their ship before sailin' into treacherous waters. In this chapter, we'll be learnin' the essential skills ye need to navigate the Linux seas with confidence!
 
@@ -762,7 +762,7 @@ Now, hoist the Tux flag high and prepare to sail into Chapter Three, where real 
 
 ## **Chapter Three: Your First Day as a Pirate**
 
-![Ruby on Rails](/linux-for-pirates/images/rubyonrails.png)
+![Ruby on Rails](/images/rubyonrails.png)
 
 Ahoy there, brave seafarers! Welcome to yer first day as a proper Linux pirate! In this chapter, we'll be gettin' our hands dirty with some real seafarin' tasks. No more just readin' about the ship - it be time to grab the wheel and feel the wind in yer hair!
 
@@ -1489,7 +1489,7 @@ May fair winds fill yer sails, and may yer terminal always be responsive!
 
 ## **Chapter Four: Navigatin' the Cloud Seas - AWS and GitHub Basics**
 
-![DevOps Pirate](/linux-for-pirates/images/devops-pirate.png)
+![DevOps Pirate](/images/devops-pirate.png)
 
 [Watch Cap'n Loftwah's Video Guide on YouTube](https://www.youtube.com/live/-NVhnF8fZcE?feature=share)
 
@@ -2092,7 +2092,7 @@ Until then, this be Cap'n Loftwah, signin' off—but always watchin' the horizon
 
 ## **A stern warning: The dangers of the high seas**
 
-![Pirate Circada](/linux-for-pirates/images/piratecircada.png)
+![Pirate Circada](/images/piratecircada.png)
 
 "Ahoy, mateys! Ye be warned, the circadas be a-singin' their song o' prime numbers. Ye can hear them all through the night, marking their time with the beat of their wings. But beware, for those numbers be the key to unlockin' treasure beyond yer wildest dreams. So set sail and follow the siren call o' the circadas, and ye may just find yerself a rich pirate indeed.
 
@@ -2120,7 +2120,7 @@ Every pirate crew needs some good laughs while navigatin' the treacherous digita
 
 **Why do pirates prefer UDP over TCP?** Because they don't care if packets get lost at sea!
 
-![TCP vs UDP explained with a pirate theme](/linux-for-pirates/images/tcp-udp.png)
+![TCP vs UDP explained with a pirate theme](/images/tcp-udp.png)
 
 *Why be this joke funny, ye ask? Well, TCP (Transmission Control Protocol) be the reliable shipmate that makes sure all yer data packets arrive safely, checkin' and double-checkin' with "SYN" and "ACK" signals. UDP (User Datagram Protocol) just fires the packets into the digital sea without carin' if they reach their destination—much like a careless pirate! When speed matters more than reliability, UDP be yer protocol of choice, matey!*
 
@@ -2524,7 +2524,7 @@ May the wind be at yer back, and may yer terminal never display "command not fou
 
 ### **Sir Tim Berners-Lee: The Navigator Who Charted the World Wide Web**
 
-![Sir Tim Berners-Lee](/linux-for-pirates/images/sirtimbernerslee.png)
+![Sir Tim Berners-Lee](/images/sirtimbernerslee.png)
 
 In the annals of digital pirate history, few names shine as brightly as Sir Tim Berners-Lee, the legendary navigator who invented the World Wide Web. This brilliant buccaneer saw the potential for connecting documents across the vast digital ocean, creating the HTTP protocol, HTML language, and the first web browser.
 
@@ -2538,7 +2538,7 @@ When ye surf the web, remember ye're following the charts laid down by this visi
 
 ### **Kevin Mitnick: The Ghost in the Wires**
 
-![Kevin Mitnick](/linux-for-pirates/images/mitnick-pirate.png)
+![Kevin Mitnick](/images/mitnick-pirate.png)
 
 No collection of digital pirate tales would be complete without mentioning Kevin Mitnick, once known as the world's most notorious hacker and later transformed into a respected security consultant.
 
@@ -2552,7 +2552,7 @@ The tale of Kevin Mitnick reminds us that in the digital world, the line between
 
 ### **Eddie Jaoude: Open Source Hero**
 
-![Eddie Jaoude](/linux-for-pirates/images/eddiejaoude.jpg)
+![Eddie Jaoude](/images/eddiejaoude.jpg)
 
 Eddie Jaoude stands as one of the most influential open source advocates sailin' the digital seas today. As the founder of EddieHub, he's created a welcoming community that helps newcomers navigate the sometimes intimidating waters of open source contribution.
 
