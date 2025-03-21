@@ -6,6 +6,8 @@ title: Linux for Pirates!
 
 By [Dean Lofts](https://linkfree.io/loftwah) | [GitHub](https://github.com/loftwah)
 
+![Book Cat](/linux-for-pirates/images/bookcat.jpg)
+
 ## **In memory of Aaron Swartz**
 
 [The Internet's Own Boy: The Story of Aaron Swartz](https://www.youtube.com/watch?v=M85UvH0TRPc)
@@ -760,7 +762,9 @@ Now, hoist the Tux flag high and prepare to sail into Chapter Three, where real 
 
 ## **Chapter Three: Your First Day as a Pirate**
 
-Ahoy there, new recruits! Welcome to yer first day as a proper Linux pirate! In this chapter, we'll be gettin' our hands dirty with some real seafarin' tasks. No more just readin' about the ship - it be time to grab the wheel and feel the wind in yer hair!
+![Ruby on Rails](/linux-for-pirates/images/rubyonrails.png)
+
+Ahoy there, brave seafarers! Welcome to yer first day as a proper Linux pirate! In this chapter, we'll be gettin' our hands dirty with some real seafarin' tasks. No more just readin' about the ship - it be time to grab the wheel and feel the wind in yer hair!
 
 Some might think a first day should be simple: create a file, save it, view it, celebrate at the tavern. While that sounds mighty temptin', a true pirate needs more skills than that to survive the treacherous digital seas! So let's dive into some practical exercises that'll have ye navigatin' the Linux waters like a seasoned buccaneer before the sun sets.
 
@@ -1484,6 +1488,8 @@ Until then, keep exploring your Linux ship, try out different commands, and don'
 May fair winds fill yer sails, and may yer terminal always be responsive!
 
 ## **Chapter Four: Navigatin' the Cloud Seas - AWS and GitHub Basics**
+
+![DevOps Pirate](/linux-for-pirates/images/devops-pirate.png)
 
 [Watch Cap'n Loftwah's Video Guide on YouTube](https://www.youtube.com/live/-NVhnF8fZcE?feature=share)
 
@@ -2520,4 +2526,52 @@ May the wind be at yer back, and may yer terminal never display "command not fou
 
 > **Note** These are not real tersemonials, but they could be if you want them to be bad enough.
 
-## **A Pirate's Glossary: The Lingo of the Digital Seas**
+### **Legendary Pirates of the Digital Seas**
+
+#### **Sir Tim Berners-Lee: The Navigator Who Charted the World Wide Web**
+
+![Sir Tim Berners-Lee](/linux-for-pirates/images/sirtimbernerslee.png)
+
+In the annals of digital pirate history, few names shine as brightly as Sir Tim Berners-Lee, the legendary navigator who invented the World Wide Web. This brilliant buccaneer saw the potential for connecting documents across the vast digital ocean, creating the HTTP protocol, HTML language, and the first web browser.
+
+Born in London in 1955, Berners-Lee be the son of mathematicians who worked on one of the earliest computers. The young Tim grew up surrounded by discussions of technology and possibilities, shaping his future vision.
+
+Unlike many pirates who seek to hoard their treasures, Sir Tim chose to share his creation with the world, releasing the web's specifications freely without patents or royalties. "The decision to make the Web an open system," he said, "was necessary for it to be universal." A true pirate with the heart of a philanthropist!
+
+For his revolutionary contributions, he was knighted by Queen Elizabeth II in 2004 and has received numerous other honors. To this day, he continues to navigate the digital seas, advocating for privacy, open data, and net neutrality through the World Wide Web Foundation.
+
+When ye surf the web, remember ye're following the charts laid down by this visionary pirate!
+
+#### **Kevin Mitnick: The Ghost in the Wires**
+
+![Kevin Mitnick](/linux-for-pirates/images/mitnick-pirate.png)
+
+No collection of digital pirate tales would be complete without mentioning Kevin Mitnick, once known as the world's most notorious hacker and later transformed into a respected security consultant.
+
+In the 1980s and 1990s, Mitnick sailed the digital seas with unparalleled skill, infiltrating the systems of companies like Nokia, Motorola, and Sun Microsystems. His talent for "social engineering" – the art of manipulating people to divulge confidential information – made him particularly dangerous and effective.
+
+After a dramatic chase, Mitnick was captured by federal authorities in 1995 and served five years in prison. But like many legendary pirates who later become privateer consultants to the very navies that once hunted them, Mitnick transformed his life upon release.
+
+He founded Mitnick Security Consulting and became a bestselling author, sharing his experiences in books like "Ghost in the Wires" and "The Art of Deception." Today, he helps organizations protect themselves from the very techniques he once employed.
+
+The tale of Kevin Mitnick reminds us that in the digital world, the line between pirate and protector can sometimes blur, and that reformed pirates often make the best defenders of digital treasures!
+
+### **TCP and UDP: The Twin Communication Protocols of the Digital Seas**
+
+![TCP and UDP](/linux-for-pirates/images/tcp-udp.png)
+
+In the vast oceans of networking, TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) be the two main vessels pirates use to transport their data treasures.
+
+### **Community Contributors**
+
+#### **Eddie Jaoude: Open Source Hero**
+
+![Eddie Jaoude](/linux-for-pirates/images/eddiejaoude.jpg)
+
+Eddie Jaoude stands as one of the most influential open source advocates sailin' the digital seas today. As the founder of EddieHub, he's created a welcoming community that helps newcomers navigate the sometimes intimidating waters of open source contribution.
+
+With his signature phrase "Everyone can contribute to open source," Eddie has inspired countless developers to make their first pull requests and become active members of the open source community. His YouTube channel and daily social media engagement provide valuable guidance for pirates of all skill levels.
+
+Eddie's dedication to open source earned him GitHub Star of the Year recognition, and his community continues to grow stronger with each passing day. His approach embodies the true spirit of piracy: sharing knowledge freely, building community, and making technology accessible to all who wish to learn.
+
+Any pirate lookin' to make their mark on the open seas of code would do well to follow Eddie's example of generosity, persistence, and community-building!
