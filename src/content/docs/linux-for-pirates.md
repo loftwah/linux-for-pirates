@@ -286,12 +286,12 @@ tldr git
 
 Instead of readin' a full manual with pages of theory, ye get straight to the most common ways to use the command!
 
-**2. Cheat.sh - The Pirate's Secret Scroll**
+**2. cht.sh - The Pirate's Secret Scroll**
 
 This magical scroll can be accessed right from yer terminal with a simple curl command:
 
 ```bash
-curl cheat.sh/find
+curl cht.sh/find
 ```
 
 It gives ye practical examples for nearly any command, programming language, or task. Ye can even install a shell client for easier access:
@@ -1215,36 +1215,9 @@ SELECT * FROM maps;
 .exit
 ```
 
-#### **Database Backup and Restoration: Protecting Yer Digital Gold**
-
-No self-respecting pirate would leave their treasure without protection! Regular backups be essential:
-
-**PostgreSQL Backup and Restore:**
-
-```bash
-# Backup a PostgreSQL database
-pg_dump pirate_treasures > pirate_treasures_backup.sql
-
-# Restore from backup
-psql pirate_treasures < pirate_treasures_backup.sql
-```
-
-**SQLite Backup and Restore:**
-
-```bash
-# For SQLite, you can simply copy the database file
-cp pocket_treasures.db pocket_treasures_backup.db
-
-# Or use the .dump command within SQLite
-sqlite3 pocket_treasures.db .dump > pocket_treasures_backup.sql
-
-# Restore from a SQL dump
-sqlite3 pocket_treasures_new.db < pocket_treasures_backup.sql
-```
-
 #### **Database Security: Protecting Yer Vault**
 
-Just as ye wouldn't leave yer treasure chest unlocked, databases need proper security:
+Just as ye wouldn't leave yer treasure chest unlocked, databases need proper security to protect against internal threats:
 
 1. **Use strong passwords** for database users
 2. **Limit network access** - configure databases to only accept connections from trusted locations
@@ -1257,6 +1230,59 @@ Just as ye wouldn't leave yer treasure chest unlocked, databases need proper sec
 sudo -u postgres createuser --pwprompt cabin_boy
 sudo -u postgres psql -c "GRANT SELECT ON ALL TABLES IN SCHEMA public TO cabin_boy;"
 ```
+
+#### **Database Backup and Restoration: Protecting Yer Digital Gold**
+
+While internal security protects yer running database, ye also need to protect yer backups! Regular backups with encryption be essential to guard against external threats during storage and transfer:
+
+**PostgreSQL Backup and Restore:**
+
+```bash
+# Backup a PostgreSQL database
+pg_dump pirate_treasures > pirate_treasures_backup.sql
+
+# For secure storage, encrypt the backup
+tar -czf pirate_treasures.tar.gz pirate_treasures_backup.sql
+openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in pirate_treasures.tar.gz -out pirate_treasures.enc -pass pass:BlackBeard123!
+rm pirate_treasures_backup.sql pirate_treasures.tar.gz
+
+# Restore from encrypted backup
+openssl enc -aes-256-cbc -d -pbkdf2 -iter 100000 -salt -in pirate_treasures.enc -out - -pass pass:BlackBeard123! | tar -xzf -
+psql pirate_treasures < pirate_treasures_backup.sql
+```
+
+**SQLite Backup and Restore:**
+
+```bash
+# For SQLite, you can simply copy the database file
+cp pocket_treasures.db pocket_treasures_backup.db
+
+# Or use the .dump command within SQLite
+sqlite3 pocket_treasures.db .dump > pocket_treasures_backup.sql
+
+# For secure storage, encrypt the backup
+tar -czf pocket_treasures.tar.gz pocket_treasures_backup.sql
+openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in pocket_treasures.tar.gz -out pocket_treasures.enc -pass pass:BlackBeard123!
+rm pocket_treasures_backup.sql pocket_treasures.tar.gz
+
+# Restore from an encrypted SQL dump
+openssl enc -aes-256-cbc -d -pbkdf2 -iter 100000 -salt -in pocket_treasures.enc -out - -pass pass:BlackBeard123! | tar -xzf -
+sqlite3 pocket_treasures_new.db < pocket_treasures_backup.sql
+```
+
+**Sharing Backups with ppng.io:**
+
+Need to send yer encrypted backups to another ship? Piping Server (ppng.io) creates temporary tunnels for file transfer:
+
+```bash
+# Send any file (including encrypted backups)
+cat pirate_treasures.enc | curl -T - https://ppng.io/secret-treasure-map
+
+# Receive the file on another system
+curl https://ppng.io/secret-treasure-map > retrieved_treasure.enc
+```
+
+Always encrypt sensitive backups before sending! Without encryption, any scallywag who intercepts yer transfer could pillage yer data. The path (`/secret-treasure-map`) can be anything ye choose - just make sure both sender and receiver use the same path. First one to connect will wait for the other, then transfer begins automatically.
 
 #### **Connection Pooling: Efficient Crew Management**
 
@@ -7925,6 +7951,7 @@ s-tui
 - **Netdata:** Real-time performance monitoring with a web interface that's incredibly easy to set up
 - **Zabbix:** A feature-rich enterprise-class monitoring solution
 - **Datadog:** Cloud-based monitoring with powerful analytics and alerting
+- **Axiom:** More efficient alternative to Datadog with powerful analytics
 
 Effective monitoring involves:
 
@@ -8172,11 +8199,11 @@ This shows you practical examples of how to use the command, rather than the det
 **Step 3:** Let's discover what the `grep` command does using another modern tool:
 
 ```bash
-# Get quick reference with cheat.sh
-curl cheat.sh/grep
+# Get quick reference with cht.sh
+curl cht.sh/grep
 ```
 
-This fetches practical examples and explanations directly from the cheat.sh service.
+This fetches practical examples and explanations directly from the cht.sh service.
 
 **Step 4:** Let's put `grep` to use by searching for the word "treasure" in our treasure map:
 
@@ -8203,7 +8230,7 @@ ls --help
 
 Many commands support the --help flag for a quick reference of options.
 
-**Challenge:** Use both the traditional man page and a modern tool like tldr or cheat.sh to learn about the `find` command, then use `find` to locate all text files in your home directory. Which documentation method did you find more helpful?
+**Challenge:** Use both the traditional man page and a modern tool like tldr or cht.sh to learn about the `find` command, then use `find` to locate all text files in your home directory. Which documentation method did you find more helpful?
 
 ### **Exercise 5: Arranging Yer Crew - Sorting and Filtering**
 
@@ -8766,7 +8793,7 @@ nano pirate_logs/first_voyage.md
 
 - `man` - View manual pages
 - `tldr` - See practical examples
-- `curl cheat.sh/command` - Get command cheatsheet
+- `curl cht.sh/command` - Get command cheatsheet
 
 ## Version Control
 
@@ -8808,7 +8835,7 @@ Congratulations, ye brave buccaneer! Ye've survived yer first day as a Linux pir
 1. Navigating the file system using commands like `cd`, `ls`, and `pwd`
 2. Creating and managing files and directories with `mkdir`, `touch`, `cp`, and `mv`
 3. Learning about users and groups with `whoami`, `groups`, and related commands
-4. Using both traditional documentation (`man`) and modern alternatives like `tldr` and `cheat.sh`
+4. Using both traditional documentation (`man`) and modern alternatives like `tldr` and `cht.sh`
 5. Sorting and filtering data with `sort`, `uniq`, and `grep`
 6. Managing file permissions with `chmod` and `chown`
 7. Setting up version control with Git to track changes to your files
@@ -9074,9 +9101,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
       - name: Install dependencies
@@ -9108,10 +9135,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -9145,18 +9172,22 @@ For example, a modern pirate might set up a pipeline that:
 
 This automation ensures that code flows smoothly from development to production without manual intervention!
 
+Fair enough, I’ll stick to what you asked for—rewriting your section with Vite instead of CRA, no fluff, no bullshit. Here’s your updated section, clean and to the point:
+
+---
+
 #### **3. Modern Demo: Deploying a Web Application from GitHub to AWS**
 
-Let's put it all together with a practical example for 2025 – deploying a modern web application from GitHub to AWS:
+Here’s a 2025-ready example—deploying a web app from GitHub to AWS. CRA’s dead, use Vite:
 
-1. **Create a React application:**
+1. **Create a React application with Vite:**
 
 ```bash
-# Create a React app
-npx create-react-app pirate-app
+# Set up a React app with Vite
+npm create vite@latest pirate-app -- --template react
 cd pirate-app
 
-# Initialize Git and connect to GitHub
+# Initialize Git and push to GitHub
 git init
 git add .
 git commit -m "Initial commit"
@@ -9179,10 +9210,10 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "20"
 
