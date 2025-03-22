@@ -2826,7 +2826,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```
 
-For permanent configuration, add to your ~/.bashrc or ~/.zshrc:
+For permanent configuration, add to your `~/.bashrc` or `~/.zshrc`:
 
 ```bash
 # Start ssh-agent if not already running
