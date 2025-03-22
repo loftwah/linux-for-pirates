@@ -2727,7 +2727,7 @@ Linux sails admirably on most hardware, but some considerations for different sh
 
 **For Development Work:**
 
-- Laptop: MacBook Pro with M3 chip, Dell XPS, or Thinkpad
+- Laptop: MacBook Pro with M4 chip, Dell XPS, or Thinkpad
 - Desktop: AMD Ryzen 9 or Intel Core i9 systems with 32GB+ RAM
 - Lots of SSD storage and multiple monitors
 
