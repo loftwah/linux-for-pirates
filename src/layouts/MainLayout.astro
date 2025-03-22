@@ -151,13 +151,34 @@ const isRubyPage = pathname.includes('ruby-on-whales');
     <div class="bg-white dark:bg-[#080f1d] border-b border-slate-200 dark:border-[#0d1a2f] shadow-sm">
       <div class="container mx-auto px-4 w-full">
         <div class="flex justify-center py-2">
-          <div id="book-nav" class="flex space-x-4 sm:space-x-6 w-full justify-center">
-            <a href="/" class={`font-medium text-xs sm:text-sm ${isLinuxPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-[#dce6ef] hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-all duration-300`}>
-              Linux for Pirates
-            </a>
-            <a href="/ruby-on-whales" class={`font-medium text-xs sm:text-sm ${isRubyPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-[#dce6ef] hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-all duration-300`}>
-              Ruby on Whales
-            </a>
+          <div id="book-nav" class="flex flex-wrap justify-center items-center gap-3 sm:gap-5">
+            <div class="flex items-center">
+              <a href="/" class={`font-medium text-xs sm:text-sm ${isLinuxPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-[#dce6ef] hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-all duration-300`}>
+                Linux for Pirates
+              </a>
+              {isLinuxPage && (
+                <a href="/linux-for-pirates.pdf" download class="ml-2 flex items-center justify-center px-2 py-1 text-xs font-medium rounded-md bg-[#8f36e6]/10 text-[#8f36e6] dark:bg-[#a3fe0d]/10 dark:text-[#a3fe0d] hover:bg-[#8f36e6]/20 dark:hover:bg-[#a3fe0d]/20 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  PDF
+                </a>
+              )}
+            </div>
+
+            <div class="flex items-center">
+              <a href="/ruby-on-whales" class={`font-medium text-xs sm:text-sm ${isRubyPage ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-slate-600 dark:text-[#dce6ef] hover:text-[#8f36e6] dark:hover:text-[#a3fe0d]'} transition-all duration-300`}>
+                Ruby on Whales
+              </a>
+              {isRubyPage && (
+                <a href="/ruby-on-whales.pdf" download class="ml-2 flex items-center justify-center px-2 py-1 text-xs font-medium rounded-md bg-[#8f36e6]/10 text-[#8f36e6] dark:bg-[#a3fe0d]/10 dark:text-[#a3fe0d] hover:bg-[#8f36e6]/20 dark:hover:bg-[#a3fe0d]/20 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  PDF
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>
