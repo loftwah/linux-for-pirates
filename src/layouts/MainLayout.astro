@@ -1,6 +1,7 @@
 ---
 const { title = 'Linux for Pirates!', description = 'A guide to Linux from a pirate perspective', ogImage = '/images/linux-for-pirates-og.jpg' } = Astro.props;
 import '../styles/global.css';
+import AudioPlayer from '../components/AudioPlayer.astro';
 
 // Base URL for absolute URLs
 const siteUrl = 'https://linuxforpirates.deanlofts.xyz';
@@ -172,6 +173,9 @@ const isRubyPage = pathname.includes('ruby-on-whales');
         </div>
       </div>
     </div>
+    
+    <!-- Audio Player -->
+    <AudioPlayer />
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-5 sm:py-8 overflow-hidden w-full">
