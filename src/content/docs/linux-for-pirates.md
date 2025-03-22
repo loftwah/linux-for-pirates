@@ -1588,7 +1588,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "pirate_ship" {
-  ami           = "ami-0c55b159cbfafe1f0"
+  ami           = "ami-084568db4383264d4"
   instance_type = var.ship_size
 
   tags = {
@@ -1646,7 +1646,7 @@ output "ship_ip" {
 # main.tf (using the module)
 module "flagship" {
   source        = "./modules/pirate_ship"
-  ami_id        = "ami-0c55b159cbfafe1f0"
+  ami_id        = "ami-084568db4383264d4"
   instance_type = "t2.medium"
   ship_name     = "BlackPearl"
   ship_role     = "Flagship"
@@ -1654,7 +1654,7 @@ module "flagship" {
 
 module "support_vessel" {
   source        = "./modules/pirate_ship"
-  ami_id        = "ami-0c55b159cbfafe1f0"
+  ami_id        = "ami-084568db4383264d4"
   ship_name     = "FlyingDutchman"
   ship_role     = "Support"
 }
