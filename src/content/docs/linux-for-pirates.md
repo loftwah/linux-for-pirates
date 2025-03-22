@@ -436,7 +436,7 @@ Every pirate needs a place to store their digital treasure and host their flag f
 
 ```bash
 # Create a basic Ubuntu droplet using doctl (their CLI tool)
-doctl compute droplet create my-first-ship --size s-1vcpu-1gb --image ubuntu-22-04-x64 --region nyc1
+doctl compute droplet create my-first-ship --size s-1vcpu-1gb --image ubuntu-24-04-x64 --region nyc1
 ```
 
 For a greenhorn, start with their $5/month basic droplet - it provides 1GB of memory, 1 virtual CPU, and 25GB of storage space - more than enough to host a personal website, blog, or small application!
@@ -927,7 +927,7 @@ docker run -d -p 8080:80 my-pirate-site
 When ye need multiple containers working together (like a web server, database, and cache), Docker Compose helps ye define and manage this entire fleet with a single YAML file:
 
 ```yaml
-# docker-compose.yml
+# docker compose.yml
 services:
   web:
     image: nginx
@@ -955,13 +955,13 @@ With this configuration, ye can launch yer entire fleet with one command:
 
 ```bash
 # Start all services
-docker-compose up -d
+docker compose up -d
 
 # View the logs of all containers
-docker-compose logs
+docker compose logs
 
 # Stop the entire fleet
-docker-compose down
+docker compose down
 ```
 
 #### **Docker Networks: Let Containers Talk to Each Other**
@@ -1016,20 +1016,23 @@ For serious digital pirates, 1Password be one of the finest tools for managing y
 
 ```bash
 # Install 1Password CLI on Ubuntu
-curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
-sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
 
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
-sudo tee /etc/apt/sources.list.d/1password.list
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/amd64 stable main' | sudo tee /etc/apt/sources.list.d/1password.list
 
-sudo apt update && sudo apt install 1password-cli
+sudo mkdir -p /etc/debsig/policies/AC2D62742012EA22/
+curl -sS https://downloads.1password.com/linux/debian/debsig/1password.pol | sudo tee /etc/debsig/policies/AC2D62742012EA22/1password.pol
+sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
+
+sudo apt update && sudo apt install 1password
 ```
 
 Once installed, ye can use 1Password from yer terminal:
 
 ```bash
 # Log in to yer 1Password account
-op signin
+eval $(op signin)
 
 # Create a new entry
 op item create --category login --title "Treasure Map Website" --url "https://treasuremaps.com" --generate-password
@@ -4331,7 +4334,7 @@ plugins=(git)
 Add more plugins by listing them inside the parentheses:
 
 ```bash
-plugins=(git docker docker-compose kubectl npm python vscode aws)
+plugins=(git docker kubectl npm python vscode aws)
 ```
 
 Some especially useful plugins include:
@@ -4392,7 +4395,7 @@ alias gp="git push"
 
 # Docker
 alias dps="docker ps"
-alias dc="docker-compose"
+alias dc="docker compose"
 ```
 
 #### **Key Features to Explore**
@@ -6278,7 +6281,7 @@ For a greenhorn just starting their cloud journey, these be good first choices:
 # Using the doctl CLI tool
 doctl compute droplet create first-ship \
   --size s-1vcpu-1gb \
-  --image ubuntu-22-04-x64 \
+  --image ubuntu-24-04-x64 \
   --region nyc1
 ```
 
@@ -6297,7 +6300,7 @@ A simplified AWS experience with fixed-price bundles.
 aws lightsail create-instances \
   --instance-names pirate-ship \
   --availability-zone us-east-1a \
-  --blueprint-id ubuntu_22_04 \
+  --blueprint-id ubuntu_24_04 \
   --bundle-id micro_2_0
 ```
 
