@@ -1519,7 +1519,7 @@ provider "aws" {
 
 # Create a small ship (EC2 instance)
 resource "aws_instance" "pirate_ship" {
-  ami           = "ami-0c55b159cbfafe1f0"  # Ubuntu Server 22.04 LTS
+  ami           = "ami-084568db4383264d4"  # Ubuntu Server 24.04 LTS
   instance_type = "t2.micro"
 
   tags = {
