@@ -894,7 +894,7 @@ To create yer own custom container, ye need a blueprint called a Dockerfile. Her
 
 ```dockerfile
 # Start with a sturdy base ship
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 # Update the ship's supplies
 RUN apt-get update && apt-get upgrade -y
@@ -928,8 +928,6 @@ When ye need multiple containers working together (like a web server, database, 
 
 ```yaml
 # docker-compose.yml
-version: "3"
-
 services:
   web:
     image: nginx
