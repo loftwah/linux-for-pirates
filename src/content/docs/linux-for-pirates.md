@@ -7080,6 +7080,8 @@ Visual guides to new territories:
 
 - **ThePrimeagen** - Performance-focused development, vim wizardry, and entertaining tech talk
 - **TraversyMedia** - Excellent tutorials across many technologies
+- **Jeff Geerling** - Father, author, developer, maker. Sometimes called "an inflammatory enigma"
+- **Dave's Garage** - Windows History, Windows vs Linux Comparisons, Arduino Project Tutorials, more in Dave's Garage
 - **TheOGG** - Open source and technology discussions
 - **NetworkChuck** - Networking and cloud topics
 - **Fireship** - Quick, information-dense overviews of new technologies
