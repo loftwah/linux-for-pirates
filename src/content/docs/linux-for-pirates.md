@@ -2065,7 +2065,7 @@ Modern pirate crews communicate primarily through tools like Slack. Here be the 
 5. **Format code snippets properly** using backticks or code blocks
 6. **Be mindful of time zones** if working with a distributed crew
 
-# Good Slack message example
+**Good Slack message example**
 
 Hey team, I'm having trouble with the treasure map rendering in Firefox.
 I've tried the following:
@@ -5034,10 +5034,6 @@ alias asciiarrow="echo -e '───────►'"
 │                                   │
 └───────────────────────────────────┘
 ```
-
-I assume you're asking me to improve your list of tools for creating professional diagrams and whether Excalidraw should be included. I'll enhance the list by adding Excalidraw, refining the descriptions, and organizing it for clarity. Here's an improved version:
-
----
 
 #### **Tools for Creating Professional Diagrams**
 
