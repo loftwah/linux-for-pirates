@@ -2036,26 +2036,25 @@ Modern pirate crews communicate primarily through tools like Slack. Here be the 
 5. **Format code snippets properly** using backticks or code blocks
 6. **Be mindful of time zones** if working with a distributed crew
 
-```
 # Good Slack message example
+
 Hey team, I'm having trouble with the treasure map rendering in Firefox.
 I've tried the following:
+
 - Clearing cache
 - Using polyfills for older browsers
 - Checking for CSS compatibility issues
 
 Here's the code that's causing problems:
-```
 
-const mapElement = document.getElementById('treasure-map');
-mapElement.addEventListener('click', (e) => {
-// Code here
+```javascript
+const mapElement = document.getElementById("treasure-map");
+mapElement.addEventListener("click", (e) => {
+  // Code here
 });
-
 ```
 
 Has anyone encountered this before?
-```
 
 #### **Pull Requests and Code Reviews: The Art of Collaboration**
 
