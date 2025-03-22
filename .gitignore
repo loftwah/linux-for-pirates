@@ -24,3 +24,4 @@ pnpm-debug.log*
 .idea/
 
 repomix-output.xml
+src/content/docs/images
