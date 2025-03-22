@@ -6067,7 +6067,8 @@ In 2025, many pirates sail in waters with multiple architectures:
 
 ```bash
 # Install Docker
-sudo apt install docker.io
+curl -fsSL https://get.docker.com -o install-docker.sh
+sudo sh install-docker.sh
 
 # Enable building for multiple architectures
 docker buildx create --name mybuilder --use
