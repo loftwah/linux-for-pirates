@@ -23,7 +23,7 @@ const audioFiles = [
 <div class="audio-player bg-[#121212] py-5 px-4">
   <div class="max-w-2xl mx-auto">
     <div class="text-center mb-3">
-      <h3 id="current-song" class="text-white font-medium text-lg">Select a track to play</h3>
+      <h3 id="current-song" class="text-white font-medium text-lg">Linux for Pirates!</h3>
     </div>
     
     <div class="flex items-center justify-center space-x-6 mb-4">
@@ -35,7 +35,7 @@ const audioFiles = [
       </button>
       
       <!-- Play/Pause button -->
-      <button id="play-btn" class="w-16 h-16 rounded-md bg-[#f15d22] hover:bg-[#e35115] text-white flex items-center justify-center focus:outline-none">
+      <button id="play-btn" class="w-16 h-16 rounded-md bg-[#8f36e6] dark:bg-[#a3fe0d] hover:bg-[#7d25d4] dark:hover:bg-[#93ee01] text-white dark:text-[#080f1d] flex items-center justify-center focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" id="play-icon" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
           <path d="M8 5v14l11-7z"/>
         </svg>
@@ -57,7 +57,7 @@ const audioFiles = [
       
       <div class="flex-1 relative h-1 bg-[#333333]">
         <input type="range" id="progress-bar" min="0" max="100" value="0" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
-        <div id="progress-indicator" class="h-1 bg-[#f15d22]" style="width: 0%"></div>
+        <div id="progress-indicator" class="h-1 bg-[#8f36e6] dark:bg-[#a3fe0d]" style="width: 0%"></div>
       </div>
       
       <span id="duration-display" class="text-[#a0a0a0] text-sm min-w-[40px]">4:00</span>
@@ -89,7 +89,7 @@ const audioFiles = [
         
         <div class="w-24 h-1 bg-[#333333] relative">
           <input type="range" id="volume-slider" min="0" max="100" value="80" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
-          <div id="volume-indicator" class="h-full bg-[#f15d22]" style="width: 80%"></div>
+          <div id="volume-indicator" class="h-full bg-[#8f36e6] dark:bg-[#a3fe0d]" style="width: 80%"></div>
         </div>
       </div>
     </div>
@@ -100,7 +100,7 @@ const audioFiles = [
     <div class="space-y-1">
       {audioFiles.map((track, index) => (
         <div 
-          class="track-item cursor-pointer py-2 px-3 text-[#a0a0a0] hover:bg-[#1d1d1d] flex items-center transition-colors rounded" 
+          class={`track-item cursor-pointer py-2 px-3 ${index === 0 ? 'text-[#8f36e6] dark:text-[#a3fe0d]' : 'text-[#a0a0a0]'} hover:bg-[#1d1d1d] flex items-center transition-colors rounded`}
           data-index={index}
           data-file={track.file}
         >
@@ -135,7 +135,7 @@ const audioFiles = [
     const playlistContainer = document.getElementById('playlist-container');
     const trackItems = document.querySelectorAll('.track-item');
     
-    let currentTrackIndex = -1;
+    let currentTrackIndex = 0; // Default to the first track
     let isPlaying = false;
     let isShuffleOn = false;
     let isRepeatOn = false;
@@ -144,17 +144,13 @@ const audioFiles = [
     if (audioPlayer) {
       audioPlayer.volume = 0.8;
     }
+
+    // Load first track by default
+    loadTrack(0);
     
     // Toggle play/pause
     if (playBtn) {
-      playBtn.addEventListener('click', () => {
-        if (currentTrackIndex === -1 && trackItems.length > 0) {
-          // If no track is selected, play the first one
-          playTrack(0);
-        } else {
-          togglePlay();
-        }
-      });
+      playBtn.addEventListener('click', togglePlay);
     }
     
     // Previous track
@@ -173,7 +169,8 @@ const audioFiles = [
     if (shuffleBtn) {
       shuffleBtn.addEventListener('click', () => {
         isShuffleOn = !isShuffleOn;
-        shuffleBtn.classList.toggle('text-[#f15d22]', isShuffleOn);
+        shuffleBtn.classList.toggle('text-[#8f36e6]', isShuffleOn);
+        shuffleBtn.classList.toggle('dark:text-[#a3fe0d]', isShuffleOn);
         shuffleBtn.classList.toggle('text-[#a0a0a0]', !isShuffleOn);
       });
     }
@@ -182,7 +179,8 @@ const audioFiles = [
     if (repeatBtn) {
       repeatBtn.addEventListener('click', () => {
         isRepeatOn = !isRepeatOn;
-        repeatBtn.classList.toggle('text-[#f15d22]', isRepeatOn);
+        repeatBtn.classList.toggle('text-[#8f36e6]', isRepeatOn);
+        repeatBtn.classList.toggle('dark:text-[#a3fe0d]', isRepeatOn);
         repeatBtn.classList.toggle('text-[#a0a0a0]', !isRepeatOn);
       });
     }
@@ -244,8 +242,9 @@ const audioFiles = [
         updateProgressIndicator();
       });
     }
-    
-    function playTrack(index: number): void {
+
+    // Load track without playing
+    function loadTrack(index: number): void {
       if (index < 0 || index >= trackItems.length || !audioPlayer) return;
       
       currentTrackIndex = index;
@@ -258,26 +257,33 @@ const audioFiles = [
       trackItems.forEach((item, idx) => {
         const element = item as HTMLElement;
         if (idx === index) {
-          element.classList.add('text-[#f15d22]');
+          element.classList.add('text-[#8f36e6]', 'dark:text-[#a3fe0d]');
           element.classList.remove('text-[#a0a0a0]');
         } else {
           element.classList.add('text-[#a0a0a0]');
-          element.classList.remove('text-[#f15d22]');
+          element.classList.remove('text-[#8f36e6]', 'dark:text-[#a3fe0d]');
         }
       });
       
       audioPlayer.src = trackFile;
       audioPlayer.load();
+      
+      // Update song title
+      const trackTitle = trackItem.querySelector('.track-title')?.textContent;
+      if (currentSong && trackTitle) {
+        currentSong.textContent = trackTitle;
+      }
+    }
+    
+    function playTrack(index: number): void {
+      if (index < 0 || index >= trackItems.length || !audioPlayer) return;
+      
+      loadTrack(index);
+      
       audioPlayer.play()
         .then(() => {
           isPlaying = true;
           updatePlayButton();
-          
-          // Update song title
-          const trackTitle = trackItem.querySelector('.track-title')?.textContent;
-          if (currentSong && trackTitle) {
-            currentSong.textContent = trackTitle;
-          }
         })
         .catch((error: Error) => {
           console.error('Error playing audio:', error);
@@ -398,16 +404,24 @@ const audioFiles = [
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #f15d22;
+    background: #8f36e6;
     cursor: pointer;
+  }
+  
+  :global(.dark) input[type="range"]::-webkit-slider-thumb {
+    background: #a3fe0d;
   }
   
   input[type="range"]::-moz-range-thumb {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #f15d22;
+    background: #8f36e6;
     cursor: pointer;
     border: none;
+  }
+  
+  :global(.dark) input[type="range"]::-moz-range-thumb {
+    background: #a3fe0d;
   }
 </style> 
