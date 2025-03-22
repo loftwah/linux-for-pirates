@@ -766,6 +766,30 @@
   color: #a3fe0d !important;
 }
 
+/* Ensure markdown-content ordered lists display properly */
+.markdown-content :global(ol) {
+  counter-reset: item !important;
+  list-style-type: none !important;
+}
+
+.markdown-content :global(ol li) {
+  position: relative !important;
+  padding-left: 1.5rem !important;
+  counter-increment: item !important;
+}
+
+.markdown-content :global(ol li::before) {
+  content: counter(item) ". " !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: #8f36e6 !important;
+  font-weight: bold !important;
+}
+
+.dark .markdown-content :global(ol li::before) {
+  color: #a3fe0d !important;
+}
+
 /* Additional responsive image fixes */
 img {
   max-width: 100%;
@@ -1665,4 +1689,30 @@ body {
 .markdown-content blockquote + h3,
 .markdown-content blockquote + h4 {
   margin-top: 3.5rem !important; /* Extra space when heading follows a note/blockquote */
+}
+
+/* Ensure ordered lists display numbers properly in prose */
+.prose ol {
+  counter-reset: item !important;
+  list-style-type: none !important;
+  padding-left: 1.5rem !important;
+}
+
+.prose ol li {
+  position: relative !important;
+  padding-left: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  counter-increment: item !important;
+}
+
+.prose ol li::before {
+  content: counter(item) ". " !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: #8f36e6 !important;
+  font-weight: bold !important;
+}
+
+.dark .prose ol li::before {
+  color: #a3fe0d !important;
 }
