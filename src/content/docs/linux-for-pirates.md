@@ -2,7 +2,7 @@
 title: Linux for Pirates!
 ---
 
-![Linux for Pirates!](/images/linux-for-pirates.jpg)
+![Linux for Pirates!](../../assets/images/linux-for-pirates.jpg)
 By [Dean Lofts](https://linkarooie.com/loftwah) | [GitHub](https://github.com/loftwah)
 
 # Linux for Pirates!
@@ -96,13 +96,13 @@ By [Dean Lofts](https://linkarooie.com/loftwah) | [GitHub](https://github.com/lo
 
 > **Note** This is a **must** watch documentary.
 
-![Aaron Swartz](/images/aaronswartz.png)
+![Aaron Swartz](../../assets/images/swartz.png)
 
 [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz) was a computer programmer, entrepreneur, and internet activist who made significant contributions to the development of the internet and the open access movement.
 
 Aaron was born in 1986, and became interested in computers and the internet at a young age. He was a brilliant and talented programmer, and was known for his ability to quickly grasp and master new technologies. He co-authored the RSS 1.0 specification at the age of 14, and went on to work on a variety of other projects, including the development of the Creative Commons license, the building of the first consumer web feed platform, and the creation of the social news site Reddit.
 
-![Aaron Swartz as a Pirate](/images/aaron-swartz-pirate.png)
+![Aaron Swartz as a Pirate](../../assets/images/aaron-swartz-pirate.png)
 
 Aaron was also a strong advocate for open access, which is the movement to make knowledge and information freely available to all, rather than being locked behind paywalls and controlled by a few powerful corporations or institutions. He believed that access to knowledge and information was a fundamental right, and that it should be freely available to everyone.
 
@@ -116,17 +116,13 @@ The Linux kernel was originally developed by Linus Torvalds in 1991, and was rel
 
 ### **Linus Torvalds**
 
-![Linus Torvalds](/images/linustorvalds.png)
-
 Linus Torvalds is the creator of the Linux operating system. He was a computer science student at the University of Helsinki in Finland, and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
 ### **Richard Stallman**
 
-![Richard Stallman](/images/richardstallman.png)
-
 Richard Stallman is the creator of the GNU operating system. He was a computer science student at the Massachusetts Institute of Technology (MIT), and was interested in creating an operating system that would be more flexible and open than the proprietary operating systems that were available.
 
-![Linus Torvalds and Richard Stallman as Pirates](/images/linus_richard.png)
+![Linus Torvalds and Richard Stallman as Pirates](../../assets/images/torvalds-stallman.png)
 
 ## **Before we begin**
 
@@ -152,7 +148,7 @@ As they sailed back home, filled with treasure and stories to tell, Loftwah coul
 
 ## **About the author (This isn't on the test)**
 
-![Dean Lofts](/images/deanlofts.png)
+![Dean Lofts](../../assets/images/deanlofts.png)
 
 Once upon a time, in the golden age of piracy, there lived a fearless pirate by the name of Dean (Loftwah) Lofts. Loftwah was a notorious buccaneer, known throughout the seven seas for their technical expertise and programming prowess.
 
@@ -170,7 +166,7 @@ So if you ever find yourself sailing the high seas and you see a pirate flag wit
 
 ## **Chapter One - Settin' Sail with Linux**
 
-![Chapter One - Settin' Sail with Linux](/images/chapterone.png)
+![Chapter One - Settin' Sail with Linux](../../assets/images/chapterone.png)
 
 Ahoy, me hearties! Welcome to the grand adventure o' Linux! In this 'ere chapter, we'll be firin' the first cannon o' knowledge to start ye on yer journey through the mighty seas o' open-source software. So hoist the mainsail and prepare to catch the winds o' technological freedom!
 
@@ -507,7 +503,7 @@ Until then, may fair winds fill yer sails and fortune favor the bold!
 
 ## **Chapter Two - Mastering the Ship's Fundamentals**
 
-![Chapter Two - The Fundamentals](/images/fundamentals.png)
+![Chapter Two - The Fundamentals](../../assets/images/fundamentals.png)
 
 Ahoy there, brave seafarers! Now that ye've boarded the mighty Linux vessel, it be time to learn how to properly command her! Every successful pirate captain needs to understand the fundamentals of their ship before sailin' into treacherous waters. In this chapter, we'll be learnin' the essential skills ye need to navigate the Linux seas with confidence!
 
@@ -587,7 +583,7 @@ This command shows ye not just the filesystems, but also how much space be avail
 
 ### **Navigatin' the Digital Seas: Networking Fundamentals**
 
-![Networking Pirate](/images/networking-pirate.png)
+![Networking Pirate](../../assets/images/networking-pirate.png)
 
 Ahoy, me hearties! Our Linux vessel be a fine ship, but what good is a ship that can't communicate with other vessels? Let's learn how messages travel across the digital oceans!
 
@@ -820,7 +816,7 @@ Remember, with great power comes great responsibility! Only open ports ye actual
 
 ### **Docker: Sailing with Containers**
 
-![Docker Pirate](/images/docker-pirate.png)
+![Docker Pirate](../../assets/images/docker-pirate.png)
 
 Arrr, me hearties! Now let's learn about one of the most revolutionary technologies to sail the digital seas in recent years - containers! And the most famous container ship of all be Docker!
 
@@ -1106,7 +1102,7 @@ Proper password management be the difference between a secure treasure vault and
 
 ### **Databases: The Vast Treasure Vaults**
 
-![Database Pirate](/images/database-pirate.png)
+![Database Pirate](../../assets/images/database-pirate.png)
 
 Every successful pirate needs a secure place to store their plunder! In the digital seas, databases serve as the treasure vaults where yer precious data be safely kept. Let's explore these mysterious storage systems that power the modern internet!
 
@@ -1311,7 +1307,7 @@ Databases be the backbone of most modern applications, carefully organizing and 
 
 ### **Cron Jobs and Scheduling: The Ship's Automatic Routines**
 
-![Cron Pirate](/images/cron-pirate.png)
+![Cron Pirate](../../assets/images/cron-pirate.png)
 
 Even the finest pirate ship needs regular maintenance - swabbing the decks, checking for hull damage, and refreshing supplies. In the digital realm, many tasks need to happen automatically at regular intervals. That's where cron comes in!
 
@@ -1480,7 +1476,7 @@ Cron jobs be essential for any pirate who wants their digital ship to run smooth
 
 ### **Infrastructure as Code: Drawing Treasure Maps for Your Fleet**
 
-![Terraform Pirate](/images/terraform-pirate.png)
+![Terraform Pirate](../../assets/images/terraform-pirate.png)
 
 In the old days, pirates had to manually build and configure each of their ships - a slow and error-prone process that led to inconsistent fleets. Modern pirates know better! With Infrastructure as Code (IaC), ye can define yer entire fleet - from individual ships to complex armadas - in code, ensuring consistent, repeatable deployments.
 
@@ -1724,7 +1720,7 @@ Infrastructure as Code transforms the way pirates manage their digital fleets, b
 
 ### **The Evolution of Web Development: From Ancient Scrolls to Modern Maps**
 
-![Web Evolution Pirate](/images/webdev-pirate.png)
+![Web Evolution Pirate](../../assets/images/webdev-pirate.png)
 
 Ahoy! Let's set sail on a voyage through the history of web development, from the early days of simple HTML pages to the complex applications sailing the modern internet seas! Understanding this evolution helps every pirate navigate today's web development waters.
 
@@ -1937,7 +1933,7 @@ Wisdom comes in knowin' which approach best suits yer current voyage!
 
 ### **Working on a Development Crew: The Pirate's Life**
 
-![Development Crew](/images/dev-crew-pirate.png)
+![Development Crew](../../assets/images/dev-crew-pirate.png)
 
 So ye want to join a pirate development crew, do ye? Let me tell ye what life's really like aboard these digital vessels, and how to conduct yerself to rise through the ranks!
 
@@ -2170,7 +2166,7 @@ Remember, being a good pirate isn't just about technical skills - it's about how
 
 ### **Using AI Tools: The Modern Pirate's First Mate**
 
-![AI Pirate](/images/ai-pirate.png)
+![AI Pirate](../../assets/images/ai-pirate.png)
 
 Ahoy, me hearties! In 2025, no wise pirate sails without the help of AI assistants! These magical first mates can save ye countless hours of work, but knowing how to use them effectively be an art in itself. Let's explore how to harness these powerful tools on yer Linux voyages!
 
@@ -2342,7 +2338,7 @@ AI has transformed what's possible for a lone pirate or small crew. By mastering
 
 ### **Navigating Stormy Seas: Handling Git Merge Conflicts**
 
-![Merge Conflict Pirate](/images/merge-conflict-pirate.png)
+![Merge Conflict Pirate](../../assets/images/merge-conflict-pirate.png)
 
 Even the most organized pirate crew will occasionally face troubled waters when multiple sailors try to modify the same treasure map simultaneously. These treacherous situations be known as merge conflicts, and resolving them properly is an essential skill for any digital buccaneer!
 
@@ -2471,7 +2467,7 @@ Remember, every pirate faces merge conflicts eventually. They're not a sign of p
 
 ### **Treasure Protection: Backup Strategies for Modern Pirates**
 
-![Backup Pirate](/images/backup-pirate.png)
+![Backup Pirate](../../assets/images/backup-pirate.png)
 
 No self-respecting pirate would keep all their treasure in one chest without copies of the map! In the digital world, data loss can come from hardware failures, ransomware, accidental deletion, or even a rival pirate's attack. A proper backup strategy is essential for protecting your digital booty!
 
@@ -2655,7 +2651,7 @@ A pirate without a tested backup plan is just asking for disaster! Implement a p
 
 ### **Modern Hardware: The Pirates' Guide to 2025's Equipment**
 
-![Modern Hardware Pirate](/images/hardware-pirate.png)
+![Modern Hardware Pirate](../../assets/images/hardware-pirate.png)
 
 Avast, me hearties! Let's talk about the ships and cannons of our digital age - the hardware that powers our pirate adventures! Understanding the lay of the land in 2025's hardware seas will help ye choose the right vessel for yer journeys.
 
@@ -2789,7 +2785,7 @@ In this diverse hardware landscape, the versatility of Linux serves pirates well
 
 ### **Git and SSH Setup: Secure Communications for Pirates**
 
-![Git SSH Pirate](/images/git-ssh-pirate.png)
+![Git SSH Pirate](../../assets/images/git-ssh-pirate.png)
 
 Secure and efficient communication be essential for any pirate crew! Setting up Git with SSH keys establishes a secure, convenient way to interact with yer code repositories without entering passwords for every operation.
 
@@ -3031,7 +3027,7 @@ With proper Git and SSH setup, ye'll navigate the digital seas more securely and
 
 ### **Writing the Perfect Pull Request: The Art of Code Contribution**
 
-![Pull Request Pirate](/images/pr-pirate.png)
+![Pull Request Pirate](../../assets/images/pr-pirate.png)
 
 When ye work with other pirates on shared treasure maps (code repositories), the Pull Request (PR) be the formal way to propose changes. A well-crafted PR can be the difference between yer code being quickly accepted or languishing in review purgatory!
 
@@ -3178,7 +3174,7 @@ By following these guidelines, you'll become known as a pirate who contributes h
 
 ### **System Services: Managing Your Ship's Automated Crew**
 
-![Service Pirate](/images/service-pirate.png)
+![Service Pirate](../../assets/images/service-pirate.png)
 
 On a well-run pirate ship, many tasks happen automatically in the background - from watch duty to swabbing the decks. Linux systems have their own automated crew in the form of services, managed primarily through systemd in modern distributions.
 
@@ -3452,7 +3448,7 @@ With these tools, yer ship will run smoothly even when you're not actively steer
 
 ### **Load Balancers: It's Load Balancers All the Way Down**
 
-![Load Balancer Pirate](/images/load-balancer-pirate.png)
+![Load Balancer Pirate](../../assets/images/load-balancer-pirate.png)
 
 In the vast digital seas, successful pirate fleets need to distribute their cargo and passengers efficiently across multiple ships. This is where load balancers come in - they route traffic to ensure no single vessel becomes overloaded while others sail with empty holds.
 
@@ -3700,7 +3696,7 @@ By strategically deploying load balancers across yer architecture, ye can create
 
 ### **Serverless Computing: Sailing Without Managing the Ship**
 
-![Serverless Pirate](/images/serverless-pirate.png)
+![Serverless Pirate](../../assets/images/serverless-pirate.png)
 
 Ahoy, me hearties! Traditional pirate ships require constant maintenance - ye need to swab the decks, repair the sails, and manage the crew. But what if ye could just focus on the plunderin' without worryin' about the ship itself? That's the promise of serverless computing!
 
@@ -3960,7 +3956,7 @@ Serverless computing has changed the game for many a pirate, allowing small crew
 
 ### **Package Management on Ubuntu: Stocking Your Ship's Supplies**
 
-![Package Management Pirate](/images/package-pirate.png)
+![Package Management Pirate](../../assets/images/package-pirate.png)
 
 Every pirate ship needs proper provisions and equipment to function! In the Linux world, software packages be the supplies that keep yer vessel running smoothly. Ubuntu's package management system allows ye to find, install, update, and remove software with ease.
 
@@ -4262,7 +4258,7 @@ By mastering Ubuntu's package management system, ye'll keep yer ship well-provis
 
 ### **Setting Up Oh My Zsh: A Fancier Command Deck**
 
-![Oh My Zsh Pirate](/images/oh-my-zsh-pirate.png)
+![Oh My Zsh Pirate](../../assets/images/oh-my-zsh-pirate.png)
 
 Ahoy there! The default Bash shell be like a basic helm on yer ship - it gets the job done, but lacks some of the fancy features that make sailin' more pleasant. That's where Oh My Zsh comes in - it transforms yer command line into a much more powerful, customizable, and visually appealing control deck!
 
@@ -4537,7 +4533,7 @@ By upgrading to Oh My Zsh, ye'll transform yer command line from a basic helm to
 
 ### **Database Management: Organizing Yer Precious Booty**
 
-![Database Pirate](/images/database-pirate.png)
+![Database Pirate](../../assets/images/database-pirate.png)
 
 Every successful pirate needs a secure and organized system for tracking their hard-earned plunder! In the digital realm, databases serve as the treasure chests that store, organize, and protect your valuable data. Let's dive into the world of database management on Linux, focusing on two popular options: PostgreSQL and SQLite.
 
@@ -4881,7 +4877,7 @@ By understanding these database systems, ye'll have secure and efficient ways to
 
 ### **Block Diagrams: Mapping Out Your Pirate Fleet**
 
-![Block Diagram Pirate](/images/blockdiagram-pirate.png)
+![Block Diagram Pirate](../../assets/images/blockdiagram-pirate.png)
 
 Every sensible pirate captain needs maps to visualize their plans! In the digital realm, block diagrams serve as crucial maps that help ye understand and communicate complex system architectures. Let's learn how to create clear, informative diagrams that will guide yer crew through the most intricate technical waters.
 
@@ -5219,7 +5215,7 @@ With these diagramming skills, ye'll be able to map out the most complex pirate 
 
 ### **Creating and Managing Services: Running Your Own Ship's Operations**
 
-![Services Pirate](/images/services-pirate.png)
+![Services Pirate](../../assets/images/services-pirate.png)
 
 Ahoy there! Every well-run pirate ship has ongoing operations that need to function reliably, whether the captain is at the helm or not. In Linux, these persistent operations be managed as services - programs that run in the background, often starting automatically when the system boots. Let's learn how to create and manage yer own services to keep yer ship running smoothly!
 
@@ -5572,7 +5568,7 @@ By creating proper systemd services, ye'll ensure that yer applications run reli
 
 ### **Network Management: Sailing the Digital Seas**
 
-![Network Pirate](/images/network-pirate.png)
+![Network Pirate](../../assets/images/network-pirate.png)
 
 Ahoy, me hearties! Every pirate ship needs to communicate with other vessels and ports. In the Linux world, understanding how to configure and manage network connections be essential for any seaworthy captain. Let's explore how to navigate the digital oceans!
 
@@ -5957,7 +5953,7 @@ By mastering these network management skills, ye'll be able to sail the digital 
 
 ### **Hardware Considerations: Choosing the Right Ship**
 
-![Hardware Pirate](/images/hardware-pirate.png)
+![Hardware Pirate](../../assets/images/hardware-pirate.png)
 
 Ahoy there, me hearties! Just as a wise pirate captain carefully selects their vessel based on the type of expeditions they plan to embark upon, ye must choose the right hardware for yer Linux adventures. Let's explore the world of computer hardware in 2025 and how it affects yer Linux experience!
 
@@ -6243,7 +6239,7 @@ The perfect ship depends on the voyage you're planning to undertake. A small fis
 
 ### **Cloud Providers: Renting Ships Instead of Building**
 
-![Cloud Pirate](/images/cloud-pirate.png)
+![Cloud Pirate](../../assets/images/cloud-pirate.png)
 
 Ahoy there, digital swashbucklers! In the modern age of piracy, not every buccaneer needs to build their own ship from scratch. The vast naval yards of cloud providers offer vessels of all sizes, ready to set sail at a moment's notice! Let's explore the major cloud harbors and help ye choose the right port for yer plunderin' needs.
 
@@ -6595,7 +6591,7 @@ By understanding the major cloud providers and their offerings, ye can choose th
 
 ### **Enterprise Networking: Sailing in Corporate Waters**
 
-![Enterprise Pirate](/images/enterprise-pirate.png)
+![Enterprise Pirate](../../assets/images/enterprise-pirate.png)
 
 Ahoy, me hearties! When a lone pirate ship joins a massive trading fleet, there be new rules to follow and complex systems to navigate. The same applies when yer Linux vessel sails into enterprise waters! Let's explore how to integrate yer ship with corporate networks, navigate the Microsoft-dominated seas, and work effectively in these structured environments.
 
@@ -7066,7 +7062,7 @@ By mastering these enterprise integration techniques, ye'll be able to sail yer 
 
 ### **Keeping Up with Technology: The Ever-Changing Digital Seas**
 
-![Technology Pirate](/images/tech-change-pirate.png)
+![Technology Pirate](../../assets/images/tech-change-pirate.png)
 
 Ahoy there, me hearties! The digital seas be ever-changing, with new ships, weapons, and navigation tools appearing on the horizon each day. A savvy pirate captain must keep abreast of these changes to maintain their advantage! Let's explore how to stay current with technology trends and continue developing yer skills as the digital landscape evolves.
 
@@ -7305,7 +7301,7 @@ Remember, the most dangerous words in technology be "We've always done it this w
 
 ## **Conclusion: Treasures Beyond the Horizon**
 
-![Conclusion](/images/conclusion-pirate.png)
+![Conclusion](../../assets/images/conclusion-pirate.png)
 
 Shiver me timbers, what a grand voyage we've had! From the misty shores of basic Linux commands to the vast oceans of AWS and GitHub, from the network seas to database strongholds, we've navigated through digital territories that would make even the most seasoned sea dog proud. As we prepare to drop anchor at the end of our journey, let's reflect on the treasures we've discovered along the way.
 
@@ -7983,7 +7979,7 @@ Now, hoist the Tux flag high and prepare to sail into Chapter Three, where real 
 
 ## **Chapter Three: Your First Day as a Pirate**
 
-![Ruby on Rails](/images/rubyonrails.png)
+![Ruby on Rails](../../assets/images/rubyonrails.png)
 
 Ahoy there, brave seafarers! Welcome to yer first day as a proper Linux pirate! In this chapter, we'll be gettin' our hands dirty with some real seafarin' tasks. No more just readin' about the ship - it be time to grab the wheel and feel the wind in yer hair!
 
@@ -8846,7 +8842,7 @@ May fair winds fill yer sails, and may yer terminal always be responsive!
 
 ## **Chapter Four: Navigatin' the Cloud Seas - AWS and GitHub Basics**
 
-![DevOps Pirate](/images/devops-pirate.png)
+![DevOps Pirate](../../assets/images/devops-pirate.png)
 
 [Watch Cap'n Loftwah's Video Guide on YouTube](https://www.youtube.com/live/-NVhnF8fZcE?feature=share)
 
@@ -9440,7 +9436,7 @@ Until then, this be Cap'n Loftwah, signin' off—but always watchin' the horizon
 
 ## **A stern warning: The dangers of the high seas**
 
-![Pirate Circada](/images/piratecircada.png)
+![Pirate Circada](../../assets/images/piratecircada.png)
 
 "Ahoy, mateys! Ye be warned, the circadas be a-singin' their song o' prime numbers. Ye can hear them all through the night, marking their time with the beat of their wings. But beware, for those numbers be the key to unlockin' treasure beyond yer wildest dreams. So set sail and follow the siren call o' the circadas, and ye may just find yerself a rich pirate indeed.
 
@@ -9468,7 +9464,7 @@ Every pirate crew needs some good laughs while navigatin' the treacherous digita
 
 **Why do pirates prefer UDP over TCP?** Because they don't care if packets get lost at sea!
 
-![TCP vs UDP explained with a pirate theme](/images/tcp-udp.png)
+![TCP vs UDP explained with a pirate theme](../../assets/images/tcp-udp.png)
 
 _Why be this joke funny, ye ask? Well, TCP (Transmission Control Protocol) be the reliable shipmate that makes sure all yer data packets arrive safely, checkin' and double-checkin' with "SYN" and "ACK" signals. UDP (User Datagram Protocol) just fires the packets into the digital sea without carin' if they reach their destination—much like a careless pirate! When speed matters more than reliability, UDP be yer protocol of choice, matey!_
 
@@ -9872,7 +9868,7 @@ May the wind be at yer back, and may yer terminal never display "command not fou
 
 ### **Sir Tim Berners-Lee: The Navigator Who Charted the World Wide Web**
 
-![Sir Tim Berners-Lee](/images/sirtimbernerslee.png)
+![Sir Tim Berners-Lee](../../assets/images/tim-berners-lee.png)
 
 In the annals of digital pirate history, few names shine as brightly as Sir Tim Berners-Lee, the legendary navigator who invented the World Wide Web. This brilliant buccaneer saw the potential for connecting documents across the vast digital ocean, creating the HTTP protocol, HTML language, and the first web browser.
 
@@ -9886,7 +9882,7 @@ When ye surf the web, remember ye're following the charts laid down by this visi
 
 ### **Kevin Mitnick: The Ghost in the Wires**
 
-![Kevin Mitnick](/images/mitnick-pirate.png)
+![Kevin Mitnick](../../assets/images/mitnick-pirate.png)
 
 No collection of digital pirate tales would be complete without mentioning Kevin Mitnick, once known as the world's most notorious hacker and later transformed into a respected security consultant.
 
@@ -9900,7 +9896,7 @@ The tale of Kevin Mitnick reminds us that in the digital world, the line between
 
 ### **Eddie Jaoude: Open Source Hero**
 
-![Eddie Jaoude](/images/eddiejaoude.jpg)
+![Eddie Jaoude](../../assets/images/eddiejaoude.jpg)
 
 Eddie Jaoude stands as one of the most influential open source advocates sailin' the digital seas today. As the founder of EddieHub, he's created a welcoming community that helps newcomers navigate the sometimes intimidating waters of open source contribution.
 

@@ -2,11 +2,14 @@
 const { title = 'Linux for Pirates!', description = 'A guide to Linux from a pirate perspective', ogImage = '/images/linux-for-pirates-og.jpg' } = Astro.props;
 import '../styles/global.css';
 import AudioPlayer from '../components/AudioPlayer.astro';
+import pirateFlag from '../assets/images/pirate_flag.svg';
+import ogImageDefault from '../assets/images/linux-for-pirates-og.jpg';
+import dailyDevIcon from '../assets/images/dailydev.png';
 
 // Base URL for absolute URLs
 const siteUrl = 'https://linuxforpirates.deanlofts.xyz';
 // Use the provided ogImage or fallback to default
-const ogImageUrl = `${siteUrl}${ogImage}`;
+const ogImageUrl = ogImage.startsWith('/') ? `${siteUrl}${ogImage}` : ogImage;
 
 // Determine the current page for active styling
 const pathname = Astro.url.pathname;
@@ -27,7 +30,7 @@ const isRubyPage = pathname.includes('ruby-on-whales');
     <title>{title}</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/images/pirate_flag.svg" />
+    <link rel="icon" type="image/svg+xml" href={pirateFlag.src} />
     
     <!-- OpenGraph / Social Media Meta Tags -->
     <meta property="og:title" content={title} />
@@ -90,7 +93,7 @@ const isRubyPage = pathname.includes('ruby-on-whales');
         <div class="flex justify-between items-center">
           <div class="flex items-center gap-2">
             <div>
-              <img src="/images/pirate_flag.svg" alt="Pirate Flag" class="h-7 w-7 sm:h-8 sm:w-8" />
+              <img src={pirateFlag.src} alt="Pirate Flag" class="h-7 w-7 sm:h-8 sm:w-8" />
             </div>
             <div class="relative">
               <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-display tracking-wider">
@@ -114,7 +117,7 @@ const isRubyPage = pathname.includes('ruby-on-whales');
             <a href="https://dly.to/3R9tSuu9oHB" 
               target="_blank" rel="noopener noreferrer"
               class="hidden sm:flex items-center px-3 py-1.5 text-sm border border-slate-300 dark:border-[#0d1a2f] rounded-lg hover:bg-slate-100 dark:hover:bg-[#101f37] transition-all duration-300 hover:text-[#8f36e6] dark:hover:text-white">
-              <img src="/images/dailydev.png" alt="daily.dev" class="h-5 w-5 mr-1 dark:invert" />
+              <img src={dailyDevIcon.src} alt="daily.dev" class="h-5 w-5 mr-1 dark:invert" />
               Join Squad
             </a>
             
@@ -131,7 +134,7 @@ const isRubyPage = pathname.includes('ruby-on-whales');
             <a href="https://dly.to/3R9tSuu9oHB" 
               target="_blank" rel="noopener noreferrer"
               class="sm:hidden flex items-center justify-center h-9 w-9 rounded-full bg-slate-200 dark:bg-[#101f37] hover:ring-2 ring-[#8f36e6] dark:ring-[#a3fe0d] transition-all duration-300 hover:bg-slate-100 dark:hover:bg-[#0d1a2f]">
-              <img src="/images/dailydev.png" alt="daily.dev" class="h-5 w-5 dark:invert" />
+              <img src={dailyDevIcon.src} alt="daily.dev" class="h-5 w-5 dark:invert" />
             </a>
             
             <button id="theme-toggle" class="flex items-center justify-center h-9 w-9 rounded-full bg-slate-200 dark:bg-[#101f37] hover:ring-2 ring-[#8f36e6] dark:ring-[#a3fe0d] transition-all duration-300">
@@ -218,7 +221,7 @@ const isRubyPage = pathname.includes('ruby-on-whales');
       <div class="container mx-auto px-4 w-full">
         <div class="flex flex-col items-center">
           <div class="flex items-center gap-2 mb-3 sm:mb-4">
-            <img src="/images/pirate_flag.svg" alt="Pirate Flag" class="h-7 w-7 sm:h-8 sm:w-8" />
+            <img src={pirateFlag.src} alt="Pirate Flag" class="h-7 w-7 sm:h-8 sm:w-8" />
             <span class="font-display text-base sm:text-lg relative">
               <span class="text-slate-800 dark:text-[#f8fafc]">LINUX</span> 
               <span class="text-[#8f36e6] dark:text-[#a3fe0d]">FOR</span> 
@@ -237,7 +240,7 @@ const isRubyPage = pathname.includes('ruby-on-whales');
               GitHub Repository
             </a></p>
             <p class="mt-2"><a href="https://dly.to/3R9tSuu9oHB" target="_blank" rel="noopener noreferrer" class="text-[#8f36e6] dark:text-[#a3fe0d] hover:underline inline-flex items-center">
-              <img src="/images/dailydev.png" alt="daily.dev" class="h-4 w-4 mr-1 dark:invert" />
+              <img src={dailyDevIcon.src} alt="daily.dev" class="h-4 w-4 mr-1 dark:invert" />
               Join our daily.dev Squad
             </a></p>
           </div>
@@ -284,4 +287,4 @@ const isRubyPage = pathname.includes('ruby-on-whales');
       });
     </script>
   </body>
-</html> 
+</html>

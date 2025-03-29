@@ -2,7 +2,7 @@
 title: Ruby on Whales!
 ---
 
-![Ruby on Whales!](/images/ruby-on-whales.jpg)
+![Ruby on Whales!](../../assets/images/ruby-on-whales.jpg)
 By [Dean Lofts](https://linkarooie.com/loftwah) | [GitHub](https://github.com/loftwah)
 
 # Linux for Pirates! Ruby on Whales
